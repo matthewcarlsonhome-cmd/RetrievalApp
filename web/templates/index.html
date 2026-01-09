@@ -62,6 +62,23 @@
                     <option value="50">Top 50 candidates</option>
                 </select>
             </div>
+
+            <div class="form-group">
+                <label class="form-label">Matching Algorithm</label>
+                <select name="matching_mode" class="form-control">
+                    <option value="tfidf">TF-IDF + Keywords (Fast)</option>
+                    {% if neural_available %}
+                    <option value="neural">Neural Embeddings (Semantic)</option>
+                    {% endif %}
+                </select>
+                <p class="text-small text-muted mt-1">
+                    {% if neural_available %}
+                    TF-IDF: Fast keyword matching | Neural: Understands meaning & context
+                    {% else %}
+                    Neural mode requires: <code>pip install sentence-transformers</code>
+                    {% endif %}
+                </p>
+            </div>
         </div>
 
         <!-- Right Column: Filters -->

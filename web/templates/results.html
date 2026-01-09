@@ -12,6 +12,11 @@
             {% if job.primary_ehr_system %}
             <span class="badge badge-primary">{{ job.primary_ehr_system }}</span>
             {% endif %}
+            {% if matching_mode == "neural" %}
+            <span class="badge badge-info" style="background: #9c27b0; color: white;">Neural Matching</span>
+            {% else %}
+            <span class="badge badge-info">TF-IDF Matching</span>
+            {% endif %}
         </div>
         <div style="text-align: right;">
             <div class="stat-value" style="font-size: 1.5rem;">{{ matches|length }}</div>
@@ -20,6 +25,9 @@
                 From {{ total_candidates }} filtered candidates
                 {% if processing_time %}({{ processing_time }}ms){% endif %}
             </p>
+            {% if matching_mode_display %}
+            <p class="text-small text-muted">{{ matching_mode_display }}</p>
+            {% endif %}
         </div>
     </div>
 </div>

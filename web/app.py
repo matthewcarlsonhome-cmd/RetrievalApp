@@ -4,6 +4,10 @@ Healthcare Resume Matching - Web Interface
 
 A simple Flask application for non-technical users to search and match
 resumes against job descriptions.
+
+Supports two matching modes:
+- TF-IDF + Keywords (fast, no dependencies)
+- Neural Embeddings (semantic understanding, requires sentence-transformers)
 """
 
 import json
@@ -14,7 +18,13 @@ from flask import Flask, render_template, request, jsonify
 
 # Add parent directory for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from scripts.match_resumes import SimpleResumeMatcher, load_json_files
+from scripts.match_resumes import (
+    TFIDFResumeMatcher,
+    NeuralResumeMatcher,
+    MatchingMode,
+    is_neural_available,
+    load_json_files
+)
 
 app = Flask(__name__)
 
@@ -29,12 +39,18 @@ JOBS_DIR = BASE_DIR / "test_data" / "job_descriptions"
 # Global data stores (loaded on startup)
 RESUMES = []
 JOBS = []
-MATCHER = None
+
+# Matcher cache - stores indexed matchers for both modes
+MATCHERS = {
+    "tfidf": None,
+    "neural": None
+}
+NEURAL_AVAILABLE = False
 
 
 def load_data():
     """Load resumes and jobs on startup."""
-    global RESUMES, JOBS, MATCHER
+    global RESUMES, JOBS, MATCHERS, NEURAL_AVAILABLE
 
     if RESUMES_DIR.exists():
         RESUMES = load_json_files(RESUMES_DIR)
@@ -48,10 +64,57 @@ def load_data():
     else:
         print(f"Warning: {JOBS_DIR} not found. Run generate_test_data.py first.")
 
+    # Check if neural matching is available
+    NEURAL_AVAILABLE = is_neural_available()
+    if NEURAL_AVAILABLE:
+        print("Neural matching: AVAILABLE (sentence-transformers installed)")
+    else:
+        print("Neural matching: NOT AVAILABLE (install sentence-transformers to enable)")
+
+    # Pre-build TF-IDF index (fast)
     if RESUMES:
-        MATCHER = SimpleResumeMatcher()
-        MATCHER.index_resumes(RESUMES)
-        print("Search index built successfully")
+        print("\nBuilding TF-IDF index...")
+        MATCHERS["tfidf"] = TFIDFResumeMatcher()
+        MATCHERS["tfidf"].index_resumes(RESUMES, quiet=True)
+        print("TF-IDF index ready")
+
+
+def get_matcher(mode: str, candidates: list = None):
+    """
+    Get or create a matcher for the specified mode.
+
+    If candidates is None, returns the global matcher (for all resumes).
+    If candidates is provided, creates a temporary matcher for filtered candidates.
+    """
+    global MATCHERS, NEURAL_AVAILABLE
+
+    # If filtering candidates, always create a new temporary matcher
+    if candidates is not None:
+        if mode == "neural" and NEURAL_AVAILABLE:
+            matcher = NeuralResumeMatcher()
+            matcher.index_resumes(candidates, quiet=True)
+            return matcher
+        else:
+            matcher = TFIDFResumeMatcher()
+            matcher.index_resumes(candidates, quiet=True)
+            return matcher
+
+    # Otherwise, use global cached matchers
+    if mode == "neural":
+        if not NEURAL_AVAILABLE:
+            print("Neural not available, falling back to TF-IDF")
+            return MATCHERS["tfidf"]
+
+        # Lazy-load neural matcher on first use
+        if MATCHERS["neural"] is None:
+            print("Building neural index (first use)...")
+            MATCHERS["neural"] = NeuralResumeMatcher()
+            MATCHERS["neural"].index_resumes(RESUMES, quiet=False)
+            print("Neural index ready")
+
+        return MATCHERS["neural"]
+    else:
+        return MATCHERS["tfidf"]
 
 
 # =============================================================================
@@ -91,7 +154,7 @@ def filter_resumes(resumes: list, filters: dict) -> list:
         filtered = [
             r for r in filtered
             if r.get("primary_ehr_system", "").lower() == ehr
-            or any(ehr in exp.get("ehr_systems", []) for exp in r.get("experience", []))
+            or any(ehr in str(exp.get("ehr_systems", [])).lower() for exp in r.get("experience", []))
         ]
 
     # Filter by minimum experience
@@ -144,7 +207,8 @@ def index():
         ehr_systems=ehr_systems,
         locations=locations,
         resume_count=len(RESUMES),
-        job_count=len(JOBS)
+        job_count=len(JOBS),
+        neural_available=NEURAL_AVAILABLE
     )
 
 
@@ -152,12 +216,17 @@ def index():
 def search():
     """Search for matching candidates."""
     if request.method == "GET":
-        return render_template("search.html", jobs=JOBS)
+        return render_template("search.html", jobs=JOBS, neural_available=NEURAL_AVAILABLE)
 
     # Get search parameters
     job_id = request.form.get("job_id")
     custom_query = request.form.get("custom_query", "").strip()
     top_k = int(request.form.get("top_k", 10))
+    matching_mode = request.form.get("matching_mode", "tfidf")
+
+    # Validate matching mode
+    if matching_mode == "neural" and not NEURAL_AVAILABLE:
+        matching_mode = "tfidf"
 
     # Get filters
     filters = {
@@ -201,15 +270,16 @@ def search():
             job=job,
             matches=[],
             filters=filters,
+            matching_mode=matching_mode,
+            neural_available=NEURAL_AVAILABLE,
             message="No candidates match the selected filters"
         )
 
-    # Create temporary matcher with filtered candidates
-    temp_matcher = SimpleResumeMatcher()
-    temp_matcher.index_resumes(candidates)
+    # Get matcher for the selected mode (creates temp matcher for filtered candidates)
+    matcher = get_matcher(matching_mode, candidates)
 
     # Run matching
-    results = temp_matcher.match_job(job, top_k=min(top_k, len(candidates)))
+    results = matcher.match_job(job, top_k=min(top_k, len(candidates)))
 
     # Enrich results with full resume data
     matches = []
@@ -230,7 +300,10 @@ def search():
         matches=matches,
         filters=filters,
         total_candidates=len(candidates),
-        processing_time=results.processing_time_ms
+        processing_time=results.processing_time_ms,
+        matching_mode=matching_mode,
+        matching_mode_display=results.matching_mode,
+        neural_available=NEURAL_AVAILABLE
     )
 
 
@@ -262,6 +335,11 @@ def api_search():
     job_id = data.get("job_id")
     top_k = data.get("top_k", 10)
     filters = data.get("filters", {})
+    matching_mode = data.get("matching_mode", "tfidf")
+
+    # Validate matching mode
+    if matching_mode == "neural" and not NEURAL_AVAILABLE:
+        matching_mode = "tfidf"
 
     if not job_id:
         return jsonify({"error": "job_id required"}), 400
@@ -275,12 +353,12 @@ def api_search():
     if not candidates:
         return jsonify({"job": job, "matches": [], "message": "No candidates match filters"})
 
-    temp_matcher = SimpleResumeMatcher()
-    temp_matcher.index_resumes(candidates)
-    results = temp_matcher.match_job(job, top_k=min(top_k, len(candidates)))
+    matcher = get_matcher(matching_mode, candidates)
+    results = matcher.match_job(job, top_k=min(top_k, len(candidates)))
 
     return jsonify({
         "job": job,
+        "matching_mode": results.matching_mode,
         "matches": [
             {
                 "rank": i + 1,
@@ -331,6 +409,19 @@ def api_jobs():
             }
             for j in JOBS
         ]
+    })
+
+
+@app.route("/api/status")
+def api_status():
+    """API endpoint for system status."""
+    return jsonify({
+        "resumes_loaded": len(RESUMES),
+        "jobs_loaded": len(JOBS),
+        "neural_available": NEURAL_AVAILABLE,
+        "matching_modes": ["tfidf"] + (["neural"] if NEURAL_AVAILABLE else []),
+        "tfidf_indexed": MATCHERS["tfidf"] is not None,
+        "neural_indexed": MATCHERS["neural"] is not None
     })
 
 

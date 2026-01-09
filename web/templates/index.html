@@ -68,11 +68,16 @@
                 <select name="matching_mode" class="form-control">
                     <option value="tfidf">TF-IDF + Keywords (Fast)</option>
                     {% if neural_available %}
-                    <option value="neural">Neural Embeddings (Semantic)</option>
+                    <option value="neural">Neural Embeddings (Basic)</option>
+                    {% endif %}
+                    {% if chunked_available %}
+                    <option value="chunked">Chunked Neural (Recommended)</option>
                     {% endif %}
                 </select>
                 <p class="text-small text-muted mt-1">
-                    {% if neural_available %}
+                    {% if chunked_available %}
+                    TF-IDF: Fast | Neural: Semantic | Chunked: Best accuracy (uses proper document chunking)
+                    {% elif neural_available %}
                     TF-IDF: Fast keyword matching | Neural: Understands meaning & context
                     {% else %}
                     Neural mode requires: <code>pip install sentence-transformers</code>

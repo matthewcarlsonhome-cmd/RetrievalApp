@@ -5,16 +5,26 @@ Healthcare Resume Matching - Web Interface
 A simple Flask application for non-technical users to search and match
 resumes against job descriptions.
 
-Supports two matching modes:
+Supports three matching modes:
 - TF-IDF + Keywords (fast, no dependencies)
 - Neural Embeddings (semantic understanding, requires sentence-transformers)
+- Chunked Neural (proper chunking with vector persistence)
 """
 
 import json
+import logging
 import os
 import sys
+import traceback
 from pathlib import Path
 from flask import Flask, render_template, request, jsonify
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
 # Add parent directory for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -29,6 +39,35 @@ from scripts.match_resumes import (
 app = Flask(__name__)
 
 # =============================================================================
+# ERROR HANDLING
+# =============================================================================
+
+@app.errorhandler(Exception)
+def handle_exception(e):
+    """Global exception handler."""
+    logger.error(f"Unhandled exception: {e}")
+    logger.error(traceback.format_exc())
+
+    if request.path.startswith('/api/'):
+        return jsonify({
+            "error": "Internal server error",
+            "message": str(e) if app.debug else "An unexpected error occurred"
+        }), 500
+
+    return render_template(
+        "error.html",
+        message=f"An error occurred: {str(e)}" if app.debug else "An unexpected error occurred"
+    ), 500
+
+
+@app.errorhandler(404)
+def not_found(e):
+    """Handle 404 errors."""
+    if request.path.startswith('/api/'):
+        return jsonify({"error": "Not found"}), 404
+    return render_template("error.html", message="Page not found"), 404
+
+# =============================================================================
 # DATA LOADING
 # =============================================================================
 
@@ -40,43 +79,52 @@ JOBS_DIR = BASE_DIR / "test_data" / "job_descriptions"
 RESUMES = []
 JOBS = []
 
-# Matcher cache - stores indexed matchers for both modes
+# Matcher cache - stores indexed matchers for all modes
 MATCHERS = {
     "tfidf": None,
-    "neural": None
+    "neural": None,
+    "chunked": None
 }
 NEURAL_AVAILABLE = False
+CHUNKED_AVAILABLE = False
 
 
 def load_data():
     """Load resumes and jobs on startup."""
-    global RESUMES, JOBS, MATCHERS, NEURAL_AVAILABLE
+    global RESUMES, JOBS, MATCHERS, NEURAL_AVAILABLE, CHUNKED_AVAILABLE
 
-    if RESUMES_DIR.exists():
-        RESUMES = load_json_files(RESUMES_DIR)
-        print(f"Loaded {len(RESUMES)} resumes")
-    else:
-        print(f"Warning: {RESUMES_DIR} not found. Run generate_test_data.py first.")
+    try:
+        if RESUMES_DIR.exists():
+            RESUMES = load_json_files(RESUMES_DIR)
+            logger.info(f"Loaded {len(RESUMES)} resumes")
+        else:
+            logger.warning(f"{RESUMES_DIR} not found. Run generate_test_data.py first.")
 
-    if JOBS_DIR.exists():
-        JOBS = load_json_files(JOBS_DIR)
-        print(f"Loaded {len(JOBS)} job descriptions")
-    else:
-        print(f"Warning: {JOBS_DIR} not found. Run generate_test_data.py first.")
+        if JOBS_DIR.exists():
+            JOBS = load_json_files(JOBS_DIR)
+            logger.info(f"Loaded {len(JOBS)} job descriptions")
+        else:
+            logger.warning(f"{JOBS_DIR} not found. Run generate_test_data.py first.")
 
-    # Check if neural matching is available
-    NEURAL_AVAILABLE = is_neural_available()
-    if NEURAL_AVAILABLE:
-        print("Neural matching: AVAILABLE (sentence-transformers installed)")
-    else:
-        print("Neural matching: NOT AVAILABLE (install sentence-transformers to enable)")
+        # Check if neural matching is available
+        NEURAL_AVAILABLE = is_neural_available()
+        CHUNKED_AVAILABLE = NEURAL_AVAILABLE  # Chunked mode also requires sentence-transformers
 
-    # Pre-build TF-IDF index (fast)
-    if RESUMES:
-        print("\nBuilding TF-IDF index...")
-        MATCHERS["tfidf"] = TFIDFResumeMatcher()
-        MATCHERS["tfidf"].index_resumes(RESUMES, quiet=True)
-        print("TF-IDF index ready")
+        if NEURAL_AVAILABLE:
+            logger.info("Neural matching: AVAILABLE (sentence-transformers installed)")
+        else:
+            logger.info("Neural matching: NOT AVAILABLE (install sentence-transformers to enable)")
+
+        # Pre-build TF-IDF index (fast)
+        if RESUMES:
+            logger.info("Building TF-IDF index...")
+            MATCHERS["tfidf"] = TFIDFResumeMatcher()
+            MATCHERS["tfidf"].index_resumes(RESUMES, quiet=True)
+            logger.info("TF-IDF index ready")
+
+    except Exception as e:
+        logger.error(f"Error loading data: {e}")
+        logger.error(traceback.format_exc())
 
 
 def get_matcher(mode: str, candidates: list = None):
@@ -85,35 +133,73 @@ def get_matcher(mode: str, candidates: list = None):
 
     If candidates is None, returns the global matcher (for all resumes).
     If candidates is provided, creates a temporary matcher for filtered candidates.
+
+    Modes:
+    - tfidf: TF-IDF + keyword matching (fast, no dependencies)
+    - neural: Neural embeddings (semantic, may truncate long documents)
+    - chunked: Chunked neural with proper vector storage (recommended for neural)
     """
-    global MATCHERS, NEURAL_AVAILABLE
+    global MATCHERS, NEURAL_AVAILABLE, CHUNKED_AVAILABLE
 
-    # If filtering candidates, always create a new temporary matcher
-    if candidates is not None:
-        if mode == "neural" and NEURAL_AVAILABLE:
-            matcher = NeuralResumeMatcher()
-            matcher.index_resumes(candidates, quiet=True)
-            return matcher
+    try:
+        # Handle chunked mode
+        if mode == "chunked":
+            if not CHUNKED_AVAILABLE:
+                logger.warning("Chunked mode not available, falling back to TF-IDF")
+                return MATCHERS["tfidf"]
+
+            from scripts.vector_store import ChunkedNeuralMatcher
+
+            if candidates is not None:
+                # Create temporary chunked matcher for filtered candidates
+                import tempfile
+                temp_dir = Path(tempfile.mkdtemp())
+                matcher = ChunkedNeuralMatcher(store_path=temp_dir)
+                matcher.index_resumes(candidates, quiet=True)
+                return matcher
+
+            # Lazy-load global chunked matcher
+            if MATCHERS["chunked"] is None:
+                logger.info("Building chunked neural index (first use)...")
+                store_path = BASE_DIR / "vector_store"
+                MATCHERS["chunked"] = ChunkedNeuralMatcher(store_path=store_path)
+                MATCHERS["chunked"].index_resumes(RESUMES, quiet=False)
+                logger.info("Chunked neural index ready")
+
+            return MATCHERS["chunked"]
+
+        # If filtering candidates, always create a new temporary matcher
+        if candidates is not None:
+            if mode == "neural" and NEURAL_AVAILABLE:
+                matcher = NeuralResumeMatcher()
+                matcher.index_resumes(candidates, quiet=True)
+                return matcher
+            else:
+                matcher = TFIDFResumeMatcher()
+                matcher.index_resumes(candidates, quiet=True)
+                return matcher
+
+        # Otherwise, use global cached matchers
+        if mode == "neural":
+            if not NEURAL_AVAILABLE:
+                logger.warning("Neural not available, falling back to TF-IDF")
+                return MATCHERS["tfidf"]
+
+            # Lazy-load neural matcher on first use
+            if MATCHERS["neural"] is None:
+                logger.info("Building neural index (first use)...")
+                MATCHERS["neural"] = NeuralResumeMatcher()
+                MATCHERS["neural"].index_resumes(RESUMES, quiet=False)
+                logger.info("Neural index ready")
+
+            return MATCHERS["neural"]
         else:
-            matcher = TFIDFResumeMatcher()
-            matcher.index_resumes(candidates, quiet=True)
-            return matcher
-
-    # Otherwise, use global cached matchers
-    if mode == "neural":
-        if not NEURAL_AVAILABLE:
-            print("Neural not available, falling back to TF-IDF")
             return MATCHERS["tfidf"]
 
-        # Lazy-load neural matcher on first use
-        if MATCHERS["neural"] is None:
-            print("Building neural index (first use)...")
-            MATCHERS["neural"] = NeuralResumeMatcher()
-            MATCHERS["neural"].index_resumes(RESUMES, quiet=False)
-            print("Neural index ready")
-
-        return MATCHERS["neural"]
-    else:
+    except Exception as e:
+        logger.error(f"Error creating matcher: {e}")
+        logger.error(traceback.format_exc())
+        # Fall back to TF-IDF on error
         return MATCHERS["tfidf"]
 
 
@@ -208,7 +294,8 @@ def index():
         locations=locations,
         resume_count=len(RESUMES),
         job_count=len(JOBS),
-        neural_available=NEURAL_AVAILABLE
+        neural_available=NEURAL_AVAILABLE,
+        chunked_available=CHUNKED_AVAILABLE
     )
 
 
@@ -415,13 +502,22 @@ def api_jobs():
 @app.route("/api/status")
 def api_status():
     """API endpoint for system status."""
+    modes = ["tfidf"]
+    if NEURAL_AVAILABLE:
+        modes.append("neural")
+    if CHUNKED_AVAILABLE:
+        modes.append("chunked")
+
     return jsonify({
         "resumes_loaded": len(RESUMES),
         "jobs_loaded": len(JOBS),
         "neural_available": NEURAL_AVAILABLE,
-        "matching_modes": ["tfidf"] + (["neural"] if NEURAL_AVAILABLE else []),
+        "chunked_available": CHUNKED_AVAILABLE,
+        "matching_modes": modes,
         "tfidf_indexed": MATCHERS["tfidf"] is not None,
-        "neural_indexed": MATCHERS["neural"] is not None
+        "neural_indexed": MATCHERS["neural"] is not None,
+        "chunked_indexed": MATCHERS["chunked"] is not None,
+        "vector_store_path": str(BASE_DIR / "vector_store") if CHUNKED_AVAILABLE else None
     })
 
 

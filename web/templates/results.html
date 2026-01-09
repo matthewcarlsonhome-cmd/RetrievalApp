@@ -12,7 +12,9 @@
             {% if job.primary_ehr_system %}
             <span class="badge badge-primary">{{ job.primary_ehr_system }}</span>
             {% endif %}
-            {% if matching_mode == "neural" %}
+            {% if matching_mode == "chunked" %}
+            <span class="badge badge-info" style="background: #2196f3; color: white;">Chunked Neural</span>
+            {% elif matching_mode == "neural" %}
             <span class="badge badge-info" style="background: #9c27b0; color: white;">Neural Matching</span>
             {% else %}
             <span class="badge badge-info">TF-IDF Matching</span>
@@ -110,7 +112,13 @@
                 </div>
 
                 <div class="text-small">
+                    {% if match.breakdown.tfidf_similarity is defined %}
                     <div>TF-IDF: {{ "%.0f"|format(match.breakdown.tfidf_similarity * 100) }}%</div>
+                    {% elif match.breakdown.neural_similarity is defined %}
+                    <div>Neural: {{ "%.0f"|format(match.breakdown.neural_similarity * 100) }}%</div>
+                    {% elif match.breakdown.chunked_neural_similarity is defined %}
+                    <div>Semantic: {{ "%.0f"|format(match.breakdown.chunked_neural_similarity * 100) }}%</div>
+                    {% endif %}
                     <div>Keywords: {{ "%.0f"|format(match.breakdown.keyword_match * 100) }}%</div>
                 </div>
 

@@ -25,7 +25,11 @@
 10. [Security Considerations](#security-considerations)
 11. [Testing Strategy](#testing-strategy)
 12. [Healthcare Resume Matching - Design Decisions](#healthcare-resume-matching---design-decisions)
-    - [Dual Matching Mode Architecture](#dual-matching-mode-architecture)
+    - [Triple Matching Mode Architecture](#triple-matching-mode-architecture)
+    - [Document Chunking Architecture](#document-chunking-architecture)
+    - [Vector Storage and Persistence](#vector-storage-and-persistence)
+    - [Testing Architecture](#testing-architecture)
+    - [Error Handling and Logging](#error-handling-and-logging)
 
 ---
 
@@ -1071,21 +1075,22 @@ See `src/retrieval_app/core/config.py` for complete configuration documentation 
 
 This system is configured for matching healthcare implementation professional resumes to EHR (Electronic Health Records) job descriptions. The domain presents unique challenges that influenced our design decisions.
 
-### Dual Matching Mode Architecture
+### Triple Matching Mode Architecture
 
-**Current Implementation**: Users can select between two matching algorithms via the web UI:
+**Current Implementation**: Users can select between three matching algorithms via the web UI:
 
 | Mode | Algorithm | Latency | Best For |
 |------|-----------|---------|----------|
 | **TF-IDF + Keywords** | Term frequency similarity + structured field matching | ~5ms/100 resumes | Exact term matching, certifications, EHR systems |
-| **Neural Embeddings** | sentence-transformers semantic similarity + keyword matching | ~500ms/100 resumes | Understanding context, synonyms, related concepts |
+| **Neural Embeddings** | sentence-transformers semantic similarity + keyword matching | ~500ms/100 resumes | Understanding context, synonyms (⚠️ truncates long docs) |
+| **Chunked Neural** | Proper document chunking + vector persistence + aggregated scores | ~800ms/100 resumes | Best accuracy for semantic matching (recommended) |
 
-**How to Enable Neural Mode**:
+**How to Enable Neural/Chunked Modes**:
 ```cmd
 pip install sentence-transformers
 ```
 
-When sentence-transformers is installed, a "Matching Algorithm" dropdown appears in the search form allowing users to switch between modes.
+When sentence-transformers is installed, all three matching modes appear in the dropdown.
 
 **Implementation Details**:
 
@@ -1093,28 +1098,294 @@ When sentence-transformers is installed, a "Matching Algorithm" dropdown appears
 # Factory pattern for matcher selection
 class MatchingMode(Enum):
     TFIDF = "tfidf"      # Fast, keyword-based
-    NEURAL = "neural"    # Semantic understanding
+    NEURAL = "neural"    # Semantic (may truncate)
+    CHUNKED = "chunked"  # Semantic with proper chunking
 
-def create_matcher(mode: MatchingMode) -> BaseResumeMatcher:
-    if mode == MatchingMode.TFIDF:
+def get_matcher(mode: str) -> BaseResumeMatcher:
+    if mode == "tfidf":
         return TFIDFResumeMatcher()
-    elif mode == MatchingMode.NEURAL:
-        return NeuralResumeMatcher(model_name="all-MiniLM-L6-v2")
+    elif mode == "neural":
+        return NeuralResumeMatcher()
+    elif mode == "chunked":
+        return ChunkedNeuralMatcher(store_path="vector_store/")
 ```
 
-**Scoring Formula (Both Modes)**:
-```
-combined_score = (SEMANTIC_WEIGHT × similarity_score) + (LEXICAL_WEIGHT × keyword_score)
+---
 
-Where:
-- SEMANTIC_WEIGHT = 0.7 (TF-IDF or neural similarity)
-- LEXICAL_WEIGHT = 0.3 (structured field matching)
+### Document Chunking Architecture
+
+**The Problem**: Neural embedding models have token limits that cause silent truncation:
+
+```
+Model: all-MiniLM-L6-v2
+Max Sequence Length: 256 tokens
+
+Resume Sizes (our data):
+- Min: 389 tokens
+- Max: 1,234 tokens
+- Avg: 778 tokens
+
+Result: 50-75% of resume content was being TRUNCATED!
 ```
 
-**Web UI Integration**:
-- Dropdown shows only available modes (neural hidden if library not installed)
-- Results page displays which mode was used (purple badge for Neural, blue for TF-IDF)
-- `/api/status` endpoint reports available matching modes
+**The Solution**: Semantic chunking by document section:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    CHUNKING PIPELINE                             │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  Resume JSON                                                    │
+│       │                                                          │
+│       ├── summary ──────────────────────▶ Chunk 1 (summary)     │
+│       │                                                          │
+│       ├── experience[0] ────────────────▶ Chunk 2 (exp_0)       │
+│       ├── experience[1] ────────────────▶ Chunk 3 (exp_1)       │
+│       ├── experience[n] ────────────────▶ Chunk n+2             │
+│       │                                                          │
+│       ├── education ────────────────────▶ Chunk (education)     │
+│       ├── certifications ───────────────▶ Chunk (certs)         │
+│       └── skills ───────────────────────▶ Chunk (skills)        │
+│                                                                  │
+│  Each chunk: ~200 tokens (well under 256 limit)                 │
+│  Metadata preserved: document_id, section, ehr_systems, etc.    │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**Optimal Chunk Size Analysis**:
+
+| Parameter | Value | Rationale |
+|-----------|-------|-----------|
+| `max_chunk_chars` | 800 | ~200 tokens, fits model limit with margin |
+| `overlap_chars` | 200 | ~50 tokens overlap preserves context |
+| `min_chunk_chars` | 100 | Avoid tiny, meaningless chunks |
+| `strategy` | SEMANTIC | Chunk by logical sections, not arbitrary splits |
+
+**Chunk Configuration** (`scripts/vector_store.py`):
+
+```python
+@dataclass
+class ChunkConfig:
+    strategy: ChunkStrategy = ChunkStrategy.SEMANTIC
+    max_chunk_chars: int = 800       # ~200 tokens
+    overlap_chars: int = 200         # ~50 tokens overlap
+    min_chunk_chars: int = 100       # Don't create tiny chunks
+```
+
+---
+
+### Vector Storage and Persistence
+
+**The Problem**: Without persistence, embeddings must be recomputed on every app restart (~500ms for 100 resumes, scales linearly).
+
+**The Solution**: Persistent vector store with lazy loading:
+
+```
+vector_store/
+├── chunks.json        # Chunk metadata (document_id, section, content)
+├── embeddings.npy     # Numpy array of embedding vectors
+└── index_meta.json    # Model name, chunk count, config
+```
+
+**Vector Store Architecture**:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    VECTOR STORE                                  │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  INDEXING (one-time or on new documents):                       │
+│                                                                  │
+│  Documents ──▶ Chunker ──▶ Embedder ──▶ Storage                 │
+│                   │           │            │                     │
+│                   ▼           ▼            ▼                     │
+│              chunks.json  embeddings.npy  index_meta.json       │
+│                                                                  │
+│  SEARCH (per query):                                            │
+│                                                                  │
+│  Query ──▶ Embed ──▶ Cosine Similarity ──▶ Top-K Chunks         │
+│                           │                      │               │
+│                           ▼                      ▼               │
+│                    All embeddings        Aggregate by doc_id    │
+│                                                                  │
+│  AGGREGATION:                                                   │
+│                                                                  │
+│  For each document: score = MAX(chunk_scores)                   │
+│  (Uses max to ensure best-matching section drives ranking)      │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**Key Features**:
+- **Lazy Loading**: Model only loads when first neural search is performed
+- **Persistence**: Vectors saved to disk, survive app restarts
+- **Incremental Updates**: New documents can be added without full reindex
+- **Model Compatibility Check**: Rejects stale indices from different models
+
+**Usage**:
+
+```python
+from scripts.vector_store import VectorStore, ChunkedNeuralMatcher
+
+# Low-level vector store access
+store = VectorStore(store_path="vector_store/")
+store.add_documents(resumes, doc_type="resume")
+store.save()
+
+results = store.search("Epic implementation consultant", top_k=10)
+
+# High-level matcher (recommended)
+matcher = ChunkedNeuralMatcher(store_path="vector_store/")
+matcher.index_resumes(resumes)
+results = matcher.match_job(job, top_k=10)
+```
+
+---
+
+### Testing Architecture
+
+**Test Structure**:
+
+```
+tests/
+├── __init__.py
+├── conftest.py           # Shared fixtures (sample_resume, sample_job, etc.)
+├── test_matching.py      # TF-IDF and neural matcher tests
+├── test_vector_store.py  # Chunking and vector persistence tests
+└── test_web_app.py       # Flask endpoint tests
+```
+
+**Test Categories**:
+
+| Category | File | Coverage |
+|----------|------|----------|
+| Unit Tests | `test_matching.py` | Matcher classes, scoring, tokenization |
+| Integration Tests | `test_vector_store.py` | Chunking + embedding + persistence |
+| API Tests | `test_web_app.py` | HTTP endpoints, error handling |
+
+**Running Tests**:
+
+```cmd
+# Install pytest
+pip install pytest
+
+# Run all tests
+python -m pytest tests/ -v
+
+# Run specific test file
+python -m pytest tests/test_matching.py -v
+
+# Run with coverage
+pip install pytest-cov
+python -m pytest tests/ --cov=scripts --cov=web
+```
+
+**Key Test Fixtures** (`tests/conftest.py`):
+
+```python
+@pytest.fixture
+def sample_resume():
+    """Sample resume for testing."""
+    return {
+        "id": "test_resume_001",
+        "personal_info": {"name": "John Smith"},
+        "primary_ehr_system": "Epic",
+        "years_experience": 8,
+        "certifications": ["Epic Certified - EpicCare Ambulatory"],
+        # ...
+    }
+
+@pytest.fixture
+def sample_job():
+    """Sample job description for testing."""
+    return {
+        "id": "test_job_001",
+        "title": "Senior Epic Implementation Consultant",
+        "primary_ehr_system": "Epic",
+        # ...
+    }
+```
+
+**Test Results Summary** (current):
+
+```
+tests/test_matching.py: 21 tests
+  - TestTFIDFMatcher: 9 tests (indexing, matching, scoring)
+  - TestMatcherFactory: 2 tests (factory pattern)
+  - TestKeywordMatching: 4 tests (EHR, modules, experience, certs)
+  - TestDataLoading: 2 tests (JSON file loading)
+  - TestEdgeCases: 4 tests (missing fields, unicode, special chars)
+
+tests/test_vector_store.py: 15 tests
+  - TestDocumentChunker: 8 tests (chunking logic)
+  - TestVectorStore: 6 tests (persistence, search) [requires sentence-transformers]
+  - TestChunkedNeuralMatcher: 2 tests [requires sentence-transformers]
+
+tests/test_web_app.py: 14 tests
+  - TestHealthEndpoints: 2 tests (index, status)
+  - TestAPIEndpoints: 4 tests (resumes, jobs, search validation)
+  - TestSearchFlow: 4 tests (job search, custom query)
+  - TestFilters: 2 tests (EHR filter, experience filter)
+  - TestErrorHandling: 2 tests (invalid JSON, missing content type)
+```
+
+---
+
+### Error Handling and Logging
+
+**Logging Configuration** (`web/app.py`):
+
+```python
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+```
+
+**Global Exception Handler**:
+
+```python
+@app.errorhandler(Exception)
+def handle_exception(e):
+    """Global exception handler."""
+    logger.error(f"Unhandled exception: {e}")
+    logger.error(traceback.format_exc())
+
+    if request.path.startswith('/api/'):
+        return jsonify({
+            "error": "Internal server error",
+            "message": str(e) if app.debug else "An unexpected error occurred"
+        }), 500
+
+    return render_template("error.html", message="An error occurred"), 500
+```
+
+**Graceful Degradation**:
+
+```python
+def get_matcher(mode: str, candidates: list = None):
+    try:
+        if mode == "chunked" and not CHUNKED_AVAILABLE:
+            logger.warning("Chunked mode not available, falling back to TF-IDF")
+            return MATCHERS["tfidf"]
+        # ... create matcher
+    except Exception as e:
+        logger.error(f"Error creating matcher: {e}")
+        # Fall back to TF-IDF on any error
+        return MATCHERS["tfidf"]
+```
+
+**Error Scenarios Handled**:
+
+| Scenario | Behavior |
+|----------|----------|
+| Neural mode requested, not installed | Falls back to TF-IDF with warning |
+| Vector store corrupted | Rebuilds index from scratch |
+| Invalid job_id in search | Returns 404 with clear message |
+| Empty filter results | Shows "No candidates match filters" |
+| Model mismatch in saved vectors | Triggers full reindex |
 
 ---
 

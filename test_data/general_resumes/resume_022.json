@@ -1,0 +1,112 @@
+{
+  "id": "resume_022",
+  "personal_info": {
+    "name": "Barbara Lopez",
+    "email": "barbara.lopez29@outlook.com",
+    "phone": "(706) 675-9802",
+    "location": "San Jose, CA",
+    "linkedin": "linkedin.com/in/barbara-lopez-9636"
+  },
+  "summary": "Experienced digital marketing and brand strategy professional bringing 13 years of expertise. Strong background in Creativity, Lead Generation, Campaign Management, committed to driving innovation and business value.",
+  "years_experience": 13,
+  "experience_level": "expert",
+  "role_category": "marketing",
+  "experience": [
+    {
+      "title": "Marketing Manager",
+      "employer": "DataDriven Inc",
+      "location": "San Diego, CA",
+      "start_date": "March 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Improved email open rates by 29% through A/B testing",
+        "Created 12+ pieces of marketing content"
+      ]
+    },
+    {
+      "title": "Mid-Level Growth Marketing Manager",
+      "employer": "AT&T",
+      "location": "Portland, OR",
+      "start_date": "March 2020",
+      "end_date": "December 2022",
+      "achievements": [
+        "Led rebranding initiative across 7 marketing channels",
+        "Increased website traffic by 38% through SEO optimization",
+        "Generated 5000+ qualified leads through digital campaigns"
+      ]
+    },
+    {
+      "title": "Senior Growth Marketing Manager",
+      "employer": "Microsoft",
+      "location": "San Diego, CA",
+      "start_date": "January 2016",
+      "end_date": "December 2020",
+      "achievements": [
+        "Managed $100M integrated marketing budget",
+        "Built and led marketing team of 24 specialists"
+      ]
+    },
+    {
+      "title": "Staff Brand Manager",
+      "employer": "Zoom",
+      "location": "Charlotte, NC",
+      "start_date": "September 2013",
+      "end_date": "May 2016",
+      "achievements": [
+        "Established brand as market leader with 20% awareness increase",
+        "Led global marketing transformation across 3 regions",
+        "Established brand as market leader with 50% awareness increase",
+        "Managed $1000M marketing budget driving $500M pipeline"
+      ]
+    },
+    {
+      "title": "Principal Content Strategist",
+      "employer": "Lowe's",
+      "location": "Denver, CO",
+      "start_date": "June 2011",
+      "end_date": "May 2013",
+      "achievements": [
+        "Led global marketing transformation across 6 regions",
+        "Established brand as market leader with 22% awareness increase"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Business Administration (MBA)",
+      "institution": "Boston University",
+      "graduation_year": 2012,
+      "gpa": 3.32
+    },
+    {
+      "degree": "Bachelor of Science in Digital Marketing",
+      "institution": "Georgia Tech",
+      "graduation_year": 2010,
+      "gpa": 3.42
+    }
+  ],
+  "certifications": [
+    "Lean Six Sigma Certification",
+    "Google Analytics Certification",
+    "AWS Certified Solutions Architect - Associate"
+  ],
+  "skills": [
+    "Creativity",
+    "Lead Generation",
+    "Campaign Management",
+    "Customer Segmentation",
+    "Kanban",
+    "Presentation Skills",
+    "Attention to Detail",
+    "Waterfall",
+    "Brand Management",
+    "Salesforce Marketing Cloud",
+    "Budget Management",
+    "Active Listening",
+    "Business Analysis",
+    "Teamwork",
+    "SEO",
+    "Market Research",
+    "Digital Marketing"
+  ]
+}

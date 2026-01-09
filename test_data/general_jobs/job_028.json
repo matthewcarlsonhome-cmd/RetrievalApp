@@ -1,0 +1,74 @@
+{
+  "id": "job_028",
+  "title": "Staff Data Analyst",
+  "employer": "Innovation Hub",
+  "employer_type": "startup",
+  "location": "Pittsburgh, PA",
+  "remote_option": "Hybrid (3 days in office)",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2025-12-16",
+  "job_category": "it_individual",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 5,
+    "max_years": null
+  },
+  "description": "Join Innovation Hub as a Staff Data Analyst and help us build the next generation of technology solutions. We're looking for someone passionate about clean code, system design, and continuous improvement.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Design, develop, and maintain software applications",
+    "Write clean, testable, and efficient code",
+    "Participate in code reviews and technical discussions",
+    "Troubleshoot and debug production issues",
+    "Contribute to architectural decisions and technical strategy"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "5+ years of relevant experience",
+    "skills": [
+      "Go",
+      "Python",
+      "JavaScript",
+      "Google Cloud Platform",
+      "Azure Functions",
+      "VS Code",
+      "Postman"
+    ],
+    "certifications": [
+      "Professional Scrum Master (PSM I)"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      ".NET Core",
+      "Next.js",
+      "React",
+      "MariaDB",
+      "MySQL"
+    ],
+    "certifications": [
+      "Azure Administrator Associate",
+      "AWS Certified Developer - Associate"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 111350,
+    "max": 145445,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Unlimited PTO",
+    "Wellness programs and gym membership",
+    "Home office stipend",
+    "Commuter benefits",
+    "Stock options/equity grants",
+    "Parental leave",
+    "Remote work flexibility",
+    "Annual bonus program",
+    "Comprehensive health, dental, and vision insurance"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "resume_023",
+  "personal_info": {
+    "name": "Justin Taylor",
+    "email": "jtaylor@outlook.com",
+    "phone": "(996) 941-3526",
+    "location": "Atlanta, GA",
+    "linkedin": "linkedin.com/in/justin-taylor-1737"
+  },
+  "summary": "Accomplished data engineering and analytics specialist with 9+ years of hands-on experience. Proficient in R, PyTorch, Python, with excellent problem-solving and communication skills.",
+  "years_experience": 9,
+  "experience_level": "advanced",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Mid-Level Business Intelligence Analyst",
+      "employer": "Rapid Growth Tech",
+      "location": "San Diego, CA",
+      "start_date": "June 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Implemented CI/CD pipeline reducing deployment time by 39%",
+        "Mentored 7 junior developers in best practices",
+        "Designed and built RESTful APIs serving 5M+ requests daily"
+      ]
+    },
+    {
+      "title": "Data Analyst",
+      "employer": "Cisco",
+      "location": "Boston, MA",
+      "start_date": "March 2020",
+      "end_date": "December 2021",
+      "achievements": [
+        "Reduced application load time by 41% through performance optimization",
+        "Led migration of 9 microservices to Kubernetes"
+      ]
+    },
+    {
+      "title": "Senior Data Analyst",
+      "employer": "General Motors",
+      "location": "San Francisco, CA",
+      "start_date": "January 2018",
+      "end_date": "August 2020",
+      "achievements": [
+        "Drove technical strategy resulting in 27% improvement in system reliability",
+        "Architected scalable system handling 200M+ daily active users"
+      ]
+    },
+    {
+      "title": "Lead Data Architect",
+      "employer": "Splunk",
+      "location": "San Diego, CA",
+      "start_date": "September 2016",
+      "end_date": "May 2018",
+      "achievements": [
+        "Led team of 52 engineers in delivering critical platform features",
+        "Reduced infrastructure costs by $2000K annually through optimization"
+      ]
+    },
+    {
+      "title": "Staff Data Scientist",
+      "employer": "Intel",
+      "location": "Phoenix, AZ",
+      "start_date": "September 2015",
+      "end_date": "February 2016",
+      "achievements": [
+        "Led team of 28 engineers in delivering critical platform features",
+        "Architected scalable system handling 20M+ daily active users"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Data Science",
+      "institution": "Columbia University",
+      "graduation_year": 2017,
+      "gpa": 3.45
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Ohio State University",
+      "graduation_year": 2015,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Oracle Certified Professional",
+    "AWS Certified Developer - Associate"
+  ],
+  "skills": [
+    "R",
+    "PyTorch",
+    "Python",
+    "Time Management",
+    "Airflow",
+    "Active Listening",
+    "Google Cloud Functions",
+    "Express.js",
+    "Slack",
+    "Go",
+    "Decision Making",
+    "Attention to Detail",
+    "Data Warehousing",
+    "SQLite",
+    "Redis",
+    "Figma",
+    "GitLab CI/CD"
+  ]
+}

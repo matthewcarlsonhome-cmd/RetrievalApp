@@ -1,0 +1,70 @@
+{
+  "id": "job_023",
+  "title": "Senior Machine Learning Engineer",
+  "employer": "Wells Fargo",
+  "employer_type": "fortune500",
+  "location": "Raleigh, NC",
+  "remote_option": "Hybrid",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2025-12-19",
+  "job_category": "it_individual",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 3,
+    "max_years": 9
+  },
+  "description": "Join Wells Fargo as a Senior Machine Learning Engineer and help us build the next generation of technology solutions. We're looking for someone passionate about clean code, system design, and continuous improvement.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Design, develop, and maintain software applications",
+    "Write clean, testable, and efficient code",
+    "Participate in code reviews and technical discussions",
+    "Troubleshoot and debug production issues",
+    "Contribute to architectural decisions and technical strategy"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "3+ years of relevant experience",
+    "skills": [
+      "TypeScript",
+      "Bash",
+      "SQL",
+      "Heroku",
+      "Google Cloud Platform",
+      "Slack",
+      "GitHub"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Vue.js",
+      "Scikit-learn",
+      "Pandas",
+      "DynamoDB",
+      "MariaDB"
+    ],
+    "certifications": [
+      "Professional Scrum Master (PSM I)",
+      "Google Cloud Professional Cloud Architect"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 100314,
+    "max": 147155,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Life and disability insurance",
+    "Stock options/equity grants",
+    "Parental leave",
+    "Professional development budget",
+    "401(k) with company match",
+    "Comprehensive health, dental, and vision insurance",
+    "Unlimited PTO"
+  ]
+}

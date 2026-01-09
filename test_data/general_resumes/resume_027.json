@@ -1,0 +1,71 @@
+{
+  "id": "resume_027",
+  "personal_info": {
+    "name": "Melissa Hill",
+    "email": "melissa.hill@gmail.com",
+    "phone": "(594) 909-1267",
+    "location": "New York, NY",
+    "linkedin": "linkedin.com/in/melissa-hill-5971"
+  },
+  "summary": "Experienced data engineering and analytics professional bringing 5 years of expertise. Strong background in R, AWS Lambda, PyTorch, committed to driving innovation and business value.",
+  "years_experience": 5,
+  "experience_level": "intermediate",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Data Architect",
+      "employer": "Future Forward",
+      "location": "Austin, TX",
+      "start_date": "March 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Designed and built RESTful APIs serving 100M+ requests daily",
+        "Designed and built RESTful APIs serving 50M+ requests daily",
+        "Reduced application load time by 17% through performance optimization"
+      ]
+    },
+    {
+      "title": "Mid-Level Quantitative Analyst",
+      "employer": "UnitedHealth Group",
+      "location": "Atlanta, GA",
+      "start_date": "June 2019",
+      "end_date": "May 2020",
+      "achievements": [
+        "Mentored 3 junior developers in best practices",
+        "Designed and built RESTful APIs serving 1M+ requests daily",
+        "Designed and built RESTful APIs serving 100M+ requests daily"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Software Engineering",
+      "institution": "Stanford University",
+      "graduation_year": 2021,
+      "gpa": 3.8
+    },
+    {
+      "degree": "Bachelor of Science in Software Engineering",
+      "institution": "Boston University",
+      "graduation_year": 2017,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect - Associate",
+    "Microsoft Certified: Azure Developer Associate",
+    "Certified Kubernetes Administrator (CKA)"
+  ],
+  "skills": [
+    "R",
+    "AWS Lambda",
+    "PyTorch",
+    "Data Visualization",
+    "Databricks",
+    "PostgreSQL",
+    "MongoDB",
+    "Kotlin",
+    "Snowflake",
+    "Laravel"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "resume_095",
+  "personal_info": {
+    "name": "Robert Campbell",
+    "email": "robert.campbell31@gmail.com",
+    "phone": "(260) 423-3557",
+    "location": "San Francisco, CA",
+    "linkedin": "linkedin.com/in/robert-campbell-2921"
+  },
+  "summary": "Experienced project management and operations professional bringing 8 years of expertise. Strong background in Team Leadership, Creativity, GitHub, committed to driving innovation and business value.",
+  "years_experience": 8,
+  "experience_level": "advanced",
+  "role_category": "management",
+  "experience": [
+    {
+      "title": "Engagement Manager",
+      "employer": "Ford Motor",
+      "location": "Philadelphia, PA",
+      "start_date": "September 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Managed projects totaling $5K in annual budget",
+        "Led process improvement initiative saving 26 hours weekly",
+        "Managed projects totaling $50K in annual budget"
+      ]
+    },
+    {
+      "title": "Customer Success Manager",
+      "employer": "Microsoft",
+      "location": "Portland, OR",
+      "start_date": "January 2019",
+      "end_date": "May 2021",
+      "achievements": [
+        "Managed projects totaling $25K in annual budget",
+        "Managed projects totaling $250K in annual budget"
+      ]
+    },
+    {
+      "title": "Lead Account Manager",
+      "employer": "Berkshire Hathaway",
+      "location": "Nashville, TN",
+      "start_date": "January 2017",
+      "end_date": "February 2019",
+      "achievements": [
+        "Managed portfolio of 36 projects worth $100M",
+        "Directed cross-functional initiatives across 4 departments",
+        "Delivered 15% improvement in operational efficiency"
+      ]
+    },
+    {
+      "title": "Senior Delivery Manager",
+      "employer": "Deloitte",
+      "location": "Chicago, IL",
+      "start_date": "January 2016",
+      "end_date": "May 2017",
+      "achievements": [
+        "Directed cross-functional initiatives across 8 departments",
+        "Directed cross-functional initiatives across 7 departments"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Management Information Systems",
+      "institution": "Ohio State University",
+      "graduation_year": 2013,
+      "gpa": 3.12
+    }
+  ],
+  "certifications": [
+    "PRINCE2 Practitioner",
+    "PMP (Project Management Professional)",
+    "Azure Administrator Associate"
+  ],
+  "skills": [
+    "Team Leadership",
+    "Creativity",
+    "GitHub",
+    "Kanban",
+    "Bitbucket",
+    "Power BI",
+    "Data Visualization",
+    "Decision Making",
+    "Time Management",
+    "Waterfall",
+    "Vendor Management",
+    "Leadership",
+    "Mentoring",
+    "Data Analysis",
+    "Slack",
+    "Stakeholder Management"
+  ]
+}

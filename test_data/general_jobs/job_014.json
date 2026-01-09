@@ -1,0 +1,63 @@
+{
+  "id": "job_014",
+  "title": "Lead Operations Analyst",
+  "employer": "Tech Mahindra",
+  "employer_type": "consulting",
+  "location": "Charlotte, NC",
+  "remote_option": "Hybrid",
+  "employment_type": "Full-time",
+  "contract_type": "Contract",
+  "posted_date": "2025-12-22",
+  "job_category": "business_analyst",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 2,
+    "max_years": null
+  },
+  "description": "Tech Mahindra seeks an analytical Lead Operations Analyst to support strategic initiatives. You'll work with stakeholders across the organization to identify opportunities and drive process improvements.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Gather and analyze business requirements",
+    "Develop process improvements and efficiency recommendations",
+    "Create business cases and presentations for leadership",
+    "Support project implementation and change management",
+    "Track KPIs and report on business performance"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "2+ years of relevant experience",
+    "skills": [
+      "Requirements Gathering",
+      "Contract Negotiation",
+      "Performance Metrics",
+      "Process Improvement",
+      "Executive Communication",
+      "Tableau",
+      "Data Visualization"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Git",
+      "Postman",
+      "VS Code"
+    ],
+    "certifications": [
+      "Certified Business Analysis Professional (CBAP)",
+      "Certified Scrum Product Owner (CSPO)"
+    ]
+  },
+  "salary": {
+    "type": "hourly",
+    "min": 40,
+    "max": 57,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Competitive hourly rate",
+    "Flexible schedule"
+  ]
+}

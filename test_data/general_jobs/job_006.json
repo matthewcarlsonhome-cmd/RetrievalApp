@@ -1,0 +1,66 @@
+{
+  "id": "job_006",
+  "title": "Senior Product Marketing Manager",
+  "employer": "Bain & Company",
+  "employer_type": "consulting",
+  "location": "Phoenix, AZ",
+  "remote_option": "Remote",
+  "employment_type": "Full-time",
+  "contract_type": "Contract",
+  "posted_date": "2025-12-31",
+  "job_category": "marketing",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 5,
+    "max_years": 11
+  },
+  "description": "Bain & Company is looking for a creative Senior Product Marketing Manager to drive our marketing initiatives. You'll develop strategies, execute campaigns, and analyze performance to grow our brand presence.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Develop and execute marketing strategies and campaigns",
+    "Analyze campaign performance and optimize for results",
+    "Create compelling content for various channels",
+    "Manage marketing budget and track ROI",
+    "Collaborate with sales and product teams on go-to-market initiatives"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "5+ years of relevant experience",
+    "skills": [
+      "Google Analytics",
+      "Campaign Management",
+      "Email Marketing",
+      "HubSpot",
+      "A/B Testing",
+      "PPC Advertising"
+    ],
+    "certifications": [
+      "Certified Business Analysis Professional (CBAP)"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Agile Methodology",
+      "Budget Management",
+      "Waterfall",
+      "Business Intelligence",
+      "Data Analysis"
+    ],
+    "certifications": [
+      "Certified Scrum Product Owner (CSPO)",
+      "Lean Six Sigma Certification"
+    ]
+  },
+  "salary": {
+    "type": "hourly",
+    "min": 48,
+    "max": 71,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Competitive hourly rate",
+    "Flexible schedule"
+  ]
+}

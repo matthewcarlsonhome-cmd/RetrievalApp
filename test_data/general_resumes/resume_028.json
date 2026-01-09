@@ -1,0 +1,114 @@
+{
+  "id": "resume_028",
+  "personal_info": {
+    "name": "Gregory Taylor",
+    "email": "gregorytaylor@yahoo.com",
+    "phone": "(743) 875-2052",
+    "location": "Denver, CO",
+    "linkedin": "linkedin.com/in/gregory-taylor-4221"
+  },
+  "summary": "Transformational professional with 20+ years of experience in data engineering and analytics. Skilled in New Relic, ETL, Critical Thinking, with a proven track record of delivering impactful results.",
+  "years_experience": 20,
+  "experience_level": "expert",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Mid-Level Quantitative Analyst",
+      "employer": "NextGen Software",
+      "location": "Denver, CO",
+      "start_date": "September 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Implemented CI/CD pipeline reducing deployment time by 23%",
+        "Led migration of 6 microservices to Kubernetes",
+        "Led migration of 10 microservices to Kubernetes",
+        "Reduced application load time by 34% through performance optimization"
+      ]
+    },
+    {
+      "title": "Lead Data Scientist",
+      "employer": "Ford Motor",
+      "location": "Washington, DC",
+      "start_date": "March 2017",
+      "end_date": "May 2021",
+      "achievements": [
+        "Led team of 32 engineers in delivering critical platform features",
+        "Reduced infrastructure costs by $1000K annually through optimization"
+      ]
+    },
+    {
+      "title": "Lead Quantitative Analyst",
+      "employer": "Tech Mahindra",
+      "location": "San Jose, CA",
+      "start_date": "June 2016",
+      "end_date": "August 2017",
+      "achievements": [
+        "Drove technical strategy resulting in 24% improvement in system reliability",
+        "Established engineering best practices adopted by 28 teams",
+        "Established engineering best practices adopted by 20 teams"
+      ]
+    },
+    {
+      "title": "Senior Analytics Engineer",
+      "employer": "ServiceNow",
+      "location": "Atlanta, GA",
+      "start_date": "March 2013",
+      "end_date": "February 2016",
+      "achievements": [
+        "Led organization-wide digital transformation initiative impacting 2000+ employees"
+      ]
+    },
+    {
+      "title": "Senior Data Analyst",
+      "employer": "Tech Mahindra",
+      "location": "Salt Lake City, UT",
+      "start_date": "September 2011",
+      "end_date": "December 2013",
+      "achievements": [
+        "Drove strategic initiatives resulting in $500M revenue growth",
+        "Managed $1000M technology budget across 4 departments",
+        "Led organization-wide digital transformation initiative impacting 10000+ employees"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Data Science",
+      "institution": "Columbia University",
+      "graduation_year": 2003,
+      "gpa": 3.37
+    }
+  ],
+  "certifications": [
+    "CompTIA Network+",
+    "AWS Certified Solutions Architect - Professional",
+    "Cisco Certified Network Associate (CCNA)",
+    "Microsoft Certified: Azure Developer Associate"
+  ],
+  "skills": [
+    "New Relic",
+    "ETL",
+    "Critical Thinking",
+    "Elasticsearch",
+    "JavaScript",
+    "Google Cloud Functions",
+    "Docker",
+    "Keras",
+    "Scala",
+    "Communication",
+    "Decision Making",
+    "Apache Spark",
+    "Attention to Detail",
+    "SQL",
+    "Rust",
+    "Bitbucket",
+    "Snowflake",
+    "Azure Functions",
+    "Pandas",
+    "SQL Server",
+    "Presentation Skills",
+    "Confluence",
+    "dbt",
+    "Ruby on Rails"
+  ]
+}

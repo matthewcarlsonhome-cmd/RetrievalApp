@@ -1,0 +1,111 @@
+{
+  "id": "resume_024",
+  "personal_info": {
+    "name": "Thomas Lopez",
+    "email": "thomas.lopez@yahoo.com",
+    "phone": "(923) 503-2535",
+    "location": "Washington, DC",
+    "linkedin": "linkedin.com/in/thomas-lopez-5418"
+  },
+  "summary": "Experienced project management and operations professional bringing 20 years of expertise. Strong background in Creativity, Power BI, Communication, committed to driving innovation and business value.",
+  "years_experience": 20,
+  "experience_level": "expert",
+  "role_category": "management",
+  "experience": [
+    {
+      "title": "Mid-Level Account Manager",
+      "employer": "Disrupt Technologies",
+      "location": "Atlanta, GA",
+      "start_date": "January 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Developed business cases securing $250K in project funding",
+        "Managed projects totaling $5K in annual budget",
+        "Developed business cases securing $50K in project funding"
+      ]
+    },
+    {
+      "title": "Lead Project Manager",
+      "employer": "Wells Fargo",
+      "location": "Nashville, TN",
+      "start_date": "June 2017",
+      "end_date": "February 2020",
+      "achievements": [
+        "Delivered 34% improvement in operational efficiency",
+        "Directed cross-functional initiatives across 7 departments"
+      ]
+    },
+    {
+      "title": "Senior Operations Manager",
+      "employer": "Accenture",
+      "location": "Los Angeles, CA",
+      "start_date": "March 2016",
+      "end_date": "December 2017",
+      "achievements": [
+        "Managed portfolio of 20 projects worth $1000M",
+        "Built and led team of 16 analysts and specialists",
+        "Built and led team of 28 analysts and specialists",
+        "Directed cross-functional initiatives across 9 departments"
+      ]
+    },
+    {
+      "title": "Staff Customer Success Manager",
+      "employer": "Workday",
+      "location": "Raleigh, NC",
+      "start_date": "March 2012",
+      "end_date": "May 2016",
+      "achievements": [
+        "Led M&A integration program spanning 5 global locations",
+        "Led M&A integration program spanning 10 global locations"
+      ]
+    },
+    {
+      "title": "Senior Account Manager",
+      "employer": "Zoom",
+      "location": "New York, NY",
+      "start_date": "March 2008",
+      "end_date": "December 2012",
+      "achievements": [
+        "Managed P&L responsibility for $500M business unit",
+        "Drove strategic initiatives contributing $5000M to bottom line",
+        "Led M&A integration program spanning 5 global locations"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Economics",
+      "institution": "Penn State University",
+      "graduation_year": 2003,
+      "gpa": 3.5
+    }
+  ],
+  "certifications": [
+    "Lean Six Sigma Certification",
+    "Certified Scrum Product Owner (CSPO)",
+    "Certified Business Analysis Professional (CBAP)",
+    "Google Analytics Certification",
+    "Google Cloud Professional Cloud Architect",
+    "Certified Kubernetes Administrator (CKA)",
+    "Azure Administrator Associate"
+  ],
+  "skills": [
+    "Creativity",
+    "Power BI",
+    "Communication",
+    "GitLab",
+    "Problem Solving",
+    "ETL",
+    "Risk Management",
+    "Scrum",
+    "Vendor Management",
+    "Critical Thinking",
+    "Confluence",
+    "Emotional Intelligence",
+    "Slack",
+    "Process Improvement",
+    "Project Management",
+    "Stakeholder Management",
+    "Tableau"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "job_005",
+  "title": "Senior Engineering Manager",
+  "employer": "Scale Up Inc",
+  "employer_type": "startup",
+  "location": "Raleigh, NC",
+  "remote_option": "Hybrid",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2025-12-20",
+  "job_category": "manager",
+  "seniority_level": "manager",
+  "experience_required": {
+    "min_years": 8,
+    "max_years": null
+  },
+  "description": "Scale Up Inc is seeking an experienced Senior Engineering Manager to lead and grow our team. You'll set strategic direction, mentor team members, and drive results across the organization.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Lead, mentor, and develop team members",
+    "Set strategic direction and priorities for the team",
+    "Manage budgets, resources, and timelines",
+    "Build relationships with key stakeholders and partners",
+    "Drive organizational change and transformation initiatives",
+    "Recruit, hire, and retain top talent",
+    "Conduct performance reviews and career development discussions",
+    "Represent the team in executive meetings and steering committees"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "8+ years of relevant experience",
+    "skills": [
+      "Agile Methodology",
+      "Performance Metrics",
+      "Risk Management",
+      "Requirements Gathering",
+      "Strategic Planning",
+      "Critical Thinking",
+      "Decision Making",
+      "Time Management",
+      "Teamwork"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "GitHub",
+      "Confluence",
+      "GitLab"
+    ],
+    "certifications": [
+      "Certified Digital Marketing Professional",
+      "Six Sigma Green Belt"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 176723,
+    "max": 210925,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Life and disability insurance",
+    "Professional development budget",
+    "Home office stipend",
+    "401(k) with company match",
+    "Annual bonus program",
+    "Parental leave",
+    "Wellness programs and gym membership",
+    "Commuter benefits"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "resume_099",
+  "personal_info": {
+    "name": "Amanda Miller",
+    "email": "amanda.miller10@icloud.com",
+    "phone": "(922) 484-2240",
+    "location": "San Diego, CA",
+    "linkedin": "linkedin.com/in/amanda-miller-2465"
+  },
+  "summary": "Seasoned data engineering and analytics specialist with 6+ years of hands-on experience. Proficient in Jenkins, Databricks, VS Code, with excellent problem-solving and communication skills.",
+  "years_experience": 6,
+  "experience_level": "advanced",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Junior Business Intelligence Analyst",
+      "employer": "Berkshire Hathaway",
+      "location": "San Jose, CA",
+      "start_date": "September 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Resolved 24+ production issues within SLA targets",
+        "Created technical documentation for 4 internal tools",
+        "Improved code test coverage from 60% to 77%",
+        "Participated in code reviews, providing feedback on 87+ pull requests"
+      ]
+    },
+    {
+      "title": "Senior Data Analyst",
+      "employer": "AI Dynamics",
+      "location": "Detroit, MI",
+      "start_date": "January 2018",
+      "end_date": "August 2022",
+      "achievements": [
+        "Reduced infrastructure costs by $10000K annually through optimization",
+        "Reduced infrastructure costs by $4000K annually through optimization",
+        "Reduced infrastructure costs by $2000K annually through optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Data Science",
+      "institution": "University of Florida",
+      "graduation_year": 2021,
+      "gpa": 3.77
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Ohio State University",
+      "graduation_year": 2017,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "CompTIA Security+",
+    "CompTIA A+",
+    "Azure Administrator Associate",
+    "CompTIA Network+",
+    "AWS Certified Developer - Associate"
+  ],
+  "skills": [
+    "Jenkins",
+    "Databricks",
+    "VS Code",
+    "Critical Thinking",
+    "Airflow",
+    "Teamwork",
+    "Keras",
+    "Datadog",
+    "MongoDB",
+    "Flask",
+    "Rust",
+    "Problem Solving"
+  ]
+}

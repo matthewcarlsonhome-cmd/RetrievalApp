@@ -1,0 +1,51 @@
+{
+  "id": "resume_066",
+  "personal_info": {
+    "name": "James Hall",
+    "email": "james.hall@icloud.com",
+    "phone": "(364) 221-4274",
+    "location": "Chicago, IL",
+    "linkedin": "linkedin.com/in/james-hall-5926"
+  },
+  "summary": "Eager professional with 2+ years of experience in digital marketing and brand strategy. Skilled in Kanban, Communication, Marketo, with a proven track record of delivering impactful results.",
+  "years_experience": 2,
+  "experience_level": "beginner",
+  "role_category": "marketing",
+  "experience": [
+    {
+      "title": "Junior Marketing Analyst",
+      "employer": "Berkshire Hathaway",
+      "location": "Pittsburgh, PA",
+      "start_date": "March 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Grew social media following by 30% across 3 platforms",
+        "Grew social media following by 35% across 3 platforms",
+        "Grew social media following by 48% across 6 platforms",
+        "Supported 2 marketing campaigns"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Digital Marketing",
+      "institution": "University of Washington",
+      "graduation_year": 2019,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Certified Management Consultant (CMC)",
+    "Google Analytics Certification"
+  ],
+  "skills": [
+    "Kanban",
+    "Communication",
+    "Marketo",
+    "Salesforce Marketing Cloud",
+    "Business Analysis",
+    "Google Analytics",
+    "Mentoring",
+    "Email Marketing"
+  ]
+}

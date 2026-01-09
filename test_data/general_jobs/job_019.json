@@ -1,0 +1,68 @@
+{
+  "id": "job_019",
+  "title": "Senior Marketing Analyst",
+  "employer": "Cisco",
+  "employer_type": "tech",
+  "location": "Raleigh, NC",
+  "remote_option": "Hybrid",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2025-12-26",
+  "job_category": "marketing",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 1,
+    "max_years": null
+  },
+  "description": "Cisco is looking for a creative Senior Marketing Analyst to drive our marketing initiatives. You'll develop strategies, execute campaigns, and analyze performance to grow our brand presence.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Develop and execute marketing strategies and campaigns",
+    "Analyze campaign performance and optimize for results",
+    "Create compelling content for various channels",
+    "Manage marketing budget and track ROI",
+    "Collaborate with sales and product teams on go-to-market initiatives"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "1+ years of relevant experience",
+    "skills": [
+      "Brand Management",
+      "Social Media Marketing",
+      "Competitive Analysis",
+      "Digital Marketing",
+      "Marketo",
+      "Marketing Automation"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Scrum",
+      "Requirements Gathering",
+      "Budget Management",
+      "Data Visualization",
+      "Data Warehousing"
+    ],
+    "certifications": [
+      "Certified Digital Marketing Professional",
+      "PMP (Project Management Professional)"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 82363,
+    "max": 124780,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Commuter benefits",
+    "Home office stipend",
+    "Life and disability insurance",
+    "Annual bonus program",
+    "401(k) with company match",
+    "Wellness programs and gym membership"
+  ]
+}

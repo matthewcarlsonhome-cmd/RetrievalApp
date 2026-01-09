@@ -1,0 +1,117 @@
+{
+  "id": "resume_004",
+  "personal_info": {
+    "name": "Raymond Singh",
+    "email": "rsingh@gmail.com",
+    "phone": "(394) 512-2948",
+    "location": "Seattle, WA",
+    "linkedin": "linkedin.com/in/raymond-singh-7293"
+  },
+  "summary": "Transformational software development and engineering specialist with 11+ years of hands-on experience. Proficient in New Relic, VS Code, Express.js, with excellent problem-solving and communication skills.",
+  "years_experience": 11,
+  "experience_level": "expert",
+  "role_category": "development",
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "employer": "CloudFirst Solutions",
+      "location": "Boston, MA",
+      "start_date": "September 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Mentored 7 junior developers in best practices",
+        "Reduced application load time by 39% through performance optimization"
+      ]
+    },
+    {
+      "title": "DevOps Engineer",
+      "employer": "NVIDIA",
+      "location": "San Jose, CA",
+      "start_date": "March 2020",
+      "end_date": "May 2021",
+      "achievements": [
+        "Designed and built RESTful APIs serving 100M+ requests daily",
+        "Led migration of 4 microservices to Kubernetes",
+        "Led migration of 8 microservices to Kubernetes"
+      ]
+    },
+    {
+      "title": "Senior Site Reliability Engineer",
+      "employer": "JPMorgan Chase",
+      "location": "Raleigh, NC",
+      "start_date": "September 2018",
+      "end_date": "May 2020",
+      "achievements": [
+        "Established engineering best practices adopted by 16 teams",
+        "Architected scalable system handling 200M+ daily active users"
+      ]
+    },
+    {
+      "title": "Senior Site Reliability Engineer",
+      "employer": "JPMorgan Chase",
+      "location": "Minneapolis, MN",
+      "start_date": "June 2014",
+      "end_date": "February 2018",
+      "achievements": [
+        "Led team of 56 engineers in delivering critical platform features",
+        "Led team of 48 engineers in delivering critical platform features"
+      ]
+    },
+    {
+      "title": "Principal Full Stack Developer",
+      "employer": "PwC",
+      "location": "Atlanta, GA",
+      "start_date": "January 2013",
+      "end_date": "August 2014",
+      "achievements": [
+        "Drove strategic initiatives resulting in $1000M revenue growth",
+        "Led organization-wide digital transformation initiative impacting 10000+ employees"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "institution": "Harvard University",
+      "graduation_year": 2014,
+      "gpa": 3.53
+    },
+    {
+      "degree": "Bachelor of Science in Computer Engineering",
+      "institution": "Northwestern University",
+      "graduation_year": 2012,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Oracle Certified Professional",
+    "ITIL Foundation",
+    "Cisco Certified Network Associate (CCNA)",
+    "CompTIA A+",
+    "Certified Kubernetes Administrator (CKA)",
+    "AWS Certified Developer - Associate",
+    "Google Cloud Professional Cloud Architect"
+  ],
+  "skills": [
+    "New Relic",
+    "VS Code",
+    "Express.js",
+    "React",
+    "Creativity",
+    "Communication",
+    "Attention to Detail",
+    "MongoDB",
+    "Sketch",
+    "Rust",
+    "Terraform",
+    "Azure Functions",
+    "Conflict Resolution",
+    "Bash",
+    "MySQL",
+    "PHP",
+    "C++",
+    "AWS",
+    "Mentoring",
+    "Next.js"
+  ]
+}

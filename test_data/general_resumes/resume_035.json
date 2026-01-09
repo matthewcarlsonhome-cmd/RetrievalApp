@@ -1,0 +1,111 @@
+{
+  "id": "resume_035",
+  "personal_info": {
+    "name": "Justin Gupta",
+    "email": "jgupta@gmail.com",
+    "phone": "(697) 954-4873",
+    "location": "Boston, MA",
+    "linkedin": "linkedin.com/in/justin-gupta-7479"
+  },
+  "summary": "Experienced software development and engineering professional bringing 9 years of expertise. Strong background in PyTorch, Active Listening, Google Cloud Functions, committed to driving innovation and business value.",
+  "years_experience": 9,
+  "experience_level": "advanced",
+  "role_category": "development",
+  "experience": [
+    {
+      "title": "Mid-Level Software Engineer",
+      "employer": "AT&T",
+      "location": "San Francisco, CA",
+      "start_date": "June 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Implemented CI/CD pipeline reducing deployment time by 35%",
+        "Reduced application load time by 17% through performance optimization",
+        "Led migration of 4 microservices to Kubernetes",
+        "Reduced application load time by 21% through performance optimization"
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "employer": "Microsoft",
+      "location": "Miami, FL",
+      "start_date": "March 2020",
+      "end_date": "August 2021",
+      "achievements": [
+        "Designed and built RESTful APIs serving 1M+ requests daily",
+        "Implemented CI/CD pipeline reducing deployment time by 30%",
+        "Implemented CI/CD pipeline reducing deployment time by 39%"
+      ]
+    },
+    {
+      "title": "Lead Software Engineer",
+      "employer": "Home Depot",
+      "location": "Portland, OR",
+      "start_date": "March 2017",
+      "end_date": "December 2020",
+      "achievements": [
+        "Architected scalable system handling 20M+ daily active users",
+        "Led team of 24 engineers in delivering critical platform features",
+        "Led team of 20 engineers in delivering critical platform features",
+        "Architected scalable system handling 40M+ daily active users"
+      ]
+    },
+    {
+      "title": "Senior Software Developer",
+      "employer": "DocuSign",
+      "location": "San Francisco, CA",
+      "start_date": "January 2016",
+      "end_date": "December 2017",
+      "achievements": [
+        "Reduced infrastructure costs by $2000K annually through optimization",
+        "Led team of 56 engineers in delivering critical platform features"
+      ]
+    },
+    {
+      "title": "Senior Backend Developer",
+      "employer": "MongoDB",
+      "location": "Boston, MA",
+      "start_date": "September 2015",
+      "end_date": "February 2016",
+      "achievements": [
+        "Established engineering best practices adopted by 12 teams",
+        "Reduced infrastructure costs by $1000K annually through optimization",
+        "Led team of 20 engineers in delivering critical platform features",
+        "Established engineering best practices adopted by 36 teams"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "institution": "University of Washington",
+      "graduation_year": 2017,
+      "gpa": 3.98
+    },
+    {
+      "degree": "Bachelor of Science in Data Science",
+      "institution": "Harvard University",
+      "graduation_year": 2015,
+      "gpa": 3.5
+    }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect - Associate",
+    "CompTIA Security+"
+  ],
+  "skills": [
+    "PyTorch",
+    "Active Listening",
+    "Google Cloud Functions",
+    "Datadog",
+    "Decision Making",
+    "Attention to Detail",
+    "Sketch",
+    "Rust",
+    "Oracle",
+    "C#",
+    "CloudFormation",
+    "Pandas",
+    "ELK Stack"
+  ]
+}

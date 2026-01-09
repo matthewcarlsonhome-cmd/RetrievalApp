@@ -1,0 +1,112 @@
+{
+  "id": "resume_098",
+  "personal_info": {
+    "name": "Charles Wright",
+    "email": "charles.wright89@outlook.com",
+    "phone": "(379) 348-6896",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/charles-wright-5698"
+  },
+  "summary": "Experienced product management and delivery professional bringing 17 years of expertise. Strong background in Bitbucket, Looker, Communication, committed to driving innovation and business value.",
+  "years_experience": 17,
+  "experience_level": "expert",
+  "role_category": "product",
+  "experience": [
+    {
+      "title": "Mid-Level Technical Program Manager",
+      "employer": "CVS Health",
+      "location": "Denver, CO",
+      "start_date": "June 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Developed business cases securing $250K in project funding",
+        "Increased customer satisfaction scores by 17% through service improvements",
+        "Led process improvement initiative saving 37 hours weekly",
+        "Managed projects totaling $5K in annual budget"
+      ]
+    },
+    {
+      "title": "Program Manager",
+      "employer": "ServiceNow",
+      "location": "Chicago, IL",
+      "start_date": "March 2020",
+      "end_date": "August 2021",
+      "achievements": [
+        "Managed projects totaling $25K in annual budget",
+        "Developed business cases securing $500K in project funding"
+      ]
+    },
+    {
+      "title": "Mid-Level Scrum Master",
+      "employer": "Bank of America",
+      "location": "Boston, MA",
+      "start_date": "March 2019",
+      "end_date": "December 2020",
+      "achievements": [
+        "Managed projects totaling $50K in annual budget",
+        "Increased customer satisfaction scores by 41% through service improvements",
+        "Increased customer satisfaction scores by 24% through service improvements",
+        "Led process improvement initiative saving 50 hours weekly"
+      ]
+    },
+    {
+      "title": "Staff Scrum Master",
+      "employer": "Slack",
+      "location": "Dallas, TX",
+      "start_date": "March 2016",
+      "end_date": "February 2019",
+      "achievements": [
+        "Directed cross-functional initiatives across 6 departments",
+        "Directed cross-functional initiatives across 7 departments",
+        "Built and led team of 28 analysts and specialists",
+        "Built and led team of 60 analysts and specialists"
+      ]
+    },
+    {
+      "title": "Lead Product Owner",
+      "employer": "Tata Consultancy Services",
+      "location": "Minneapolis, MN",
+      "start_date": "September 2012",
+      "end_date": "February 2016",
+      "achievements": [
+        "Drove strategic initiatives contributing $5000M to bottom line",
+        "Led M&A integration program spanning 18 global locations",
+        "Transformed business operations resulting in 25% cost reduction",
+        "Managed P&L responsibility for $5000M business unit"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Business Management",
+      "institution": "University of Texas at Austin",
+      "graduation_year": 2004,
+      "gpa": 3.85
+    }
+  ],
+  "certifications": [
+    "Certified Digital Marketing Professional",
+    "PRINCE2 Foundation",
+    "PRINCE2 Practitioner",
+    "AWS Certified Solutions Architect - Associate"
+  ],
+  "skills": [
+    "Bitbucket",
+    "Looker",
+    "Communication",
+    "Problem Solving",
+    "Attention to Detail",
+    "KPI Development",
+    "Resource Planning",
+    "Risk Management",
+    "Vendor Management",
+    "Leadership",
+    "Budget Management",
+    "Jira",
+    "Data Warehousing",
+    "Emotional Intelligence",
+    "Data Analysis",
+    "Slack",
+    "Strategic Planning"
+  ]
+}

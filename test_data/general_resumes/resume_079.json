@@ -1,0 +1,61 @@
+{
+  "id": "resume_079",
+  "personal_info": {
+    "name": "Nancy Rivera",
+    "email": "nancy.rivera@protonmail.com",
+    "phone": "(510) 274-4831",
+    "location": "New York, NY",
+    "linkedin": "linkedin.com/in/nancy-rivera-7373"
+  },
+  "summary": "Accomplished digital marketing and brand strategy specialist with 3+ years of hands-on experience. Proficient in Lead Generation, Customer Segmentation, HubSpot, with excellent problem-solving and communication skills.",
+  "years_experience": 3,
+  "experience_level": "intermediate",
+  "role_category": "marketing",
+  "experience": [
+    {
+      "title": "Associate Marketing Manager",
+      "employer": "Digital Horizons",
+      "location": "San Francisco, CA",
+      "start_date": "June 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Improved email open rates by 40% through A/B testing",
+        "Improved email open rates by 36% through A/B testing"
+      ]
+    },
+    {
+      "title": "Mid-Level Content Strategist",
+      "employer": "Smart Analytics",
+      "location": "Pittsburgh, PA",
+      "start_date": "January 2021",
+      "end_date": "August 2023",
+      "achievements": [
+        "Led rebranding initiative across 3 marketing channels",
+        "Generated 500+ qualified leads through digital campaigns"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Digital Marketing",
+      "institution": "Arizona State University",
+      "graduation_year": 2021,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Certified Management Consultant (CMC)",
+    "Salesforce Administrator Certification",
+    "AWS Certified Solutions Architect - Professional"
+  ],
+  "skills": [
+    "Lead Generation",
+    "Customer Segmentation",
+    "HubSpot",
+    "Time Management",
+    "Critical Thinking",
+    "Budget Management",
+    "Requirements Gathering",
+    "Market Research"
+  ]
+}

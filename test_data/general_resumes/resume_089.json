@@ -1,0 +1,83 @@
+{
+  "id": "resume_089",
+  "personal_info": {
+    "name": "Donna Smith",
+    "email": "donnasmith@icloud.com",
+    "phone": "(239) 275-7062",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/donna-smith-8770"
+  },
+  "summary": "Strategic business analysis and process improvement specialist with 7+ years of hands-on experience. Proficient in GitHub, Kanban, Power BI, with excellent problem-solving and communication skills.",
+  "years_experience": 7,
+  "experience_level": "advanced",
+  "role_category": "analysis",
+  "experience": [
+    {
+      "title": "Business Analyst",
+      "employer": "Disrupt Technologies",
+      "location": "Atlanta, GA",
+      "start_date": "June 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Developed business cases securing $250K in project funding",
+        "Increased customer satisfaction scores by 22% through service improvements"
+      ]
+    },
+    {
+      "title": "Mid-Level Systems Analyst",
+      "employer": "Costco",
+      "location": "Chicago, IL",
+      "start_date": "January 2019",
+      "end_date": "December 2020",
+      "achievements": [
+        "Led process improvement initiative saving 20 hours weekly",
+        "Increased customer satisfaction scores by 17% through service improvements",
+        "Led process improvement initiative saving 36 hours weekly"
+      ]
+    },
+    {
+      "title": "Senior Financial Analyst",
+      "employer": "Cloudflare",
+      "location": "Chicago, IL",
+      "start_date": "June 2017",
+      "end_date": "December 2019",
+      "achievements": [
+        "Managed portfolio of 52 projects worth $20M",
+        "Directed cross-functional initiatives across 5 departments",
+        "Delivered 40% improvement in operational efficiency",
+        "Managed portfolio of 48 projects worth $1000M"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Finance",
+      "institution": "University of Washington",
+      "graduation_year": 2017,
+      "gpa": 3.61
+    }
+  ],
+  "certifications": [
+    "Certified Management Consultant (CMC)",
+    "Certified Scrum Product Owner (CSPO)"
+  ],
+  "skills": [
+    "GitHub",
+    "Kanban",
+    "Power BI",
+    "Communication",
+    "Data Visualization",
+    "Attention to Detail",
+    "Waterfall",
+    "VS Code",
+    "Vendor Management",
+    "Business Intelligence",
+    "Leadership",
+    "Budget Management",
+    "Cross-functional Collaboration",
+    "Emotional Intelligence",
+    "Slack",
+    "Negotiation",
+    "Project Management"
+  ]
+}

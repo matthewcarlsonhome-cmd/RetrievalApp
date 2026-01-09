@@ -1,0 +1,58 @@
+{
+  "id": "resume_006",
+  "personal_info": {
+    "name": "Michael Hill",
+    "email": "michael.hill@gmail.com",
+    "phone": "(284) 770-1273",
+    "location": "Seattle, WA",
+    "linkedin": "linkedin.com/in/michael-hill-6015"
+  },
+  "summary": "Proficient software development and engineering specialist with 3+ years of hands-on experience. Proficient in R, Creativity, Datadog, with excellent problem-solving and communication skills.",
+  "years_experience": 3,
+  "experience_level": "intermediate",
+  "role_category": "development",
+  "experience": [
+    {
+      "title": "Mid-Level DevOps Engineer",
+      "employer": "Growth Engine",
+      "location": "San Diego, CA",
+      "start_date": "June 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Designed and built RESTful APIs serving 100M+ requests daily",
+        "Designed and built RESTful APIs serving 5M+ requests daily"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "institution": "Boston University",
+      "graduation_year": 2024,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Data Science",
+      "institution": "University of Colorado",
+      "graduation_year": 2020,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Certified ScrumMaster (CSM)"
+  ],
+  "skills": [
+    "R",
+    "Creativity",
+    "Datadog",
+    "GitHub",
+    "Node.js",
+    "Go",
+    "Scikit-learn",
+    "Cassandra",
+    "Python",
+    "Grafana",
+    "Time Management",
+    "Azure"
+  ]
+}

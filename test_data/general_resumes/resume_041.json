@@ -1,0 +1,115 @@
+{
+  "id": "resume_041",
+  "personal_info": {
+    "name": "Jeffrey Scott",
+    "email": "jeffreyscott@yahoo.com",
+    "phone": "(526) 603-8588",
+    "location": "San Diego, CA",
+    "linkedin": "linkedin.com/in/jeffrey-scott-7925"
+  },
+  "summary": "Experienced data engineering and analytics professional bringing 9 years of expertise. Strong background in Java, Google Cloud Platform, Data Visualization, committed to driving innovation and business value.",
+  "years_experience": 9,
+  "experience_level": "advanced",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Data Scientist",
+      "employer": "Ford Motor",
+      "location": "Dallas, TX",
+      "start_date": "March 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Participated in code reviews, providing feedback on 47+ pull requests",
+        "Developed 1 new features for the company's main product",
+        "Improved code test coverage from 54% to 80%"
+      ]
+    },
+    {
+      "title": "Junior Data Analyst",
+      "employer": "Future Forward",
+      "location": "Portland, OR",
+      "start_date": "January 2022",
+      "end_date": "May 2023",
+      "achievements": [
+        "Created technical documentation for 3 internal tools",
+        "Participated in code reviews, providing feedback on 82+ pull requests"
+      ]
+    },
+    {
+      "title": "Analytics Engineer",
+      "employer": "JPMorgan Chase",
+      "location": "Pittsburgh, PA",
+      "start_date": "March 2019",
+      "end_date": "May 2022",
+      "achievements": [
+        "Mentored 4 junior developers in best practices",
+        "Led migration of 3 microservices to Kubernetes"
+      ]
+    },
+    {
+      "title": "Senior Quantitative Analyst",
+      "employer": "NVIDIA",
+      "location": "Phoenix, AZ",
+      "start_date": "March 2016",
+      "end_date": "February 2019",
+      "achievements": [
+        "Reduced infrastructure costs by $1000K annually through optimization",
+        "Established engineering best practices adopted by 24 teams",
+        "Led team of 40 engineers in delivering critical platform features",
+        "Architected scalable system handling 4M+ daily active users"
+      ]
+    },
+    {
+      "title": "Lead Data Architect",
+      "employer": "Twilio",
+      "location": "New York, NY",
+      "start_date": "September 2015",
+      "end_date": "December 2016",
+      "achievements": [
+        "Led team of 24 engineers in delivering critical platform features",
+        "Established engineering best practices adopted by 12 teams"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "institution": "UC Berkeley",
+      "graduation_year": 2016,
+      "gpa": 3.36
+    },
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "Carnegie Mellon University",
+      "graduation_year": 2013,
+      "gpa": 3.03
+    }
+  ],
+  "certifications": [
+    "PMP (Project Management Professional)",
+    "Google Cloud Professional Cloud Architect",
+    "AWS Certified Developer - Associate",
+    "Microsoft Certified: Azure Developer Associate",
+    "Azure Solutions Architect Expert"
+  ],
+  "skills": [
+    "Java",
+    "Google Cloud Platform",
+    "Data Visualization",
+    "Time Management",
+    "Business Intelligence",
+    "Critical Thinking",
+    "JavaScript",
+    ".NET Core",
+    "Prometheus",
+    "React",
+    "Communication",
+    "Decision Making",
+    "Apache Spark",
+    "DigitalOcean",
+    "Jira",
+    "Data Warehousing",
+    "Figma",
+    "Problem Solving"
+  ]
+}

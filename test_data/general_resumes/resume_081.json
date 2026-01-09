@@ -1,0 +1,80 @@
+{
+  "id": "resume_081",
+  "personal_info": {
+    "name": "David Martinez",
+    "email": "dmartinez@yahoo.com",
+    "phone": "(544) 993-5963",
+    "location": "Denver, CO",
+    "linkedin": "linkedin.com/in/david-martinez-1732"
+  },
+  "summary": "Expert professional with 9+ years of experience in product management and delivery. Skilled in Team Leadership, Creativity, Contract Negotiation, with a proven track record of delivering impactful results.",
+  "years_experience": 9,
+  "experience_level": "advanced",
+  "role_category": "product",
+  "experience": [
+    {
+      "title": "Mid-Level Product Manager",
+      "employer": "DataDriven Inc",
+      "location": "Seattle, WA",
+      "start_date": "March 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Developed business cases securing $100K in project funding",
+        "Developed business cases securing $250K in project funding"
+      ]
+    },
+    {
+      "title": "Staff Technical Program Manager",
+      "employer": "Google",
+      "location": "New York, NY",
+      "start_date": "June 2016",
+      "end_date": "February 2020",
+      "achievements": [
+        "Directed cross-functional initiatives across 5 departments",
+        "Managed portfolio of 24 projects worth $100M"
+      ]
+    },
+    {
+      "title": "Lead Product Owner",
+      "employer": "Adobe",
+      "location": "San Diego, CA",
+      "start_date": "June 2015",
+      "end_date": "December 2016",
+      "achievements": [
+        "Directed cross-functional initiatives across 6 departments",
+        "Managed portfolio of 44 projects worth $20M",
+        "Delivered 37% improvement in operational efficiency"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Economics",
+      "institution": "University of Colorado",
+      "graduation_year": 2012,
+      "gpa": 3.53
+    }
+  ],
+  "certifications": [
+    "PRINCE2 Foundation",
+    "Six Sigma Green Belt",
+    "AWS Certified Developer - Associate"
+  ],
+  "skills": [
+    "Team Leadership",
+    "Creativity",
+    "Contract Negotiation",
+    "Communication",
+    "Adaptability",
+    "Time Management",
+    "Business Intelligence",
+    "Critical Thinking",
+    "Budget Management",
+    "Confluence",
+    "IntelliJ IDEA",
+    "Data Analysis",
+    "Slack",
+    "Process Improvement",
+    "Project Management"
+  ]
+}

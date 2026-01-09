@@ -1,0 +1,113 @@
+{
+  "id": "resume_017",
+  "personal_info": {
+    "name": "Pamela Jackson",
+    "email": "pjackson@yahoo.com",
+    "phone": "(547) 439-2236",
+    "location": "Charlotte, NC",
+    "linkedin": "linkedin.com/in/pamela-jackson-1120"
+  },
+  "summary": "Experienced project management and operations professional bringing 10 years of expertise. Strong background in Teamwork, Bitbucket, Data Visualization, committed to driving innovation and business value.",
+  "years_experience": 10,
+  "experience_level": "advanced",
+  "role_category": "management",
+  "experience": [
+    {
+      "title": "Project Manager",
+      "employer": "Agile Systems",
+      "location": "Atlanta, GA",
+      "start_date": "January 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Supported 2 project implementations successfully",
+        "Analyzed 47 business reports to identify improvement opportunities",
+        "Created process documentation improving team efficiency by 33%"
+      ]
+    },
+    {
+      "title": "Entry-Level Operations Manager",
+      "employer": "Tech Pioneers",
+      "location": "Austin, TX",
+      "start_date": "March 2022",
+      "end_date": "February 2023",
+      "achievements": [
+        "Managed stakeholder communications for 8 departments",
+        "Supported 0 project implementations successfully"
+      ]
+    },
+    {
+      "title": "Senior Project Manager",
+      "employer": "Berkshire Hathaway",
+      "location": "Detroit, MI",
+      "start_date": "March 2018",
+      "end_date": "August 2022",
+      "achievements": [
+        "Directed cross-functional initiatives across 10 departments",
+        "Managed portfolio of 28 projects worth $100M",
+        "Delivered 40% improvement in operational efficiency",
+        "Directed cross-functional initiatives across 6 departments"
+      ]
+    },
+    {
+      "title": "Lead Project Manager",
+      "employer": "Walgreens",
+      "location": "Salt Lake City, UT",
+      "start_date": "September 2016",
+      "end_date": "May 2018",
+      "achievements": [
+        "Delivered 31% improvement in operational efficiency",
+        "Directed cross-functional initiatives across 6 departments"
+      ]
+    },
+    {
+      "title": "Lead Account Manager",
+      "employer": "Datadog",
+      "location": "Denver, CO",
+      "start_date": "June 2015",
+      "end_date": "December 2016",
+      "achievements": [
+        "Directed cross-functional initiatives across 9 departments",
+        "Directed cross-functional initiatives across 6 departments",
+        "Managed portfolio of 20 projects worth $1000M"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Management",
+      "institution": "Boston University",
+      "graduation_year": 2015,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Management Information Systems",
+      "institution": "University of Florida",
+      "graduation_year": 2011,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Google Analytics Certification",
+    "PMP (Project Management Professional)",
+    "Google Cloud Professional Cloud Architect"
+  ],
+  "skills": [
+    "Teamwork",
+    "Bitbucket",
+    "Data Visualization",
+    "Attention to Detail",
+    "KPI Development",
+    "Risk Management",
+    "Vendor Management",
+    "Scrum",
+    "VS Code",
+    "Business Intelligence",
+    "Leadership",
+    "Confluence",
+    "Conflict Resolution",
+    "Data Analysis",
+    "Emotional Intelligence",
+    "Requirements Gathering",
+    "Contract Negotiation"
+  ]
+}

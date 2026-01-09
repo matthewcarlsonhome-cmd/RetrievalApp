@@ -1,0 +1,34 @@
+{
+  "id": "resume_084",
+  "personal_info": {
+    "name": "Kathleen Kim",
+    "email": "kkim@outlook.com",
+    "phone": "(225) 852-4430",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/kathleen-kim-8720"
+  },
+  "summary": "Experienced product management and delivery professional bringing 0 years of expertise. Strong background in Power BI, Kanban, GitLab, committed to driving innovation and business value.",
+  "years_experience": 0,
+  "experience_level": "beginner",
+  "role_category": "product",
+  "experience": [],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Finance",
+      "institution": "University of Wisconsin",
+      "graduation_year": 2023,
+      "gpa": 3.16
+    }
+  ],
+  "certifications": [
+    "Certified Digital Marketing Professional"
+  ],
+  "skills": [
+    "Power BI",
+    "Kanban",
+    "GitLab",
+    "Cross-functional Collaboration",
+    "Teamwork",
+    "Requirements Gathering"
+  ]
+}

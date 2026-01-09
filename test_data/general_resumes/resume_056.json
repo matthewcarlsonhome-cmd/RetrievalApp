@@ -1,0 +1,71 @@
+{
+  "id": "resume_056",
+  "personal_info": {
+    "name": "Amy Thompson",
+    "email": "amy.thompson51@yahoo.com",
+    "phone": "(457) 440-8590",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/amy-thompson-7312"
+  },
+  "summary": "Strategic product management and delivery specialist with 7+ years of hands-on experience. Proficient in Creativity, GitHub, Contract Negotiation, with excellent problem-solving and communication skills.",
+  "years_experience": 7,
+  "experience_level": "advanced",
+  "role_category": "product",
+  "experience": [
+    {
+      "title": "Product Manager",
+      "employer": "Digital Horizons",
+      "location": "Miami, FL",
+      "start_date": "March 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Developed business cases securing $500K in project funding",
+        "Led process improvement initiative saving 27 hours weekly",
+        "Led process improvement initiative saving 28 hours weekly",
+        "Developed business cases securing $50K in project funding"
+      ]
+    },
+    {
+      "title": "Staff Technical Product Manager",
+      "employer": "Twilio",
+      "location": "Washington, DC",
+      "start_date": "June 2017",
+      "end_date": "August 2020",
+      "achievements": [
+        "Built and led team of 60 analysts and specialists",
+        "Built and led team of 32 analysts and specialists",
+        "Managed portfolio of 12 projects worth $200M",
+        "Managed portfolio of 52 projects worth $1000M"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Finance",
+      "institution": "New York University",
+      "graduation_year": 2017,
+      "gpa": 3.45
+    }
+  ],
+  "certifications": [
+    "Six Sigma Black Belt",
+    "Certified Business Analysis Professional (CBAP)",
+    "Azure Solutions Architect Expert"
+  ],
+  "skills": [
+    "Creativity",
+    "GitHub",
+    "Contract Negotiation",
+    "Git",
+    "Looker",
+    "Data Visualization",
+    "Communication",
+    "Resource Planning",
+    "VS Code",
+    "Tableau",
+    "Leadership",
+    "Budget Management",
+    "Active Listening",
+    "Executive Communication"
+  ]
+}

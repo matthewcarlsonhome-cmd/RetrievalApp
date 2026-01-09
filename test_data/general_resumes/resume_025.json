@@ -1,0 +1,83 @@
+{
+  "id": "resume_025",
+  "personal_info": {
+    "name": "Brandon Nelson",
+    "email": "brandon.nelson74@icloud.com",
+    "phone": "(602) 766-3998",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/brandon-nelson-1733"
+  },
+  "summary": "Experienced project management and operations professional bringing 9 years of expertise. Strong background in Kanban, Contract Negotiation, Bitbucket, committed to driving innovation and business value.",
+  "years_experience": 9,
+  "experience_level": "advanced",
+  "role_category": "management",
+  "experience": [
+    {
+      "title": "Operations Manager",
+      "employer": "ExxonMobil",
+      "location": "Salt Lake City, UT",
+      "start_date": "September 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Led process improvement initiative saving 24 hours weekly",
+        "Developed business cases securing $250K in project funding",
+        "Led process improvement initiative saving 49 hours weekly",
+        "Increased customer satisfaction scores by 29% through service improvements"
+      ]
+    },
+    {
+      "title": "Senior Customer Success Manager",
+      "employer": "Lowe's",
+      "location": "Denver, CO",
+      "start_date": "March 2018",
+      "end_date": "February 2020",
+      "achievements": [
+        "Directed cross-functional initiatives across 6 departments"
+      ]
+    },
+    {
+      "title": "Lead Account Manager",
+      "employer": "Walmart",
+      "location": "Austin, TX",
+      "start_date": "June 2015",
+      "end_date": "December 2018",
+      "achievements": [
+        "Built and led team of 28 analysts and specialists",
+        "Delivered 22% improvement in operational efficiency",
+        "Managed portfolio of 16 projects worth $100M"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Business Management",
+      "institution": "Harvard University",
+      "graduation_year": 2013,
+      "gpa": 3.6
+    }
+  ],
+  "certifications": [
+    "Salesforce Administrator Certification",
+    "PMP (Project Management Professional)",
+    "Certified Management Consultant (CMC)",
+    "Google Cloud Professional Cloud Architect",
+    "CompTIA Security+"
+  ],
+  "skills": [
+    "Kanban",
+    "Contract Negotiation",
+    "Bitbucket",
+    "GitLab",
+    "Git",
+    "Looker",
+    "Power BI",
+    "Decision Making",
+    "KPI Development",
+    "Presentation Skills",
+    "Vendor Management",
+    "Business Intelligence",
+    "Mentoring",
+    "Teamwork",
+    "Adaptability"
+  ]
+}

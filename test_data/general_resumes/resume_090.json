@@ -1,0 +1,36 @@
+{
+  "id": "resume_090",
+  "personal_info": {
+    "name": "Nicole Davis",
+    "email": "ndavis@yahoo.com",
+    "phone": "(224) 887-5485",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/nicole-davis-1346"
+  },
+  "summary": "Detail-oriented data engineering and analytics specialist with 0+ years of hands-on experience. Proficient in Java, Apache Spark, Attention to Detail, with excellent problem-solving and communication skills.",
+  "years_experience": 0,
+  "experience_level": "beginner",
+  "role_category": "data",
+  "experience": [],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Software Engineering",
+      "institution": "Carnegie Mellon University",
+      "graduation_year": 2022,
+      "gpa": 3.92
+    }
+  ],
+  "certifications": [
+    "ITIL Foundation",
+    "CompTIA Network+"
+  ],
+  "skills": [
+    "Java",
+    "Apache Spark",
+    "Attention to Detail",
+    "Terraform",
+    "Kotlin",
+    "Business Intelligence",
+    "Confluence"
+  ]
+}

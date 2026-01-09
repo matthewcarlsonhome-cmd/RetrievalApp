@@ -1,0 +1,109 @@
+{
+  "id": "resume_091",
+  "personal_info": {
+    "name": "Shirley Sharma",
+    "email": "shirley.sharma37@yahoo.com",
+    "phone": "(252) 755-9084",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/shirley-sharma-2298"
+  },
+  "summary": "Experienced business analysis and process improvement professional bringing 20 years of expertise. Strong background in Bitbucket, Git, Data Visualization, committed to driving innovation and business value.",
+  "years_experience": 20,
+  "experience_level": "expert",
+  "role_category": "analysis",
+  "experience": [
+    {
+      "title": "Mid-Level Business Analyst",
+      "employer": "JPMorgan Chase",
+      "location": "Washington, DC",
+      "start_date": "June 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Managed projects totaling $50K in annual budget",
+        "Developed business cases securing $50K in project funding",
+        "Developed business cases securing $100K in project funding"
+      ]
+    },
+    {
+      "title": "Process Analyst",
+      "employer": "Square",
+      "location": "Charlotte, NC",
+      "start_date": "January 2020",
+      "end_date": "August 2021",
+      "achievements": [
+        "Managed projects totaling $250K in annual budget",
+        "Developed business cases securing $250K in project funding",
+        "Increased customer satisfaction scores by 23% through service improvements"
+      ]
+    },
+    {
+      "title": "Staff Strategy Analyst",
+      "employer": "NVIDIA",
+      "location": "Dallas, TX",
+      "start_date": "September 2016",
+      "end_date": "December 2020",
+      "achievements": [
+        "Built and led team of 20 analysts and specialists",
+        "Built and led team of 24 analysts and specialists",
+        "Directed cross-functional initiatives across 6 departments",
+        "Delivered 25% improvement in operational efficiency"
+      ]
+    },
+    {
+      "title": "Staff Strategy Analyst",
+      "employer": "Wipro",
+      "location": "San Francisco, CA",
+      "start_date": "September 2012",
+      "end_date": "May 2016",
+      "achievements": [
+        "Transformed business operations resulting in 44% cost reduction",
+        "Transformed business operations resulting in 41% cost reduction",
+        "Transformed business operations resulting in 21% cost reduction",
+        "Transformed business operations resulting in 45% cost reduction"
+      ]
+    },
+    {
+      "title": "Staff Systems Analyst",
+      "employer": "Tech Mahindra",
+      "location": "Salt Lake City, UT",
+      "start_date": "September 2009",
+      "end_date": "December 2012",
+      "achievements": [
+        "Transformed business operations resulting in 24% cost reduction",
+        "Managed P&L responsibility for $500M business unit"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Management Information Systems",
+      "institution": "University of Illinois",
+      "graduation_year": 2003,
+      "gpa": 3.33
+    }
+  ],
+  "certifications": [
+    "SAFe Agilist Certification",
+    "Lean Six Sigma Certification",
+    "Six Sigma Black Belt",
+    "AWS Certified Solutions Architect - Associate",
+    "Azure Solutions Architect Expert"
+  ],
+  "skills": [
+    "Bitbucket",
+    "Git",
+    "Data Visualization",
+    "Decision Making",
+    "Problem Solving",
+    "Performance Metrics",
+    "Change Management",
+    "Risk Management",
+    "Vendor Management",
+    "VS Code",
+    "Business Intelligence",
+    "Active Listening",
+    "Mentoring",
+    "ROI Analysis",
+    "Negotiation"
+  ]
+}

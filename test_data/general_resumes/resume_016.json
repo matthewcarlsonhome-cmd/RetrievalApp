@@ -1,0 +1,32 @@
+{
+  "id": "resume_016",
+  "personal_info": {
+    "name": "Brandon Wong",
+    "email": "bwong@protonmail.com",
+    "phone": "(383) 482-9072",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/brandon-wong-7860"
+  },
+  "summary": "Detail-oriented business analysis and process improvement specialist with 0+ years of hands-on experience. Proficient in Git, ETL, Change Management, with excellent problem-solving and communication skills.",
+  "years_experience": 0,
+  "experience_level": "beginner",
+  "role_category": "analysis",
+  "experience": [],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Finance",
+      "institution": "Ohio State University",
+      "graduation_year": 2021,
+      "gpa": 3.32
+    }
+  ],
+  "certifications": [],
+  "skills": [
+    "Git",
+    "ETL",
+    "Change Management",
+    "Attention to Detail",
+    "Requirements Gathering",
+    "Process Improvement"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "job_001",
+  "title": "Director of Data Science",
+  "employer": "NextGen Software",
+  "employer_type": "startup",
+  "location": "Pittsburgh, PA",
+  "remote_option": "Hybrid",
+  "employment_type": "Full-time",
+  "contract_type": "Contract",
+  "posted_date": "2025-12-12",
+  "job_category": "director",
+  "seniority_level": "director",
+  "experience_required": {
+    "min_years": 12,
+    "max_years": 19
+  },
+  "description": "Join NextGen Software as a Director of Data Science and help shape the future of our organization. You'll build high-performing teams, drive strategic initiatives, and deliver exceptional results.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Lead, mentor, and develop team members",
+    "Set strategic direction and priorities for the team",
+    "Manage budgets, resources, and timelines",
+    "Build relationships with key stakeholders and partners",
+    "Drive organizational change and transformation initiatives",
+    "Recruit, hire, and retain top talent",
+    "Conduct performance reviews and career development discussions",
+    "Represent the team in executive meetings and steering committees"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree required; Master's degree preferred",
+    "experience": "12+ years of relevant experience",
+    "skills": [
+      "Performance Metrics",
+      "Contract Negotiation",
+      "Executive Communication",
+      "Risk Management",
+      "Cost-Benefit Analysis",
+      "Leadership",
+      "Presentation Skills",
+      "Teamwork",
+      "Emotional Intelligence"
+    ],
+    "certifications": [
+      "Google Analytics Certification"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "GitHub",
+      "Git",
+      "Jira"
+    ],
+    "certifications": [
+      "Lean Six Sigma Certification",
+      "PRINCE2 Practitioner"
+    ]
+  },
+  "salary": {
+    "type": "hourly",
+    "min": 115,
+    "max": 127,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Competitive hourly rate",
+    "Flexible schedule"
+  ]
+}

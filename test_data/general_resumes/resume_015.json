@@ -1,0 +1,65 @@
+{
+  "id": "resume_015",
+  "personal_info": {
+    "name": "Charles Lopez",
+    "email": "charleslopez@protonmail.com",
+    "phone": "(803) 759-4775",
+    "location": "Nashville, TN",
+    "linkedin": "linkedin.com/in/charles-lopez-3781"
+  },
+  "summary": "Accomplished business analysis and process improvement specialist with 8+ years of hands-on experience. Proficient in Team Leadership, Creativity, Bitbucket, with excellent problem-solving and communication skills.",
+  "years_experience": 8,
+  "experience_level": "advanced",
+  "role_category": "analysis",
+  "experience": [
+    {
+      "title": "Mid-Level Strategy Analyst",
+      "employer": "General Motors",
+      "location": "Pittsburgh, PA",
+      "start_date": "June 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Developed business cases securing $500K in project funding",
+        "Managed projects totaling $5K in annual budget"
+      ]
+    },
+    {
+      "title": "Senior Strategy Analyst",
+      "employer": "CVS Health",
+      "location": "San Francisco, CA",
+      "start_date": "January 2016",
+      "end_date": "December 2020",
+      "achievements": [
+        "Delivered 15% improvement in operational efficiency",
+        "Directed cross-functional initiatives across 9 departments"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "University of Washington",
+      "graduation_year": 2014,
+      "gpa": 3.0
+    }
+  ],
+  "certifications": [
+    "PRINCE2 Practitioner",
+    "Six Sigma Green Belt",
+    "Certified Kubernetes Administrator (CKA)"
+  ],
+  "skills": [
+    "Team Leadership",
+    "Creativity",
+    "Bitbucket",
+    "Problem Solving",
+    "ETL",
+    "Performance Metrics",
+    "Time Management",
+    "Resource Planning",
+    "VS Code",
+    "Vendor Management",
+    "Business Intelligence",
+    "Mentoring"
+  ]
+}

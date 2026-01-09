@@ -1,0 +1,46 @@
+{
+  "id": "resume_063",
+  "personal_info": {
+    "name": "Helen Garcia",
+    "email": "helen.garcia5@outlook.com",
+    "phone": "(256) 317-9312",
+    "location": "Portland, OR",
+    "linkedin": "linkedin.com/in/helen-garcia-7666"
+  },
+  "summary": "Eager professional with 2+ years of experience in IT infrastructure and cloud technologies. Skilled in Java, Google Cloud Platform, Pandas, with a proven track record of delivering impactful results.",
+  "years_experience": 2,
+  "experience_level": "beginner",
+  "role_category": "infrastructure",
+  "experience": [
+    {
+      "title": "Associate Database Administrator",
+      "employer": "DataDriven Inc",
+      "location": "San Francisco, CA",
+      "start_date": "March 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Resolved 18+ production issues within SLA targets",
+        "Created technical documentation for 2 internal tools"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Data Science",
+      "institution": "University of Illinois",
+      "graduation_year": 2021,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect - Professional"
+  ],
+  "skills": [
+    "Java",
+    "Google Cloud Platform",
+    "Pandas",
+    "Active Listening",
+    "IntelliJ IDEA",
+    "SQLite"
+  ]
+}

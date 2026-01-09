@@ -1,0 +1,34 @@
+{
+  "id": "resume_061",
+  "personal_info": {
+    "name": "Benjamin Thomas",
+    "email": "benjamin.thomas54@protonmail.com",
+    "phone": "(434) 442-4812",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/benjamin-thomas-5263"
+  },
+  "summary": "Enthusiastic product management and delivery specialist with 0+ years of hands-on experience. Proficient in Data Visualization, Waterfall, Budget Management, with excellent problem-solving and communication skills.",
+  "years_experience": 0,
+  "experience_level": "beginner",
+  "role_category": "product",
+  "experience": [],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "University of Colorado",
+      "graduation_year": 2022,
+      "gpa": 3.09
+    }
+  ],
+  "certifications": [
+    "Six Sigma Green Belt"
+  ],
+  "skills": [
+    "Data Visualization",
+    "Waterfall",
+    "Budget Management",
+    "Jira",
+    "Mentoring",
+    "Contract Negotiation"
+  ]
+}

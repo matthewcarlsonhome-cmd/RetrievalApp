@@ -1,0 +1,85 @@
+{
+  "id": "resume_073",
+  "personal_info": {
+    "name": "Ronald Rivera",
+    "email": "rrivera@gmail.com",
+    "phone": "(797) 613-1648",
+    "location": "Raleigh, NC",
+    "linkedin": "linkedin.com/in/ronald-rivera-6646"
+  },
+  "summary": "Seasoned project management and operations specialist with 8+ years of hands-on experience. Proficient in Creativity, Power BI, Cost-Benefit Analysis, with excellent problem-solving and communication skills.",
+  "years_experience": 8,
+  "experience_level": "advanced",
+  "role_category": "management",
+  "experience": [
+    {
+      "title": "Customer Success Manager",
+      "employer": "InnovateCo",
+      "location": "Pittsburgh, PA",
+      "start_date": "June 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Led process improvement initiative saving 49 hours weekly",
+        "Managed projects totaling $250K in annual budget",
+        "Developed business cases securing $500K in project funding"
+      ]
+    },
+    {
+      "title": "Lead Operations Manager",
+      "employer": "Splunk",
+      "location": "Portland, OR",
+      "start_date": "March 2018",
+      "end_date": "February 2021",
+      "achievements": [
+        "Built and led team of 12 analysts and specialists",
+        "Delivered 43% improvement in operational efficiency",
+        "Delivered 30% improvement in operational efficiency",
+        "Managed portfolio of 52 projects worth $100M"
+      ]
+    },
+    {
+      "title": "Staff Account Manager",
+      "employer": "Berkshire Hathaway",
+      "location": "New York, NY",
+      "start_date": "January 2016",
+      "end_date": "February 2018",
+      "achievements": [
+        "Delivered 15% improvement in operational efficiency",
+        "Directed cross-functional initiatives across 6 departments"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Finance",
+      "institution": "University of Southern California",
+      "graduation_year": 2016,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Salesforce Administrator Certification",
+    "PRINCE2 Foundation",
+    "Six Sigma Green Belt",
+    "Azure Solutions Architect Expert"
+  ],
+  "skills": [
+    "Creativity",
+    "Power BI",
+    "Cost-Benefit Analysis",
+    "ETL",
+    "Performance Metrics",
+    "Presentation Skills",
+    "Waterfall",
+    "Attention to Detail",
+    "VS Code",
+    "Postman",
+    "Cross-functional Collaboration",
+    "IntelliJ IDEA",
+    "Data Warehousing",
+    "Conflict Resolution",
+    "Agile Methodology",
+    "Adaptability",
+    "Project Management"
+  ]
+}

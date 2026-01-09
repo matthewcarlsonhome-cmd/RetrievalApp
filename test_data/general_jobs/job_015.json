@@ -1,0 +1,74 @@
+{
+  "id": "job_015",
+  "title": "Senior IT Manager",
+  "employer": "Berkshire Hathaway",
+  "employer_type": "fortune500",
+  "location": "San Diego, CA",
+  "remote_option": "Remote",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2025-12-14",
+  "job_category": "manager",
+  "seniority_level": "manager",
+  "experience_required": {
+    "min_years": 5,
+    "max_years": 15
+  },
+  "description": "Join Berkshire Hathaway as a Senior IT Manager and help shape the future of our organization. You'll build high-performing teams, drive strategic initiatives, and deliver exceptional results.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Lead, mentor, and develop team members",
+    "Set strategic direction and priorities for the team",
+    "Manage budgets, resources, and timelines",
+    "Build relationships with key stakeholders and partners",
+    "Drive organizational change and transformation initiatives",
+    "Recruit, hire, and retain top talent",
+    "Conduct performance reviews and career development discussions",
+    "Represent the team in executive meetings and steering committees"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "5+ years of relevant experience",
+    "skills": [
+      "ROI Analysis",
+      "Team Leadership",
+      "Stakeholder Management",
+      "Performance Metrics",
+      "Contract Negotiation",
+      "Teamwork",
+      "Mentoring",
+      "Attention to Detail",
+      "Leadership"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "GitLab",
+      "Bitbucket",
+      "VS Code"
+    ],
+    "certifications": [
+      "Certified Management Consultant (CMC)",
+      "Six Sigma Green Belt"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 148066,
+    "max": 186538,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Parental leave",
+    "Commuter benefits",
+    "Unlimited PTO",
+    "Life and disability insurance",
+    "Home office stipend",
+    "Remote work flexibility",
+    "Professional development budget",
+    "Stock options/equity grants"
+  ]
+}

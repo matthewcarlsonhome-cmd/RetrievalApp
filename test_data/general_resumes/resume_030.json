@@ -1,0 +1,85 @@
+{
+  "id": "resume_030",
+  "personal_info": {
+    "name": "Jason Young",
+    "email": "jasonyoung@icloud.com",
+    "phone": "(965) 765-9451",
+    "location": "San Francisco, CA",
+    "linkedin": "linkedin.com/in/jason-young-7365"
+  },
+  "summary": "Strategic software development and engineering specialist with 9+ years of hands-on experience. Proficient in PostgreSQL, Time Management, Critical Thinking, with excellent problem-solving and communication skills.",
+  "years_experience": 9,
+  "experience_level": "advanced",
+  "role_category": "development",
+  "experience": [
+    {
+      "title": "Junior Machine Learning Engineer",
+      "employer": "Ford Motor",
+      "location": "Salt Lake City, UT",
+      "start_date": "September 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Improved code test coverage from 51% to 85%",
+        "Participated in code reviews, providing feedback on 52+ pull requests",
+        "Participated in code reviews, providing feedback on 34+ pull requests"
+      ]
+    },
+    {
+      "title": "Mid-Level Platform Engineer",
+      "employer": "Tech Pioneers",
+      "location": "Philadelphia, PA",
+      "start_date": "January 2019",
+      "end_date": "February 2023",
+      "achievements": [
+        "Reduced application load time by 35% through performance optimization",
+        "Designed and built RESTful APIs serving 5M+ requests daily"
+      ]
+    },
+    {
+      "title": "Lead Site Reliability Engineer",
+      "employer": "Ford Motor",
+      "location": "Washington, DC",
+      "start_date": "September 2015",
+      "end_date": "May 2019",
+      "achievements": [
+        "Reduced infrastructure costs by $1000K annually through optimization",
+        "Established engineering best practices adopted by 40 teams",
+        "Reduced infrastructure costs by $2000K annually through optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "institution": "University of Wisconsin",
+      "graduation_year": 2015,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Data Science",
+      "institution": "Cornell University",
+      "graduation_year": 2013,
+      "gpa": 3.86
+    }
+  ],
+  "certifications": [
+    "Azure Administrator Associate",
+    "AWS Certified Solutions Architect - Associate"
+  ],
+  "skills": [
+    "PostgreSQL",
+    "Time Management",
+    "Critical Thinking",
+    "Google Cloud Functions",
+    "Slack",
+    "Creativity",
+    "Scala",
+    "Go",
+    "Oracle",
+    "Figma",
+    "Azure Functions",
+    "FastAPI",
+    "Swift",
+    "Grafana"
+  ]
+}

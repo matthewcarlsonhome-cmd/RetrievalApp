@@ -1,0 +1,78 @@
+{
+  "id": "resume_065",
+  "personal_info": {
+    "name": "George Davis",
+    "email": "georgedavis@gmail.com",
+    "phone": "(890) 807-2385",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/george-davis-1809"
+  },
+  "summary": "Experienced business analysis and process improvement professional bringing 5 years of expertise. Strong background in Team Leadership, GitHub, Power BI, committed to driving innovation and business value.",
+  "years_experience": 5,
+  "experience_level": "intermediate",
+  "role_category": "analysis",
+  "experience": [
+    {
+      "title": "Junior Process Analyst",
+      "employer": "Scale Up Inc",
+      "location": "Austin, TX",
+      "start_date": "September 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Managed stakeholder communications for 5 departments",
+        "Created process documentation improving team efficiency by 17%",
+        "Analyzed 26 business reports to identify improvement opportunities"
+      ]
+    },
+    {
+      "title": "Mid-Level Systems Analyst",
+      "employer": "Growth Engine",
+      "location": "Pittsburgh, PA",
+      "start_date": "June 2020",
+      "end_date": "May 2023",
+      "achievements": [
+        "Developed business cases securing $250K in project funding",
+        "Increased customer satisfaction scores by 15% through service improvements",
+        "Developed business cases securing $50K in project funding",
+        "Managed projects totaling $50K in annual budget"
+      ]
+    },
+    {
+      "title": "Operations Analyst",
+      "employer": "Procter & Gamble",
+      "location": "Austin, TX",
+      "start_date": "September 2019",
+      "end_date": "August 2020",
+      "achievements": [
+        "Developed business cases securing $100K in project funding",
+        "Managed projects totaling $250K in annual budget",
+        "Led process improvement initiative saving 11 hours weekly"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Economics",
+      "institution": "MIT",
+      "graduation_year": 2017,
+      "gpa": 3.09
+    }
+  ],
+  "certifications": [
+    "Certified Scrum Product Owner (CSPO)"
+  ],
+  "skills": [
+    "Team Leadership",
+    "GitHub",
+    "Power BI",
+    "Looker",
+    "Data Visualization",
+    "Communication",
+    "VS Code",
+    "Budget Management",
+    "Cross-functional Collaboration",
+    "Jira",
+    "Active Listening",
+    "Stakeholder Management"
+  ]
+}

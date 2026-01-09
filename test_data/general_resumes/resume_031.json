@@ -1,0 +1,94 @@
+{
+  "id": "resume_031",
+  "personal_info": {
+    "name": "Michelle Thomas",
+    "email": "mthomas@protonmail.com",
+    "phone": "(465) 574-1439",
+    "location": "Portland, OR",
+    "linkedin": "linkedin.com/in/michelle-thomas-7804"
+  },
+  "summary": "Accomplished business analysis and process improvement specialist with 10+ years of hands-on experience. Proficient in Teamwork, GitHub, Power BI, with excellent problem-solving and communication skills.",
+  "years_experience": 10,
+  "experience_level": "advanced",
+  "role_category": "analysis",
+  "experience": [
+    {
+      "title": "Entry-Level Systems Analyst",
+      "employer": "AI Dynamics",
+      "location": "Dallas, TX",
+      "start_date": "June 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Managed stakeholder communications for 4 departments",
+        "Supported 0 project implementations successfully",
+        "Created process documentation improving team efficiency by 27%"
+      ]
+    },
+    {
+      "title": "Mid-Level Process Analyst",
+      "employer": "Scale Up Inc",
+      "location": "Miami, FL",
+      "start_date": "June 2021",
+      "end_date": "August 2023",
+      "achievements": [
+        "Developed business cases securing $250K in project funding",
+        "Increased customer satisfaction scores by 29% through service improvements"
+      ]
+    },
+    {
+      "title": "Staff Financial Analyst",
+      "employer": "UnitedHealth Group",
+      "location": "San Francisco, CA",
+      "start_date": "September 2017",
+      "end_date": "May 2021",
+      "achievements": [
+        "Managed portfolio of 32 projects worth $100M",
+        "Delivered 32% improvement in operational efficiency",
+        "Built and led team of 48 analysts and specialists"
+      ]
+    },
+    {
+      "title": "Senior Financial Analyst",
+      "employer": "Ford Motor",
+      "location": "Phoenix, AZ",
+      "start_date": "September 2014",
+      "end_date": "February 2017",
+      "achievements": [
+        "Delivered 33% improvement in operational efficiency",
+        "Managed portfolio of 40 projects worth $1000M"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "New York University",
+      "graduation_year": 2014,
+      "gpa": 3.11
+    }
+  ],
+  "certifications": [
+    "Lean Six Sigma Certification",
+    "HubSpot Inbound Marketing Certification",
+    "Google Analytics Certification",
+    "Azure Administrator Associate",
+    "AWS Certified Solutions Architect - Associate"
+  ],
+  "skills": [
+    "Teamwork",
+    "GitHub",
+    "Power BI",
+    "Attention to Detail",
+    "Risk Management",
+    "Scrum",
+    "Critical Thinking",
+    "Cross-functional Collaboration",
+    "Business Analysis",
+    "IntelliJ IDEA",
+    "Confluence",
+    "Data Analysis",
+    "Data Warehousing",
+    "Conflict Resolution",
+    "Requirements Gathering"
+  ]
+}

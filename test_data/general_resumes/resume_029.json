@@ -1,0 +1,63 @@
+{
+  "id": "resume_029",
+  "personal_info": {
+    "name": "Eric Nguyen",
+    "email": "ericnguyen@protonmail.com",
+    "phone": "(353) 639-9567",
+    "location": "Philadelphia, PA",
+    "linkedin": "linkedin.com/in/eric-nguyen-7732"
+  },
+  "summary": "Experienced business analysis and process improvement professional bringing 3 years of expertise. Strong background in GitHub, Power BI, Data Visualization, committed to driving innovation and business value.",
+  "years_experience": 3,
+  "experience_level": "intermediate",
+  "role_category": "analysis",
+  "experience": [
+    {
+      "title": "Associate Strategy Analyst",
+      "employer": "AI Dynamics",
+      "location": "Raleigh, NC",
+      "start_date": "June 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Supported 2 project implementations successfully",
+        "Analyzed 26 business reports to identify improvement opportunities",
+        "Created process documentation improving team efficiency by 22%"
+      ]
+    },
+    {
+      "title": "Strategy Analyst",
+      "employer": "CloudFirst Solutions",
+      "location": "Dallas, TX",
+      "start_date": "June 2021",
+      "end_date": "May 2023",
+      "achievements": [
+        "Increased customer satisfaction scores by 39% through service improvements",
+        "Led process improvement initiative saving 26 hours weekly",
+        "Managed projects totaling $50K in annual budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Finance",
+      "institution": "Purdue University",
+      "graduation_year": 2019,
+      "gpa": 3.37
+    }
+  ],
+  "certifications": [
+    "SAFe Agilist Certification",
+    "Certified Financial Analyst (CFA)",
+    "Azure Solutions Architect Expert"
+  ],
+  "skills": [
+    "GitHub",
+    "Power BI",
+    "Data Visualization",
+    "Attention to Detail",
+    "KPI Development",
+    "Vendor Management",
+    "Leadership",
+    "Slack"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "resume_014",
+  "personal_info": {
+    "name": "Gregory Flores",
+    "email": "gflores@gmail.com",
+    "phone": "(953) 850-5465",
+    "location": "Pittsburgh, PA",
+    "linkedin": "linkedin.com/in/gregory-flores-4996"
+  },
+  "summary": "Accomplished professional with 3+ years of experience in data engineering and analytics. Skilled in Power BI, NumPy, Presentation Skills, with a proven track record of delivering impactful results.",
+  "years_experience": 3,
+  "experience_level": "intermediate",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Entry-Level Business Intelligence Analyst",
+      "employer": "Scale Up Inc",
+      "location": "Phoenix, AZ",
+      "start_date": "June 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Participated in code reviews, providing feedback on 76+ pull requests",
+        "Participated in code reviews, providing feedback on 45+ pull requests",
+        "Improved code test coverage from 41% to 89%",
+        "Improved code test coverage from 60% to 92%"
+      ]
+    },
+    {
+      "title": "Analytics Engineer",
+      "employer": "Smart Analytics",
+      "location": "Dallas, TX",
+      "start_date": "September 2021",
+      "end_date": "May 2022",
+      "achievements": [
+        "Mentored 7 junior developers in best practices",
+        "Designed and built RESTful APIs serving 1M+ requests daily",
+        "Reduced application load time by 19% through performance optimization",
+        "Led migration of 5 microservices to Kubernetes"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "UCLA",
+      "graduation_year": 2020,
+      "gpa": 3.57
+    }
+  ],
+  "certifications": [
+    "PMP (Project Management Professional)",
+    "HashiCorp Certified: Terraform Associate",
+    "CompTIA Network+"
+  ],
+  "skills": [
+    "Power BI",
+    "NumPy",
+    "Presentation Skills",
+    "Problem Solving",
+    "C#",
+    "Neo4j",
+    "AWS",
+    "Confluence"
+  ]
+}

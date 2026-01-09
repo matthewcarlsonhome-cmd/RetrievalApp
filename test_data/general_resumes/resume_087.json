@@ -1,0 +1,80 @@
+{
+  "id": "resume_087",
+  "personal_info": {
+    "name": "Amy Wright",
+    "email": "amy.wright14@gmail.com",
+    "phone": "(962) 502-2897",
+    "location": "Portland, OR",
+    "linkedin": "linkedin.com/in/amy-wright-1141"
+  },
+  "summary": "Strategic business analysis and process improvement specialist with 6+ years of hands-on experience. Proficient in Communication, GitLab, Data Visualization, with excellent problem-solving and communication skills.",
+  "years_experience": 6,
+  "experience_level": "advanced",
+  "role_category": "analysis",
+  "experience": [
+    {
+      "title": "Financial Analyst",
+      "employer": "Berkshire Hathaway",
+      "location": "Chicago, IL",
+      "start_date": "September 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Led process improvement initiative saving 25 hours weekly",
+        "Increased customer satisfaction scores by 20% through service improvements",
+        "Led process improvement initiative saving 19 hours weekly"
+      ]
+    },
+    {
+      "title": "Lead Financial Analyst",
+      "employer": "Square",
+      "location": "Boston, MA",
+      "start_date": "June 2018",
+      "end_date": "December 2021",
+      "achievements": [
+        "Built and led team of 24 analysts and specialists",
+        "Delivered 38% improvement in operational efficiency",
+        "Managed portfolio of 40 projects worth $1000M",
+        "Directed cross-functional initiatives across 4 departments"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Business Administration (MBA)",
+      "institution": "Duke University",
+      "graduation_year": 2021,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Management Information Systems",
+      "institution": "UC Berkeley",
+      "graduation_year": 2016,
+      "gpa": 3.42
+    }
+  ],
+  "certifications": [
+    "Salesforce Administrator Certification",
+    "HubSpot Inbound Marketing Certification",
+    "Certified Digital Marketing Professional",
+    "CompTIA Network+"
+  ],
+  "skills": [
+    "Communication",
+    "GitLab",
+    "Data Visualization",
+    "Problem Solving",
+    "Change Management",
+    "Resource Planning",
+    "Attention to Detail",
+    "VS Code",
+    "Scrum",
+    "Business Intelligence",
+    "Postman",
+    "Leadership",
+    "Cross-functional Collaboration",
+    "Data Warehousing",
+    "Emotional Intelligence",
+    "Process Improvement",
+    "Contract Negotiation"
+  ]
+}

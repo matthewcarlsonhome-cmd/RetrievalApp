@@ -1,0 +1,60 @@
+{
+  "id": "resume_054",
+  "personal_info": {
+    "name": "George King",
+    "email": "george.king10@icloud.com",
+    "phone": "(689) 798-6673",
+    "location": "Atlanta, GA",
+    "linkedin": "linkedin.com/in/george-king-8694"
+  },
+  "summary": "Proficient IT infrastructure and cloud technologies specialist with 5+ years of hands-on experience. Proficient in Teamwork, Jenkins, Python, with excellent problem-solving and communication skills.",
+  "years_experience": 5,
+  "experience_level": "intermediate",
+  "role_category": "infrastructure",
+  "experience": [
+    {
+      "title": "Mid-Level Solutions Architect",
+      "employer": "Disrupt Technologies",
+      "location": "Detroit, MI",
+      "start_date": "January 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Led migration of 10 microservices to Kubernetes",
+        "Designed and built RESTful APIs serving 1M+ requests daily"
+      ]
+    },
+    {
+      "title": "Technical Architect",
+      "employer": "Splunk",
+      "location": "Pittsburgh, PA",
+      "start_date": "June 2019",
+      "end_date": "December 2020",
+      "achievements": [
+        "Reduced application load time by 17% through performance optimization",
+        "Designed and built RESTful APIs serving 10M+ requests daily"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "University of Southern California",
+      "graduation_year": 2018,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Azure Solutions Architect Expert",
+    "Certified Kubernetes Administrator (CKA)"
+  ],
+  "skills": [
+    "Teamwork",
+    "Jenkins",
+    "Python",
+    "Spring Boot",
+    "Neo4j",
+    "Postman",
+    "Active Listening",
+    "IntelliJ IDEA"
+  ]
+}

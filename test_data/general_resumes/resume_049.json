@@ -1,0 +1,116 @@
+{
+  "id": "resume_049",
+  "personal_info": {
+    "name": "Mary Kumar",
+    "email": "mkumar@gmail.com",
+    "phone": "(529) 279-3569",
+    "location": "Miami, FL",
+    "linkedin": "linkedin.com/in/mary-kumar-4291"
+  },
+  "summary": "Visionary professional with 16+ years of experience in project management and operations. Skilled in Team Leadership, Bitbucket, Data Visualization, with a proven track record of delivering impactful results.",
+  "years_experience": 16,
+  "experience_level": "expert",
+  "role_category": "management",
+  "experience": [
+    {
+      "title": "Account Manager",
+      "employer": "Walmart",
+      "location": "Austin, TX",
+      "start_date": "June 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Developed business cases securing $250K in project funding",
+        "Led process improvement initiative saving 11 hours weekly"
+      ]
+    },
+    {
+      "title": "Lead Project Manager",
+      "employer": "Walgreens",
+      "location": "Detroit, MI",
+      "start_date": "September 2018",
+      "end_date": "August 2020",
+      "achievements": [
+        "Built and led team of 20 analysts and specialists",
+        "Delivered 34% improvement in operational efficiency",
+        "Managed portfolio of 60 projects worth $1000M"
+      ]
+    },
+    {
+      "title": "Senior Account Manager",
+      "employer": "Ford Motor",
+      "location": "Austin, TX",
+      "start_date": "January 2014",
+      "end_date": "December 2018",
+      "achievements": [
+        "Managed portfolio of 24 projects worth $100M",
+        "Managed portfolio of 56 projects worth $100M",
+        "Managed portfolio of 52 projects worth $200M",
+        "Directed cross-functional initiatives across 7 departments"
+      ]
+    },
+    {
+      "title": "Principal Engagement Manager",
+      "employer": "Twilio",
+      "location": "San Jose, CA",
+      "start_date": "June 2013",
+      "end_date": "December 2014",
+      "achievements": [
+        "Managed P&L responsibility for $500M business unit",
+        "Drove strategic initiatives contributing $100M to bottom line",
+        "Drove strategic initiatives contributing $1000M to bottom line"
+      ]
+    },
+    {
+      "title": "Staff Operations Manager",
+      "employer": "JPMorgan Chase",
+      "location": "Detroit, MI",
+      "start_date": "June 2009",
+      "end_date": "May 2013",
+      "achievements": [
+        "Drove strategic initiatives contributing $1000M to bottom line",
+        "Managed P&L responsibility for $5000M business unit",
+        "Drove strategic initiatives contributing $100M to bottom line"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Management",
+      "institution": "University of Washington",
+      "graduation_year": 2013,
+      "gpa": 3.82
+    },
+    {
+      "degree": "Bachelor of Science in Finance",
+      "institution": "Stanford University",
+      "graduation_year": 2008,
+      "gpa": 3.15
+    }
+  ],
+  "certifications": [
+    "SAFe Agilist Certification",
+    "Certified Digital Marketing Professional",
+    "Lean Six Sigma Certification",
+    "CompTIA Network+",
+    "Azure Administrator Associate"
+  ],
+  "skills": [
+    "Team Leadership",
+    "Bitbucket",
+    "Data Visualization",
+    "Presentation Skills",
+    "Problem Solving",
+    "Resource Planning",
+    "VS Code",
+    "Vendor Management",
+    "Scrum",
+    "Critical Thinking",
+    "Budget Management",
+    "Active Listening",
+    "IntelliJ IDEA",
+    "Data Analysis",
+    "Agile Methodology",
+    "Negotiation",
+    "Tableau"
+  ]
+}

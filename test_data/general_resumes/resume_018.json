@@ -1,0 +1,107 @@
+{
+  "id": "resume_018",
+  "personal_info": {
+    "name": "Shirley White",
+    "email": "swhite@outlook.com",
+    "phone": "(422) 768-7300",
+    "location": "San Diego, CA",
+    "linkedin": "linkedin.com/in/shirley-white-6409"
+  },
+  "summary": "Expert IT infrastructure and cloud technologies specialist with 9+ years of hands-on experience. Proficient in Java, PostgreSQL, Time Management, with excellent problem-solving and communication skills.",
+  "years_experience": 9,
+  "experience_level": "advanced",
+  "role_category": "infrastructure",
+  "experience": [
+    {
+      "title": "Technical Architect",
+      "employer": "CVS Health",
+      "location": "Miami, FL",
+      "start_date": "June 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Created technical documentation for 1 internal tools",
+        "Improved code test coverage from 42% to 86%",
+        "Improved code test coverage from 49% to 91%",
+        "Created technical documentation for 2 internal tools"
+      ]
+    },
+    {
+      "title": "Cloud Engineer",
+      "employer": "General Motors",
+      "location": "Denver, CO",
+      "start_date": "September 2020",
+      "end_date": "December 2022",
+      "achievements": [
+        "Designed and built RESTful APIs serving 100M+ requests daily",
+        "Implemented CI/CD pipeline reducing deployment time by 28%",
+        "Implemented CI/CD pipeline reducing deployment time by 22%"
+      ]
+    },
+    {
+      "title": "Lead Infrastructure Engineer",
+      "employer": "Dropbox",
+      "location": "Charlotte, NC",
+      "start_date": "June 2018",
+      "end_date": "May 2020",
+      "achievements": [
+        "Reduced infrastructure costs by $2000K annually through optimization",
+        "Led team of 44 engineers in delivering critical platform features"
+      ]
+    },
+    {
+      "title": "Staff Network Engineer",
+      "employer": "Pfizer",
+      "location": "Nashville, TN",
+      "start_date": "September 2017",
+      "end_date": "August 2018",
+      "achievements": [
+        "Led team of 24 engineers in delivering critical platform features",
+        "Reduced infrastructure costs by $4000K annually through optimization",
+        "Established engineering best practices adopted by 32 teams"
+      ]
+    },
+    {
+      "title": "Lead Systems Administrator",
+      "employer": "Atlassian",
+      "location": "Washington, DC",
+      "start_date": "January 2015",
+      "end_date": "May 2017",
+      "achievements": [
+        "Led team of 48 engineers in delivering critical platform features",
+        "Established engineering best practices adopted by 20 teams"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Data Science",
+      "institution": "University of Wisconsin",
+      "graduation_year": 2015,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Azure Administrator Associate",
+    "Cisco Certified Network Associate (CCNA)",
+    "Professional Scrum Master (PSM I)",
+    "CompTIA A+",
+    "Certified ScrumMaster (CSM)"
+  ],
+  "skills": [
+    "Java",
+    "PostgreSQL",
+    "Time Management",
+    "Google Cloud Functions",
+    "Emotional Intelligence",
+    "Teamwork",
+    "Express.js",
+    "Creativity",
+    "Splunk",
+    "Oracle",
+    "GitLab",
+    "Ruby",
+    "Angular",
+    "Pandas",
+    "ELK Stack"
+  ]
+}

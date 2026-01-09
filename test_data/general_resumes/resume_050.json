@@ -1,0 +1,34 @@
+{
+  "id": "resume_050",
+  "personal_info": {
+    "name": "Helen Walker",
+    "email": "helen.walker@icloud.com",
+    "phone": "(644) 889-7288",
+    "location": "San Francisco, CA",
+    "linkedin": "linkedin.com/in/helen-walker-3228"
+  },
+  "summary": "Eager software development and engineering specialist with 0+ years of hands-on experience. Proficient in R, Git, Decision Making, with excellent problem-solving and communication skills.",
+  "years_experience": 0,
+  "experience_level": "beginner",
+  "role_category": "development",
+  "experience": [],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "Arizona State University",
+      "graduation_year": 2023,
+      "gpa": null
+    }
+  ],
+  "certifications": [],
+  "skills": [
+    "R",
+    "Git",
+    "Decision Making",
+    "C#",
+    "VS Code",
+    "Azure Functions",
+    "CloudFormation",
+    "TensorFlow"
+  ]
+}

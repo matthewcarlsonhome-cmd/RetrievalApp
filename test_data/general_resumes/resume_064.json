@@ -1,0 +1,98 @@
+{
+  "id": "resume_064",
+  "personal_info": {
+    "name": "Andrew Patel",
+    "email": "apatel@outlook.com",
+    "phone": "(296) 546-7744",
+    "location": "Miami, FL",
+    "linkedin": "linkedin.com/in/andrew-patel-9136"
+  },
+  "summary": "Strategic project management and operations specialist with 10+ years of hands-on experience. Proficient in Team Leadership, Creativity, Bitbucket, with excellent problem-solving and communication skills.",
+  "years_experience": 10,
+  "experience_level": "advanced",
+  "role_category": "management",
+  "experience": [
+    {
+      "title": "Delivery Manager",
+      "employer": "InnovateCo",
+      "location": "Atlanta, GA",
+      "start_date": "January 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Increased customer satisfaction scores by 25% through service improvements",
+        "Increased customer satisfaction scores by 32% through service improvements"
+      ]
+    },
+    {
+      "title": "Staff Account Manager",
+      "employer": "ServiceNow",
+      "location": "Pittsburgh, PA",
+      "start_date": "January 2017",
+      "end_date": "February 2020",
+      "achievements": [
+        "Built and led team of 60 analysts and specialists",
+        "Built and led team of 20 analysts and specialists",
+        "Delivered 43% improvement in operational efficiency"
+      ]
+    },
+    {
+      "title": "Lead Project Manager",
+      "employer": "Walgreens",
+      "location": "Raleigh, NC",
+      "start_date": "March 2015",
+      "end_date": "May 2017",
+      "achievements": [
+        "Delivered 43% improvement in operational efficiency",
+        "Built and led team of 36 analysts and specialists",
+        "Managed portfolio of 12 projects worth $100M"
+      ]
+    },
+    {
+      "title": "Senior Operations Manager",
+      "employer": "Johnson & Johnson",
+      "location": "Denver, CO",
+      "start_date": "March 2014",
+      "end_date": "August 2015",
+      "achievements": [
+        "Built and led team of 40 analysts and specialists",
+        "Directed cross-functional initiatives across 4 departments",
+        "Delivered 23% improvement in operational efficiency"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Finance",
+      "institution": "Georgia Tech",
+      "graduation_year": 2017,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Finance",
+      "institution": "Boston University",
+      "graduation_year": 2013,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Google Analytics Certification",
+    "Lean Six Sigma Certification",
+    "Certified Financial Analyst (CFA)",
+    "CompTIA Security+",
+    "Azure Solutions Architect Expert"
+  ],
+  "skills": [
+    "Team Leadership",
+    "Creativity",
+    "Bitbucket",
+    "Data Visualization",
+    "ETL",
+    "Performance Metrics",
+    "VS Code",
+    "Critical Thinking",
+    "Leadership",
+    "Data Warehousing",
+    "IntelliJ IDEA",
+    "Teamwork"
+  ]
+}

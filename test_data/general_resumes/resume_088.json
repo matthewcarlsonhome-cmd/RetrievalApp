@@ -1,0 +1,55 @@
+{
+  "id": "resume_088",
+  "personal_info": {
+    "name": "Pamela Wilson",
+    "email": "pamelawilson@yahoo.com",
+    "phone": "(995) 856-2948",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/pamela-wilson-1606"
+  },
+  "summary": "Skilled project management and operations specialist with 3+ years of hands-on experience. Proficient in Creativity, Kanban, Bitbucket, with excellent problem-solving and communication skills.",
+  "years_experience": 3,
+  "experience_level": "intermediate",
+  "role_category": "management",
+  "experience": [
+    {
+      "title": "Mid-Level Engagement Manager",
+      "employer": "ExxonMobil",
+      "location": "Phoenix, AZ",
+      "start_date": "January 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Led process improvement initiative saving 29 hours weekly",
+        "Developed business cases securing $500K in project funding",
+        "Developed business cases securing $50K in project funding"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Finance",
+      "institution": "Ohio State University",
+      "graduation_year": 2018,
+      "gpa": 3.02
+    }
+  ],
+  "certifications": [
+    "HubSpot Inbound Marketing Certification",
+    "PRINCE2 Practitioner",
+    "AWS Certified Solutions Architect - Associate"
+  ],
+  "skills": [
+    "Creativity",
+    "Kanban",
+    "Bitbucket",
+    "Git",
+    "Looker",
+    "Problem Solving",
+    "Scrum",
+    "Vendor Management",
+    "Business Intelligence",
+    "Budget Management",
+    "IntelliJ IDEA",
+    "Agile Methodology"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "job_009",
+  "title": "Senior Marketing Analyst",
+  "employer": "Tata Consultancy Services",
+  "employer_type": "consulting",
+  "location": "San Diego, CA",
+  "remote_option": "Remote",
+  "employment_type": "Full-time",
+  "contract_type": "Contract",
+  "posted_date": "2025-12-14",
+  "job_category": "marketing",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 1,
+    "max_years": 11
+  },
+  "description": "Join our marketing team at Tata Consultancy Services as a Senior Marketing Analyst. You'll have the opportunity to shape our brand story and drive customer acquisition through innovative marketing strategies.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Develop and execute marketing strategies and campaigns",
+    "Analyze campaign performance and optimize for results",
+    "Create compelling content for various channels",
+    "Manage marketing budget and track ROI",
+    "Collaborate with sales and product teams on go-to-market initiatives"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "1+ years of relevant experience",
+    "skills": [
+      "Google Analytics",
+      "CRM Management",
+      "Lead Generation",
+      "Social Media Marketing",
+      "Competitive Analysis",
+      "A/B Testing"
+    ],
+    "certifications": [
+      "SAFe Agilist Certification"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Agile Methodology",
+      "Stakeholder Management",
+      "Strategic Planning",
+      "Data Visualization",
+      "Business Intelligence"
+    ],
+    "certifications": [
+      "Certified Management Consultant (CMC)",
+      "PRINCE2 Foundation"
+    ]
+  },
+  "salary": {
+    "type": "hourly",
+    "min": 40,
+    "max": 55,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Competitive hourly rate",
+    "Flexible schedule"
+  ]
+}

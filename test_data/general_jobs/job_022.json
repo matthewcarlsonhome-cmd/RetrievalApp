@@ -1,0 +1,70 @@
+{
+  "id": "job_022",
+  "title": "Lead Process Analyst",
+  "employer": "Verizon",
+  "employer_type": "fortune500",
+  "location": "Chicago, IL",
+  "remote_option": "Hybrid",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2025-12-31",
+  "job_category": "business_analyst",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 5,
+    "max_years": null
+  },
+  "description": "We're looking for a Lead Process Analyst to join Verizon. In this role, you'll analyze business requirements, develop solutions, and help drive operational excellence.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Gather and analyze business requirements",
+    "Develop process improvements and efficiency recommendations",
+    "Create business cases and presentations for leadership",
+    "Support project implementation and change management",
+    "Track KPIs and report on business performance"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "5+ years of relevant experience",
+    "skills": [
+      "ROI Analysis",
+      "Cross-functional Collaboration",
+      "Agile Methodology",
+      "Kanban",
+      "Process Improvement",
+      "Business Intelligence",
+      "Data Warehousing"
+    ],
+    "certifications": [
+      "PMP (Project Management Professional)"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Confluence",
+      "Postman",
+      "VS Code"
+    ],
+    "certifications": [
+      "Salesforce Administrator Certification",
+      "Certified Business Analysis Professional (CBAP)"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 112493,
+    "max": 157506,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Professional development budget",
+    "Wellness programs and gym membership",
+    "Comprehensive health, dental, and vision insurance",
+    "Life and disability insurance",
+    "Unlimited PTO",
+    "Annual bonus program",
+    "Home office stipend"
+  ]
+}

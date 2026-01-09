@@ -1,0 +1,51 @@
+{
+  "id": "resume_058",
+  "personal_info": {
+    "name": "Nancy Nelson",
+    "email": "nancy.nelson@outlook.com",
+    "phone": "(735) 782-1259",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/nancy-nelson-4524"
+  },
+  "summary": "Eager professional with 1+ years of experience in product management and delivery. Skilled in ETL, Waterfall, Leadership, with a proven track record of delivering impactful results.",
+  "years_experience": 1,
+  "experience_level": "beginner",
+  "role_category": "product",
+  "experience": [
+    {
+      "title": "Scrum Master",
+      "employer": "Walmart",
+      "location": "Minneapolis, MN",
+      "start_date": "September 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Analyzed 45 business reports to identify improvement opportunities",
+        "Analyzed 15 business reports to identify improvement opportunities"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Business Administration (MBA)",
+      "institution": "Arizona State University",
+      "graduation_year": 2023,
+      "gpa": 3.76
+    },
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "Penn State University",
+      "graduation_year": 2021,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Six Sigma Black Belt"
+  ],
+  "skills": [
+    "ETL",
+    "Waterfall",
+    "Leadership",
+    "Confluence",
+    "Process Improvement"
+  ]
+}

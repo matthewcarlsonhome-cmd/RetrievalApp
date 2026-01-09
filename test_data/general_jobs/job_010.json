@@ -1,0 +1,70 @@
+{
+  "id": "job_010",
+  "title": "Senior Marketing Analyst",
+  "employer": "Rapid Growth Tech",
+  "employer_type": "startup",
+  "location": "Pittsburgh, PA",
+  "remote_option": "Hybrid (3 days in office)",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2025-12-17",
+  "job_category": "marketing",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 1,
+    "max_years": 8
+  },
+  "description": "Rapid Growth Tech is looking for a creative Senior Marketing Analyst to drive our marketing initiatives. You'll develop strategies, execute campaigns, and analyze performance to grow our brand presence.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Develop and execute marketing strategies and campaigns",
+    "Analyze campaign performance and optimize for results",
+    "Create compelling content for various channels",
+    "Manage marketing budget and track ROI",
+    "Collaborate with sales and product teams on go-to-market initiatives"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "1+ years of relevant experience",
+    "skills": [
+      "PPC Advertising",
+      "Digital Marketing",
+      "Market Research",
+      "Lead Generation",
+      "Marketing Automation",
+      "CRM Management"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Stakeholder Management",
+      "Budget Management",
+      "Kanban",
+      "Business Intelligence",
+      "Data Visualization"
+    ],
+    "certifications": [
+      "Google Analytics Certification",
+      "Lean Six Sigma Certification"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 88667,
+    "max": 122232,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Home office stipend",
+    "Commuter benefits",
+    "401(k) with company match",
+    "Stock options/equity grants",
+    "Unlimited PTO",
+    "Life and disability insurance",
+    "Annual bonus program",
+    "Remote work flexibility"
+  ]
+}

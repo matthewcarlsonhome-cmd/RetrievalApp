@@ -1,0 +1,62 @@
+{
+  "id": "resume_097",
+  "personal_info": {
+    "name": "Eric Nelson",
+    "email": "enelson@protonmail.com",
+    "phone": "(954) 923-8246",
+    "location": "Los Angeles, CA",
+    "linkedin": "linkedin.com/in/eric-nelson-7727"
+  },
+  "summary": "Proficient professional with 5+ years of experience in digital marketing and brand strategy. Skilled in Lead Generation, Campaign Management, Waterfall, with a proven track record of delivering impactful results.",
+  "years_experience": 5,
+  "experience_level": "intermediate",
+  "role_category": "marketing",
+  "experience": [
+    {
+      "title": "Mid-Level Brand Manager",
+      "employer": "Ford Motor",
+      "location": "San Diego, CA",
+      "start_date": "September 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Generated 100+ qualified leads through digital campaigns",
+        "Generated 5000+ qualified leads through digital campaigns"
+      ]
+    },
+    {
+      "title": "Digital Marketing Specialist",
+      "employer": "AT&T",
+      "location": "Dallas, TX",
+      "start_date": "March 2019",
+      "end_date": "August 2020",
+      "achievements": [
+        "Increased website traffic by 25% through SEO optimization",
+        "Generated 1000+ qualified leads through digital campaigns"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "Carnegie Mellon University",
+      "graduation_year": 2016,
+      "gpa": 3.16
+    }
+  ],
+  "certifications": [
+    "Certified Digital Marketing Professional",
+    "Certified Financial Analyst (CFA)"
+  ],
+  "skills": [
+    "Lead Generation",
+    "Campaign Management",
+    "Waterfall",
+    "Salesforce Marketing Cloud",
+    "Budget Management",
+    "Mentoring",
+    "Conflict Resolution",
+    "SEM",
+    "Requirements Gathering",
+    "Market Research"
+  ]
+}

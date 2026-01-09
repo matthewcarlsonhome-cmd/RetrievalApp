@@ -1712,3 +1712,266 @@ This addresses the feedback about needing visibility into transformations before
 | Fixed scoring weights | Predictability | Automatic optimization |
 
 These tradeoffs are appropriate for an initial deployment focused on demonstrating capability. The dual-mode architecture allows users to select the right tool for their specific matching needs.
+
+---
+
+## Generalized IT/Business Test Data Generator
+
+### Overview
+
+In addition to healthcare-specific test data, the system includes a generalized test data generator (`scripts/generate_general_test_data.py`) for IT and Business professional resumes. This enables testing the matching system across diverse industries and role types.
+
+### Script Purpose
+
+```
+scripts/generate_general_test_data.py
+├── Generates 100 generalized IT/Business resumes
+│   ├── Varying experience levels (Beginner to Expert)
+│   ├── Multiple role categories (Development, Infrastructure, Data, Marketing, Business)
+│   └── Realistic skills, certifications, and achievements
+└── Generates 30 diverse job descriptions
+    ├── IT Individual Contributors (40%)
+    ├── Business Analysts (15%)
+    ├── Marketing Roles (15%)
+    ├── Managers (15%)
+    ├── Directors (10%)
+    └── VP-Level Positions (5%)
+```
+
+### Experience Level Distribution
+
+| Level | Years | Distribution | Title Prefixes | Skills Count |
+|-------|-------|--------------|----------------|--------------|
+| **Beginner** | 0-2 years | 25% | Junior, Associate, Entry-Level | 5-8 |
+| **Intermediate** | 3-5 years | 30% | (none), Mid-Level | 8-12 |
+| **Advanced** | 6-10 years | 30% | Senior, Lead, Staff | 12-18 |
+| **Expert** | 11-20 years | 15% | Principal, Senior, Lead | 15-25 |
+
+### Role Categories
+
+**Technical IT Roles:**
+- Development: Software Engineer, Full Stack Developer, Backend/Frontend Developer
+- Infrastructure: Systems Admin, Cloud Engineer, Security Engineer, DevOps
+- Data: Data Analyst, Data Scientist, Data Engineer, ML Engineer
+- Product: Product Manager, Technical PM, Scrum Master
+
+**Business Roles:**
+- Analysis: Business Analyst, Systems Analyst, Process Analyst
+- Marketing: Marketing Manager, Digital Marketing, Content Strategy, SEO
+- Management: Project Manager, Operations Manager, Account Manager
+
+**Leadership Roles:**
+- Manager: Engineering Manager, IT Manager, Marketing Manager
+- Director: Director of Engineering, IT Director, Director of Product
+- VP: VP of Engineering, VP of Technology, VP of Marketing, VP of Sales
+- C-Level: CTO, CIO, CMO, COO
+
+### Skills Categories
+
+**Technical Skills:**
+```python
+PROGRAMMING_LANGUAGES = ["Python", "JavaScript", "TypeScript", "Java", "C#", "Go", "Rust", ...]
+FRAMEWORKS = ["React", "Angular", "Vue.js", "Node.js", "Django", "Spring Boot", ...]
+CLOUD_PLATFORMS = ["AWS", "Azure", "GCP", "Kubernetes", "Docker", "Terraform", ...]
+DATABASES = ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Elasticsearch", ...]
+```
+
+**Business/Marketing Skills:**
+```python
+BUSINESS_SKILLS = ["Project Management", "Agile", "Strategic Planning", "Budget Management", ...]
+MARKETING_SKILLS = ["Digital Marketing", "SEO", "Content Marketing", "Analytics", ...]
+SOFT_SKILLS = ["Communication", "Leadership", "Problem Solving", "Teamwork", ...]
+```
+
+### Certifications
+
+**IT Certifications:**
+- AWS (Solutions Architect, Developer, etc.)
+- Azure (Administrator, Solutions Architect)
+- GCP (Professional Cloud Architect)
+- Kubernetes (CKA)
+- Security (CISSP, CompTIA Security+)
+- Scrum (CSM, PSM)
+
+**Business Certifications:**
+- PMP (Project Management Professional)
+- CBAP (Certified Business Analysis Professional)
+- Six Sigma (Green Belt, Black Belt)
+- SAFe Agilist
+- Salesforce Administrator
+
+### Usage
+
+```cmd
+:: Generate default (100 resumes, 30 jobs)
+python scripts/generate_general_test_data.py
+
+:: Custom amounts
+python scripts/generate_general_test_data.py --resumes 200 --jobs 50
+
+:: Custom output directory
+python scripts/generate_general_test_data.py --output-dir my_test_data
+```
+
+### Output Structure
+
+```
+test_data/
+├── general_resumes/           (100 JSON files)
+│   ├── resume_001.json        # Beginner Software Engineer
+│   ├── resume_002.json        # Senior Data Analyst
+│   ├── ...
+│   └── resume_100.json        # VP of Engineering
+└── general_jobs/              (30 JSON files)
+    ├── job_001.json           # Software Engineer role
+    ├── job_002.json           # Marketing Manager role
+    ├── ...
+    └── job_030.json           # VP of Technology role
+```
+
+### Sample Resume Structure
+
+```json
+{
+  "id": "resume_042",
+  "personal_info": {
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@gmail.com",
+    "phone": "(415) 555-1234",
+    "location": "San Francisco, CA",
+    "linkedin": "linkedin.com/in/sarah-johnson-4521"
+  },
+  "summary": "Results-driven professional with 7+ years of experience in software development...",
+  "years_experience": 7,
+  "experience_level": "advanced",
+  "role_category": "development",
+  "experience": [
+    {
+      "title": "Senior Software Engineer",
+      "employer": "Google",
+      "location": "San Francisco, CA",
+      "start_date": "March 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Architected scalable system handling 10M+ daily active users",
+        "Led team of 8 engineers in delivering critical platform features",
+        "Reduced infrastructure costs by $500K annually through optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "institution": "Stanford University",
+      "graduation_year": 2017,
+      "gpa": 3.8
+    }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect - Professional",
+    "Certified Kubernetes Administrator (CKA)"
+  ],
+  "skills": [
+    "Python", "Java", "Kubernetes", "AWS", "PostgreSQL",
+    "React", "System Design", "Leadership", "Agile"
+  ]
+}
+```
+
+### Sample Job Description Structure
+
+```json
+{
+  "id": "job_015",
+  "title": "Director of Engineering",
+  "employer": "Stripe",
+  "employer_type": "tech",
+  "location": "San Francisco, CA",
+  "remote_option": "Hybrid",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2025-01-05",
+  "job_category": "director",
+  "seniority_level": "director",
+  "experience_required": {
+    "min_years": 10,
+    "max_years": null
+  },
+  "description": "Stripe is seeking an experienced Director of Engineering...",
+  "responsibilities": [
+    "Lead, mentor, and develop team members",
+    "Set strategic direction and priorities for the team",
+    "Manage budgets, resources, and timelines",
+    "Recruit, hire, and retain top talent"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree required; Master's degree preferred",
+    "experience": "10+ years of relevant experience",
+    "skills": ["Python", "AWS", "Kubernetes", "Team Leadership", "Strategic Planning"],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": ["System Design", "Distributed Systems"],
+    "certifications": ["AWS Certified Solutions Architect"]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 225000,
+    "max": 275000,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Unlimited PTO",
+    "Stock options/equity grants"
+  ]
+}
+```
+
+### Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **Experience Level Variation** | From entry-level to C-suite with appropriate skills and achievements |
+| **Role Category Diversity** | Technical, business, marketing, and leadership roles |
+| **Realistic Achievements** | Scale-appropriate metrics (small teams for juniors, enterprise for VPs) |
+| **Industry Coverage** | Tech companies, consulting firms, Fortune 500, startups |
+| **Certification Matching** | IT certs for technical roles, business certs for management |
+
+### Comparison: Healthcare vs. General Test Data
+
+| Aspect | Healthcare Data | General IT/Business Data |
+|--------|----------------|-------------------------|
+| **Script** | `generate_test_data.py` | `generate_general_test_data.py` |
+| **Domain** | EHR/Healthcare IT | General IT, Marketing, Business |
+| **Resumes** | 100 healthcare professionals | 100 IT/Business professionals |
+| **Jobs** | 20 EHR implementation roles | 30 diverse IT/Business roles |
+| **Experience Levels** | 2-20 years uniform | Beginner to Expert (weighted) |
+| **Key Skills** | Epic, Cerner, HL7, HIPAA | Python, AWS, Agile, Marketing |
+| **Output Dir** | `test_data/resumes/` | `test_data/general_resumes/` |
+
+### Integration with Matching System
+
+The generalized test data uses the same JSON structure as healthcare data, enabling seamless use with the existing matching system:
+
+```python
+# Works with both healthcare and general data
+from scripts.match_resumes import TFIDFResumeMatcher
+
+matcher = TFIDFResumeMatcher()
+
+# Load general resumes
+matcher.index_resumes(general_resumes)
+
+# Match against general job descriptions
+results = matcher.match_job(job_description, top_k=10)
+```
+
+### Future Enhancements
+
+1. **Industry-Specific Generators**: Finance, Legal, Manufacturing sectors
+2. **International Data**: Non-US locations, languages, certifications
+3. **Diversity Parameters**: Control gender, ethnicity, name distributions
+4. **Career Path Simulation**: Realistic career progression patterns
+5. **Skill Relationship Graphs**: Related skills co-occur realistically

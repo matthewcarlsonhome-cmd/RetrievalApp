@@ -1,0 +1,65 @@
+{
+  "id": "resume_047",
+  "personal_info": {
+    "name": "Sarah Taylor",
+    "email": "staylor@yahoo.com",
+    "phone": "(374) 600-8176",
+    "location": "Los Angeles, CA",
+    "linkedin": "linkedin.com/in/sarah-taylor-6122"
+  },
+  "summary": "Results-driven business analysis and process improvement specialist with 5+ years of hands-on experience. Proficient in Kanban, Data Visualization, Attention to Detail, with excellent problem-solving and communication skills.",
+  "years_experience": 5,
+  "experience_level": "intermediate",
+  "role_category": "analysis",
+  "experience": [
+    {
+      "title": "Operations Analyst",
+      "employer": "Innovation Hub",
+      "location": "New York, NY",
+      "start_date": "January 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Supported 2 project implementations successfully",
+        "Analyzed 35 business reports to identify improvement opportunities"
+      ]
+    },
+    {
+      "title": "Mid-Level Systems Analyst",
+      "employer": "AT&T",
+      "location": "Minneapolis, MN",
+      "start_date": "January 2019",
+      "end_date": "February 2022",
+      "achievements": [
+        "Led process improvement initiative saving 44 hours weekly",
+        "Developed business cases securing $250K in project funding"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Management",
+      "institution": "Arizona State University",
+      "graduation_year": 2023,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Finance",
+      "institution": "Cornell University",
+      "graduation_year": 2018,
+      "gpa": 3.53
+    }
+  ],
+  "certifications": [
+    "SAFe Agilist Certification"
+  ],
+  "skills": [
+    "Kanban",
+    "Data Visualization",
+    "Attention to Detail",
+    "Resource Planning",
+    "Waterfall",
+    "VS Code",
+    "Business Intelligence",
+    "Time Management"
+  ]
+}

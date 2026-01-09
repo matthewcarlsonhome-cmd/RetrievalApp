@@ -1,0 +1,92 @@
+{
+  "id": "resume_072",
+  "personal_info": {
+    "name": "Rachel Gupta",
+    "email": "rachel.gupta99@yahoo.com",
+    "phone": "(567) 903-3938",
+    "location": "Phoenix, AZ",
+    "linkedin": "linkedin.com/in/rachel-gupta-1772"
+  },
+  "summary": "Strategic product management and delivery specialist with 9+ years of hands-on experience. Proficient in Power BI, Slack, Attention to Detail, with excellent problem-solving and communication skills.",
+  "years_experience": 9,
+  "experience_level": "advanced",
+  "role_category": "product",
+  "experience": [
+    {
+      "title": "Mid-Level Product Owner",
+      "employer": "Verizon",
+      "location": "Portland, OR",
+      "start_date": "September 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Led process improvement initiative saving 34 hours weekly",
+        "Increased customer satisfaction scores by 45% through service improvements",
+        "Managed projects totaling $50K in annual budget",
+        "Increased customer satisfaction scores by 37% through service improvements"
+      ]
+    },
+    {
+      "title": "Senior Product Manager",
+      "employer": "Datadog",
+      "location": "Los Angeles, CA",
+      "start_date": "January 2017",
+      "end_date": "December 2020",
+      "achievements": [
+        "Built and led team of 40 analysts and specialists",
+        "Managed portfolio of 16 projects worth $1000M",
+        "Directed cross-functional initiatives across 8 departments",
+        "Directed cross-functional initiatives across 10 departments"
+      ]
+    },
+    {
+      "title": "Lead Technical Product Manager",
+      "employer": "Intel",
+      "location": "San Jose, CA",
+      "start_date": "January 2015",
+      "end_date": "December 2017",
+      "achievements": [
+        "Delivered 22% improvement in operational efficiency",
+        "Built and led team of 60 analysts and specialists",
+        "Built and led team of 16 analysts and specialists",
+        "Directed cross-functional initiatives across 4 departments"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Management",
+      "institution": "Stanford University",
+      "graduation_year": 2020,
+      "gpa": 3.44
+    },
+    {
+      "degree": "Bachelor of Science in Management Information Systems",
+      "institution": "Ohio State University",
+      "graduation_year": 2015,
+      "gpa": 3.57
+    }
+  ],
+  "certifications": [
+    "Certified Business Analysis Professional (CBAP)",
+    "PMP (Project Management Professional)",
+    "Google Analytics Certification",
+    "AWS Certified Developer - Associate",
+    "AWS Certified Solutions Architect - Associate"
+  ],
+  "skills": [
+    "Power BI",
+    "Slack",
+    "Attention to Detail",
+    "Resource Planning",
+    "Risk Management",
+    "Business Intelligence",
+    "Leadership",
+    "Jira",
+    "Cross-functional Collaboration",
+    "IntelliJ IDEA",
+    "Data Warehousing",
+    "Teamwork",
+    "Agile Methodology",
+    "Requirements Gathering"
+  ]
+}

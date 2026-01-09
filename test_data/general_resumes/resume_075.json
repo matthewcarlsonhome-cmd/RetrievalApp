@@ -1,0 +1,108 @@
+{
+  "id": "resume_075",
+  "personal_info": {
+    "name": "Scott Brown",
+    "email": "scott.brown77@outlook.com",
+    "phone": "(384) 466-6628",
+    "location": "New York, NY",
+    "linkedin": "linkedin.com/in/scott-brown-4307"
+  },
+  "summary": "Experienced IT infrastructure and cloud technologies professional bringing 12 years of expertise. Strong background in R, Google Cloud Platform, PostgreSQL, committed to driving innovation and business value.",
+  "years_experience": 12,
+  "experience_level": "expert",
+  "role_category": "infrastructure",
+  "experience": [
+    {
+      "title": "Associate Network Engineer",
+      "employer": "CloudFirst Solutions",
+      "location": "Phoenix, AZ",
+      "start_date": "March 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Participated in code reviews, providing feedback on 63+ pull requests",
+        "Resolved 10+ production issues within SLA targets",
+        "Resolved 23+ production issues within SLA targets"
+      ]
+    },
+    {
+      "title": "Mid-Level IT Support Specialist",
+      "employer": "Rapid Growth Tech",
+      "location": "Pittsburgh, PA",
+      "start_date": "September 2020",
+      "end_date": "February 2022",
+      "achievements": [
+        "Mentored 8 junior developers in best practices",
+        "Designed and built RESTful APIs serving 5M+ requests daily",
+        "Designed and built RESTful APIs serving 50M+ requests daily",
+        "Reduced application load time by 15% through performance optimization"
+      ]
+    },
+    {
+      "title": "Lead Infrastructure Engineer",
+      "employer": "Netflix",
+      "location": "Philadelphia, PA",
+      "start_date": "January 2018",
+      "end_date": "December 2020",
+      "achievements": [
+        "Reduced infrastructure costs by $1000K annually through optimization"
+      ]
+    },
+    {
+      "title": "Staff Systems Administrator",
+      "employer": "Microsoft",
+      "location": "San Diego, CA",
+      "start_date": "September 2014",
+      "end_date": "May 2018",
+      "achievements": [
+        "Drove technical strategy resulting in 31% improvement in system reliability",
+        "Reduced infrastructure costs by $2000K annually through optimization",
+        "Reduced infrastructure costs by $1000K annually through optimization",
+        "Established engineering best practices adopted by 28 teams"
+      ]
+    },
+    {
+      "title": "Staff IT Support Specialist",
+      "employer": "Atlassian",
+      "location": "Miami, FL",
+      "start_date": "March 2012",
+      "end_date": "December 2014",
+      "achievements": [
+        "Led organization-wide digital transformation initiative impacting 10000+ employees",
+        "Delivered platform serving 20M+ customers globally",
+        "Managed $100M technology budget across 6 departments"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "University of Texas at Austin",
+      "graduation_year": 2010,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Cisco Certified Network Associate (CCNA)",
+    "Microsoft Certified: Azure Developer Associate",
+    "CompTIA Security+"
+  ],
+  "skills": [
+    "R",
+    "Google Cloud Platform",
+    "PostgreSQL",
+    "Time Management",
+    "Critical Thinking",
+    "Active Listening",
+    "TypeScript",
+    "Express.js",
+    "Attention to Detail",
+    "MongoDB",
+    "Azure",
+    "Flask",
+    "Sketch",
+    "Bitbucket",
+    "Problem Solving",
+    "C#",
+    "CloudFormation"
+  ]
+}

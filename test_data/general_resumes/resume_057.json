@@ -1,0 +1,35 @@
+{
+  "id": "resume_057",
+  "personal_info": {
+    "name": "Cynthia Kelly",
+    "email": "cynthiakelly@outlook.com",
+    "phone": "(848) 459-2811",
+    "location": "Atlanta, GA",
+    "linkedin": "linkedin.com/in/cynthia-kelly-7417"
+  },
+  "summary": "Enthusiastic data engineering and analytics specialist with 0+ years of hands-on experience. Proficient in R, Power BI, Scala, with excellent problem-solving and communication skills.",
+  "years_experience": 0,
+  "experience_level": "beginner",
+  "role_category": "data",
+  "experience": [],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Washington",
+      "graduation_year": 2021,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect - Professional",
+    "HashiCorp Certified: Terraform Associate"
+  ],
+  "skills": [
+    "R",
+    "Power BI",
+    "Scala",
+    "Looker",
+    "Grafana",
+    "Neo4j"
+  ]
+}

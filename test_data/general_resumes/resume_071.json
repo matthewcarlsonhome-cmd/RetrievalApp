@@ -1,0 +1,60 @@
+{
+  "id": "resume_071",
+  "personal_info": {
+    "name": "Joseph Davis",
+    "email": "joseph.davis85@icloud.com",
+    "phone": "(926) 396-6682",
+    "location": "Denver, CO",
+    "linkedin": "linkedin.com/in/joseph-davis-4632"
+  },
+  "summary": "Experienced digital marketing and brand strategy professional bringing 2 years of expertise. Strong background in Customer Segmentation, Scrum, Competitive Analysis, committed to driving innovation and business value.",
+  "years_experience": 2,
+  "experience_level": "beginner",
+  "role_category": "marketing",
+  "experience": [
+    {
+      "title": "Junior Marketing Manager",
+      "employer": "Smart Analytics",
+      "location": "Detroit, MI",
+      "start_date": "June 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Supported 2 marketing campaigns",
+        "Grew social media following by 45% across 6 platforms"
+      ]
+    },
+    {
+      "title": "Associate Product Marketing Manager",
+      "employer": "Walmart",
+      "location": "Pittsburgh, PA",
+      "start_date": "January 2022",
+      "end_date": "August 2023",
+      "achievements": [
+        "Supported 3 marketing campaigns",
+        "Created 19+ pieces of marketing content",
+        "Grew social media following by 32% across 6 platforms"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Digital Marketing",
+      "institution": "University of Wisconsin",
+      "graduation_year": 2020,
+      "gpa": 3.58
+    }
+  ],
+  "certifications": [
+    "Lean Six Sigma Certification"
+  ],
+  "skills": [
+    "Customer Segmentation",
+    "Scrum",
+    "Competitive Analysis",
+    "Google Analytics",
+    "Emotional Intelligence",
+    "Teamwork",
+    "Digital Marketing",
+    "Stakeholder Management"
+  ]
+}

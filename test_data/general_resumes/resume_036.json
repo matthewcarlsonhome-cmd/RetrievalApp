@@ -1,0 +1,61 @@
+{
+  "id": "resume_036",
+  "personal_info": {
+    "name": "Margaret Johnson",
+    "email": "margaret.johnson@yahoo.com",
+    "phone": "(279) 552-1630",
+    "location": "San Diego, CA",
+    "linkedin": "linkedin.com/in/margaret-johnson-7649"
+  },
+  "summary": "Results-driven IT infrastructure and cloud technologies specialist with 3+ years of hands-on experience. Proficient in Google Cloud Platform, Go, Figma, with excellent problem-solving and communication skills.",
+  "years_experience": 3,
+  "experience_level": "intermediate",
+  "role_category": "infrastructure",
+  "experience": [
+    {
+      "title": "Entry-Level IT Support Specialist",
+      "employer": "NextGen Software",
+      "location": "Chicago, IL",
+      "start_date": "March 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Participated in code reviews, providing feedback on 92+ pull requests",
+        "Created technical documentation for 3 internal tools"
+      ]
+    },
+    {
+      "title": "Mid-Level Systems Administrator",
+      "employer": "General Motors",
+      "location": "Salt Lake City, UT",
+      "start_date": "March 2021",
+      "end_date": "August 2022",
+      "achievements": [
+        "Reduced application load time by 26% through performance optimization",
+        "Mentored 5 junior developers in best practices"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Stanford University",
+      "graduation_year": 2018,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect - Professional"
+  ],
+  "skills": [
+    "Google Cloud Platform",
+    "Go",
+    "Figma",
+    "Problem Solving",
+    "C#",
+    "Negotiation",
+    "Laravel",
+    "FastAPI",
+    "Sketch",
+    "Redis"
+  ]
+}

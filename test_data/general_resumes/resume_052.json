@@ -1,0 +1,65 @@
+{
+  "id": "resume_052",
+  "personal_info": {
+    "name": "James Ramirez",
+    "email": "jramirez@outlook.com",
+    "phone": "(433) 589-3372",
+    "location": "Miami, FL",
+    "linkedin": "linkedin.com/in/james-ramirez-2920"
+  },
+  "summary": "Experienced IT infrastructure and cloud technologies professional bringing 5 years of expertise. Strong background in AWS Lambda, Scala, Communication, committed to driving innovation and business value.",
+  "years_experience": 5,
+  "experience_level": "intermediate",
+  "role_category": "infrastructure",
+  "experience": [
+    {
+      "title": "Cloud Engineer",
+      "employer": "Smart Analytics",
+      "location": "San Diego, CA",
+      "start_date": "September 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Designed and built RESTful APIs serving 10M+ requests daily",
+        "Mentored 7 junior developers in best practices",
+        "Implemented CI/CD pipeline reducing deployment time by 28%",
+        "Mentored 6 junior developers in best practices"
+      ]
+    },
+    {
+      "title": "Mid-Level Technical Architect",
+      "employer": "Shopify",
+      "location": "Raleigh, NC",
+      "start_date": "January 2019",
+      "end_date": "May 2020",
+      "achievements": [
+        "Reduced application load time by 28% through performance optimization",
+        "Implemented CI/CD pipeline reducing deployment time by 15%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Data Science",
+      "institution": "University of Florida",
+      "graduation_year": 2017,
+      "gpa": 3.9
+    }
+  ],
+  "certifications": [
+    "HashiCorp Certified: Terraform Associate",
+    "Microsoft Certified: Azure Developer Associate",
+    "CompTIA Security+"
+  ],
+  "skills": [
+    "AWS Lambda",
+    "Scala",
+    "Communication",
+    "Decision Making",
+    "Python",
+    "MongoDB",
+    "Grafana",
+    "Neo4j",
+    "AWS",
+    "Sketch"
+  ]
+}

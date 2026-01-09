@@ -1,0 +1,75 @@
+{
+  "id": "job_016",
+  "title": "Lead EHR Analyst",
+  "employer": "Health Catalyst",
+  "employer_type": "vendor",
+  "location": "Denver, CO",
+  "remote_option": "Travel Required (50-75%)",
+  "employment_type": "Part-time",
+  "contract_type": "Permanent",
+  "contract_length": null,
+  "posted_date": "2025-12-31",
+  "primary_ehr_system": "Cerner",
+  "modules": [
+    "HealtheIntent",
+    "FirstNet"
+  ],
+  "experience_required": {
+    "min_years": 10,
+    "max_years": null
+  },
+  "description": "Join Health Catalyst as a Lead EHR Analyst and help transform healthcare delivery through innovative technology solutions. We are implementing Cerner across our organization and need experienced professionals to ensure successful deployment and adoption. This is an exciting opportunity to make a significant impact on patient care.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize Cerner applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Analyze clinical and operational workflows to identify improvement opportunities",
+    "Create detailed system specifications and configuration documents",
+    "Support build and validation activities",
+    "Develop reports and dashboards for clinical and operational metrics",
+    "Troubleshoot system issues and implement solutions"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in Health Informatics, Healthcare Administration, IT, or related field",
+    "experience": "10+ years of healthcare IT implementation experience",
+    "skills": [
+      "Cerner",
+      "Population Health",
+      "Health Information Exchange",
+      "Interoperability",
+      "EHR Implementation",
+      "User Acceptance Testing"
+    ],
+    "certifications": [
+      "Cerner Certified - PowerChart"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "User Acceptance Testing",
+      "Project Management",
+      "Process Improvement",
+      "Optimization",
+      "Python"
+    ],
+    "certifications": [
+      "Certified ScrumMaster (CSM)",
+      "Certified Professional in Healthcare Information and Management Systems (CPHIMS)"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 162329,
+    "max": 181472,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Comprehensive health insurance (medical, dental, vision)",
+    "Tuition reimbursement",
+    "Stock options/equity",
+    "Paid time off (PTO)",
+    "Professional development budget"
+  ]
+}

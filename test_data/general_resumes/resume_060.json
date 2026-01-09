@@ -1,0 +1,66 @@
+{
+  "id": "resume_060",
+  "personal_info": {
+    "name": "Matthew Miller",
+    "email": "matthew.miller@yahoo.com",
+    "phone": "(567) 752-1042",
+    "location": "Portland, OR",
+    "linkedin": "linkedin.com/in/matthew-miller-1795"
+  },
+  "summary": "Results-driven digital marketing and brand strategy specialist with 5+ years of hands-on experience. Proficient in Lead Generation, Campaign Management, PPC Advertising, with excellent problem-solving and communication skills.",
+  "years_experience": 5,
+  "experience_level": "intermediate",
+  "role_category": "marketing",
+  "experience": [
+    {
+      "title": "Associate Social Media Manager",
+      "employer": "CVS Health",
+      "location": "Denver, CO",
+      "start_date": "January 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Grew social media following by 43% across 5 platforms",
+        "Created 5+ pieces of marketing content",
+        "Supported 1 marketing campaigns"
+      ]
+    },
+    {
+      "title": "Mid-Level Content Strategist",
+      "employer": "Digital Horizons",
+      "location": "Nashville, TN",
+      "start_date": "June 2019",
+      "end_date": "May 2023",
+      "achievements": [
+        "Led rebranding initiative across 4 marketing channels",
+        "Generated 500+ qualified leads through digital campaigns",
+        "Managed $250K marketing budget with 8x ROI"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Communications",
+      "institution": "Ohio State University",
+      "graduation_year": 2017,
+      "gpa": 3.37
+    }
+  ],
+  "certifications": [
+    "Six Sigma Green Belt",
+    "Certified Financial Analyst (CFA)"
+  ],
+  "skills": [
+    "Lead Generation",
+    "Campaign Management",
+    "PPC Advertising",
+    "Problem Solving",
+    "Digital Marketing",
+    "Time Management",
+    "Competitive Analysis",
+    "Budget Management",
+    "Teamwork",
+    "Agile Methodology",
+    "Requirements Gathering",
+    "Social Media Marketing"
+  ]
+}

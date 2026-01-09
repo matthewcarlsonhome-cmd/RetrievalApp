@@ -1,0 +1,91 @@
+{
+  "id": "resume_078",
+  "personal_info": {
+    "name": "Stephen Murphy",
+    "email": "stephenmurphy@protonmail.com",
+    "phone": "(669) 213-9768",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/stephen-murphy-9619"
+  },
+  "summary": "Strategic professional with 10+ years of experience in data engineering and analytics. Skilled in Java, Jenkins, ETL, with a proven track record of delivering impactful results.",
+  "years_experience": 10,
+  "experience_level": "advanced",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Junior Business Intelligence Analyst",
+      "employer": "DataDriven Inc",
+      "location": "Washington, DC",
+      "start_date": "March 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Participated in code reviews, providing feedback on 56+ pull requests",
+        "Developed 1 new features for the company's main product"
+      ]
+    },
+    {
+      "title": "Quantitative Analyst",
+      "employer": "UnitedHealth Group",
+      "location": "Atlanta, GA",
+      "start_date": "June 2020",
+      "end_date": "May 2022",
+      "achievements": [
+        "Designed and built RESTful APIs serving 50M+ requests daily",
+        "Implemented CI/CD pipeline reducing deployment time by 22%"
+      ]
+    },
+    {
+      "title": "Lead Data Architect",
+      "employer": "Twilio",
+      "location": "Austin, TX",
+      "start_date": "June 2017",
+      "end_date": "December 2020",
+      "achievements": [
+        "Drove technical strategy resulting in 20% improvement in system reliability",
+        "Established engineering best practices adopted by 36 teams",
+        "Architected scalable system handling 200M+ daily active users"
+      ]
+    },
+    {
+      "title": "Staff Analytics Engineer",
+      "employer": "General Motors",
+      "location": "San Francisco, CA",
+      "start_date": "March 2014",
+      "end_date": "May 2017",
+      "achievements": [
+        "Architected scalable system handling 200M+ daily active users",
+        "Architected scalable system handling 20M+ daily active users",
+        "Reduced infrastructure costs by $1000K annually through optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Data Science",
+      "institution": "Carnegie Mellon University",
+      "graduation_year": 2013,
+      "gpa": 3.66
+    }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect - Professional",
+    "Certified ScrumMaster (CSM)",
+    "CompTIA Security+",
+    "Certified Information Systems Security Professional (CISSP)"
+  ],
+  "skills": [
+    "Java",
+    "Jenkins",
+    "ETL",
+    "Python",
+    "Business Intelligence",
+    "Elasticsearch",
+    "Google Cloud Functions",
+    "Active Listening",
+    "Data Analysis",
+    "Prometheus",
+    "Slack",
+    "Datadog",
+    "NumPy"
+  ]
+}

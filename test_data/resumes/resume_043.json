@@ -1,0 +1,68 @@
+{
+  "id": "resume_043",
+  "personal_info": {
+    "name": "Brandon Davis",
+    "email": "brandondavis@healthcaremail.com",
+    "phone": "(932) 789-3432",
+    "location": "Seattle, WA",
+    "linkedin": "linkedin.com/in/brandon-davis-8488"
+  },
+  "summary": "Experienced healthcare implementation consultant with 5 years leading Allscripts implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 5,
+  "primary_ehr_system": "Allscripts",
+  "experience": [
+    {
+      "title": "EHR Training Specialist",
+      "employer": "ChartLogic",
+      "location": "Dallas, TX",
+      "start_date": "March 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Trained 200+ end users with 98% satisfaction rating",
+        "Led optimization project resulting in $1000K annual cost savings"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Health Informatics",
+      "institution": "University of Colorado",
+      "graduation_year": 2023,
+      "gpa": 3.64
+    },
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "Duke University",
+      "graduation_year": 2018,
+      "gpa": 3.55
+    }
+  ],
+  "certifications": [
+    "Certified Information Systems Security Professional (CISSP)",
+    "Epic Certified - EpicCare Ambulatory",
+    "HL7 FHIR Certification"
+  ],
+  "skills": [
+    "Health Information Exchange",
+    "Telehealth Implementation",
+    "ICD-10",
+    "Interoperability",
+    "Change Management",
+    "Data Migration",
+    "Go-Live Support",
+    "Mobile Health",
+    "Allscripts",
+    "Revenue Cycle Management",
+    "Clinical Workflow Analysis",
+    "Tableau",
+    "Scrum",
+    "User Acceptance Testing"
+  ]
+}

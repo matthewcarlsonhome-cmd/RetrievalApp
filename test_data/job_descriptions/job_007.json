@@ -1,0 +1,73 @@
+{
+  "id": "job_007",
+  "title": "EHR Implementation Project Manager",
+  "employer": "Emory University Health System",
+  "employer_type": "health system",
+  "location": "Jacksonville, FL",
+  "remote_option": "Hybrid",
+  "employment_type": "Part-time",
+  "contract_type": "Contract",
+  "contract_length": "6 months",
+  "posted_date": "2025-12-24",
+  "primary_ehr_system": "Epic",
+  "modules": [
+    "Grand Central",
+    "EpicCare Ambulatory"
+  ],
+  "experience_required": {
+    "min_years": 3,
+    "max_years": 9
+  },
+  "description": "Emory University Health System is seeking an experienced EHR Implementation Project Manager to join our healthcare IT team. This role will be instrumental in the implementation and optimization of our Epic EHR system. The ideal candidate will have deep expertise in Grand Central, EpicCare Ambulatory and a passion for improving clinical workflows through technology.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize Epic applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Develop and manage project plans, timelines, and resource allocation",
+    "Lead cross-functional implementation teams",
+    "Report project status to executive leadership",
+    "Manage project budget and identify risk mitigation strategies",
+    "Facilitate steering committee meetings and stakeholder communications"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in Health Informatics, Healthcare Administration, IT, or related field",
+    "experience": "3+ years of healthcare IT implementation experience",
+    "skills": [
+      "Epic",
+      "Project Management",
+      "System Configuration",
+      "Go-Live Support",
+      "Scrum",
+      "Clinical Documentation",
+      "Agile Methodology",
+      "FHIR APIs",
+      "Change Management"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Build Validation",
+      "Telehealth Implementation",
+      "HIPAA Compliance",
+      "System Integration"
+    ],
+    "certifications": [
+      "Certified Information Systems Security Professional (CISSP)",
+      "Epic Certified - Cadence",
+      "Certified Associate in Healthcare Information and Management Systems (CAHIMS)"
+    ]
+  },
+  "salary": {
+    "type": "hourly",
+    "min": 44,
+    "max": 74,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Competitive hourly rate",
+    "Professional development opportunities"
+  ]
+}

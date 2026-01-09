@@ -1,0 +1,101 @@
+{
+  "id": "resume_072",
+  "personal_info": {
+    "name": "Jason Torres",
+    "email": "jason.torres@yahoo.com",
+    "phone": "(889) 633-9793",
+    "location": "Columbus, OH",
+    "linkedin": "linkedin.com/in/jason-torres-3513"
+  },
+  "summary": "Dedicated EHR implementation professional bringing 8 years of experience in MEDITECH deployments. Skilled in leading cross-functional teams, managing complex projects, and ensuring successful system adoption. Track record of on-time, on-budget implementations.",
+  "years_experience": 8,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Healthcare Systems Analyst",
+      "employer": "DrChrono",
+      "location": "New York, NY",
+      "start_date": "January 2020",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "ITWorks",
+        "RadNet",
+        "HealtheIntent",
+        "FirstNet"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 37%",
+        "Managed implementation for 14 ambulatory clinics across 6 states",
+        "Trained 100+ end users with 93% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Senior Revenue Cycle Implementation Specialist",
+      "employer": "CommonSpirit Health",
+      "location": "Salt Lake City, UT",
+      "start_date": "September 2017",
+      "end_date": "December 2020",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 6 recognition for implemented facility",
+        "Designed clinical workflows that improved documentation efficiency by 32%",
+        "Coordinated go-live support for 50+ providers across 18 locations"
+      ]
+    },
+    {
+      "title": "Epic Implementation Analyst",
+      "employer": "Medidata",
+      "location": "New York, NY",
+      "start_date": "March 2016",
+      "end_date": "February 2017",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Managed implementation for 42 ambulatory clinics across 9 states",
+        "Coordinated go-live support for 100+ providers across 19 locations",
+        "Trained 1000+ end users with 93% satisfaction rating"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "University of Washington",
+      "graduation_year": 2014,
+      "gpa": 3.24
+    }
+  ],
+  "certifications": [
+    "Epic Certified - EpicCare Inpatient",
+    "Epic Certified - Beacon"
+  ],
+  "skills": [
+    "Business Intelligence",
+    "MEDITECH",
+    "Clinical Documentation",
+    "Clinical Decision Support",
+    "ICD-10",
+    "Training Development",
+    "Project Management",
+    "FHIR APIs",
+    "Health Information Exchange",
+    "Population Health",
+    "Value-Based Care",
+    "Medical Terminology",
+    "User Acceptance Testing"
+  ]
+}

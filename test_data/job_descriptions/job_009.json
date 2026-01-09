@@ -1,0 +1,79 @@
+{
+  "id": "job_009",
+  "title": "Clinical Applications Analyst",
+  "employer": "Health Catalyst",
+  "employer_type": "vendor",
+  "location": "Boston, MA",
+  "remote_option": "Hybrid",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "contract_length": null,
+  "posted_date": "2026-01-04",
+  "primary_ehr_system": "Epic",
+  "modules": [
+    "Care Everywhere",
+    "Healthy Planet",
+    "OpTime",
+    "Grand Central"
+  ],
+  "experience_required": {
+    "min_years": 2,
+    "max_years": 11
+  },
+  "description": "Health Catalyst seeks a talented Clinical Applications Analyst to lead our Epic implementation initiatives. You will work closely with clinical stakeholders, IT teams, and executive leadership to deliver solutions that improve efficiency and patient outcomes. Experience with Care Everywhere, Healthy Planet is essential.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize Epic applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Analyze clinical and operational workflows to identify improvement opportunities",
+    "Create detailed system specifications and configuration documents",
+    "Support build and validation activities",
+    "Develop reports and dashboards for clinical and operational metrics",
+    "Troubleshoot system issues and implement solutions"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in Health Informatics, Healthcare Administration, IT, or related field",
+    "experience": "2+ years of healthcare IT implementation experience",
+    "skills": [
+      "Epic",
+      "CPT Coding",
+      "HIPAA Compliance",
+      "Interoperability",
+      "Project Management",
+      "Power BI",
+      "Change Management"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Go-Live Support",
+      "CPT Coding",
+      "FHIR APIs",
+      "User Acceptance Testing",
+      "Patient Portal Implementation",
+      "Power BI"
+    ],
+    "certifications": [
+      "Six Sigma Black Belt"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 93754,
+    "max": 116042,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Flexible spending accounts (FSA/HSA)",
+    "Paid time off (PTO)",
+    "Life and disability insurance",
+    "Employee wellness program",
+    "Stock options/equity",
+    "Professional development budget",
+    "Annual performance bonus",
+    "401(k) with employer match"
+  ]
+}

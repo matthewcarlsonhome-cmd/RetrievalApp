@@ -1,0 +1,157 @@
+{
+  "id": "resume_084",
+  "personal_info": {
+    "name": "Barbara Sanchez",
+    "email": "barbarasanchez@outlook.com",
+    "phone": "(383) 356-2252",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/barbara-sanchez-8893"
+  },
+  "summary": "Healthcare informatics specialist with 14+ years of hands-on experience implementing and optimizing Cerner EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 14,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Healthcare Systems Analyst",
+      "employer": "Premier Medical Group",
+      "location": "Chicago, IL",
+      "start_date": "January 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Cogito",
+        "EpicCare Ambulatory",
+        "Beacon",
+        "Resolute"
+      ],
+      "achievements": [
+        "Built 10+ HL7 interfaces connecting to external systems",
+        "Completed data migration of 10M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Integration Engineer",
+      "employer": "PwC Health Industries",
+      "location": "Milwaukee, WI",
+      "start_date": "March 2017",
+      "end_date": "February 2021",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "MyChart",
+        "Healthy Planet",
+        "Cogito",
+        "Willow"
+      ],
+      "achievements": [
+        "Trained 2000+ end users with 95% satisfaction rating",
+        "Built 46+ HL7 interfaces connecting to external systems",
+        "Led successful go-live for 400-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Health IT Implementation Manager",
+      "employer": "Family Care Associates",
+      "location": "Detroit, MI",
+      "start_date": "September 2014",
+      "end_date": "May 2017",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "FirstNet",
+        "PathNet",
+        "HealtheIntent",
+        "PowerChart"
+      ],
+      "achievements": [
+        "Implemented 11 Epic/Cerner modules on time and under budget",
+        "Achieved 94% clinician adoption rate within first 4 months",
+        "Managed implementation for 39 ambulatory clinics across 2 states",
+        "Led optimization project resulting in $500K annual cost savings"
+      ]
+    },
+    {
+      "title": "Senior Practice Management Consultant",
+      "employer": "Leidos Health",
+      "location": "Austin, TX",
+      "start_date": "September 2012",
+      "end_date": "May 2014",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Led successful go-live for 400-bed hospital with zero critical issues",
+        "Managed cross-functional team of 13 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Lead Health Information Manager",
+      "employer": "Impact Advisors",
+      "location": "Milwaukee, WI",
+      "start_date": "January 2010",
+      "end_date": "August 2012",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $500K annual cost savings",
+        "Coordinated go-live support for 200+ providers across 18 locations"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Public Health",
+      "institution": "University of Wisconsin",
+      "graduation_year": 2013,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "Arizona State University",
+      "graduation_year": 2007,
+      "gpa": 3.38
+    }
+  ],
+  "certifications": [
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)",
+    "Six Sigma Green Belt",
+    "HL7 FHIR Certification",
+    "Project Management Professional (PMP)",
+    "Epic Certified - Willow",
+    "Registered Health Information Administrator (RHIA)"
+  ],
+  "skills": [
+    "Build Validation",
+    "Telehealth Implementation",
+    "Health Information Exchange",
+    "Clinical Decision Support",
+    "Go-Live Support",
+    "Clinical Documentation",
+    "Healthcare IT",
+    "Process Improvement",
+    "RadNet",
+    "Power BI",
+    "Revenue Cycle Management",
+    "CommunityWorks",
+    "Patient Portal Implementation",
+    "Cerner",
+    "PowerChart",
+    "Report Writing",
+    "Crystal Reports",
+    "Medical Terminology"
+  ]
+}

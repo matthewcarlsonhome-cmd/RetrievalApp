@@ -1,0 +1,72 @@
+{
+  "id": "job_018",
+  "title": "Senior Data Architect",
+  "employer": "Lowe's",
+  "employer_type": "fortune500",
+  "location": "San Francisco, CA",
+  "remote_option": "Hybrid (3 days in office)",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2025-12-20",
+  "job_category": "it_individual",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 0,
+    "max_years": null
+  },
+  "description": "Join Lowe's as a Senior Data Architect and help us build the next generation of technology solutions. We're looking for someone passionate about clean code, system design, and continuous improvement.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Design, develop, and maintain software applications",
+    "Write clean, testable, and efficient code",
+    "Participate in code reviews and technical discussions",
+    "Troubleshoot and debug production issues",
+    "Contribute to architectural decisions and technical strategy"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "0+ years of relevant experience",
+    "skills": [
+      "R",
+      "SQL",
+      "Ruby",
+      "Google Cloud Platform",
+      "Heroku",
+      "Jira",
+      "GitHub"
+    ],
+    "certifications": [
+      "Azure Solutions Architect Expert"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Express.js",
+      "Pandas",
+      "Ruby on Rails",
+      "Oracle",
+      "Redis"
+    ],
+    "certifications": [
+      "AWS Certified Developer - Associate",
+      "Microsoft Certified: Azure Developer Associate"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 74429,
+    "max": 109481,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Remote work flexibility",
+    "Comprehensive health, dental, and vision insurance",
+    "Wellness programs and gym membership",
+    "Home office stipend",
+    "Unlimited PTO",
+    "Annual bonus program",
+    "Life and disability insurance"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "resume_005",
+  "personal_info": {
+    "name": "Sandra Flores",
+    "email": "sflores@outlook.com",
+    "phone": "(959) 837-8209",
+    "location": "Phoenix, AZ",
+    "linkedin": "linkedin.com/in/sandra-flores-4450"
+  },
+  "summary": "Transformational professional with 15+ years of experience in business analysis and process improvement. Skilled in Creativity, Power BI, Looker, with a proven track record of delivering impactful results.",
+  "years_experience": 15,
+  "experience_level": "expert",
+  "role_category": "analysis",
+  "experience": [
+    {
+      "title": "Financial Analyst",
+      "employer": "Berkshire Hathaway",
+      "location": "New York, NY",
+      "start_date": "June 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Managed stakeholder communications for 7 departments",
+        "Managed stakeholder communications for 9 departments",
+        "Supported 0 project implementations successfully"
+      ]
+    },
+    {
+      "title": "Mid-Level Process Analyst",
+      "employer": "DataDriven Inc",
+      "location": "Pittsburgh, PA",
+      "start_date": "June 2021",
+      "end_date": "August 2022",
+      "achievements": [
+        "Developed business cases securing $100K in project funding",
+        "Led process improvement initiative saving 22 hours weekly",
+        "Managed projects totaling $250K in annual budget"
+      ]
+    },
+    {
+      "title": "Lead Process Analyst",
+      "employer": "Zoom",
+      "location": "San Jose, CA",
+      "start_date": "January 2017",
+      "end_date": "August 2021",
+      "achievements": [
+        "Managed portfolio of 28 projects worth $200M",
+        "Directed cross-functional initiatives across 4 departments",
+        "Delivered 17% improvement in operational efficiency"
+      ]
+    },
+    {
+      "title": "Principal Financial Analyst",
+      "employer": "Datadog",
+      "location": "Portland, OR",
+      "start_date": "March 2013",
+      "end_date": "August 2017",
+      "achievements": [
+        "Transformed business operations resulting in 33% cost reduction",
+        "Managed P&L responsibility for $1000M business unit",
+        "Managed P&L responsibility for $500M business unit"
+      ]
+    },
+    {
+      "title": "Senior Strategy Analyst",
+      "employer": "Square",
+      "location": "Seattle, WA",
+      "start_date": "September 2012",
+      "end_date": "August 2013",
+      "achievements": [
+        "Managed P&L responsibility for $500M business unit",
+        "Transformed business operations resulting in 33% cost reduction",
+        "Drove strategic initiatives contributing $100M to bottom line",
+        "Transformed business operations resulting in 34% cost reduction"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Finance",
+      "institution": "Arizona State University",
+      "graduation_year": 2013,
+      "gpa": 3.77
+    },
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "University of Pennsylvania",
+      "graduation_year": 2009,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Certified Financial Analyst (CFA)",
+    "SAFe Agilist Certification",
+    "AWS Certified Developer - Associate"
+  ],
+  "skills": [
+    "Creativity",
+    "Power BI",
+    "Looker",
+    "Communication",
+    "Cost-Benefit Analysis",
+    "ETL",
+    "Problem Solving",
+    "Resource Planning",
+    "Critical Thinking",
+    "Postman",
+    "Budget Management",
+    "Jira",
+    "IntelliJ IDEA",
+    "Teamwork",
+    "ROI Analysis",
+    "Contract Negotiation",
+    "Strategic Planning"
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "id": "resume_046",
+  "personal_info": {
+    "name": "Andrew Perez",
+    "email": "andrew.perez@gmail.com",
+    "phone": "(471) 495-6791",
+    "location": "Portland, OR",
+    "linkedin": "linkedin.com/in/andrew-perez-2940"
+  },
+  "summary": "Experienced healthcare implementation consultant with 12 years leading Cerner implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 12,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Clinical Workflow Analyst",
+      "employer": "Mountain View Health Center",
+      "location": "Chicago, IL",
+      "start_date": "March 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "RadNet",
+        "PowerChart",
+        "Soarian",
+        "PathNet"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $1000K annual cost savings",
+        "Implemented 10 Epic/Cerner modules on time and under budget"
+      ]
+    },
+    {
+      "title": "Revenue Cycle Implementation Specialist",
+      "employer": "Regional Health Partners",
+      "location": "Denver, CO",
+      "start_date": "March 2021",
+      "end_date": "August 2023",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Millennium",
+        "FirstNet",
+        "Soarian",
+        "ITWorks"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 7 analysts and trainers",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Healthcare Systems Analyst",
+      "employer": "Premier Medical Group",
+      "location": "Houston, TX",
+      "start_date": "March 2020",
+      "end_date": "May 2021",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Grand Central",
+        "Stork",
+        "Radiant",
+        "Care Everywhere"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 13 analysts and trainers",
+        "Achieved HIMSS Stage 7 recognition for implemented facility",
+        "Built 37+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Senior Medical Informatics Consultant",
+      "employer": "Valley Medical Associates",
+      "location": "Minneapolis, MN",
+      "start_date": "September 2018",
+      "end_date": "December 2020",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "EpicCare Ambulatory",
+        "Tapestry",
+        "Radiant",
+        "Resolute"
+      ],
+      "achievements": [
+        "Managed implementation for 37 ambulatory clinics across 6 states"
+      ]
+    },
+    {
+      "title": "Senior Health IT Implementation Manager",
+      "employer": "Nordic Consulting",
+      "location": "Nashville, TN",
+      "start_date": "January 2013",
+      "end_date": "May 2018",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Grand Central",
+        "Cogito",
+        "Prelude",
+        "OpTime"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $100K annual cost savings",
+        "Managed implementation for 25 ambulatory clinics across 6 states",
+        "Completed data migration of 2M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Senior Healthcare IT Project Manager",
+      "employer": "Tegria",
+      "location": "Nashville, TN",
+      "start_date": "September 2012",
+      "end_date": "February 2013",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Cogito",
+        "EpicCare Inpatient",
+        "Tapestry",
+        "Willow"
+      ],
+      "achievements": [
+        "Managed implementation for 18 ambulatory clinics across 4 states",
+        "Developed training curriculum adopted as enterprise standard",
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "Boston University",
+      "graduation_year": 2011,
+      "gpa": 3.82
+    }
+  ],
+  "certifications": [
+    "Epic Certified - Willow",
+    "Certified Scrum Master (CSM)"
+  ],
+  "skills": [
+    "FHIR APIs",
+    "Telehealth Implementation",
+    "CPT Coding",
+    "Data Migration",
+    "Change Management",
+    "Healthcare IT",
+    "Power BI",
+    "SurgiNet",
+    "PharmNet",
+    "PowerChart",
+    "Cerner",
+    "Healthcare Analytics",
+    "Report Writing",
+    "Scrum",
+    "User Acceptance Testing"
+  ]
+}

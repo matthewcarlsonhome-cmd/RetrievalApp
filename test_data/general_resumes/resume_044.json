@@ -1,0 +1,50 @@
+{
+  "id": "resume_044",
+  "personal_info": {
+    "name": "Nicole Harris",
+    "email": "nicole.harris@protonmail.com",
+    "phone": "(869) 726-9011",
+    "location": "Nashville, TN",
+    "linkedin": "linkedin.com/in/nicole-harris-5229"
+  },
+  "summary": "Experienced data engineering and analytics professional bringing 2 years of expertise. Strong background in Google Cloud Platform, Decision Making, Ruby, committed to driving innovation and business value.",
+  "years_experience": 2,
+  "experience_level": "beginner",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Associate Quantitative Analyst",
+      "employer": "Berkshire Hathaway",
+      "location": "Raleigh, NC",
+      "start_date": "March 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Resolved 35+ production issues within SLA targets",
+        "Developed 1 new features for the company's main product",
+        "Developed 2 new features for the company's main product"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "UC Berkeley",
+      "graduation_year": 2021,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Cisco Certified Network Associate (CCNA)",
+    "Azure Solutions Architect Expert"
+  ],
+  "skills": [
+    "Google Cloud Platform",
+    "Decision Making",
+    "Ruby",
+    "SQL",
+    "Azure",
+    "Splunk",
+    "Airflow",
+    ".NET Core"
+  ]
+}

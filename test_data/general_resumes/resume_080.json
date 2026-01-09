@@ -1,0 +1,91 @@
+{
+  "id": "resume_080",
+  "personal_info": {
+    "name": "Anthony Lewis",
+    "email": "anthony.lewis44@protonmail.com",
+    "phone": "(577) 783-3957",
+    "location": "Philadelphia, PA",
+    "linkedin": "linkedin.com/in/anthony-lewis-2322"
+  },
+  "summary": "Expert data engineering and analytics specialist with 9+ years of hands-on experience. Proficient in Java, Jenkins, New Relic, with excellent problem-solving and communication skills.",
+  "years_experience": 9,
+  "experience_level": "advanced",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Data Analyst",
+      "employer": "InnovateCo",
+      "location": "Boston, MA",
+      "start_date": "January 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Implemented CI/CD pipeline reducing deployment time by 35%",
+        "Designed and built RESTful APIs serving 100M+ requests daily"
+      ]
+    },
+    {
+      "title": "Analytics Engineer",
+      "employer": "Netflix",
+      "location": "Austin, TX",
+      "start_date": "September 2019",
+      "end_date": "February 2020",
+      "achievements": [
+        "Led migration of 4 microservices to Kubernetes",
+        "Designed and built RESTful APIs serving 1M+ requests daily",
+        "Reduced application load time by 24% through performance optimization"
+      ]
+    },
+    {
+      "title": "Staff Data Analyst",
+      "employer": "Home Depot",
+      "location": "Phoenix, AZ",
+      "start_date": "January 2015",
+      "end_date": "February 2019",
+      "achievements": [
+        "Drove technical strategy resulting in 31% improvement in system reliability",
+        "Drove technical strategy resulting in 42% improvement in system reliability",
+        "Established engineering best practices adopted by 12 teams",
+        "Established engineering best practices adopted by 40 teams"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Business Administration (MBA)",
+      "institution": "University of Florida",
+      "graduation_year": 2019,
+      "gpa": 3.87
+    },
+    {
+      "degree": "Bachelor of Science in Computer Engineering",
+      "institution": "University of Texas at Austin",
+      "graduation_year": 2014,
+      "gpa": 3.06
+    }
+  ],
+  "certifications": [
+    "Certified ScrumMaster (CSM)",
+    "Azure Administrator Associate",
+    "Google Cloud Professional Cloud Architect"
+  ],
+  "skills": [
+    "Java",
+    "Jenkins",
+    "New Relic",
+    "Postman",
+    "Keras",
+    "Creativity",
+    "Scala",
+    "Apache Spark",
+    "SQL",
+    "Sketch",
+    "Data Warehousing",
+    "Oracle",
+    "Redis",
+    "Looker",
+    "Angular",
+    "Azure Functions",
+    "Conflict Resolution",
+    "Negotiation"
+  ]
+}

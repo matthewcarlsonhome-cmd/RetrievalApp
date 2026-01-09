@@ -1,0 +1,82 @@
+{
+  "id": "resume_057",
+  "personal_info": {
+    "name": "Edward Anderson",
+    "email": "edwardanderson@outlook.com",
+    "phone": "(324) 338-2107",
+    "location": "Minneapolis, MN",
+    "linkedin": "linkedin.com/in/edward-anderson-7752"
+  },
+  "summary": "Experienced healthcare implementation consultant with 6 years leading Allscripts implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 6,
+  "primary_ehr_system": "Allscripts",
+  "experience": [
+    {
+      "title": "Epic Implementation Analyst",
+      "employer": "Henry Ford Hospital",
+      "location": "Fort Worth, TX",
+      "start_date": "September 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Implemented 4 Epic/Cerner modules on time and under budget",
+        "Built 49+ HL7 interfaces connecting to external systems",
+        "Designed clinical workflows that improved documentation efficiency by 15%",
+        "Decreased claim denial rate by 22% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Cerner Implementation Specialist",
+      "employer": "Geisinger Medical Center",
+      "location": "Jacksonville, FL",
+      "start_date": "January 2018",
+      "end_date": "May 2019",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 4 analysts and trainers",
+        "Completed data migration of 2M+ patient records with 99.9% accuracy",
+        "Managed implementation for 14 ambulatory clinics across 10 states"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Chicago",
+      "graduation_year": 2018,
+      "gpa": 3.45
+    }
+  ],
+  "certifications": [
+    "Certified Scrum Master (CSM)"
+  ],
+  "skills": [
+    "Health Information Exchange",
+    "CPT Coding",
+    "Clinical Decision Support",
+    "Change Management",
+    "Data Migration",
+    "Clinical Documentation",
+    "Healthcare IT",
+    "Mobile Health",
+    "System Integration",
+    "Allscripts",
+    "Revenue Cycle Management",
+    "Patient Portal Implementation",
+    "Clinical Workflow Analysis",
+    "Optimization",
+    "User Acceptance Testing"
+  ]
+}

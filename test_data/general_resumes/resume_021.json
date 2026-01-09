@@ -1,0 +1,47 @@
+{
+  "id": "resume_021",
+  "personal_info": {
+    "name": "James Singh",
+    "email": "james.singh57@protonmail.com",
+    "phone": "(530) 900-7689",
+    "location": "Boston, MA",
+    "linkedin": "linkedin.com/in/james-singh-5525"
+  },
+  "summary": "Detail-oriented IT infrastructure and cloud technologies specialist with 1+ years of hands-on experience. Proficient in Adobe XD, Azure, Angular, with excellent problem-solving and communication skills.",
+  "years_experience": 1,
+  "experience_level": "beginner",
+  "role_category": "infrastructure",
+  "experience": [
+    {
+      "title": "Junior Network Engineer",
+      "employer": "Scale Up Inc",
+      "location": "Seattle, WA",
+      "start_date": "June 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Participated in code reviews, providing feedback on 25+ pull requests",
+        "Developed 2 new features for the company's main product"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Harvard University",
+      "graduation_year": 2021,
+      "gpa": 3.08
+    }
+  ],
+  "certifications": [
+    "Professional Scrum Master (PSM I)"
+  ],
+  "skills": [
+    "Adobe XD",
+    "Azure",
+    "Angular",
+    "SQLite",
+    "TypeScript",
+    "Negotiation",
+    "Swift"
+  ]
+}

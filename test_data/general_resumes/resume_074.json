@@ -1,0 +1,35 @@
+{
+  "id": "resume_074",
+  "personal_info": {
+    "name": "Mark Kumar",
+    "email": "mkumar@outlook.com",
+    "phone": "(216) 301-7026",
+    "location": "Los Angeles, CA",
+    "linkedin": "linkedin.com/in/mark-kumar-5228"
+  },
+  "summary": "Motivated data engineering and analytics specialist with 0+ years of hands-on experience. Proficient in Scikit-learn, C#, Apache Spark, with excellent problem-solving and communication skills.",
+  "years_experience": 0,
+  "experience_level": "beginner",
+  "role_category": "data",
+  "experience": [],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Software Engineering",
+      "institution": "Georgia Tech",
+      "graduation_year": 2023,
+      "gpa": 3.44
+    }
+  ],
+  "certifications": [
+    "CompTIA Network+",
+    "AWS Certified Solutions Architect - Associate"
+  ],
+  "skills": [
+    "Scikit-learn",
+    "C#",
+    "Apache Spark",
+    "Azure",
+    "VS Code",
+    "TypeScript"
+  ]
+}

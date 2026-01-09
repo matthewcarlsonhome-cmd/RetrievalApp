@@ -1,0 +1,186 @@
+{
+  "id": "resume_054",
+  "personal_info": {
+    "name": "Jeffrey Nguyen",
+    "email": "jeffreynguyen@healthcaremail.com",
+    "phone": "(699) 641-2567",
+    "location": "San Diego, CA",
+    "linkedin": "linkedin.com/in/jeffrey-nguyen-2929"
+  },
+  "summary": "Clinical informatics expert with 19+ years specializing in Epic implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 19,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Healthcare Data Analyst",
+      "employer": "Accenture Health",
+      "location": "Los Angeles, CA",
+      "start_date": "September 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 21% through workflow optimization",
+        "Decreased claim denial rate by 19% through revenue cycle optimization",
+        "Coordinated go-live support for 500+ providers across 7 locations"
+      ]
+    },
+    {
+      "title": "Senior Clinical Workflow Analyst",
+      "employer": "eClinicalWorks",
+      "location": "Charlotte, NC",
+      "start_date": "September 2017",
+      "end_date": "December 2019",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $500K annual cost savings",
+        "Trained 2000+ end users with 93% satisfaction rating",
+        "Completed data migration of 10M+ patient records with 99.9% accuracy",
+        "Implemented 6 Epic/Cerner modules on time and under budget"
+      ]
+    },
+    {
+      "title": "Principal EHR Training Specialist",
+      "employer": "Impact Advisors",
+      "location": "Philadelphia, PA",
+      "start_date": "September 2013",
+      "end_date": "May 2017",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Trained 500+ end users with 93% satisfaction rating",
+        "Led successful go-live for 300-bed hospital with zero critical issues",
+        "Completed data migration of 5M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Principal Cerner Implementation Specialist",
+      "employer": "DrChrono",
+      "location": "Atlanta, GA",
+      "start_date": "January 2011",
+      "end_date": "February 2013",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "EpicCare Inpatient",
+        "Healthy Planet",
+        "EpicCare Ambulatory",
+        "ASAP"
+      ],
+      "achievements": [
+        "Implemented 12 Epic/Cerner modules on time and under budget",
+        "Trained 2000+ end users with 96% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Lead Healthcare Data Analyst",
+      "employer": "Leidos Health",
+      "location": "Chicago, IL",
+      "start_date": "June 2010",
+      "end_date": "May 2011",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 34% through workflow optimization",
+        "Achieved 97% clinician adoption rate within first 5 months"
+      ]
+    },
+    {
+      "title": "Principal EHR Training Specialist",
+      "employer": "Downtown Health Clinic",
+      "location": "Cleveland, OH",
+      "start_date": "January 2006",
+      "end_date": "May 2010",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 4 analysts and trainers",
+        "Trained 1000+ end users with 94% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Principal Healthcare Integration Engineer",
+      "employer": "Pivot Point Consulting",
+      "location": "Baltimore, MD",
+      "start_date": "June 2005",
+      "end_date": "August 2006",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "FirstNet",
+        "PowerChart",
+        "Soarian",
+        "ITWorks"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 29% through workflow optimization",
+        "Coordinated go-live support for 200+ providers across 5 locations",
+        "Trained 200+ end users with 94% satisfaction rating"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Business Administration",
+      "institution": "Drexel University",
+      "graduation_year": 2011,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "University of North Carolina",
+      "graduation_year": 2005,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Cerner Certified - Millennium",
+    "Certified Professional in Healthcare Information and Management Systems (CPHIMS)",
+    "Project Management Professional (PMP)"
+  ],
+  "skills": [
+    "Go-Live Support",
+    "Interoperability",
+    "Data Migration",
+    "Training Development",
+    "Resolute",
+    "OpTime",
+    "Revenue Cycle Management",
+    "Patient Portal Implementation",
+    "Optimization",
+    "Beacon",
+    "Healthcare Analytics",
+    "Epic",
+    "Clinical Workflow Analysis",
+    "Crystal Reports",
+    "Medical Terminology"
+  ]
+}

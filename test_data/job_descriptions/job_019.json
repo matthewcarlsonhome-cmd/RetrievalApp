@@ -1,0 +1,71 @@
+{
+  "id": "job_019",
+  "title": "Principal Healthcare Implementation Specialist",
+  "employer": "Christus Health",
+  "employer_type": "health system",
+  "location": "Milwaukee, WI",
+  "remote_option": "Travel Required (50-75%)",
+  "employment_type": "Full-time",
+  "contract_type": "Contract",
+  "contract_length": "24 months",
+  "posted_date": "2025-12-16",
+  "primary_ehr_system": "athenahealth",
+  "modules": [
+    "athenahealth Core"
+  ],
+  "experience_required": {
+    "min_years": 7,
+    "max_years": null
+  },
+  "description": "Christus Health seeks a talented Principal Healthcare Implementation Specialist to lead our athenahealth implementation initiatives. You will work closely with clinical stakeholders, IT teams, and executive leadership to deliver solutions that improve efficiency and patient outcomes. Experience with athenahealth Core is essential.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize athenahealth applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Lead end-to-end athenahealth implementation projects from planning through go-live",
+    "Design and build clinical workflows within the EHR system",
+    "Conduct workflow analysis sessions with clinical departments",
+    "Manage data migration and system integration activities",
+    "Coordinate with third-party vendors and interface partners"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field",
+    "experience": "7+ years of healthcare IT implementation experience",
+    "skills": [
+      "athenahealth",
+      "Patient Portal Implementation",
+      "Agile Methodology",
+      "Interoperability",
+      "Process Improvement",
+      "Project Management",
+      "CPT Coding",
+      "Python",
+      "Report Writing",
+      "Healthcare IT"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Medical Terminology",
+      "Healthcare IT",
+      "EHR Implementation"
+    ],
+    "certifications": [
+      "Certified Associate in Healthcare Information and Management Systems (CAHIMS)",
+      "Six Sigma Green Belt"
+    ]
+  },
+  "salary": {
+    "type": "hourly",
+    "min": 74,
+    "max": 104,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Competitive hourly rate",
+    "Professional development opportunities"
+  ]
+}

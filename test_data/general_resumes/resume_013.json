@@ -1,0 +1,108 @@
+{
+  "id": "resume_013",
+  "personal_info": {
+    "name": "Paul Flores",
+    "email": "pflores@outlook.com",
+    "phone": "(568) 246-4141",
+    "location": "San Diego, CA",
+    "linkedin": "linkedin.com/in/paul-flores-3582"
+  },
+  "summary": "Seasoned professional with 8+ years of experience in project management and operations. Skilled in Teamwork, Creativity, Kanban, with a proven track record of delivering impactful results.",
+  "years_experience": 8,
+  "experience_level": "advanced",
+  "role_category": "management",
+  "experience": [
+    {
+      "title": "Delivery Manager",
+      "employer": "ExxonMobil",
+      "location": "Denver, CO",
+      "start_date": "March 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Managed stakeholder communications for 7 departments",
+        "Managed stakeholder communications for 8 departments",
+        "Analyzed 27 business reports to identify improvement opportunities",
+        "Managed stakeholder communications for 4 departments"
+      ]
+    },
+    {
+      "title": "Customer Success Manager",
+      "employer": "Walmart",
+      "location": "Raleigh, NC",
+      "start_date": "January 2021",
+      "end_date": "August 2023",
+      "achievements": [
+        "Increased customer satisfaction scores by 33% through service improvements",
+        "Developed business cases securing $100K in project funding",
+        "Led process improvement initiative saving 45 hours weekly",
+        "Led process improvement initiative saving 20 hours weekly"
+      ]
+    },
+    {
+      "title": "Staff Delivery Manager",
+      "employer": "Shopify",
+      "location": "Minneapolis, MN",
+      "start_date": "June 2018",
+      "end_date": "May 2021",
+      "achievements": [
+        "Built and led team of 28 analysts and specialists",
+        "Delivered 24% improvement in operational efficiency",
+        "Delivered 16% improvement in operational efficiency"
+      ]
+    },
+    {
+      "title": "Lead Engagement Manager",
+      "employer": "Walgreens",
+      "location": "Detroit, MI",
+      "start_date": "June 2017",
+      "end_date": "August 2018",
+      "achievements": [
+        "Delivered 44% improvement in operational efficiency",
+        "Built and led team of 44 analysts and specialists",
+        "Directed cross-functional initiatives across 9 departments",
+        "Directed cross-functional initiatives across 4 departments"
+      ]
+    },
+    {
+      "title": "Staff Engagement Manager",
+      "employer": "Slack",
+      "location": "Salt Lake City, UT",
+      "start_date": "June 2016",
+      "end_date": "December 2017",
+      "achievements": [
+        "Built and led team of 24 analysts and specialists",
+        "Managed portfolio of 52 projects worth $200M"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Business Management",
+      "institution": "Boston University",
+      "graduation_year": 2016,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Certified Digital Marketing Professional",
+    "Certified Business Analysis Professional (CBAP)"
+  ],
+  "skills": [
+    "Teamwork",
+    "Creativity",
+    "Kanban",
+    "Bitbucket",
+    "Power BI",
+    "GitLab",
+    "Problem Solving",
+    "Decision Making",
+    "Waterfall",
+    "Vendor Management",
+    "Business Intelligence",
+    "Budget Management",
+    "Business Analysis",
+    "Confluence",
+    "Executive Communication",
+    "Data Analysis"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "resume_020",
+  "personal_info": {
+    "name": "Karen Rodriguez",
+    "email": "karen.rodriguez88@protonmail.com",
+    "phone": "(842) 528-3769",
+    "location": "Charlotte, NC",
+    "linkedin": "linkedin.com/in/karen-rodriguez-7552"
+  },
+  "summary": "Detail-oriented professional with 0+ years of experience in product management and delivery. Skilled in Power BI, Bitbucket, Communication, with a proven track record of delivering impactful results.",
+  "years_experience": 0,
+  "experience_level": "beginner",
+  "role_category": "product",
+  "experience": [],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Economics",
+      "institution": "UCLA",
+      "graduation_year": 2024,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "PMP (Project Management Professional)",
+    "Certified Digital Marketing Professional"
+  ],
+  "skills": [
+    "Power BI",
+    "Bitbucket",
+    "Communication",
+    "Risk Management",
+    "Process Improvement"
+  ]
+}

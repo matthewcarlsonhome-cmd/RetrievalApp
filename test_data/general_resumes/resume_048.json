@@ -1,0 +1,48 @@
+{
+  "id": "resume_048",
+  "personal_info": {
+    "name": "Mary Sharma",
+    "email": "marysharma@protonmail.com",
+    "phone": "(828) 222-4917",
+    "location": "Pittsburgh, PA",
+    "linkedin": "linkedin.com/in/mary-sharma-6669"
+  },
+  "summary": "Detail-oriented professional with 1+ years of experience in product management and delivery. Skilled in Team Leadership, Git, ETL, with a proven track record of delivering impactful results.",
+  "years_experience": 1,
+  "experience_level": "beginner",
+  "role_category": "product",
+  "experience": [
+    {
+      "title": "Junior Technical Program Manager",
+      "employer": "Walmart",
+      "location": "San Jose, CA",
+      "start_date": "January 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Supported 1 project implementations successfully",
+        "Created process documentation improving team efficiency by 42%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Management Information Systems",
+      "institution": "Carnegie Mellon University",
+      "graduation_year": 2020,
+      "gpa": 3.99
+    }
+  ],
+  "certifications": [
+    "Certified Business Analysis Professional (CBAP)"
+  ],
+  "skills": [
+    "Team Leadership",
+    "Git",
+    "ETL",
+    "Resource Planning",
+    "Vendor Management",
+    "Business Intelligence",
+    "Postman",
+    "Leadership"
+  ]
+}

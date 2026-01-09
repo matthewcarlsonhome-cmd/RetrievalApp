@@ -1,0 +1,106 @@
+{
+  "id": "resume_061",
+  "personal_info": {
+    "name": "Gary Perez",
+    "email": "gary.perez76@outlook.com",
+    "phone": "(949) 449-9970",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/gary-perez-1499"
+  },
+  "summary": "Dedicated EHR implementation professional bringing 9 years of experience in Cerner deployments. Skilled in leading cross-functional teams, managing complex projects, and ensuring successful system adoption. Track record of on-time, on-budget implementations.",
+  "years_experience": 9,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "EHR Training Specialist",
+      "employer": "Impact Advisors",
+      "location": "San Jose, CA",
+      "start_date": "January 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Managed cross-functional team of 8 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Lead EHR Training Specialist",
+      "employer": "CureMD",
+      "location": "Salt Lake City, UT",
+      "start_date": "March 2016",
+      "end_date": "February 2019",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Beacon",
+        "EpicCare Inpatient",
+        "Healthy Planet",
+        "Stork"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 18%",
+        "Achieved 90% clinician adoption rate within first 3 months"
+      ]
+    },
+    {
+      "title": "Lead Health Information Manager",
+      "employer": "Family Care Associates",
+      "location": "Las Vegas, NV",
+      "start_date": "January 2015",
+      "end_date": "December 2016",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Built 30+ HL7 interfaces connecting to external systems",
+        "Completed data migration of 5M+ patient records with 99.9% accuracy",
+        "Decreased claim denial rate by 18% through revenue cycle optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Health Informatics",
+      "institution": "Drexel University",
+      "graduation_year": 2019,
+      "gpa": 3.98
+    },
+    {
+      "degree": "Bachelor of Arts in Healthcare Management",
+      "institution": "Temple University",
+      "graduation_year": 2014,
+      "gpa": 3.87
+    }
+  ],
+  "certifications": [
+    "Epic Certified - EpicCare Ambulatory",
+    "Registered Health Information Administrator (RHIA)",
+    "Certified Professional in Healthcare Information and Management Systems (CPHIMS)",
+    "Cerner Certified - Millennium"
+  ],
+  "skills": [
+    "Project Management",
+    "CPT Coding",
+    "RadNet",
+    "Power BI",
+    "HealtheIntent",
+    "Revenue Cycle Management",
+    "Millennium",
+    "Cerner",
+    "Healthcare Analytics",
+    "Clinical Workflow Analysis",
+    "Agile Methodology",
+    "Scrum"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "resume_014",
+  "personal_info": {
+    "name": "Ryan Anderson",
+    "email": "ryan.anderson80@gmail.com",
+    "phone": "(438) 227-3002",
+    "location": "Minneapolis, MN",
+    "linkedin": "linkedin.com/in/ryan-anderson-4906"
+  },
+  "summary": "Clinical informatics expert with 5+ years specializing in athenahealth implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 5,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Cerner Implementation Specialist",
+      "employer": "Mountain View Health Center",
+      "location": "Nashville, TN",
+      "start_date": "January 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Built 10+ HL7 interfaces connecting to external systems",
+        "Led successful go-live for 300-bed hospital with zero critical issues",
+        "Achieved 86% clinician adoption rate within first 6 months"
+      ]
+    },
+    {
+      "title": "EHR Training Specialist",
+      "employer": "Cleveland Clinic",
+      "location": "San Diego, CA",
+      "start_date": "September 2019",
+      "end_date": "August 2022",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $1000K annual cost savings",
+        "Managed cross-functional team of 9 analysts and trainers"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Information Systems",
+      "institution": "University of Colorado",
+      "graduation_year": 2021,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "UCLA",
+      "graduation_year": 2018,
+      "gpa": 3.51
+    }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect",
+    "HL7 FHIR Certification",
+    "Epic Certified - EpicCare Inpatient"
+  ],
+  "skills": [
+    "Business Intelligence",
+    "Go-Live Support",
+    "Clinical Decision Support",
+    "Healthcare IT",
+    "Power BI",
+    "athenahealth",
+    "Revenue Cycle Management",
+    "Agile Methodology",
+    "Scrum",
+    "User Acceptance Testing"
+  ]
+}

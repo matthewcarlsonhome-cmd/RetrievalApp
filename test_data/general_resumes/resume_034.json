@@ -1,0 +1,93 @@
+{
+  "id": "resume_034",
+  "personal_info": {
+    "name": "Katherine Harris",
+    "email": "katherine.harris@protonmail.com",
+    "phone": "(397) 389-6948",
+    "location": "Boston, MA",
+    "linkedin": "linkedin.com/in/katherine-harris-6807"
+  },
+  "summary": "Experienced software development and engineering professional bringing 9 years of expertise. Strong background in Google Cloud Platform, Time Management, Active Listening, committed to driving innovation and business value.",
+  "years_experience": 9,
+  "experience_level": "advanced",
+  "role_category": "development",
+  "experience": [
+    {
+      "title": "Associate Data Engineer",
+      "employer": "ExxonMobil",
+      "location": "Detroit, MI",
+      "start_date": "January 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Participated in code reviews, providing feedback on 56+ pull requests",
+        "Created technical documentation for 3 internal tools",
+        "Created technical documentation for 4 internal tools"
+      ]
+    },
+    {
+      "title": "Mobile Developer",
+      "employer": "TechVenture Labs",
+      "location": "Nashville, TN",
+      "start_date": "March 2020",
+      "end_date": "December 2023",
+      "achievements": [
+        "Implemented CI/CD pipeline reducing deployment time by 28%",
+        "Led migration of 7 microservices to Kubernetes",
+        "Mentored 8 junior developers in best practices"
+      ]
+    },
+    {
+      "title": "Lead Software Engineer",
+      "employer": "VMware",
+      "location": "Detroit, MI",
+      "start_date": "January 2018",
+      "end_date": "December 2020",
+      "achievements": [
+        "Led team of 44 engineers in delivering critical platform features",
+        "Reduced infrastructure costs by $4000K annually through optimization"
+      ]
+    },
+    {
+      "title": "Staff Backend Developer",
+      "employer": "Salesforce",
+      "location": "Pittsburgh, PA",
+      "start_date": "September 2015",
+      "end_date": "May 2018",
+      "achievements": [
+        "Led team of 12 engineers in delivering critical platform features",
+        "Established engineering best practices adopted by 16 teams"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Data Science",
+      "institution": "University of Colorado",
+      "graduation_year": 2014,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "CompTIA Network+",
+    "Oracle Certified Professional",
+    "CompTIA Security+",
+    "AWS Certified Solutions Architect - Associate"
+  ],
+  "skills": [
+    "Google Cloud Platform",
+    "Time Management",
+    "Active Listening",
+    "Docker",
+    "Scala",
+    "Scikit-learn",
+    "MATLAB",
+    "GitHub",
+    "Figma",
+    "Problem Solving",
+    "C#",
+    "Azure Functions",
+    "ELK Stack",
+    "SQL Server",
+    "Negotiation"
+  ]
+}

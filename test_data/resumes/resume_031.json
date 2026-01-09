@@ -1,0 +1,124 @@
+{
+  "id": "resume_031",
+  "personal_info": {
+    "name": "David Davis",
+    "email": "david.davis72@healthcaremail.com",
+    "phone": "(823) 985-8519",
+    "location": "Seattle, WA",
+    "linkedin": "linkedin.com/in/david-davis-2498"
+  },
+  "summary": "Experienced healthcare implementation consultant with 8 years leading athenahealth implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 8,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "EHR Training Specialist",
+      "employer": "Massachusetts General Hospital",
+      "location": "Minneapolis, MN",
+      "start_date": "January 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 20% through workflow optimization",
+        "Managed implementation for 47 ambulatory clinics across 6 states",
+        "Designed clinical workflows that improved documentation efficiency by 19%",
+        "Completed data migration of 10M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Medical Informatics Consultant",
+      "employer": "Northwell Health",
+      "location": "Dallas, TX",
+      "start_date": "January 2019",
+      "end_date": "August 2023",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Willow",
+        "Cadence",
+        "MyChart",
+        "Healthy Planet"
+      ],
+      "achievements": [
+        "Led successful go-live for 400-bed hospital with zero critical issues",
+        "Trained 500+ end users with 95% satisfaction rating",
+        "Designed clinical workflows that improved documentation efficiency by 37%",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "EHR Training Specialist",
+      "employer": "Metro Internal Medicine",
+      "location": "San Jose, CA",
+      "start_date": "March 2018",
+      "end_date": "May 2019",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Prelude",
+        "ASAP",
+        "Grand Central",
+        "Willow"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 100+ providers across 19 locations",
+        "Achieved 93% clinician adoption rate within first 5 months"
+      ]
+    },
+    {
+      "title": "EHR Support Analyst",
+      "employer": "Nordic Consulting",
+      "location": "Atlanta, GA",
+      "start_date": "March 2016",
+      "end_date": "December 2018",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PathNet",
+        "FirstNet",
+        "PharmNet",
+        "Soarian"
+      ],
+      "achievements": [
+        "Completed data migration of 10M+ patient records with 99.9% accuracy",
+        "Managed cross-functional team of 3 analysts and trainers",
+        "Reduced average patient wait time by 27% through workflow optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "University of Colorado",
+      "graduation_year": 2015,
+      "gpa": 3.27
+    }
+  ],
+  "certifications": [
+    "Epic Certified - EpicCare Ambulatory",
+    "ITIL Foundation Certification",
+    "HL7 FHIR Certification",
+    "Epic Certified - Beacon",
+    "Registered Health Information Administrator (RHIA)"
+  ],
+  "skills": [
+    "ICD-10",
+    "Interoperability",
+    "Clinical Decision Support",
+    "HL7 Interfaces",
+    "Process Improvement",
+    "athenahealth",
+    "SQL",
+    "Tableau",
+    "Medical Terminology"
+  ]
+}

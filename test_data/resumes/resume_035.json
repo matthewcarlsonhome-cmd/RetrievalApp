@@ -1,0 +1,134 @@
+{
+  "id": "resume_035",
+  "personal_info": {
+    "name": "Joshua Gonzalez",
+    "email": "joshuagonzalez@consultant.net",
+    "phone": "(931) 607-3577",
+    "location": "Charlotte, NC",
+    "linkedin": "linkedin.com/in/joshua-gonzalez-9752"
+  },
+  "summary": "Clinical informatics expert with 11+ years specializing in Cerner implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 11,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Health IT Implementation Manager",
+      "employer": "ECG Management Consultants",
+      "location": "Atlanta, GA",
+      "start_date": "March 2020",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Cadence",
+        "MyChart",
+        "OpTime",
+        "Healthy Planet"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 45%",
+        "Led optimization project resulting in $200K annual cost savings",
+        "Managed cross-functional team of 8 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Clinical Informatics Specialist",
+      "employer": "Valley Medical Associates",
+      "location": "San Jose, CA",
+      "start_date": "June 2018",
+      "end_date": "August 2020",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 500+ providers across 11 locations",
+        "Achieved 97% clinician adoption rate within first 6 months",
+        "Developed training curriculum adopted as enterprise standard",
+        "Managed cross-functional team of 7 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Data Analyst",
+      "employer": "Sutter Health",
+      "location": "Cleveland, OH",
+      "start_date": "March 2014",
+      "end_date": "December 2018",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "CommunityWorks",
+        "ITWorks",
+        "PathNet",
+        "FirstNet"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Reduced average patient wait time by 41% through workflow optimization",
+        "Led successful go-live for 300-bed hospital with zero critical issues",
+        "Achieved 92% clinician adoption rate within first 2 months"
+      ]
+    },
+    {
+      "title": "Director of Healthcare IT Project Manager",
+      "employer": "Barnes-Jewish Hospital",
+      "location": "San Jose, CA",
+      "start_date": "September 2013",
+      "end_date": "May 2014",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Implemented 6 Epic/Cerner modules on time and under budget",
+        "Managed implementation for 5 ambulatory clinics across 5 states"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Public Health",
+      "institution": "Columbia University",
+      "graduation_year": 2019,
+      "gpa": 3.84
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Florida",
+      "graduation_year": 2013,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Six Sigma Black Belt"
+  ],
+  "skills": [
+    "Project Management",
+    "HIPAA Compliance",
+    "Training Development",
+    "Millennium",
+    "Soarian",
+    "Agile Methodology",
+    "Cerner",
+    "Clinical Workflow Analysis",
+    "Medical Terminology",
+    "Go-Live Support",
+    "ICD-10",
+    "Build Validation",
+    "Mobile Health",
+    "Tableau",
+    "CPT Coding",
+    "Clinical Decision Support",
+    "RadNet",
+    "Value-Based Care",
+    "Scrum"
+  ]
+}

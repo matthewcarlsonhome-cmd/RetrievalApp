@@ -1,0 +1,99 @@
+{
+  "id": "resume_018",
+  "personal_info": {
+    "name": "Joshua Zhang",
+    "email": "jzhang@yahoo.com",
+    "phone": "(926) 694-8040",
+    "location": "San Antonio, TX",
+    "linkedin": "linkedin.com/in/joshua-zhang-7195"
+  },
+  "summary": "Healthcare informatics specialist with 6+ years of hands-on experience implementing and optimizing Allscripts EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 6,
+  "primary_ehr_system": "Allscripts",
+  "experience": [
+    {
+      "title": "Clinical Applications Analyst",
+      "employer": "Conduent Healthcare",
+      "location": "Charlotte, NC",
+      "start_date": "March 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Health Information Manager",
+      "employer": "Houston Methodist Hospital",
+      "location": "Philadelphia, PA",
+      "start_date": "June 2019",
+      "end_date": "December 2021",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Managed implementation for 26 ambulatory clinics across 4 states"
+      ]
+    },
+    {
+      "title": "Senior Clinical Informatics Specialist",
+      "employer": "CommonSpirit Health",
+      "location": "Jacksonville, FL",
+      "start_date": "January 2018",
+      "end_date": "February 2019",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 500+ providers across 8 locations",
+        "Built 14+ HL7 interfaces connecting to external systems"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "Northwestern University",
+      "graduation_year": 2015,
+      "gpa": 3.98
+    }
+  ],
+  "certifications": [
+    "Cerner Certified - PowerChart",
+    "Epic Certified - EpicCare Inpatient"
+  ],
+  "skills": [
+    "Go-Live Support",
+    "FHIR APIs",
+    "Clinical Documentation",
+    "Clinical Decision Support",
+    "Data Migration",
+    "HL7 Interfaces",
+    "Healthcare IT",
+    "Python",
+    "Power BI",
+    "SQL",
+    "Allscripts",
+    "User Acceptance Testing",
+    "Agile Methodology",
+    "Scrum",
+    "Optimization",
+    "System Configuration"
+  ]
+}

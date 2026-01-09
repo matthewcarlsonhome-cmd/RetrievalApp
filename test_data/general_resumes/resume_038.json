@@ -1,0 +1,78 @@
+{
+  "id": "resume_038",
+  "personal_info": {
+    "name": "Timothy Patel",
+    "email": "timothy.patel68@icloud.com",
+    "phone": "(272) 549-3145",
+    "location": "Washington, DC",
+    "linkedin": "linkedin.com/in/timothy-patel-8558"
+  },
+  "summary": "Accomplished professional with 6+ years of experience in IT infrastructure and cloud technologies. Skilled in Java, New Relic, Google Cloud Platform, with a proven track record of delivering impactful results.",
+  "years_experience": 6,
+  "experience_level": "advanced",
+  "role_category": "infrastructure",
+  "experience": [
+    {
+      "title": "Associate Database Administrator",
+      "employer": "InnovateCo",
+      "location": "Dallas, TX",
+      "start_date": "January 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Participated in code reviews, providing feedback on 51+ pull requests",
+        "Participated in code reviews, providing feedback on 69+ pull requests",
+        "Developed 1 new features for the company's main product"
+      ]
+    },
+    {
+      "title": "Associate Technical Architect",
+      "employer": "InnovateCo",
+      "location": "San Diego, CA",
+      "start_date": "January 2022",
+      "end_date": "May 2023",
+      "achievements": [
+        "Created technical documentation for 3 internal tools",
+        "Developed 1 new features for the company's main product"
+      ]
+    },
+    {
+      "title": "Senior Systems Administrator",
+      "employer": "Agile Systems",
+      "location": "Dallas, TX",
+      "start_date": "March 2018",
+      "end_date": "December 2022",
+      "achievements": [
+        "Drove technical strategy resulting in 41% improvement in system reliability",
+        "Reduced infrastructure costs by $4000K annually through optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Data Science",
+      "institution": "Northwestern University",
+      "graduation_year": 2018,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Cisco Certified Network Associate (CCNA)",
+    "Certified ScrumMaster (CSM)"
+  ],
+  "skills": [
+    "Java",
+    "New Relic",
+    "Google Cloud Platform",
+    "TypeScript",
+    "Slack",
+    "Communication",
+    "Go",
+    "DigitalOcean",
+    "Oracle",
+    "C#",
+    "Terraform",
+    "Angular",
+    "DynamoDB",
+    "Conflict Resolution"
+  ]
+}

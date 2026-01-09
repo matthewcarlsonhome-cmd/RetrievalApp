@@ -1,0 +1,72 @@
+{
+  "id": "job_020",
+  "title": "IT Manager",
+  "employer": "UnitedHealth Group",
+  "employer_type": "fortune500",
+  "location": "New York, NY",
+  "remote_option": "Hybrid (3 days in office)",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2026-01-07",
+  "job_category": "manager",
+  "seniority_level": "manager",
+  "experience_required": {
+    "min_years": 8,
+    "max_years": null
+  },
+  "description": "UnitedHealth Group is seeking an experienced IT Manager to lead and grow our team. You'll set strategic direction, mentor team members, and drive results across the organization.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Lead, mentor, and develop team members",
+    "Set strategic direction and priorities for the team",
+    "Manage budgets, resources, and timelines",
+    "Build relationships with key stakeholders and partners",
+    "Drive organizational change and transformation initiatives",
+    "Recruit, hire, and retain top talent",
+    "Conduct performance reviews and career development discussions",
+    "Represent the team in executive meetings and steering committees"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "8+ years of relevant experience",
+    "skills": [
+      "Cross-functional Collaboration",
+      "KPI Development",
+      "Waterfall",
+      "Performance Metrics",
+      "Team Leadership",
+      "Negotiation",
+      "Decision Making",
+      "Presentation Skills",
+      "Active Listening"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Bitbucket",
+      "VS Code",
+      "GitHub"
+    ],
+    "certifications": [
+      "Certified Scrum Product Owner (CSPO)",
+      "Six Sigma Black Belt"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 178559,
+    "max": 205888,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Parental leave",
+    "Stock options/equity grants",
+    "Commuter benefits",
+    "401(k) with company match",
+    "Home office stipend",
+    "Unlimited PTO"
+  ]
+}

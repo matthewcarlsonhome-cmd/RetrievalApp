@@ -1,0 +1,156 @@
+{
+  "id": "resume_082",
+  "personal_info": {
+    "name": "Andrew Carter",
+    "email": "andrew.carter62@healthcaremail.com",
+    "phone": "(567) 911-8476",
+    "location": "Portland, OR",
+    "linkedin": "linkedin.com/in/andrew-carter-1976"
+  },
+  "summary": "Clinical informatics expert with 13+ years specializing in Cerner implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 13,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Clinical Informatics Specialist",
+      "employer": "Duke University Hospital",
+      "location": "Columbus, OH",
+      "start_date": "June 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "CommunityWorks",
+        "PathNet",
+        "ITWorks",
+        "FirstNet"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 38%",
+        "Led optimization project resulting in $500K annual cost savings",
+        "Implemented 11 Epic/Cerner modules on time and under budget"
+      ]
+    },
+    {
+      "title": "Senior Clinical Workflow Analyst",
+      "employer": "Kareo",
+      "location": "Las Vegas, NV",
+      "start_date": "March 2018",
+      "end_date": "February 2019",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "RadNet",
+        "ITWorks",
+        "PharmNet",
+        "SurgiNet"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 7 analysts and trainers",
+        "Implemented 7 Epic/Cerner modules on time and under budget",
+        "Developed training curriculum adopted as enterprise standard",
+        "Led optimization project resulting in $1000K annual cost savings"
+      ]
+    },
+    {
+      "title": "Lead Healthcare IT Project Manager",
+      "employer": "Mayo Clinic",
+      "location": "Minneapolis, MN",
+      "start_date": "June 2017",
+      "end_date": "May 2018",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Stork",
+        "Resolute",
+        "OpTime",
+        "MyChart"
+      ],
+      "achievements": [
+        "Trained 1000+ end users with 96% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Senior Health Information Manager",
+      "employer": "Cedars-Sinai Medical Center",
+      "location": "Detroit, MI",
+      "start_date": "January 2012",
+      "end_date": "August 2017",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Trained 200+ end users with 95% satisfaction rating",
+        "Designed clinical workflows that improved documentation efficiency by 17%"
+      ]
+    },
+    {
+      "title": "Principal Healthcare Integration Engineer",
+      "employer": "Nordic Consulting",
+      "location": "San Antonio, TX",
+      "start_date": "September 2011",
+      "end_date": "May 2012",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "MyChart",
+        "Prelude",
+        "ASAP",
+        "Radiant"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Implemented 3 Epic/Cerner modules on time and under budget",
+        "Led successful go-live for 750-bed hospital with zero critical issues"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Health Informatics",
+      "institution": "Vanderbilt University",
+      "graduation_year": 2012,
+      "gpa": 3.93
+    },
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "George Washington University",
+      "graduation_year": 2009,
+      "gpa": 3.55
+    }
+  ],
+  "certifications": [
+    "Six Sigma Green Belt",
+    "HL7 FHIR Certification",
+    "Epic Certified - Willow"
+  ],
+  "skills": [
+    "Project Management",
+    "Training Development",
+    "Business Intelligence",
+    "Interoperability",
+    "Healthcare IT",
+    "Population Health",
+    "Cerner",
+    "System Configuration",
+    "Power BI",
+    "Patient Portal Implementation",
+    "PharmNet",
+    "Tableau",
+    "FirstNet",
+    "EHR Implementation",
+    "Optimization",
+    "PathNet",
+    "CPT Coding",
+    "Clinical Decision Support",
+    "HL7 Interfaces"
+  ]
+}

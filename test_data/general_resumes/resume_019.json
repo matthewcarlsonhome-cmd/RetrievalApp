@@ -1,0 +1,37 @@
+{
+  "id": "resume_019",
+  "personal_info": {
+    "name": "Samantha Hall",
+    "email": "shall@icloud.com",
+    "phone": "(929) 828-8737",
+    "location": "Miami, FL",
+    "linkedin": "linkedin.com/in/samantha-hall-1894"
+  },
+  "summary": "Experienced product management and delivery professional bringing 0 years of expertise. Strong background in Team Leadership, Creativity, Git, committed to driving innovation and business value.",
+  "years_experience": 0,
+  "experience_level": "beginner",
+  "role_category": "product",
+  "experience": [],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Business Management",
+      "institution": "University of Florida",
+      "graduation_year": 2021,
+      "gpa": 3.05
+    }
+  ],
+  "certifications": [
+    "Certified Business Analysis Professional (CBAP)",
+    "Certified Management Consultant (CMC)"
+  ],
+  "skills": [
+    "Team Leadership",
+    "Creativity",
+    "Git",
+    "KPI Development",
+    "Leadership",
+    "IntelliJ IDEA",
+    "Data Analysis",
+    "Process Improvement"
+  ]
+}

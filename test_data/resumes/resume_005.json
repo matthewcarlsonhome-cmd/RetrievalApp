@@ -1,0 +1,66 @@
+{
+  "id": "resume_005",
+  "personal_info": {
+    "name": "Dorothy Sanchez",
+    "email": "dorothy.sanchez53@consultant.net",
+    "phone": "(375) 909-7537",
+    "location": "Cleveland, OH",
+    "linkedin": "linkedin.com/in/dorothy-sanchez-7220"
+  },
+  "summary": "Results-driven healthcare IT professional with 5+ years of experience in EHR implementation and optimization. Specialized in athenahealth system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 5,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Cerner Implementation Specialist",
+      "employer": "Tegria",
+      "location": "Chicago, IL",
+      "start_date": "March 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Implemented 9 Epic/Cerner modules on time and under budget",
+        "Built 22+ HL7 interfaces connecting to external systems"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Business Administration",
+      "institution": "University of Colorado",
+      "graduation_year": 2023,
+      "gpa": 3.8
+    },
+    {
+      "degree": "Bachelor of Arts in Healthcare Management",
+      "institution": "Drexel University",
+      "graduation_year": 2018,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Cerner Certified - Millennium",
+    "AWS Certified Solutions Architect",
+    "Epic Certified - Cadence"
+  ],
+  "skills": [
+    "Health Information Exchange",
+    "Change Management",
+    "Healthcare IT",
+    "Power BI",
+    "athenahealth",
+    "Revenue Cycle Management",
+    "Patient Portal Implementation",
+    "Value-Based Care",
+    "Report Writing",
+    "Clinical Workflow Analysis",
+    "EHR Implementation",
+    "Medical Terminology"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "resume_045",
+  "personal_info": {
+    "name": "Raymond Murphy",
+    "email": "raymond.murphy59@outlook.com",
+    "phone": "(853) 266-4258",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/raymond-murphy-6656"
+  },
+  "summary": "Enthusiastic IT infrastructure and cloud technologies specialist with 0+ years of hands-on experience. Proficient in Jenkins, Bitbucket, PyTorch, with excellent problem-solving and communication skills.",
+  "years_experience": 0,
+  "experience_level": "beginner",
+  "role_category": "infrastructure",
+  "experience": [],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Software Engineering",
+      "institution": "University of Texas at Austin",
+      "graduation_year": 2023,
+      "gpa": 3.65
+    }
+  ],
+  "certifications": [
+    "Microsoft Certified: Azure Developer Associate",
+    "CompTIA A+"
+  ],
+  "skills": [
+    "Jenkins",
+    "Bitbucket",
+    "PyTorch",
+    "Python",
+    "Attention to Detail"
+  ]
+}

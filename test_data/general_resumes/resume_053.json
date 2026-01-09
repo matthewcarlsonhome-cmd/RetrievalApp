@@ -1,0 +1,95 @@
+{
+  "id": "resume_053",
+  "personal_info": {
+    "name": "Donna Martinez",
+    "email": "donnamartinez@icloud.com",
+    "phone": "(810) 464-6117",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/donna-martinez-7543"
+  },
+  "summary": "Accomplished professional with 9+ years of experience in product management and delivery. Skilled in Bitbucket, Git, Looker, with a proven track record of delivering impactful results.",
+  "years_experience": 9,
+  "experience_level": "advanced",
+  "role_category": "product",
+  "experience": [
+    {
+      "title": "Program Manager",
+      "employer": "General Motors",
+      "location": "Nashville, TN",
+      "start_date": "January 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Supported 0 project implementations successfully",
+        "Analyzed 14 business reports to identify improvement opportunities",
+        "Managed stakeholder communications for 7 departments"
+      ]
+    },
+    {
+      "title": "Mid-Level Scrum Master",
+      "employer": "Agile Systems",
+      "location": "Detroit, MI",
+      "start_date": "January 2020",
+      "end_date": "December 2023",
+      "achievements": [
+        "Developed business cases securing $250K in project funding",
+        "Led process improvement initiative saving 45 hours weekly",
+        "Developed business cases securing $500K in project funding"
+      ]
+    },
+    {
+      "title": "Senior Scrum Master",
+      "employer": "JPMorgan Chase",
+      "location": "San Diego, CA",
+      "start_date": "January 2017",
+      "end_date": "February 2020",
+      "achievements": [
+        "Managed portfolio of 56 projects worth $200M",
+        "Directed cross-functional initiatives across 9 departments",
+        "Built and led team of 44 analysts and specialists",
+        "Managed portfolio of 20 projects worth $20M"
+      ]
+    },
+    {
+      "title": "Staff Program Manager",
+      "employer": "Wells Fargo",
+      "location": "Seattle, WA",
+      "start_date": "September 2015",
+      "end_date": "August 2017",
+      "achievements": [
+        "Built and led team of 24 analysts and specialists",
+        "Managed portfolio of 16 projects worth $100M"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "Boston University",
+      "graduation_year": 2012,
+      "gpa": 3.72
+    }
+  ],
+  "certifications": [
+    "PRINCE2 Foundation",
+    "Certified Scrum Product Owner (CSPO)"
+  ],
+  "skills": [
+    "Bitbucket",
+    "Git",
+    "Looker",
+    "GitLab",
+    "Data Visualization",
+    "ETL",
+    "Performance Metrics",
+    "Change Management",
+    "Attention to Detail",
+    "Vendor Management",
+    "Leadership",
+    "Active Listening",
+    "Cross-functional Collaboration",
+    "Business Analysis",
+    "Mentoring",
+    "Negotiation",
+    "Strategic Planning"
+  ]
+}

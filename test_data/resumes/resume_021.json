@@ -1,0 +1,123 @@
+{
+  "id": "resume_021",
+  "personal_info": {
+    "name": "Margaret Kelly",
+    "email": "margaret.kelly@yahoo.com",
+    "phone": "(753) 768-7151",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/margaret-kelly-2890"
+  },
+  "summary": "Results-driven healthcare IT professional with 11+ years of experience in EHR implementation and optimization. Specialized in Allscripts system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 11,
+  "primary_ehr_system": "Allscripts",
+  "experience": [
+    {
+      "title": "Health Information Manager",
+      "employer": "Wellness Medical Group",
+      "location": "Columbus, OH",
+      "start_date": "March 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Managed implementation for 27 ambulatory clinics across 4 states",
+        "Built 47+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Healthcare IT Project Manager",
+      "employer": "Community Health Partners",
+      "location": "Las Vegas, NV",
+      "start_date": "June 2018",
+      "end_date": "February 2023",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "EpicCare Ambulatory",
+        "Cadence",
+        "Radiant",
+        "Willow"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 25% through workflow optimization",
+        "Led optimization project resulting in $50K annual cost savings",
+        "Achieved HIMSS Stage 5 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Senior Health IT Implementation Manager",
+      "employer": "Practice Fusion",
+      "location": "Atlanta, GA",
+      "start_date": "September 2017",
+      "end_date": "February 2018",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Managed implementation for 22 ambulatory clinics across 9 states",
+        "Trained 1000+ end users with 96% satisfaction rating",
+        "Led successful go-live for 750-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Senior Practice Management Consultant",
+      "employer": "Deloitte Healthcare",
+      "location": "Atlanta, GA",
+      "start_date": "March 2013",
+      "end_date": "February 2017",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PharmNet",
+        "PathNet",
+        "SurgiNet",
+        "FirstNet"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 18% through workflow optimization",
+        "Led optimization project resulting in $200K annual cost savings",
+        "Managed implementation for 13 ambulatory clinics across 2 states"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "University of Texas",
+      "graduation_year": 2012,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)",
+    "Epic Certified - Willow",
+    "AWS Certified Solutions Architect"
+  ],
+  "skills": [
+    "Build Validation",
+    "CPT Coding",
+    "Mobile Health",
+    "System Integration",
+    "Power BI",
+    "SQL",
+    "Allscripts",
+    "Revenue Cycle Management",
+    "Patient Portal Implementation",
+    "Value-Based Care",
+    "Report Writing",
+    "Scrum",
+    "Optimization",
+    "System Configuration"
+  ]
+}

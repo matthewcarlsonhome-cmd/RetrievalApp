@@ -1,0 +1,50 @@
+{
+  "id": "resume_059",
+  "personal_info": {
+    "name": "Joshua Gupta",
+    "email": "joshuagupta@protonmail.com",
+    "phone": "(690) 980-4017",
+    "location": "Pittsburgh, PA",
+    "linkedin": "linkedin.com/in/joshua-gupta-9659"
+  },
+  "summary": "Results-driven data engineering and analytics specialist with 4+ years of hands-on experience. Proficient in R, GitHub, Power BI, with excellent problem-solving and communication skills.",
+  "years_experience": 4,
+  "experience_level": "intermediate",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Mid-Level Data Scientist",
+      "employer": "NextGen Software",
+      "location": "Pittsburgh, PA",
+      "start_date": "September 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Led migration of 3 microservices to Kubernetes",
+        "Designed and built RESTful APIs serving 10M+ requests daily"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Engineering",
+      "institution": "Stanford University",
+      "graduation_year": 2017,
+      "gpa": 3.03
+    }
+  ],
+  "certifications": [
+    "Certified Kubernetes Administrator (CKA)",
+    "AWS Certified Solutions Architect - Professional",
+    "Google Cloud Professional Cloud Architect"
+  ],
+  "skills": [
+    "R",
+    "GitHub",
+    "Power BI",
+    "Communication",
+    "NumPy",
+    "Apache Spark",
+    "FastAPI",
+    "Ansible"
+  ]
+}

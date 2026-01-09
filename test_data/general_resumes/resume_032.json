@@ -1,0 +1,72 @@
+{
+  "id": "resume_032",
+  "personal_info": {
+    "name": "Kenneth Mitchell",
+    "email": "kenneth.mitchell25@yahoo.com",
+    "phone": "(935) 365-3955",
+    "location": "Miami, FL",
+    "linkedin": "linkedin.com/in/kenneth-mitchell-5912"
+  },
+  "summary": "Experienced project management and operations professional bringing 3 years of expertise. Strong background in Bitbucket, GitLab, Cost-Benefit Analysis, committed to driving innovation and business value.",
+  "years_experience": 3,
+  "experience_level": "intermediate",
+  "role_category": "management",
+  "experience": [
+    {
+      "title": "Operations Manager",
+      "employer": "Digital Horizons",
+      "location": "San Jose, CA",
+      "start_date": "September 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Managed stakeholder communications for 7 departments",
+        "Managed stakeholder communications for 4 departments",
+        "Analyzed 23 business reports to identify improvement opportunities"
+      ]
+    },
+    {
+      "title": "Mid-Level Account Manager",
+      "employer": "Disrupt Technologies",
+      "location": "Seattle, WA",
+      "start_date": "March 2021",
+      "end_date": "May 2022",
+      "achievements": [
+        "Increased customer satisfaction scores by 32% through service improvements",
+        "Led process improvement initiative saving 21 hours weekly",
+        "Managed projects totaling $5K in annual budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Finance",
+      "institution": "Cornell University",
+      "graduation_year": 2021,
+      "gpa": 3.63
+    },
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "University of Pennsylvania",
+      "graduation_year": 2018,
+      "gpa": 3.89
+    }
+  ],
+  "certifications": [
+    "Six Sigma Green Belt",
+    "Salesforce Administrator Certification"
+  ],
+  "skills": [
+    "Bitbucket",
+    "GitLab",
+    "Cost-Benefit Analysis",
+    "Data Visualization",
+    "Presentation Skills",
+    "KPI Development",
+    "VS Code",
+    "Vendor Management",
+    "Business Intelligence",
+    "Leadership",
+    "Executive Communication",
+    "Data Analysis"
+  ]
+}

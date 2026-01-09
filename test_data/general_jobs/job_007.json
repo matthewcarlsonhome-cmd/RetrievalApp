@@ -1,0 +1,67 @@
+{
+  "id": "job_007",
+  "title": "Lead IT Support Specialist",
+  "employer": "Ford Motor",
+  "employer_type": "fortune500",
+  "location": "Pittsburgh, PA",
+  "remote_option": "Remote",
+  "employment_type": "Full-time",
+  "contract_type": "Contract",
+  "posted_date": "2025-12-29",
+  "job_category": "it_individual",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 5,
+    "max_years": 11
+  },
+  "description": "Ford Motor is seeking a talented Lead IT Support Specialist to join our engineering team. You will work on challenging problems, build scalable systems, and collaborate with talented engineers to deliver impactful products.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Design, develop, and maintain software applications",
+    "Write clean, testable, and efficient code",
+    "Participate in code reviews and technical discussions",
+    "Troubleshoot and debug production issues",
+    "Contribute to architectural decisions and technical strategy"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "5+ years of relevant experience",
+    "skills": [
+      "Bash",
+      "Java",
+      "JavaScript",
+      "AWS",
+      "AWS Lambda",
+      "GitLab",
+      "Jira"
+    ],
+    "certifications": [
+      "ITIL Foundation"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Vue.js",
+      "Keras",
+      "Flask",
+      "Neo4j",
+      "PostgreSQL"
+    ],
+    "certifications": [
+      "ITIL Foundation",
+      "Professional Scrum Master (PSM I)"
+    ]
+  },
+  "salary": {
+    "type": "hourly",
+    "min": 48,
+    "max": 63,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Competitive hourly rate",
+    "Flexible schedule"
+  ]
+}

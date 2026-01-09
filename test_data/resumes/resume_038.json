@@ -1,0 +1,165 @@
+{
+  "id": "resume_038",
+  "personal_info": {
+    "name": "Jeffrey Mitchell",
+    "email": "jeffrey.mitchell55@healthcaremail.com",
+    "phone": "(311) 885-6692",
+    "location": "New York, NY",
+    "linkedin": "linkedin.com/in/jeffrey-mitchell-8262"
+  },
+  "summary": "Dedicated EHR implementation professional bringing 17 years of experience in Cerner deployments. Skilled in leading cross-functional teams, managing complex projects, and ensuring successful system adoption. Track record of on-time, on-budget implementations.",
+  "years_experience": 17,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Health Information Manager",
+      "employer": "Valley Medical Associates",
+      "location": "Houston, TX",
+      "start_date": "January 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 35% through workflow optimization",
+        "Completed data migration of 5M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Healthcare Data Analyst",
+      "employer": "Metro Internal Medicine",
+      "location": "Seattle, WA",
+      "start_date": "March 2018",
+      "end_date": "December 2019",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Millennium",
+        "RadNet",
+        "HealtheIntent",
+        "PathNet"
+      ],
+      "achievements": [
+        "Completed data migration of 10M+ patient records with 99.9% accuracy",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Senior Healthcare IT Project Manager",
+      "employer": "UCSF Medical Center",
+      "location": "Philadelphia, PA",
+      "start_date": "January 2013",
+      "end_date": "May 2018",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 41% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Lead Cerner Implementation Specialist",
+      "employer": "Vanderbilt University Medical Center",
+      "location": "Atlanta, GA",
+      "start_date": "March 2012",
+      "end_date": "February 2013",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 4 analysts and trainers",
+        "Developed training curriculum adopted as enterprise standard",
+        "Reduced average patient wait time by 30% through workflow optimization"
+      ]
+    },
+    {
+      "title": "Lead EHR Training Specialist",
+      "employer": "Family Care Associates",
+      "location": "Minneapolis, MN",
+      "start_date": "January 2009",
+      "end_date": "May 2012",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Managed cross-functional team of 14 analysts and trainers",
+        "Led optimization project resulting in $500K annual cost savings"
+      ]
+    },
+    {
+      "title": "Director of EHR Implementation Consultant",
+      "employer": "PwC Health Industries",
+      "location": "Milwaukee, WI",
+      "start_date": "September 2007",
+      "end_date": "May 2009",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 31% through revenue cycle optimization",
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Business Administration",
+      "institution": "University of North Carolina",
+      "graduation_year": 2009,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "University of Pennsylvania",
+      "graduation_year": 2004,
+      "gpa": 3.94
+    }
+  ],
+  "certifications": [
+    "ITIL Foundation Certification",
+    "Cerner Certified - Millennium",
+    "Epic Certified - EpicCare Ambulatory",
+    "Six Sigma Green Belt",
+    "Epic Certified - Beacon",
+    "Epic Certified - Willow"
+  ],
+  "skills": [
+    "Telehealth Implementation",
+    "Build Validation",
+    "Health Information Exchange",
+    "Interoperability",
+    "PathNet",
+    "Training Development",
+    "ITWorks",
+    "Process Improvement",
+    "HealtheIntent",
+    "Revenue Cycle Management",
+    "Patient Portal Implementation",
+    "Cerner",
+    "User Acceptance Testing",
+    "Optimization",
+    "System Integration"
+  ]
+}

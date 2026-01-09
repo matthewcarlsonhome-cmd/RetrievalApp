@@ -1,0 +1,75 @@
+{
+  "id": "job_011",
+  "title": "VP of Strategy",
+  "employer": "Wells Fargo",
+  "employer_type": "fortune500",
+  "location": "Philadelphia, PA",
+  "remote_option": "On-site",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2025-12-27",
+  "job_category": "vp",
+  "seniority_level": "executive",
+  "experience_required": {
+    "min_years": 15,
+    "max_years": 23
+  },
+  "description": "Wells Fargo is seeking an experienced VP of Strategy to lead and grow our team. You'll set strategic direction, mentor team members, and drive results across the organization.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Lead, mentor, and develop team members",
+    "Set strategic direction and priorities for the team",
+    "Manage budgets, resources, and timelines",
+    "Build relationships with key stakeholders and partners",
+    "Drive organizational change and transformation initiatives",
+    "Recruit, hire, and retain top talent",
+    "Conduct performance reviews and career development discussions",
+    "Represent the team in executive meetings and steering committees"
+  ],
+  "required_qualifications": {
+    "education": "Master's degree preferred; MBA or relevant advanced degree a plus",
+    "experience": "15+ years of relevant experience",
+    "skills": [
+      "Project Management",
+      "Vendor Management",
+      "Team Leadership",
+      "Change Management",
+      "Agile Methodology",
+      "Mentoring",
+      "Conflict Resolution",
+      "Negotiation",
+      "Decision Making"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "GitHub",
+      "VS Code",
+      "Jira"
+    ],
+    "certifications": [
+      "Salesforce Administrator Certification",
+      "Certified Financial Analyst (CFA)"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 319334,
+    "max": 361330,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Unlimited PTO",
+    "Professional development budget",
+    "Wellness programs and gym membership",
+    "Comprehensive health, dental, and vision insurance",
+    "Life and disability insurance",
+    "Annual bonus program",
+    "Parental leave",
+    "Commuter benefits",
+    "401(k) with company match"
+  ]
+}

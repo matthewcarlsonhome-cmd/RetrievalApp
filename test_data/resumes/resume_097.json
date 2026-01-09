@@ -1,0 +1,83 @@
+{
+  "id": "resume_097",
+  "personal_info": {
+    "name": "Jacob Gonzalez",
+    "email": "jgonzalez@outlook.com",
+    "phone": "(787) 686-3338",
+    "location": "Fort Worth, TX",
+    "linkedin": "linkedin.com/in/jacob-gonzalez-8890"
+  },
+  "summary": "Healthcare informatics specialist with 3+ years of hands-on experience implementing and optimizing Epic EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 3,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Cerner Implementation Specialist",
+      "employer": "UCLA Medical Center",
+      "location": "San Diego, CA",
+      "start_date": "March 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $200K annual cost savings",
+        "Reduced average patient wait time by 34% through workflow optimization",
+        "Managed cross-functional team of 13 analysts and trainers"
+      ]
+    },
+    {
+      "title": "EHR Training Specialist",
+      "employer": "ChartLogic",
+      "location": "Seattle, WA",
+      "start_date": "March 2021",
+      "end_date": "May 2022",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 7 recognition for implemented facility",
+        "Managed cross-functional team of 8 analysts and trainers",
+        "Achieved 94% clinician adoption rate within first 3 months"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "University of Wisconsin",
+      "graduation_year": 2019,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Epic Certified - Willow"
+  ],
+  "skills": [
+    "FHIR APIs",
+    "Build Validation",
+    "Go-Live Support",
+    "Cogito",
+    "Data Migration",
+    "Change Management",
+    "HL7 Interfaces",
+    "Stork",
+    "Mobile Health",
+    "Tapestry",
+    "Value-Based Care",
+    "Report Writing",
+    "Epic",
+    "Clinical Workflow Analysis",
+    "Agile Methodology",
+    "Scrum",
+    "System Integration"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "resume_055",
+  "personal_info": {
+    "name": "George Martinez",
+    "email": "george.martinez82@icloud.com",
+    "phone": "(788) 206-7962",
+    "location": "Nashville, TN",
+    "linkedin": "linkedin.com/in/george-martinez-6385"
+  },
+  "summary": "Experienced product management and delivery professional bringing 6 years of expertise. Strong background in GitHub, Communication, Problem Solving, committed to driving innovation and business value.",
+  "years_experience": 6,
+  "experience_level": "advanced",
+  "role_category": "product",
+  "experience": [
+    {
+      "title": "Product Manager",
+      "employer": "Tech Pioneers",
+      "location": "Chicago, IL",
+      "start_date": "September 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Managed projects totaling $5K in annual budget",
+        "Increased customer satisfaction scores by 16% through service improvements",
+        "Led process improvement initiative saving 41 hours weekly"
+      ]
+    },
+    {
+      "title": "Scrum Master",
+      "employer": "Wells Fargo",
+      "location": "Raleigh, NC",
+      "start_date": "March 2020",
+      "end_date": "December 2021",
+      "achievements": [
+        "Led process improvement initiative saving 48 hours weekly",
+        "Increased customer satisfaction scores by 37% through service improvements",
+        "Increased customer satisfaction scores by 22% through service improvements",
+        "Increased customer satisfaction scores by 47% through service improvements"
+      ]
+    },
+    {
+      "title": "Senior Product Owner",
+      "employer": "Johnson & Johnson",
+      "location": "New York, NY",
+      "start_date": "September 2018",
+      "end_date": "December 2020",
+      "achievements": [
+        "Delivered 33% improvement in operational efficiency",
+        "Built and led team of 60 analysts and specialists",
+        "Directed cross-functional initiatives across 4 departments",
+        "Built and led team of 16 analysts and specialists"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "University of Washington",
+      "graduation_year": 2015,
+      "gpa": 3.08
+    }
+  ],
+  "certifications": [
+    "SAFe Agilist Certification",
+    "Certified Financial Analyst (CFA)",
+    "Lean Six Sigma Certification",
+    "AWS Certified Solutions Architect - Associate"
+  ],
+  "skills": [
+    "GitHub",
+    "Communication",
+    "Problem Solving",
+    "Decision Making",
+    "Presentation Skills",
+    "Change Management",
+    "Waterfall",
+    "Risk Management",
+    "Leadership",
+    "Postman",
+    "Jira",
+    "Data Warehousing",
+    "Executive Communication",
+    "Data Analysis",
+    "Requirements Gathering",
+    "Stakeholder Management",
+    "Tableau"
+  ]
+}

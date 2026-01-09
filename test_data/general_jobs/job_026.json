@@ -1,0 +1,67 @@
+{
+  "id": "job_026",
+  "title": "Senior Process Analyst",
+  "employer": "AbbVie",
+  "employer_type": "fortune500",
+  "location": "Pittsburgh, PA",
+  "remote_option": "Remote",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2026-01-03",
+  "job_category": "business_analyst",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 1,
+    "max_years": null
+  },
+  "description": "We're looking for a Senior Process Analyst to join AbbVie. In this role, you'll analyze business requirements, develop solutions, and help drive operational excellence.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Gather and analyze business requirements",
+    "Develop process improvements and efficiency recommendations",
+    "Create business cases and presentations for leadership",
+    "Support project implementation and change management",
+    "Track KPIs and report on business performance"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "1+ years of relevant experience",
+    "skills": [
+      "Contract Negotiation",
+      "Strategic Planning",
+      "KPI Development",
+      "Change Management",
+      "Waterfall",
+      "ETL",
+      "Data Visualization"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "VS Code",
+      "Slack",
+      "IntelliJ IDEA"
+    ],
+    "certifications": [
+      "PMP (Project Management Professional)",
+      "Certified Financial Analyst (CFA)"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 93010,
+    "max": 134421,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Remote work flexibility",
+    "401(k) with company match",
+    "Home office stipend",
+    "Comprehensive health, dental, and vision insurance",
+    "Life and disability insurance",
+    "Professional development budget"
+  ]
+}

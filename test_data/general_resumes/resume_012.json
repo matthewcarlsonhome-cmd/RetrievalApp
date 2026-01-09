@@ -1,0 +1,32 @@
+{
+  "id": "resume_012",
+  "personal_info": {
+    "name": "Michael Harris",
+    "email": "mharris@protonmail.com",
+    "phone": "(907) 451-1758",
+    "location": "San Diego, CA",
+    "linkedin": "linkedin.com/in/michael-harris-8636"
+  },
+  "summary": "Motivated professional with 0+ years of experience in digital marketing and brand strategy. Skilled in Brand Management, Content Marketing, Emotional Intelligence, with a proven track record of delivering impactful results.",
+  "years_experience": 0,
+  "experience_level": "beginner",
+  "role_category": "marketing",
+  "experience": [],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "Georgia Tech",
+      "graduation_year": 2023,
+      "gpa": 3.33
+    }
+  ],
+  "certifications": [
+    "PMP (Project Management Professional)"
+  ],
+  "skills": [
+    "Brand Management",
+    "Content Marketing",
+    "Emotional Intelligence",
+    "Strategic Planning"
+  ]
+}

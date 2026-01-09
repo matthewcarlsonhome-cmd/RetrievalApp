@@ -1,0 +1,65 @@
+{
+  "id": "job_030",
+  "title": "Technical Architect",
+  "employer": "ServiceNow",
+  "employer_type": "tech",
+  "location": "Dallas, TX",
+  "remote_option": "Hybrid",
+  "employment_type": "Full-time",
+  "contract_type": "Contract",
+  "posted_date": "2025-12-17",
+  "job_category": "it_individual",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 3,
+    "max_years": 8
+  },
+  "description": "ServiceNow is seeking a talented Technical Architect to join our engineering team. You will work on challenging problems, build scalable systems, and collaborate with talented engineers to deliver impactful products.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Design, develop, and maintain software applications",
+    "Write clean, testable, and efficient code",
+    "Participate in code reviews and technical discussions",
+    "Troubleshoot and debug production issues",
+    "Contribute to architectural decisions and technical strategy"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "3+ years of relevant experience",
+    "skills": [
+      "Python",
+      "PHP",
+      "C++",
+      "Heroku",
+      "Google Cloud Platform",
+      "GitHub",
+      "VS Code"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "NumPy",
+      "TensorFlow",
+      "Express.js",
+      "SQLite",
+      "SQL Server"
+    ],
+    "certifications": [
+      "HashiCorp Certified: Terraform Associate",
+      "Azure Solutions Architect Expert"
+    ]
+  },
+  "salary": {
+    "type": "hourly",
+    "min": 47,
+    "max": 66,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Competitive hourly rate",
+    "Flexible schedule"
+  ]
+}

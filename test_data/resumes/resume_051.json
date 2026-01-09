@@ -1,0 +1,121 @@
+{
+  "id": "resume_051",
+  "personal_info": {
+    "name": "Paul Perez",
+    "email": "paulperez@gmail.com",
+    "phone": "(528) 413-4543",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/paul-perez-7426"
+  },
+  "summary": "Healthcare informatics specialist with 11+ years of hands-on experience implementing and optimizing Allscripts EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 11,
+  "primary_ehr_system": "Allscripts",
+  "experience": [
+    {
+      "title": "Medical Informatics Consultant",
+      "employer": "ECG Management Consultants",
+      "location": "Boston, MA",
+      "start_date": "September 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Healthy Planet",
+        "Prelude",
+        "Willow",
+        "Beacon"
+      ],
+      "achievements": [
+        "Achieved 93% clinician adoption rate within first 6 months",
+        "Led successful go-live for 200-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Clinical Workflow Analyst",
+      "employer": "Pivot Point Consulting",
+      "location": "Philadelphia, PA",
+      "start_date": "June 2020",
+      "end_date": "February 2021",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $100K annual cost savings",
+        "Decreased claim denial rate by 15% through revenue cycle optimization",
+        "Built 48+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Healthcare Data Analyst",
+      "employer": "NYU Langone Health",
+      "location": "Cleveland, OH",
+      "start_date": "March 2018",
+      "end_date": "August 2020",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $500K annual cost savings",
+        "Managed cross-functional team of 8 analysts and trainers",
+        "Achieved 86% clinician adoption rate within first 5 months"
+      ]
+    },
+    {
+      "title": "Director of Healthcare Systems Analyst",
+      "employer": "Brigham and Women's Hospital",
+      "location": "Seattle, WA",
+      "start_date": "January 2013",
+      "end_date": "August 2018",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 2M+ patient records with 99.9% accuracy",
+        "Led successful go-live for 1000-bed hospital with zero critical issues",
+        "Implemented 4 Epic/Cerner modules on time and under budget",
+        "Coordinated go-live support for 200+ providers across 18 locations"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "University of Michigan",
+      "graduation_year": 2010,
+      "gpa": 3.21
+    }
+  ],
+  "certifications": [
+    "Six Sigma Black Belt",
+    "Cerner Certified - PowerChart",
+    "Epic Certified - Willow"
+  ],
+  "skills": [
+    "Build Validation",
+    "Business Intelligence",
+    "CPT Coding",
+    "Clinical Decision Support",
+    "Project Management",
+    "Go-Live Support",
+    "Mobile Health",
+    "Python",
+    "Allscripts",
+    "System Configuration",
+    "Clinical Workflow Analysis",
+    "Scrum",
+    "User Acceptance Testing"
+  ]
+}

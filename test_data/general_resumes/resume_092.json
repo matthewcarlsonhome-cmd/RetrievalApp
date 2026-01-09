@@ -1,0 +1,109 @@
+{
+  "id": "resume_092",
+  "personal_info": {
+    "name": "Samantha Nguyen",
+    "email": "snguyen@outlook.com",
+    "phone": "(788) 966-2796",
+    "location": "Pittsburgh, PA",
+    "linkedin": "linkedin.com/in/samantha-nguyen-4737"
+  },
+  "summary": "Proficient professional with 5+ years of experience in project management and operations. Skilled in GitHub, Power BI, ETL, with a proven track record of delivering impactful results.",
+  "years_experience": 5,
+  "experience_level": "intermediate",
+  "role_category": "management",
+  "experience": [
+    {
+      "title": "Junior Project Manager",
+      "employer": "DataDriven Inc",
+      "location": "Pittsburgh, PA",
+      "start_date": "March 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Managed stakeholder communications for 4 departments",
+        "Managed stakeholder communications for 3 departments",
+        "Created process documentation improving team efficiency by 38%",
+        "Analyzed 17 business reports to identify improvement opportunities"
+      ]
+    },
+    {
+      "title": "Account Manager",
+      "employer": "Berkshire Hathaway",
+      "location": "Miami, FL",
+      "start_date": "January 2022",
+      "end_date": "May 2023",
+      "achievements": [
+        "Analyzed 14 business reports to identify improvement opportunities",
+        "Supported 0 project implementations successfully"
+      ]
+    },
+    {
+      "title": "Customer Success Manager",
+      "employer": "NextGen Software",
+      "location": "Austin, TX",
+      "start_date": "September 2021",
+      "end_date": "May 2022",
+      "achievements": [
+        "Increased customer satisfaction scores by 27% through service improvements",
+        "Managed projects totaling $5K in annual budget",
+        "Developed business cases securing $500K in project funding"
+      ]
+    },
+    {
+      "title": "Operations Manager",
+      "employer": "Costco",
+      "location": "Denver, CO",
+      "start_date": "March 2020",
+      "end_date": "August 2021",
+      "achievements": [
+        "Increased customer satisfaction scores by 40% through service improvements",
+        "Increased customer satisfaction scores by 43% through service improvements",
+        "Managed projects totaling $250K in annual budget",
+        "Developed business cases securing $500K in project funding"
+      ]
+    },
+    {
+      "title": "Mid-Level Operations Manager",
+      "employer": "Target",
+      "location": "Portland, OR",
+      "start_date": "September 2019",
+      "end_date": "February 2020",
+      "achievements": [
+        "Led process improvement initiative saving 49 hours weekly",
+        "Managed projects totaling $25K in annual budget",
+        "Managed projects totaling $50K in annual budget",
+        "Managed projects totaling $250K in annual budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Business Administration (MBA)",
+      "institution": "Northwestern University",
+      "graduation_year": 2018,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Management Information Systems",
+      "institution": "MIT",
+      "graduation_year": 2016,
+      "gpa": 3.06
+    }
+  ],
+  "certifications": [
+    "Certified Scrum Product Owner (CSPO)"
+  ],
+  "skills": [
+    "GitHub",
+    "Power BI",
+    "ETL",
+    "VS Code",
+    "Critical Thinking",
+    "Budget Management",
+    "Jira",
+    "Active Listening",
+    "Data Analysis",
+    "Agile Methodology",
+    "Requirements Gathering",
+    "Negotiation"
+  ]
+}

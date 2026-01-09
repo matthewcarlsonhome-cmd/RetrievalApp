@@ -1,0 +1,37 @@
+{
+  "id": "resume_033",
+  "personal_info": {
+    "name": "Patrick Jackson",
+    "email": "patrick.jackson@yahoo.com",
+    "phone": "(372) 937-1566",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/patrick-jackson-8169"
+  },
+  "summary": "Experienced data engineering and analytics professional bringing 0 years of expertise. Strong background in R, Jenkins, Databricks, committed to driving innovation and business value.",
+  "years_experience": 0,
+  "experience_level": "beginner",
+  "role_category": "data",
+  "experience": [],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "Ohio State University",
+      "graduation_year": 2021,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Professional Scrum Master (PSM I)",
+    "AWS Certified Developer - Associate"
+  ],
+  "skills": [
+    "R",
+    "Jenkins",
+    "Databricks",
+    "ETL",
+    "C#",
+    "Attention to Detail",
+    "Jira",
+    ".NET Core"
+  ]
+}

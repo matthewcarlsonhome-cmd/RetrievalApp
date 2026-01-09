@@ -1,0 +1,69 @@
+{
+  "id": "job_003",
+  "title": "Senior Quantitative Analyst",
+  "employer": "ExxonMobil",
+  "employer_type": "fortune500",
+  "location": "Seattle, WA",
+  "remote_option": "Hybrid (3 days in office)",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2026-01-05",
+  "job_category": "it_individual",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 3,
+    "max_years": 8
+  },
+  "description": "Join ExxonMobil as a Senior Quantitative Analyst and help us build the next generation of technology solutions. We're looking for someone passionate about clean code, system design, and continuous improvement.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Design, develop, and maintain software applications",
+    "Write clean, testable, and efficient code",
+    "Participate in code reviews and technical discussions",
+    "Troubleshoot and debug production issues",
+    "Contribute to architectural decisions and technical strategy"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "3+ years of relevant experience",
+    "skills": [
+      "Kotlin",
+      "C#",
+      "Python",
+      "DigitalOcean",
+      "Google Cloud Platform",
+      "GitLab",
+      "Postman"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Ruby on Rails",
+      "TensorFlow",
+      "Express.js",
+      "Oracle",
+      "MySQL"
+    ],
+    "certifications": [
+      "PMP (Project Management Professional)",
+      "AWS Certified Developer - Associate"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 90244,
+    "max": 119338,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Wellness programs and gym membership",
+    "Unlimited PTO",
+    "Commuter benefits",
+    "Comprehensive health, dental, and vision insurance",
+    "Home office stipend",
+    "Stock options/equity grants"
+  ]
+}

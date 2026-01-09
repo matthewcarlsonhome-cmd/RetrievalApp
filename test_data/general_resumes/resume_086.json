@@ -1,0 +1,85 @@
+{
+  "id": "resume_086",
+  "personal_info": {
+    "name": "Linda Park",
+    "email": "linda.park64@yahoo.com",
+    "phone": "(630) 754-9595",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/linda-park-1742"
+  },
+  "summary": "Accomplished professional with 6+ years of experience in product management and delivery. Skilled in Kanban, Bitbucket, Looker, with a proven track record of delivering impactful results.",
+  "years_experience": 6,
+  "experience_level": "advanced",
+  "role_category": "product",
+  "experience": [
+    {
+      "title": "Scrum Master",
+      "employer": "UnitedHealth Group",
+      "location": "Portland, OR",
+      "start_date": "June 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Increased customer satisfaction scores by 46% through service improvements",
+        "Managed projects totaling $50K in annual budget"
+      ]
+    },
+    {
+      "title": "Program Manager",
+      "employer": "Procter & Gamble",
+      "location": "Chicago, IL",
+      "start_date": "March 2019",
+      "end_date": "December 2020",
+      "achievements": [
+        "Increased customer satisfaction scores by 47% through service improvements",
+        "Developed business cases securing $250K in project funding"
+      ]
+    },
+    {
+      "title": "Staff Technical Program Manager",
+      "employer": "Zoom",
+      "location": "Boston, MA",
+      "start_date": "June 2018",
+      "end_date": "February 2019",
+      "achievements": [
+        "Delivered 35% improvement in operational efficiency",
+        "Directed cross-functional initiatives across 7 departments"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Finance",
+      "institution": "New York University",
+      "graduation_year": 2023,
+      "gpa": 3.59
+    },
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "Arizona State University",
+      "graduation_year": 2018,
+      "gpa": 3.21
+    }
+  ],
+  "certifications": [
+    "Certified Scrum Product Owner (CSPO)",
+    "Certified Financial Analyst (CFA)",
+    "SAFe Agilist Certification",
+    "Certified Kubernetes Administrator (CKA)",
+    "AWS Certified Developer - Associate"
+  ],
+  "skills": [
+    "Kanban",
+    "Bitbucket",
+    "Looker",
+    "Data Visualization",
+    "Change Management",
+    "Waterfall",
+    "Time Management",
+    "Attention to Detail",
+    "Jira",
+    "Data Warehousing",
+    "Confluence",
+    "Active Listening",
+    "Executive Communication"
+  ]
+}

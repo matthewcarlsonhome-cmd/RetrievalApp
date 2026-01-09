@@ -1,0 +1,72 @@
+{
+  "id": "resume_062",
+  "personal_info": {
+    "name": "Justin Singh",
+    "email": "justinsingh@icloud.com",
+    "phone": "(692) 845-6941",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/justin-singh-6190"
+  },
+  "summary": "Proficient professional with 5+ years of experience in IT infrastructure and cloud technologies. Skilled in GitHub, Go, GitLab, with a proven track record of delivering impactful results.",
+  "years_experience": 5,
+  "experience_level": "intermediate",
+  "role_category": "infrastructure",
+  "experience": [
+    {
+      "title": "Associate Infrastructure Engineer",
+      "employer": "Rapid Growth Tech",
+      "location": "San Francisco, CA",
+      "start_date": "September 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Participated in code reviews, providing feedback on 81+ pull requests",
+        "Improved code test coverage from 54% to 82%"
+      ]
+    },
+    {
+      "title": "Mid-Level Database Administrator",
+      "employer": "Innovation Hub",
+      "location": "Philadelphia, PA",
+      "start_date": "September 2019",
+      "end_date": "May 2022",
+      "achievements": [
+        "Designed and built RESTful APIs serving 1M+ requests daily",
+        "Designed and built RESTful APIs serving 50M+ requests daily",
+        "Led migration of 5 microservices to Kubernetes",
+        "Designed and built RESTful APIs serving 5M+ requests daily"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Data Science",
+      "institution": "University of Washington",
+      "graduation_year": 2022,
+      "gpa": 3.9
+    },
+    {
+      "degree": "Bachelor of Science in Data Science",
+      "institution": "University of Southern California",
+      "graduation_year": 2018,
+      "gpa": 3.76
+    }
+  ],
+  "certifications": [
+    "Azure Administrator Associate",
+    "AWS Certified Solutions Architect - Professional"
+  ],
+  "skills": [
+    "GitHub",
+    "Go",
+    "GitLab",
+    "Ruby",
+    "Problem Solving",
+    "Terraform",
+    "C++",
+    "Azure",
+    "Laravel",
+    "Neo4j",
+    "Active Listening",
+    "JavaScript"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "resume_051",
+  "personal_info": {
+    "name": "Emily Young",
+    "email": "eyoung@protonmail.com",
+    "phone": "(742) 890-3929",
+    "location": "Charlotte, NC",
+    "linkedin": "linkedin.com/in/emily-young-4781"
+  },
+  "summary": "Proficient digital marketing and brand strategy specialist with 3+ years of hands-on experience. Proficient in PPC Advertising, Decision Making, Adaptability, with excellent problem-solving and communication skills.",
+  "years_experience": 3,
+  "experience_level": "intermediate",
+  "role_category": "marketing",
+  "experience": [
+    {
+      "title": "Junior Marketing Analyst",
+      "employer": "Digital Horizons",
+      "location": "Miami, FL",
+      "start_date": "January 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Improved email open rates by 41% through A/B testing",
+        "Grew social media following by 34% across 5 platforms",
+        "Grew social media following by 20% across 4 platforms"
+      ]
+    },
+    {
+      "title": "Marketing Manager",
+      "employer": "Verizon",
+      "location": "Raleigh, NC",
+      "start_date": "June 2021",
+      "end_date": "May 2022",
+      "achievements": [
+        "Generated 500+ qualified leads through digital campaigns"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "Boston University",
+      "graduation_year": 2019,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Salesforce Administrator Certification"
+  ],
+  "skills": [
+    "PPC Advertising",
+    "Decision Making",
+    "Adaptability",
+    "Problem Solving",
+    "Waterfall",
+    "Content Marketing",
+    "Google Analytics",
+    "SEO",
+    "Requirements Gathering",
+    "Email Marketing",
+    "Digital Marketing",
+    "Stakeholder Management"
+  ]
+}

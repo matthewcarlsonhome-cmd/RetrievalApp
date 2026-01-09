@@ -1,0 +1,127 @@
+{
+  "id": "resume_010",
+  "personal_info": {
+    "name": "Carolyn Hall",
+    "email": "carolyn.hall70@healthcaremail.com",
+    "phone": "(434) 302-4187",
+    "location": "Boston, MA",
+    "linkedin": "linkedin.com/in/carolyn-hall-3949"
+  },
+  "summary": "Healthcare informatics specialist with 11+ years of hands-on experience implementing and optimizing Cerner EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 11,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Health Information Manager",
+      "employer": "Barnes-Jewish Hospital",
+      "location": "Nashville, TN",
+      "start_date": "March 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "HealtheIntent",
+        "PathNet",
+        "FirstNet",
+        "PharmNet"
+      ],
+      "achievements": [
+        "Built 11+ HL7 interfaces connecting to external systems",
+        "Implemented 5 Epic/Cerner modules on time and under budget"
+      ]
+    },
+    {
+      "title": "Senior EHR Training Specialist",
+      "employer": "Johns Hopkins Hospital",
+      "location": "Atlanta, GA",
+      "start_date": "June 2016",
+      "end_date": "December 2021",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 37%"
+      ]
+    },
+    {
+      "title": "Lead Practice Management Consultant",
+      "employer": "Providence Health",
+      "location": "Seattle, WA",
+      "start_date": "June 2015",
+      "end_date": "December 2016",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Millennium",
+        "CommunityWorks",
+        "PathNet",
+        "RadNet"
+      ],
+      "achievements": [
+        "Built 10+ HL7 interfaces connecting to external systems",
+        "Decreased claim denial rate by 26% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Lead Healthcare IT Project Manager",
+      "employer": "Conduent Healthcare",
+      "location": "Fort Worth, TX",
+      "start_date": "June 2013",
+      "end_date": "May 2015",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 37% through revenue cycle optimization",
+        "Developed training curriculum adopted as enterprise standard",
+        "Led successful go-live for 200-bed hospital with zero critical issues"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Health Informatics",
+      "institution": "University of Pittsburgh",
+      "graduation_year": 2018,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "University of Michigan",
+      "graduation_year": 2013,
+      "gpa": 3.83
+    }
+  ],
+  "certifications": [
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)",
+    "Registered Health Information Administrator (RHIA)",
+    "Certified Information Systems Security Professional (CISSP)"
+  ],
+  "skills": [
+    "Health Information Exchange",
+    "FHIR APIs",
+    "Clinical Documentation",
+    "Clinical Decision Support",
+    "Data Migration",
+    "Interoperability",
+    "Build Validation",
+    "Business Intelligence",
+    "ITWorks",
+    "Mobile Health",
+    "Power BI",
+    "Millennium",
+    "Cerner",
+    "Report Writing",
+    "FirstNet"
+  ]
+}

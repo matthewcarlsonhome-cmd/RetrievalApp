@@ -1,0 +1,73 @@
+{
+  "id": "job_004",
+  "title": "IT Manager",
+  "employer": "Deloitte",
+  "employer_type": "consulting",
+  "location": "Nashville, TN",
+  "remote_option": "Remote",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2025-12-11",
+  "job_category": "manager",
+  "seniority_level": "manager",
+  "experience_required": {
+    "min_years": 7,
+    "max_years": null
+  },
+  "description": "Join Deloitte as a IT Manager and help shape the future of our organization. You'll build high-performing teams, drive strategic initiatives, and deliver exceptional results.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Lead, mentor, and develop team members",
+    "Set strategic direction and priorities for the team",
+    "Manage budgets, resources, and timelines",
+    "Build relationships with key stakeholders and partners",
+    "Drive organizational change and transformation initiatives",
+    "Recruit, hire, and retain top talent",
+    "Conduct performance reviews and career development discussions",
+    "Represent the team in executive meetings and steering committees"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "7+ years of relevant experience",
+    "skills": [
+      "Vendor Management",
+      "Executive Communication",
+      "Requirements Gathering",
+      "KPI Development",
+      "Agile Methodology",
+      "Time Management",
+      "Negotiation",
+      "Adaptability",
+      "Teamwork"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Jira",
+      "GitHub",
+      "VS Code"
+    ],
+    "certifications": [
+      "SAFe Agilist Certification",
+      "HubSpot Inbound Marketing Certification"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 156473,
+    "max": 182476,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Professional development budget",
+    "Parental leave",
+    "401(k) with company match",
+    "Commuter benefits",
+    "Unlimited PTO",
+    "Life and disability insurance",
+    "Home office stipend"
+  ]
+}

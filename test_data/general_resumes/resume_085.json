@@ -1,0 +1,74 @@
+{
+  "id": "resume_085",
+  "personal_info": {
+    "name": "Kimberly Thompson",
+    "email": "kimberly.thompson@outlook.com",
+    "phone": "(668) 617-6741",
+    "location": "Seattle, WA",
+    "linkedin": "linkedin.com/in/kimberly-thompson-6496"
+  },
+  "summary": "Experienced software development and engineering professional bringing 5 years of expertise. Strong background in R, Creativity, Python, committed to driving innovation and business value.",
+  "years_experience": 5,
+  "experience_level": "intermediate",
+  "role_category": "development",
+  "experience": [
+    {
+      "title": "Associate Data Engineer",
+      "employer": "Tech Pioneers",
+      "location": "Los Angeles, CA",
+      "start_date": "September 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Improved code test coverage from 49% to 85%",
+        "Developed 2 new features for the company's main product"
+      ]
+    },
+    {
+      "title": "Mid-Level Software Engineer",
+      "employer": "Tech Pioneers",
+      "location": "Pittsburgh, PA",
+      "start_date": "January 2020",
+      "end_date": "February 2022",
+      "achievements": [
+        "Reduced application load time by 21% through performance optimization",
+        "Implemented CI/CD pipeline reducing deployment time by 27%",
+        "Designed and built RESTful APIs serving 50M+ requests daily"
+      ]
+    },
+    {
+      "title": "Mid-Level Data Engineer",
+      "employer": "Splunk",
+      "location": "Phoenix, AZ",
+      "start_date": "June 2019",
+      "end_date": "December 2020",
+      "achievements": [
+        "Mentored 3 junior developers in best practices",
+        "Mentored 7 junior developers in best practices"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Penn State University",
+      "graduation_year": 2016,
+      "gpa": 3.23
+    }
+  ],
+  "certifications": [
+    "CompTIA A+",
+    "Certified Information Systems Security Professional (CISSP)",
+    "CompTIA Security+"
+  ],
+  "skills": [
+    "R",
+    "Creativity",
+    "Python",
+    "Terraform",
+    "SQL",
+    "MongoDB",
+    "Attention to Detail",
+    "Spring Boot",
+    "IntelliJ IDEA"
+  ]
+}

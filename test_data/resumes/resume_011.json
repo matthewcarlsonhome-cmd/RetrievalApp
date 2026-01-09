@@ -1,0 +1,188 @@
+{
+  "id": "resume_011",
+  "personal_info": {
+    "name": "Amy Williams",
+    "email": "amy.williams@gmail.com",
+    "phone": "(709) 320-9870",
+    "location": "Las Vegas, NV",
+    "linkedin": "linkedin.com/in/amy-williams-4931"
+  },
+  "summary": "Healthcare informatics specialist with 16+ years of hands-on experience implementing and optimizing athenahealth EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 16,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Revenue Cycle Implementation Specialist",
+      "employer": "Accenture Health",
+      "location": "Portland, OR",
+      "start_date": "September 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Trained 500+ end users with 97% satisfaction rating",
+        "Completed data migration of 2M+ patient records with 99.9% accuracy",
+        "Managed implementation for 32 ambulatory clinics across 8 states",
+        "Designed clinical workflows that improved documentation efficiency by 21%"
+      ]
+    },
+    {
+      "title": "Health IT Implementation Manager",
+      "employer": "Duke University Hospital",
+      "location": "San Jose, CA",
+      "start_date": "June 2022",
+      "end_date": "February 2023",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Built 10+ HL7 interfaces connecting to external systems",
+        "Designed clinical workflows that improved documentation efficiency by 19%",
+        "Led optimization project resulting in $1000K annual cost savings"
+      ]
+    },
+    {
+      "title": "Clinical Applications Analyst",
+      "employer": "Northwell Health",
+      "location": "Columbus, OH",
+      "start_date": "June 2020",
+      "end_date": "May 2022",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 10M+ patient records with 99.9% accuracy",
+        "Implemented 4 Epic/Cerner modules on time and under budget",
+        "Decreased claim denial rate by 43% through revenue cycle optimization",
+        "Managed implementation for 9 ambulatory clinics across 6 states"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Integration Engineer",
+      "employer": "UPMC Presbyterian",
+      "location": "Fort Worth, TX",
+      "start_date": "March 2018",
+      "end_date": "August 2020",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 2M+ patient records with 99.9% accuracy",
+        "Managed implementation for 19 ambulatory clinics across 3 states"
+      ]
+    },
+    {
+      "title": "Lead Healthcare Systems Analyst",
+      "employer": "Premier Medical Group",
+      "location": "Boston, MA",
+      "start_date": "June 2014",
+      "end_date": "August 2018",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 15 analysts and trainers",
+        "Built 14+ HL7 interfaces connecting to external systems",
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Implemented 5 Epic/Cerner modules on time and under budget"
+      ]
+    },
+    {
+      "title": "Director of Clinical Applications Analyst",
+      "employer": "Metro Internal Medicine",
+      "location": "Detroit, MI",
+      "start_date": "September 2010",
+      "end_date": "December 2014",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Cadence",
+        "Cogito",
+        "Stork",
+        "MyChart"
+      ],
+      "achievements": [
+        "Completed data migration of 5M+ patient records with 99.9% accuracy",
+        "Trained 2000+ end users with 96% satisfaction rating",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Lead Epic Implementation Analyst",
+      "employer": "Tegria",
+      "location": "Cleveland, OH",
+      "start_date": "March 2008",
+      "end_date": "February 2010",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $100K annual cost savings",
+        "Decreased claim denial rate by 41% through revenue cycle optimization",
+        "Led successful go-live for 500-bed hospital with zero critical issues"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Health Informatics",
+      "institution": "Boston University",
+      "graduation_year": 2013,
+      "gpa": 3.91
+    },
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "University of Pennsylvania",
+      "graduation_year": 2007,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Six Sigma Black Belt",
+    "Registered Health Information Administrator (RHIA)",
+    "HL7 FHIR Certification",
+    "Certified Health Data Analyst (CHDA)",
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)"
+  ],
+  "skills": [
+    "Telehealth Implementation",
+    "Go-Live Support",
+    "Build Validation",
+    "Business Intelligence",
+    "Change Management",
+    "Python",
+    "Power BI",
+    "athenahealth",
+    "SQL",
+    "Value-Based Care",
+    "Clinical Workflow Analysis",
+    "System Integration"
+  ]
+}

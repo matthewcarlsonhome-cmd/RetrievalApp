@@ -1,0 +1,134 @@
+{
+  "id": "resume_007",
+  "personal_info": {
+    "name": "Michelle Jones",
+    "email": "michelle.jones84@gmail.com",
+    "phone": "(850) 626-5081",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/michelle-jones-4495"
+  },
+  "summary": "Dedicated EHR implementation professional bringing 12 years of experience in athenahealth deployments. Skilled in leading cross-functional teams, managing complex projects, and ensuring successful system adoption. Track record of on-time, on-budget implementations.",
+  "years_experience": 12,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "EHR Implementation Consultant",
+      "employer": "Accenture Health",
+      "location": "Denver, CO",
+      "start_date": "June 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Managed implementation for 8 ambulatory clinics across 3 states",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Healthcare Data Analyst",
+      "employer": "Geisinger Medical Center",
+      "location": "Denver, CO",
+      "start_date": "September 2020",
+      "end_date": "May 2021",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 18% through workflow optimization",
+        "Led optimization project resulting in $1000K annual cost savings",
+        "Led successful go-live for 750-bed hospital with zero critical issues",
+        "Implemented 10 Epic/Cerner modules on time and under budget"
+      ]
+    },
+    {
+      "title": "Senior EHR Training Specialist",
+      "employer": "KPMG Healthcare",
+      "location": "Charlotte, NC",
+      "start_date": "September 2015",
+      "end_date": "December 2020",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Coordinated go-live support for 100+ providers across 19 locations"
+      ]
+    },
+    {
+      "title": "Lead Healthcare IT Project Manager",
+      "employer": "KPMG Healthcare",
+      "location": "Detroit, MI",
+      "start_date": "March 2013",
+      "end_date": "December 2015",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "CommunityWorks",
+        "ITWorks",
+        "FirstNet",
+        "Soarian"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 29% through workflow optimization",
+        "Achieved HIMSS Stage 5 recognition for implemented facility",
+        "Coordinated go-live support for 200+ providers across 17 locations"
+      ]
+    },
+    {
+      "title": "Principal Practice Management Consultant",
+      "employer": "Regional Health Partners",
+      "location": "San Jose, CA",
+      "start_date": "March 2012",
+      "end_date": "August 2013",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "SurgiNet",
+        "RadNet",
+        "FirstNet",
+        "PharmNet"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 16%",
+        "Built 28+ HL7 interfaces connecting to external systems"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "Johns Hopkins University",
+      "graduation_year": 2011,
+      "gpa": 3.7
+    }
+  ],
+  "certifications": [
+    "Certified Scrum Master (CSM)"
+  ],
+  "skills": [
+    "FHIR APIs",
+    "Training Development",
+    "Healthcare IT",
+    "Power BI",
+    "athenahealth",
+    "Report Writing",
+    "Agile Methodology",
+    "EHR Implementation",
+    "Optimization"
+  ]
+}

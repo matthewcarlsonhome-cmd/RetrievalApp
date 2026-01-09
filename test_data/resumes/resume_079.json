@@ -1,0 +1,106 @@
+{
+  "id": "resume_079",
+  "personal_info": {
+    "name": "Susan Harris",
+    "email": "susan.harris68@consultant.net",
+    "phone": "(227) 420-6405",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/susan-harris-8344"
+  },
+  "summary": "Healthcare informatics specialist with 4+ years of hands-on experience implementing and optimizing Cerner EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 4,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Healthcare Data Analyst",
+      "employer": "Ascension Health",
+      "location": "Atlanta, GA",
+      "start_date": "March 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "ITWorks",
+        "FirstNet",
+        "CommunityWorks",
+        "PathNet"
+      ],
+      "achievements": [
+        "Managed implementation for 21 ambulatory clinics across 10 states",
+        "Coordinated go-live support for 500+ providers across 4 locations",
+        "Reduced average patient wait time by 25% through workflow optimization",
+        "Led optimization project resulting in $500K annual cost savings"
+      ]
+    },
+    {
+      "title": "Clinical Workflow Analyst",
+      "employer": "Pivot Point Consulting",
+      "location": "Baltimore, MD",
+      "start_date": "September 2022",
+      "end_date": "May 2023",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Decreased claim denial rate by 44% through revenue cycle optimization",
+        "Managed implementation for 11 ambulatory clinics across 8 states",
+        "Completed data migration of 5M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Health Information Systems Analyst",
+      "employer": "Northwell Health",
+      "location": "Portland, OR",
+      "start_date": "June 2020",
+      "end_date": "February 2022",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Soarian",
+        "ITWorks",
+        "FirstNet",
+        "HealtheIntent"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 26% through workflow optimization",
+        "Trained 1000+ end users with 95% satisfaction rating",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "Johns Hopkins University",
+      "graduation_year": 2020,
+      "gpa": 3.6
+    }
+  ],
+  "certifications": [
+    "Epic Certified - EpicCare Inpatient",
+    "Cerner Certified - PowerChart",
+    "Six Sigma Black Belt"
+  ],
+  "skills": [
+    "FHIR APIs",
+    "Telehealth Implementation",
+    "Business Intelligence",
+    "Project Management",
+    "Change Management",
+    "PathNet",
+    "Process Improvement",
+    "Python",
+    "HealtheIntent",
+    "Millennium",
+    "Patient Portal Implementation",
+    "Cerner",
+    "Value-Based Care"
+  ]
+}

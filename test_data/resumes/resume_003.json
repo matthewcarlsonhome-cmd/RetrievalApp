@@ -1,0 +1,184 @@
+{
+  "id": "resume_003",
+  "personal_info": {
+    "name": "Timothy White",
+    "email": "timothywhite@consultant.net",
+    "phone": "(715) 702-5516",
+    "location": "Portland, OR",
+    "linkedin": "linkedin.com/in/timothy-white-4815"
+  },
+  "summary": "Results-driven healthcare IT professional with 14+ years of experience in EHR implementation and optimization. Specialized in athenahealth system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 14,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Medical Informatics Consultant",
+      "employer": "Greenway Health",
+      "location": "Cleveland, OH",
+      "start_date": "January 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "OpTime",
+        "Radiant",
+        "ASAP",
+        "Cogito"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 50+ providers across 18 locations",
+        "Completed data migration of 5M+ patient records with 99.9% accuracy",
+        "Designed clinical workflows that improved documentation efficiency by 37%"
+      ]
+    },
+    {
+      "title": "Clinical Applications Analyst",
+      "employer": "Christus Health",
+      "location": "Portland, OR",
+      "start_date": "January 2021",
+      "end_date": "December 2022",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Implemented 8 Epic/Cerner modules on time and under budget",
+        "Trained 1000+ end users with 99% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Cerner Implementation Specialist",
+      "employer": "Leidos Health",
+      "location": "Chicago, IL",
+      "start_date": "March 2019",
+      "end_date": "February 2021",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 28% through workflow optimization",
+        "Managed implementation for 33 ambulatory clinics across 3 states",
+        "Decreased claim denial rate by 27% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Senior Health Information Manager",
+      "employer": "Baylor Scott & White",
+      "location": "Cleveland, OH",
+      "start_date": "March 2017",
+      "end_date": "August 2019",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "OpTime",
+        "ASAP",
+        "Healthy Planet",
+        "Care Everywhere"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 5 recognition for implemented facility",
+        "Designed clinical workflows that improved documentation efficiency by 19%"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Data Analyst",
+      "employer": "Intermountain Healthcare",
+      "location": "Detroit, MI",
+      "start_date": "January 2016",
+      "end_date": "May 2017",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Led successful go-live for 300-bed hospital with zero critical issues",
+        "Managed cross-functional team of 3 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Senior Health Information Systems Analyst",
+      "employer": "Mountain View Health Center",
+      "location": "Las Vegas, NV",
+      "start_date": "September 2013",
+      "end_date": "May 2016",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 200+ providers across 16 locations",
+        "Trained 100+ end users with 94% satisfaction rating",
+        "Managed implementation for 7 ambulatory clinics across 7 states",
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Director of Clinical Workflow Analyst",
+      "employer": "ECG Management Consultants",
+      "location": "Minneapolis, MN",
+      "start_date": "January 2010",
+      "end_date": "December 2013",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Built 25+ HL7 interfaces connecting to external systems"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Health Information Management",
+      "institution": "Vanderbilt University",
+      "graduation_year": 2014,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Arts in Healthcare Management",
+      "institution": "Yale University",
+      "graduation_year": 2010,
+      "gpa": 3.45
+    }
+  ],
+  "certifications": [
+    "Six Sigma Green Belt",
+    "ITIL Foundation Certification",
+    "AWS Certified Solutions Architect",
+    "Six Sigma Black Belt"
+  ],
+  "skills": [
+    "Go-Live Support",
+    "FHIR APIs",
+    "Build Validation",
+    "HIPAA Compliance",
+    "Change Management",
+    "Process Improvement",
+    "Python",
+    "athenahealth",
+    "Healthcare Analytics",
+    "Value-Based Care",
+    "Crystal Reports",
+    "Scrum",
+    "User Acceptance Testing"
+  ]
+}

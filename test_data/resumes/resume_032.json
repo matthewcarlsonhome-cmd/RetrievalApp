@@ -1,0 +1,92 @@
+{
+  "id": "resume_032",
+  "personal_info": {
+    "name": "Richard Gonzalez",
+    "email": "richard.gonzalez@outlook.com",
+    "phone": "(388) 914-8184",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/richard-gonzalez-5708"
+  },
+  "summary": "Experienced healthcare implementation consultant with 6 years leading Epic implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 6,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Practice Management Consultant",
+      "employer": "Pivot Point Consulting",
+      "location": "Chicago, IL",
+      "start_date": "June 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $50K annual cost savings",
+        "Designed clinical workflows that improved documentation efficiency by 32%"
+      ]
+    },
+    {
+      "title": "Lead Healthcare Integration Engineer",
+      "employer": "Northwestern Memorial Hospital",
+      "location": "Baltimore, MD",
+      "start_date": "March 2018",
+      "end_date": "December 2022",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Implemented 7 Epic/Cerner modules on time and under budget",
+        "Decreased claim denial rate by 45% through revenue cycle optimization",
+        "Designed clinical workflows that improved documentation efficiency by 39%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Business Administration",
+      "institution": "Temple University",
+      "graduation_year": 2019,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of North Carolina",
+      "graduation_year": 2015,
+      "gpa": 3.81
+    }
+  ],
+  "certifications": [
+    "Six Sigma Green Belt",
+    "Certified Professional in Healthcare Information and Management Systems (CPHIMS)"
+  ],
+  "skills": [
+    "ASAP",
+    "Project Management",
+    "HIPAA Compliance",
+    "Process Improvement",
+    "SQL",
+    "Agile Methodology",
+    "FHIR APIs",
+    "Revenue Cycle Management",
+    "System Configuration",
+    "Resolute",
+    "Python",
+    "Care Everywhere",
+    "Power BI",
+    "Tableau",
+    "EHR Implementation",
+    "Optimization",
+    "Clinical Documentation",
+    "Clinical Decision Support",
+    "Epic"
+  ]
+}

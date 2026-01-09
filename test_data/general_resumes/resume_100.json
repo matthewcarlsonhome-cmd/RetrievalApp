@@ -1,0 +1,63 @@
+{
+  "id": "resume_100",
+  "personal_info": {
+    "name": "Michael Wilson",
+    "email": "michaelwilson@gmail.com",
+    "phone": "(460) 576-1039",
+    "location": "Los Angeles, CA",
+    "linkedin": "linkedin.com/in/michael-wilson-9993"
+  },
+  "summary": "Results-driven digital marketing and brand strategy specialist with 5+ years of hands-on experience. Proficient in HubSpot, A/B Testing, Problem Solving, with excellent problem-solving and communication skills.",
+  "years_experience": 5,
+  "experience_level": "intermediate",
+  "role_category": "marketing",
+  "experience": [
+    {
+      "title": "Growth Marketing Manager",
+      "employer": "AT&T",
+      "location": "Chicago, IL",
+      "start_date": "January 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Led rebranding initiative across 3 marketing channels",
+        "Managed $25K marketing budget with 10x ROI"
+      ]
+    },
+    {
+      "title": "Mid-Level SEO Specialist",
+      "employer": "AT&T",
+      "location": "Denver, CO",
+      "start_date": "September 2019",
+      "end_date": "August 2021",
+      "achievements": [
+        "Managed $25K marketing budget with 5x ROI",
+        "Generated 100+ qualified leads through digital campaigns",
+        "Led rebranding initiative across 6 marketing channels"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Communications",
+      "institution": "Arizona State University",
+      "graduation_year": 2017,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Lean Six Sigma Certification",
+    "Certified Financial Analyst (CFA)"
+  ],
+  "skills": [
+    "HubSpot",
+    "A/B Testing",
+    "Problem Solving",
+    "Attention to Detail",
+    "CRM Management",
+    "Scrum",
+    "Competitive Analysis",
+    "Business Analysis",
+    "Brand Management",
+    "Strategic Planning"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "resume_077",
+  "personal_info": {
+    "name": "Susan O'Brien",
+    "email": "so'brien@icloud.com",
+    "phone": "(681) 423-3318",
+    "location": "Minneapolis, MN",
+    "linkedin": "linkedin.com/in/susan-o'brien-5262"
+  },
+  "summary": "Experienced data engineering and analytics professional bringing 5 years of expertise. Strong background in Git, Cassandra, Apache Spark, committed to driving innovation and business value.",
+  "years_experience": 5,
+  "experience_level": "intermediate",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Junior Analytics Engineer",
+      "employer": "CVS Health",
+      "location": "Raleigh, NC",
+      "start_date": "March 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Developed 1 new features for the company's main product",
+        "Resolved 34+ production issues within SLA targets",
+        "Participated in code reviews, providing feedback on 75+ pull requests",
+        "Participated in code reviews, providing feedback on 61+ pull requests"
+      ]
+    },
+    {
+      "title": "Data Architect",
+      "employer": "CVS Health",
+      "location": "Atlanta, GA",
+      "start_date": "March 2019",
+      "end_date": "August 2022",
+      "achievements": [
+        "Designed and built RESTful APIs serving 10M+ requests daily",
+        "Led migration of 3 microservices to Kubernetes",
+        "Mentored 7 junior developers in best practices"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "institution": "UCLA",
+      "graduation_year": 2024,
+      "gpa": 3.68
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Northwestern University",
+      "graduation_year": 2019,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect - Professional"
+  ],
+  "skills": [
+    "Git",
+    "Cassandra",
+    "Apache Spark",
+    "Kotlin",
+    "C++",
+    "CloudFormation",
+    "Airflow",
+    "Vue.js",
+    "IntelliJ IDEA",
+    "Mentoring",
+    "MATLAB"
+  ]
+}

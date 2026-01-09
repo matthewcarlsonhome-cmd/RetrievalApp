@@ -1,0 +1,84 @@
+{
+  "id": "resume_049",
+  "personal_info": {
+    "name": "Shirley Hernandez",
+    "email": "shernandez@consultant.net",
+    "phone": "(496) 725-5985",
+    "location": "Los Angeles, CA",
+    "linkedin": "linkedin.com/in/shirley-hernandez-7793"
+  },
+  "summary": "Experienced healthcare implementation consultant with 3 years leading athenahealth implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 3,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Healthcare IT Project Manager",
+      "employer": "Coastal Health Services",
+      "location": "San Antonio, TX",
+      "start_date": "June 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Stork",
+        "Resolute",
+        "MyChart",
+        "Radiant"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 17% through revenue cycle optimization",
+        "Achieved HIMSS Stage 5 recognition for implemented facility",
+        "Led optimization project resulting in $100K annual cost savings"
+      ]
+    },
+    {
+      "title": "Healthcare Integration Engineer",
+      "employer": "Metro Internal Medicine",
+      "location": "San Diego, CA",
+      "start_date": "March 2021",
+      "end_date": "December 2023",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 6 recognition for implemented facility",
+        "Coordinated go-live support for 500+ providers across 6 locations",
+        "Completed data migration of 10M+ patient records with 99.9% accuracy",
+        "Led successful go-live for 750-bed hospital with zero critical issues"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "Harvard University",
+      "graduation_year": 2021,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Certified Scrum Master (CSM)",
+    "Epic Certified - EpicCare Inpatient"
+  ],
+  "skills": [
+    "FHIR APIs",
+    "ICD-10",
+    "CPT Coding",
+    "Data Migration",
+    "Power BI",
+    "athenahealth",
+    "SQL",
+    "Population Health",
+    "Revenue Cycle Management",
+    "Patient Portal Implementation",
+    "Tableau",
+    "EHR Implementation",
+    "Optimization",
+    "User Acceptance Testing"
+  ]
+}

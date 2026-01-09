@@ -1,0 +1,46 @@
+{
+  "id": "resume_043",
+  "personal_info": {
+    "name": "Mark Adams",
+    "email": "mark.adams@icloud.com",
+    "phone": "(571) 597-9378",
+    "location": "Raleigh, NC",
+    "linkedin": "linkedin.com/in/mark-adams-4200"
+  },
+  "summary": "Detail-oriented business analysis and process improvement specialist with 1+ years of hands-on experience. Proficient in Decision Making, Change Management, Jira, with excellent problem-solving and communication skills.",
+  "years_experience": 1,
+  "experience_level": "beginner",
+  "role_category": "analysis",
+  "experience": [
+    {
+      "title": "Process Analyst",
+      "employer": "Smart Analytics",
+      "location": "Seattle, WA",
+      "start_date": "June 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Managed stakeholder communications for 8 departments",
+        "Supported 2 project implementations successfully",
+        "Managed stakeholder communications for 5 departments"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Business Management",
+      "institution": "University of Michigan",
+      "graduation_year": 2022,
+      "gpa": 3.75
+    }
+  ],
+  "certifications": [
+    "Salesforce Administrator Certification"
+  ],
+  "skills": [
+    "Decision Making",
+    "Change Management",
+    "Jira",
+    "Data Analysis",
+    "Strategic Planning"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "job_021",
+  "title": "Senior Operations Analyst",
+  "employer": "Dropbox",
+  "employer_type": "tech",
+  "location": "Austin, TX",
+  "remote_option": "Remote",
+  "employment_type": "Full-time",
+  "contract_type": "Contract",
+  "posted_date": "2026-01-05",
+  "job_category": "business_analyst",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 5,
+    "max_years": null
+  },
+  "description": "We're looking for a Senior Operations Analyst to join Dropbox. In this role, you'll analyze business requirements, develop solutions, and help drive operational excellence.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Gather and analyze business requirements",
+    "Develop process improvements and efficiency recommendations",
+    "Create business cases and presentations for leadership",
+    "Support project implementation and change management",
+    "Track KPIs and report on business performance"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "5+ years of relevant experience",
+    "skills": [
+      "Team Leadership",
+      "Cost-Benefit Analysis",
+      "Performance Metrics",
+      "Kanban",
+      "Project Management",
+      "Data Warehousing",
+      "Data Analysis"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Bitbucket",
+      "GitLab",
+      "VS Code"
+    ],
+    "certifications": [
+      "Certified Business Analysis Professional (CBAP)",
+      "Six Sigma Green Belt"
+    ]
+  },
+  "salary": {
+    "type": "hourly",
+    "min": 53,
+    "max": 78,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Competitive hourly rate",
+    "Flexible schedule"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "resume_080",
+  "personal_info": {
+    "name": "Katherine Taylor",
+    "email": "katherine.taylor64@outlook.com",
+    "phone": "(979) 703-4871",
+    "location": "San Diego, CA",
+    "linkedin": "linkedin.com/in/katherine-taylor-8010"
+  },
+  "summary": "Experienced healthcare implementation consultant with 4 years leading Epic implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 4,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Healthcare Integration Engineer",
+      "employer": "Riverside Family Medicine",
+      "location": "Dallas, TX",
+      "start_date": "March 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Cogito",
+        "Healthy Planet",
+        "MyChart",
+        "Tapestry"
+      ],
+      "achievements": [
+        "Trained 1000+ end users with 94% satisfaction rating",
+        "Reduced average patient wait time by 30% through workflow optimization"
+      ]
+    },
+    {
+      "title": "Revenue Cycle Implementation Specialist",
+      "employer": "Barnes-Jewish Hospital",
+      "location": "Dallas, TX",
+      "start_date": "January 2021",
+      "end_date": "February 2023",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Cogito",
+        "EpicCare Inpatient",
+        "Tapestry",
+        "EpicCare Ambulatory"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $100K annual cost savings",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Health Information Systems Analyst",
+      "employer": "Valley Medical Associates",
+      "location": "Columbus, OH",
+      "start_date": "January 2020",
+      "end_date": "May 2021",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "University of Illinois",
+      "graduation_year": 2020,
+      "gpa": 3.93
+    }
+  ],
+  "certifications": [
+    "Epic Certified - EpicCare Inpatient",
+    "Registered Health Information Administrator (RHIA)"
+  ],
+  "skills": [
+    "ASAP",
+    "HIPAA Compliance",
+    "Change Management",
+    "Training Development",
+    "FHIR APIs",
+    "Data Migration",
+    "MyChart",
+    "Revenue Cycle Management",
+    "Report Writing",
+    "Clinical Workflow Analysis",
+    "Python",
+    "Healthy Planet",
+    "Patient Portal Implementation",
+    "EHR Implementation",
+    "System Integration",
+    "User Acceptance Testing",
+    "HL7 Interfaces",
+    "Value-Based Care",
+    "Epic"
+  ]
+}

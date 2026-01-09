@@ -1,0 +1,77 @@
+{
+  "id": "job_015",
+  "title": "Clinical Informatics Program Manager",
+  "employer": "Epic",
+  "employer_type": "vendor",
+  "location": "Las Vegas, NV",
+  "remote_option": "Hybrid",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "contract_length": null,
+  "posted_date": "2025-12-14",
+  "primary_ehr_system": "Epic",
+  "modules": [
+    "Radiant",
+    "Resolute",
+    "MyChart",
+    "OpTime"
+  ],
+  "experience_required": {
+    "min_years": 3,
+    "max_years": null
+  },
+  "description": "We are looking for a Clinical Informatics Program Manager to support our Epic implementation and optimization efforts at Epic. This role requires strong technical skills, excellent communication abilities, and a deep understanding of healthcare workflows. You will be responsible for ensuring successful system adoption across our organization.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize Epic applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Develop and manage project plans, timelines, and resource allocation",
+    "Lead cross-functional implementation teams",
+    "Report project status to executive leadership",
+    "Manage project budget and identify risk mitigation strategies",
+    "Facilitate steering committee meetings and stakeholder communications"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in Health Informatics, Healthcare Administration, IT, or related field",
+    "experience": "3+ years of healthcare IT implementation experience",
+    "skills": [
+      "Epic",
+      "Agile Methodology",
+      "User Acceptance Testing",
+      "Medical Terminology",
+      "Data Migration",
+      "ICD-10"
+    ],
+    "certifications": [
+      "Epic Certified - EpicCare Ambulatory"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Healthcare IT",
+      "System Configuration",
+      "Tableau",
+      "Medical Terminology",
+      "Healthcare Analytics",
+      "Power BI"
+    ],
+    "certifications": [
+      "Six Sigma Black Belt"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 102612,
+    "max": 117777,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Flexible spending accounts (FSA/HSA)",
+    "Paid time off (PTO)",
+    "Professional development budget",
+    "Remote work options",
+    "401(k) with employer match"
+  ]
+}

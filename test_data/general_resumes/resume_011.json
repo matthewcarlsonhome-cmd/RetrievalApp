@@ -1,0 +1,108 @@
+{
+  "id": "resume_011",
+  "personal_info": {
+    "name": "Amanda Perez",
+    "email": "amanda.perez91@gmail.com",
+    "phone": "(928) 425-5669",
+    "location": "Washington, DC",
+    "linkedin": "linkedin.com/in/amanda-perez-7159"
+  },
+  "summary": "Experienced product management and delivery professional bringing 18 years of expertise. Strong background in Team Leadership, Kanban, Bitbucket, committed to driving innovation and business value.",
+  "years_experience": 18,
+  "experience_level": "expert",
+  "role_category": "product",
+  "experience": [
+    {
+      "title": "Technical Product Manager",
+      "employer": "Digital Horizons",
+      "location": "Austin, TX",
+      "start_date": "June 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Managed stakeholder communications for 8 departments",
+        "Supported 1 project implementations successfully",
+        "Analyzed 18 business reports to identify improvement opportunities"
+      ]
+    },
+    {
+      "title": "Mid-Level Product Owner",
+      "employer": "Rapid Growth Tech",
+      "location": "Boston, MA",
+      "start_date": "March 2021",
+      "end_date": "May 2022",
+      "achievements": [
+        "Managed projects totaling $5K in annual budget",
+        "Developed business cases securing $100K in project funding"
+      ]
+    },
+    {
+      "title": "Lead Product Manager",
+      "employer": "JPMorgan Chase",
+      "location": "Portland, OR",
+      "start_date": "January 2017",
+      "end_date": "December 2021",
+      "achievements": [
+        "Directed cross-functional initiatives across 8 departments",
+        "Managed portfolio of 32 projects worth $100M"
+      ]
+    },
+    {
+      "title": "Lead Product Manager",
+      "employer": "Merck",
+      "location": "San Francisco, CA",
+      "start_date": "January 2013",
+      "end_date": "May 2017",
+      "achievements": [
+        "Drove strategic initiatives contributing $500M to bottom line",
+        "Led M&A integration program spanning 14 global locations",
+        "Led M&A integration program spanning 5 global locations"
+      ]
+    },
+    {
+      "title": "Staff Scrum Master",
+      "employer": "Wells Fargo",
+      "location": "Chicago, IL",
+      "start_date": "March 2012",
+      "end_date": "August 2013",
+      "achievements": [
+        "Managed P&L responsibility for $1000M business unit",
+        "Drove strategic initiatives contributing $100M to bottom line"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Finance",
+      "institution": "MIT",
+      "graduation_year": 2005,
+      "gpa": 3.39
+    }
+  ],
+  "certifications": [
+    "HubSpot Inbound Marketing Certification",
+    "Certified Business Analysis Professional (CBAP)",
+    "Certified Digital Marketing Professional",
+    "Lean Six Sigma Certification",
+    "Certified Kubernetes Administrator (CKA)",
+    "CompTIA Security+"
+  ],
+  "skills": [
+    "Team Leadership",
+    "Kanban",
+    "Bitbucket",
+    "Looker",
+    "Decision Making",
+    "Problem Solving",
+    "Performance Metrics",
+    "Resource Planning",
+    "VS Code",
+    "Vendor Management",
+    "Critical Thinking",
+    "Postman",
+    "Cross-functional Collaboration",
+    "Data Warehousing",
+    "Mentoring",
+    "Conflict Resolution",
+    "Data Analysis"
+  ]
+}

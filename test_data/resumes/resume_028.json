@@ -1,0 +1,239 @@
+{
+  "id": "resume_028",
+  "personal_info": {
+    "name": "Ronald Hernandez",
+    "email": "rhernandez@healthcaremail.com",
+    "phone": "(719) 838-1146",
+    "location": "Las Vegas, NV",
+    "linkedin": "linkedin.com/in/ronald-hernandez-2621"
+  },
+  "summary": "Healthcare informatics specialist with 20+ years of hands-on experience implementing and optimizing Cerner EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 20,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Health Information Systems Analyst",
+      "employer": "Houston Methodist Hospital",
+      "location": "Houston, TX",
+      "start_date": "January 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Implemented 10 Epic/Cerner modules on time and under budget",
+        "Achieved 87% clinician adoption rate within first 2 months",
+        "Coordinated go-live support for 200+ providers across 14 locations"
+      ]
+    },
+    {
+      "title": "Healthcare IT Project Manager",
+      "employer": "PwC Health Industries",
+      "location": "San Diego, CA",
+      "start_date": "January 2021",
+      "end_date": "February 2023",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Built 10+ HL7 interfaces connecting to external systems",
+        "Managed cross-functional team of 7 analysts and trainers",
+        "Reduced average patient wait time by 39% through workflow optimization"
+      ]
+    },
+    {
+      "title": "Senior Healthcare IT Project Manager",
+      "employer": "Brigham and Women's Hospital",
+      "location": "Salt Lake City, UT",
+      "start_date": "June 2018",
+      "end_date": "February 2021",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $50K annual cost savings",
+        "Achieved 93% clinician adoption rate within first 5 months"
+      ]
+    },
+    {
+      "title": "Senior Clinical Informatics Specialist",
+      "employer": "Regional Health Partners",
+      "location": "Nashville, TN",
+      "start_date": "September 2016",
+      "end_date": "February 2018",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PowerChart",
+        "CommunityWorks",
+        "HealtheIntent",
+        "Millennium"
+      ],
+      "achievements": [
+        "Achieved 86% clinician adoption rate within first 3 months",
+        "Trained 200+ end users with 93% satisfaction rating",
+        "Implemented 6 Epic/Cerner modules on time and under budget",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Senior EHR Training Specialist",
+      "employer": "Huron Consulting",
+      "location": "Fort Worth, TX",
+      "start_date": "September 2011",
+      "end_date": "May 2016",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Millennium",
+        "PharmNet",
+        "PowerChart",
+        "Soarian"
+      ],
+      "achievements": [
+        "Built 17+ HL7 interfaces connecting to external systems",
+        "Achieved HIMSS Stage 6 recognition for implemented facility",
+        "Completed data migration of 10M+ patient records with 99.9% accuracy",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Data Analyst",
+      "employer": "Community Health Partners",
+      "location": "Austin, TX",
+      "start_date": "September 2009",
+      "end_date": "August 2011",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "HealtheIntent",
+        "Soarian",
+        "SurgiNet",
+        "PharmNet"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Trained 200+ end users with 94% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Principal Healthcare IT Project Manager",
+      "employer": "Deloitte Healthcare",
+      "location": "Cleveland, OH",
+      "start_date": "January 2008",
+      "end_date": "August 2009",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $50K annual cost savings",
+        "Achieved 86% clinician adoption rate within first 2 months",
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Senior Health Information Manager",
+      "employer": "Coastal Health Services",
+      "location": "San Antonio, TX",
+      "start_date": "March 2005",
+      "end_date": "December 2008",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Beacon",
+        "Radiant",
+        "Cadence",
+        "OpTime"
+      ],
+      "achievements": [
+        "Managed implementation for 48 ambulatory clinics across 8 states",
+        "Coordinated go-live support for 200+ providers across 10 locations"
+      ]
+    },
+    {
+      "title": "Lead Practice Management Consultant",
+      "employer": "Cerner",
+      "location": "Minneapolis, MN",
+      "start_date": "September 2004",
+      "end_date": "May 2005",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "ITWorks",
+        "HealtheIntent",
+        "FirstNet",
+        "PathNet"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 6 analysts and trainers",
+        "Completed data migration of 5M+ patient records with 99.9% accuracy",
+        "Led optimization project resulting in $500K annual cost savings"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "PhD in Health Informatics",
+      "institution": "UCLA",
+      "graduation_year": 2013,
+      "gpa": null
+    },
+    {
+      "degree": "Master of Public Health",
+      "institution": "Temple University",
+      "graduation_year": 2007,
+      "gpa": 3.72
+    },
+    {
+      "degree": "Bachelor of Arts in Healthcare Management",
+      "institution": "Johns Hopkins University",
+      "graduation_year": 2003,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "ITIL Foundation Certification",
+    "Certified ScrumMaster (CSM)",
+    "Epic Certified - EpicCare Inpatient",
+    "Certified Scrum Master (CSM)",
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)",
+    "Six Sigma Black Belt"
+  ],
+  "skills": [
+    "FHIR APIs",
+    "Build Validation",
+    "PathNet",
+    "Interoperability",
+    "Change Management",
+    "Training Development",
+    "Data Migration",
+    "Python",
+    "RadNet",
+    "Cerner",
+    "Value-Based Care",
+    "PharmNet",
+    "Clinical Workflow Analysis",
+    "EHR Implementation"
+  ]
+}

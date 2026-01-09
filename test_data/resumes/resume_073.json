@@ -1,0 +1,108 @@
+{
+  "id": "resume_073",
+  "personal_info": {
+    "name": "Carol Baker",
+    "email": "carol.baker@consultant.net",
+    "phone": "(788) 526-4945",
+    "location": "Los Angeles, CA",
+    "linkedin": "linkedin.com/in/carol-baker-5245"
+  },
+  "summary": "Experienced healthcare implementation consultant with 10 years leading Epic implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 10,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Epic Implementation Analyst",
+      "employer": "Huron Consulting",
+      "location": "Houston, TX",
+      "start_date": "January 2020",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Managed implementation for 6 ambulatory clinics across 8 states",
+        "Achieved HIMSS Stage 6 recognition for implemented facility",
+        "Managed cross-functional team of 4 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Lead EHR Support Analyst",
+      "employer": "ECG Management Consultants",
+      "location": "Fort Worth, TX",
+      "start_date": "June 2017",
+      "end_date": "December 2020",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Trained 500+ end users with 95% satisfaction rating",
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Systems Analyst",
+      "employer": "HCA Healthcare",
+      "location": "Salt Lake City, UT",
+      "start_date": "March 2014",
+      "end_date": "August 2017",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Resolute",
+        "Prelude",
+        "Willow",
+        "Cadence"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 15% through workflow optimization",
+        "Implemented 5 Epic/Cerner modules on time and under budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Healthcare Administration",
+      "institution": "Boston University",
+      "graduation_year": 2019,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "Harvard University",
+      "graduation_year": 2013,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Cerner Certified - PowerChart"
+  ],
+  "skills": [
+    "Telehealth Implementation",
+    "Data Migration",
+    "HL7 Interfaces",
+    "Training Development",
+    "Grand Central",
+    "Prelude",
+    "Process Improvement",
+    "SQL",
+    "Tableau",
+    "Revenue Cycle Management",
+    "Healthy Planet",
+    "Value-Based Care",
+    "Report Writing",
+    "Epic",
+    "Clinical Workflow Analysis",
+    "Agile Methodology",
+    "Scrum"
+  ]
+}

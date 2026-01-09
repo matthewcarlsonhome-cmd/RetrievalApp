@@ -1,0 +1,75 @@
+{
+  "id": "resume_003",
+  "personal_info": {
+    "name": "Robert Carter",
+    "email": "rcarter@protonmail.com",
+    "phone": "(209) 309-5610",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/robert-carter-7493"
+  },
+  "summary": "Seasoned professional with 7+ years of experience in data engineering and analytics. Skilled in R, PyTorch, PostgreSQL, with a proven track record of delivering impactful results.",
+  "years_experience": 7,
+  "experience_level": "advanced",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Mid-Level Business Intelligence Analyst",
+      "employer": "Verizon",
+      "location": "Denver, CO",
+      "start_date": "March 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Mentored 7 junior developers in best practices",
+        "Reduced application load time by 31% through performance optimization"
+      ]
+    },
+    {
+      "title": "Lead Quantitative Analyst",
+      "employer": "CVS Health",
+      "location": "Miami, FL",
+      "start_date": "March 2017",
+      "end_date": "December 2021",
+      "achievements": [
+        "Reduced infrastructure costs by $4000K annually through optimization",
+        "Established engineering best practices adopted by 12 teams"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Software Engineering",
+      "institution": "MIT",
+      "graduation_year": 2016,
+      "gpa": 3.39
+    },
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "Harvard University",
+      "graduation_year": 2014,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Cisco Certified Network Associate (CCNA)",
+    "CompTIA A+",
+    "AWS Certified Solutions Architect - Professional",
+    "Azure Solutions Architect Expert",
+    "Oracle Certified Professional"
+  ],
+  "skills": [
+    "R",
+    "PyTorch",
+    "PostgreSQL",
+    "Time Management",
+    "Business Intelligence",
+    "React",
+    "Apache Spark",
+    "Attention to Detail",
+    "MongoDB",
+    "Azure",
+    "Splunk",
+    "Sketch",
+    "Data Warehousing",
+    "AWS Lambda"
+  ]
+}

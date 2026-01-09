@@ -1,0 +1,35 @@
+{
+  "id": "resume_094",
+  "personal_info": {
+    "name": "Ryan Walker",
+    "email": "ryan.walker@icloud.com",
+    "phone": "(530) 550-4965",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/ryan-walker-2285"
+  },
+  "summary": "Motivated product management and delivery specialist with 0+ years of hands-on experience. Proficient in Bitbucket, Change Management, Vendor Management, with excellent problem-solving and communication skills.",
+  "years_experience": 0,
+  "experience_level": "beginner",
+  "role_category": "product",
+  "experience": [],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Finance",
+      "institution": "University of Illinois",
+      "graduation_year": 2021,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Google Analytics Certification",
+    "PMP (Project Management Professional)"
+  ],
+  "skills": [
+    "Bitbucket",
+    "Change Management",
+    "Vendor Management",
+    "Business Intelligence",
+    "Conflict Resolution",
+    "ROI Analysis"
+  ]
+}

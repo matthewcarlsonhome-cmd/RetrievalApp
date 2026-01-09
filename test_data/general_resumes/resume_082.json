@@ -1,0 +1,63 @@
+{
+  "id": "resume_082",
+  "personal_info": {
+    "name": "Pamela Green",
+    "email": "pamela.green37@protonmail.com",
+    "phone": "(282) 208-4003",
+    "location": "Washington, DC",
+    "linkedin": "linkedin.com/in/pamela-green-2871"
+  },
+  "summary": "Experienced product management and delivery professional bringing 4 years of expertise. Strong background in Bitbucket, Cost-Benefit Analysis, Presentation Skills, committed to driving innovation and business value.",
+  "years_experience": 4,
+  "experience_level": "intermediate",
+  "role_category": "product",
+  "experience": [
+    {
+      "title": "Entry-Level Product Manager",
+      "employer": "General Motors",
+      "location": "Detroit, MI",
+      "start_date": "June 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Supported 0 project implementations successfully",
+        "Supported 2 project implementations successfully",
+        "Created process documentation improving team efficiency by 39%"
+      ]
+    },
+    {
+      "title": "Mid-Level Technical Program Manager",
+      "employer": "Growth Engine",
+      "location": "Miami, FL",
+      "start_date": "January 2020",
+      "end_date": "February 2023",
+      "achievements": [
+        "Managed projects totaling $5K in annual budget",
+        "Increased customer satisfaction scores by 39% through service improvements",
+        "Led process improvement initiative saving 24 hours weekly"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Economics",
+      "institution": "New York University",
+      "graduation_year": 2019,
+      "gpa": 3.99
+    }
+  ],
+  "certifications": [
+    "Six Sigma Black Belt"
+  ],
+  "skills": [
+    "Bitbucket",
+    "Cost-Benefit Analysis",
+    "Presentation Skills",
+    "Resource Planning",
+    "KPI Development",
+    "Scrum",
+    "Business Intelligence",
+    "IntelliJ IDEA",
+    "Negotiation",
+    "Stakeholder Management"
+  ]
+}

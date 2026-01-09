@@ -1,0 +1,50 @@
+{
+  "id": "resume_093",
+  "personal_info": {
+    "name": "Kevin Anderson",
+    "email": "kanderson@gmail.com",
+    "phone": "(892) 593-2732",
+    "location": "Phoenix, AZ",
+    "linkedin": "linkedin.com/in/kevin-anderson-3547"
+  },
+  "summary": "Eager professional with 1+ years of experience in product management and delivery. Skilled in GitLab, ETL, Attention to Detail, with a proven track record of delivering impactful results.",
+  "years_experience": 1,
+  "experience_level": "beginner",
+  "role_category": "product",
+  "experience": [
+    {
+      "title": "Associate Technical Program Manager",
+      "employer": "Future Forward",
+      "location": "New York, NY",
+      "start_date": "January 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Created process documentation improving team efficiency by 48%",
+        "Supported 1 project implementations successfully",
+        "Created process documentation improving team efficiency by 19%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Management",
+      "institution": "University of Colorado",
+      "graduation_year": 2025,
+      "gpa": 3.53
+    },
+    {
+      "degree": "Bachelor of Arts in Economics",
+      "institution": "University of Florida",
+      "graduation_year": 2022,
+      "gpa": null
+    }
+  ],
+  "certifications": [],
+  "skills": [
+    "GitLab",
+    "ETL",
+    "Attention to Detail",
+    "Stakeholder Management",
+    "Contract Negotiation"
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": "resume_036",
+  "personal_info": {
+    "name": "Angela Shah",
+    "email": "ashah@gmail.com",
+    "phone": "(375) 364-8054",
+    "location": "San Antonio, TX",
+    "linkedin": "linkedin.com/in/angela-shah-8510"
+  },
+  "summary": "Clinical informatics expert with 10+ years specializing in athenahealth implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 10,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Healthcare IT Project Manager",
+      "employer": "Riverside Family Medicine",
+      "location": "Cleveland, OH",
+      "start_date": "January 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Cadence",
+        "Tapestry",
+        "Resolute",
+        "Care Everywhere"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 16% through workflow optimization",
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Achieved HIMSS Stage 7 recognition for implemented facility",
+        "Led successful go-live for 400-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Revenue Cycle Implementation Specialist",
+      "employer": "Impact Advisors",
+      "location": "Milwaukee, WI",
+      "start_date": "March 2021",
+      "end_date": "December 2023",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 11 analysts and trainers",
+        "Trained 100+ end users with 96% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Senior Clinical Workflow Analyst",
+      "employer": "Lakeside Medical Clinic",
+      "location": "New York, NY",
+      "start_date": "January 2018",
+      "end_date": "May 2021",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Built 25+ HL7 interfaces connecting to external systems",
+        "Achieved HIMSS Stage 5 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Senior Healthcare IT Project Manager",
+      "employer": "Deloitte Healthcare",
+      "location": "Milwaukee, WI",
+      "start_date": "March 2017",
+      "end_date": "May 2018",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Prelude",
+        "Grand Central",
+        "Stork",
+        "EpicCare Inpatient"
+      ],
+      "achievements": [
+        "Led successful go-live for 150-bed hospital with zero critical issues",
+        "Decreased claim denial rate by 30% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Healthcare Integration Engineer",
+      "employer": "Henry Ford Hospital",
+      "location": "San Diego, CA",
+      "start_date": "January 2016",
+      "end_date": "February 2017",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 23%",
+        "Reduced average patient wait time by 45% through workflow optimization",
+        "Led optimization project resulting in $200K annual cost savings",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "EHR Implementation Consultant",
+      "employer": "Downtown Health Clinic",
+      "location": "Baltimore, MD",
+      "start_date": "September 2015",
+      "end_date": "December 2016",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "ITWorks",
+        "Millennium",
+        "Soarian",
+        "RadNet"
+      ],
+      "achievements": [
+        "Trained 500+ end users with 94% satisfaction rating",
+        "Decreased claim denial rate by 22% through revenue cycle optimization",
+        "Reduced average patient wait time by 31% through workflow optimization",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Senior Clinical Applications Analyst",
+      "employer": "Riverside Family Medicine",
+      "location": "Jacksonville, FL",
+      "start_date": "June 2014",
+      "end_date": "December 2015",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Led successful go-live for 500-bed hospital with zero critical issues",
+        "Coordinated go-live support for 200+ providers across 7 locations",
+        "Implemented 12 Epic/Cerner modules on time and under budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Health Informatics",
+      "institution": "Indiana University",
+      "graduation_year": 2015,
+      "gpa": 3.63
+    },
+    {
+      "degree": "Bachelor of Arts in Healthcare Management",
+      "institution": "Johns Hopkins University",
+      "graduation_year": 2012,
+      "gpa": 3.45
+    }
+  ],
+  "certifications": [
+    "Project Management Professional (PMP)",
+    "Certified Information Systems Security Professional (CISSP)",
+    "ITIL Foundation Certification",
+    "Six Sigma Black Belt",
+    "HL7 FHIR Certification"
+  ],
+  "skills": [
+    "Build Validation",
+    "Project Management",
+    "Clinical Documentation",
+    "Interoperability",
+    "Data Migration",
+    "Healthcare IT",
+    "athenahealth",
+    "Agile Methodology",
+    "SQL",
+    "Patient Portal Implementation",
+    "Value-Based Care",
+    "Report Writing",
+    "Crystal Reports",
+    "Optimization"
+  ]
+}

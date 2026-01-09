@@ -1,0 +1,106 @@
+{
+  "id": "resume_034",
+  "personal_info": {
+    "name": "Amy Lewis",
+    "email": "alewis@outlook.com",
+    "phone": "(695) 925-2027",
+    "location": "Atlanta, GA",
+    "linkedin": "linkedin.com/in/amy-lewis-4143"
+  },
+  "summary": "Results-driven healthcare IT professional with 12+ years of experience in EHR implementation and optimization. Specialized in MEDITECH system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 12,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Clinical Applications Analyst",
+      "employer": "Cedars-Sinai Medical Center",
+      "location": "Boston, MA",
+      "start_date": "June 2020",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "MyChart",
+        "Tapestry",
+        "Resolute",
+        "OpTime"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 7 recognition for implemented facility",
+        "Decreased claim denial rate by 37% through revenue cycle optimization",
+        "Led successful go-live for 300-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Healthcare Data Analyst",
+      "employer": "Leidos Health",
+      "location": "Salt Lake City, UT",
+      "start_date": "September 2016",
+      "end_date": "December 2020",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PharmNet",
+        "HealtheIntent",
+        "CommunityWorks",
+        "PowerChart"
+      ],
+      "achievements": [
+        "Achieved 96% clinician adoption rate within first 5 months",
+        "Reduced average patient wait time by 29% through workflow optimization"
+      ]
+    },
+    {
+      "title": "Lead Health Information Manager",
+      "employer": "Sutter Health",
+      "location": "Los Angeles, CA",
+      "start_date": "June 2012",
+      "end_date": "December 2016",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 32%",
+        "Achieved 95% clinician adoption rate within first 3 months",
+        "Achieved HIMSS Stage 7 recognition for implemented facility",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Information Systems",
+      "institution": "Boston University",
+      "graduation_year": 2017,
+      "gpa": 3.88
+    },
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "Emory University",
+      "graduation_year": 2011,
+      "gpa": 3.21
+    }
+  ],
+  "certifications": [
+    "Epic Certified - Beacon",
+    "Registered Health Information Administrator (RHIA)",
+    "Project Management Professional (PMP)"
+  ],
+  "skills": [
+    "Health Information Exchange",
+    "Healthcare IT",
+    "SQL",
+    "Patient Portal Implementation",
+    "MEDITECH",
+    "Report Writing",
+    "Tableau",
+    "Value-Based Care",
+    "User Acceptance Testing"
+  ]
+}

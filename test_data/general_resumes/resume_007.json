@@ -1,0 +1,67 @@
+{
+  "id": "resume_007",
+  "personal_info": {
+    "name": "Christine Thomas",
+    "email": "christine.thomas@gmail.com",
+    "phone": "(286) 299-8367",
+    "location": "Charlotte, NC",
+    "linkedin": "linkedin.com/in/christine-thomas-7457"
+  },
+  "summary": "Experienced business analysis and process improvement professional bringing 4 years of expertise. Strong background in Team Leadership, GitHub, Git, committed to driving innovation and business value.",
+  "years_experience": 4,
+  "experience_level": "intermediate",
+  "role_category": "analysis",
+  "experience": [
+    {
+      "title": "Mid-Level Operations Analyst",
+      "employer": "Walmart",
+      "location": "San Jose, CA",
+      "start_date": "June 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Developed business cases securing $50K in project funding",
+        "Led process improvement initiative saving 25 hours weekly",
+        "Managed projects totaling $5K in annual budget",
+        "Increased customer satisfaction scores by 33% through service improvements"
+      ]
+    },
+    {
+      "title": "Process Analyst",
+      "employer": "ExxonMobil",
+      "location": "New York, NY",
+      "start_date": "January 2020",
+      "end_date": "February 2021",
+      "achievements": [
+        "Led process improvement initiative saving 40 hours weekly",
+        "Managed projects totaling $50K in annual budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Business Management",
+      "institution": "University of Washington",
+      "graduation_year": 2017,
+      "gpa": 3.55
+    }
+  ],
+  "certifications": [
+    "Certified Scrum Product Owner (CSPO)",
+    "Certified Business Analysis Professional (CBAP)",
+    "Certified Kubernetes Administrator (CKA)"
+  ],
+  "skills": [
+    "Team Leadership",
+    "GitHub",
+    "Git",
+    "Data Visualization",
+    "Time Management",
+    "Resource Planning",
+    "Vendor Management",
+    "Business Intelligence",
+    "Critical Thinking",
+    "Budget Management",
+    "Data Warehousing",
+    "Business Analysis"
+  ]
+}

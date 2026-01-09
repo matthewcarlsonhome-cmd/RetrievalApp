@@ -1,0 +1,62 @@
+{
+  "id": "resume_070",
+  "personal_info": {
+    "name": "Katherine Campbell",
+    "email": "kcampbell@yahoo.com",
+    "phone": "(288) 446-9848",
+    "location": "Pittsburgh, PA",
+    "linkedin": "linkedin.com/in/katherine-campbell-7935"
+  },
+  "summary": "Proficient professional with 3+ years of experience in software development and engineering. Skilled in Git, Node.js, Scala, with a proven track record of delivering impactful results.",
+  "years_experience": 3,
+  "experience_level": "intermediate",
+  "role_category": "development",
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "employer": "ExxonMobil",
+      "location": "New York, NY",
+      "start_date": "September 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Created technical documentation for 1 internal tools"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "employer": "Tech Pioneers",
+      "location": "Chicago, IL",
+      "start_date": "March 2021",
+      "end_date": "May 2023",
+      "achievements": [
+        "Implemented CI/CD pipeline reducing deployment time by 47%",
+        "Designed and built RESTful APIs serving 1M+ requests daily"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "University of Michigan",
+      "graduation_year": 2018,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Microsoft Certified: Azure Developer Associate",
+    "HashiCorp Certified: Terraform Associate"
+  ],
+  "skills": [
+    "Git",
+    "Node.js",
+    "Scala",
+    "PyTorch",
+    "Cassandra",
+    "Attention to Detail",
+    "Terraform",
+    "SQL",
+    "Azure",
+    "Elasticsearch",
+    "IntelliJ IDEA"
+  ]
+}

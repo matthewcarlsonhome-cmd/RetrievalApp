@@ -1,0 +1,106 @@
+{
+  "id": "resume_076",
+  "personal_info": {
+    "name": "Steven Scott",
+    "email": "sscott@gmail.com",
+    "phone": "(325) 909-9513",
+    "location": "Pittsburgh, PA",
+    "linkedin": "linkedin.com/in/steven-scott-4076"
+  },
+  "summary": "Transformational professional with 11+ years of experience in IT infrastructure and cloud technologies. Skilled in New Relic, PyTorch, Python, with a proven track record of delivering impactful results.",
+  "years_experience": 11,
+  "experience_level": "expert",
+  "role_category": "infrastructure",
+  "experience": [
+    {
+      "title": "Junior Security Engineer",
+      "employer": "AI Dynamics",
+      "location": "Nashville, TN",
+      "start_date": "March 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Improved code test coverage from 59% to 93%",
+        "Resolved 20+ production issues within SLA targets",
+        "Participated in code reviews, providing feedback on 88+ pull requests"
+      ]
+    },
+    {
+      "title": "Mid-Level Database Administrator",
+      "employer": "Rapid Growth Tech",
+      "location": "Atlanta, GA",
+      "start_date": "June 2019",
+      "end_date": "May 2023",
+      "achievements": [
+        "Led migration of 7 microservices to Kubernetes",
+        "Implemented CI/CD pipeline reducing deployment time by 33%",
+        "Implemented CI/CD pipeline reducing deployment time by 34%"
+      ]
+    },
+    {
+      "title": "Lead Technical Architect",
+      "employer": "Walmart",
+      "location": "San Jose, CA",
+      "start_date": "January 2018",
+      "end_date": "May 2019",
+      "achievements": [
+        "Led team of 28 engineers in delivering critical platform features",
+        "Architected scalable system handling 40M+ daily active users"
+      ]
+    },
+    {
+      "title": "Lead Database Administrator",
+      "employer": "Home Depot",
+      "location": "Miami, FL",
+      "start_date": "January 2017",
+      "end_date": "February 2018",
+      "achievements": [
+        "Led team of 24 engineers in delivering critical platform features",
+        "Reduced infrastructure costs by $10000K annually through optimization"
+      ]
+    },
+    {
+      "title": "Staff Solutions Architect",
+      "employer": "Apple",
+      "location": "Dallas, TX",
+      "start_date": "September 2014",
+      "end_date": "February 2017",
+      "achievements": [
+        "Reduced infrastructure costs by $10000K annually through optimization",
+        "Reduced infrastructure costs by $4000K annually through optimization",
+        "Led team of 60 engineers in delivering critical platform features"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "Purdue University",
+      "graduation_year": 2012,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Azure Administrator Associate",
+    "CompTIA Network+",
+    "Professional Scrum Master (PSM I)",
+    "AWS Certified Solutions Architect - Professional",
+    "ITIL Foundation"
+  ],
+  "skills": [
+    "New Relic",
+    "PyTorch",
+    "Python",
+    "PostgreSQL",
+    "Critical Thinking",
+    "Active Listening",
+    "TypeScript",
+    "React",
+    "Splunk",
+    "Rust",
+    "AWS Lambda",
+    "Bitbucket",
+    "Azure Functions",
+    "CloudFormation",
+    "Negotiation"
+  ]
+}

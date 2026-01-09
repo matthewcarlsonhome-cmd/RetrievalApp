@@ -1,0 +1,92 @@
+{
+  "id": "resume_009",
+  "personal_info": {
+    "name": "Joseph Gonzalez",
+    "email": "josephgonzalez@yahoo.com",
+    "phone": "(378) 903-6315",
+    "location": "Phoenix, AZ",
+    "linkedin": "linkedin.com/in/joseph-gonzalez-1199"
+  },
+  "summary": "Strategic professional with 9+ years of experience in data engineering and analytics. Skilled in New Relic, Google Cloud Platform, Neo4j, with a proven track record of delivering impactful results.",
+  "years_experience": 9,
+  "experience_level": "advanced",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Mid-Level Analytics Engineer",
+      "employer": "Growth Engine",
+      "location": "San Diego, CA",
+      "start_date": "June 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Led migration of 10 microservices to Kubernetes",
+        "Mentored 8 junior developers in best practices"
+      ]
+    },
+    {
+      "title": "Staff Business Intelligence Analyst",
+      "employer": "Netflix",
+      "location": "Charlotte, NC",
+      "start_date": "September 2018",
+      "end_date": "February 2020",
+      "achievements": [
+        "Architected scalable system handling 40M+ daily active users",
+        "Reduced infrastructure costs by $1000K annually through optimization",
+        "Drove technical strategy resulting in 35% improvement in system reliability"
+      ]
+    },
+    {
+      "title": "Lead Business Intelligence Analyst",
+      "employer": "JPMorgan Chase",
+      "location": "Atlanta, GA",
+      "start_date": "January 2016",
+      "end_date": "August 2018",
+      "achievements": [
+        "Led team of 56 engineers in delivering critical platform features",
+        "Drove technical strategy resulting in 30% improvement in system reliability",
+        "Led team of 60 engineers in delivering critical platform features"
+      ]
+    },
+    {
+      "title": "Senior Data Architect",
+      "employer": "Google",
+      "location": "San Jose, CA",
+      "start_date": "March 2015",
+      "end_date": "December 2016",
+      "achievements": [
+        "Architected scalable system handling 20M+ daily active users",
+        "Drove technical strategy resulting in 48% improvement in system reliability",
+        "Reduced infrastructure costs by $1000K annually through optimization",
+        "Drove technical strategy resulting in 19% improvement in system reliability"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Data Science",
+      "institution": "University of Washington",
+      "graduation_year": 2012,
+      "gpa": 3.88
+    }
+  ],
+  "certifications": [
+    "Azure Administrator Associate",
+    "Oracle Certified Professional",
+    "Cisco Certified Network Associate (CCNA)"
+  ],
+  "skills": [
+    "New Relic",
+    "Google Cloud Platform",
+    "Neo4j",
+    "Active Listening",
+    "JavaScript",
+    "Google Cloud Functions",
+    "TypeScript",
+    "Data Analysis",
+    "Datadog",
+    "Power BI",
+    "Scikit-learn",
+    "Apache Spark",
+    "MongoDB"
+  ]
+}

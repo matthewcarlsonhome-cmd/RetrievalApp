@@ -1,0 +1,34 @@
+{
+  "id": "resume_042",
+  "personal_info": {
+    "name": "Amanda Green",
+    "email": "amanda.green@yahoo.com",
+    "phone": "(737) 551-8785",
+    "location": "Chicago, IL",
+    "linkedin": "linkedin.com/in/amanda-green-9164"
+  },
+  "summary": "Experienced project management and operations professional bringing 0 years of expertise. Strong background in Team Leadership, Data Visualization, Waterfall, committed to driving innovation and business value.",
+  "years_experience": 0,
+  "experience_level": "beginner",
+  "role_category": "management",
+  "experience": [],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Finance",
+      "institution": "University of Southern California",
+      "graduation_year": 2021,
+      "gpa": 3.79
+    }
+  ],
+  "certifications": [],
+  "skills": [
+    "Team Leadership",
+    "Data Visualization",
+    "Waterfall",
+    "VS Code",
+    "Emotional Intelligence",
+    "Data Analysis",
+    "Agile Methodology",
+    "Slack"
+  ]
+}

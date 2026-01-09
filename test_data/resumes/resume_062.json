@@ -1,0 +1,188 @@
+{
+  "id": "resume_062",
+  "personal_info": {
+    "name": "Kathleen Williams",
+    "email": "kathleen.williams17@outlook.com",
+    "phone": "(501) 439-1704",
+    "location": "Jacksonville, FL",
+    "linkedin": "linkedin.com/in/kathleen-williams-8509"
+  },
+  "summary": "Results-driven healthcare IT professional with 19+ years of experience in EHR implementation and optimization. Specialized in Epic system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 19,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Healthcare IT Project Manager",
+      "employer": "Premier Medical Group",
+      "location": "Milwaukee, WI",
+      "start_date": "September 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Coordinated go-live support for 100+ providers across 9 locations"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Data Analyst",
+      "employer": "Ascension Health",
+      "location": "Las Vegas, NV",
+      "start_date": "September 2018",
+      "end_date": "December 2019",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Trained 1000+ end users with 99% satisfaction rating",
+        "Coordinated go-live support for 200+ providers across 10 locations"
+      ]
+    },
+    {
+      "title": "Lead Clinical Workflow Analyst",
+      "employer": "Massachusetts General Hospital",
+      "location": "San Diego, CA",
+      "start_date": "June 2016",
+      "end_date": "May 2018",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Cadence",
+        "ASAP",
+        "EpicCare Ambulatory",
+        "Tapestry"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 6 recognition for implemented facility",
+        "Coordinated go-live support for 500+ providers across 18 locations",
+        "Led optimization project resulting in $500K annual cost savings",
+        "Trained 200+ end users with 92% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Practice Management Consultant",
+      "employer": "PwC Health Industries",
+      "location": "Fort Worth, TX",
+      "start_date": "September 2014",
+      "end_date": "August 2016",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Healthy Planet",
+        "Tapestry",
+        "Cogito",
+        "Prelude"
+      ],
+      "achievements": [
+        "Built 34+ HL7 interfaces connecting to external systems",
+        "Led successful go-live for 750-bed hospital with zero critical issues",
+        "Developed training curriculum adopted as enterprise standard",
+        "Trained 100+ end users with 92% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Director of EHR Implementation Consultant",
+      "employer": "Northwell Health",
+      "location": "Houston, TX",
+      "start_date": "March 2009",
+      "end_date": "May 2014",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "EpicCare Inpatient",
+        "MyChart",
+        "Prelude",
+        "Care Everywhere"
+      ],
+      "achievements": [
+        "Built 18+ HL7 interfaces connecting to external systems",
+        "Implemented 4 Epic/Cerner modules on time and under budget",
+        "Managed implementation for 31 ambulatory clinics across 2 states"
+      ]
+    },
+    {
+      "title": "Senior Practice Management Consultant",
+      "employer": "Pivot Point Consulting",
+      "location": "Nashville, TN",
+      "start_date": "March 2006",
+      "end_date": "May 2009",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 6 recognition for implemented facility",
+        "Managed implementation for 6 ambulatory clinics across 2 states"
+      ]
+    },
+    {
+      "title": "Director of Health IT Implementation Manager",
+      "employer": "Impact Advisors",
+      "location": "Portland, OR",
+      "start_date": "March 2005",
+      "end_date": "December 2006",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Resolute",
+        "Beacon",
+        "Stork",
+        "EpicCare Inpatient"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 7 recognition for implemented facility",
+        "Coordinated go-live support for 200+ providers across 7 locations"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Health Informatics",
+      "institution": "University of Washington",
+      "graduation_year": 2010,
+      "gpa": 3.52
+    },
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "University of North Carolina",
+      "graduation_year": 2004,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Epic Certified - Cadence",
+    "Cerner Certified - PowerChart"
+  ],
+  "skills": [
+    "Project Management",
+    "HIPAA Compliance",
+    "ICD-10",
+    "Prelude",
+    "Python",
+    "Tapestry",
+    "Power BI",
+    "Tableau",
+    "Healthy Planet",
+    "Report Writing",
+    "Epic",
+    "Clinical Workflow Analysis",
+    "Medical Terminology",
+    "System Integration"
+  ]
+}

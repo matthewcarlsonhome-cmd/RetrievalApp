@@ -1,0 +1,74 @@
+{
+  "id": "job_002",
+  "title": "Senior Software Developer",
+  "employer": "Splunk",
+  "employer_type": "tech",
+  "location": "Los Angeles, CA",
+  "remote_option": "Hybrid",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2025-12-17",
+  "job_category": "it_individual",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 0,
+    "max_years": null
+  },
+  "description": "Splunk is seeking a talented Senior Software Developer to join our engineering team. You will work on challenging problems, build scalable systems, and collaborate with talented engineers to deliver impactful products.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Design, develop, and maintain software applications",
+    "Write clean, testable, and efficient code",
+    "Participate in code reviews and technical discussions",
+    "Troubleshoot and debug production issues",
+    "Contribute to architectural decisions and technical strategy"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "0+ years of relevant experience",
+    "skills": [
+      "C++",
+      "R",
+      "Python",
+      "DigitalOcean",
+      "Azure Functions",
+      "IntelliJ IDEA",
+      "Confluence"
+    ],
+    "certifications": [
+      "HashiCorp Certified: Terraform Associate"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Next.js",
+      "Keras",
+      "Django",
+      "DynamoDB",
+      "SQLite"
+    ],
+    "certifications": [
+      "Cisco Certified Network Associate (CCNA)",
+      "Certified ScrumMaster (CSM)"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 85867,
+    "max": 131587,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Home office stipend",
+    "Remote work flexibility",
+    "401(k) with company match",
+    "Comprehensive health, dental, and vision insurance",
+    "Wellness programs and gym membership",
+    "Annual bonus program",
+    "Professional development budget",
+    "Unlimited PTO",
+    "Stock options/equity grants"
+  ]
+}

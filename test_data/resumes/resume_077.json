@@ -1,0 +1,163 @@
+{
+  "id": "resume_077",
+  "personal_info": {
+    "name": "Benjamin Jones",
+    "email": "benjaminjones@outlook.com",
+    "phone": "(454) 564-5021",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/benjamin-jones-5542"
+  },
+  "summary": "Healthcare informatics specialist with 20+ years of hands-on experience implementing and optimizing Cerner EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 20,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Clinical Informatics Specialist",
+      "employer": "Metro Internal Medicine",
+      "location": "Chicago, IL",
+      "start_date": "March 2020",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Managed implementation for 6 ambulatory clinics across 7 states",
+        "Developed training curriculum adopted as enterprise standard",
+        "Trained 200+ end users with 95% satisfaction rating",
+        "Coordinated go-live support for 50+ providers across 14 locations"
+      ]
+    },
+    {
+      "title": "Senior Epic Implementation Analyst",
+      "employer": "Christus Health",
+      "location": "Milwaukee, WI",
+      "start_date": "June 2017",
+      "end_date": "May 2020",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "SurgiNet",
+        "HealtheIntent",
+        "RadNet",
+        "PharmNet"
+      ],
+      "achievements": [
+        "Implemented 8 Epic/Cerner modules on time and under budget",
+        "Reduced average patient wait time by 22% through workflow optimization",
+        "Completed data migration of 2M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Senior Clinical Workflow Analyst",
+      "employer": "Houston Methodist Hospital",
+      "location": "Atlanta, GA",
+      "start_date": "January 2014",
+      "end_date": "August 2017",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Grand Central",
+        "Prelude",
+        "Beacon",
+        "ASAP"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 30% through workflow optimization",
+        "Built 47+ HL7 interfaces connecting to external systems",
+        "Decreased claim denial rate by 22% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Principal Healthcare Integration Engineer",
+      "employer": "Sutter Health",
+      "location": "Denver, CO",
+      "start_date": "June 2010",
+      "end_date": "February 2014",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "CommunityWorks",
+        "Millennium",
+        "SurgiNet",
+        "FirstNet"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 27% through revenue cycle optimization",
+        "Coordinated go-live support for 100+ providers across 3 locations",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Lead Healthcare Systems Analyst",
+      "employer": "Barnes-Jewish Hospital",
+      "location": "San Antonio, TX",
+      "start_date": "March 2007",
+      "end_date": "December 2010",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 38% through workflow optimization",
+        "Developed training curriculum adopted as enterprise standard",
+        "Designed clinical workflows that improved documentation efficiency by 26%"
+      ]
+    },
+    {
+      "title": "Lead Clinical Workflow Analyst",
+      "employer": "Nordic Consulting",
+      "location": "San Antonio, TX",
+      "start_date": "June 2004",
+      "end_date": "February 2007",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 32% through revenue cycle optimization",
+        "Implemented 9 Epic/Cerner modules on time and under budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "Emory University",
+      "graduation_year": 2003,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Epic Certified - EpicCare Ambulatory",
+    "Project Management Professional (PMP)",
+    "AWS Certified Solutions Architect"
+  ],
+  "skills": [
+    "Go-Live Support",
+    "PathNet",
+    "CPT Coding",
+    "Clinical Documentation",
+    "Change Management",
+    "HL7 Interfaces",
+    "Clinical Decision Support",
+    "SQL",
+    "PowerChart",
+    "Patient Portal Implementation",
+    "Cerner",
+    "FirstNet",
+    "EHR Implementation"
+  ]
+}

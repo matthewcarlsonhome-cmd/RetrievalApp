@@ -1,0 +1,74 @@
+{
+  "id": "job_017",
+  "title": "Director of Data Science",
+  "employer": "Agile Systems",
+  "employer_type": "startup",
+  "location": "Minneapolis, MN",
+  "remote_option": "Hybrid",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2025-12-15",
+  "job_category": "director",
+  "seniority_level": "director",
+  "experience_required": {
+    "min_years": 8,
+    "max_years": null
+  },
+  "description": "Agile Systems is seeking an experienced Director of Data Science to lead and grow our team. You'll set strategic direction, mentor team members, and drive results across the organization.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Lead, mentor, and develop team members",
+    "Set strategic direction and priorities for the team",
+    "Manage budgets, resources, and timelines",
+    "Build relationships with key stakeholders and partners",
+    "Drive organizational change and transformation initiatives",
+    "Recruit, hire, and retain top talent",
+    "Conduct performance reviews and career development discussions",
+    "Represent the team in executive meetings and steering committees"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree required; Master's degree preferred",
+    "experience": "8+ years of relevant experience",
+    "skills": [
+      "Cost-Benefit Analysis",
+      "Stakeholder Management",
+      "Agile Methodology",
+      "Business Analysis",
+      "Performance Metrics",
+      "Mentoring",
+      "Attention to Detail",
+      "Presentation Skills",
+      "Negotiation"
+    ],
+    "certifications": [
+      "Certified Management Consultant (CMC)"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "GitLab",
+      "VS Code",
+      "Confluence"
+    ],
+    "certifications": [
+      "Six Sigma Green Belt",
+      "Six Sigma Black Belt"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 211088,
+    "max": 255510,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Life and disability insurance",
+    "Wellness programs and gym membership",
+    "Stock options/equity grants",
+    "Remote work flexibility",
+    "Unlimited PTO",
+    "401(k) with company match"
+  ]
+}

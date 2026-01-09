@@ -1,0 +1,75 @@
+{
+  "id": "job_003",
+  "title": "Senior Healthcare Systems Analyst",
+  "employer": "Deloitte Healthcare",
+  "employer_type": "consulting",
+  "location": "New York, NY",
+  "remote_option": "On-site",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "contract_length": null,
+  "posted_date": "2025-12-26",
+  "primary_ehr_system": "MEDITECH",
+  "modules": [
+    "MEDITECH Core"
+  ],
+  "experience_required": {
+    "min_years": 7,
+    "max_years": 15
+  },
+  "description": "We are looking for a Senior Healthcare Systems Analyst to support our MEDITECH implementation and optimization efforts at Deloitte Healthcare. This role requires strong technical skills, excellent communication abilities, and a deep understanding of healthcare workflows. You will be responsible for ensuring successful system adoption across our organization.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize MEDITECH applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Analyze clinical and operational workflows to identify improvement opportunities",
+    "Create detailed system specifications and configuration documents",
+    "Support build and validation activities",
+    "Develop reports and dashboards for clinical and operational metrics",
+    "Troubleshoot system issues and implement solutions"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in Health Informatics, Healthcare Administration, IT, or related field",
+    "experience": "7+ years of healthcare IT implementation experience",
+    "skills": [
+      "MEDITECH",
+      "SQL",
+      "Clinical Workflow Analysis",
+      "Crystal Reports",
+      "Build Validation",
+      "Mobile Health",
+      "Revenue Cycle Management",
+      "Clinical Documentation",
+      "Data Migration"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Medical Terminology",
+      "System Configuration",
+      "Scrum",
+      "Data Migration",
+      "HL7 Interfaces",
+      "Population Health"
+    ],
+    "certifications": [
+      "Epic Certified - Cadence"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 153086,
+    "max": 170939,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Professional development budget",
+    "Annual performance bonus",
+    "Relocation assistance",
+    "Paid time off (PTO)",
+    "Tuition reimbursement"
+  ]
+}

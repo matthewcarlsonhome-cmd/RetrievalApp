@@ -1,0 +1,68 @@
+{
+  "id": "job_008",
+  "title": "Senior Marketing Manager",
+  "employer": "Google",
+  "employer_type": "tech",
+  "location": "Phoenix, AZ",
+  "remote_option": "Hybrid",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2026-01-08",
+  "job_category": "marketing",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 5,
+    "max_years": null
+  },
+  "description": "Join our marketing team at Google as a Senior Marketing Manager. You'll have the opportunity to shape our brand story and drive customer acquisition through innovative marketing strategies.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Develop and execute marketing strategies and campaigns",
+    "Analyze campaign performance and optimize for results",
+    "Create compelling content for various channels",
+    "Manage marketing budget and track ROI",
+    "Collaborate with sales and product teams on go-to-market initiatives"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "5+ years of relevant experience",
+    "skills": [
+      "Email Marketing",
+      "Conversion Optimization",
+      "Marketo",
+      "SEM",
+      "Content Marketing",
+      "CRM Management"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Project Management",
+      "Business Analysis",
+      "Agile Methodology",
+      "Data Visualization",
+      "Data Warehousing"
+    ],
+    "certifications": [
+      "Certified Business Analysis Professional (CBAP)",
+      "PRINCE2 Practitioner"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 107364,
+    "max": 149780,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Professional development budget",
+    "Unlimited PTO",
+    "Parental leave",
+    "401(k) with company match",
+    "Home office stipend",
+    "Annual bonus program"
+  ]
+}

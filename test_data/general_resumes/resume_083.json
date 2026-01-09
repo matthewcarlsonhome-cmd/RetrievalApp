@@ -1,0 +1,54 @@
+{
+  "id": "resume_083",
+  "personal_info": {
+    "name": "Gary Kumar",
+    "email": "gkumar@protonmail.com",
+    "phone": "(711) 988-6476",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/gary-kumar-5263"
+  },
+  "summary": "Detail-oriented professional with 2+ years of experience in business analysis and process improvement. Skilled in Power BI, Performance Metrics, Change Management, with a proven track record of delivering impactful results.",
+  "years_experience": 2,
+  "experience_level": "beginner",
+  "role_category": "analysis",
+  "experience": [
+    {
+      "title": "Operations Analyst",
+      "employer": "CloudFirst Solutions",
+      "location": "Detroit, MI",
+      "start_date": "September 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Analyzed 11 business reports to identify improvement opportunities",
+        "Created process documentation improving team efficiency by 49%",
+        "Supported 2 project implementations successfully",
+        "Created process documentation improving team efficiency by 18%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Finance",
+      "institution": "University of Wisconsin",
+      "graduation_year": 2024,
+      "gpa": 3.5
+    },
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "Columbia University",
+      "graduation_year": 2022,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Certified Scrum Product Owner (CSPO)"
+  ],
+  "skills": [
+    "Power BI",
+    "Performance Metrics",
+    "Change Management",
+    "KPI Development",
+    "Postman",
+    "Negotiation"
+  ]
+}

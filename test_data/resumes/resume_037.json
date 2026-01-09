@@ -1,0 +1,204 @@
+{
+  "id": "resume_037",
+  "personal_info": {
+    "name": "Alexander Smith",
+    "email": "alexandersmith@consultant.net",
+    "phone": "(387) 577-3097",
+    "location": "San Antonio, TX",
+    "linkedin": "linkedin.com/in/alexander-smith-1940"
+  },
+  "summary": "Clinical informatics expert with 20+ years specializing in athenahealth implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 20,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Healthcare Integration Engineer",
+      "employer": "Family Care Associates",
+      "location": "Las Vegas, NV",
+      "start_date": "June 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "ITWorks",
+        "CommunityWorks",
+        "RadNet",
+        "PowerChart"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 50+ providers across 11 locations",
+        "Managed implementation for 16 ambulatory clinics across 10 states",
+        "Managed cross-functional team of 11 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Health Information Systems Analyst",
+      "employer": "Stanford Health Care",
+      "location": "Jacksonville, FL",
+      "start_date": "June 2020",
+      "end_date": "December 2021",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Beacon",
+        "Healthy Planet",
+        "Prelude",
+        "EpicCare Ambulatory"
+      ],
+      "achievements": [
+        "Implemented 9 Epic/Cerner modules on time and under budget",
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Practice Management Consultant",
+      "employer": "Northwestern Memorial Hospital",
+      "location": "Baltimore, MD",
+      "start_date": "January 2018",
+      "end_date": "December 2020",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Soarian",
+        "PharmNet",
+        "FirstNet",
+        "CommunityWorks"
+      ],
+      "achievements": [
+        "Built 39+ HL7 interfaces connecting to external systems",
+        "Designed clinical workflows that improved documentation efficiency by 25%"
+      ]
+    },
+    {
+      "title": "Lead Healthcare Integration Engineer",
+      "employer": "Memorial Hermann",
+      "location": "Fort Worth, TX",
+      "start_date": "March 2014",
+      "end_date": "May 2018",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Built 29+ HL7 interfaces connecting to external systems",
+        "Managed implementation for 24 ambulatory clinics across 5 states"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Systems Analyst",
+      "employer": "Northwestern Memorial Hospital",
+      "location": "Cleveland, OH",
+      "start_date": "September 2010",
+      "end_date": "August 2014",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Millennium",
+        "CommunityWorks",
+        "HealtheIntent",
+        "RadNet"
+      ],
+      "achievements": [
+        "Managed implementation for 22 ambulatory clinics across 9 states",
+        "Coordinated go-live support for 200+ providers across 13 locations",
+        "Led successful go-live for 1000-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Senior Health Information Systems Analyst",
+      "employer": "Mount Sinai Hospital",
+      "location": "Austin, TX",
+      "start_date": "June 2009",
+      "end_date": "August 2010",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "HealtheIntent",
+        "PowerChart",
+        "RadNet",
+        "Millennium"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 28% through revenue cycle optimization",
+        "Built 24+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Lead Medical Informatics Consultant",
+      "employer": "Stanford Health Care",
+      "location": "Charlotte, NC",
+      "start_date": "January 2006",
+      "end_date": "February 2009",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Lead Healthcare IT Project Manager",
+      "employer": "Intermountain Healthcare",
+      "location": "San Antonio, TX",
+      "start_date": "June 2004",
+      "end_date": "December 2006",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "OpTime",
+        "EpicCare Ambulatory",
+        "Cadence",
+        "Care Everywhere"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 6 recognition for implemented facility",
+        "Led optimization project resulting in $100K annual cost savings",
+        "Trained 100+ end users with 97% satisfaction rating",
+        "Reduced average patient wait time by 32% through workflow optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Healthcare Management",
+      "institution": "Indiana University",
+      "graduation_year": 2003,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Cerner Certified - PowerChart",
+    "AWS Certified Solutions Architect"
+  ],
+  "skills": [
+    "Project Management",
+    "HIPAA Compliance",
+    "Go-Live Support",
+    "ICD-10",
+    "Report Writing",
+    "Python",
+    "Process Improvement",
+    "athenahealth",
+    "Revenue Cycle Management",
+    "Population Health",
+    "System Configuration",
+    "Clinical Workflow Analysis",
+    "Tableau",
+    "Crystal Reports",
+    "EHR Implementation",
+    "System Integration"
+  ]
+}

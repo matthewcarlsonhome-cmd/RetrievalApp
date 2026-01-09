@@ -1,0 +1,121 @@
+{
+  "id": "resume_067",
+  "personal_info": {
+    "name": "Gregory Gonzalez",
+    "email": "gregory.gonzalez@consultant.net",
+    "phone": "(949) 952-3430",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/gregory-gonzalez-7931"
+  },
+  "summary": "Experienced healthcare implementation consultant with 10 years leading MEDITECH implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 10,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Medical Informatics Consultant",
+      "employer": "Premier Medical Group",
+      "location": "Austin, TX",
+      "start_date": "September 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Stork",
+        "Care Everywhere",
+        "Resolute",
+        "EpicCare Ambulatory"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 38% through workflow optimization",
+        "Achieved 92% clinician adoption rate within first 2 months",
+        "Managed implementation for 24 ambulatory clinics across 5 states"
+      ]
+    },
+    {
+      "title": "Healthcare IT Project Manager",
+      "employer": "Duke University Hospital",
+      "location": "San Antonio, TX",
+      "start_date": "June 2022",
+      "end_date": "December 2023",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "CommunityWorks",
+        "Millennium",
+        "PathNet",
+        "RadNet"
+      ],
+      "achievements": [
+        "Achieved 95% clinician adoption rate within first 3 months",
+        "Led successful go-live for 200-bed hospital with zero critical issues",
+        "Completed data migration of 5M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Integration Engineer",
+      "employer": "Deloitte Healthcare",
+      "location": "Los Angeles, CA",
+      "start_date": "January 2018",
+      "end_date": "August 2022",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $500K annual cost savings",
+        "Designed clinical workflows that improved documentation efficiency by 31%",
+        "Achieved HIMSS Stage 7 recognition for implemented facility",
+        "Completed data migration of 2M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "EHR Implementation Consultant",
+      "employer": "Massachusetts General Hospital",
+      "location": "Portland, OR",
+      "start_date": "January 2014",
+      "end_date": "May 2018",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PharmNet",
+        "HealtheIntent",
+        "Millennium",
+        "Soarian"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 6 recognition for implemented facility",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "Emory University",
+      "graduation_year": 2013,
+      "gpa": 3.82
+    }
+  ],
+  "certifications": [
+    "Project Management Professional (PMP)"
+  ],
+  "skills": [
+    "Health Information Exchange",
+    "Clinical Documentation",
+    "Data Migration",
+    "Healthcare IT",
+    "Mobile Health",
+    "Process Improvement",
+    "Power BI",
+    "MEDITECH",
+    "Tableau",
+    "Medical Terminology",
+    "Healthcare Analytics"
+  ]
+}

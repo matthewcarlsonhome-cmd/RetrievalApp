@@ -1,0 +1,74 @@
+{
+  "id": "job_005",
+  "title": "Principal EHR Implementation Consultant",
+  "employer": "Huron Consulting",
+  "employer_type": "consulting",
+  "location": "Fort Worth, TX",
+  "remote_option": "On-site",
+  "employment_type": "Part-time",
+  "contract_type": "Permanent",
+  "contract_length": null,
+  "posted_date": "2025-12-30",
+  "primary_ehr_system": "MEDITECH",
+  "modules": [
+    "MEDITECH Core"
+  ],
+  "experience_required": {
+    "min_years": 7,
+    "max_years": 14
+  },
+  "description": "Join Huron Consulting as a Principal EHR Implementation Consultant and help transform healthcare delivery through innovative technology solutions. We are implementing MEDITECH across our organization and need experienced professionals to ensure successful deployment and adoption. This is an exciting opportunity to make a significant impact on patient care.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize MEDITECH applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Lead end-to-end MEDITECH implementation projects from planning through go-live",
+    "Design and build clinical workflows within the EHR system",
+    "Conduct workflow analysis sessions with clinical departments",
+    "Manage data migration and system integration activities",
+    "Coordinate with third-party vendors and interface partners"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree required; Master's preferred",
+    "experience": "7+ years of healthcare IT implementation experience",
+    "skills": [
+      "MEDITECH",
+      "Interoperability",
+      "Healthcare Analytics",
+      "SQL",
+      "Python",
+      "Patient Portal Implementation",
+      "Process Improvement",
+      "EHR Implementation",
+      "Health Information Exchange",
+      "Agile Methodology"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "EHR Implementation",
+      "Report Writing",
+      "Change Management"
+    ],
+    "certifications": [
+      "HL7 FHIR Certification"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 159778,
+    "max": 194042,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Tuition reimbursement",
+    "Paid time off (PTO)",
+    "Stock options/equity",
+    "Annual performance bonus",
+    "Professional development budget",
+    "Comprehensive health insurance (medical, dental, vision)"
+  ]
+}

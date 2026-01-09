@@ -1,0 +1,48 @@
+{
+  "id": "resume_010",
+  "personal_info": {
+    "name": "Sarah Harris",
+    "email": "sharris@yahoo.com",
+    "phone": "(214) 508-9682",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/sarah-harris-4593"
+  },
+  "summary": "Detail-oriented IT infrastructure and cloud technologies specialist with 1+ years of hands-on experience. Proficient in Java, Decision Making, Grafana, with excellent problem-solving and communication skills.",
+  "years_experience": 1,
+  "experience_level": "beginner",
+  "role_category": "infrastructure",
+  "experience": [
+    {
+      "title": "Entry-Level Infrastructure Engineer",
+      "employer": "Rapid Growth Tech",
+      "location": "Minneapolis, MN",
+      "start_date": "June 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Created technical documentation for 3 internal tools",
+        "Developed 1 new features for the company's main product",
+        "Improved code test coverage from 51% to 78%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Ohio State University",
+      "graduation_year": 2023,
+      "gpa": 3.1
+    }
+  ],
+  "certifications": [
+    "Oracle Certified Professional"
+  ],
+  "skills": [
+    "Java",
+    "Decision Making",
+    "Grafana",
+    "Spring Boot",
+    "JavaScript",
+    "Google Cloud Functions",
+    "SQL Server"
+  ]
+}

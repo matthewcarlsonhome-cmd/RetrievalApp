@@ -1,0 +1,75 @@
+{
+  "id": "job_018",
+  "title": "Senior Healthcare IT Project Manager",
+  "employer": "KPMG Healthcare",
+  "employer_type": "consulting",
+  "location": "Portland, OR",
+  "remote_option": "On-site",
+  "employment_type": "Part-time",
+  "contract_type": "Contract",
+  "contract_length": "12 months",
+  "posted_date": "2025-12-13",
+  "primary_ehr_system": "Epic",
+  "modules": [
+    "Prelude",
+    "Willow"
+  ],
+  "experience_required": {
+    "min_years": 3,
+    "max_years": null
+  },
+  "description": "We are looking for a Senior Healthcare IT Project Manager to support our Epic implementation and optimization efforts at KPMG Healthcare. This role requires strong technical skills, excellent communication abilities, and a deep understanding of healthcare workflows. You will be responsible for ensuring successful system adoption across our organization.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize Epic applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Develop and manage project plans, timelines, and resource allocation",
+    "Lead cross-functional implementation teams",
+    "Report project status to executive leadership",
+    "Manage project budget and identify risk mitigation strategies",
+    "Facilitate steering committee meetings and stakeholder communications"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree required; Master's preferred",
+    "experience": "3+ years of healthcare IT implementation experience",
+    "skills": [
+      "Epic",
+      "Clinical Decision Support",
+      "Process Improvement",
+      "Health Information Exchange",
+      "Optimization",
+      "Build Validation",
+      "Scrum",
+      "Clinical Workflow Analysis",
+      "User Acceptance Testing"
+    ],
+    "certifications": [
+      "Epic Certified - Beacon"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Training Development",
+      "User Acceptance Testing",
+      "Clinical Documentation",
+      "Scrum",
+      "HL7 Interfaces",
+      "Go-Live Support"
+    ],
+    "certifications": [
+      "Certified ScrumMaster (CSM)"
+    ]
+  },
+  "salary": {
+    "type": "hourly",
+    "min": 52,
+    "max": 82,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Competitive hourly rate",
+    "Professional development opportunities"
+  ]
+}

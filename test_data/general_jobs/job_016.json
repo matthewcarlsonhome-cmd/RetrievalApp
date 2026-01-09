@@ -1,0 +1,73 @@
+{
+  "id": "job_016",
+  "title": "Staff Site Reliability Engineer",
+  "employer": "Meta",
+  "employer_type": "tech",
+  "location": "Charlotte, NC",
+  "remote_option": "Hybrid (3 days in office)",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2026-01-03",
+  "job_category": "it_individual",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 2,
+    "max_years": null
+  },
+  "description": "Join Meta as a Staff Site Reliability Engineer and help us build the next generation of technology solutions. We're looking for someone passionate about clean code, system design, and continuous improvement.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Design, develop, and maintain software applications",
+    "Write clean, testable, and efficient code",
+    "Participate in code reviews and technical discussions",
+    "Troubleshoot and debug production issues",
+    "Contribute to architectural decisions and technical strategy"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "2+ years of relevant experience",
+    "skills": [
+      "C++",
+      "Kotlin",
+      "Ruby",
+      "DigitalOcean",
+      "Azure",
+      "GitHub",
+      "IntelliJ IDEA"
+    ],
+    "certifications": [
+      "Professional Scrum Master (PSM I)"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "PyTorch",
+      "Pandas",
+      "Scikit-learn",
+      "Redis",
+      "DynamoDB"
+    ],
+    "certifications": [
+      "PMP (Project Management Professional)",
+      "Certified Kubernetes Administrator (CKA)"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 82219,
+    "max": 128135,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Remote work flexibility",
+    "Professional development budget",
+    "Life and disability insurance",
+    "Parental leave",
+    "401(k) with company match",
+    "Commuter benefits",
+    "Comprehensive health, dental, and vision insurance",
+    "Annual bonus program"
+  ]
+}

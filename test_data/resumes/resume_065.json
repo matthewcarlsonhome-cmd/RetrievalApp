@@ -1,0 +1,144 @@
+{
+  "id": "resume_065",
+  "personal_info": {
+    "name": "Amy O'Brien",
+    "email": "amyo'brien@consultant.net",
+    "phone": "(303) 918-1273",
+    "location": "Las Vegas, NV",
+    "linkedin": "linkedin.com/in/amy-o'brien-9276"
+  },
+  "summary": "Experienced healthcare implementation consultant with 17 years leading Epic implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 17,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "EHR Implementation Consultant",
+      "employer": "Pivot Point Consulting",
+      "location": "Houston, TX",
+      "start_date": "September 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Senior Practice Management Consultant",
+      "employer": "Baylor Scott & White",
+      "location": "New York, NY",
+      "start_date": "June 2015",
+      "end_date": "May 2019",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Resolute",
+        "EpicCare Ambulatory",
+        "Grand Central",
+        "MyChart"
+      ],
+      "achievements": [
+        "Built 30+ HL7 interfaces connecting to external systems",
+        "Trained 2000+ end users with 92% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Senior Epic Implementation Analyst",
+      "employer": "ECG Management Consultants",
+      "location": "Las Vegas, NV",
+      "start_date": "January 2011",
+      "end_date": "February 2015",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Decreased claim denial rate by 25% through revenue cycle optimization",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Senior Clinical Workflow Analyst",
+      "employer": "Christus Health",
+      "location": "Minneapolis, MN",
+      "start_date": "September 2010",
+      "end_date": "December 2011",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Soarian",
+        "HealtheIntent",
+        "PathNet",
+        "SurgiNet"
+      ],
+      "achievements": [
+        "Achieved 88% clinician adoption rate within first 3 months",
+        "Managed cross-functional team of 8 analysts and trainers",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Integration Engineer",
+      "employer": "Cleveland Clinic",
+      "location": "New York, NY",
+      "start_date": "January 2007",
+      "end_date": "February 2010",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Healthy Planet",
+        "ASAP",
+        "OpTime",
+        "MyChart"
+      ],
+      "achievements": [
+        "Trained 100+ end users with 92% satisfaction rating",
+        "Implemented 12 Epic/Cerner modules on time and under budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "University of Pennsylvania",
+      "graduation_year": 2004,
+      "gpa": 3.53
+    }
+  ],
+  "certifications": [
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)",
+    "HL7 FHIR Certification",
+    "Project Management Professional (PMP)",
+    "Certified Professional in Healthcare Information and Management Systems (CPHIMS)"
+  ],
+  "skills": [
+    "Telehealth Implementation",
+    "FHIR APIs",
+    "Build Validation",
+    "Cogito",
+    "Training Development",
+    "HL7 Interfaces",
+    "MyChart",
+    "Care Everywhere",
+    "Revenue Cycle Management",
+    "Patient Portal Implementation",
+    "Healthcare Analytics",
+    "Epic",
+    "Tableau",
+    "EHR Implementation",
+    "Optimization",
+    "System Integration"
+  ]
+}

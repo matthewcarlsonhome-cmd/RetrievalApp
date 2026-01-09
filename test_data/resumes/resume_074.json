@@ -1,0 +1,128 @@
+{
+  "id": "resume_074",
+  "personal_info": {
+    "name": "Sandra Moore",
+    "email": "sandramoore@consultant.net",
+    "phone": "(387) 315-4008",
+    "location": "Milwaukee, WI",
+    "linkedin": "linkedin.com/in/sandra-moore-6335"
+  },
+  "summary": "Results-driven healthcare IT professional with 13+ years of experience in EHR implementation and optimization. Specialized in MEDITECH system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 13,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Medical Informatics Consultant",
+      "employer": "Pivot Point Consulting",
+      "location": "Philadelphia, PA",
+      "start_date": "June 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $500K annual cost savings",
+        "Completed data migration of 5M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Healthcare IT Project Manager",
+      "employer": "Christus Health",
+      "location": "Houston, TX",
+      "start_date": "June 2016",
+      "end_date": "February 2021",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 2M+ patient records with 99.9% accuracy",
+        "Led successful go-live for 750-bed hospital with zero critical issues",
+        "Managed implementation for 40 ambulatory clinics across 8 states"
+      ]
+    },
+    {
+      "title": "Director of Cerner Implementation Specialist",
+      "employer": "Impact Advisors",
+      "location": "Austin, TX",
+      "start_date": "March 2012",
+      "end_date": "August 2016",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Built 14+ HL7 interfaces connecting to external systems",
+        "Completed data migration of 5M+ patient records with 99.9% accuracy",
+        "Implemented 6 Epic/Cerner modules on time and under budget"
+      ]
+    },
+    {
+      "title": "Senior Practice Management Consultant",
+      "employer": "Northwestern Memorial Hospital",
+      "location": "Portland, OR",
+      "start_date": "September 2011",
+      "end_date": "May 2012",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "SurgiNet",
+        "ITWorks",
+        "PharmNet",
+        "Soarian"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 36% through workflow optimization",
+        "Managed implementation for 18 ambulatory clinics across 10 states",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Information Systems",
+      "institution": "Boston University",
+      "graduation_year": 2017,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "UCLA",
+      "graduation_year": 2011,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Registered Health Information Administrator (RHIA)",
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)",
+    "Certified Health Data Analyst (CHDA)",
+    "Certified Information Systems Security Professional (CISSP)",
+    "Epic Certified - Cadence",
+    "Six Sigma Green Belt"
+  ],
+  "skills": [
+    "HIPAA Compliance",
+    "Business Intelligence",
+    "CPT Coding",
+    "FHIR APIs",
+    "Training Development",
+    "Python",
+    "MEDITECH",
+    "Report Writing",
+    "Tableau",
+    "Agile Methodology",
+    "Scrum",
+    "Medical Terminology"
+  ]
+}

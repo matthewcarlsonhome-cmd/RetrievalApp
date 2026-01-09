@@ -1,0 +1,46 @@
+{
+  "id": "resume_002",
+  "personal_info": {
+    "name": "Larry Lewis",
+    "email": "larry.lewis25@gmail.com",
+    "phone": "(678) 778-8083",
+    "location": "Nashville, TN",
+    "linkedin": "linkedin.com/in/larry-lewis-8400"
+  },
+  "summary": "Motivated business analysis and process improvement specialist with 1+ years of hands-on experience. Proficient in GitHub, Communication, Budget Management, with excellent problem-solving and communication skills.",
+  "years_experience": 1,
+  "experience_level": "beginner",
+  "role_category": "analysis",
+  "experience": [
+    {
+      "title": "Associate Operations Analyst",
+      "employer": "AT&T",
+      "location": "New York, NY",
+      "start_date": "June 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Analyzed 14 business reports to identify improvement opportunities",
+        "Analyzed 29 business reports to identify improvement opportunities",
+        "Analyzed 41 business reports to identify improvement opportunities",
+        "Managed stakeholder communications for 8 departments"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Economics",
+      "institution": "Penn State University",
+      "graduation_year": 2022,
+      "gpa": 3.65
+    }
+  ],
+  "certifications": [],
+  "skills": [
+    "GitHub",
+    "Communication",
+    "Budget Management",
+    "Data Analysis",
+    "Agile Methodology",
+    "Project Management"
+  ]
+}

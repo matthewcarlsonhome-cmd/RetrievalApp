@@ -1,0 +1,118 @@
+{
+  "id": "resume_001",
+  "personal_info": {
+    "name": "Barbara Moore",
+    "email": "barbara.moore17@icloud.com",
+    "phone": "(924) 781-5372",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/barbara-moore-1721"
+  },
+  "summary": "Experienced business analysis and process improvement professional bringing 13 years of expertise. Strong background in GitHub, Git, Looker, committed to driving innovation and business value.",
+  "years_experience": 13,
+  "experience_level": "expert",
+  "role_category": "analysis",
+  "experience": [
+    {
+      "title": "Process Analyst",
+      "employer": "InnovateCo",
+      "location": "Pittsburgh, PA",
+      "start_date": "March 2021",
+      "end_date": "Present",
+      "achievements": [
+        "Managed projects totaling $25K in annual budget",
+        "Increased customer satisfaction scores by 41% through service improvements",
+        "Increased customer satisfaction scores by 32% through service improvements"
+      ]
+    },
+    {
+      "title": "Lead Systems Analyst",
+      "employer": "Stripe",
+      "location": "Chicago, IL",
+      "start_date": "January 2018",
+      "end_date": "August 2021",
+      "achievements": [
+        "Built and led team of 16 analysts and specialists",
+        "Directed cross-functional initiatives across 7 departments",
+        "Built and led team of 40 analysts and specialists"
+      ]
+    },
+    {
+      "title": "Staff Financial Analyst",
+      "employer": "Square",
+      "location": "Nashville, TN",
+      "start_date": "September 2017",
+      "end_date": "May 2018",
+      "achievements": [
+        "Built and led team of 20 analysts and specialists",
+        "Built and led team of 16 analysts and specialists",
+        "Delivered 24% improvement in operational efficiency"
+      ]
+    },
+    {
+      "title": "Senior Process Analyst",
+      "employer": "Johnson & Johnson",
+      "location": "New York, NY",
+      "start_date": "March 2016",
+      "end_date": "December 2017",
+      "achievements": [
+        "Directed cross-functional initiatives across 10 departments",
+        "Managed portfolio of 16 projects worth $100M",
+        "Directed cross-functional initiatives across 5 departments",
+        "Delivered 43% improvement in operational efficiency"
+      ]
+    },
+    {
+      "title": "Lead Financial Analyst",
+      "employer": "NVIDIA",
+      "location": "Salt Lake City, UT",
+      "start_date": "September 2014",
+      "end_date": "December 2016",
+      "achievements": [
+        "Delivered 50% improvement in operational efficiency",
+        "Directed cross-functional initiatives across 10 departments",
+        "Delivered 30% improvement in operational efficiency"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Business Administration (MBA)",
+      "institution": "University of Florida",
+      "graduation_year": 2012,
+      "gpa": 3.98
+    },
+    {
+      "degree": "Bachelor of Arts in Business Management",
+      "institution": "Ohio State University",
+      "graduation_year": 2010,
+      "gpa": 3.31
+    }
+  ],
+  "certifications": [
+    "Six Sigma Green Belt",
+    "Salesforce Administrator Certification",
+    "PRINCE2 Practitioner",
+    "Certified Financial Analyst (CFA)",
+    "Certified Information Systems Security Professional (CISSP)",
+    "CompTIA Network+"
+  ],
+  "skills": [
+    "GitHub",
+    "Git",
+    "Looker",
+    "Communication",
+    "Decision Making",
+    "ETL",
+    "Performance Metrics",
+    "Change Management",
+    "Presentation Skills",
+    "Risk Management",
+    "Vendor Management",
+    "Jira",
+    "Cross-functional Collaboration",
+    "Data Analysis",
+    "Agile Methodology",
+    "Negotiation",
+    "Adaptability"
+  ]
+}

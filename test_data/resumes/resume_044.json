@@ -1,0 +1,88 @@
+{
+  "id": "resume_044",
+  "personal_info": {
+    "name": "Larry Nelson",
+    "email": "lnelson@consultant.net",
+    "phone": "(716) 570-6181",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/larry-nelson-4667"
+  },
+  "summary": "Healthcare informatics specialist with 7+ years of hands-on experience implementing and optimizing Epic EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 7,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Cerner Implementation Specialist",
+      "employer": "Impact Advisors",
+      "location": "Philadelphia, PA",
+      "start_date": "June 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PharmNet",
+        "PowerChart",
+        "FirstNet",
+        "ITWorks"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 11 analysts and trainers",
+        "Decreased claim denial rate by 21% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "EHR Support Analyst",
+      "employer": "Village Family Practice",
+      "location": "Detroit, MI",
+      "start_date": "September 2017",
+      "end_date": "February 2021",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Grand Central",
+        "EpicCare Inpatient",
+        "EpicCare Ambulatory",
+        "Cadence"
+      ],
+      "achievements": [
+        "Built 48+ HL7 interfaces connecting to external systems",
+        "Reduced average patient wait time by 36% through workflow optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Public Health",
+      "institution": "Johns Hopkins University",
+      "graduation_year": 2023,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "University of Washington",
+      "graduation_year": 2017,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Epic Certified - Willow",
+    "AWS Certified Solutions Architect",
+    "Six Sigma Green Belt"
+  ],
+  "skills": [
+    "Health Information Exchange",
+    "ICD-10",
+    "HIPAA Compliance",
+    "Cogito",
+    "Change Management",
+    "HL7 Interfaces",
+    "MyChart",
+    "Healthcare IT",
+    "Grand Central",
+    "Epic",
+    "Tableau",
+    "Crystal Reports"
+  ]
+}

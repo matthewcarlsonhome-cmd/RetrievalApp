@@ -1,0 +1,143 @@
+{
+  "id": "resume_012",
+  "personal_info": {
+    "name": "Ryan Carter",
+    "email": "ryan.carter38@yahoo.com",
+    "phone": "(342) 997-6839",
+    "location": "Atlanta, GA",
+    "linkedin": "linkedin.com/in/ryan-carter-1652"
+  },
+  "summary": "Experienced healthcare implementation consultant with 19 years leading athenahealth implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 19,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Healthcare Systems Analyst",
+      "employer": "Stanford Health Care",
+      "location": "Nashville, TN",
+      "start_date": "September 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PharmNet",
+        "PowerChart",
+        "SurgiNet",
+        "PathNet"
+      ],
+      "achievements": [
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Designed clinical workflows that improved documentation efficiency by 45%"
+      ]
+    },
+    {
+      "title": "Revenue Cycle Implementation Specialist",
+      "employer": "MEDITECH",
+      "location": "San Jose, CA",
+      "start_date": "September 2016",
+      "end_date": "December 2021",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Implemented 9 Epic/Cerner modules on time and under budget",
+        "Developed training curriculum adopted as enterprise standard",
+        "Trained 500+ end users with 98% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Principal Health Information Manager",
+      "employer": "Christus Health",
+      "location": "Detroit, MI",
+      "start_date": "March 2011",
+      "end_date": "February 2016",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "ASAP",
+        "Cadence",
+        "Grand Central",
+        "Stork"
+      ],
+      "achievements": [
+        "Built 20+ HL7 interfaces connecting to external systems",
+        "Led successful go-live for 1000-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Director of Epic Implementation Analyst",
+      "employer": "Deloitte Healthcare",
+      "location": "Dallas, TX",
+      "start_date": "March 2006",
+      "end_date": "February 2011",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PathNet",
+        "SurgiNet",
+        "RadNet",
+        "Soarian"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 5 recognition for implemented facility",
+        "Managed implementation for 12 ambulatory clinics across 3 states",
+        "Managed cross-functional team of 10 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Senior Revenue Cycle Implementation Specialist",
+      "employer": "Wellness Medical Group",
+      "location": "Portland, OR",
+      "start_date": "January 2005",
+      "end_date": "August 2006",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Implemented 8 Epic/Cerner modules on time and under budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "University of Michigan",
+      "graduation_year": 2003,
+      "gpa": 3.23
+    }
+  ],
+  "certifications": [
+    "Certified ScrumMaster (CSM)",
+    "Project Management Professional (PMP)",
+    "ITIL Foundation Certification",
+    "Certified Professional in Healthcare Information and Management Systems (CPHIMS)",
+    "Cerner Certified - PowerChart"
+  ],
+  "skills": [
+    "Go-Live Support",
+    "Business Intelligence",
+    "Clinical Documentation",
+    "Interoperability",
+    "Data Migration",
+    "Change Management",
+    "Power BI",
+    "athenahealth",
+    "Tableau",
+    "Agile Methodology",
+    "Clinical Workflow Analysis",
+    "Crystal Reports",
+    "User Acceptance Testing"
+  ]
+}

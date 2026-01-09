@@ -1,0 +1,113 @@
+{
+  "id": "resume_069",
+  "personal_info": {
+    "name": "Edward Taylor",
+    "email": "edward.taylor94@yahoo.com",
+    "phone": "(957) 935-7146",
+    "location": "Seattle, WA",
+    "linkedin": "linkedin.com/in/edward-taylor-8466"
+  },
+  "summary": "Executive-level product management and delivery specialist with 20+ years of hands-on experience. Proficient in Teamwork, Slack, Decision Making, with excellent problem-solving and communication skills.",
+  "years_experience": 20,
+  "experience_level": "expert",
+  "role_category": "product",
+  "experience": [
+    {
+      "title": "Associate Technical Product Manager",
+      "employer": "Agile Systems",
+      "location": "Miami, FL",
+      "start_date": "June 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Created process documentation improving team efficiency by 25%",
+        "Supported 1 project implementations successfully",
+        "Managed stakeholder communications for 4 departments"
+      ]
+    },
+    {
+      "title": "Lead Product Manager",
+      "employer": "Ford Motor",
+      "location": "Austin, TX",
+      "start_date": "January 2018",
+      "end_date": "May 2022",
+      "achievements": [
+        "Built and led team of 48 analysts and specialists",
+        "Delivered 41% improvement in operational efficiency",
+        "Built and led team of 24 analysts and specialists",
+        "Built and led team of 40 analysts and specialists"
+      ]
+    },
+    {
+      "title": "Senior Product Owner",
+      "employer": "IBM",
+      "location": "Pittsburgh, PA",
+      "start_date": "January 2014",
+      "end_date": "December 2018",
+      "achievements": [
+        "Directed cross-functional initiatives across 7 departments",
+        "Delivered 21% improvement in operational efficiency",
+        "Built and led team of 28 analysts and specialists",
+        "Built and led team of 44 analysts and specialists"
+      ]
+    },
+    {
+      "title": "Lead Scrum Master",
+      "employer": "Procter & Gamble",
+      "location": "San Francisco, CA",
+      "start_date": "January 2011",
+      "end_date": "May 2014",
+      "achievements": [
+        "Transformed business operations resulting in 38% cost reduction",
+        "Transformed business operations resulting in 21% cost reduction"
+      ]
+    },
+    {
+      "title": "Principal Technical Program Manager",
+      "employer": "Goldman Sachs",
+      "location": "Los Angeles, CA",
+      "start_date": "March 2009",
+      "end_date": "May 2011",
+      "achievements": [
+        "Drove strategic initiatives contributing $500M to bottom line",
+        "Drove strategic initiatives contributing $1000M to bottom line",
+        "Transformed business operations resulting in 24% cost reduction",
+        "Transformed business operations resulting in 33% cost reduction"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "Duke University",
+      "graduation_year": 2001,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Six Sigma Black Belt",
+    "Google Analytics Certification",
+    "Certified Business Analysis Professional (CBAP)",
+    "SAFe Agilist Certification",
+    "CompTIA Security+",
+    "AWS Certified Solutions Architect - Professional",
+    "AWS Certified Solutions Architect - Associate"
+  ],
+  "skills": [
+    "Teamwork",
+    "Slack",
+    "Decision Making",
+    "Presentation Skills",
+    "VS Code",
+    "Postman",
+    "Budget Management",
+    "Data Warehousing",
+    "Business Analysis",
+    "Executive Communication",
+    "Data Analysis",
+    "Conflict Resolution",
+    "Requirements Gathering",
+    "Negotiation",
+    "Project Management",
+    "Stakeholder Management"
+  ]
+}

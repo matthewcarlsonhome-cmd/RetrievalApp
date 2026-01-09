@@ -1,0 +1,80 @@
+{
+  "id": "resume_037",
+  "personal_info": {
+    "name": "Nicholas Singh",
+    "email": "nicholassingh@icloud.com",
+    "phone": "(615) 954-8166",
+    "location": "Minneapolis, MN",
+    "linkedin": "linkedin.com/in/nicholas-singh-7735"
+  },
+  "summary": "Seasoned professional with 9+ years of experience in software development and engineering. Skilled in Python, Postman, Elasticsearch, with a proven track record of delivering impactful results.",
+  "years_experience": 9,
+  "experience_level": "advanced",
+  "role_category": "development",
+  "experience": [
+    {
+      "title": "Associate Platform Engineer",
+      "employer": "Agile Systems",
+      "location": "Los Angeles, CA",
+      "start_date": "June 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Resolved 11+ production issues within SLA targets",
+        "Participated in code reviews, providing feedback on 69+ pull requests",
+        "Created technical documentation for 3 internal tools"
+      ]
+    },
+    {
+      "title": "Senior Mobile Developer",
+      "employer": "AI Dynamics",
+      "location": "Detroit, MI",
+      "start_date": "January 2018",
+      "end_date": "May 2022",
+      "achievements": [
+        "Led team of 24 engineers in delivering critical platform features",
+        "Reduced infrastructure costs by $4000K annually through optimization"
+      ]
+    },
+    {
+      "title": "Lead DevOps Engineer",
+      "employer": "Johnson & Johnson",
+      "location": "Denver, CO",
+      "start_date": "January 2015",
+      "end_date": "February 2018",
+      "achievements": [
+        "Led team of 32 engineers in delivering critical platform features",
+        "Architected scalable system handling 20M+ daily active users",
+        "Reduced infrastructure costs by $4000K annually through optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Software Engineering",
+      "institution": "Purdue University",
+      "graduation_year": 2015,
+      "gpa": 3.22
+    }
+  ],
+  "certifications": [
+    "ITIL Foundation",
+    "Microsoft Certified: Azure Developer Associate",
+    "Azure Solutions Architect Expert",
+    "Cisco Certified Network Associate (CCNA)",
+    "Oracle Certified Professional"
+  ],
+  "skills": [
+    "Python",
+    "Postman",
+    "Elasticsearch",
+    "JavaScript",
+    "Creativity",
+    "Communication",
+    "NumPy",
+    "SQL",
+    "Splunk",
+    "Oracle",
+    "AWS Lambda",
+    "GitHub"
+  ]
+}

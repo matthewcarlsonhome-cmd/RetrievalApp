@@ -1,0 +1,205 @@
+{
+  "id": "resume_002",
+  "personal_info": {
+    "name": "Frank Zhang",
+    "email": "frank.zhang7@outlook.com",
+    "phone": "(897) 775-6541",
+    "location": "Nashville, TN",
+    "linkedin": "linkedin.com/in/frank-zhang-3105"
+  },
+  "summary": "Results-driven healthcare IT professional with 14+ years of experience in EHR implementation and optimization. Specialized in Epic system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 14,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Clinical Applications Analyst",
+      "employer": "Johns Hopkins Hospital",
+      "location": "San Antonio, TX",
+      "start_date": "June 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Trained 100+ end users with 95% satisfaction rating",
+        "Coordinated go-live support for 100+ providers across 20 locations"
+      ]
+    },
+    {
+      "title": "Healthcare Systems Analyst",
+      "employer": "Valley Medical Associates",
+      "location": "Jacksonville, FL",
+      "start_date": "March 2021",
+      "end_date": "February 2023",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Achieved 87% clinician adoption rate within first 2 months",
+        "Built 31+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Healthcare IT Project Manager",
+      "employer": "Community Health Partners",
+      "location": "Portland, OR",
+      "start_date": "June 2019",
+      "end_date": "February 2021",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "MyChart",
+        "EpicCare Inpatient",
+        "EpicCare Ambulatory",
+        "Radiant"
+      ],
+      "achievements": [
+        "Built 12+ HL7 interfaces connecting to external systems",
+        "Coordinated go-live support for 200+ providers across 16 locations"
+      ]
+    },
+    {
+      "title": "Lead Health Information Manager",
+      "employer": "Leidos Health",
+      "location": "Detroit, MI",
+      "start_date": "January 2018",
+      "end_date": "February 2019",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 30% through revenue cycle optimization",
+        "Trained 200+ end users with 96% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Senior Cerner Implementation Specialist",
+      "employer": "Conduent Healthcare",
+      "location": "Boston, MA",
+      "start_date": "March 2016",
+      "end_date": "February 2018",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Stork",
+        "Tapestry",
+        "Beacon",
+        "EpicCare Ambulatory"
+      ],
+      "achievements": [
+        "Managed implementation for 34 ambulatory clinics across 4 states",
+        "Reduced average patient wait time by 34% through workflow optimization",
+        "Achieved 89% clinician adoption rate within first 6 months",
+        "Completed data migration of 1M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Healthcare Data Analyst",
+      "employer": "PrognoCIS",
+      "location": "Portland, OR",
+      "start_date": "June 2015",
+      "end_date": "December 2016",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 8 analysts and trainers",
+        "Developed training curriculum adopted as enterprise standard",
+        "Achieved 98% clinician adoption rate within first 2 months",
+        "Trained 500+ end users with 92% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Principal Revenue Cycle Implementation Specialist",
+      "employer": "Pivot Point Consulting",
+      "location": "San Diego, CA",
+      "start_date": "June 2011",
+      "end_date": "May 2015",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 5 recognition for implemented facility",
+        "Completed data migration of 10M+ patient records with 99.9% accuracy",
+        "Decreased claim denial rate by 44% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Systems Analyst",
+      "employer": "NYU Langone Health",
+      "location": "Jacksonville, FL",
+      "start_date": "March 2010",
+      "end_date": "December 2011",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PathNet",
+        "RadNet",
+        "SurgiNet",
+        "HealtheIntent"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 19% through workflow optimization",
+        "Developed training curriculum adopted as enterprise standard",
+        "Implemented 8 Epic/Cerner modules on time and under budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Duke University",
+      "graduation_year": 2008,
+      "gpa": 3.24
+    }
+  ],
+  "certifications": [
+    "Epic Certified - EpicCare Ambulatory",
+    "ITIL Foundation Certification",
+    "Epic Certified - Willow"
+  ],
+  "skills": [
+    "Training Development",
+    "Process Improvement",
+    "Agile Methodology",
+    "Business Intelligence",
+    "FHIR APIs",
+    "Interoperability",
+    "Prelude",
+    "Population Health",
+    "Revenue Cycle Management",
+    "Clinical Workflow Analysis",
+    "System Configuration",
+    "Mobile Health",
+    "Care Everywhere",
+    "Beacon",
+    "EHR Implementation",
+    "Optimization",
+    "Clinical Documentation",
+    "Epic",
+    "Scrum"
+  ]
+}

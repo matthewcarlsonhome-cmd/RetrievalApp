@@ -1,0 +1,64 @@
+{
+  "id": "resume_040",
+  "personal_info": {
+    "name": "Joseph Robinson",
+    "email": "jrobinson@protonmail.com",
+    "phone": "(799) 988-6781",
+    "location": "Seattle, WA",
+    "linkedin": "linkedin.com/in/joseph-robinson-8916"
+  },
+  "summary": "Proficient professional with 4+ years of experience in project management and operations. Skilled in Team Leadership, Bitbucket, Decision Making, with a proven track record of delivering impactful results.",
+  "years_experience": 4,
+  "experience_level": "intermediate",
+  "role_category": "management",
+  "experience": [
+    {
+      "title": "Entry-Level Engagement Manager",
+      "employer": "Future Forward",
+      "location": "Philadelphia, PA",
+      "start_date": "January 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Created process documentation improving team efficiency by 38%",
+        "Created process documentation improving team efficiency by 16%"
+      ]
+    },
+    {
+      "title": "Mid-Level Project Manager",
+      "employer": "Innovation Hub",
+      "location": "Phoenix, AZ",
+      "start_date": "September 2020",
+      "end_date": "August 2022",
+      "achievements": [
+        "Increased customer satisfaction scores by 36% through service improvements",
+        "Developed business cases securing $100K in project funding",
+        "Managed projects totaling $5K in annual budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Management Information Systems",
+      "institution": "Georgia Tech",
+      "graduation_year": 2017,
+      "gpa": 3.89
+    }
+  ],
+  "certifications": [
+    "SAFe Agilist Certification",
+    "Salesforce Administrator Certification"
+  ],
+  "skills": [
+    "Team Leadership",
+    "Bitbucket",
+    "Decision Making",
+    "ETL",
+    "Performance Metrics",
+    "KPI Development",
+    "Scrum",
+    "Business Intelligence",
+    "Leadership",
+    "Jira",
+    "ROI Analysis"
+  ]
+}

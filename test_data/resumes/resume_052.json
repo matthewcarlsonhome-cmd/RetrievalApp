@@ -1,0 +1,171 @@
+{
+  "id": "resume_052",
+  "personal_info": {
+    "name": "Daniel Clark",
+    "email": "daniel.clark@outlook.com",
+    "phone": "(970) 918-7630",
+    "location": "Phoenix, AZ",
+    "linkedin": "linkedin.com/in/daniel-clark-6139"
+  },
+  "summary": "Clinical informatics expert with 18+ years specializing in Allscripts implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 18,
+  "primary_ehr_system": "Allscripts",
+  "experience": [
+    {
+      "title": "Healthcare Systems Analyst",
+      "employer": "Sutter Health",
+      "location": "Las Vegas, NV",
+      "start_date": "January 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Cadence",
+        "EpicCare Ambulatory",
+        "Healthy Planet",
+        "Stork"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 21% through workflow optimization",
+        "Trained 500+ end users with 95% satisfaction rating",
+        "Led successful go-live for 400-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Health Information Systems Analyst",
+      "employer": "Metro Internal Medicine",
+      "location": "Milwaukee, WI",
+      "start_date": "September 2014",
+      "end_date": "December 2019",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 2M+ patient records with 99.9% accuracy",
+        "Coordinated go-live support for 50+ providers across 6 locations",
+        "Trained 2000+ end users with 92% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Principal Epic Implementation Analyst",
+      "employer": "Premier Medical Group",
+      "location": "Los Angeles, CA",
+      "start_date": "March 2013",
+      "end_date": "August 2014",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "HealtheIntent",
+        "PowerChart",
+        "PharmNet",
+        "PathNet"
+      ],
+      "achievements": [
+        "Achieved 98% clinician adoption rate within first 5 months",
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Director of Healthcare Systems Analyst",
+      "employer": "UPMC Presbyterian",
+      "location": "San Jose, CA",
+      "start_date": "March 2011",
+      "end_date": "May 2013",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Decreased claim denial rate by 43% through revenue cycle optimization",
+        "Trained 100+ end users with 92% satisfaction rating",
+        "Completed data migration of 2M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Lead Healthcare Data Analyst",
+      "employer": "Village Family Practice",
+      "location": "Jacksonville, FL",
+      "start_date": "January 2009",
+      "end_date": "February 2011",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Radiant",
+        "Healthy Planet",
+        "OpTime",
+        "Cadence"
+      ],
+      "achievements": [
+        "Managed implementation for 22 ambulatory clinics across 2 states",
+        "Completed data migration of 10M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Lead Healthcare Data Analyst",
+      "employer": "Regional Health Partners",
+      "location": "San Antonio, TX",
+      "start_date": "June 2006",
+      "end_date": "August 2009",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "ITWorks",
+        "CommunityWorks",
+        "HealtheIntent",
+        "PharmNet"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 38% through workflow optimization",
+        "Managed cross-functional team of 5 analysts and trainers"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Business Administration",
+      "institution": "Emory University",
+      "graduation_year": 2009,
+      "gpa": 3.89
+    },
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "University of Colorado",
+      "graduation_year": 2003,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Certified Professional in Healthcare Information and Management Systems (CPHIMS)"
+  ],
+  "skills": [
+    "Go-Live Support",
+    "Project Management",
+    "Clinical Documentation",
+    "Interoperability",
+    "Data Migration",
+    "Training Development",
+    "Build Validation",
+    "Mobile Health",
+    "Allscripts",
+    "Patient Portal Implementation",
+    "Healthcare Analytics",
+    "Report Writing",
+    "Clinical Workflow Analysis",
+    "Value-Based Care",
+    "Crystal Reports",
+    "Medical Terminology"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "resume_046",
+  "personal_info": {
+    "name": "Edward Shah",
+    "email": "eshah@protonmail.com",
+    "phone": "(818) 255-6925",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/edward-shah-6178"
+  },
+  "summary": "Experienced data engineering and analytics professional bringing 8 years of expertise. Strong background in Databricks, ETL, Python, committed to driving innovation and business value.",
+  "years_experience": 8,
+  "experience_level": "advanced",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Entry-Level Data Architect",
+      "employer": "Digital Horizons",
+      "location": "San Francisco, CA",
+      "start_date": "January 2022",
+      "end_date": "Present",
+      "achievements": [
+        "Created technical documentation for 3 internal tools",
+        "Created technical documentation for 4 internal tools",
+        "Participated in code reviews, providing feedback on 85+ pull requests",
+        "Improved code test coverage from 50% to 87%"
+      ]
+    },
+    {
+      "title": "Quantitative Analyst",
+      "employer": "Disrupt Technologies",
+      "location": "Philadelphia, PA",
+      "start_date": "June 2019",
+      "end_date": "February 2022",
+      "achievements": [
+        "Implemented CI/CD pipeline reducing deployment time by 35%",
+        "Reduced application load time by 31% through performance optimization",
+        "Reduced application load time by 32% through performance optimization"
+      ]
+    },
+    {
+      "title": "Senior Analytics Engineer",
+      "employer": "Microsoft",
+      "location": "New York, NY",
+      "start_date": "June 2016",
+      "end_date": "December 2019",
+      "achievements": [
+        "Drove technical strategy resulting in 39% improvement in system reliability",
+        "Led team of 24 engineers in delivering critical platform features",
+        "Reduced infrastructure costs by $1000K annually through optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "New York University",
+      "graduation_year": 2014,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect - Professional",
+    "Certified Information Systems Security Professional (CISSP)",
+    "AWS Certified Developer - Associate"
+  ],
+  "skills": [
+    "Databricks",
+    "ETL",
+    "Python",
+    "Time Management",
+    ".NET Core",
+    "Power BI",
+    "NumPy",
+    "Attention to Detail",
+    "SQL",
+    "Splunk",
+    "Data Warehousing",
+    "Oracle",
+    "MATLAB"
+  ]
+}

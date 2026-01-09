@@ -1,0 +1,123 @@
+{
+  "id": "resume_004",
+  "personal_info": {
+    "name": "Stephen Kim",
+    "email": "skim@gmail.com",
+    "phone": "(444) 835-3634",
+    "location": "Cleveland, OH",
+    "linkedin": "linkedin.com/in/stephen-kim-6226"
+  },
+  "summary": "Healthcare informatics specialist with 12+ years of hands-on experience implementing and optimizing Cerner EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 12,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Healthcare Data Analyst",
+      "employer": "Community Health Partners",
+      "location": "Dallas, TX",
+      "start_date": "March 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Trained 100+ end users with 94% satisfaction rating",
+        "Developed training curriculum adopted as enterprise standard",
+        "Designed clinical workflows that improved documentation efficiency by 41%"
+      ]
+    },
+    {
+      "title": "Senior Medical Informatics Consultant",
+      "employer": "Lakeside Medical Clinic",
+      "location": "Jacksonville, FL",
+      "start_date": "January 2017",
+      "end_date": "December 2021",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Trained 2000+ end users with 96% satisfaction rating",
+        "Achieved 93% clinician adoption rate within first 5 months",
+        "Led optimization project resulting in $200K annual cost savings",
+        "Coordinated go-live support for 500+ providers across 15 locations"
+      ]
+    },
+    {
+      "title": "Lead EHR Support Analyst",
+      "employer": "PwC Health Industries",
+      "location": "Nashville, TN",
+      "start_date": "June 2015",
+      "end_date": "May 2017",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Achieved 90% clinician adoption rate within first 3 months",
+        "Managed cross-functional team of 8 analysts and trainers",
+        "Coordinated go-live support for 100+ providers across 16 locations"
+      ]
+    },
+    {
+      "title": "Principal Healthcare IT Project Manager",
+      "employer": "Pivot Point Consulting",
+      "location": "Dallas, TX",
+      "start_date": "September 2012",
+      "end_date": "December 2015",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Stork",
+        "Tapestry",
+        "MyChart",
+        "Care Everywhere"
+      ],
+      "achievements": [
+        "Built 13+ HL7 interfaces connecting to external systems",
+        "Trained 500+ end users with 96% satisfaction rating",
+        "Completed data migration of 2M+ patient records with 99.9% accuracy",
+        "Implemented 6 Epic/Cerner modules on time and under budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "Vanderbilt University",
+      "graduation_year": 2011,
+      "gpa": 3.52
+    }
+  ],
+  "certifications": [
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)"
+  ],
+  "skills": [
+    "Business Intelligence",
+    "Build Validation",
+    "Telehealth Implementation",
+    "Change Management",
+    "HL7 Interfaces",
+    "Mobile Health",
+    "RadNet",
+    "Revenue Cycle Management",
+    "PowerChart",
+    "Millennium",
+    "Cerner",
+    "Clinical Workflow Analysis",
+    "Scrum",
+    "Medical Terminology",
+    "User Acceptance Testing"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "resume_092",
+  "personal_info": {
+    "name": "Pamela Brown",
+    "email": "pamelabrown@outlook.com",
+    "phone": "(436) 673-1282",
+    "location": "Milwaukee, WI",
+    "linkedin": "linkedin.com/in/pamela-brown-4666"
+  },
+  "summary": "Results-driven healthcare IT professional with 6+ years of experience in EHR implementation and optimization. Specialized in MEDITECH system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 6,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Clinical Informatics Specialist",
+      "employer": "Metro Internal Medicine",
+      "location": "Jacksonville, FL",
+      "start_date": "June 2020",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 100+ providers across 11 locations",
+        "Managed cross-functional team of 8 analysts and trainers",
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Healthcare Integration Engineer",
+      "employer": "Brigham and Women's Hospital",
+      "location": "Detroit, MI",
+      "start_date": "June 2019",
+      "end_date": "December 2020",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 2M+ patient records with 99.9% accuracy",
+        "Built 35+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "EHR Implementation Consultant",
+      "employer": "Wellness Medical Group",
+      "location": "Portland, OR",
+      "start_date": "June 2018",
+      "end_date": "August 2019",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 50+ providers across 20 locations",
+        "Achieved 90% clinician adoption rate within first 2 months"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Public Health",
+      "institution": "University of Michigan",
+      "graduation_year": 2019,
+      "gpa": 3.97
+    },
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "UCSF",
+      "graduation_year": 2016,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Six Sigma Green Belt",
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)"
+  ],
+  "skills": [
+    "HIPAA Compliance",
+    "Build Validation",
+    "Go-Live Support",
+    "Clinical Decision Support",
+    "Data Migration",
+    "HL7 Interfaces",
+    "Healthcare IT",
+    "Python",
+    "Mobile Health",
+    "Power BI",
+    "Agile Methodology",
+    "Population Health",
+    "MEDITECH",
+    "Value-Based Care",
+    "Crystal Reports",
+    "System Integration"
+  ]
+}

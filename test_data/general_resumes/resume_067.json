@@ -1,0 +1,92 @@
+{
+  "id": "resume_067",
+  "personal_info": {
+    "name": "Barbara O'Brien",
+    "email": "barbarao'brien@icloud.com",
+    "phone": "(303) 933-1358",
+    "location": "Atlanta, GA",
+    "linkedin": "linkedin.com/in/barbara-o'brien-1955"
+  },
+  "summary": "Accomplished IT infrastructure and cloud technologies specialist with 10+ years of hands-on experience. Proficient in R, Keras, Communication, with excellent problem-solving and communication skills.",
+  "years_experience": 10,
+  "experience_level": "advanced",
+  "role_category": "infrastructure",
+  "experience": [
+    {
+      "title": "Mid-Level Network Engineer",
+      "employer": "DataDriven Inc",
+      "location": "Phoenix, AZ",
+      "start_date": "January 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Implemented CI/CD pipeline reducing deployment time by 25%",
+        "Reduced application load time by 22% through performance optimization",
+        "Designed and built RESTful APIs serving 10M+ requests daily",
+        "Implemented CI/CD pipeline reducing deployment time by 40%"
+      ]
+    },
+    {
+      "title": "Senior IT Support Specialist",
+      "employer": "Johnson & Johnson",
+      "location": "Los Angeles, CA",
+      "start_date": "June 2017",
+      "end_date": "May 2020",
+      "achievements": [
+        "Led team of 52 engineers in delivering critical platform features",
+        "Led team of 40 engineers in delivering critical platform features",
+        "Architected scalable system handling 200M+ daily active users",
+        "Led team of 56 engineers in delivering critical platform features"
+      ]
+    },
+    {
+      "title": "Staff Network Engineer",
+      "employer": "Intel",
+      "location": "San Francisco, CA",
+      "start_date": "March 2014",
+      "end_date": "December 2017",
+      "achievements": [
+        "Reduced infrastructure costs by $1000K annually through optimization",
+        "Established engineering best practices adopted by 24 teams"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Data Science",
+      "institution": "Harvard University",
+      "graduation_year": 2019,
+      "gpa": 3.63
+    },
+    {
+      "degree": "Bachelor of Science in Software Engineering",
+      "institution": "University of Michigan",
+      "graduation_year": 2014,
+      "gpa": 3.01
+    }
+  ],
+  "certifications": [
+    "Certified ScrumMaster (CSM)",
+    "AWS Certified Solutions Architect - Professional",
+    "HashiCorp Certified: Terraform Associate",
+    "Certified Information Systems Security Professional (CISSP)"
+  ],
+  "skills": [
+    "R",
+    "Keras",
+    "Communication",
+    "Go",
+    "Decision Making",
+    "Attention to Detail",
+    "Splunk",
+    "DigitalOcean",
+    "Oracle",
+    "AWS Lambda",
+    "Bitbucket",
+    "Azure Functions",
+    "Conflict Resolution",
+    "Negotiation",
+    "Adobe XD",
+    "Node.js",
+    "MySQL"
+  ]
+}

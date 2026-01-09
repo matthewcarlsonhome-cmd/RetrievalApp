@@ -1,0 +1,72 @@
+{
+  "id": "job_013",
+  "title": "Senior Business Analyst",
+  "employer": "Workday",
+  "employer_type": "tech",
+  "location": "Detroit, MI",
+  "remote_option": "Hybrid (3 days in office)",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2026-01-03",
+  "job_category": "business_analyst",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 3,
+    "max_years": null
+  },
+  "description": "Workday seeks an analytical Senior Business Analyst to support strategic initiatives. You'll work with stakeholders across the organization to identify opportunities and drive process improvements.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Gather and analyze business requirements",
+    "Develop process improvements and efficiency recommendations",
+    "Create business cases and presentations for leadership",
+    "Support project implementation and change management",
+    "Track KPIs and report on business performance"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "3+ years of relevant experience",
+    "skills": [
+      "Kanban",
+      "Scrum",
+      "Cross-functional Collaboration",
+      "Cost-Benefit Analysis",
+      "Process Improvement",
+      "Business Intelligence",
+      "Data Visualization"
+    ],
+    "certifications": [
+      "Six Sigma Green Belt"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Bitbucket",
+      "Git",
+      "GitHub"
+    ],
+    "certifications": [
+      "Google Analytics Certification",
+      "Salesforce Administrator Certification"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 102281,
+    "max": 130630,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Professional development budget",
+    "Life and disability insurance",
+    "Stock options/equity grants",
+    "Unlimited PTO",
+    "Commuter benefits",
+    "Wellness programs and gym membership",
+    "Remote work flexibility",
+    "Home office stipend",
+    "Comprehensive health, dental, and vision insurance"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "resume_008",
+  "personal_info": {
+    "name": "Stephen Johnson",
+    "email": "sjohnson@gmail.com",
+    "phone": "(581) 201-8439",
+    "location": "Raleigh, NC",
+    "linkedin": "linkedin.com/in/stephen-johnson-8013"
+  },
+  "summary": "Industry-leading professional with 12+ years of experience in digital marketing and brand strategy. Skilled in Conversion Optimization, Creativity, Campaign Management, with a proven track record of delivering impactful results.",
+  "years_experience": 12,
+  "experience_level": "expert",
+  "role_category": "marketing",
+  "experience": [
+    {
+      "title": "Mid-Level Brand Manager",
+      "employer": "Disrupt Technologies",
+      "location": "Portland, OR",
+      "start_date": "September 2020",
+      "end_date": "Present",
+      "achievements": [
+        "Managed $5K marketing budget with 5x ROI",
+        "Led rebranding initiative across 4 marketing channels",
+        "Led rebranding initiative across 3 marketing channels",
+        "Increased website traffic by 35% through SEO optimization"
+      ]
+    },
+    {
+      "title": "Senior Marketing Analyst",
+      "employer": "Pfizer",
+      "location": "Charlotte, NC",
+      "start_date": "September 2018",
+      "end_date": "December 2020",
+      "achievements": [
+        "Launched 6 successful product launches",
+        "Built and led marketing team of 24 specialists"
+      ]
+    },
+    {
+      "title": "Lead Growth Marketing Manager",
+      "employer": "Walgreens",
+      "location": "Salt Lake City, UT",
+      "start_date": "January 2014",
+      "end_date": "August 2018",
+      "achievements": [
+        "Launched 4 successful product launches",
+        "Launched 3 successful product launches",
+        "Built and led marketing team of 52 specialists",
+        "Managed $1000M integrated marketing budget"
+      ]
+    },
+    {
+      "title": "Senior Brand Manager",
+      "employer": "Infosys",
+      "location": "Phoenix, AZ",
+      "start_date": "June 2012",
+      "end_date": "December 2014",
+      "achievements": [
+        "Led global marketing transformation across 10 regions",
+        "Established brand as market leader with 22% awareness increase",
+        "Established brand as market leader with 35% awareness increase",
+        "Established brand as market leader with 19% awareness increase"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Business Administration",
+      "institution": "University of Pennsylvania",
+      "graduation_year": 2011,
+      "gpa": 3.13
+    }
+  ],
+  "certifications": [
+    "SAFe Agilist Certification",
+    "Certified Scrum Product Owner (CSPO)",
+    "Certified Management Consultant (CMC)",
+    "HubSpot Inbound Marketing Certification",
+    "Google Cloud Professional Cloud Architect",
+    "AWS Certified Solutions Architect - Associate"
+  ],
+  "skills": [
+    "Conversion Optimization",
+    "Creativity",
+    "Campaign Management",
+    "Communication",
+    "PPC Advertising",
+    "Problem Solving",
+    "Agile Methodology",
+    "CRM Management",
+    "Project Management",
+    "Critical Thinking",
+    "Business Analysis",
+    "Marketing Automation",
+    "Content Marketing",
+    "Conflict Resolution",
+    "SEO",
+    "Brand Management",
+    "Stakeholder Management"
+  ]
+}

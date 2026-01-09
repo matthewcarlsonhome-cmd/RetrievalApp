@@ -1,0 +1,62 @@
+{
+  "id": "resume_042",
+  "personal_info": {
+    "name": "Paul Smith",
+    "email": "psmith@yahoo.com",
+    "phone": "(890) 407-4688",
+    "location": "Las Vegas, NV",
+    "linkedin": "linkedin.com/in/paul-smith-5288"
+  },
+  "summary": "Experienced healthcare implementation consultant with 2 years leading MEDITECH implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 2,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Health IT Implementation Manager",
+      "employer": "UCLA Medical Center",
+      "location": "Portland, OR",
+      "start_date": "January 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "SurgiNet",
+        "Soarian",
+        "PathNet",
+        "RadNet"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 6 recognition for implemented facility",
+        "Implemented 12 Epic/Cerner modules on time and under budget",
+        "Managed cross-functional team of 12 analysts and trainers"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "University of Michigan",
+      "graduation_year": 2021,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Epic Certified - Beacon",
+    "Epic Certified - EpicCare Inpatient"
+  ],
+  "skills": [
+    "HIPAA Compliance",
+    "ICD-10",
+    "Project Management",
+    "Telehealth Implementation",
+    "Data Migration",
+    "Power BI",
+    "MEDITECH",
+    "Report Writing",
+    "Tableau",
+    "Value-Based Care",
+    "Optimization",
+    "User Acceptance Testing"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "resume_039",
+  "personal_info": {
+    "name": "Christine Walker",
+    "email": "cwalker@gmail.com",
+    "phone": "(907) 444-6516",
+    "location": "Pittsburgh, PA",
+    "linkedin": "linkedin.com/in/christine-walker-1471"
+  },
+  "summary": "Visionary professional with 17+ years of experience in data engineering and analytics. Skilled in New Relic, ETL, VS Code, with a proven track record of delivering impactful results.",
+  "years_experience": 17,
+  "experience_level": "expert",
+  "role_category": "data",
+  "experience": [
+    {
+      "title": "Entry-Level Data Scientist",
+      "employer": "InnovateCo",
+      "location": "Portland, OR",
+      "start_date": "September 2023",
+      "end_date": "Present",
+      "achievements": [
+        "Resolved 28+ production issues within SLA targets",
+        "Resolved 19+ production issues within SLA targets"
+      ]
+    },
+    {
+      "title": "Data Architect",
+      "employer": "Agile Systems",
+      "location": "Phoenix, AZ",
+      "start_date": "January 2021",
+      "end_date": "December 2023",
+      "achievements": [
+        "Reduced application load time by 49% through performance optimization",
+        "Led migration of 9 microservices to Kubernetes",
+        "Mentored 8 junior developers in best practices"
+      ]
+    },
+    {
+      "title": "Mid-Level Quantitative Analyst",
+      "employer": "AbbVie",
+      "location": "Detroit, MI",
+      "start_date": "January 2020",
+      "end_date": "February 2021",
+      "achievements": [
+        "Implemented CI/CD pipeline reducing deployment time by 49%",
+        "Designed and built RESTful APIs serving 100M+ requests daily",
+        "Reduced application load time by 39% through performance optimization",
+        "Implemented CI/CD pipeline reducing deployment time by 46%"
+      ]
+    },
+    {
+      "title": "Staff Business Intelligence Analyst",
+      "employer": "DocuSign",
+      "location": "Portland, OR",
+      "start_date": "September 2016",
+      "end_date": "December 2020",
+      "achievements": [
+        "Led team of 40 engineers in delivering critical platform features",
+        "Reduced infrastructure costs by $1000K annually through optimization",
+        "Drove technical strategy resulting in 50% improvement in system reliability"
+      ]
+    },
+    {
+      "title": "Lead Data Architect",
+      "employer": "ServiceNow",
+      "location": "Salt Lake City, UT",
+      "start_date": "June 2012",
+      "end_date": "December 2016",
+      "achievements": [
+        "Drove strategic initiatives resulting in $100M revenue growth",
+        "Led organization-wide digital transformation initiative impacting 100000+ employees",
+        "Built and scaled engineering organization from 9 to 1460 engineers",
+        "Managed $5000M technology budget across 10 departments"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Data Science",
+      "institution": "Ohio State University",
+      "graduation_year": 2007,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Cisco Certified Network Associate (CCNA)",
+    "Professional Scrum Master (PSM I)",
+    "ITIL Foundation",
+    "AWS Certified Solutions Architect - Associate",
+    "Certified Kubernetes Administrator (CKA)",
+    "AWS Certified Developer - Associate",
+    "Azure Solutions Architect Expert"
+  ],
+  "skills": [
+    "New Relic",
+    "ETL",
+    "VS Code",
+    "Neo4j",
+    "Airflow",
+    "Active Listening",
+    "JavaScript",
+    "TypeScript",
+    "Qlik",
+    "Express.js",
+    "Emotional Intelligence",
+    "Teamwork",
+    "Scala",
+    "Go",
+    "Attention to Detail",
+    "Terraform",
+    "Azure Functions",
+    "GitLab CI/CD",
+    "Node.js"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "job_027",
+  "title": "Staff Technical Architect",
+  "employer": "Wipro",
+  "employer_type": "consulting",
+  "location": "Chicago, IL",
+  "remote_option": "On-site",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "posted_date": "2025-12-29",
+  "job_category": "it_individual",
+  "seniority_level": "individual_contributor",
+  "experience_required": {
+    "min_years": 0,
+    "max_years": 6
+  },
+  "description": "Join Wipro as a Staff Technical Architect and help us build the next generation of technology solutions. We're looking for someone passionate about clean code, system design, and continuous improvement.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams to achieve business objectives",
+    "Communicate effectively with stakeholders at all levels",
+    "Stay current with industry trends and best practices",
+    "Design, develop, and maintain software applications",
+    "Write clean, testable, and efficient code",
+    "Participate in code reviews and technical discussions",
+    "Troubleshoot and debug production issues",
+    "Contribute to architectural decisions and technical strategy"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field or equivalent experience",
+    "experience": "0+ years of relevant experience",
+    "skills": [
+      "MATLAB",
+      "SQL",
+      "Java",
+      "AWS Lambda",
+      "Google Cloud Functions",
+      "Jira",
+      "Confluence"
+    ],
+    "certifications": [
+      "ITIL Foundation"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      ".NET Core",
+      "Angular",
+      "Express.js",
+      "Redis",
+      "Cassandra"
+    ],
+    "certifications": [
+      "Oracle Certified Professional",
+      "Professional Scrum Master (PSM I)"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 85445,
+    "max": 118218,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Commuter benefits",
+    "Professional development budget",
+    "401(k) with company match",
+    "Annual bonus program",
+    "Comprehensive health, dental, and vision insurance",
+    "Home office stipend",
+    "Stock options/equity grants",
+    "Parental leave"
+  ]
+}

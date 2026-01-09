@@ -1,0 +1,62 @@
+{
+  "id": "gen_biz_resume_004",
+  "domain": "business",
+  "personal_info": {
+    "name": "George White",
+    "email": "george.white@email.com",
+    "phone": "(569) 568-5222",
+    "location": "San Diego, CA",
+    "linkedin": "linkedin.com/in/georgewhite"
+  },
+  "summary": "Results-driven project professional with 2+ years of experience. Expertise in Project Planning, Smartsheet, Risk Management. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "junior",
+  "years_experience": 2,
+  "primary_specialty": "project",
+  "experience": [
+    {
+      "title": "Senior Project Manager",
+      "employer": "Salesforce",
+      "start_date": "2024-04",
+      "end_date": "Present",
+      "focus_areas": [
+        "MS Project",
+        "RAID Log",
+        "Smartsheet",
+        "Budget Management"
+      ],
+      "achievements": [
+        "Managed $300M project budget with delivery 67% under budget",
+        "Managed cross-functional team of 8 across 5 time zones",
+        "Improved process efficiency by 46% through Lean Six Sigma implementation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "University of Virginia"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "professional": [
+      "RAID Log",
+      "Project Planning",
+      "Smartsheet",
+      "Change Management",
+      "MS Project",
+      "Risk Management",
+      "Stakeholder Communication",
+      "Resource Allocation"
+    ],
+    "soft": [
+      "Influence",
+      "Problem Solving",
+      "Emotional Intelligence",
+      "Adaptability",
+      "Stakeholder Management",
+      "Communication"
+    ]
+  }
+}

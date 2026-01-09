@@ -1,0 +1,84 @@
+{
+  "id": "gen_it_resume_009",
+  "domain": "technology",
+  "personal_info": {
+    "name": "John Watanabe",
+    "email": "john.watanabe@email.com",
+    "phone": "(960) 913-9850",
+    "location": "Portland, OR",
+    "linkedin": "linkedin.com/in/johnwatanabe"
+  },
+  "summary": "5+ years of experience in data technologies. Expertise in Kafka, Data Modeling, Tableau. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "mid",
+  "years_experience": 5,
+  "primary_tech_stack": "SQL",
+  "tech_specialization": "data",
+  "experience": [
+    {
+      "title": "IT Project Manager",
+      "employer": "Meta",
+      "start_date": "2022-05",
+      "end_date": "Present",
+      "tech_stack": [
+        "Data Engineering",
+        "Tableau",
+        "PyTorch",
+        "Power BI",
+        "TensorFlow"
+      ],
+      "achievements": [
+        "Designed API serving 5M+ requests per second with sub-200ms latency",
+        "Implemented CI/CD pipeline reducing deployment time from 1 week to 1 day",
+        "Led incident response for critical outage, reducing MTTR from 1 week to 2 hours",
+        "Built machine learning model achieving 73% accuracy for fraud detection"
+      ]
+    },
+    {
+      "title": "Junior Backend Developer",
+      "employer": "Cisco",
+      "start_date": "2021-05",
+      "end_date": "2022-05",
+      "tech_stack": [
+        "SQL",
+        "Tableau",
+        "ETL",
+        "Data Modeling",
+        "Looker"
+      ],
+      "achievements": [
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Designed API serving 1M+ requests per second with sub-50ms latency",
+        "Led migration of 3 microservices to Kubernetes, improving deployment frequency by 45%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MS",
+      "field": "Computer Science",
+      "university": "Cornell University"
+    }
+  ],
+  "certifications": [
+    "Databricks Certified Data Engineer"
+  ],
+  "skills": {
+    "technical": [
+      "Python",
+      "Scikit-learn",
+      "Pandas",
+      "Tableau",
+      "PyTorch",
+      "Airflow",
+      "NumPy",
+      "Kafka",
+      "TensorFlow"
+    ],
+    "soft": [
+      "Critical Thinking",
+      "Emotional Intelligence",
+      "Adaptability",
+      "Time Management"
+    ]
+  }
+}

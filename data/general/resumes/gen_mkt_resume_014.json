@@ -1,0 +1,80 @@
+{
+  "id": "gen_mkt_resume_014",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Margaret Flores",
+    "email": "margaret.flores@email.com",
+    "phone": "(691) 496-5623",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/margaretflores"
+  },
+  "summary": "Creative and data-driven product marketing professional with 3+ years of experience. Expert in Competitive Analysis, Pricing Strategy, Demo Development. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "junior",
+  "years_experience": 3,
+  "primary_specialty": "product_marketing",
+  "experience": [
+    {
+      "title": "VP of Marketing",
+      "employer": "Meta",
+      "start_date": "2025-08",
+      "end_date": "Present",
+      "channels": [
+        "Customer Research",
+        "Product Positioning",
+        "Messaging",
+        "Launch Planning"
+      ],
+      "achievements": [
+        "Reduced customer acquisition cost by 15% while scaling spend $150K",
+        "Built marketing analytics dashboard tracking 100+ KPIs across channels",
+        "Generated $150M in pipeline through demand generation campaigns"
+      ]
+    },
+    {
+      "title": "Product Marketing Manager",
+      "employer": "Buffer",
+      "start_date": "2023-04",
+      "end_date": "2025-04",
+      "channels": [
+        "Messaging",
+        "Customer Research",
+        "Launch Planning",
+        "Competitive Analysis"
+      ],
+      "achievements": [
+        "Reduced customer acquisition cost by 68% while scaling spend $150K",
+        "Generated $200M in pipeline through demand generation campaigns",
+        "Managed $150M annual marketing budget across 20 channels",
+        "Built marketing analytics dashboard tracking 50+ KPIs across channels"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "UC Berkeley"
+    }
+  ],
+  "certifications": [
+    "Pragmatic Marketing Certified"
+  ],
+  "skills": {
+    "marketing": [
+      "Competitive Analysis",
+      "Product Positioning",
+      "Demo Development",
+      "Pricing Strategy",
+      "Sales Enablement",
+      "Battle Cards",
+      "Messaging",
+      "Launch Planning"
+    ],
+    "soft": [
+      "Time Management",
+      "Decision Making",
+      "Team Leadership",
+      "Mentoring"
+    ]
+  }
+}

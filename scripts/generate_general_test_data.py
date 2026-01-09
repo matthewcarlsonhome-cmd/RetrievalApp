@@ -1,27 +1,337 @@
 #!/usr/bin/env python3
 """
-Generate test data for General IT/Business Resume Matching System.
+Generalized Test Data Generator
 
-Creates:
-- 100 generalized IT and Business professional resumes with varying experience levels
-- 30 job descriptions for IT, marketing, business analysis, managers, directors, VPs
+Creates diverse test data for IT, Business, and Marketing domains:
+- 100 resumes with varying experience levels (Entry/Junior/Mid/Senior/Lead/Director/VP)
+- 30 job descriptions across IT, Marketing, Business Analysis, Management, and Executive levels
+
+This complements the healthcare-specific test data for domain generalization testing.
+
+Author: Engineering Team
+Version: 1.0.0
 """
 
 import json
-import random
 import os
-import argparse
-from pathlib import Path
+import random
 from datetime import datetime, timedelta
+from pathlib import Path
+from typing import Dict, List, Any, Tuple
+
+# Seed for reproducibility
+random.seed(42)
 
 # =============================================================================
-# RESUME DATA POOLS
+# CONFIGURATION
+# =============================================================================
+
+OUTPUT_DIR = Path("data/general")
+RESUMES_DIR = OUTPUT_DIR / "resumes"
+JOBS_DIR = OUTPUT_DIR / "job_descriptions"
+
+# Experience levels and their characteristics
+EXPERIENCE_LEVELS = {
+    "entry": {"years": (0, 2), "title_prefix": "", "weight": 0.15},
+    "junior": {"years": (1, 3), "title_prefix": "Junior ", "weight": 0.20},
+    "mid": {"years": (3, 6), "title_prefix": "", "weight": 0.25},
+    "senior": {"years": (5, 10), "title_prefix": "Senior ", "weight": 0.20},
+    "lead": {"years": (7, 12), "title_prefix": "Lead ", "weight": 0.10},
+    "director": {"years": (10, 18), "title_prefix": "Director of ", "weight": 0.07},
+    "vp": {"years": (12, 25), "title_prefix": "VP of ", "weight": 0.03},
+}
+
+# =============================================================================
+# DOMAIN DATA: IT
+# =============================================================================
+
+IT_TECH_STACKS = {
+    "cloud": {
+        "primary": ["AWS", "Azure", "Google Cloud", "Multi-Cloud"],
+        "skills": ["EC2", "S3", "Lambda", "CloudFormation", "Terraform", "Kubernetes",
+                   "Docker", "Azure DevOps", "GKE", "IAM", "VPC", "CloudWatch"],
+        "certifications": [
+            "AWS Solutions Architect - Associate",
+            "AWS Solutions Architect - Professional",
+            "AWS DevOps Engineer",
+            "Azure Administrator Associate",
+            "Azure Solutions Architect Expert",
+            "Google Cloud Professional Cloud Architect",
+            "Certified Kubernetes Administrator (CKA)",
+            "HashiCorp Terraform Associate",
+        ]
+    },
+    "fullstack": {
+        "primary": ["JavaScript/TypeScript", "Python", "Java", ".NET"],
+        "skills": ["React", "Angular", "Vue.js", "Node.js", "Express", "Django",
+                   "Flask", "Spring Boot", "PostgreSQL", "MongoDB", "Redis", "GraphQL",
+                   "REST APIs", "Microservices", "Git", "CI/CD"],
+        "certifications": [
+            "AWS Certified Developer",
+            "MongoDB Certified Developer",
+            "Oracle Certified Professional Java Developer",
+            "Microsoft Certified: Azure Developer Associate",
+        ]
+    },
+    "data": {
+        "primary": ["Python", "SQL", "Spark", "Data Engineering"],
+        "skills": ["Pandas", "NumPy", "Scikit-learn", "TensorFlow", "PyTorch",
+                   "Snowflake", "Databricks", "Airflow", "dbt", "Kafka",
+                   "ETL", "Data Modeling", "Power BI", "Tableau", "Looker"],
+        "certifications": [
+            "Google Professional Data Engineer",
+            "AWS Data Analytics Specialty",
+            "Databricks Certified Data Engineer",
+            "Snowflake SnowPro Core",
+            "Microsoft Certified: Data Analyst Associate",
+        ]
+    },
+    "security": {
+        "primary": ["Security Engineering", "Cloud Security", "AppSec"],
+        "skills": ["SIEM", "Penetration Testing", "Vulnerability Assessment",
+                   "SOC Operations", "Incident Response", "Firewall", "IDS/IPS",
+                   "OWASP", "Security Compliance", "Risk Assessment", "IAM"],
+        "certifications": [
+            "CISSP",
+            "CEH (Certified Ethical Hacker)",
+            "CompTIA Security+",
+            "AWS Security Specialty",
+            "CISM",
+            "OSCP",
+        ]
+    },
+    "devops": {
+        "primary": ["DevOps", "SRE", "Platform Engineering"],
+        "skills": ["Jenkins", "GitLab CI", "GitHub Actions", "ArgoCD",
+                   "Ansible", "Puppet", "Chef", "Prometheus", "Grafana",
+                   "ELK Stack", "Helm", "Service Mesh", "Istio"],
+        "certifications": [
+            "AWS DevOps Engineer Professional",
+            "Certified Kubernetes Administrator",
+            "HashiCorp Vault Associate",
+            "GitLab Certified Associate",
+        ]
+    }
+}
+
+IT_ROLES = [
+    "Software Engineer", "Software Developer", "Backend Developer", "Frontend Developer",
+    "Full Stack Developer", "DevOps Engineer", "Site Reliability Engineer",
+    "Cloud Engineer", "Data Engineer", "Data Scientist", "ML Engineer",
+    "Security Engineer", "Platform Engineer", "Solutions Architect",
+    "Systems Administrator", "Network Engineer", "Database Administrator",
+    "QA Engineer", "Test Automation Engineer", "Technical Lead",
+    "Engineering Manager", "IT Project Manager", "Scrum Master"
+]
+
+IT_EMPLOYERS = [
+    "Google", "Amazon", "Microsoft", "Meta", "Apple", "Netflix", "Salesforce",
+    "Oracle", "IBM", "Cisco", "VMware", "ServiceNow", "Workday", "Splunk",
+    "Datadog", "Snowflake", "Databricks", "Stripe", "Square", "Shopify",
+    "Uber", "Lyft", "Airbnb", "DoorDash", "Instacart", "Robinhood",
+    "Accenture", "Deloitte", "McKinsey Digital", "BCG Platinion",
+    "Capital One", "JPMorgan Chase", "Goldman Sachs", "Morgan Stanley",
+    "Fidelity", "Charles Schwab", "Bloomberg", "Thomson Reuters"
+]
+
+IT_ACHIEVEMENTS = [
+    "Reduced system latency by {percent}% through optimization of database queries and caching strategies",
+    "Led migration of {count} microservices to Kubernetes, improving deployment frequency by {percent}%",
+    "Architected data pipeline processing {volume}+ events per day with 99.9% reliability",
+    "Implemented CI/CD pipeline reducing deployment time from {old_time} to {new_time}",
+    "Built machine learning model achieving {percent}% accuracy for fraud detection",
+    "Designed API serving {volume}+ requests per second with sub-{latency}ms latency",
+    "Reduced infrastructure costs by ${amount}K annually through cloud optimization",
+    "Mentored team of {count} engineers, improving code review quality by {percent}%",
+    "Implemented security controls achieving SOC 2 Type II certification",
+    "Developed automation reducing manual operations by {percent}%",
+    "Led incident response for critical outage, reducing MTTR from {old_time} to {new_time}",
+    "Architected event-driven system handling {volume}+ daily transactions",
+]
+
+# =============================================================================
+# DOMAIN DATA: BUSINESS
+# =============================================================================
+
+BUSINESS_SPECIALTIES = {
+    "analysis": {
+        "primary": ["Business Analysis", "Process Improvement", "Requirements"],
+        "skills": ["Requirements Gathering", "Process Mapping", "BPMN", "User Stories",
+                   "Stakeholder Management", "Gap Analysis", "Use Cases", "UAT",
+                   "Agile", "Scrum", "JIRA", "Confluence", "SQL", "Excel"],
+        "certifications": [
+            "CBAP (Certified Business Analysis Professional)",
+            "PMI-PBA",
+            "IIBA Entry Certificate in Business Analysis",
+            "Six Sigma Green Belt",
+            "Agile Certified Practitioner (PMI-ACP)",
+        ]
+    },
+    "product": {
+        "primary": ["Product Management", "Product Strategy", "Product Development"],
+        "skills": ["Product Roadmapping", "A/B Testing", "User Research", "Competitive Analysis",
+                   "OKRs", "KPIs", "PRDs", "Feature Prioritization", "Go-to-Market",
+                   "Figma", "Amplitude", "Mixpanel", "Segment"],
+        "certifications": [
+            "Certified Scrum Product Owner (CSPO)",
+            "Product School Certification",
+            "Pragmatic Marketing Certified",
+        ]
+    },
+    "project": {
+        "primary": ["Project Management", "Program Management", "PMO"],
+        "skills": ["Project Planning", "Risk Management", "Budget Management",
+                   "Resource Allocation", "Gantt Charts", "MS Project", "Smartsheet",
+                   "Stakeholder Communication", "Change Management", "RAID Log"],
+        "certifications": [
+            "PMP (Project Management Professional)",
+            "PRINCE2 Practitioner",
+            "Certified ScrumMaster (CSM)",
+            "PMI-ACP",
+            "CAPM",
+        ]
+    },
+    "operations": {
+        "primary": ["Operations Management", "Process Excellence", "Supply Chain"],
+        "skills": ["Process Optimization", "Lean Management", "Six Sigma",
+                   "Vendor Management", "Contract Negotiation", "SLA Management",
+                   "Capacity Planning", "Quality Assurance", "KPI Tracking"],
+        "certifications": [
+            "Six Sigma Black Belt",
+            "Lean Six Sigma Master Black Belt",
+            "APICS CSCP",
+            "CPSM (Certified Supply Management)",
+        ]
+    }
+}
+
+BUSINESS_ROLES = [
+    "Business Analyst", "Senior Business Analyst", "Lead Business Analyst",
+    "Product Manager", "Senior Product Manager", "Principal Product Manager",
+    "Project Manager", "Senior Project Manager", "Program Manager",
+    "Operations Manager", "Operations Director", "Chief Operating Officer",
+    "Strategy Analyst", "Strategy Manager", "Strategy Director",
+    "Process Improvement Specialist", "Business Process Manager",
+    "Business Development Manager", "Partnership Manager",
+    "Chief of Staff", "Management Consultant"
+]
+
+BUSINESS_EMPLOYERS = [
+    "McKinsey & Company", "Boston Consulting Group", "Bain & Company",
+    "Deloitte Consulting", "Accenture Strategy", "KPMG Advisory",
+    "EY-Parthenon", "PwC Strategy&", "Oliver Wyman", "A.T. Kearney",
+    "Amazon", "Google", "Microsoft", "Salesforce", "Adobe",
+    "Walmart", "Target", "Home Depot", "Costco",
+    "JPMorgan Chase", "Bank of America", "Citigroup", "Wells Fargo",
+    "UnitedHealth Group", "CVS Health", "Anthem", "Humana",
+    "Procter & Gamble", "Johnson & Johnson", "Pfizer", "Merck"
+]
+
+BUSINESS_ACHIEVEMENTS = [
+    "Led digital transformation initiative resulting in ${amount}M annual savings",
+    "Developed requirements for system serving {count}+ users across {regions} regions",
+    "Managed ${amount}M project budget with delivery {percent}% under budget",
+    "Improved process efficiency by {percent}% through Lean Six Sigma implementation",
+    "Launched product feature increasing user engagement by {percent}%",
+    "Negotiated vendor contracts saving ${amount}K annually",
+    "Facilitated {count}+ stakeholder workshops for enterprise requirements",
+    "Reduced project delivery time by {percent}% through Agile transformation",
+    "Built business case for ${amount}M technology investment with {percent}% ROI",
+    "Managed cross-functional team of {count} across {regions} time zones",
+]
+
+# =============================================================================
+# DOMAIN DATA: MARKETING
+# =============================================================================
+
+MARKETING_SPECIALTIES = {
+    "digital": {
+        "primary": ["Digital Marketing", "Performance Marketing", "Growth"],
+        "skills": ["SEO", "SEM", "PPC", "Google Ads", "Facebook Ads", "LinkedIn Ads",
+                   "Email Marketing", "Marketing Automation", "A/B Testing",
+                   "Google Analytics", "HubSpot", "Marketo", "Salesforce Marketing Cloud"],
+        "certifications": [
+            "Google Ads Certification",
+            "Google Analytics Certification",
+            "HubSpot Inbound Marketing",
+            "Facebook Blueprint Certification",
+            "Hootsuite Social Marketing",
+        ]
+    },
+    "content": {
+        "primary": ["Content Marketing", "Content Strategy", "Brand"],
+        "skills": ["Content Strategy", "Copywriting", "SEO Content", "Editorial Planning",
+                   "Brand Voice", "Storytelling", "Video Production", "Podcasting",
+                   "WordPress", "Webflow", "Adobe Creative Suite"],
+        "certifications": [
+            "Content Marketing Institute Certification",
+            "HubSpot Content Marketing",
+            "Copyblogger Certified Content Marketer",
+        ]
+    },
+    "analytics": {
+        "primary": ["Marketing Analytics", "Customer Insights", "Market Research"],
+        "skills": ["Data Analysis", "Marketing Attribution", "Customer Segmentation",
+                   "CLV Analysis", "Cohort Analysis", "SQL", "Tableau", "Looker",
+                   "Google Analytics 4", "Amplitude", "Mixpanel"],
+        "certifications": [
+            "Google Analytics 4 Certification",
+            "Tableau Desktop Specialist",
+            "Marketing Research Association (MRA)",
+        ]
+    },
+    "product_marketing": {
+        "primary": ["Product Marketing", "Go-to-Market", "Positioning"],
+        "skills": ["Product Positioning", "Competitive Analysis", "Sales Enablement",
+                   "Launch Planning", "Messaging", "Customer Research", "Pricing Strategy",
+                   "Battle Cards", "Demo Development"],
+        "certifications": [
+            "Product Marketing Alliance Certification",
+            "Pragmatic Marketing Certified",
+        ]
+    }
+}
+
+MARKETING_ROLES = [
+    "Marketing Coordinator", "Marketing Specialist", "Marketing Manager",
+    "Digital Marketing Manager", "Growth Marketing Manager",
+    "Content Marketing Manager", "Content Strategist",
+    "Brand Manager", "Brand Director", "VP of Brand",
+    "Demand Generation Manager", "Marketing Operations Manager",
+    "Product Marketing Manager", "Senior Product Marketing Manager",
+    "Marketing Analytics Manager", "Customer Insights Manager",
+    "CMO", "VP of Marketing", "Director of Marketing"
+]
+
+MARKETING_EMPLOYERS = [
+    "Google", "Meta", "Amazon", "Apple", "Netflix", "Spotify", "Adobe",
+    "HubSpot", "Salesforce", "Mailchimp", "Hootsuite", "Buffer",
+    "Nike", "Coca-Cola", "PepsiCo", "Unilever", "P&G",
+    "Ogilvy", "Wieden+Kennedy", "BBDO", "DDB", "Leo Burnett",
+    "VaynerMedia", "R/GA", "Huge", "AKQA", "Droga5"
+]
+
+MARKETING_ACHIEVEMENTS = [
+    "Increased organic traffic by {percent}% through SEO optimization strategy",
+    "Generated ${amount}M in pipeline through demand generation campaigns",
+    "Achieved {percent}% improvement in email open rates through A/B testing",
+    "Launched product to {count}K customers with {percent}% activation rate",
+    "Reduced customer acquisition cost by {percent}% while scaling spend ${amount}K",
+    "Built marketing analytics dashboard tracking {count}+ KPIs across channels",
+    "Led rebranding initiative increasing brand awareness by {percent}%",
+    "Managed ${amount}M annual marketing budget across {count} channels",
+    "Developed content strategy resulting in {count}K monthly blog visitors",
+    "Created sales enablement materials improving win rate by {percent}%",
+]
+
+# =============================================================================
+# COMMON DATA
 # =============================================================================
 
 FIRST_NAMES = [
     "James", "Mary", "John", "Patricia", "Robert", "Jennifer", "Michael", "Linda",
     "William", "Elizabeth", "David", "Barbara", "Richard", "Susan", "Joseph", "Jessica",
-    "Thomas", "Sarah", "Charles", "Karen", "Christopher", "Nancy", "Daniel", "Lisa",
+    "Thomas", "Sarah", "Charles", "Karen", "Christopher", "Lisa", "Daniel", "Nancy",
     "Matthew", "Betty", "Anthony", "Margaret", "Mark", "Sandra", "Donald", "Ashley",
     "Steven", "Kimberly", "Paul", "Emily", "Andrew", "Donna", "Joshua", "Michelle",
     "Kenneth", "Dorothy", "Kevin", "Carol", "Brian", "Amanda", "George", "Melissa",
@@ -30,1068 +340,1016 @@ FIRST_NAMES = [
     "Nicholas", "Angela", "Eric", "Shirley", "Jonathan", "Anna", "Stephen", "Brenda",
     "Larry", "Pamela", "Justin", "Emma", "Scott", "Nicole", "Brandon", "Helen",
     "Benjamin", "Samantha", "Samuel", "Katherine", "Raymond", "Christine", "Gregory", "Debra",
-    "Frank", "Rachel", "Alexander", "Carolyn", "Patrick", "Janet"
+    "Frank", "Rachel", "Alexander", "Carolyn", "Patrick", "Janet", "Jack", "Catherine",
+    "Wei", "Priya", "Mohammed", "Fatima", "Raj", "Aisha", "Chen", "Mei",
+    "Hiroshi", "Yuki", "Carlos", "Maria", "Ahmed", "Leila", "Dmitri", "Olga",
+    "Sanjay", "Deepika", "Kwame", "Ama", "Tao", "Xiu", "Jamal", "Zara"
 ]
 
 LAST_NAMES = [
     "Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis",
-    "Rodriguez", "Martinez", "Hernandez", "Lopez", "Gonzalez", "Wilson", "Anderson", "Thomas",
-    "Taylor", "Moore", "Jackson", "Martin", "Lee", "Perez", "Thompson", "White",
-    "Harris", "Sanchez", "Clark", "Ramirez", "Lewis", "Robinson", "Walker", "Young",
-    "Allen", "King", "Wright", "Scott", "Torres", "Nguyen", "Hill", "Flores",
-    "Green", "Adams", "Nelson", "Baker", "Hall", "Rivera", "Campbell", "Mitchell",
-    "Carter", "Roberts", "Patel", "Chen", "Kim", "Park", "Wong", "Zhang",
-    "Singh", "Kumar", "Sharma", "Gupta", "Shah", "O'Brien", "Murphy", "Kelly"
+    "Rodriguez", "Martinez", "Hernandez", "Lopez", "Gonzalez", "Wilson", "Anderson",
+    "Thomas", "Taylor", "Moore", "Jackson", "Martin", "Lee", "Perez", "Thompson",
+    "White", "Harris", "Sanchez", "Clark", "Ramirez", "Lewis", "Robinson", "Walker",
+    "Young", "Allen", "King", "Wright", "Scott", "Torres", "Nguyen", "Hill",
+    "Flores", "Green", "Adams", "Nelson", "Baker", "Hall", "Rivera", "Campbell",
+    "Mitchell", "Carter", "Roberts", "Gomez", "Phillips", "Evans", "Turner", "Diaz",
+    "Parker", "Cruz", "Edwards", "Collins", "Reyes", "Stewart", "Morris", "Morales",
+    "Murphy", "Cook", "Rogers", "Gutierrez", "Ortiz", "Morgan", "Cooper", "Peterson",
+    "Bailey", "Reed", "Kelly", "Howard", "Ramos", "Kim", "Cox", "Ward",
+    "Richardson", "Watson", "Brooks", "Chavez", "Wood", "James", "Bennett", "Gray",
+    "Patel", "Singh", "Chen", "Wang", "Li", "Zhang", "Liu", "Yang",
+    "Kumar", "Shah", "Sharma", "Gupta", "Joshi", "Desai", "Mehta", "Rao",
+    "Yamamoto", "Tanaka", "Suzuki", "Watanabe", "Nakamura", "Kobayashi"
 ]
 
-# Experience levels with characteristics
-EXPERIENCE_LEVELS = {
-    "beginner": {
-        "years_range": (0, 2),
-        "title_prefixes": ["Junior ", "Associate ", "Entry-Level ", ""],
-        "skill_count": (5, 8),
-        "cert_count": (0, 2),
-        "achievement_scale": "small"
-    },
-    "intermediate": {
-        "years_range": (3, 5),
-        "title_prefixes": ["", "Mid-Level "],
-        "skill_count": (8, 12),
-        "cert_count": (1, 3),
-        "achievement_scale": "medium"
-    },
-    "advanced": {
-        "years_range": (6, 10),
-        "title_prefixes": ["Senior ", "Lead ", "Staff "],
-        "skill_count": (12, 18),
-        "cert_count": (2, 5),
-        "achievement_scale": "large"
-    },
-    "expert": {
-        "years_range": (11, 20),
-        "title_prefixes": ["Principal ", "Senior ", "Lead ", "Staff "],
-        "skill_count": (15, 25),
-        "cert_count": (3, 7),
-        "achievement_scale": "enterprise"
-    }
-}
-
-# =============================================================================
-# IT SKILLS AND TECHNOLOGIES
-# =============================================================================
-
-PROGRAMMING_LANGUAGES = [
-    "Python", "JavaScript", "TypeScript", "Java", "C#", "C++", "Go", "Rust",
-    "Ruby", "PHP", "Swift", "Kotlin", "Scala", "R", "MATLAB", "SQL", "Bash"
+LOCATIONS = [
+    "San Francisco, CA", "New York, NY", "Seattle, WA", "Austin, TX",
+    "Boston, MA", "Chicago, IL", "Los Angeles, CA", "Denver, CO",
+    "Atlanta, GA", "Miami, FL", "Dallas, TX", "San Diego, CA",
+    "Phoenix, AZ", "Portland, OR", "Minneapolis, MN", "Detroit, MI",
+    "Philadelphia, PA", "Washington, DC", "Raleigh, NC", "Nashville, TN",
+    "Salt Lake City, UT", "Charlotte, NC", "Tampa, FL", "Orlando, FL",
+    "Remote", "Remote", "Remote"  # Higher weight for remote
 ]
 
-FRAMEWORKS_LIBRARIES = [
-    "React", "Angular", "Vue.js", "Node.js", "Django", "Flask", "Spring Boot",
-    ".NET Core", "Express.js", "FastAPI", "Ruby on Rails", "Laravel", "Next.js",
-    "TensorFlow", "PyTorch", "Pandas", "NumPy", "Scikit-learn", "Keras"
-]
-
-CLOUD_PLATFORMS = [
-    "AWS", "Azure", "Google Cloud Platform", "Heroku", "DigitalOcean",
-    "AWS Lambda", "Azure Functions", "Google Cloud Functions", "Kubernetes",
-    "Docker", "Terraform", "CloudFormation", "Ansible", "Jenkins", "GitLab CI/CD"
-]
-
-DATABASES = [
-    "PostgreSQL", "MySQL", "MongoDB", "Redis", "Elasticsearch", "Oracle",
-    "SQL Server", "DynamoDB", "Cassandra", "Neo4j", "SQLite", "MariaDB"
-]
-
-IT_TOOLS = [
-    "Git", "GitHub", "GitLab", "Bitbucket", "Jira", "Confluence", "Slack",
-    "VS Code", "IntelliJ IDEA", "Postman", "Figma", "Adobe XD", "Sketch",
-    "Splunk", "Datadog", "New Relic", "Grafana", "Prometheus", "ELK Stack"
-]
-
-DATA_SKILLS = [
-    "Data Analysis", "Data Visualization", "ETL", "Data Warehousing",
-    "Business Intelligence", "Tableau", "Power BI", "Looker", "Qlik",
-    "Apache Spark", "Hadoop", "Airflow", "dbt", "Snowflake", "Databricks"
-]
-
-# =============================================================================
-# BUSINESS SKILLS
-# =============================================================================
-
-BUSINESS_SKILLS = [
-    "Project Management", "Agile Methodology", "Scrum", "Kanban", "Waterfall",
-    "Business Analysis", "Requirements Gathering", "Stakeholder Management",
-    "Strategic Planning", "Budget Management", "Resource Planning", "Risk Management",
-    "Process Improvement", "Change Management", "Vendor Management", "Contract Negotiation",
-    "Team Leadership", "Cross-functional Collaboration", "Executive Communication",
-    "KPI Development", "Performance Metrics", "ROI Analysis", "Cost-Benefit Analysis"
-]
-
-MARKETING_SKILLS = [
-    "Digital Marketing", "SEO", "SEM", "PPC Advertising", "Social Media Marketing",
-    "Content Marketing", "Email Marketing", "Marketing Automation", "CRM Management",
-    "Google Analytics", "HubSpot", "Salesforce Marketing Cloud", "Marketo",
-    "Brand Management", "Market Research", "Competitive Analysis", "Campaign Management",
-    "Lead Generation", "Conversion Optimization", "A/B Testing", "Customer Segmentation"
-]
-
-SOFT_SKILLS = [
-    "Communication", "Leadership", "Problem Solving", "Critical Thinking",
-    "Teamwork", "Adaptability", "Time Management", "Attention to Detail",
-    "Presentation Skills", "Negotiation", "Conflict Resolution", "Mentoring",
-    "Decision Making", "Creativity", "Emotional Intelligence", "Active Listening"
-]
-
-# =============================================================================
-# CERTIFICATIONS
-# =============================================================================
-
-IT_CERTIFICATIONS = [
-    "AWS Certified Solutions Architect - Associate",
-    "AWS Certified Solutions Architect - Professional",
-    "AWS Certified Developer - Associate",
-    "Azure Administrator Associate",
-    "Azure Solutions Architect Expert",
-    "Google Cloud Professional Cloud Architect",
-    "Certified Kubernetes Administrator (CKA)",
-    "Certified Information Systems Security Professional (CISSP)",
-    "CompTIA Security+",
-    "CompTIA Network+",
-    "CompTIA A+",
-    "Cisco Certified Network Associate (CCNA)",
-    "Oracle Certified Professional",
-    "Microsoft Certified: Azure Developer Associate",
-    "HashiCorp Certified: Terraform Associate",
-    "Certified ScrumMaster (CSM)",
-    "Professional Scrum Master (PSM I)",
-    "ITIL Foundation",
-    "PMP (Project Management Professional)"
-]
-
-BUSINESS_CERTIFICATIONS = [
-    "PMP (Project Management Professional)",
-    "Certified Business Analysis Professional (CBAP)",
-    "Six Sigma Green Belt",
-    "Six Sigma Black Belt",
-    "Lean Six Sigma Certification",
-    "Certified Scrum Product Owner (CSPO)",
-    "SAFe Agilist Certification",
-    "PRINCE2 Foundation",
-    "PRINCE2 Practitioner",
-    "Certified Management Consultant (CMC)",
-    "Certified Financial Analyst (CFA)",
-    "Google Analytics Certification",
-    "HubSpot Inbound Marketing Certification",
-    "Salesforce Administrator Certification",
-    "Certified Digital Marketing Professional"
-]
-
-# =============================================================================
-# COMPANIES AND INDUSTRIES
-# =============================================================================
-
-TECH_COMPANIES = [
-    "Google", "Microsoft", "Amazon", "Apple", "Meta", "Netflix", "Salesforce",
-    "Adobe", "Oracle", "IBM", "Cisco", "Intel", "NVIDIA", "VMware", "ServiceNow",
-    "Workday", "Splunk", "Atlassian", "Twilio", "Stripe", "Square", "Shopify",
-    "Zoom", "Slack", "Dropbox", "DocuSign", "Cloudflare", "Datadog", "MongoDB"
-]
-
-CONSULTING_FIRMS = [
-    "Deloitte", "McKinsey & Company", "Boston Consulting Group", "Bain & Company",
-    "Accenture", "PwC", "EY", "KPMG", "Capgemini", "Cognizant", "Infosys",
-    "Wipro", "Tata Consultancy Services", "HCL Technologies", "Tech Mahindra"
-]
-
-FORTUNE_500 = [
-    "Walmart", "ExxonMobil", "Berkshire Hathaway", "UnitedHealth Group", "CVS Health",
-    "General Motors", "Ford Motor", "AT&T", "Verizon", "JPMorgan Chase",
-    "Bank of America", "Citigroup", "Wells Fargo", "Goldman Sachs", "Morgan Stanley",
-    "Procter & Gamble", "Johnson & Johnson", "Pfizer", "Merck", "AbbVie",
-    "Target", "Home Depot", "Lowe's", "Costco", "Kroger", "Walgreens"
-]
-
-STARTUPS = [
-    "TechVenture Labs", "InnovateCo", "DataDriven Inc", "CloudFirst Solutions",
-    "AI Dynamics", "NextGen Software", "Digital Horizons", "Agile Systems",
-    "Smart Analytics", "Rapid Growth Tech", "Disrupt Technologies", "Scale Up Inc",
-    "Future Forward", "Tech Pioneers", "Innovation Hub", "Growth Engine"
+DEGREES = [
+    ("BS", "Computer Science"),
+    ("BS", "Information Technology"),
+    ("BS", "Software Engineering"),
+    ("BS", "Data Science"),
+    ("BS", "Business Administration"),
+    ("BS", "Marketing"),
+    ("BS", "Economics"),
+    ("BS", "Finance"),
+    ("BA", "Communications"),
+    ("BA", "Psychology"),
+    ("BS", "Mathematics"),
+    ("BS", "Statistics"),
+    ("MBA", "Business Administration"),
+    ("MS", "Computer Science"),
+    ("MS", "Data Science"),
+    ("MS", "Information Systems"),
+    ("MS", "Business Analytics"),
 ]
 
 UNIVERSITIES = [
-    "MIT", "Stanford University", "Harvard University", "UC Berkeley",
-    "Carnegie Mellon University", "Georgia Tech", "University of Michigan",
-    "University of Texas at Austin", "University of Illinois", "Purdue University",
-    "Cornell University", "Columbia University", "UCLA", "University of Washington",
-    "Northwestern University", "Duke University", "University of Pennsylvania",
-    "New York University", "Boston University", "University of Southern California",
-    "University of Wisconsin", "Ohio State University", "Penn State University",
-    "Arizona State University", "University of Florida", "University of Colorado"
+    "Stanford University", "MIT", "Harvard University", "UC Berkeley",
+    "Carnegie Mellon University", "Georgia Tech", "University of Washington",
+    "University of Texas at Austin", "University of Michigan", "UCLA",
+    "Columbia University", "NYU", "University of Pennsylvania", "Cornell University",
+    "Northwestern University", "Duke University", "USC", "University of Illinois",
+    "Purdue University", "Penn State", "Ohio State University", "University of Florida",
+    "Arizona State University", "University of Colorado", "University of Maryland",
+    "Boston University", "Northeastern University", "University of Virginia"
 ]
 
-# =============================================================================
-# JOB TITLES BY CATEGORY
-# =============================================================================
+SOFT_SKILLS = [
+    "Team Leadership", "Cross-functional Collaboration", "Strategic Thinking",
+    "Problem Solving", "Communication", "Stakeholder Management",
+    "Mentoring", "Conflict Resolution", "Negotiation", "Presentation Skills",
+    "Time Management", "Adaptability", "Critical Thinking", "Decision Making",
+    "Emotional Intelligence", "Influence", "Coaching", "Change Management"
+]
 
-IT_TITLES = {
-    "development": [
-        "Software Engineer", "Software Developer", "Full Stack Developer",
-        "Backend Developer", "Frontend Developer", "Mobile Developer",
-        "DevOps Engineer", "Site Reliability Engineer", "Platform Engineer",
-        "Data Engineer", "Machine Learning Engineer", "AI Engineer"
-    ],
-    "infrastructure": [
-        "Systems Administrator", "Network Engineer", "Cloud Engineer",
-        "Security Engineer", "Database Administrator", "IT Support Specialist",
-        "Infrastructure Engineer", "Solutions Architect", "Technical Architect"
-    ],
-    "data": [
-        "Data Analyst", "Data Scientist", "Business Intelligence Analyst",
-        "Data Architect", "Analytics Engineer", "Quantitative Analyst"
-    ],
-    "product": [
-        "Product Manager", "Technical Product Manager", "Product Owner",
-        "Program Manager", "Technical Program Manager", "Scrum Master"
-    ]
-}
-
-BUSINESS_TITLES = {
-    "analysis": [
-        "Business Analyst", "Systems Analyst", "Process Analyst",
-        "Operations Analyst", "Strategy Analyst", "Financial Analyst"
-    ],
-    "marketing": [
-        "Marketing Manager", "Digital Marketing Specialist", "Content Strategist",
-        "SEO Specialist", "Marketing Analyst", "Brand Manager",
-        "Social Media Manager", "Growth Marketing Manager", "Product Marketing Manager"
-    ],
-    "management": [
-        "Project Manager", "Operations Manager", "Account Manager",
-        "Customer Success Manager", "Delivery Manager", "Engagement Manager"
-    ]
-}
-
-LEADERSHIP_TITLES = {
-    "manager": [
-        "Engineering Manager", "IT Manager", "Marketing Manager",
-        "Business Development Manager", "Operations Manager", "Analytics Manager"
-    ],
-    "director": [
-        "Director of Engineering", "IT Director", "Director of Marketing",
-        "Director of Business Development", "Director of Operations",
-        "Director of Product", "Director of Analytics", "Director of Data Science"
-    ],
-    "vp": [
-        "VP of Engineering", "VP of Technology", "VP of Marketing",
-        "VP of Sales", "VP of Operations", "VP of Product",
-        "VP of Business Development", "VP of Strategy", "VP of Data"
-    ],
-    "c_level": [
-        "CTO", "CIO", "CMO", "COO", "Chief Data Officer", "Chief Digital Officer"
-    ]
-}
 
 # =============================================================================
-# ACHIEVEMENT TEMPLATES
+# RESUME GENERATION
 # =============================================================================
 
-TECH_ACHIEVEMENTS = {
-    "small": [
-        "Developed {feature_count} new features for the company's main product",
-        "Improved code test coverage from {old_pct}% to {new_pct}%",
-        "Resolved {ticket_count}+ production issues within SLA targets",
-        "Created technical documentation for {doc_count} internal tools",
-        "Participated in code reviews, providing feedback on {pr_count}+ pull requests"
-    ],
-    "medium": [
-        "Reduced application load time by {pct}% through performance optimization",
-        "Led migration of {service_count} microservices to Kubernetes",
-        "Implemented CI/CD pipeline reducing deployment time by {pct}%",
-        "Mentored {mentee_count} junior developers in best practices",
-        "Designed and built RESTful APIs serving {req_count}M+ requests daily"
-    ],
-    "large": [
-        "Architected scalable system handling {user_count}M+ daily active users",
-        "Led team of {team_size} engineers in delivering critical platform features",
-        "Reduced infrastructure costs by ${savings}K annually through optimization",
-        "Established engineering best practices adopted by {team_count} teams",
-        "Drove technical strategy resulting in {pct}% improvement in system reliability"
-    ],
-    "enterprise": [
-        "Led organization-wide digital transformation initiative impacting {emp_count}+ employees",
-        "Managed ${budget}M technology budget across {dept_count} departments",
-        "Built and scaled engineering organization from {start_size} to {end_size} engineers",
-        "Delivered platform serving {customer_count}M+ customers globally",
-        "Drove strategic initiatives resulting in ${revenue}M revenue growth"
-    ]
-}
+def generate_experience_dates(years_exp: int, num_roles: int) -> List[Tuple[str, str]]:
+    """Generate realistic experience date ranges."""
+    dates = []
+    current_year = datetime.now().year
+    current_month = datetime.now().month
 
-BUSINESS_ACHIEVEMENTS = {
-    "small": [
-        "Analyzed {report_count} business reports to identify improvement opportunities",
-        "Supported {project_count} project implementations successfully",
-        "Created process documentation improving team efficiency by {pct}%",
-        "Managed stakeholder communications for {stakeholder_count} departments"
-    ],
-    "medium": [
-        "Led process improvement initiative saving {hours} hours weekly",
-        "Managed projects totaling ${budget}K in annual budget",
-        "Increased customer satisfaction scores by {pct}% through service improvements",
-        "Developed business cases securing ${funding}K in project funding"
-    ],
-    "large": [
-        "Directed cross-functional initiatives across {dept_count} departments",
-        "Managed portfolio of {project_count} projects worth ${budget}M",
-        "Delivered {pct}% improvement in operational efficiency",
-        "Built and led team of {team_size} analysts and specialists"
-    ],
-    "enterprise": [
-        "Drove strategic initiatives contributing ${revenue}M to bottom line",
-        "Led M&A integration program spanning {location_count} global locations",
-        "Managed P&L responsibility for ${budget}M business unit",
-        "Transformed business operations resulting in {pct}% cost reduction"
-    ]
-}
+    # Start from present and work backwards
+    end_date = "Present"
+    years_remaining = years_exp
 
-MARKETING_ACHIEVEMENTS = {
-    "small": [
-        "Grew social media following by {pct}% across {platform_count} platforms",
-        "Created {content_count}+ pieces of marketing content",
-        "Improved email open rates by {pct}% through A/B testing",
-        "Supported {campaign_count} marketing campaigns"
-    ],
-    "medium": [
-        "Generated {lead_count}+ qualified leads through digital campaigns",
-        "Managed ${budget}K marketing budget with {roi}x ROI",
-        "Increased website traffic by {pct}% through SEO optimization",
-        "Led rebranding initiative across {channel_count} marketing channels"
-    ],
-    "large": [
-        "Drove {pct}% increase in marketing-attributed revenue",
-        "Built and led marketing team of {team_size} specialists",
-        "Managed ${budget}M integrated marketing budget",
-        "Launched {product_count} successful product launches"
-    ],
-    "enterprise": [
-        "Led global marketing transformation across {region_count} regions",
-        "Managed ${budget}M marketing budget driving ${revenue}M pipeline",
-        "Built marketing organization from {start_size} to {end_size} professionals",
-        "Established brand as market leader with {pct}% awareness increase"
-    ]
-}
-
-# =============================================================================
-# HELPER FUNCTIONS
-# =============================================================================
-
-def generate_phone():
-    """Generate a random phone number."""
-    return f"({random.randint(200, 999)}) {random.randint(200, 999)}-{random.randint(1000, 9999)}"
-
-
-def generate_email(first_name, last_name):
-    """Generate email address."""
-    domains = ["gmail.com", "outlook.com", "yahoo.com", "protonmail.com", "icloud.com"]
-    formats = [
-        f"{first_name.lower()}.{last_name.lower()}",
-        f"{first_name.lower()}{last_name.lower()}",
-        f"{first_name[0].lower()}{last_name.lower()}",
-        f"{first_name.lower()}.{last_name.lower()}{random.randint(1, 99)}"
-    ]
-    return f"{random.choice(formats)}@{random.choice(domains)}"
-
-
-def generate_linkedin(first_name, last_name):
-    """Generate LinkedIn URL."""
-    return f"linkedin.com/in/{first_name.lower()}-{last_name.lower()}-{random.randint(1000, 9999)}"
-
-
-def generate_address():
-    """Generate random address."""
-    cities = [
-        ("San Francisco", "CA"), ("New York", "NY"), ("Seattle", "WA"), ("Austin", "TX"),
-        ("Boston", "MA"), ("Chicago", "IL"), ("Los Angeles", "CA"), ("Denver", "CO"),
-        ("Atlanta", "GA"), ("Dallas", "TX"), ("San Jose", "CA"), ("Portland", "OR"),
-        ("Miami", "FL"), ("Phoenix", "AZ"), ("San Diego", "CA"), ("Minneapolis", "MN"),
-        ("Philadelphia", "PA"), ("Washington", "DC"), ("Raleigh", "NC"), ("Salt Lake City", "UT"),
-        ("Nashville", "TN"), ("Charlotte", "NC"), ("Pittsburgh", "PA"), ("Detroit", "MI")
-    ]
-    city, state = random.choice(cities)
-    return f"{city}, {state}"
-
-
-def get_experience_level(years):
-    """Determine experience level based on years."""
-    if years <= 2:
-        return "beginner"
-    elif years <= 5:
-        return "intermediate"
-    elif years <= 10:
-        return "advanced"
-    else:
-        return "expert"
-
-
-def generate_skills_for_role(role_category, level):
-    """Generate appropriate skills based on role and level."""
-    skills = []
-    level_config = EXPERIENCE_LEVELS[level]
-    skill_count = random.randint(*level_config["skill_count"])
-
-    if role_category in ["development", "infrastructure", "data"]:
-        # Technical IT roles
-        skills.extend(random.sample(PROGRAMMING_LANGUAGES, min(4, skill_count // 3)))
-        skills.extend(random.sample(FRAMEWORKS_LIBRARIES, min(3, skill_count // 4)))
-        skills.extend(random.sample(CLOUD_PLATFORMS, min(3, skill_count // 4)))
-        skills.extend(random.sample(DATABASES, min(2, skill_count // 5)))
-        skills.extend(random.sample(IT_TOOLS, min(3, skill_count // 4)))
-        if role_category == "data":
-            skills.extend(random.sample(DATA_SKILLS, min(4, skill_count // 3)))
-    elif role_category in ["analysis", "management", "product"]:
-        # Business/Analysis roles
-        skills.extend(random.sample(BUSINESS_SKILLS, min(6, skill_count // 2)))
-        skills.extend(random.sample(IT_TOOLS[:10], min(3, skill_count // 4)))
-        skills.extend(random.sample(DATA_SKILLS[:8], min(3, skill_count // 4)))
-    elif role_category == "marketing":
-        skills.extend(random.sample(MARKETING_SKILLS, min(8, skill_count // 2)))
-        skills.extend(random.sample(BUSINESS_SKILLS[:10], min(4, skill_count // 3)))
-
-    # Add soft skills based on level
-    soft_skill_count = min(3, skill_count // 4) if level in ["beginner", "intermediate"] else min(5, skill_count // 3)
-    skills.extend(random.sample(SOFT_SKILLS, soft_skill_count))
-
-    return list(set(skills))[:skill_count]
-
-
-def generate_certifications_for_role(role_category, level):
-    """Generate appropriate certifications based on role and level."""
-    level_config = EXPERIENCE_LEVELS[level]
-    cert_count = random.randint(*level_config["cert_count"])
-
-    if cert_count == 0:
-        return []
-
-    if role_category in ["development", "infrastructure", "data"]:
-        certs = random.sample(IT_CERTIFICATIONS, min(cert_count, len(IT_CERTIFICATIONS)))
-    else:
-        # Mix of business and IT certs
-        business_certs = random.sample(BUSINESS_CERTIFICATIONS, min(cert_count // 2 + 1, len(BUSINESS_CERTIFICATIONS)))
-        it_certs = random.sample(IT_CERTIFICATIONS[:10], min(cert_count // 2, 10))
-        certs = business_certs + it_certs
-
-    return certs[:cert_count]
-
-
-def generate_achievement(category, scale):
-    """Generate an achievement based on category and scale."""
-    if category == "tech":
-        templates = TECH_ACHIEVEMENTS[scale]
-    elif category == "marketing":
-        templates = MARKETING_ACHIEVEMENTS[scale]
-    else:
-        templates = BUSINESS_ACHIEVEMENTS[scale]
-
-    template = random.choice(templates)
-
-    # Fill in template values based on scale
-    scale_multipliers = {"small": 1, "medium": 5, "large": 20, "enterprise": 100}
-    mult = scale_multipliers.get(scale, 1)
-
-    return template.format(
-        feature_count=random.randint(5, 15) * mult // 5,
-        old_pct=random.randint(40, 60),
-        new_pct=random.randint(75, 95),
-        ticket_count=random.randint(50, 200) * mult // 5,
-        doc_count=random.randint(5, 20) * mult // 5,
-        pr_count=random.randint(100, 500) * mult // 5,
-        pct=random.randint(15, 50),
-        service_count=random.randint(3, 10) * mult // 5,
-        mentee_count=random.randint(2, 8),
-        req_count=random.choice([1, 5, 10, 50, 100]) * mult // 5,
-        user_count=random.choice([1, 5, 10, 50]) * mult // 5,
-        team_size=random.randint(3, 15) * mult // 5,
-        savings=random.choice([50, 100, 200, 500]) * mult,
-        team_count=random.randint(3, 10) * mult // 5,
-        emp_count=random.choice([100, 500, 1000, 5000]) * mult // 5,
-        budget=random.choice([1, 5, 10, 50]) * mult,
-        dept_count=random.randint(3, 10),
-        start_size=random.randint(5, 20),
-        end_size=random.randint(30, 100) * mult // 5,
-        customer_count=random.choice([1, 10, 50, 100]) * mult // 5,
-        revenue=random.choice([1, 5, 10, 50]) * mult,
-        report_count=random.randint(10, 50),
-        project_count=random.randint(3, 15) * mult // 5,
-        stakeholder_count=random.randint(3, 10),
-        hours=random.randint(10, 50) * mult // 5,
-        funding=random.choice([50, 100, 250, 500]) * mult // 5,
-        location_count=random.randint(5, 20),
-        platform_count=random.randint(3, 6),
-        content_count=random.randint(20, 100) * mult // 5,
-        campaign_count=random.randint(5, 20) * mult // 5,
-        lead_count=random.choice([100, 500, 1000, 5000]) * mult // 5,
-        roi=random.choice([2, 3, 5, 8, 10]),
-        channel_count=random.randint(3, 8),
-        product_count=random.randint(2, 10),
-        region_count=random.randint(3, 10)
-    )
-
-
-def generate_work_experience(years_experience, role_category):
-    """Generate work history for a resume."""
-    experiences = []
-    current_year = 2024
-    years_remaining = years_experience
-
-    while years_remaining > 0 and len(experiences) < 5:
-        duration = min(random.randint(1, 4), years_remaining)
-        end_year = current_year
-        start_year = end_year - duration
-
-        is_current = len(experiences) == 0
-
-        # Progress through career levels
-        career_progress = years_experience - years_remaining
-        level = get_experience_level(career_progress + duration)
-        level_config = EXPERIENCE_LEVELS[level]
-
-        # Choose employer type based on career stage
-        if career_progress < 3:
-            employer_pool = STARTUPS + FORTUNE_500[:10]
-        elif career_progress < 7:
-            employer_pool = TECH_COMPANIES + FORTUNE_500
+    for i in range(num_roles):
+        if i == 0:
+            # Current role: started 1-4 years ago
+            tenure = min(random.randint(1, 4), years_remaining)
+            start_year = current_year - tenure
+            start_month = random.randint(1, 12)
+            start_date = f"{start_year}-{start_month:02d}"
+            dates.append((start_date, end_date))
+            years_remaining -= tenure
         else:
-            employer_pool = TECH_COMPANIES + CONSULTING_FIRMS + FORTUNE_500
+            # Previous roles
+            if years_remaining <= 0:
+                break
 
-        employer = random.choice(employer_pool)
+            # Gap between jobs (0-6 months)
+            gap_months = random.randint(0, 6)
+            prev_start = datetime.strptime(dates[-1][0], "%Y-%m")
+            role_end = prev_start - timedelta(days=gap_months * 30)
 
-        # Get appropriate title
-        if role_category in IT_TITLES:
-            base_title = random.choice(IT_TITLES[role_category])
-        elif role_category in BUSINESS_TITLES:
-            base_title = random.choice(BUSINESS_TITLES[role_category])
-        else:
-            base_title = random.choice(IT_TITLES["development"])
+            # Role duration (1-5 years)
+            tenure = min(random.randint(1, 5), years_remaining)
+            role_start = role_end - timedelta(days=tenure * 365)
 
-        prefix = random.choice(level_config["title_prefixes"])
-        title = prefix + base_title
+            dates.append((
+                role_start.strftime("%Y-%m"),
+                role_end.strftime("%Y-%m")
+            ))
+            years_remaining -= tenure
 
-        # Generate achievements
-        achievement_category = "tech" if role_category in ["development", "infrastructure", "data"] else \
-                             "marketing" if role_category == "marketing" else "business"
-
-        achievements = []
-        for _ in range(random.randint(2, 4)):
-            achievement = generate_achievement(achievement_category, level_config["achievement_scale"])
-            if achievement not in achievements:
-                achievements.append(achievement)
-
-        experience = {
-            "title": title,
-            "employer": employer,
-            "location": generate_address(),
-            "start_date": f"{random.choice(['January', 'March', 'June', 'September'])} {start_year}",
-            "end_date": "Present" if is_current else f"{random.choice(['February', 'May', 'August', 'December'])} {end_year}",
-            "achievements": achievements
-        }
-
-        experiences.append(experience)
-        current_year = start_year
-        years_remaining -= duration
-
-    return experiences
+    return dates
 
 
-def generate_education(years_experience, role_category):
-    """Generate education history."""
-    education = []
+def generate_achievements(templates: List[str], count: int) -> List[str]:
+    """Generate random achievements from templates."""
+    achievements = []
+    selected = random.sample(templates, min(count, len(templates)))
 
-    # Degree types based on role
-    if role_category in ["development", "infrastructure", "data"]:
-        bachelors_options = [
-            "Bachelor of Science in Computer Science",
-            "Bachelor of Science in Software Engineering",
-            "Bachelor of Science in Information Technology",
-            "Bachelor of Science in Computer Engineering",
-            "Bachelor of Science in Data Science"
-        ]
-        masters_options = [
-            "Master of Science in Computer Science",
-            "Master of Science in Software Engineering",
-            "Master of Science in Data Science",
-            "Master of Business Administration (MBA)"
-        ]
-    elif role_category == "marketing":
-        bachelors_options = [
-            "Bachelor of Arts in Marketing",
-            "Bachelor of Science in Business Administration",
-            "Bachelor of Arts in Communications",
-            "Bachelor of Science in Digital Marketing"
-        ]
-        masters_options = [
-            "Master of Business Administration (MBA)",
-            "Master of Science in Marketing",
-            "Master of Arts in Communications"
-        ]
-    else:
-        bachelors_options = [
-            "Bachelor of Science in Business Administration",
-            "Bachelor of Arts in Economics",
-            "Bachelor of Science in Finance",
-            "Bachelor of Science in Management Information Systems",
-            "Bachelor of Arts in Business Management"
-        ]
-        masters_options = [
-            "Master of Business Administration (MBA)",
-            "Master of Science in Business Analytics",
-            "Master of Science in Management",
-            "Master of Science in Finance"
-        ]
+    for template in selected:
+        achievement = template.format(
+            percent=random.randint(15, 75),
+            count=random.choice([3, 5, 8, 10, 15, 20, 50, 100]),
+            volume=random.choice(["10K", "50K", "100K", "500K", "1M", "5M", "10M"]),
+            amount=random.choice([50, 100, 150, 200, 300, 500, 750, 1000]),
+            regions=random.randint(2, 8),
+            old_time=random.choice(["4 hours", "2 days", "1 week", "2 weeks"]),
+            new_time=random.choice(["30 minutes", "2 hours", "1 day", "3 days"]),
+            latency=random.choice([10, 50, 100, 200]),
+        )
+        achievements.append(achievement)
 
-    grad_year = 2024 - years_experience - random.randint(0, 3)
-
-    education.append({
-        "degree": random.choice(bachelors_options),
-        "institution": random.choice(UNIVERSITIES),
-        "graduation_year": grad_year,
-        "gpa": round(random.uniform(3.0, 4.0), 2) if random.random() > 0.4 else None
-    })
-
-    # 50% chance of master's if 5+ years, higher for advanced roles
-    masters_chance = 0.5 if years_experience >= 5 else 0.2
-    if random.random() < masters_chance:
-        education.insert(0, {
-            "degree": random.choice(masters_options),
-            "institution": random.choice(UNIVERSITIES),
-            "graduation_year": grad_year + random.randint(2, 5),
-            "gpa": round(random.uniform(3.3, 4.0), 2) if random.random() > 0.5 else None
-        })
-
-    return education
+    return achievements
 
 
-def generate_professional_summary(name, years_exp, role_category, level, skills):
-    """Generate a professional summary statement."""
-    level_descriptors = {
-        "beginner": ["motivated", "eager", "enthusiastic", "detail-oriented"],
-        "intermediate": ["results-driven", "skilled", "accomplished", "proficient"],
-        "advanced": ["seasoned", "expert", "accomplished", "strategic"],
-        "expert": ["visionary", "transformational", "executive-level", "industry-leading"]
-    }
-
-    role_descriptions = {
-        "development": "software development and engineering",
-        "infrastructure": "IT infrastructure and cloud technologies",
-        "data": "data engineering and analytics",
-        "analysis": "business analysis and process improvement",
-        "marketing": "digital marketing and brand strategy",
-        "management": "project management and operations",
-        "product": "product management and delivery"
-    }
-
-    descriptor = random.choice(level_descriptors[level])
-    role_desc = role_descriptions.get(role_category, "technology and business")
-    top_skills = ", ".join(skills[:3])
-
-    templates = [
-        f"{descriptor.capitalize()} professional with {years_exp}+ years of experience in {role_desc}. Skilled in {top_skills}, with a proven track record of delivering impactful results.",
-        f"Experienced {role_desc} professional bringing {years_exp} years of expertise. Strong background in {top_skills}, committed to driving innovation and business value.",
-        f"{descriptor.capitalize()} {role_desc} specialist with {years_exp}+ years of hands-on experience. Proficient in {top_skills}, with excellent problem-solving and communication skills."
-    ]
-
-    return random.choice(templates)
+def select_experience_level() -> str:
+    """Select experience level based on weighted distribution."""
+    levels = list(EXPERIENCE_LEVELS.keys())
+    weights = [EXPERIENCE_LEVELS[l]["weight"] for l in levels]
+    return random.choices(levels, weights=weights)[0]
 
 
-def generate_resume(resume_id):
-    """Generate a single resume."""
+def generate_it_resume(resume_id: int) -> Dict[str, Any]:
+    """Generate an IT professional resume."""
+    level = select_experience_level()
+    level_config = EXPERIENCE_LEVELS[level]
+    years_exp = random.randint(*level_config["years"])
+
+    # Select tech stack
+    stack_name = random.choice(list(IT_TECH_STACKS.keys()))
+    stack = IT_TECH_STACKS[stack_name]
+
+    # Generate personal info
     first_name = random.choice(FIRST_NAMES)
     last_name = random.choice(LAST_NAMES)
 
-    # Distribute experience levels: 25% beginner, 30% intermediate, 30% advanced, 15% expert
-    level_weights = [0.25, 0.30, 0.30, 0.15]
-    level = random.choices(list(EXPERIENCE_LEVELS.keys()), weights=level_weights)[0]
-    years_range = EXPERIENCE_LEVELS[level]["years_range"]
-    years_experience = random.randint(*years_range)
+    # Select role appropriate to level
+    if level in ["director", "vp"]:
+        base_role = random.choice(["Engineering", "Technology", "IT", "Platform", "Data"])
+    else:
+        base_role = random.choice(IT_ROLES)
 
-    # Select role category
-    all_categories = list(IT_TITLES.keys()) + list(BUSINESS_TITLES.keys())
-    role_category = random.choice(all_categories)
+    current_title = f"{level_config['title_prefix']}{base_role}"
 
-    # Generate skills and certifications
-    skills = generate_skills_for_role(role_category, level)
-    certifications = generate_certifications_for_role(role_category, level)
+    # Generate experience
+    num_roles = min(years_exp // 2 + 1, 5)  # 1-5 roles based on experience
+    dates = generate_experience_dates(years_exp, num_roles)
 
-    resume = {
-        "id": f"resume_{resume_id:03d}",
+    experience = []
+    for i, (start, end) in enumerate(dates):
+        if i == 0:
+            title = current_title
+            employer = random.choice(IT_EMPLOYERS)
+        else:
+            # Previous roles at lower levels
+            prev_level = list(EXPERIENCE_LEVELS.keys())[max(0, list(EXPERIENCE_LEVELS.keys()).index(level) - i)]
+            prev_config = EXPERIENCE_LEVELS[prev_level]
+            title = f"{prev_config['title_prefix']}{random.choice(IT_ROLES)}"
+            employer = random.choice(IT_EMPLOYERS)
+
+        experience.append({
+            "title": title,
+            "employer": employer,
+            "start_date": start,
+            "end_date": end,
+            "tech_stack": [random.choice(stack["primary"])] + random.sample(stack["skills"], min(4, len(stack["skills"]))),
+            "achievements": generate_achievements(IT_ACHIEVEMENTS, random.randint(2, 4))
+        })
+
+    # Select certifications based on experience
+    num_certs = min(years_exp // 3, 4)
+    certifications = random.sample(stack["certifications"], min(num_certs, len(stack["certifications"]))) if num_certs > 0 else []
+
+    # Education
+    degree = random.choice([d for d in DEGREES if d[1] in ["Computer Science", "Information Technology", "Software Engineering", "Data Science", "Mathematics"]])
+    if years_exp > 8 and random.random() > 0.6:
+        # Add MBA for senior folks
+        education = [
+            {"degree": "MBA", "field": "Business Administration", "university": random.choice(UNIVERSITIES)},
+            {"degree": degree[0], "field": degree[1], "university": random.choice(UNIVERSITIES)}
+        ]
+    else:
+        education = [{"degree": degree[0], "field": degree[1], "university": random.choice(UNIVERSITIES)}]
+
+    # Skills
+    technical_skills = [random.choice(stack["primary"])] + random.sample(stack["skills"], min(8, len(stack["skills"])))
+    soft_skills = random.sample(SOFT_SKILLS, random.randint(3, 6))
+
+    return {
+        "id": f"gen_it_resume_{resume_id:03d}",
+        "domain": "technology",
         "personal_info": {
             "name": f"{first_name} {last_name}",
-            "email": generate_email(first_name, last_name),
-            "phone": generate_phone(),
-            "location": generate_address(),
-            "linkedin": generate_linkedin(first_name, last_name)
+            "email": f"{first_name.lower()}.{last_name.lower()}@email.com",
+            "phone": f"({random.randint(200, 999)}) {random.randint(200, 999)}-{random.randint(1000, 9999)}",
+            "location": random.choice(LOCATIONS),
+            "linkedin": f"linkedin.com/in/{first_name.lower()}{last_name.lower()}"
         },
-        "summary": generate_professional_summary(first_name, years_experience, role_category, level, skills),
-        "years_experience": years_experience,
+        "summary": f"{years_exp}+ years of experience in {stack_name} technologies. "
+                   f"Expertise in {', '.join(random.sample(stack['skills'], min(3, len(stack['skills']))))}. "
+                   f"Proven track record of delivering scalable solutions and leading technical teams.",
         "experience_level": level,
-        "role_category": role_category,
-        "experience": generate_work_experience(years_experience, role_category),
-        "education": generate_education(years_experience, role_category),
+        "years_experience": years_exp,
+        "primary_tech_stack": random.choice(stack["primary"]),
+        "tech_specialization": stack_name,
+        "experience": experience,
+        "education": education,
         "certifications": certifications,
-        "skills": skills
+        "skills": {
+            "technical": technical_skills,
+            "soft": soft_skills
+        }
     }
 
-    return resume
+
+def generate_business_resume(resume_id: int) -> Dict[str, Any]:
+    """Generate a Business professional resume."""
+    level = select_experience_level()
+    level_config = EXPERIENCE_LEVELS[level]
+    years_exp = random.randint(*level_config["years"])
+
+    # Select specialty
+    specialty_name = random.choice(list(BUSINESS_SPECIALTIES.keys()))
+    specialty = BUSINESS_SPECIALTIES[specialty_name]
+
+    # Generate personal info
+    first_name = random.choice(FIRST_NAMES)
+    last_name = random.choice(LAST_NAMES)
+
+    # Select role appropriate to level
+    if level in ["director", "vp"]:
+        if specialty_name == "operations":
+            base_role = random.choice(["Operations", "Business Operations", "Strategy"])
+        else:
+            base_role = random.choice(["Business", "Strategy", "Product", "Program"])
+    else:
+        base_role = random.choice([r for r in BUSINESS_ROLES if specialty_name.replace("_", " ") in r.lower() or "business" in r.lower() or "manager" in r.lower()])
+
+    current_title = f"{level_config['title_prefix']}{base_role}" if level not in ["entry", "junior", "mid"] else base_role
+
+    # Generate experience
+    num_roles = min(years_exp // 2 + 1, 5)
+    dates = generate_experience_dates(years_exp, num_roles)
+
+    experience = []
+    for i, (start, end) in enumerate(dates):
+        if i == 0:
+            title = current_title
+            employer = random.choice(BUSINESS_EMPLOYERS)
+        else:
+            title = random.choice(BUSINESS_ROLES)
+            employer = random.choice(BUSINESS_EMPLOYERS)
+
+        experience.append({
+            "title": title,
+            "employer": employer,
+            "start_date": start,
+            "end_date": end,
+            "focus_areas": random.sample(specialty["skills"], min(4, len(specialty["skills"]))),
+            "achievements": generate_achievements(BUSINESS_ACHIEVEMENTS, random.randint(2, 4))
+        })
+
+    # Certifications
+    num_certs = min(years_exp // 4, 3)
+    certifications = random.sample(specialty["certifications"], min(num_certs, len(specialty["certifications"]))) if num_certs > 0 else []
+
+    # Education
+    degree = random.choice([d for d in DEGREES if d[1] in ["Business Administration", "Economics", "Finance", "Marketing"]])
+    if years_exp > 6 and random.random() > 0.4:
+        education = [
+            {"degree": "MBA", "field": "Business Administration", "university": random.choice(UNIVERSITIES)},
+            {"degree": degree[0], "field": degree[1], "university": random.choice(UNIVERSITIES)}
+        ]
+    else:
+        education = [{"degree": degree[0], "field": degree[1], "university": random.choice(UNIVERSITIES)}]
+
+    # Skills
+    technical_skills = random.sample(specialty["skills"], min(8, len(specialty["skills"])))
+    soft_skills = random.sample(SOFT_SKILLS, random.randint(4, 7))
+
+    return {
+        "id": f"gen_biz_resume_{resume_id:03d}",
+        "domain": "business",
+        "personal_info": {
+            "name": f"{first_name} {last_name}",
+            "email": f"{first_name.lower()}.{last_name.lower()}@email.com",
+            "phone": f"({random.randint(200, 999)}) {random.randint(200, 999)}-{random.randint(1000, 9999)}",
+            "location": random.choice(LOCATIONS),
+            "linkedin": f"linkedin.com/in/{first_name.lower()}{last_name.lower()}"
+        },
+        "summary": f"Results-driven {specialty_name.replace('_', ' ')} professional with {years_exp}+ years of experience. "
+                   f"Expertise in {', '.join(random.sample(specialty['skills'], min(3, len(specialty['skills']))))}. "
+                   f"Track record of driving business outcomes and leading cross-functional initiatives.",
+        "experience_level": level,
+        "years_experience": years_exp,
+        "primary_specialty": specialty_name,
+        "experience": experience,
+        "education": education,
+        "certifications": certifications,
+        "skills": {
+            "professional": technical_skills,
+            "soft": soft_skills
+        }
+    }
+
+
+def generate_marketing_resume(resume_id: int) -> Dict[str, Any]:
+    """Generate a Marketing professional resume."""
+    level = select_experience_level()
+    level_config = EXPERIENCE_LEVELS[level]
+    years_exp = random.randint(*level_config["years"])
+
+    # Select specialty
+    specialty_name = random.choice(list(MARKETING_SPECIALTIES.keys()))
+    specialty = MARKETING_SPECIALTIES[specialty_name]
+
+    # Generate personal info
+    first_name = random.choice(FIRST_NAMES)
+    last_name = random.choice(LAST_NAMES)
+
+    # Select role
+    if level in ["director", "vp"]:
+        base_role = random.choice(["Marketing", "Growth", "Brand", "Demand Generation"])
+    else:
+        base_role = random.choice([r for r in MARKETING_ROLES if specialty_name.replace("_", " ") in r.lower() or "marketing" in r.lower()])
+
+    current_title = f"{level_config['title_prefix']}{base_role}" if level not in ["entry", "junior", "mid"] else base_role
+
+    # Generate experience
+    num_roles = min(years_exp // 2 + 1, 5)
+    dates = generate_experience_dates(years_exp, num_roles)
+
+    experience = []
+    for i, (start, end) in enumerate(dates):
+        if i == 0:
+            title = current_title
+            employer = random.choice(MARKETING_EMPLOYERS)
+        else:
+            title = random.choice(MARKETING_ROLES)
+            employer = random.choice(MARKETING_EMPLOYERS)
+
+        experience.append({
+            "title": title,
+            "employer": employer,
+            "start_date": start,
+            "end_date": end,
+            "channels": random.sample(specialty["skills"], min(4, len(specialty["skills"]))),
+            "achievements": generate_achievements(MARKETING_ACHIEVEMENTS, random.randint(2, 4))
+        })
+
+    # Certifications
+    num_certs = min(years_exp // 3, 3)
+    certifications = random.sample(specialty["certifications"], min(num_certs, len(specialty["certifications"]))) if num_certs > 0 else []
+
+    # Education
+    degree = random.choice([d for d in DEGREES if d[1] in ["Marketing", "Communications", "Business Administration", "Psychology"]])
+    if years_exp > 8 and random.random() > 0.5:
+        education = [
+            {"degree": "MBA", "field": "Marketing", "university": random.choice(UNIVERSITIES)},
+            {"degree": degree[0], "field": degree[1], "university": random.choice(UNIVERSITIES)}
+        ]
+    else:
+        education = [{"degree": degree[0], "field": degree[1], "university": random.choice(UNIVERSITIES)}]
+
+    # Skills
+    technical_skills = random.sample(specialty["skills"], min(8, len(specialty["skills"])))
+    soft_skills = random.sample(SOFT_SKILLS, random.randint(4, 6))
+
+    return {
+        "id": f"gen_mkt_resume_{resume_id:03d}",
+        "domain": "marketing",
+        "personal_info": {
+            "name": f"{first_name} {last_name}",
+            "email": f"{first_name.lower()}.{last_name.lower()}@email.com",
+            "phone": f"({random.randint(200, 999)}) {random.randint(200, 999)}-{random.randint(1000, 9999)}",
+            "location": random.choice(LOCATIONS),
+            "linkedin": f"linkedin.com/in/{first_name.lower()}{last_name.lower()}"
+        },
+        "summary": f"Creative and data-driven {specialty_name.replace('_', ' ')} professional with {years_exp}+ years of experience. "
+                   f"Expert in {', '.join(random.sample(specialty['skills'], min(3, len(specialty['skills']))))}. "
+                   f"Proven ability to drive growth and build brand awareness.",
+        "experience_level": level,
+        "years_experience": years_exp,
+        "primary_specialty": specialty_name,
+        "experience": experience,
+        "education": education,
+        "certifications": certifications,
+        "skills": {
+            "marketing": technical_skills,
+            "soft": soft_skills
+        }
+    }
 
 
 # =============================================================================
 # JOB DESCRIPTION GENERATION
 # =============================================================================
 
-def generate_job_description(job_id, job_category=None):
-    """Generate a single job description."""
-
-    # Job categories with their characteristics
-    job_configs = {
-        "it_individual": {
-            "titles": IT_TITLES["development"] + IT_TITLES["infrastructure"] + IT_TITLES["data"],
-            "prefixes": ["", "Senior ", "Staff ", "Lead "],
-            "level": "individual_contributor",
-            "min_years_options": [0, 2, 3, 5],
-            "category": "technology"
+JOB_TEMPLATES = {
+    # IT Jobs (10)
+    "it": [
+        {
+            "title": "Senior Software Engineer",
+            "level": "senior",
+            "department": "Engineering",
+            "requirements": {
+                "years_min": 5,
+                "years_max": 10,
+                "education": "BS in Computer Science or related field",
+                "skills_required": ["Python", "Java", "Microservices", "REST APIs", "SQL"],
+                "skills_preferred": ["Kubernetes", "AWS", "GraphQL"],
+            }
         },
-        "business_analyst": {
-            "titles": BUSINESS_TITLES["analysis"],
-            "prefixes": ["", "Senior ", "Lead "],
-            "level": "individual_contributor",
-            "min_years_options": [1, 2, 3, 5],
-            "category": "business"
+        {
+            "title": "Staff Software Engineer",
+            "level": "lead",
+            "department": "Engineering",
+            "requirements": {
+                "years_min": 8,
+                "years_max": 15,
+                "education": "BS/MS in Computer Science",
+                "skills_required": ["System Design", "Architecture", "Python", "Java", "Cloud"],
+                "skills_preferred": ["Team Leadership", "Technical Strategy"],
+            }
         },
-        "marketing": {
-            "titles": BUSINESS_TITLES["marketing"],
-            "prefixes": ["", "Senior "],
-            "level": "individual_contributor",
-            "min_years_options": [1, 2, 3, 5],
-            "category": "marketing"
+        {
+            "title": "Junior Data Analyst",
+            "level": "junior",
+            "department": "Data",
+            "requirements": {
+                "years_min": 0,
+                "years_max": 2,
+                "education": "BS in Statistics, Math, or related field",
+                "skills_required": ["SQL", "Excel", "Python", "Data Visualization"],
+                "skills_preferred": ["Tableau", "Power BI"],
+            }
         },
-        "manager": {
-            "titles": LEADERSHIP_TITLES["manager"],
-            "prefixes": ["", "Senior "],
-            "level": "manager",
-            "min_years_options": [5, 7, 8],
-            "category": "leadership"
+        {
+            "title": "Data Engineer",
+            "level": "mid",
+            "department": "Data",
+            "requirements": {
+                "years_min": 3,
+                "years_max": 6,
+                "education": "BS in Computer Science or related field",
+                "skills_required": ["Python", "SQL", "ETL", "Spark", "Airflow"],
+                "skills_preferred": ["Databricks", "Snowflake", "dbt"],
+            }
         },
-        "director": {
-            "titles": LEADERSHIP_TITLES["director"],
-            "prefixes": [""],
+        {
+            "title": "DevOps Engineer",
+            "level": "mid",
+            "department": "Platform",
+            "requirements": {
+                "years_min": 3,
+                "years_max": 7,
+                "education": "BS in Computer Science or equivalent experience",
+                "skills_required": ["Kubernetes", "Docker", "CI/CD", "Terraform", "AWS/GCP"],
+                "skills_preferred": ["ArgoCD", "Prometheus", "Grafana"],
+            }
+        },
+        {
+            "title": "Security Engineer",
+            "level": "senior",
+            "department": "Security",
+            "requirements": {
+                "years_min": 5,
+                "years_max": 10,
+                "education": "BS in Cybersecurity or related field",
+                "skills_required": ["Security Architecture", "Penetration Testing", "SIEM", "IAM"],
+                "skills_preferred": ["CISSP", "AWS Security Specialty"],
+            }
+        },
+        {
+            "title": "Engineering Manager",
             "level": "director",
-            "min_years_options": [8, 10, 12],
-            "category": "leadership"
+            "department": "Engineering",
+            "requirements": {
+                "years_min": 8,
+                "years_max": 15,
+                "education": "BS/MS in Computer Science, MBA preferred",
+                "skills_required": ["Team Leadership", "Agile", "Technical Strategy", "Hiring"],
+                "skills_preferred": ["Budget Management", "Executive Communication"],
+            }
         },
-        "vp": {
-            "titles": LEADERSHIP_TITLES["vp"],
-            "prefixes": [""],
-            "level": "executive",
-            "min_years_options": [12, 15, 18],
-            "category": "leadership"
-        }
+        {
+            "title": "VP of Engineering",
+            "level": "vp",
+            "department": "Engineering",
+            "requirements": {
+                "years_min": 12,
+                "years_max": 20,
+                "education": "BS/MS in Computer Science, MBA preferred",
+                "skills_required": ["Org Design", "Technical Strategy", "Executive Leadership", "P&L"],
+                "skills_preferred": ["Public Company Experience", "Board Presentation"],
+            }
+        },
+        {
+            "title": "Solutions Architect",
+            "level": "senior",
+            "department": "Engineering",
+            "requirements": {
+                "years_min": 7,
+                "years_max": 12,
+                "education": "BS in Computer Science or related field",
+                "skills_required": ["Cloud Architecture", "System Design", "Customer Facing", "AWS/Azure/GCP"],
+                "skills_preferred": ["Pre-sales Experience", "Technical Writing"],
+            }
+        },
+        {
+            "title": "QA Automation Engineer",
+            "level": "mid",
+            "department": "Engineering",
+            "requirements": {
+                "years_min": 3,
+                "years_max": 6,
+                "education": "BS in Computer Science or related field",
+                "skills_required": ["Selenium", "Python", "API Testing", "CI/CD Integration"],
+                "skills_preferred": ["Playwright", "Performance Testing"],
+            }
+        },
+    ],
+    # Marketing Jobs (8)
+    "marketing": [
+        {
+            "title": "Digital Marketing Manager",
+            "level": "mid",
+            "department": "Marketing",
+            "requirements": {
+                "years_min": 4,
+                "years_max": 7,
+                "education": "BS in Marketing or related field",
+                "skills_required": ["Google Ads", "Facebook Ads", "SEO", "Marketing Automation"],
+                "skills_preferred": ["HubSpot", "Marketo"],
+            }
+        },
+        {
+            "title": "Content Marketing Specialist",
+            "level": "junior",
+            "department": "Marketing",
+            "requirements": {
+                "years_min": 1,
+                "years_max": 3,
+                "education": "BS in Communications, Marketing, or English",
+                "skills_required": ["Content Writing", "SEO", "Social Media", "WordPress"],
+                "skills_preferred": ["Video Production", "Graphic Design"],
+            }
+        },
+        {
+            "title": "Senior Product Marketing Manager",
+            "level": "senior",
+            "department": "Marketing",
+            "requirements": {
+                "years_min": 6,
+                "years_max": 10,
+                "education": "BS in Marketing/Business, MBA preferred",
+                "skills_required": ["Product Positioning", "Go-to-Market", "Sales Enablement", "Competitive Analysis"],
+                "skills_preferred": ["B2B SaaS Experience", "Technical Background"],
+            }
+        },
+        {
+            "title": "Growth Marketing Lead",
+            "level": "lead",
+            "department": "Marketing",
+            "requirements": {
+                "years_min": 5,
+                "years_max": 9,
+                "education": "BS in Marketing, Analytics, or related field",
+                "skills_required": ["A/B Testing", "User Acquisition", "Analytics", "Paid Media"],
+                "skills_preferred": ["SQL", "Product Analytics Tools"],
+            }
+        },
+        {
+            "title": "Director of Brand Marketing",
+            "level": "director",
+            "department": "Marketing",
+            "requirements": {
+                "years_min": 10,
+                "years_max": 15,
+                "education": "BS in Marketing, MBA preferred",
+                "skills_required": ["Brand Strategy", "Campaign Management", "Team Leadership", "Agency Management"],
+                "skills_preferred": ["Consumer Brand Experience", "Global Campaigns"],
+            }
+        },
+        {
+            "title": "Marketing Analytics Manager",
+            "level": "mid",
+            "department": "Marketing",
+            "requirements": {
+                "years_min": 4,
+                "years_max": 7,
+                "education": "BS in Statistics, Analytics, or Marketing",
+                "skills_required": ["SQL", "Google Analytics", "Tableau", "Marketing Attribution"],
+                "skills_preferred": ["Python", "Looker", "Amplitude"],
+            }
+        },
+        {
+            "title": "VP of Marketing",
+            "level": "vp",
+            "department": "Marketing",
+            "requirements": {
+                "years_min": 12,
+                "years_max": 20,
+                "education": "MBA preferred",
+                "skills_required": ["Marketing Strategy", "Team Building", "Budget Management", "Executive Presence"],
+                "skills_preferred": ["Public Company Experience", "IPO Experience"],
+            }
+        },
+        {
+            "title": "Demand Generation Manager",
+            "level": "mid",
+            "department": "Marketing",
+            "requirements": {
+                "years_min": 3,
+                "years_max": 6,
+                "education": "BS in Marketing or Business",
+                "skills_required": ["Lead Generation", "Email Marketing", "Marketing Automation", "CRM"],
+                "skills_preferred": ["Salesforce", "Account-Based Marketing"],
+            }
+        },
+    ],
+    # Business Jobs (12)
+    "business": [
+        {
+            "title": "Business Analyst",
+            "level": "mid",
+            "department": "Business Operations",
+            "requirements": {
+                "years_min": 2,
+                "years_max": 5,
+                "education": "BS in Business, Analytics, or related field",
+                "skills_required": ["Requirements Gathering", "SQL", "Process Mapping", "Stakeholder Management"],
+                "skills_preferred": ["JIRA", "Confluence", "Agile"],
+            }
+        },
+        {
+            "title": "Senior Business Analyst",
+            "level": "senior",
+            "department": "Business Operations",
+            "requirements": {
+                "years_min": 5,
+                "years_max": 9,
+                "education": "BS in Business, CBAP preferred",
+                "skills_required": ["Complex Requirements", "Business Case Development", "UAT", "Process Improvement"],
+                "skills_preferred": ["Six Sigma", "Product Management"],
+            }
+        },
+        {
+            "title": "Product Manager",
+            "level": "mid",
+            "department": "Product",
+            "requirements": {
+                "years_min": 3,
+                "years_max": 6,
+                "education": "BS in Computer Science, Business, or related field",
+                "skills_required": ["Product Roadmapping", "User Research", "Agile", "Prioritization"],
+                "skills_preferred": ["Technical Background", "Data Analysis"],
+            }
+        },
+        {
+            "title": "Senior Product Manager",
+            "level": "senior",
+            "department": "Product",
+            "requirements": {
+                "years_min": 6,
+                "years_max": 10,
+                "education": "BS in technical field, MBA preferred",
+                "skills_required": ["Product Strategy", "Cross-functional Leadership", "Metrics-driven", "Go-to-Market"],
+                "skills_preferred": ["Platform Experience", "B2B SaaS"],
+            }
+        },
+        {
+            "title": "Project Manager",
+            "level": "mid",
+            "department": "PMO",
+            "requirements": {
+                "years_min": 3,
+                "years_max": 6,
+                "education": "BS in Business, PMP preferred",
+                "skills_required": ["Project Planning", "Risk Management", "Stakeholder Communication", "MS Project"],
+                "skills_preferred": ["Agile Certification", "Technology Projects"],
+            }
+        },
+        {
+            "title": "Program Manager",
+            "level": "senior",
+            "department": "PMO",
+            "requirements": {
+                "years_min": 7,
+                "years_max": 12,
+                "education": "BS/MBA, PMP required",
+                "skills_required": ["Program Management", "Portfolio Management", "Executive Reporting", "Budget Management"],
+                "skills_preferred": ["Technology Transformation", "Change Management"],
+            }
+        },
+        {
+            "title": "Operations Manager",
+            "level": "mid",
+            "department": "Operations",
+            "requirements": {
+                "years_min": 4,
+                "years_max": 8,
+                "education": "BS in Business or Operations",
+                "skills_required": ["Process Optimization", "Team Management", "KPI Tracking", "Vendor Management"],
+                "skills_preferred": ["Six Sigma", "Lean Management"],
+            }
+        },
+        {
+            "title": "Director of Operations",
+            "level": "director",
+            "department": "Operations",
+            "requirements": {
+                "years_min": 10,
+                "years_max": 15,
+                "education": "BS/MBA in Operations or Business",
+                "skills_required": ["Operations Strategy", "P&L Management", "Team Building", "Process Excellence"],
+                "skills_preferred": ["Global Operations", "M&A Integration"],
+            }
+        },
+        {
+            "title": "Chief of Staff",
+            "level": "senior",
+            "department": "Executive",
+            "requirements": {
+                "years_min": 6,
+                "years_max": 12,
+                "education": "MBA preferred",
+                "skills_required": ["Executive Support", "Strategic Planning", "Cross-functional Coordination", "Communication"],
+                "skills_preferred": ["Consulting Background", "Board Experience"],
+            }
+        },
+        {
+            "title": "VP of Business Development",
+            "level": "vp",
+            "department": "Business Development",
+            "requirements": {
+                "years_min": 12,
+                "years_max": 20,
+                "education": "MBA preferred",
+                "skills_required": ["Partnership Strategy", "Deal Negotiation", "Revenue Growth", "Executive Relationships"],
+                "skills_preferred": ["M&A Experience", "International Expansion"],
+            }
+        },
+        {
+            "title": "Strategy Manager",
+            "level": "mid",
+            "department": "Strategy",
+            "requirements": {
+                "years_min": 3,
+                "years_max": 7,
+                "education": "MBA or top consulting experience",
+                "skills_required": ["Strategic Analysis", "Financial Modeling", "Market Research", "Executive Presentation"],
+                "skills_preferred": ["Top-tier Consulting", "Private Equity"],
+            }
+        },
+        {
+            "title": "Director of Strategy",
+            "level": "director",
+            "department": "Strategy",
+            "requirements": {
+                "years_min": 8,
+                "years_max": 14,
+                "education": "MBA from top program",
+                "skills_required": ["Corporate Strategy", "M&A Due Diligence", "Board Presentation", "Team Leadership"],
+                "skills_preferred": ["Industry Expertise", "Investment Banking"],
+            }
+        },
+    ]
+}
+
+
+def generate_job_description(job_template: Dict, job_id: int, domain: str) -> Dict[str, Any]:
+    """Generate a full job description from a template."""
+
+    employer = random.choice(
+        IT_EMPLOYERS if domain == "it" else
+        MARKETING_EMPLOYERS if domain == "marketing" else
+        BUSINESS_EMPLOYERS
+    )
+
+    location = random.choice(LOCATIONS)
+    is_remote = "Remote" in location or random.random() > 0.7
+
+    # Salary ranges by level
+    salary_ranges = {
+        "entry": (50000, 75000),
+        "junior": (65000, 95000),
+        "mid": (90000, 140000),
+        "senior": (130000, 200000),
+        "lead": (160000, 240000),
+        "director": (200000, 320000),
+        "vp": (280000, 500000),
     }
 
-    # Select job category if not provided
-    if job_category is None:
-        # Distribution: 40% IT, 15% BA, 15% Marketing, 15% Manager, 10% Director, 5% VP
-        weights = [0.40, 0.15, 0.15, 0.15, 0.10, 0.05]
-        job_category = random.choices(list(job_configs.keys()), weights=weights)[0]
+    level = job_template["level"]
+    salary_min, salary_max = salary_ranges.get(level, (100000, 150000))
 
-    config = job_configs[job_category]
-
-    # Generate job details
-    prefix = random.choice(config["prefixes"])
-    base_title = random.choice(config["titles"])
-    title = prefix + base_title
-
-    # Employer
-    employer_types = ["tech", "consulting", "fortune500", "startup"]
-    employer_type = random.choice(employer_types)
-
-    if employer_type == "tech":
-        employer = random.choice(TECH_COMPANIES)
-    elif employer_type == "consulting":
-        employer = random.choice(CONSULTING_FIRMS)
-    elif employer_type == "fortune500":
-        employer = random.choice(FORTUNE_500)
-    else:
-        employer = random.choice(STARTUPS)
-
-    # Employment details
-    employment_type = random.choice(["Full-time", "Full-time"])  # Mostly full-time
-    is_contract = random.random() < 0.2
-    contract_type = "Contract" if is_contract else "Permanent"
-    remote_option = random.choice(["On-site", "Hybrid", "Remote", "Hybrid (3 days in office)"])
-
-    # Experience requirements
-    min_years = random.choice(config["min_years_options"])
-    max_years = min_years + random.randint(5, 10) if random.random() > 0.6 else None
-
-    # Skills based on category
-    if config["category"] == "technology":
-        required_skills = random.sample(PROGRAMMING_LANGUAGES, 3) + \
-                         random.sample(CLOUD_PLATFORMS[:8], 2) + \
-                         random.sample(IT_TOOLS[:10], 2)
-        preferred_skills = random.sample(FRAMEWORKS_LIBRARIES, 3) + \
-                          random.sample(DATABASES, 2)
-    elif config["category"] == "marketing":
-        required_skills = random.sample(MARKETING_SKILLS, 6)
-        preferred_skills = random.sample(BUSINESS_SKILLS[:10], 3) + \
-                          random.sample(DATA_SKILLS[:5], 2)
-    elif config["category"] == "leadership":
-        required_skills = random.sample(BUSINESS_SKILLS, 5) + \
-                         random.sample(SOFT_SKILLS, 4)
-        preferred_skills = random.sample(IT_TOOLS[:8], 3)
-    else:  # business
-        required_skills = random.sample(BUSINESS_SKILLS, 5) + \
-                         random.sample(DATA_SKILLS[:6], 2)
-        preferred_skills = random.sample(IT_TOOLS[:10], 3)
-
-    # Certifications
-    if config["category"] == "technology":
-        required_certs = random.sample(IT_CERTIFICATIONS, 1) if random.random() > 0.5 else []
-        preferred_certs = random.sample(IT_CERTIFICATIONS, 2)
-    else:
-        required_certs = random.sample(BUSINESS_CERTIFICATIONS, 1) if random.random() > 0.6 else []
-        preferred_certs = random.sample(BUSINESS_CERTIFICATIONS, 2)
-
-    # Salary
-    base_salaries = {
-        "individual_contributor": 80000,
-        "manager": 130000,
-        "director": 175000,
-        "executive": 250000
-    }
-
-    base = base_salaries[config["level"]]
-    min_salary = base + (min_years * 5000) + random.randint(-10000, 10000)
-    max_salary = min_salary + random.randint(20000, 50000)
-
-    if is_contract:
-        hourly_min = int(min_salary / 2000)
-        hourly_max = int(max_salary / 2000)
-        salary_info = {"type": "hourly", "min": hourly_min, "max": hourly_max, "currency": "USD"}
-    else:
-        salary_info = {"type": "annual", "min": min_salary, "max": max_salary, "currency": "USD"}
-
-    # Generate description and responsibilities
-    description = generate_job_description_text(title, employer, config["category"])
-    responsibilities = generate_responsibilities_for_job(config["category"], config["level"])
-
-    job = {
-        "id": f"job_{job_id:03d}",
-        "title": title,
-        "employer": employer,
-        "employer_type": employer_type,
-        "location": generate_address(),
-        "remote_option": remote_option,
-        "employment_type": employment_type,
-        "contract_type": contract_type,
-        "posted_date": (datetime.now() - timedelta(days=random.randint(1, 30))).strftime("%Y-%m-%d"),
-        "job_category": job_category,
-        "seniority_level": config["level"],
-        "experience_required": {
-            "min_years": min_years,
-            "max_years": max_years
-        },
-        "description": description,
-        "responsibilities": responsibilities,
-        "required_qualifications": {
-            "education": generate_education_requirement(config["level"]),
-            "experience": f"{min_years}+ years of relevant experience",
-            "skills": required_skills,
-            "certifications": required_certs
-        },
-        "preferred_qualifications": {
-            "skills": preferred_skills,
-            "certifications": preferred_certs
-        },
-        "salary": salary_info,
-        "benefits": generate_benefits_for_job(is_contract)
-    }
-
-    return job
-
-
-def generate_job_description_text(title, employer, category):
-    """Generate the main job description text."""
-    templates = {
-        "technology": [
-            f"{employer} is seeking a talented {title} to join our engineering team. You will work on challenging problems, build scalable systems, and collaborate with talented engineers to deliver impactful products.",
-            f"Join {employer} as a {title} and help us build the next generation of technology solutions. We're looking for someone passionate about clean code, system design, and continuous improvement.",
-        ],
-        "marketing": [
-            f"{employer} is looking for a creative {title} to drive our marketing initiatives. You'll develop strategies, execute campaigns, and analyze performance to grow our brand presence.",
-            f"Join our marketing team at {employer} as a {title}. You'll have the opportunity to shape our brand story and drive customer acquisition through innovative marketing strategies.",
-        ],
-        "business": [
-            f"{employer} seeks an analytical {title} to support strategic initiatives. You'll work with stakeholders across the organization to identify opportunities and drive process improvements.",
-            f"We're looking for a {title} to join {employer}. In this role, you'll analyze business requirements, develop solutions, and help drive operational excellence.",
-        ],
-        "leadership": [
-            f"{employer} is seeking an experienced {title} to lead and grow our team. You'll set strategic direction, mentor team members, and drive results across the organization.",
-            f"Join {employer} as a {title} and help shape the future of our organization. You'll build high-performing teams, drive strategic initiatives, and deliver exceptional results.",
-        ]
-    }
-
-    return random.choice(templates.get(category, templates["technology"]))
-
-
-def generate_responsibilities_for_job(category, level):
-    """Generate job responsibilities based on category and level."""
-    base = [
-        "Collaborate with cross-functional teams to achieve business objectives",
-        "Communicate effectively with stakeholders at all levels",
-        "Stay current with industry trends and best practices"
+    # Generate description
+    responsibilities = [
+        f"Lead and execute {job_template['department'].lower()} initiatives aligned with company strategy",
+        f"Collaborate with cross-functional teams to deliver high-impact projects",
+        f"Develop and maintain relationships with key stakeholders",
+        f"Drive continuous improvement in processes and outcomes",
+        f"Mentor and develop team members" if level in ["senior", "lead", "director", "vp"] else "Contribute to team goals and learn from senior colleagues",
     ]
 
-    if category == "technology":
-        specific = [
-            "Design, develop, and maintain software applications",
-            "Write clean, testable, and efficient code",
-            "Participate in code reviews and technical discussions",
-            "Troubleshoot and debug production issues",
-            "Contribute to architectural decisions and technical strategy"
-        ]
-    elif category == "marketing":
-        specific = [
-            "Develop and execute marketing strategies and campaigns",
-            "Analyze campaign performance and optimize for results",
-            "Create compelling content for various channels",
-            "Manage marketing budget and track ROI",
-            "Collaborate with sales and product teams on go-to-market initiatives"
-        ]
-    elif category == "leadership":
-        specific = [
-            "Lead, mentor, and develop team members",
-            "Set strategic direction and priorities for the team",
-            "Manage budgets, resources, and timelines",
-            "Build relationships with key stakeholders and partners",
-            "Drive organizational change and transformation initiatives"
-        ]
-    else:  # business
-        specific = [
-            "Gather and analyze business requirements",
-            "Develop process improvements and efficiency recommendations",
-            "Create business cases and presentations for leadership",
-            "Support project implementation and change management",
-            "Track KPIs and report on business performance"
-        ]
-
-    # Add level-specific responsibilities
-    if level in ["manager", "director", "executive"]:
-        specific.extend([
-            "Recruit, hire, and retain top talent",
-            "Conduct performance reviews and career development discussions",
-            "Represent the team in executive meetings and steering committees"
+    if level in ["director", "vp"]:
+        responsibilities.extend([
+            "Set strategic direction and priorities for the organization",
+            "Manage budget and resource allocation",
+            "Report to executive leadership on progress and outcomes",
         ])
 
-    return base + specific
-
-
-def generate_education_requirement(level):
-    """Generate education requirement based on level."""
-    if level == "executive":
-        return "Master's degree preferred; MBA or relevant advanced degree a plus"
-    elif level == "director":
-        return "Bachelor's degree required; Master's degree preferred"
-    else:
-        return "Bachelor's degree in relevant field or equivalent experience"
-
-
-def generate_benefits_for_job(is_contract):
-    """Generate benefits package."""
-    if is_contract:
-        return ["Competitive hourly rate", "Flexible schedule"]
-
-    return random.sample([
-        "Comprehensive health, dental, and vision insurance",
-        "401(k) with company match",
-        "Unlimited PTO",
-        "Remote work flexibility",
-        "Professional development budget",
-        "Stock options/equity grants",
-        "Life and disability insurance",
-        "Wellness programs and gym membership",
-        "Parental leave",
-        "Commuter benefits",
-        "Annual bonus program",
-        "Home office stipend"
-    ], random.randint(6, 9))
+    return {
+        "id": f"gen_{domain}_job_{job_id:03d}",
+        "domain": domain,
+        "title": job_template["title"],
+        "employer": employer,
+        "department": job_template["department"],
+        "location": location,
+        "remote": is_remote,
+        "employment_type": "Full-time",
+        "experience_level": level,
+        "requirements": job_template["requirements"],
+        "salary_range": {
+            "min": salary_min,
+            "max": salary_max,
+            "currency": "USD"
+        },
+        "responsibilities": responsibilities,
+        "benefits": [
+            "Competitive salary and equity",
+            "Comprehensive health, dental, and vision insurance",
+            "401(k) with company match",
+            "Flexible PTO policy",
+            "Professional development budget",
+            "Remote work options" if is_remote else "Hybrid work environment"
+        ],
+        "posted_date": (datetime.now() - timedelta(days=random.randint(1, 30))).strftime("%Y-%m-%d"),
+    }
 
 
 # =============================================================================
-# MAIN FUNCTION
+# MAIN GENERATION
 # =============================================================================
 
-def main():
-    parser = argparse.ArgumentParser(description="Generate generalized IT/Business test data")
-    parser.add_argument("--resumes", type=int, default=100, help="Number of resumes to generate")
-    parser.add_argument("--jobs", type=int, default=30, help="Number of job descriptions to generate")
-    parser.add_argument("--output-dir", type=str, default="test_data", help="Output directory")
-    args = parser.parse_args()
+def generate_all_resumes(count: int = 100) -> List[Dict]:
+    """Generate all resumes with domain distribution."""
+    resumes = []
 
-    base_dir = Path(args.output_dir)
-    resume_dir = base_dir / "general_resumes"
-    job_dir = base_dir / "general_jobs"
+    # Distribution: 40% IT, 35% Business, 25% Marketing
+    it_count = int(count * 0.40)
+    biz_count = int(count * 0.35)
+    mkt_count = count - it_count - biz_count
 
-    resume_dir.mkdir(parents=True, exist_ok=True)
-    job_dir.mkdir(parents=True, exist_ok=True)
+    print(f"Generating {it_count} IT resumes...")
+    for i in range(it_count):
+        resumes.append(generate_it_resume(i + 1))
 
-    print(f"Generating {args.resumes} generalized IT/Business resumes...")
-    print("  Experience levels: Beginner (25%), Intermediate (30%), Advanced (30%), Expert (15%)")
+    print(f"Generating {biz_count} Business resumes...")
+    for i in range(biz_count):
+        resumes.append(generate_business_resume(i + 1))
 
-    level_counts = {"beginner": 0, "intermediate": 0, "advanced": 0, "expert": 0}
+    print(f"Generating {mkt_count} Marketing resumes...")
+    for i in range(mkt_count):
+        resumes.append(generate_marketing_resume(i + 1))
 
-    for i in range(1, args.resumes + 1):
-        resume = generate_resume(i)
-        level_counts[resume["experience_level"]] += 1
+    return resumes
 
-        output_path = resume_dir / f"resume_{i:03d}.json"
-        with open(output_path, "w") as f:
+
+def generate_all_jobs() -> List[Dict]:
+    """Generate all job descriptions."""
+    jobs = []
+    job_id = 1
+
+    for domain, templates in JOB_TEMPLATES.items():
+        print(f"Generating {len(templates)} {domain} jobs...")
+        for template in templates:
+            jobs.append(generate_job_description(template, job_id, domain))
+            job_id += 1
+
+    return jobs
+
+
+def save_data(resumes: List[Dict], jobs: List[Dict]):
+    """Save generated data to JSON files."""
+    # Create directories
+    RESUMES_DIR.mkdir(parents=True, exist_ok=True)
+    JOBS_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Save individual resume files
+    for resume in resumes:
+        filepath = RESUMES_DIR / f"{resume['id']}.json"
+        with open(filepath, 'w') as f:
             json.dump(resume, f, indent=2)
 
-        if i % 25 == 0:
-            print(f"  Generated {i}/{args.resumes} resumes")
-
-    print(f"\n  Level distribution: {level_counts}")
-
-    print(f"\nGenerating {args.jobs} job descriptions...")
-    print("  Categories: IT (40%), Business Analyst (15%), Marketing (15%)")
-    print("             Manager (15%), Director (10%), VP (5%)")
-
-    # Generate jobs with specific distribution
-    job_categories = (
-        ["it_individual"] * 12 +      # 40% of 30 = 12
-        ["business_analyst"] * 5 +    # 15% of 30 = 4-5
-        ["marketing"] * 5 +           # 15% of 30 = 4-5
-        ["manager"] * 4 +             # 15% of 30 = 4-5
-        ["director"] * 3 +            # 10% of 30 = 3
-        ["vp"] * 1                    # 5% of 30 = 1-2
-    )
-    random.shuffle(job_categories)
-
-    category_counts = {}
-    for i in range(1, args.jobs + 1):
-        category = job_categories[i-1] if i <= len(job_categories) else random.choice(list(job_categories))
-        job = generate_job_description(i, category)
-
-        cat = job["job_category"]
-        category_counts[cat] = category_counts.get(cat, 0) + 1
-
-        output_path = job_dir / f"job_{i:03d}.json"
-        with open(output_path, "w") as f:
+    # Save individual job files
+    for job in jobs:
+        filepath = JOBS_DIR / f"{job['id']}.json"
+        with open(filepath, 'w') as f:
             json.dump(job, f, indent=2)
 
-    print(f"\n  Category distribution: {category_counts}")
+    # Save combined files for easy loading
+    with open(OUTPUT_DIR / "all_resumes.json", 'w') as f:
+        json.dump(resumes, f, indent=2)
 
-    print(f"\nTest data generated successfully!")
-    print(f"  Resumes: {resume_dir}")
-    print(f"  Jobs: {job_dir}")
+    with open(OUTPUT_DIR / "all_jobs.json", 'w') as f:
+        json.dump(jobs, f, indent=2)
+
+    print(f"\nSaved {len(resumes)} resumes to {RESUMES_DIR}")
+    print(f"Saved {len(jobs)} jobs to {JOBS_DIR}")
+
+
+def print_statistics(resumes: List[Dict], jobs: List[Dict]):
+    """Print statistics about generated data."""
+    print("\n" + "=" * 60)
+    print("GENERATION STATISTICS")
+    print("=" * 60)
+
+    # Resume stats
+    print("\nRESUMES:")
+    print(f"  Total: {len(resumes)}")
+
+    # By domain
+    domains = {}
+    for r in resumes:
+        domains[r['domain']] = domains.get(r['domain'], 0) + 1
+    for domain, count in sorted(domains.items()):
+        print(f"  - {domain.title()}: {count}")
+
+    # By experience level
+    print("\n  By Experience Level:")
+    levels = {}
+    for r in resumes:
+        level = r['experience_level']
+        levels[level] = levels.get(level, 0) + 1
+    for level in EXPERIENCE_LEVELS.keys():
+        count = levels.get(level, 0)
+        print(f"    - {level.title()}: {count}")
+
+    # Years experience stats
+    years = [r['years_experience'] for r in resumes]
+    print(f"\n  Years Experience: {min(years)}-{max(years)} (avg: {sum(years)/len(years):.1f})")
+
+    # Job stats
+    print("\nJOBS:")
+    print(f"  Total: {len(jobs)}")
+
+    job_domains = {}
+    for j in jobs:
+        job_domains[j['domain']] = job_domains.get(j['domain'], 0) + 1
+    for domain, count in sorted(job_domains.items()):
+        print(f"  - {domain.title()}: {count}")
+
+    # By level
+    print("\n  By Level:")
+    job_levels = {}
+    for j in jobs:
+        level = j['experience_level']
+        job_levels[level] = job_levels.get(level, 0) + 1
+    for level, count in sorted(job_levels.items(), key=lambda x: list(EXPERIENCE_LEVELS.keys()).index(x[0]) if x[0] in EXPERIENCE_LEVELS else 99):
+        print(f"    - {level.title()}: {count}")
+
+    print("\n" + "=" * 60)
+
+
+def main():
+    """Main entry point."""
+    print("=" * 60)
+    print("GENERALIZED TEST DATA GENERATOR")
+    print("=" * 60)
+    print("\nGenerating IT, Business, and Marketing test data...\n")
+
+    # Generate data
+    resumes = generate_all_resumes(100)
+    jobs = generate_all_jobs()
+
+    # Save data
+    save_data(resumes, jobs)
+
+    # Print statistics
+    print_statistics(resumes, jobs)
+
+    print("\nGeneration complete!")
+    print(f"Data saved to: {OUTPUT_DIR.absolute()}")
 
 
 if __name__ == "__main__":

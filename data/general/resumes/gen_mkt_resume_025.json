@@ -1,0 +1,136 @@
+{
+  "id": "gen_mkt_resume_025",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Ronald Ramos",
+    "email": "ronald.ramos@email.com",
+    "phone": "(228) 490-8488",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/ronaldramos"
+  },
+  "summary": "Creative and data-driven analytics professional with 15+ years of experience. Expert in Amplitude, Tableau, Data Analysis. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "director",
+  "years_experience": 15,
+  "primary_specialty": "analytics",
+  "experience": [
+    {
+      "title": "Director of Demand Generation",
+      "employer": "Apple",
+      "start_date": "2023-05",
+      "end_date": "Present",
+      "channels": [
+        "Tableau",
+        "Looker",
+        "SQL",
+        "Cohort Analysis"
+      ],
+      "achievements": [
+        "Increased organic traffic by 74% through SEO optimization strategy",
+        "Managed $300M annual marketing budget across 15 channels"
+      ]
+    },
+    {
+      "title": "VP of Brand",
+      "employer": "Droga5",
+      "start_date": "2022-04",
+      "end_date": "2023-04",
+      "channels": [
+        "Amplitude",
+        "Marketing Attribution",
+        "Data Analysis",
+        "Looker"
+      ],
+      "achievements": [
+        "Increased organic traffic by 57% through SEO optimization strategy",
+        "Led rebranding initiative increasing brand awareness by 20%",
+        "Built marketing analytics dashboard tracking 100+ KPIs across channels"
+      ]
+    },
+    {
+      "title": "Digital Marketing Manager",
+      "employer": "Salesforce",
+      "start_date": "2016-12",
+      "end_date": "2021-12",
+      "channels": [
+        "Cohort Analysis",
+        "Amplitude",
+        "Mixpanel",
+        "Customer Segmentation"
+      ],
+      "achievements": [
+        "Led rebranding initiative increasing brand awareness by 64%",
+        "Built marketing analytics dashboard tracking 15+ KPIs across channels",
+        "Achieved 21% improvement in email open rates through A/B testing",
+        "Developed content strategy resulting in 50K monthly blog visitors"
+      ]
+    },
+    {
+      "title": "Senior Product Marketing Manager",
+      "employer": "Amazon",
+      "start_date": "2013-07",
+      "end_date": "2016-07",
+      "channels": [
+        "Customer Segmentation",
+        "Amplitude",
+        "Cohort Analysis",
+        "CLV Analysis"
+      ],
+      "achievements": [
+        "Developed content strategy resulting in 15K monthly blog visitors",
+        "Built marketing analytics dashboard tracking 100+ KPIs across channels",
+        "Achieved 36% improvement in email open rates through A/B testing",
+        "Reduced customer acquisition cost by 22% while scaling spend $200K"
+      ]
+    },
+    {
+      "title": "Brand Manager",
+      "employer": "Leo Burnett",
+      "start_date": "2010-01",
+      "end_date": "2013-01",
+      "channels": [
+        "Mixpanel",
+        "Customer Segmentation",
+        "Cohort Analysis",
+        "Google Analytics 4"
+      ],
+      "achievements": [
+        "Increased organic traffic by 19% through SEO optimization strategy",
+        "Managed $1000M annual marketing budget across 100 channels",
+        "Launched product to 100K customers with 40% activation rate",
+        "Created sales enablement materials improving win rate by 42%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BA",
+      "field": "Psychology",
+      "university": "University of Florida"
+    }
+  ],
+  "certifications": [
+    "Marketing Research Association (MRA)",
+    "Google Analytics 4 Certification",
+    "Tableau Desktop Specialist"
+  ],
+  "skills": {
+    "marketing": [
+      "Marketing Attribution",
+      "Amplitude",
+      "Looker",
+      "SQL",
+      "Google Analytics 4",
+      "Customer Segmentation",
+      "CLV Analysis",
+      "Cohort Analysis"
+    ],
+    "soft": [
+      "Problem Solving",
+      "Emotional Intelligence",
+      "Decision Making",
+      "Influence",
+      "Mentoring",
+      "Strategic Thinking"
+    ]
+  }
+}

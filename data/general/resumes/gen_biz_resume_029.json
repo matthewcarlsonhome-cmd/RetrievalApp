@@ -1,0 +1,98 @@
+{
+  "id": "gen_biz_resume_029",
+  "domain": "business",
+  "personal_info": {
+    "name": "John Chavez",
+    "email": "john.chavez@email.com",
+    "phone": "(349) 229-5754",
+    "location": "Atlanta, GA",
+    "linkedin": "linkedin.com/in/johnchavez"
+  },
+  "summary": "Results-driven project professional with 5+ years of experience. Expertise in Resource Allocation, Stakeholder Communication, RAID Log. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 5,
+  "primary_specialty": "project",
+  "experience": [
+    {
+      "title": "Operations Manager",
+      "employer": "Oliver Wyman",
+      "start_date": "2025-12",
+      "end_date": "Present",
+      "focus_areas": [
+        "Change Management",
+        "Smartsheet",
+        "Gantt Charts",
+        "MS Project"
+      ],
+      "achievements": [
+        "Negotiated vendor contracts saving $750K annually",
+        "Developed requirements for system serving 10+ users across 5 regions",
+        "Improved process efficiency by 32% through Lean Six Sigma implementation",
+        "Facilitated 5+ stakeholder workshops for enterprise requirements"
+      ]
+    },
+    {
+      "title": "Strategy Manager",
+      "employer": "JPMorgan Chase",
+      "start_date": "2024-07",
+      "end_date": "2025-07",
+      "focus_areas": [
+        "Change Management",
+        "MS Project",
+        "Stakeholder Communication",
+        "RAID Log"
+      ],
+      "achievements": [
+        "Led digital transformation initiative resulting in $150M annual savings",
+        "Managed $150M project budget with delivery 35% under budget"
+      ]
+    },
+    {
+      "title": "Strategy Director",
+      "employer": "Walmart",
+      "start_date": "2022-02",
+      "end_date": "2024-02",
+      "focus_areas": [
+        "Budget Management",
+        "Gantt Charts",
+        "RAID Log",
+        "MS Project"
+      ],
+      "achievements": [
+        "Negotiated vendor contracts saving $750K annually",
+        "Launched product feature increasing user engagement by 74%",
+        "Improved process efficiency by 40% through Lean Six Sigma implementation",
+        "Led digital transformation initiative resulting in $750M annual savings"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "University of Washington"
+    }
+  ],
+  "certifications": [
+    "PRINCE2 Practitioner"
+  ],
+  "skills": {
+    "professional": [
+      "Gantt Charts",
+      "RAID Log",
+      "Stakeholder Communication",
+      "Resource Allocation",
+      "Risk Management",
+      "Smartsheet",
+      "MS Project",
+      "Budget Management"
+    ],
+    "soft": [
+      "Presentation Skills",
+      "Mentoring",
+      "Decision Making",
+      "Strategic Thinking",
+      "Coaching"
+    ]
+  }
+}

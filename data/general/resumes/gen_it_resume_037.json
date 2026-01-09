@@ -1,0 +1,65 @@
+{
+  "id": "gen_it_resume_037",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Mary Wang",
+    "email": "mary.wang@email.com",
+    "phone": "(852) 511-9328",
+    "location": "Washington, DC",
+    "linkedin": "linkedin.com/in/marywang"
+  },
+  "summary": "2+ years of experience in data technologies. Expertise in TensorFlow, ETL, Tableau. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "entry",
+  "years_experience": 2,
+  "primary_tech_stack": "Data Engineering",
+  "tech_specialization": "data",
+  "experience": [
+    {
+      "title": "IT Project Manager",
+      "employer": "Lyft",
+      "start_date": "2024-11",
+      "end_date": "Present",
+      "tech_stack": [
+        "Python",
+        "Databricks",
+        "ETL",
+        "Data Modeling",
+        "TensorFlow"
+      ],
+      "achievements": [
+        "Designed API serving 10K+ requests per second with sub-50ms latency",
+        "Led incident response for critical outage, reducing MTTR from 1 week to 30 minutes",
+        "Reduced infrastructure costs by $200K annually through cloud optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Computer Science",
+      "university": "University of Virginia"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "technical": [
+      "Data Engineering",
+      "Airflow",
+      "Snowflake",
+      "NumPy",
+      "Looker",
+      "ETL",
+      "Pandas",
+      "Power BI",
+      "Databricks"
+    ],
+    "soft": [
+      "Cross-functional Collaboration",
+      "Team Leadership",
+      "Strategic Thinking",
+      "Critical Thinking",
+      "Presentation Skills",
+      "Decision Making"
+    ]
+  }
+}

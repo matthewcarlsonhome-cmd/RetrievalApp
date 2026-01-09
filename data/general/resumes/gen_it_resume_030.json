@@ -1,0 +1,64 @@
+{
+  "id": "gen_it_resume_030",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Yuki Zhang",
+    "email": "yuki.zhang@email.com",
+    "phone": "(226) 526-4588",
+    "location": "San Francisco, CA",
+    "linkedin": "linkedin.com/in/yukizhang"
+  },
+  "summary": "2+ years of experience in security technologies. Expertise in Incident Response, SIEM, OWASP. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "entry",
+  "years_experience": 2,
+  "primary_tech_stack": "AppSec",
+  "tech_specialization": "security",
+  "experience": [
+    {
+      "title": "Platform Engineer",
+      "employer": "Instacart",
+      "start_date": "2024-01",
+      "end_date": "Present",
+      "tech_stack": [
+        "AppSec",
+        "IDS/IPS",
+        "Vulnerability Assessment",
+        "Firewall",
+        "SOC Operations"
+      ],
+      "achievements": [
+        "Built machine learning model achieving 43% accuracy for fraud detection",
+        "Architected event-driven system handling 10K+ daily transactions"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Information Technology",
+      "university": "Ohio State University"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "technical": [
+      "AppSec",
+      "SOC Operations",
+      "Security Compliance",
+      "SIEM",
+      "IDS/IPS",
+      "OWASP",
+      "Firewall",
+      "Vulnerability Assessment",
+      "IAM"
+    ],
+    "soft": [
+      "Adaptability",
+      "Coaching",
+      "Time Management",
+      "Mentoring",
+      "Communication",
+      "Strategic Thinking"
+    ]
+  }
+}

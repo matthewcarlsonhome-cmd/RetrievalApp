@@ -1,0 +1,63 @@
+{
+  "id": "gen_biz_resume_018",
+  "domain": "business",
+  "personal_info": {
+    "name": "Janet Desai",
+    "email": "janet.desai@email.com",
+    "phone": "(255) 857-5331",
+    "location": "Remote",
+    "linkedin": "linkedin.com/in/janetdesai"
+  },
+  "summary": "Results-driven project professional with 3+ years of experience. Expertise in Risk Management, Project Planning, Budget Management. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "junior",
+  "years_experience": 3,
+  "primary_specialty": "project",
+  "experience": [
+    {
+      "title": "Operations Manager",
+      "employer": "Bank of America",
+      "start_date": "2023-01",
+      "end_date": "Present",
+      "focus_areas": [
+        "Stakeholder Communication",
+        "Budget Management",
+        "Project Planning",
+        "MS Project"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 5 across 8 time zones",
+        "Led digital transformation initiative resulting in $300M annual savings",
+        "Launched product feature increasing user engagement by 57%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "University of Virginia"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "professional": [
+      "Project Planning",
+      "MS Project",
+      "Risk Management",
+      "Stakeholder Communication",
+      "Gantt Charts",
+      "Smartsheet",
+      "Resource Allocation",
+      "Change Management"
+    ],
+    "soft": [
+      "Conflict Resolution",
+      "Emotional Intelligence",
+      "Stakeholder Management",
+      "Problem Solving",
+      "Presentation Skills",
+      "Adaptability",
+      "Influence"
+    ]
+  }
+}

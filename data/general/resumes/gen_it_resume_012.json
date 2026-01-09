@@ -1,0 +1,86 @@
+{
+  "id": "gen_it_resume_012",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Catherine Baker",
+    "email": "catherine.baker@email.com",
+    "phone": "(879) 344-6731",
+    "location": "Miami, FL",
+    "linkedin": "linkedin.com/in/catherinebaker"
+  },
+  "summary": "6+ years of experience in data technologies. Expertise in ETL, Data Modeling, Looker. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "mid",
+  "years_experience": 6,
+  "primary_tech_stack": "Data Engineering",
+  "tech_specialization": "data",
+  "experience": [
+    {
+      "title": "Cloud Engineer",
+      "employer": "Oracle",
+      "start_date": "2023-03",
+      "end_date": "Present",
+      "tech_stack": [
+        "SQL",
+        "Looker",
+        "Power BI",
+        "Snowflake",
+        "Tableau"
+      ],
+      "achievements": [
+        "Led incident response for critical outage, reducing MTTR from 2 days to 30 minutes",
+        "Architected data pipeline processing 500K+ events per day with 99.9% reliability",
+        "Implemented CI/CD pipeline reducing deployment time from 1 week to 1 day",
+        "Led migration of 5 microservices to Kubernetes, improving deployment frequency by 37%"
+      ]
+    },
+    {
+      "title": "Junior Data Scientist",
+      "employer": "Apple",
+      "start_date": "2020-03",
+      "end_date": "2023-03",
+      "tech_stack": [
+        "Python",
+        "Kafka",
+        "Looker",
+        "dbt",
+        "Databricks"
+      ],
+      "achievements": [
+        "Developed automation reducing manual operations by 43%",
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Reduced system latency by 60% through optimization of database queries and caching strategies"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MS",
+      "field": "Computer Science",
+      "university": "Penn State"
+    }
+  ],
+  "certifications": [
+    "Snowflake SnowPro Core",
+    "Databricks Certified Data Engineer"
+  ],
+  "skills": {
+    "technical": [
+      "Python",
+      "Power BI",
+      "ETL",
+      "Tableau",
+      "Snowflake",
+      "NumPy",
+      "Data Modeling",
+      "Looker",
+      "Databricks"
+    ],
+    "soft": [
+      "Negotiation",
+      "Communication",
+      "Time Management",
+      "Cross-functional Collaboration",
+      "Presentation Skills"
+    ]
+  }
+}

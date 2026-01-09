@@ -1,0 +1,83 @@
+{
+  "id": "gen_it_resume_035",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Debra Nelson",
+    "email": "debra.nelson@email.com",
+    "phone": "(513) 371-2069",
+    "location": "Remote",
+    "linkedin": "linkedin.com/in/debranelson"
+  },
+  "summary": "3+ years of experience in fullstack technologies. Expertise in Angular, Express, Git. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "junior",
+  "years_experience": 3,
+  "primary_tech_stack": ".NET",
+  "tech_specialization": "fullstack",
+  "experience": [
+    {
+      "title": "Junior Engineering Manager",
+      "employer": "Shopify",
+      "start_date": "2025-04",
+      "end_date": "Present",
+      "tech_stack": [
+        ".NET",
+        "Redis",
+        "Django",
+        "Express",
+        "MongoDB"
+      ],
+      "achievements": [
+        "Mentored team of 5 engineers, improving code review quality by 18%",
+        "Led migration of 3 microservices to Kubernetes, improving deployment frequency by 41%",
+        "Architected event-driven system handling 50K+ daily transactions"
+      ]
+    },
+    {
+      "title": "ML Engineer",
+      "employer": "ServiceNow",
+      "start_date": "2023-02",
+      "end_date": "2025-01",
+      "tech_stack": [
+        "Java",
+        "Angular",
+        "React",
+        "Spring Boot",
+        "Express"
+      ],
+      "achievements": [
+        "Architected data pipeline processing 500K+ events per day with 99.9% reliability",
+        "Developed automation reducing manual operations by 42%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MS",
+      "field": "Data Science",
+      "university": "Northeastern University"
+    }
+  ],
+  "certifications": [
+    "Oracle Certified Professional Java Developer"
+  ],
+  "skills": {
+    "technical": [
+      "Python",
+      "React",
+      "Redis",
+      "CI/CD",
+      "Git",
+      "GraphQL",
+      "Node.js",
+      "REST APIs",
+      "Django"
+    ],
+    "soft": [
+      "Communication",
+      "Problem Solving",
+      "Critical Thinking",
+      "Negotiation",
+      "Presentation Skills"
+    ]
+  }
+}

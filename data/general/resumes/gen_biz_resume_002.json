@@ -1,0 +1,121 @@
+{
+  "id": "gen_biz_resume_002",
+  "domain": "business",
+  "personal_info": {
+    "name": "Justin Cooper",
+    "email": "justin.cooper@email.com",
+    "phone": "(694) 383-7065",
+    "location": "Washington, DC",
+    "linkedin": "linkedin.com/in/justincooper"
+  },
+  "summary": "Results-driven project professional with 12+ years of experience. Expertise in Change Management, Stakeholder Communication, Gantt Charts. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "lead",
+  "years_experience": 12,
+  "primary_specialty": "project",
+  "experience": [
+    {
+      "title": "Lead Operations Manager",
+      "employer": "Target",
+      "start_date": "2024-07",
+      "end_date": "Present",
+      "focus_areas": [
+        "Gantt Charts",
+        "Smartsheet",
+        "Resource Allocation",
+        "RAID Log"
+      ],
+      "achievements": [
+        "Negotiated vendor contracts saving $50K annually",
+        "Managed cross-functional team of 5 across 3 time zones",
+        "Reduced project delivery time by 38% through Agile transformation"
+      ]
+    },
+    {
+      "title": "Process Improvement Specialist",
+      "employer": "Walmart",
+      "start_date": "2020-02",
+      "end_date": "2024-02",
+      "focus_areas": [
+        "Resource Allocation",
+        "Budget Management",
+        "Smartsheet",
+        "Project Planning"
+      ],
+      "achievements": [
+        "Led digital transformation initiative resulting in $50M annual savings",
+        "Managed $750M project budget with delivery 31% under budget"
+      ]
+    },
+    {
+      "title": "Project Manager",
+      "employer": "Adobe",
+      "start_date": "2014-12",
+      "end_date": "2019-12",
+      "focus_areas": [
+        "RAID Log",
+        "Stakeholder Communication",
+        "Change Management",
+        "Risk Management"
+      ],
+      "achievements": [
+        "Facilitated 8+ stakeholder workshops for enterprise requirements",
+        "Managed $150M project budget with delivery 29% under budget"
+      ]
+    },
+    {
+      "title": "Senior Product Manager",
+      "employer": "JPMorgan Chase",
+      "start_date": "2013-07",
+      "end_date": "2014-07",
+      "focus_areas": [
+        "Risk Management",
+        "Budget Management",
+        "Stakeholder Communication",
+        "Gantt Charts"
+      ],
+      "achievements": [
+        "Led digital transformation initiative resulting in $50M annual savings",
+        "Built business case for $750M technology investment with 70% ROI",
+        "Developed requirements for system serving 5+ users across 4 regions",
+        "Managed cross-functional team of 50 across 2 time zones"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "UC Berkeley"
+    },
+    {
+      "degree": "BS",
+      "field": "Economics",
+      "university": "Carnegie Mellon University"
+    }
+  ],
+  "certifications": [
+    "PMI-ACP",
+    "PRINCE2 Practitioner",
+    "Certified ScrumMaster (CSM)"
+  ],
+  "skills": {
+    "professional": [
+      "Smartsheet",
+      "Gantt Charts",
+      "Change Management",
+      "RAID Log",
+      "Stakeholder Communication",
+      "Resource Allocation",
+      "Budget Management",
+      "MS Project"
+    ],
+    "soft": [
+      "Critical Thinking",
+      "Mentoring",
+      "Decision Making",
+      "Negotiation",
+      "Change Management",
+      "Emotional Intelligence"
+    ]
+  }
+}

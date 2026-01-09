@@ -1,0 +1,50 @@
+{
+  "id": "gen_marketing_job_017",
+  "domain": "marketing",
+  "title": "VP of Marketing",
+  "employer": "R/GA",
+  "department": "Marketing",
+  "location": "Chicago, IL",
+  "remote": false,
+  "employment_type": "Full-time",
+  "experience_level": "vp",
+  "requirements": {
+    "years_min": 12,
+    "years_max": 20,
+    "education": "MBA preferred",
+    "skills_required": [
+      "Marketing Strategy",
+      "Team Building",
+      "Budget Management",
+      "Executive Presence"
+    ],
+    "skills_preferred": [
+      "Public Company Experience",
+      "IPO Experience"
+    ]
+  },
+  "salary_range": {
+    "min": 280000,
+    "max": 500000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute marketing initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Mentor and develop team members",
+    "Set strategic direction and priorities for the organization",
+    "Manage budget and resource allocation",
+    "Report to executive leadership on progress and outcomes"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Hybrid work environment"
+  ],
+  "posted_date": "2025-12-18"
+}

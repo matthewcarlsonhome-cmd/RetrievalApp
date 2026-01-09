@@ -1,0 +1,63 @@
+{
+  "id": "gen_it_resume_016",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Zara Kelly",
+    "email": "zara.kelly@email.com",
+    "phone": "(661) 982-5582",
+    "location": "Remote",
+    "linkedin": "linkedin.com/in/zarakelly"
+  },
+  "summary": "1+ years of experience in data technologies. Expertise in Kafka, ETL, Looker. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "junior",
+  "years_experience": 1,
+  "primary_tech_stack": "Python",
+  "tech_specialization": "data",
+  "experience": [
+    {
+      "title": "Junior ML Engineer",
+      "employer": "JPMorgan Chase",
+      "start_date": "2025-03",
+      "end_date": "Present",
+      "tech_stack": [
+        "Data Engineering",
+        "Airflow",
+        "PyTorch",
+        "Looker",
+        "Pandas"
+      ],
+      "achievements": [
+        "Reduced infrastructure costs by $500K annually through cloud optimization",
+        "Implemented security controls achieving SOC 2 Type II certification"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Software Engineering",
+      "university": "University of Colorado"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "technical": [
+      "Spark",
+      "Power BI",
+      "Databricks",
+      "Snowflake",
+      "Pandas",
+      "Tableau",
+      "Data Modeling",
+      "dbt",
+      "TensorFlow"
+    ],
+    "soft": [
+      "Change Management",
+      "Presentation Skills",
+      "Strategic Thinking",
+      "Mentoring",
+      "Negotiation"
+    ]
+  }
+}

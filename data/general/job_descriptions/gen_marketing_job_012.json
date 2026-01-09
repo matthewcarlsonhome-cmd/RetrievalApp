@@ -1,0 +1,47 @@
+{
+  "id": "gen_marketing_job_012",
+  "domain": "marketing",
+  "title": "Content Marketing Specialist",
+  "employer": "BBDO",
+  "department": "Marketing",
+  "location": "Charlotte, NC",
+  "remote": false,
+  "employment_type": "Full-time",
+  "experience_level": "junior",
+  "requirements": {
+    "years_min": 1,
+    "years_max": 3,
+    "education": "BS in Communications, Marketing, or English",
+    "skills_required": [
+      "Content Writing",
+      "SEO",
+      "Social Media",
+      "WordPress"
+    ],
+    "skills_preferred": [
+      "Video Production",
+      "Graphic Design"
+    ]
+  },
+  "salary_range": {
+    "min": 65000,
+    "max": 95000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute marketing initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Contribute to team goals and learn from senior colleagues"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Hybrid work environment"
+  ],
+  "posted_date": "2025-12-17"
+}

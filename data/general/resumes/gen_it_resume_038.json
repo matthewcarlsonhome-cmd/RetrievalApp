@@ -1,0 +1,121 @@
+{
+  "id": "gen_it_resume_038",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Hiroshi Lewis",
+    "email": "hiroshi.lewis@email.com",
+    "phone": "(899) 276-4063",
+    "location": "Chicago, IL",
+    "linkedin": "linkedin.com/in/hiroshilewis"
+  },
+  "summary": "15+ years of experience in cloud technologies. Expertise in CloudWatch, GKE, S3. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "director",
+  "years_experience": 15,
+  "primary_tech_stack": "Multi-Cloud",
+  "tech_specialization": "cloud",
+  "experience": [
+    {
+      "title": "Director of Platform",
+      "employer": "McKinsey Digital",
+      "start_date": "2023-09",
+      "end_date": "Present",
+      "tech_stack": [
+        "AWS",
+        "S3",
+        "VPC",
+        "CloudFormation",
+        "EC2"
+      ],
+      "achievements": [
+        "Designed API serving 5M+ requests per second with sub-50ms latency",
+        "Led incident response for critical outage, reducing MTTR from 2 days to 2 hours",
+        "Built machine learning model achieving 74% accuracy for fraud detection"
+      ]
+    },
+    {
+      "title": "Lead Solutions Architect",
+      "employer": "Microsoft",
+      "start_date": "2018-03",
+      "end_date": "2023-03",
+      "tech_stack": [
+        "AWS",
+        "Azure DevOps",
+        "CloudWatch",
+        "IAM",
+        "GKE"
+      ],
+      "achievements": [
+        "Mentored team of 3 engineers, improving code review quality by 48%",
+        "Reduced system latency by 61% through optimization of database queries and caching strategies"
+      ]
+    },
+    {
+      "title": "Senior Technical Lead",
+      "employer": "Snowflake",
+      "start_date": "2013-11",
+      "end_date": "2017-11",
+      "tech_stack": [
+        "Google Cloud",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Azure DevOps"
+      ],
+      "achievements": [
+        "Architected data pipeline processing 10M+ events per day with 99.9% reliability",
+        "Reduced infrastructure costs by $500K annually through cloud optimization"
+      ]
+    },
+    {
+      "title": "Scrum Master",
+      "employer": "Oracle",
+      "start_date": "2010-06",
+      "end_date": "2013-06",
+      "tech_stack": [
+        "Google Cloud",
+        "GKE",
+        "Azure DevOps",
+        "IAM",
+        "Docker"
+      ],
+      "achievements": [
+        "Architected event-driven system handling 1M+ daily transactions",
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Built machine learning model achieving 24% accuracy for fraud detection",
+        "Reduced infrastructure costs by $750K annually through cloud optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Mathematics",
+      "university": "University of Colorado"
+    }
+  ],
+  "certifications": [
+    "Certified Kubernetes Administrator (CKA)",
+    "Azure Administrator Associate",
+    "Google Cloud Professional Cloud Architect",
+    "AWS DevOps Engineer"
+  ],
+  "skills": {
+    "technical": [
+      "Google Cloud",
+      "CloudFormation",
+      "IAM",
+      "Azure DevOps",
+      "CloudWatch",
+      "Kubernetes",
+      "Docker",
+      "Terraform",
+      "VPC"
+    ],
+    "soft": [
+      "Mentoring",
+      "Presentation Skills",
+      "Emotional Intelligence",
+      "Strategic Thinking"
+    ]
+  }
+}

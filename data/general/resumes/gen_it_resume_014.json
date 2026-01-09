@@ -1,0 +1,104 @@
+{
+  "id": "gen_it_resume_014",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Olga Mitchell",
+    "email": "olga.mitchell@email.com",
+    "phone": "(961) 650-7334",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/olgamitchell"
+  },
+  "summary": "7+ years of experience in security technologies. Expertise in Vulnerability Assessment, OWASP, Risk Assessment. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "lead",
+  "years_experience": 7,
+  "primary_tech_stack": "Cloud Security",
+  "tech_specialization": "security",
+  "experience": [
+    {
+      "title": "Lead QA Engineer",
+      "employer": "Square",
+      "start_date": "2025-12",
+      "end_date": "Present",
+      "tech_stack": [
+        "Security Engineering",
+        "Vulnerability Assessment",
+        "Incident Response",
+        "OWASP",
+        "IAM"
+      ],
+      "achievements": [
+        "Led migration of 20 microservices to Kubernetes, improving deployment frequency by 71%",
+        "Implemented CI/CD pipeline reducing deployment time from 1 week to 30 minutes",
+        "Mentored team of 8 engineers, improving code review quality by 65%"
+      ]
+    },
+    {
+      "title": "Senior Systems Administrator",
+      "employer": "Google",
+      "start_date": "2020-06",
+      "end_date": "2025-06",
+      "tech_stack": [
+        "Security Engineering",
+        "SIEM",
+        "Incident Response",
+        "SOC Operations",
+        "Vulnerability Assessment"
+      ],
+      "achievements": [
+        "Architected event-driven system handling 50K+ daily transactions",
+        "Developed automation reducing manual operations by 55%",
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Reduced infrastructure costs by $500K annually through cloud optimization"
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "employer": "Instacart",
+      "start_date": "2018-12",
+      "end_date": "2019-12",
+      "tech_stack": [
+        "Cloud Security",
+        "Incident Response",
+        "SIEM",
+        "Firewall",
+        "Penetration Testing"
+      ],
+      "achievements": [
+        "Implemented CI/CD pipeline reducing deployment time from 1 week to 2 hours",
+        "Led incident response for critical outage, reducing MTTR from 2 days to 30 minutes",
+        "Led migration of 15 microservices to Kubernetes, improving deployment frequency by 17%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Data Science",
+      "university": "Northeastern University"
+    }
+  ],
+  "certifications": [
+    "CompTIA Security+",
+    "CISM"
+  ],
+  "skills": {
+    "technical": [
+      "AppSec",
+      "OWASP",
+      "Incident Response",
+      "SIEM",
+      "SOC Operations",
+      "Vulnerability Assessment",
+      "IDS/IPS",
+      "Security Compliance",
+      "Firewall"
+    ],
+    "soft": [
+      "Problem Solving",
+      "Adaptability",
+      "Decision Making",
+      "Emotional Intelligence",
+      "Mentoring"
+    ]
+  }
+}

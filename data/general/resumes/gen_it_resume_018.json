@@ -1,0 +1,119 @@
+{
+  "id": "gen_it_resume_018",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Pamela Chen",
+    "email": "pamela.chen@email.com",
+    "phone": "(688) 531-5064",
+    "location": "San Francisco, CA",
+    "linkedin": "linkedin.com/in/pamelachen"
+  },
+  "summary": "8+ years of experience in cloud technologies. Expertise in Terraform, Docker, CloudFormation. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "lead",
+  "years_experience": 8,
+  "primary_tech_stack": "Multi-Cloud",
+  "tech_specialization": "cloud",
+  "experience": [
+    {
+      "title": "Lead Frontend Developer",
+      "employer": "Accenture",
+      "start_date": "2024-01",
+      "end_date": "Present",
+      "tech_stack": [
+        "Multi-Cloud",
+        "CloudWatch",
+        "EC2",
+        "Lambda",
+        "GKE"
+      ],
+      "achievements": [
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Designed API serving 5M+ requests per second with sub-50ms latency"
+      ]
+    },
+    {
+      "title": "Senior Data Engineer",
+      "employer": "Charles Schwab",
+      "start_date": "2020-10",
+      "end_date": "2023-10",
+      "tech_stack": [
+        "Google Cloud",
+        "CloudFormation",
+        "Terraform",
+        "VPC",
+        "CloudWatch"
+      ],
+      "achievements": [
+        "Architected event-driven system handling 100K+ daily transactions",
+        "Mentored team of 8 engineers, improving code review quality by 64%",
+        "Designed API serving 5M+ requests per second with sub-100ms latency",
+        "Led incident response for critical outage, reducing MTTR from 4 hours to 2 hours"
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "employer": "Salesforce",
+      "start_date": "2018-07",
+      "end_date": "2020-07",
+      "tech_stack": [
+        "Multi-Cloud",
+        "Kubernetes",
+        "Azure DevOps",
+        "S3",
+        "Lambda"
+      ],
+      "achievements": [
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Architected data pipeline processing 10M+ events per day with 99.9% reliability"
+      ]
+    },
+    {
+      "title": "Junior Solutions Architect",
+      "employer": "ServiceNow",
+      "start_date": "2017-04",
+      "end_date": "2018-04",
+      "tech_stack": [
+        "AWS",
+        "Docker",
+        "Azure DevOps",
+        "Lambda",
+        "Terraform"
+      ],
+      "achievements": [
+        "Reduced system latency by 51% through optimization of database queries and caching strategies",
+        "Built machine learning model achieving 32% accuracy for fraud detection"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MS",
+      "field": "Computer Science",
+      "university": "Columbia University"
+    }
+  ],
+  "certifications": [
+    "AWS DevOps Engineer",
+    "AWS Solutions Architect - Associate"
+  ],
+  "skills": {
+    "technical": [
+      "Google Cloud",
+      "IAM",
+      "VPC",
+      "CloudFormation",
+      "Lambda",
+      "Docker",
+      "Azure DevOps",
+      "CloudWatch",
+      "Terraform"
+    ],
+    "soft": [
+      "Strategic Thinking",
+      "Critical Thinking",
+      "Problem Solving",
+      "Change Management",
+      "Emotional Intelligence"
+    ]
+  }
+}

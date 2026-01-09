@@ -1,0 +1,47 @@
+{
+  "id": "gen_business_job_024",
+  "domain": "business",
+  "title": "Program Manager",
+  "employer": "JPMorgan Chase",
+  "department": "PMO",
+  "location": "Atlanta, GA",
+  "remote": false,
+  "employment_type": "Full-time",
+  "experience_level": "senior",
+  "requirements": {
+    "years_min": 7,
+    "years_max": 12,
+    "education": "BS/MBA, PMP required",
+    "skills_required": [
+      "Program Management",
+      "Portfolio Management",
+      "Executive Reporting",
+      "Budget Management"
+    ],
+    "skills_preferred": [
+      "Technology Transformation",
+      "Change Management"
+    ]
+  },
+  "salary_range": {
+    "min": 130000,
+    "max": 200000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute pmo initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Mentor and develop team members"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Hybrid work environment"
+  ],
+  "posted_date": "2025-12-12"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "gen_business_job_025",
+  "domain": "business",
+  "title": "Operations Manager",
+  "employer": "UnitedHealth Group",
+  "department": "Operations",
+  "location": "Seattle, WA",
+  "remote": false,
+  "employment_type": "Full-time",
+  "experience_level": "mid",
+  "requirements": {
+    "years_min": 4,
+    "years_max": 8,
+    "education": "BS in Business or Operations",
+    "skills_required": [
+      "Process Optimization",
+      "Team Management",
+      "KPI Tracking",
+      "Vendor Management"
+    ],
+    "skills_preferred": [
+      "Six Sigma",
+      "Lean Management"
+    ]
+  },
+  "salary_range": {
+    "min": 90000,
+    "max": 140000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute operations initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Contribute to team goals and learn from senior colleagues"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Hybrid work environment"
+  ],
+  "posted_date": "2025-12-28"
+}

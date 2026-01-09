@@ -1,0 +1,50 @@
+{
+  "id": "gen_it_job_007",
+  "domain": "it",
+  "title": "Engineering Manager",
+  "employer": "Cisco",
+  "department": "Engineering",
+  "location": "San Diego, CA",
+  "remote": false,
+  "employment_type": "Full-time",
+  "experience_level": "director",
+  "requirements": {
+    "years_min": 8,
+    "years_max": 15,
+    "education": "BS/MS in Computer Science, MBA preferred",
+    "skills_required": [
+      "Team Leadership",
+      "Agile",
+      "Technical Strategy",
+      "Hiring"
+    ],
+    "skills_preferred": [
+      "Budget Management",
+      "Executive Communication"
+    ]
+  },
+  "salary_range": {
+    "min": 200000,
+    "max": 320000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute engineering initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Mentor and develop team members",
+    "Set strategic direction and priorities for the organization",
+    "Manage budget and resource allocation",
+    "Report to executive leadership on progress and outcomes"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Hybrid work environment"
+  ],
+  "posted_date": "2025-12-21"
+}

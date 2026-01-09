@@ -1,0 +1,47 @@
+{
+  "id": "gen_business_job_027",
+  "domain": "business",
+  "title": "Chief of Staff",
+  "employer": "KPMG Advisory",
+  "department": "Executive",
+  "location": "Dallas, TX",
+  "remote": false,
+  "employment_type": "Full-time",
+  "experience_level": "senior",
+  "requirements": {
+    "years_min": 6,
+    "years_max": 12,
+    "education": "MBA preferred",
+    "skills_required": [
+      "Executive Support",
+      "Strategic Planning",
+      "Cross-functional Coordination",
+      "Communication"
+    ],
+    "skills_preferred": [
+      "Consulting Background",
+      "Board Experience"
+    ]
+  },
+  "salary_range": {
+    "min": 130000,
+    "max": 200000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute executive initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Mentor and develop team members"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Hybrid work environment"
+  ],
+  "posted_date": "2025-12-25"
+}

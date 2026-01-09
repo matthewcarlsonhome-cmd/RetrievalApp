@@ -1,0 +1,82 @@
+{
+  "id": "gen_mkt_resume_022",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Angela Phillips",
+    "email": "angela.phillips@email.com",
+    "phone": "(612) 237-9740",
+    "location": "Philadelphia, PA",
+    "linkedin": "linkedin.com/in/angelaphillips"
+  },
+  "summary": "Creative and data-driven product marketing professional with 6+ years of experience. Expert in Product Positioning, Customer Research, Battle Cards. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "mid",
+  "years_experience": 6,
+  "primary_specialty": "product_marketing",
+  "experience": [
+    {
+      "title": "Digital Marketing Manager",
+      "employer": "Nike",
+      "start_date": "2023-03",
+      "end_date": "Present",
+      "channels": [
+        "Competitive Analysis",
+        "Messaging",
+        "Demo Development",
+        "Pricing Strategy"
+      ],
+      "achievements": [
+        "Managed $500M annual marketing budget across 15 channels",
+        "Led rebranding initiative increasing brand awareness by 27%",
+        "Created sales enablement materials improving win rate by 52%",
+        "Launched product to 20K customers with 66% activation rate"
+      ]
+    },
+    {
+      "title": "Marketing Operations Manager",
+      "employer": "Buffer",
+      "start_date": "2020-01",
+      "end_date": "2023-01",
+      "channels": [
+        "Sales Enablement",
+        "Customer Research",
+        "Product Positioning",
+        "Pricing Strategy"
+      ],
+      "achievements": [
+        "Increased organic traffic by 44% through SEO optimization strategy",
+        "Built marketing analytics dashboard tracking 15+ KPIs across channels",
+        "Launched product to 20K customers with 67% activation rate"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Business Administration",
+      "university": "UC Berkeley"
+    }
+  ],
+  "certifications": [
+    "Pragmatic Marketing Certified",
+    "Product Marketing Alliance Certification"
+  ],
+  "skills": {
+    "marketing": [
+      "Battle Cards",
+      "Sales Enablement",
+      "Messaging",
+      "Demo Development",
+      "Pricing Strategy",
+      "Launch Planning",
+      "Product Positioning",
+      "Customer Research"
+    ],
+    "soft": [
+      "Team Leadership",
+      "Change Management",
+      "Emotional Intelligence",
+      "Communication",
+      "Strategic Thinking"
+    ]
+  }
+}

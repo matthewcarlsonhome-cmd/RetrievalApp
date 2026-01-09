@@ -1,0 +1,62 @@
+{
+  "id": "gen_mkt_resume_020",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Kwame Diaz",
+    "email": "kwame.diaz@email.com",
+    "phone": "(623) 620-6762",
+    "location": "San Diego, CA",
+    "linkedin": "linkedin.com/in/kwamediaz"
+  },
+  "summary": "Creative and data-driven digital professional with 1+ years of experience. Expert in A/B Testing, Email Marketing, Salesforce Marketing Cloud. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "junior",
+  "years_experience": 1,
+  "primary_specialty": "digital",
+  "experience": [
+    {
+      "title": "Content Marketing Manager",
+      "employer": "Adobe",
+      "start_date": "2025-03",
+      "end_date": "Present",
+      "channels": [
+        "LinkedIn Ads",
+        "Email Marketing",
+        "Marketing Automation",
+        "HubSpot"
+      ],
+      "achievements": [
+        "Achieved 51% improvement in email open rates through A/B testing",
+        "Led rebranding initiative increasing brand awareness by 35%",
+        "Built marketing analytics dashboard tracking 50+ KPIs across channels",
+        "Managed $200M annual marketing budget across 10 channels"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BA",
+      "field": "Communications",
+      "university": "University of Washington"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "marketing": [
+      "Google Ads",
+      "HubSpot",
+      "Google Analytics",
+      "SEO",
+      "LinkedIn Ads",
+      "A/B Testing",
+      "Marketo",
+      "PPC"
+    ],
+    "soft": [
+      "Coaching",
+      "Problem Solving",
+      "Influence",
+      "Time Management",
+      "Conflict Resolution"
+    ]
+  }
+}

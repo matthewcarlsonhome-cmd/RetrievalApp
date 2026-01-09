@@ -1,0 +1,49 @@
+{
+  "id": "gen_it_job_001",
+  "domain": "it",
+  "title": "Senior Software Engineer",
+  "employer": "Thomson Reuters",
+  "department": "Engineering",
+  "location": "Miami, FL",
+  "remote": false,
+  "employment_type": "Full-time",
+  "experience_level": "senior",
+  "requirements": {
+    "years_min": 5,
+    "years_max": 10,
+    "education": "BS in Computer Science or related field",
+    "skills_required": [
+      "Python",
+      "Java",
+      "Microservices",
+      "REST APIs",
+      "SQL"
+    ],
+    "skills_preferred": [
+      "Kubernetes",
+      "AWS",
+      "GraphQL"
+    ]
+  },
+  "salary_range": {
+    "min": 130000,
+    "max": 200000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute engineering initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Mentor and develop team members"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Hybrid work environment"
+  ],
+  "posted_date": "2025-12-19"
+}

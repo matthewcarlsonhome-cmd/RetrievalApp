@@ -1,0 +1,79 @@
+{
+  "id": "gen_mkt_resume_009",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Dmitri Desai",
+    "email": "dmitri.desai@email.com",
+    "phone": "(570) 846-1462",
+    "location": "Tampa, FL",
+    "linkedin": "linkedin.com/in/dmitridesai"
+  },
+  "summary": "Creative and data-driven analytics professional with 4+ years of experience. Expert in Mixpanel, Customer Segmentation, Cohort Analysis. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "mid",
+  "years_experience": 4,
+  "primary_specialty": "analytics",
+  "experience": [
+    {
+      "title": "Product Marketing Manager",
+      "employer": "Spotify",
+      "start_date": "2025-06",
+      "end_date": "Present",
+      "channels": [
+        "Looker",
+        "Mixpanel",
+        "Tableau",
+        "Google Analytics 4"
+      ],
+      "achievements": [
+        "Managed $100M annual marketing budget across 50 channels",
+        "Increased organic traffic by 31% through SEO optimization strategy"
+      ]
+    },
+    {
+      "title": "Marketing Manager",
+      "employer": "Hootsuite",
+      "start_date": "2022-03",
+      "end_date": "2025-03",
+      "channels": [
+        "Customer Segmentation",
+        "Looker",
+        "CLV Analysis",
+        "Mixpanel"
+      ],
+      "achievements": [
+        "Increased organic traffic by 70% through SEO optimization strategy",
+        "Created sales enablement materials improving win rate by 46%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "University of Washington"
+    }
+  ],
+  "certifications": [
+    "Marketing Research Association (MRA)"
+  ],
+  "skills": {
+    "marketing": [
+      "Tableau",
+      "Cohort Analysis",
+      "SQL",
+      "Looker",
+      "Google Analytics 4",
+      "Mixpanel",
+      "Customer Segmentation",
+      "Data Analysis"
+    ],
+    "soft": [
+      "Critical Thinking",
+      "Decision Making",
+      "Conflict Resolution",
+      "Problem Solving",
+      "Influence",
+      "Team Leadership"
+    ]
+  }
+}

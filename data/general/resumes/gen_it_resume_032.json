@@ -1,0 +1,66 @@
+{
+  "id": "gen_it_resume_032",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Donna Williams",
+    "email": "donna.williams@email.com",
+    "phone": "(578) 391-8303",
+    "location": "New York, NY",
+    "linkedin": "linkedin.com/in/donnawilliams"
+  },
+  "summary": "1+ years of experience in cloud technologies. Expertise in Terraform, Azure DevOps, VPC. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "junior",
+  "years_experience": 1,
+  "primary_tech_stack": "Google Cloud",
+  "tech_specialization": "cloud",
+  "experience": [
+    {
+      "title": "Junior ML Engineer",
+      "employer": "Apple",
+      "start_date": "2025-02",
+      "end_date": "Present",
+      "tech_stack": [
+        "Google Cloud",
+        "Lambda",
+        "Docker",
+        "CloudWatch",
+        "S3"
+      ],
+      "achievements": [
+        "Led migration of 3 microservices to Kubernetes, improving deployment frequency by 60%",
+        "Designed API serving 50K+ requests per second with sub-100ms latency",
+        "Developed automation reducing manual operations by 30%",
+        "Mentored team of 3 engineers, improving code review quality by 38%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Computer Science",
+      "university": "University of Washington"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "technical": [
+      "Azure",
+      "VPC",
+      "Terraform",
+      "S3",
+      "Azure DevOps",
+      "IAM",
+      "Lambda",
+      "CloudFormation",
+      "Kubernetes"
+    ],
+    "soft": [
+      "Negotiation",
+      "Strategic Thinking",
+      "Critical Thinking",
+      "Coaching",
+      "Stakeholder Management",
+      "Mentoring"
+    ]
+  }
+}

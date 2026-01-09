@@ -1,0 +1,118 @@
+{
+  "id": "gen_mkt_resume_015",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Ashley Scott",
+    "email": "ashley.scott@email.com",
+    "phone": "(501) 532-1938",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/ashleyscott"
+  },
+  "summary": "Creative and data-driven content professional with 10+ years of experience. Expert in Content Strategy, Storytelling, Editorial Planning. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "senior",
+  "years_experience": 10,
+  "primary_specialty": "content",
+  "experience": [
+    {
+      "title": "Senior Director of Marketing",
+      "employer": "VaynerMedia",
+      "start_date": "2025-05",
+      "end_date": "Present",
+      "channels": [
+        "Copywriting",
+        "WordPress",
+        "SEO Content",
+        "Editorial Planning"
+      ],
+      "achievements": [
+        "Achieved 40% improvement in email open rates through A/B testing",
+        "Launched product to 3K customers with 20% activation rate",
+        "Generated $50M in pipeline through demand generation campaigns",
+        "Managed $300M annual marketing budget across 15 channels"
+      ]
+    },
+    {
+      "title": "Marketing Specialist",
+      "employer": "Spotify",
+      "start_date": "2022-12",
+      "end_date": "2024-12",
+      "channels": [
+        "Content Strategy",
+        "Adobe Creative Suite",
+        "Webflow",
+        "Storytelling"
+      ],
+      "achievements": [
+        "Reduced customer acquisition cost by 32% while scaling spend $150K",
+        "Managed $50M annual marketing budget across 5 channels"
+      ]
+    },
+    {
+      "title": "Marketing Operations Manager",
+      "employer": "R/GA",
+      "start_date": "2018-07",
+      "end_date": "2022-07",
+      "channels": [
+        "Webflow",
+        "WordPress",
+        "Storytelling",
+        "Editorial Planning"
+      ],
+      "achievements": [
+        "Reduced customer acquisition cost by 71% while scaling spend $100K",
+        "Launched product to 5K customers with 74% activation rate",
+        "Led rebranding initiative increasing brand awareness by 17%",
+        "Increased organic traffic by 43% through SEO optimization strategy"
+      ]
+    },
+    {
+      "title": "Brand Director",
+      "employer": "VaynerMedia",
+      "start_date": "2015-06",
+      "end_date": "2018-06",
+      "channels": [
+        "SEO Content",
+        "Brand Voice",
+        "Content Strategy",
+        "WordPress"
+      ],
+      "achievements": [
+        "Launched product to 5K customers with 49% activation rate",
+        "Led rebranding initiative increasing brand awareness by 53%",
+        "Managed $300M annual marketing budget across 100 channels",
+        "Built marketing analytics dashboard tracking 5+ KPIs across channels"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "Boston University"
+    }
+  ],
+  "certifications": [
+    "Copyblogger Certified Content Marketer",
+    "Content Marketing Institute Certification",
+    "HubSpot Content Marketing"
+  ],
+  "skills": {
+    "marketing": [
+      "Content Strategy",
+      "Editorial Planning",
+      "Webflow",
+      "Copywriting",
+      "Adobe Creative Suite",
+      "Storytelling",
+      "SEO Content",
+      "Brand Voice"
+    ],
+    "soft": [
+      "Strategic Thinking",
+      "Negotiation",
+      "Communication",
+      "Mentoring",
+      "Presentation Skills"
+    ]
+  }
+}

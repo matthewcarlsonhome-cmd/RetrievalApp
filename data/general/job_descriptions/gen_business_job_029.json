@@ -1,0 +1,47 @@
+{
+  "id": "gen_business_job_029",
+  "domain": "business",
+  "title": "Strategy Manager",
+  "employer": "Home Depot",
+  "department": "Strategy",
+  "location": "Los Angeles, CA",
+  "remote": false,
+  "employment_type": "Full-time",
+  "experience_level": "mid",
+  "requirements": {
+    "years_min": 3,
+    "years_max": 7,
+    "education": "MBA or top consulting experience",
+    "skills_required": [
+      "Strategic Analysis",
+      "Financial Modeling",
+      "Market Research",
+      "Executive Presentation"
+    ],
+    "skills_preferred": [
+      "Top-tier Consulting",
+      "Private Equity"
+    ]
+  },
+  "salary_range": {
+    "min": 90000,
+    "max": 140000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute strategy initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Contribute to team goals and learn from senior colleagues"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Hybrid work environment"
+  ],
+  "posted_date": "2025-12-24"
+}

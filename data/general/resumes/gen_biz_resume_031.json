@@ -1,0 +1,63 @@
+{
+  "id": "gen_biz_resume_031",
+  "domain": "business",
+  "personal_info": {
+    "name": "Maria Adams",
+    "email": "maria.adams@email.com",
+    "phone": "(404) 701-8298",
+    "location": "Phoenix, AZ",
+    "linkedin": "linkedin.com/in/mariaadams"
+  },
+  "summary": "Results-driven analysis professional with 1+ years of experience. Expertise in UAT, Stakeholder Management, Scrum. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "entry",
+  "years_experience": 1,
+  "primary_specialty": "analysis",
+  "experience": [
+    {
+      "title": "Lead Business Analyst",
+      "employer": "Adobe",
+      "start_date": "2025-02",
+      "end_date": "Present",
+      "focus_areas": [
+        "Excel",
+        "Confluence",
+        "JIRA",
+        "UAT"
+      ],
+      "achievements": [
+        "Launched product feature increasing user engagement by 17%",
+        "Led digital transformation initiative resulting in $100M annual savings",
+        "Negotiated vendor contracts saving $750K annually"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Finance",
+      "university": "University of Maryland"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "professional": [
+      "Use Cases",
+      "Stakeholder Management",
+      "JIRA",
+      "Confluence",
+      "BPMN",
+      "Process Mapping",
+      "SQL",
+      "User Stories"
+    ],
+    "soft": [
+      "Presentation Skills",
+      "Communication",
+      "Adaptability",
+      "Time Management",
+      "Cross-functional Collaboration",
+      "Stakeholder Management",
+      "Negotiation"
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "gen_mkt_resume_017",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Gary Perez",
+    "email": "gary.perez@email.com",
+    "phone": "(782) 626-3452",
+    "location": "Remote",
+    "linkedin": "linkedin.com/in/garyperez"
+  },
+  "summary": "Creative and data-driven digital professional with 10+ years of experience. Expert in PPC, Marketing Automation, Salesforce Marketing Cloud. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "senior",
+  "years_experience": 10,
+  "primary_specialty": "digital",
+  "experience": [
+    {
+      "title": "Senior Marketing Specialist",
+      "employer": "Hootsuite",
+      "start_date": "2024-02",
+      "end_date": "Present",
+      "channels": [
+        "SEM",
+        "LinkedIn Ads",
+        "Salesforce Marketing Cloud",
+        "SEO"
+      ],
+      "achievements": [
+        "Achieved 36% improvement in email open rates through A/B testing",
+        "Created sales enablement materials improving win rate by 71%",
+        "Led rebranding initiative increasing brand awareness by 65%",
+        "Reduced customer acquisition cost by 39% while scaling spend $1000K"
+      ]
+    },
+    {
+      "title": "Brand Director",
+      "employer": "Netflix",
+      "start_date": "2020-12",
+      "end_date": "2023-12",
+      "channels": [
+        "SEM",
+        "LinkedIn Ads",
+        "PPC",
+        "HubSpot"
+      ],
+      "achievements": [
+        "Built marketing analytics dashboard tracking 100+ KPIs across channels",
+        "Created sales enablement materials improving win rate by 39%",
+        "Managed $200M annual marketing budget across 50 channels"
+      ]
+    },
+    {
+      "title": "Marketing Coordinator",
+      "employer": "Adobe",
+      "start_date": "2015-12",
+      "end_date": "2020-12",
+      "channels": [
+        "SEO",
+        "LinkedIn Ads",
+        "A/B Testing",
+        "Marketing Automation"
+      ],
+      "achievements": [
+        "Generated $150M in pipeline through demand generation campaigns",
+        "Increased organic traffic by 30% through SEO optimization strategy"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BA",
+      "field": "Psychology",
+      "university": "Arizona State University"
+    }
+  ],
+  "certifications": [
+    "Facebook Blueprint Certification",
+    "Google Ads Certification",
+    "HubSpot Inbound Marketing"
+  ],
+  "skills": {
+    "marketing": [
+      "SEM",
+      "HubSpot",
+      "Google Analytics",
+      "Salesforce Marketing Cloud",
+      "Marketing Automation",
+      "PPC",
+      "SEO",
+      "Marketo"
+    ],
+    "soft": [
+      "Communication",
+      "Strategic Thinking",
+      "Conflict Resolution",
+      "Cross-functional Collaboration",
+      "Team Leadership"
+    ]
+  }
+}

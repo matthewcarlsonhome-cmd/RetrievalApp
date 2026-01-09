@@ -1,0 +1,78 @@
+{
+  "id": "gen_biz_resume_009",
+  "domain": "business",
+  "personal_info": {
+    "name": "Michelle Edwards",
+    "email": "michelle.edwards@email.com",
+    "phone": "(786) 356-7987",
+    "location": "Miami, FL",
+    "linkedin": "linkedin.com/in/michelleedwards"
+  },
+  "summary": "Results-driven analysis professional with 2+ years of experience. Expertise in Scrum, Gap Analysis, UAT. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "entry",
+  "years_experience": 2,
+  "primary_specialty": "analysis",
+  "experience": [
+    {
+      "title": "Senior Project Manager",
+      "employer": "EY-Parthenon",
+      "start_date": "2025-06",
+      "end_date": "Present",
+      "focus_areas": [
+        "User Stories",
+        "Agile",
+        "SQL",
+        "Stakeholder Management"
+      ],
+      "achievements": [
+        "Reduced project delivery time by 52% through Agile transformation",
+        "Managed $50M project budget with delivery 18% under budget",
+        "Led digital transformation initiative resulting in $300M annual savings",
+        "Improved process efficiency by 47% through Lean Six Sigma implementation"
+      ]
+    },
+    {
+      "title": "Business Process Manager",
+      "employer": "Merck",
+      "start_date": "2024-05",
+      "end_date": "2025-05",
+      "focus_areas": [
+        "UAT",
+        "Agile",
+        "Confluence",
+        "Requirements Gathering"
+      ],
+      "achievements": [
+        "Improved process efficiency by 34% through Lean Six Sigma implementation",
+        "Built business case for $300M technology investment with 58% ROI"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Finance",
+      "university": "Northeastern University"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "professional": [
+      "Requirements Gathering",
+      "Agile",
+      "Stakeholder Management",
+      "User Stories",
+      "BPMN",
+      "Gap Analysis",
+      "Use Cases",
+      "SQL"
+    ],
+    "soft": [
+      "Strategic Thinking",
+      "Critical Thinking",
+      "Conflict Resolution",
+      "Mentoring",
+      "Problem Solving"
+    ]
+  }
+}

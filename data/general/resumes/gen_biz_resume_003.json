@@ -1,0 +1,139 @@
+{
+  "id": "gen_biz_resume_003",
+  "domain": "business",
+  "personal_info": {
+    "name": "Fatima Wang",
+    "email": "fatima.wang@email.com",
+    "phone": "(303) 533-6924",
+    "location": "Nashville, TN",
+    "linkedin": "linkedin.com/in/fatimawang"
+  },
+  "summary": "Results-driven project professional with 21+ years of experience. Expertise in Gantt Charts, Budget Management, RAID Log. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "vp",
+  "years_experience": 21,
+  "primary_specialty": "project",
+  "experience": [
+    {
+      "title": "VP of Program",
+      "employer": "Anthem",
+      "start_date": "2024-11",
+      "end_date": "Present",
+      "focus_areas": [
+        "MS Project",
+        "Change Management",
+        "Project Planning",
+        "Risk Management"
+      ],
+      "achievements": [
+        "Led digital transformation initiative resulting in $100M annual savings",
+        "Developed requirements for system serving 3+ users across 5 regions",
+        "Managed $50M project budget with delivery 55% under budget"
+      ]
+    },
+    {
+      "title": "Chief of Staff",
+      "employer": "Target",
+      "start_date": "2022-11",
+      "end_date": "2024-11",
+      "focus_areas": [
+        "Change Management",
+        "Resource Allocation",
+        "Budget Management",
+        "MS Project"
+      ],
+      "achievements": [
+        "Negotiated vendor contracts saving $100K annually",
+        "Improved process efficiency by 40% through Lean Six Sigma implementation"
+      ]
+    },
+    {
+      "title": "Business Development Manager",
+      "employer": "Pfizer",
+      "start_date": "2020-08",
+      "end_date": "2022-08",
+      "focus_areas": [
+        "RAID Log",
+        "MS Project",
+        "Change Management",
+        "Smartsheet"
+      ],
+      "achievements": [
+        "Improved process efficiency by 74% through Lean Six Sigma implementation",
+        "Managed cross-functional team of 5 across 4 time zones",
+        "Reduced project delivery time by 59% through Agile transformation"
+      ]
+    },
+    {
+      "title": "Strategy Director",
+      "employer": "Johnson & Johnson",
+      "start_date": "2018-08",
+      "end_date": "2020-08",
+      "focus_areas": [
+        "RAID Log",
+        "Project Planning",
+        "Stakeholder Communication",
+        "Change Management"
+      ],
+      "achievements": [
+        "Developed requirements for system serving 10+ users across 5 regions",
+        "Facilitated 15+ stakeholder workshops for enterprise requirements",
+        "Improved process efficiency by 45% through Lean Six Sigma implementation"
+      ]
+    },
+    {
+      "title": "Process Improvement Specialist",
+      "employer": "UnitedHealth Group",
+      "start_date": "2014-04",
+      "end_date": "2018-04",
+      "focus_areas": [
+        "Resource Allocation",
+        "RAID Log",
+        "Change Management",
+        "Smartsheet"
+      ],
+      "achievements": [
+        "Improved process efficiency by 68% through Lean Six Sigma implementation",
+        "Managed cross-functional team of 100 across 8 time zones",
+        "Built business case for $300M technology investment with 54% ROI"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "Duke University"
+    },
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "University of Illinois"
+    }
+  ],
+  "certifications": [
+    "PRINCE2 Practitioner",
+    "CAPM",
+    "PMP (Project Management Professional)"
+  ],
+  "skills": {
+    "professional": [
+      "Project Planning",
+      "Change Management",
+      "MS Project",
+      "Resource Allocation",
+      "Stakeholder Communication",
+      "Risk Management",
+      "Smartsheet",
+      "RAID Log"
+    ],
+    "soft": [
+      "Time Management",
+      "Team Leadership",
+      "Coaching",
+      "Change Management",
+      "Problem Solving",
+      "Mentoring",
+      "Presentation Skills"
+    ]
+  }
+}

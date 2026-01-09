@@ -1,0 +1,83 @@
+{
+  "id": "gen_it_resume_007",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Nicole Allen",
+    "email": "nicole.allen@email.com",
+    "phone": "(316) 672-2924",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/nicoleallen"
+  },
+  "summary": "6+ years of experience in data technologies. Expertise in Tableau, Scikit-learn, Airflow. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "mid",
+  "years_experience": 6,
+  "primary_tech_stack": "Spark",
+  "tech_specialization": "data",
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "employer": "Thomson Reuters",
+      "start_date": "2025-04",
+      "end_date": "Present",
+      "tech_stack": [
+        "Python",
+        "Power BI",
+        "ETL",
+        "PyTorch",
+        "Kafka"
+      ],
+      "achievements": [
+        "Architected data pipeline processing 100K+ events per day with 99.9% reliability",
+        "Mentored team of 20 engineers, improving code review quality by 45%"
+      ]
+    },
+    {
+      "title": "Junior Solutions Architect",
+      "employer": "JPMorgan Chase",
+      "start_date": "2019-11",
+      "end_date": "2024-11",
+      "tech_stack": [
+        "Spark",
+        "ETL",
+        "Databricks",
+        "Power BI",
+        "dbt"
+      ],
+      "achievements": [
+        "Mentored team of 15 engineers, improving code review quality by 35%",
+        "Led migration of 3 microservices to Kubernetes, improving deployment frequency by 41%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Mathematics",
+      "university": "Carnegie Mellon University"
+    }
+  ],
+  "certifications": [
+    "AWS Data Analytics Specialty",
+    "Databricks Certified Data Engineer"
+  ],
+  "skills": {
+    "technical": [
+      "Spark",
+      "Airflow",
+      "Data Modeling",
+      "Looker",
+      "NumPy",
+      "Pandas",
+      "Kafka",
+      "TensorFlow",
+      "Scikit-learn"
+    ],
+    "soft": [
+      "Change Management",
+      "Team Leadership",
+      "Decision Making",
+      "Cross-functional Collaboration",
+      "Problem Solving"
+    ]
+  }
+}

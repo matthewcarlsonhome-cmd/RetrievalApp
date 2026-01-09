@@ -1,0 +1,61 @@
+{
+  "id": "gen_biz_resume_014",
+  "domain": "business",
+  "personal_info": {
+    "name": "Raj Jones",
+    "email": "raj.jones@email.com",
+    "phone": "(745) 526-8227",
+    "location": "Charlotte, NC",
+    "linkedin": "linkedin.com/in/rajjones"
+  },
+  "summary": "Results-driven project professional with 1+ years of experience. Expertise in Risk Management, Gantt Charts, Budget Management. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "junior",
+  "years_experience": 1,
+  "primary_specialty": "project",
+  "experience": [
+    {
+      "title": "Business Development Manager",
+      "employer": "Adobe",
+      "start_date": "2025-02",
+      "end_date": "Present",
+      "focus_areas": [
+        "Change Management",
+        "Project Planning",
+        "Stakeholder Communication",
+        "Gantt Charts"
+      ],
+      "achievements": [
+        "Improved process efficiency by 74% through Lean Six Sigma implementation",
+        "Negotiated vendor contracts saving $50K annually"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Economics",
+      "university": "MIT"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "professional": [
+      "RAID Log",
+      "Risk Management",
+      "MS Project",
+      "Resource Allocation",
+      "Project Planning",
+      "Stakeholder Communication",
+      "Budget Management",
+      "Gantt Charts"
+    ],
+    "soft": [
+      "Mentoring",
+      "Time Management",
+      "Change Management",
+      "Problem Solving",
+      "Communication",
+      "Decision Making"
+    ]
+  }
+}

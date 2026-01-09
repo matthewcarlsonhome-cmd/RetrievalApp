@@ -1,0 +1,50 @@
+{
+  "id": "gen_business_job_028",
+  "domain": "business",
+  "title": "VP of Business Development",
+  "employer": "Microsoft",
+  "department": "Business Development",
+  "location": "Boston, MA",
+  "remote": true,
+  "employment_type": "Full-time",
+  "experience_level": "vp",
+  "requirements": {
+    "years_min": 12,
+    "years_max": 20,
+    "education": "MBA preferred",
+    "skills_required": [
+      "Partnership Strategy",
+      "Deal Negotiation",
+      "Revenue Growth",
+      "Executive Relationships"
+    ],
+    "skills_preferred": [
+      "M&A Experience",
+      "International Expansion"
+    ]
+  },
+  "salary_range": {
+    "min": 280000,
+    "max": 500000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute business development initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Mentor and develop team members",
+    "Set strategic direction and priorities for the organization",
+    "Manage budget and resource allocation",
+    "Report to executive leadership on progress and outcomes"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Remote work options"
+  ],
+  "posted_date": "2025-12-21"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "gen_mkt_resume_019",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Jack Mehta",
+    "email": "jack.mehta@email.com",
+    "phone": "(929) 662-7876",
+    "location": "Philadelphia, PA",
+    "linkedin": "linkedin.com/in/jackmehta"
+  },
+  "summary": "Creative and data-driven digital professional with 3+ years of experience. Expert in Google Ads, HubSpot, Facebook Ads. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "mid",
+  "years_experience": 3,
+  "primary_specialty": "digital",
+  "experience": [
+    {
+      "title": "Digital Marketing Manager",
+      "employer": "Mailchimp",
+      "start_date": "2025-03",
+      "end_date": "Present",
+      "channels": [
+        "Email Marketing",
+        "PPC",
+        "Google Analytics",
+        "Salesforce Marketing Cloud"
+      ],
+      "achievements": [
+        "Launched product to 100K customers with 70% activation rate",
+        "Led rebranding initiative increasing brand awareness by 21%"
+      ]
+    },
+    {
+      "title": "Demand Generation Manager",
+      "employer": "Amazon",
+      "start_date": "2023-09",
+      "end_date": "2024-09",
+      "channels": [
+        "LinkedIn Ads",
+        "Salesforce Marketing Cloud",
+        "Google Analytics",
+        "Marketing Automation"
+      ],
+      "achievements": [
+        "Managed $150M annual marketing budget across 100 channels",
+        "Generated $750M in pipeline through demand generation campaigns"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Business Administration",
+      "university": "University of Washington"
+    }
+  ],
+  "certifications": [
+    "Google Analytics Certification"
+  ],
+  "skills": {
+    "marketing": [
+      "SEO",
+      "HubSpot",
+      "Email Marketing",
+      "Facebook Ads",
+      "Google Analytics",
+      "PPC",
+      "Salesforce Marketing Cloud",
+      "SEM"
+    ],
+    "soft": [
+      "Negotiation",
+      "Critical Thinking",
+      "Strategic Thinking",
+      "Communication"
+    ]
+  }
+}

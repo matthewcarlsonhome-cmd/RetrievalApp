@@ -1,0 +1,81 @@
+{
+  "id": "gen_biz_resume_024",
+  "domain": "business",
+  "personal_info": {
+    "name": "Zara Ramos",
+    "email": "zara.ramos@email.com",
+    "phone": "(696) 621-6575",
+    "location": "Chicago, IL",
+    "linkedin": "linkedin.com/in/zararamos"
+  },
+  "summary": "Results-driven analysis professional with 5+ years of experience. Expertise in Process Mapping, User Stories, BPMN. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 5,
+  "primary_specialty": "analysis",
+  "experience": [
+    {
+      "title": "Business Development Manager",
+      "employer": "Bank of America",
+      "start_date": "2022-02",
+      "end_date": "Present",
+      "focus_areas": [
+        "Stakeholder Management",
+        "Use Cases",
+        "BPMN",
+        "Agile"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 50 across 2 time zones",
+        "Managed $50M project budget with delivery 50% under budget",
+        "Improved process efficiency by 34% through Lean Six Sigma implementation"
+      ]
+    },
+    {
+      "title": "Business Analyst",
+      "employer": "Deloitte Consulting",
+      "start_date": "2021-02",
+      "end_date": "2022-02",
+      "focus_areas": [
+        "SQL",
+        "Stakeholder Management",
+        "UAT",
+        "Process Mapping"
+      ],
+      "achievements": [
+        "Negotiated vendor contracts saving $100K annually",
+        "Reduced project delivery time by 52% through Agile transformation",
+        "Facilitated 15+ stakeholder workshops for enterprise requirements",
+        "Built business case for $200M technology investment with 33% ROI"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Economics",
+      "university": "University of Virginia"
+    }
+  ],
+  "certifications": [
+    "Agile Certified Practitioner (PMI-ACP)"
+  ],
+  "skills": {
+    "professional": [
+      "Gap Analysis",
+      "JIRA",
+      "Stakeholder Management",
+      "Confluence",
+      "Excel",
+      "Process Mapping",
+      "Scrum",
+      "Use Cases"
+    ],
+    "soft": [
+      "Team Leadership",
+      "Communication",
+      "Presentation Skills",
+      "Stakeholder Management",
+      "Critical Thinking"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "gen_it_resume_001",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Ashley Lewis",
+    "email": "ashley.lewis@email.com",
+    "phone": "(711) 605-8517",
+    "location": "Boston, MA",
+    "linkedin": "linkedin.com/in/ashleylewis"
+  },
+  "summary": "5+ years of experience in data technologies. Expertise in PyTorch, Scikit-learn, TensorFlow. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "senior",
+  "years_experience": 5,
+  "primary_tech_stack": "Spark",
+  "tech_specialization": "data",
+  "experience": [
+    {
+      "title": "Senior Full Stack Developer",
+      "employer": "Netflix",
+      "start_date": "2025-11",
+      "end_date": "Present",
+      "tech_stack": [
+        "Data Engineering",
+        "Pandas",
+        "Looker",
+        "NumPy",
+        "TensorFlow"
+      ],
+      "achievements": [
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Developed automation reducing manual operations by 63%"
+      ]
+    },
+    {
+      "title": "ML Engineer",
+      "employer": "Salesforce",
+      "start_date": "2021-06",
+      "end_date": "2025-06",
+      "tech_stack": [
+        "Python",
+        "Databricks",
+        "NumPy",
+        "Snowflake",
+        "Power BI"
+      ],
+      "achievements": [
+        "Built machine learning model achieving 22% accuracy for fraud detection",
+        "Reduced system latency by 17% through optimization of database queries and caching strategies",
+        "Mentored team of 100 engineers, improving code review quality by 32%",
+        "Implemented security controls achieving SOC 2 Type II certification"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Data Science",
+      "university": "University of Michigan"
+    }
+  ],
+  "certifications": [
+    "Snowflake SnowPro Core"
+  ],
+  "skills": {
+    "technical": [
+      "SQL",
+      "ETL",
+      "Snowflake",
+      "Power BI",
+      "Pandas",
+      "TensorFlow",
+      "Data Modeling",
+      "Tableau",
+      "Databricks"
+    ],
+    "soft": [
+      "Strategic Thinking",
+      "Mentoring",
+      "Time Management",
+      "Problem Solving",
+      "Influence"
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "gen_biz_resume_030",
+  "domain": "business",
+  "personal_info": {
+    "name": "Mary Stewart",
+    "email": "mary.stewart@email.com",
+    "phone": "(893) 296-6384",
+    "location": "San Francisco, CA",
+    "linkedin": "linkedin.com/in/marystewart"
+  },
+  "summary": "Results-driven analysis professional with 6+ years of experience. Expertise in Stakeholder Management, JIRA, SQL. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 6,
+  "primary_specialty": "analysis",
+  "experience": [
+    {
+      "title": "Lead Business Analyst",
+      "employer": "Wells Fargo",
+      "start_date": "2023-12",
+      "end_date": "Present",
+      "focus_areas": [
+        "Use Cases",
+        "Confluence",
+        "Scrum",
+        "Stakeholder Management"
+      ],
+      "achievements": [
+        "Developed requirements for system serving 3+ users across 5 regions",
+        "Built business case for $750M technology investment with 31% ROI"
+      ]
+    },
+    {
+      "title": "Partnership Manager",
+      "employer": "KPMG Advisory",
+      "start_date": "2021-09",
+      "end_date": "2023-09",
+      "focus_areas": [
+        "Stakeholder Management",
+        "BPMN",
+        "Agile",
+        "UAT"
+      ],
+      "achievements": [
+        "Reduced project delivery time by 35% through Agile transformation",
+        "Managed $500M project budget with delivery 46% under budget",
+        "Developed requirements for system serving 20+ users across 4 regions"
+      ]
+    },
+    {
+      "title": "Senior Business Analyst",
+      "employer": "EY-Parthenon",
+      "start_date": "2020-04",
+      "end_date": "2021-04",
+      "focus_areas": [
+        "BPMN",
+        "Requirements Gathering",
+        "User Stories",
+        "Excel"
+      ],
+      "achievements": [
+        "Reduced project delivery time by 25% through Agile transformation",
+        "Launched product feature increasing user engagement by 60%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "University of Virginia"
+    }
+  ],
+  "certifications": [
+    "CBAP (Certified Business Analysis Professional)"
+  ],
+  "skills": {
+    "professional": [
+      "Stakeholder Management",
+      "BPMN",
+      "SQL",
+      "Agile",
+      "Excel",
+      "User Stories",
+      "Requirements Gathering",
+      "Scrum"
+    ],
+    "soft": [
+      "Decision Making",
+      "Strategic Thinking",
+      "Conflict Resolution",
+      "Critical Thinking",
+      "Influence"
+    ]
+  }
+}

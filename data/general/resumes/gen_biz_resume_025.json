@@ -1,0 +1,78 @@
+{
+  "id": "gen_biz_resume_025",
+  "domain": "business",
+  "personal_info": {
+    "name": "Rebecca Collins",
+    "email": "rebecca.collins@email.com",
+    "phone": "(375) 972-9800",
+    "location": "San Francisco, CA",
+    "linkedin": "linkedin.com/in/rebeccacollins"
+  },
+  "summary": "Results-driven analysis professional with 4+ years of experience. Expertise in Confluence, Process Mapping, User Stories. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 4,
+  "primary_specialty": "analysis",
+  "experience": [
+    {
+      "title": "Senior Business Analyst",
+      "employer": "Google",
+      "start_date": "2025-03",
+      "end_date": "Present",
+      "focus_areas": [
+        "Stakeholder Management",
+        "Confluence",
+        "Gap Analysis",
+        "BPMN"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 15 across 3 time zones",
+        "Built business case for $150M technology investment with 34% ROI",
+        "Negotiated vendor contracts saving $750K annually"
+      ]
+    },
+    {
+      "title": "Business Process Manager",
+      "employer": "Costco",
+      "start_date": "2022-03",
+      "end_date": "2025-03",
+      "focus_areas": [
+        "Requirements Gathering",
+        "UAT",
+        "Process Mapping",
+        "Stakeholder Management"
+      ],
+      "achievements": [
+        "Developed requirements for system serving 3+ users across 8 regions",
+        "Launched product feature increasing user engagement by 26%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "University of Maryland"
+    }
+  ],
+  "certifications": [
+    "PMI-PBA"
+  ],
+  "skills": {
+    "professional": [
+      "Confluence",
+      "Scrum",
+      "User Stories",
+      "Agile",
+      "SQL",
+      "Process Mapping",
+      "JIRA",
+      "Use Cases"
+    ],
+    "soft": [
+      "Coaching",
+      "Mentoring",
+      "Change Management",
+      "Communication"
+    ]
+  }
+}

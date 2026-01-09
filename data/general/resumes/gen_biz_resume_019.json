@@ -1,0 +1,83 @@
+{
+  "id": "gen_biz_resume_019",
+  "domain": "business",
+  "personal_info": {
+    "name": "Jacob Kumar",
+    "email": "jacob.kumar@email.com",
+    "phone": "(703) 311-3357",
+    "location": "Washington, DC",
+    "linkedin": "linkedin.com/in/jacobkumar"
+  },
+  "summary": "Results-driven project professional with 6+ years of experience. Expertise in Smartsheet, Resource Allocation, Risk Management. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 6,
+  "primary_specialty": "project",
+  "experience": [
+    {
+      "title": "Business Development Manager",
+      "employer": "Walmart",
+      "start_date": "2024-07",
+      "end_date": "Present",
+      "focus_areas": [
+        "Gantt Charts",
+        "Budget Management",
+        "Smartsheet",
+        "Project Planning"
+      ],
+      "achievements": [
+        "Reduced project delivery time by 48% through Agile transformation",
+        "Facilitated 15+ stakeholder workshops for enterprise requirements",
+        "Negotiated vendor contracts saving $500K annually"
+      ]
+    },
+    {
+      "title": "Business Analyst",
+      "employer": "Humana",
+      "start_date": "2020-02",
+      "end_date": "2024-02",
+      "focus_areas": [
+        "Risk Management",
+        "Project Planning",
+        "Smartsheet",
+        "Change Management"
+      ],
+      "achievements": [
+        "Developed requirements for system serving 15+ users across 2 regions",
+        "Reduced project delivery time by 75% through Agile transformation",
+        "Negotiated vendor contracts saving $150K annually",
+        "Managed cross-functional team of 100 across 7 time zones"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Economics",
+      "university": "University of Maryland"
+    }
+  ],
+  "certifications": [
+    "PMP (Project Management Professional)"
+  ],
+  "skills": {
+    "professional": [
+      "Project Planning",
+      "Smartsheet",
+      "Change Management",
+      "Budget Management",
+      "RAID Log",
+      "Stakeholder Communication",
+      "Gantt Charts",
+      "MS Project"
+    ],
+    "soft": [
+      "Strategic Thinking",
+      "Influence",
+      "Mentoring",
+      "Presentation Skills",
+      "Coaching",
+      "Change Management",
+      "Time Management"
+    ]
+  }
+}

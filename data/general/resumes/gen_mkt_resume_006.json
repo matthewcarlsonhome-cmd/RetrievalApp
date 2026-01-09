@@ -1,0 +1,81 @@
+{
+  "id": "gen_mkt_resume_006",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Jamal Robinson",
+    "email": "jamal.robinson@email.com",
+    "phone": "(381) 232-9005",
+    "location": "San Francisco, CA",
+    "linkedin": "linkedin.com/in/jamalrobinson"
+  },
+  "summary": "Creative and data-driven analytics professional with 3+ years of experience. Expert in Customer Segmentation, CLV Analysis, Marketing Attribution. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "mid",
+  "years_experience": 3,
+  "primary_specialty": "analytics",
+  "experience": [
+    {
+      "title": "Marketing Specialist",
+      "employer": "Ogilvy",
+      "start_date": "2025-02",
+      "end_date": "Present",
+      "channels": [
+        "CLV Analysis",
+        "SQL",
+        "Mixpanel",
+        "Amplitude"
+      ],
+      "achievements": [
+        "Reduced customer acquisition cost by 60% while scaling spend $300K",
+        "Created sales enablement materials improving win rate by 65%",
+        "Launched product to 10K customers with 29% activation rate"
+      ]
+    },
+    {
+      "title": "Marketing Manager",
+      "employer": "Hootsuite",
+      "start_date": "2023-12",
+      "end_date": "2024-12",
+      "channels": [
+        "CLV Analysis",
+        "Tableau",
+        "Amplitude",
+        "Mixpanel"
+      ],
+      "achievements": [
+        "Managed $150M annual marketing budget across 8 channels",
+        "Developed content strategy resulting in 10K monthly blog visitors",
+        "Increased organic traffic by 52% through SEO optimization strategy"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "University of Pennsylvania"
+    }
+  ],
+  "certifications": [
+    "Tableau Desktop Specialist"
+  ],
+  "skills": {
+    "marketing": [
+      "Marketing Attribution",
+      "Google Analytics 4",
+      "Tableau",
+      "CLV Analysis",
+      "Looker",
+      "Data Analysis",
+      "Customer Segmentation",
+      "Amplitude"
+    ],
+    "soft": [
+      "Presentation Skills",
+      "Strategic Thinking",
+      "Stakeholder Management",
+      "Cross-functional Collaboration",
+      "Time Management",
+      "Negotiation"
+    ]
+  }
+}

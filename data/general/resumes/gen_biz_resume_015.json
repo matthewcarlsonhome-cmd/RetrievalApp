@@ -1,0 +1,60 @@
+{
+  "id": "gen_biz_resume_015",
+  "domain": "business",
+  "personal_info": {
+    "name": "Helen Bailey",
+    "email": "helen.bailey@email.com",
+    "phone": "(295) 915-8672",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/helenbailey"
+  },
+  "summary": "Results-driven analysis professional with 1+ years of experience. Expertise in UAT, Stakeholder Management, JIRA. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "junior",
+  "years_experience": 1,
+  "primary_specialty": "analysis",
+  "experience": [
+    {
+      "title": "Program Manager",
+      "employer": "Home Depot",
+      "start_date": "2025-04",
+      "end_date": "Present",
+      "focus_areas": [
+        "Gap Analysis",
+        "Agile",
+        "Excel",
+        "Stakeholder Management"
+      ],
+      "achievements": [
+        "Launched product feature increasing user engagement by 25%",
+        "Improved process efficiency by 16% through Lean Six Sigma implementation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Finance",
+      "university": "University of Pennsylvania"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "professional": [
+      "BPMN",
+      "Confluence",
+      "Scrum",
+      "SQL",
+      "UAT",
+      "Gap Analysis",
+      "Stakeholder Management",
+      "Excel"
+    ],
+    "soft": [
+      "Change Management",
+      "Strategic Thinking",
+      "Emotional Intelligence",
+      "Presentation Skills",
+      "Coaching"
+    ]
+  }
+}

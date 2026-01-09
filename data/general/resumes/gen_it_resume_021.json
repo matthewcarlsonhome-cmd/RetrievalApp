@@ -1,0 +1,64 @@
+{
+  "id": "gen_it_resume_021",
+  "domain": "technology",
+  "personal_info": {
+    "name": "John King",
+    "email": "john.king@email.com",
+    "phone": "(261) 832-8916",
+    "location": "Charlotte, NC",
+    "linkedin": "linkedin.com/in/johnking"
+  },
+  "summary": "4+ years of experience in fullstack technologies. Expertise in CI/CD, React, Git. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "mid",
+  "years_experience": 4,
+  "primary_tech_stack": ".NET",
+  "tech_specialization": "fullstack",
+  "experience": [
+    {
+      "title": "QA Engineer",
+      "employer": "Cisco",
+      "start_date": "2022-05",
+      "end_date": "Present",
+      "tech_stack": [
+        "Python",
+        "Redis",
+        "Node.js",
+        "Flask",
+        "MongoDB"
+      ],
+      "achievements": [
+        "Mentored team of 20 engineers, improving code review quality by 56%",
+        "Implemented security controls achieving SOC 2 Type II certification"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MS",
+      "field": "Data Science",
+      "university": "University of Virginia"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Developer"
+  ],
+  "skills": {
+    "technical": [
+      "JavaScript/TypeScript",
+      "Angular",
+      "REST APIs",
+      "React",
+      "Flask",
+      "Vue.js",
+      "Redis",
+      "Node.js",
+      "CI/CD"
+    ],
+    "soft": [
+      "Team Leadership",
+      "Mentoring",
+      "Emotional Intelligence",
+      "Stakeholder Management"
+    ]
+  }
+}

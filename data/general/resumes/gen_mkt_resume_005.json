@@ -1,0 +1,81 @@
+{
+  "id": "gen_mkt_resume_005",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Sanjay Li",
+    "email": "sanjay.li@email.com",
+    "phone": "(439) 471-2243",
+    "location": "San Diego, CA",
+    "linkedin": "linkedin.com/in/sanjayli"
+  },
+  "summary": "Creative and data-driven product marketing professional with 3+ years of experience. Expert in Competitive Analysis, Messaging, Pricing Strategy. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "junior",
+  "years_experience": 3,
+  "primary_specialty": "product_marketing",
+  "experience": [
+    {
+      "title": "Marketing Specialist",
+      "employer": "Adobe",
+      "start_date": "2025-03",
+      "end_date": "Present",
+      "channels": [
+        "Demo Development",
+        "Pricing Strategy",
+        "Customer Research",
+        "Sales Enablement"
+      ],
+      "achievements": [
+        "Created sales enablement materials improving win rate by 73%",
+        "Led rebranding initiative increasing brand awareness by 30%",
+        "Launched product to 5K customers with 61% activation rate"
+      ]
+    },
+    {
+      "title": "CMO",
+      "employer": "Buffer",
+      "start_date": "2023-01",
+      "end_date": "2025-01",
+      "channels": [
+        "Battle Cards",
+        "Demo Development",
+        "Competitive Analysis",
+        "Sales Enablement"
+      ],
+      "achievements": [
+        "Built marketing analytics dashboard tracking 100+ KPIs across channels",
+        "Developed content strategy resulting in 10K monthly blog visitors",
+        "Managed $150M annual marketing budget across 50 channels",
+        "Created sales enablement materials improving win rate by 23%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "Penn State"
+    }
+  ],
+  "certifications": [
+    "Pragmatic Marketing Certified"
+  ],
+  "skills": {
+    "marketing": [
+      "Customer Research",
+      "Pricing Strategy",
+      "Launch Planning",
+      "Battle Cards",
+      "Demo Development",
+      "Messaging",
+      "Competitive Analysis",
+      "Sales Enablement"
+    ],
+    "soft": [
+      "Negotiation",
+      "Critical Thinking",
+      "Team Leadership",
+      "Strategic Thinking",
+      "Conflict Resolution"
+    ]
+  }
+}

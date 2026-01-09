@@ -1,0 +1,80 @@
+{
+  "id": "gen_it_resume_033",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Linda Martin",
+    "email": "linda.martin@email.com",
+    "phone": "(785) 823-8750",
+    "location": "New York, NY",
+    "linkedin": "linkedin.com/in/lindamartin"
+  },
+  "summary": "2+ years of experience in devops technologies. Expertise in GitHub Actions, Ansible, Chef. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "junior",
+  "years_experience": 2,
+  "primary_tech_stack": "DevOps",
+  "tech_specialization": "devops",
+  "experience": [
+    {
+      "title": "Junior Scrum Master",
+      "employer": "Fidelity",
+      "start_date": "2025-02",
+      "end_date": "Present",
+      "tech_stack": [
+        "SRE",
+        "Istio",
+        "ELK Stack",
+        "ArgoCD",
+        "Grafana"
+      ],
+      "achievements": [
+        "Reduced infrastructure costs by $200K annually through cloud optimization",
+        "Implemented security controls achieving SOC 2 Type II certification"
+      ]
+    },
+    {
+      "title": "Site Reliability Engineer",
+      "employer": "Workday",
+      "start_date": "2023-09",
+      "end_date": "2024-09",
+      "tech_stack": [
+        "DevOps",
+        "Jenkins",
+        "Chef",
+        "GitLab CI",
+        "Service Mesh"
+      ],
+      "achievements": [
+        "Led incident response for critical outage, reducing MTTR from 2 weeks to 3 days",
+        "Architected data pipeline processing 1M+ events per day with 99.9% reliability"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Data Science",
+      "university": "Carnegie Mellon University"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "technical": [
+      "DevOps",
+      "ELK Stack",
+      "Istio",
+      "Service Mesh",
+      "GitLab CI",
+      "Helm",
+      "Grafana",
+      "Chef",
+      "GitHub Actions"
+    ],
+    "soft": [
+      "Decision Making",
+      "Negotiation",
+      "Critical Thinking",
+      "Time Management",
+      "Conflict Resolution"
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "gen_mkt_resume_008",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Susan Li",
+    "email": "susan.li@email.com",
+    "phone": "(450) 634-3890",
+    "location": "Nashville, TN",
+    "linkedin": "linkedin.com/in/susanli"
+  },
+  "summary": "Creative and data-driven product marketing professional with 3+ years of experience. Expert in Launch Planning, Messaging, Sales Enablement. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "junior",
+  "years_experience": 3,
+  "primary_specialty": "product_marketing",
+  "experience": [
+    {
+      "title": "Senior Product Marketing Manager",
+      "employer": "Hootsuite",
+      "start_date": "2024-05",
+      "end_date": "Present",
+      "channels": [
+        "Pricing Strategy",
+        "Sales Enablement",
+        "Battle Cards",
+        "Competitive Analysis"
+      ],
+      "achievements": [
+        "Built marketing analytics dashboard tracking 100+ KPIs across channels",
+        "Managed $200M annual marketing budget across 5 channels",
+        "Generated $1000M in pipeline through demand generation campaigns",
+        "Achieved 28% improvement in email open rates through A/B testing"
+      ]
+    },
+    {
+      "title": "Demand Generation Manager",
+      "employer": "DDB",
+      "start_date": "2023-05",
+      "end_date": "2024-05",
+      "channels": [
+        "Product Positioning",
+        "Pricing Strategy",
+        "Customer Research",
+        "Sales Enablement"
+      ],
+      "achievements": [
+        "Launched product to 10K customers with 36% activation rate",
+        "Built marketing analytics dashboard tracking 20+ KPIs across channels"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "MIT"
+    }
+  ],
+  "certifications": [
+    "Product Marketing Alliance Certification"
+  ],
+  "skills": {
+    "marketing": [
+      "Sales Enablement",
+      "Launch Planning",
+      "Competitive Analysis",
+      "Product Positioning",
+      "Pricing Strategy",
+      "Messaging",
+      "Customer Research",
+      "Demo Development"
+    ],
+    "soft": [
+      "Emotional Intelligence",
+      "Presentation Skills",
+      "Stakeholder Management",
+      "Adaptability",
+      "Problem Solving"
+    ]
+  }
+}

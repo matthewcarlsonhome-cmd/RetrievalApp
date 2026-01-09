@@ -1,0 +1,100 @@
+{
+  "id": "gen_it_resume_029",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Janet Cooper",
+    "email": "janet.cooper@email.com",
+    "phone": "(861) 654-3110",
+    "location": "Seattle, WA",
+    "linkedin": "linkedin.com/in/janetcooper"
+  },
+  "summary": "6+ years of experience in fullstack technologies. Expertise in Redis, Angular, React. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "mid",
+  "years_experience": 6,
+  "primary_tech_stack": ".NET",
+  "tech_specialization": "fullstack",
+  "experience": [
+    {
+      "title": "Cloud Engineer",
+      "employer": "Airbnb",
+      "start_date": "2024-01",
+      "end_date": "Present",
+      "tech_stack": [
+        "JavaScript/TypeScript",
+        "Redis",
+        "React",
+        "REST APIs",
+        "CI/CD"
+      ],
+      "achievements": [
+        "Architected event-driven system handling 500K+ daily transactions",
+        "Built machine learning model achieving 17% accuracy for fraud detection",
+        "Led migration of 5 microservices to Kubernetes, improving deployment frequency by 52%"
+      ]
+    },
+    {
+      "title": "Junior Solutions Architect",
+      "employer": "IBM",
+      "start_date": "2022-10",
+      "end_date": "2023-10",
+      "tech_stack": [
+        "Python",
+        "MongoDB",
+        "Express",
+        "Microservices",
+        "Django"
+      ],
+      "achievements": [
+        "Architected event-driven system handling 50K+ daily transactions",
+        "Designed API serving 500K+ requests per second with sub-100ms latency",
+        "Led incident response for critical outage, reducing MTTR from 1 week to 30 minutes"
+      ]
+    },
+    {
+      "title": "DevOps Engineer",
+      "employer": "Shopify",
+      "start_date": "2019-09",
+      "end_date": "2022-09",
+      "tech_stack": [
+        "JavaScript/TypeScript",
+        "Flask",
+        "Microservices",
+        "Git",
+        "Django"
+      ],
+      "achievements": [
+        "Led migration of 50 microservices to Kubernetes, improving deployment frequency by 37%",
+        "Implemented CI/CD pipeline reducing deployment time from 2 days to 30 minutes"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Computer Science",
+      "university": "Stanford University"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Developer",
+    "Microsoft Certified: Azure Developer Associate"
+  ],
+  "skills": {
+    "technical": [
+      "JavaScript/TypeScript",
+      "Spring Boot",
+      "Vue.js",
+      "Node.js",
+      "Flask",
+      "Django",
+      "Redis",
+      "Angular",
+      "Express"
+    ],
+    "soft": [
+      "Team Leadership",
+      "Strategic Thinking",
+      "Mentoring"
+    ]
+  }
+}

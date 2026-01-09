@@ -1,0 +1,135 @@
+{
+  "id": "gen_mkt_resume_018",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Jacob Evans",
+    "email": "jacob.evans@email.com",
+    "phone": "(839) 521-7122",
+    "location": "Seattle, WA",
+    "linkedin": "linkedin.com/in/jacobevans"
+  },
+  "summary": "Creative and data-driven analytics professional with 10+ years of experience. Expert in Mixpanel, Tableau, Google Analytics 4. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "senior",
+  "years_experience": 10,
+  "primary_specialty": "analytics",
+  "experience": [
+    {
+      "title": "Senior Director of Marketing",
+      "employer": "BBDO",
+      "start_date": "2023-08",
+      "end_date": "Present",
+      "channels": [
+        "Customer Segmentation",
+        "Google Analytics 4",
+        "Mixpanel",
+        "Data Analysis"
+      ],
+      "achievements": [
+        "Led rebranding initiative increasing brand awareness by 73%",
+        "Managed $200M annual marketing budget across 50 channels",
+        "Reduced customer acquisition cost by 26% while scaling spend $1000K"
+      ]
+    },
+    {
+      "title": "Content Marketing Manager",
+      "employer": "Meta",
+      "start_date": "2022-02",
+      "end_date": "2023-02",
+      "channels": [
+        "SQL",
+        "Tableau",
+        "CLV Analysis",
+        "Cohort Analysis"
+      ],
+      "achievements": [
+        "Generated $200M in pipeline through demand generation campaigns",
+        "Created sales enablement materials improving win rate by 28%"
+      ]
+    },
+    {
+      "title": "Brand Director",
+      "employer": "Amazon",
+      "start_date": "2020-12",
+      "end_date": "2021-12",
+      "channels": [
+        "Amplitude",
+        "Mixpanel",
+        "Data Analysis",
+        "Looker"
+      ],
+      "achievements": [
+        "Increased organic traffic by 20% through SEO optimization strategy",
+        "Built marketing analytics dashboard tracking 50+ KPIs across channels"
+      ]
+    },
+    {
+      "title": "CMO",
+      "employer": "Apple",
+      "start_date": "2019-11",
+      "end_date": "2020-11",
+      "channels": [
+        "Google Analytics 4",
+        "Customer Segmentation",
+        "Data Analysis",
+        "Tableau"
+      ],
+      "achievements": [
+        "Created sales enablement materials improving win rate by 25%",
+        "Increased organic traffic by 66% through SEO optimization strategy",
+        "Reduced customer acquisition cost by 36% while scaling spend $750K"
+      ]
+    },
+    {
+      "title": "Marketing Manager",
+      "employer": "Netflix",
+      "start_date": "2018-06",
+      "end_date": "2019-06",
+      "channels": [
+        "Amplitude",
+        "Looker",
+        "Marketing Attribution",
+        "Data Analysis"
+      ],
+      "achievements": [
+        "Reduced customer acquisition cost by 70% while scaling spend $100K",
+        "Developed content strategy resulting in 5K monthly blog visitors"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Marketing",
+      "university": "University of Maryland"
+    },
+    {
+      "degree": "BA",
+      "field": "Psychology",
+      "university": "Northwestern University"
+    }
+  ],
+  "certifications": [
+    "Marketing Research Association (MRA)",
+    "Tableau Desktop Specialist",
+    "Google Analytics 4 Certification"
+  ],
+  "skills": {
+    "marketing": [
+      "Mixpanel",
+      "Customer Segmentation",
+      "Marketing Attribution",
+      "Looker",
+      "Data Analysis",
+      "Amplitude",
+      "SQL",
+      "CLV Analysis"
+    ],
+    "soft": [
+      "Communication",
+      "Emotional Intelligence",
+      "Adaptability",
+      "Negotiation",
+      "Decision Making"
+    ]
+  }
+}

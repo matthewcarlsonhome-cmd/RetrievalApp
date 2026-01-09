@@ -1,0 +1,49 @@
+{
+  "id": "gen_it_job_004",
+  "domain": "it",
+  "title": "Data Engineer",
+  "employer": "Stripe",
+  "department": "Data",
+  "location": "San Francisco, CA",
+  "remote": true,
+  "employment_type": "Full-time",
+  "experience_level": "mid",
+  "requirements": {
+    "years_min": 3,
+    "years_max": 6,
+    "education": "BS in Computer Science or related field",
+    "skills_required": [
+      "Python",
+      "SQL",
+      "ETL",
+      "Spark",
+      "Airflow"
+    ],
+    "skills_preferred": [
+      "Databricks",
+      "Snowflake",
+      "dbt"
+    ]
+  },
+  "salary_range": {
+    "min": 90000,
+    "max": 140000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute data initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Contribute to team goals and learn from senior colleagues"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Remote work options"
+  ],
+  "posted_date": "2025-12-28"
+}

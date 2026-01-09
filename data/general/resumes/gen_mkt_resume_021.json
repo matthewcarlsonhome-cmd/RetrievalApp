@@ -1,0 +1,138 @@
+{
+  "id": "gen_mkt_resume_021",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Jamal Thompson",
+    "email": "jamal.thompson@email.com",
+    "phone": "(404) 294-6710",
+    "location": "Tampa, FL",
+    "linkedin": "linkedin.com/in/jamalthompson"
+  },
+  "summary": "Creative and data-driven digital professional with 17+ years of experience. Expert in A/B Testing, HubSpot, Facebook Ads. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "vp",
+  "years_experience": 17,
+  "primary_specialty": "digital",
+  "experience": [
+    {
+      "title": "VP of Demand Generation",
+      "employer": "Leo Burnett",
+      "start_date": "2022-06",
+      "end_date": "Present",
+      "channels": [
+        "Marketo",
+        "HubSpot",
+        "Email Marketing",
+        "Facebook Ads"
+      ],
+      "achievements": [
+        "Created sales enablement materials improving win rate by 68%",
+        "Generated $1000M in pipeline through demand generation campaigns",
+        "Developed content strategy resulting in 10K monthly blog visitors",
+        "Led rebranding initiative increasing brand awareness by 69%"
+      ]
+    },
+    {
+      "title": "Marketing Coordinator",
+      "employer": "Buffer",
+      "start_date": "2017-05",
+      "end_date": "2022-05",
+      "channels": [
+        "Salesforce Marketing Cloud",
+        "Google Ads",
+        "A/B Testing",
+        "Facebook Ads"
+      ],
+      "achievements": [
+        "Reduced customer acquisition cost by 58% while scaling spend $750K",
+        "Created sales enablement materials improving win rate by 65%",
+        "Led rebranding initiative increasing brand awareness by 50%"
+      ]
+    },
+    {
+      "title": "Product Marketing Manager",
+      "employer": "R/GA",
+      "start_date": "2015-01",
+      "end_date": "2017-01",
+      "channels": [
+        "PPC",
+        "Email Marketing",
+        "LinkedIn Ads",
+        "A/B Testing"
+      ],
+      "achievements": [
+        "Led rebranding initiative increasing brand awareness by 21%",
+        "Launched product to 20K customers with 75% activation rate"
+      ]
+    },
+    {
+      "title": "Director of Marketing",
+      "employer": "Netflix",
+      "start_date": "2010-09",
+      "end_date": "2014-09",
+      "channels": [
+        "SEO",
+        "Google Analytics",
+        "A/B Testing",
+        "SEM"
+      ],
+      "achievements": [
+        "Led rebranding initiative increasing brand awareness by 55%",
+        "Increased organic traffic by 49% through SEO optimization strategy",
+        "Achieved 20% improvement in email open rates through A/B testing",
+        "Launched product to 5K customers with 74% activation rate"
+      ]
+    },
+    {
+      "title": "Marketing Manager",
+      "employer": "Unilever",
+      "start_date": "2008-06",
+      "end_date": "2010-06",
+      "channels": [
+        "LinkedIn Ads",
+        "Google Ads",
+        "Email Marketing",
+        "SEM"
+      ],
+      "achievements": [
+        "Increased organic traffic by 46% through SEO optimization strategy",
+        "Led rebranding initiative increasing brand awareness by 26%",
+        "Generated $50M in pipeline through demand generation campaigns"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Marketing",
+      "university": "University of Maryland"
+    },
+    {
+      "degree": "BS",
+      "field": "Business Administration",
+      "university": "Carnegie Mellon University"
+    }
+  ],
+  "certifications": [
+    "Hootsuite Social Marketing",
+    "Google Ads Certification",
+    "HubSpot Inbound Marketing"
+  ],
+  "skills": {
+    "marketing": [
+      "Google Ads",
+      "LinkedIn Ads",
+      "SEM",
+      "Salesforce Marketing Cloud",
+      "SEO",
+      "Marketo",
+      "HubSpot",
+      "Email Marketing"
+    ],
+    "soft": [
+      "Communication",
+      "Negotiation",
+      "Coaching",
+      "Conflict Resolution"
+    ]
+  }
+}

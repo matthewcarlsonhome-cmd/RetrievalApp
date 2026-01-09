@@ -1,0 +1,62 @@
+{
+  "id": "gen_biz_resume_017",
+  "domain": "business",
+  "personal_info": {
+    "name": "Dmitri Collins",
+    "email": "dmitri.collins@email.com",
+    "phone": "(787) 951-6431",
+    "location": "Portland, OR",
+    "linkedin": "linkedin.com/in/dmitricollins"
+  },
+  "summary": "Results-driven operations professional with 2+ years of experience. Expertise in SLA Management, Contract Negotiation, Six Sigma. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "entry",
+  "years_experience": 2,
+  "primary_specialty": "operations",
+  "experience": [
+    {
+      "title": "Partnership Manager",
+      "employer": "KPMG Advisory",
+      "start_date": "2024-10",
+      "end_date": "Present",
+      "focus_areas": [
+        "Quality Assurance",
+        "Capacity Planning",
+        "Contract Negotiation",
+        "Vendor Management"
+      ],
+      "achievements": [
+        "Negotiated vendor contracts saving $1000K annually",
+        "Improved process efficiency by 74% through Lean Six Sigma implementation",
+        "Managed $100M project budget with delivery 52% under budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "Penn State"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "professional": [
+      "Lean Management",
+      "Vendor Management",
+      "Quality Assurance",
+      "SLA Management",
+      "Process Optimization",
+      "Six Sigma",
+      "Capacity Planning",
+      "Contract Negotiation"
+    ],
+    "soft": [
+      "Change Management",
+      "Team Leadership",
+      "Influence",
+      "Conflict Resolution",
+      "Negotiation",
+      "Emotional Intelligence"
+    ]
+  }
+}

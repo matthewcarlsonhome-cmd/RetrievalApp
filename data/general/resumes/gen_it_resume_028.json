@@ -1,0 +1,84 @@
+{
+  "id": "gen_it_resume_028",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Rachel Parker",
+    "email": "rachel.parker@email.com",
+    "phone": "(208) 577-4287",
+    "location": "Miami, FL",
+    "linkedin": "linkedin.com/in/rachelparker"
+  },
+  "summary": "3+ years of experience in data technologies. Expertise in Kafka, Power BI, PyTorch. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "mid",
+  "years_experience": 3,
+  "primary_tech_stack": "SQL",
+  "tech_specialization": "data",
+  "experience": [
+    {
+      "title": "Cloud Engineer",
+      "employer": "Oracle",
+      "start_date": "2025-04",
+      "end_date": "Present",
+      "tech_stack": [
+        "Data Engineering",
+        "Kafka",
+        "Looker",
+        "Pandas",
+        "PyTorch"
+      ],
+      "achievements": [
+        "Architected event-driven system handling 5M+ daily transactions",
+        "Led incident response for critical outage, reducing MTTR from 4 hours to 30 minutes",
+        "Architected data pipeline processing 100K+ events per day with 99.9% reliability",
+        "Led migration of 20 microservices to Kubernetes, improving deployment frequency by 47%"
+      ]
+    },
+    {
+      "title": "Junior Data Engineer",
+      "employer": "Salesforce",
+      "start_date": "2023-04",
+      "end_date": "2025-04",
+      "tech_stack": [
+        "Python",
+        "TensorFlow",
+        "Data Modeling",
+        "dbt",
+        "Pandas"
+      ],
+      "achievements": [
+        "Reduced system latency by 17% through optimization of database queries and caching strategies",
+        "Implemented CI/CD pipeline reducing deployment time from 1 week to 1 day"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Software Engineering",
+      "university": "UC Berkeley"
+    }
+  ],
+  "certifications": [
+    "Microsoft Certified: Data Analyst Associate"
+  ],
+  "skills": {
+    "technical": [
+      "Python",
+      "Scikit-learn",
+      "TensorFlow",
+      "Power BI",
+      "dbt",
+      "Pandas",
+      "Databricks",
+      "NumPy",
+      "Airflow"
+    ],
+    "soft": [
+      "Presentation Skills",
+      "Time Management",
+      "Strategic Thinking",
+      "Negotiation",
+      "Conflict Resolution"
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "gen_biz_resume_012",
+  "domain": "business",
+  "personal_info": {
+    "name": "Helen Watson",
+    "email": "helen.watson@email.com",
+    "phone": "(414) 826-1953",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/helenwatson"
+  },
+  "summary": "Results-driven project professional with 2+ years of experience. Expertise in RAID Log, Change Management, Risk Management. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "entry",
+  "years_experience": 2,
+  "primary_specialty": "project",
+  "experience": [
+    {
+      "title": "Program Manager",
+      "employer": "KPMG Advisory",
+      "start_date": "2024-01",
+      "end_date": "Present",
+      "focus_areas": [
+        "Budget Management",
+        "Project Planning",
+        "MS Project",
+        "Change Management"
+      ],
+      "achievements": [
+        "Led digital transformation initiative resulting in $100M annual savings",
+        "Launched product feature increasing user engagement by 54%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Economics",
+      "university": "University of Pennsylvania"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "professional": [
+      "Risk Management",
+      "Smartsheet",
+      "RAID Log",
+      "Budget Management",
+      "Resource Allocation",
+      "Stakeholder Communication",
+      "Project Planning",
+      "Change Management"
+    ],
+    "soft": [
+      "Time Management",
+      "Coaching",
+      "Decision Making",
+      "Negotiation",
+      "Problem Solving",
+      "Adaptability"
+    ]
+  }
+}

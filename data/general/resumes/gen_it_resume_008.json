@@ -1,0 +1,103 @@
+{
+  "id": "gen_it_resume_008",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Carlos Morris",
+    "email": "carlos.morris@email.com",
+    "phone": "(509) 403-7302",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/carlosmorris"
+  },
+  "summary": "5+ years of experience in security technologies. Expertise in Penetration Testing, SOC Operations, IDS/IPS. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "mid",
+  "years_experience": 5,
+  "primary_tech_stack": "AppSec",
+  "tech_specialization": "security",
+  "experience": [
+    {
+      "title": "Network Engineer",
+      "employer": "Goldman Sachs",
+      "start_date": "2024-08",
+      "end_date": "Present",
+      "tech_stack": [
+        "AppSec",
+        "Vulnerability Assessment",
+        "Penetration Testing",
+        "Incident Response",
+        "IDS/IPS"
+      ],
+      "achievements": [
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Built machine learning model achieving 37% accuracy for fraud detection",
+        "Reduced system latency by 51% through optimization of database queries and caching strategies"
+      ]
+    },
+    {
+      "title": "Junior Platform Engineer",
+      "employer": "Cisco",
+      "start_date": "2022-04",
+      "end_date": "2024-04",
+      "tech_stack": [
+        "Cloud Security",
+        "SIEM",
+        "Vulnerability Assessment",
+        "Security Compliance",
+        "Firewall"
+      ],
+      "achievements": [
+        "Mentored team of 100 engineers, improving code review quality by 48%",
+        "Led migration of 15 microservices to Kubernetes, improving deployment frequency by 65%"
+      ]
+    },
+    {
+      "title": "ML Engineer",
+      "employer": "JPMorgan Chase",
+      "start_date": "2021-01",
+      "end_date": "2022-01",
+      "tech_stack": [
+        "AppSec",
+        "SIEM",
+        "Risk Assessment",
+        "Penetration Testing",
+        "SOC Operations"
+      ],
+      "achievements": [
+        "Led incident response for critical outage, reducing MTTR from 2 days to 1 day",
+        "Built machine learning model achieving 17% accuracy for fraud detection",
+        "Implemented CI/CD pipeline reducing deployment time from 2 days to 2 hours",
+        "Led migration of 50 microservices to Kubernetes, improving deployment frequency by 20%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Software Engineering",
+      "university": "Northwestern University"
+    }
+  ],
+  "certifications": [
+    "OSCP"
+  ],
+  "skills": {
+    "technical": [
+      "Cloud Security",
+      "IAM",
+      "SIEM",
+      "OWASP",
+      "Incident Response",
+      "Firewall",
+      "Security Compliance",
+      "Penetration Testing",
+      "Risk Assessment"
+    ],
+    "soft": [
+      "Adaptability",
+      "Presentation Skills",
+      "Decision Making",
+      "Change Management",
+      "Communication",
+      "Conflict Resolution"
+    ]
+  }
+}

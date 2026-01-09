@@ -55,6 +55,10 @@ feedback/
 evaluation/
 truth_sets/
 
+# Generated test data (regenerate with: python scripts/generate_test_data.py)
+test_data/
+results/
+
 # Environment
 .env
 .env.local

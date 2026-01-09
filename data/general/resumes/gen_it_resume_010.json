@@ -1,0 +1,121 @@
+{
+  "id": "gen_it_resume_010",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Carlos Morales",
+    "email": "carlos.morales@email.com",
+    "phone": "(384) 479-6062",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/carlosmorales"
+  },
+  "summary": "12+ years of experience in cloud technologies. Expertise in Kubernetes, EC2, Lambda. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "lead",
+  "years_experience": 12,
+  "primary_tech_stack": "Azure",
+  "tech_specialization": "cloud",
+  "experience": [
+    {
+      "title": "Lead Technical Lead",
+      "employer": "DoorDash",
+      "start_date": "2022-05",
+      "end_date": "Present",
+      "tech_stack": [
+        "AWS",
+        "VPC",
+        "Kubernetes",
+        "GKE",
+        "CloudWatch"
+      ],
+      "achievements": [
+        "Reduced infrastructure costs by $1000K annually through cloud optimization",
+        "Built machine learning model achieving 65% accuracy for fraud detection"
+      ]
+    },
+    {
+      "title": "Senior Test Automation Engineer",
+      "employer": "Splunk",
+      "start_date": "2019-05",
+      "end_date": "2022-05",
+      "tech_stack": [
+        "Azure",
+        "Kubernetes",
+        "Lambda",
+        "IAM",
+        "EC2"
+      ],
+      "achievements": [
+        "Architected data pipeline processing 10K+ events per day with 99.9% reliability",
+        "Architected event-driven system handling 10K+ daily transactions",
+        "Implemented security controls achieving SOC 2 Type II certification"
+      ]
+    },
+    {
+      "title": "Systems Administrator",
+      "employer": "Goldman Sachs",
+      "start_date": "2015-04",
+      "end_date": "2019-04",
+      "tech_stack": [
+        "Azure",
+        "IAM",
+        "EC2",
+        "GKE",
+        "Terraform"
+      ],
+      "achievements": [
+        "Led incident response for critical outage, reducing MTTR from 2 weeks to 30 minutes",
+        "Reduced system latency by 35% through optimization of database queries and caching strategies",
+        "Architected event-driven system handling 10K+ daily transactions"
+      ]
+    },
+    {
+      "title": "Junior Cloud Engineer",
+      "employer": "Accenture",
+      "start_date": "2014-01",
+      "end_date": "2015-01",
+      "tech_stack": [
+        "Google Cloud",
+        "Azure DevOps",
+        "Docker",
+        "VPC",
+        "S3"
+      ],
+      "achievements": [
+        "Reduced infrastructure costs by $1000K annually through cloud optimization",
+        "Designed API serving 5M+ requests per second with sub-100ms latency",
+        "Built machine learning model achieving 57% accuracy for fraud detection"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Mathematics",
+      "university": "University of Florida"
+    }
+  ],
+  "certifications": [
+    "Azure Solutions Architect Expert",
+    "AWS DevOps Engineer",
+    "AWS Solutions Architect - Associate",
+    "HashiCorp Terraform Associate"
+  ],
+  "skills": {
+    "technical": [
+      "Multi-Cloud",
+      "CloudFormation",
+      "S3",
+      "Kubernetes",
+      "GKE",
+      "IAM",
+      "EC2",
+      "Lambda",
+      "Terraform"
+    ],
+    "soft": [
+      "Decision Making",
+      "Team Leadership",
+      "Negotiation",
+      "Coaching"
+    ]
+  }
+}

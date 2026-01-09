@@ -1,0 +1,136 @@
+{
+  "id": "gen_it_resume_002",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Stephanie Campbell",
+    "email": "stephanie.campbell@email.com",
+    "phone": "(467) 409-6147",
+    "location": "Denver, CO",
+    "linkedin": "linkedin.com/in/stephaniecampbell"
+  },
+  "summary": "8+ years of experience in devops technologies. Expertise in Ansible, Chef, GitHub Actions. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "senior",
+  "years_experience": 8,
+  "primary_tech_stack": "Platform Engineering",
+  "tech_specialization": "devops",
+  "experience": [
+    {
+      "title": "Senior Cloud Engineer",
+      "employer": "Deloitte",
+      "start_date": "2024-09",
+      "end_date": "Present",
+      "tech_stack": [
+        "Platform Engineering",
+        "GitLab CI",
+        "Chef",
+        "Service Mesh",
+        "ELK Stack"
+      ],
+      "achievements": [
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Built machine learning model achieving 33% accuracy for fraud detection",
+        "Architected event-driven system handling 10M+ daily transactions"
+      ]
+    },
+    {
+      "title": "Technical Lead",
+      "employer": "Uber",
+      "start_date": "2023-06",
+      "end_date": "2024-06",
+      "tech_stack": [
+        "SRE",
+        "Jenkins",
+        "GitLab CI",
+        "Puppet",
+        "Ansible"
+      ],
+      "achievements": [
+        "Reduced system latency by 71% through optimization of database queries and caching strategies",
+        "Implemented CI/CD pipeline reducing deployment time from 2 weeks to 2 hours"
+      ]
+    },
+    {
+      "title": "Junior Scrum Master",
+      "employer": "Shopify",
+      "start_date": "2021-12",
+      "end_date": "2022-12",
+      "tech_stack": [
+        "SRE",
+        "Helm",
+        "Istio",
+        "Puppet",
+        "Prometheus"
+      ],
+      "achievements": [
+        "Mentored team of 20 engineers, improving code review quality by 19%",
+        "Led migration of 3 microservices to Kubernetes, improving deployment frequency by 60%",
+        "Implemented CI/CD pipeline reducing deployment time from 2 weeks to 2 hours",
+        "Developed automation reducing manual operations by 66%"
+      ]
+    },
+    {
+      "title": "Solutions Architect",
+      "employer": "BCG Platinion",
+      "start_date": "2020-06",
+      "end_date": "2021-06",
+      "tech_stack": [
+        "Platform Engineering",
+        "Jenkins",
+        "Helm",
+        "Service Mesh",
+        "GitLab CI"
+      ],
+      "achievements": [
+        "Reduced infrastructure costs by $200K annually through cloud optimization",
+        "Designed API serving 500K+ requests per second with sub-10ms latency"
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "employer": "Fidelity",
+      "start_date": "2018-05",
+      "end_date": "2020-05",
+      "tech_stack": [
+        "DevOps",
+        "GitLab CI",
+        "ArgoCD",
+        "GitHub Actions",
+        "Chef"
+      ],
+      "achievements": [
+        "Mentored team of 3 engineers, improving code review quality by 72%",
+        "Implemented CI/CD pipeline reducing deployment time from 2 days to 1 day",
+        "Reduced infrastructure costs by $500K annually through cloud optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Computer Science",
+      "university": "University of Virginia"
+    }
+  ],
+  "certifications": [
+    "AWS DevOps Engineer Professional",
+    "HashiCorp Vault Associate"
+  ],
+  "skills": {
+    "technical": [
+      "DevOps",
+      "GitLab CI",
+      "ELK Stack",
+      "Istio",
+      "ArgoCD",
+      "Chef",
+      "Helm",
+      "Ansible",
+      "Prometheus"
+    ],
+    "soft": [
+      "Strategic Thinking",
+      "Decision Making",
+      "Time Management"
+    ]
+  }
+}

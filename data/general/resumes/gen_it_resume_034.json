@@ -1,0 +1,121 @@
+{
+  "id": "gen_it_resume_034",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Robert Gomez",
+    "email": "robert.gomez@email.com",
+    "phone": "(374) 873-3967",
+    "location": "Miami, FL",
+    "linkedin": "linkedin.com/in/robertgomez"
+  },
+  "summary": "10+ years of experience in security technologies. Expertise in Penetration Testing, OWASP, Vulnerability Assessment. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "senior",
+  "years_experience": 10,
+  "primary_tech_stack": "AppSec",
+  "tech_specialization": "security",
+  "experience": [
+    {
+      "title": "Senior ML Engineer",
+      "employer": "Shopify",
+      "start_date": "2024-01",
+      "end_date": "Present",
+      "tech_stack": [
+        "Cloud Security",
+        "Incident Response",
+        "OWASP",
+        "Penetration Testing",
+        "SOC Operations"
+      ],
+      "achievements": [
+        "Built machine learning model achieving 64% accuracy for fraud detection",
+        "Mentored team of 50 engineers, improving code review quality by 28%"
+      ]
+    },
+    {
+      "title": "Backend Developer",
+      "employer": "Shopify",
+      "start_date": "2019-08",
+      "end_date": "2023-08",
+      "tech_stack": [
+        "AppSec",
+        "Security Compliance",
+        "IDS/IPS",
+        "Vulnerability Assessment",
+        "SIEM"
+      ],
+      "achievements": [
+        "Implemented CI/CD pipeline reducing deployment time from 4 hours to 1 day",
+        "Architected event-driven system handling 10M+ daily transactions"
+      ]
+    },
+    {
+      "title": "Junior Cloud Engineer",
+      "employer": "DoorDash",
+      "start_date": "2016-06",
+      "end_date": "2019-06",
+      "tech_stack": [
+        "Cloud Security",
+        "Risk Assessment",
+        "OWASP",
+        "Vulnerability Assessment",
+        "IAM"
+      ],
+      "achievements": [
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Designed API serving 10M+ requests per second with sub-100ms latency",
+        "Led incident response for critical outage, reducing MTTR from 4 hours to 3 days",
+        "Architected data pipeline processing 1M+ events per day with 99.9% reliability"
+      ]
+    },
+    {
+      "title": "Solutions Architect",
+      "employer": "Instacart",
+      "start_date": "2015-06",
+      "end_date": "2016-06",
+      "tech_stack": [
+        "Cloud Security",
+        "OWASP",
+        "Incident Response",
+        "SOC Operations",
+        "IAM"
+      ],
+      "achievements": [
+        "Led incident response for critical outage, reducing MTTR from 1 week to 1 day",
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Developed automation reducing manual operations by 56%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MS",
+      "field": "Computer Science",
+      "university": "Duke University"
+    }
+  ],
+  "certifications": [
+    "OSCP",
+    "CompTIA Security+",
+    "CEH (Certified Ethical Hacker)"
+  ],
+  "skills": {
+    "technical": [
+      "Cloud Security",
+      "Incident Response",
+      "IDS/IPS",
+      "Risk Assessment",
+      "Security Compliance",
+      "Firewall",
+      "SIEM",
+      "IAM",
+      "Penetration Testing"
+    ],
+    "soft": [
+      "Conflict Resolution",
+      "Influence",
+      "Adaptability",
+      "Negotiation",
+      "Communication"
+    ]
+  }
+}

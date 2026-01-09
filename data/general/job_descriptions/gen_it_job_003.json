@@ -1,0 +1,47 @@
+{
+  "id": "gen_it_job_003",
+  "domain": "it",
+  "title": "Junior Data Analyst",
+  "employer": "IBM",
+  "department": "Data",
+  "location": "Minneapolis, MN",
+  "remote": true,
+  "employment_type": "Full-time",
+  "experience_level": "junior",
+  "requirements": {
+    "years_min": 0,
+    "years_max": 2,
+    "education": "BS in Statistics, Math, or related field",
+    "skills_required": [
+      "SQL",
+      "Excel",
+      "Python",
+      "Data Visualization"
+    ],
+    "skills_preferred": [
+      "Tableau",
+      "Power BI"
+    ]
+  },
+  "salary_range": {
+    "min": 65000,
+    "max": 95000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute data initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Contribute to team goals and learn from senior colleagues"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Remote work options"
+  ],
+  "posted_date": "2025-12-25"
+}

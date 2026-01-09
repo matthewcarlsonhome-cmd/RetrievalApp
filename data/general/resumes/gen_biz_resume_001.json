@@ -1,0 +1,62 @@
+{
+  "id": "gen_biz_resume_001",
+  "domain": "business",
+  "personal_info": {
+    "name": "Maria Scott",
+    "email": "maria.scott@email.com",
+    "phone": "(247) 240-6309",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/mariascott"
+  },
+  "summary": "Results-driven analysis professional with 2+ years of experience. Expertise in Confluence, Agile, JIRA. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "entry",
+  "years_experience": 2,
+  "primary_specialty": "analysis",
+  "experience": [
+    {
+      "title": "Partnership Manager",
+      "employer": "EY-Parthenon",
+      "start_date": "2024-09",
+      "end_date": "Present",
+      "focus_areas": [
+        "Stakeholder Management",
+        "Confluence",
+        "JIRA",
+        "Process Mapping"
+      ],
+      "achievements": [
+        "Developed requirements for system serving 50+ users across 2 regions",
+        "Led digital transformation initiative resulting in $300M annual savings",
+        "Built business case for $200M technology investment with 38% ROI",
+        "Facilitated 8+ stakeholder workshops for enterprise requirements"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "University of Maryland"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "professional": [
+      "UAT",
+      "User Stories",
+      "Process Mapping",
+      "Stakeholder Management",
+      "Gap Analysis",
+      "SQL",
+      "Requirements Gathering",
+      "Scrum"
+    ],
+    "soft": [
+      "Coaching",
+      "Adaptability",
+      "Critical Thinking",
+      "Conflict Resolution",
+      "Emotional Intelligence"
+    ]
+  }
+}

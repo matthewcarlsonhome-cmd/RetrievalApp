@@ -1,0 +1,63 @@
+{
+  "id": "gen_it_resume_039",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Kimberly Taylor",
+    "email": "kimberly.taylor@email.com",
+    "phone": "(316) 595-5203",
+    "location": "Washington, DC",
+    "linkedin": "linkedin.com/in/kimberlytaylor"
+  },
+  "summary": "1+ years of experience in devops technologies. Expertise in Service Mesh, Ansible, Jenkins. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "entry",
+  "years_experience": 1,
+  "primary_tech_stack": "Platform Engineering",
+  "tech_specialization": "devops",
+  "experience": [
+    {
+      "title": "DevOps Engineer",
+      "employer": "Lyft",
+      "start_date": "2025-01",
+      "end_date": "Present",
+      "tech_stack": [
+        "SRE",
+        "Service Mesh",
+        "GitHub Actions",
+        "Jenkins",
+        "Istio"
+      ],
+      "achievements": [
+        "Developed automation reducing manual operations by 68%",
+        "Reduced system latency by 48% through optimization of database queries and caching strategies",
+        "Architected event-driven system handling 5M+ daily transactions"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MS",
+      "field": "Data Science",
+      "university": "Penn State"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "technical": [
+      "Platform Engineering",
+      "Prometheus",
+      "Grafana",
+      "Helm",
+      "Jenkins",
+      "GitLab CI",
+      "Puppet",
+      "ArgoCD",
+      "Service Mesh"
+    ],
+    "soft": [
+      "Cross-functional Collaboration",
+      "Time Management",
+      "Critical Thinking",
+      "Emotional Intelligence"
+    ]
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "id": "gen_it_resume_019",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Justin Zhang",
+    "email": "justin.zhang@email.com",
+    "phone": "(626) 770-9683",
+    "location": "Boston, MA",
+    "linkedin": "linkedin.com/in/justinzhang"
+  },
+  "summary": "7+ years of experience in data technologies. Expertise in Databricks, TensorFlow, PyTorch. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "senior",
+  "years_experience": 7,
+  "primary_tech_stack": "SQL",
+  "tech_specialization": "data",
+  "experience": [
+    {
+      "title": "Senior Test Automation Engineer",
+      "employer": "BCG Platinion",
+      "start_date": "2025-05",
+      "end_date": "Present",
+      "tech_stack": [
+        "Spark",
+        "Scikit-learn",
+        "Databricks",
+        "ETL",
+        "dbt"
+      ],
+      "achievements": [
+        "Built machine learning model achieving 54% accuracy for fraud detection",
+        "Led migration of 100 microservices to Kubernetes, improving deployment frequency by 41%",
+        "Architected event-driven system handling 10K+ daily transactions",
+        "Designed API serving 10K+ requests per second with sub-200ms latency"
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "employer": "BCG Platinion",
+      "start_date": "2021-12",
+      "end_date": "2024-12",
+      "tech_stack": [
+        "SQL",
+        "dbt",
+        "Databricks",
+        "Airflow",
+        "Kafka"
+      ],
+      "achievements": [
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Mentored team of 5 engineers, improving code review quality by 52%"
+      ]
+    },
+    {
+      "title": "Junior Network Engineer",
+      "employer": "Microsoft",
+      "start_date": "2019-07",
+      "end_date": "2021-07",
+      "tech_stack": [
+        "Spark",
+        "Databricks",
+        "Scikit-learn",
+        "Power BI",
+        "Tableau"
+      ],
+      "achievements": [
+        "Architected event-driven system handling 500K+ daily transactions",
+        "Led incident response for critical outage, reducing MTTR from 2 days to 2 hours",
+        "Reduced infrastructure costs by $1000K annually through cloud optimization",
+        "Designed API serving 100K+ requests per second with sub-10ms latency"
+      ]
+    },
+    {
+      "title": "IT Project Manager",
+      "employer": "Accenture",
+      "start_date": "2018-07",
+      "end_date": "2019-07",
+      "tech_stack": [
+        "Python",
+        "TensorFlow",
+        "Looker",
+        "NumPy",
+        "Power BI"
+      ],
+      "achievements": [
+        "Reduced system latency by 30% through optimization of database queries and caching strategies",
+        "Mentored team of 15 engineers, improving code review quality by 47%",
+        "Developed automation reducing manual operations by 71%",
+        "Architected event-driven system handling 5M+ daily transactions"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MS",
+      "field": "Computer Science",
+      "university": "Cornell University"
+    }
+  ],
+  "certifications": [
+    "Snowflake SnowPro Core",
+    "Databricks Certified Data Engineer"
+  ],
+  "skills": {
+    "technical": [
+      "Data Engineering",
+      "Scikit-learn",
+      "PyTorch",
+      "Databricks",
+      "Looker",
+      "dbt",
+      "Airflow",
+      "TensorFlow",
+      "ETL"
+    ],
+    "soft": [
+      "Communication",
+      "Emotional Intelligence",
+      "Cross-functional Collaboration",
+      "Negotiation",
+      "Mentoring"
+    ]
+  }
+}

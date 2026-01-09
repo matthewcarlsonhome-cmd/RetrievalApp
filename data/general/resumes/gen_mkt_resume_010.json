@@ -1,0 +1,119 @@
+{
+  "id": "gen_mkt_resume_010",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Steven Young",
+    "email": "steven.young@email.com",
+    "phone": "(289) 508-9990",
+    "location": "Minneapolis, MN",
+    "linkedin": "linkedin.com/in/stevenyoung"
+  },
+  "summary": "Creative and data-driven content professional with 10+ years of experience. Expert in SEO Content, Podcasting, Copywriting. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "senior",
+  "years_experience": 10,
+  "primary_specialty": "content",
+  "experience": [
+    {
+      "title": "Senior Senior Product Marketing Manager",
+      "employer": "Amazon",
+      "start_date": "2024-01",
+      "end_date": "Present",
+      "channels": [
+        "WordPress",
+        "Editorial Planning",
+        "Video Production",
+        "SEO Content"
+      ],
+      "achievements": [
+        "Reduced customer acquisition cost by 52% while scaling spend $750K",
+        "Created sales enablement materials improving win rate by 67%",
+        "Led rebranding initiative increasing brand awareness by 25%"
+      ]
+    },
+    {
+      "title": "Senior Product Marketing Manager",
+      "employer": "Spotify",
+      "start_date": "2023-01",
+      "end_date": "2024-01",
+      "channels": [
+        "SEO Content",
+        "Storytelling",
+        "Adobe Creative Suite",
+        "WordPress"
+      ],
+      "achievements": [
+        "Managed $200M annual marketing budget across 5 channels",
+        "Achieved 66% improvement in email open rates through A/B testing"
+      ]
+    },
+    {
+      "title": "VP of Brand",
+      "employer": "Amazon",
+      "start_date": "2018-08",
+      "end_date": "2022-08",
+      "channels": [
+        "Video Production",
+        "Copywriting",
+        "Brand Voice",
+        "Webflow"
+      ],
+      "achievements": [
+        "Increased organic traffic by 46% through SEO optimization strategy",
+        "Launched product to 3K customers with 28% activation rate",
+        "Managed $500M annual marketing budget across 20 channels"
+      ]
+    },
+    {
+      "title": "Product Marketing Manager",
+      "employer": "BBDO",
+      "start_date": "2015-05",
+      "end_date": "2018-05",
+      "channels": [
+        "Content Strategy",
+        "Storytelling",
+        "Webflow",
+        "Copywriting"
+      ],
+      "achievements": [
+        "Managed $100M annual marketing budget across 8 channels",
+        "Led rebranding initiative increasing brand awareness by 43%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Marketing",
+      "university": "University of Texas at Austin"
+    },
+    {
+      "degree": "BA",
+      "field": "Communications",
+      "university": "Penn State"
+    }
+  ],
+  "certifications": [
+    "Content Marketing Institute Certification",
+    "HubSpot Content Marketing",
+    "Copyblogger Certified Content Marketer"
+  ],
+  "skills": {
+    "marketing": [
+      "Podcasting",
+      "Video Production",
+      "Copywriting",
+      "Storytelling",
+      "Editorial Planning",
+      "Webflow",
+      "Content Strategy",
+      "Adobe Creative Suite"
+    ],
+    "soft": [
+      "Mentoring",
+      "Communication",
+      "Cross-functional Collaboration",
+      "Strategic Thinking",
+      "Conflict Resolution"
+    ]
+  }
+}

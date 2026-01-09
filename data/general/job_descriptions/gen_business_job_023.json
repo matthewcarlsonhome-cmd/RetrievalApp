@@ -1,0 +1,47 @@
+{
+  "id": "gen_business_job_023",
+  "domain": "business",
+  "title": "Project Manager",
+  "employer": "CVS Health",
+  "department": "PMO",
+  "location": "Portland, OR",
+  "remote": true,
+  "employment_type": "Full-time",
+  "experience_level": "mid",
+  "requirements": {
+    "years_min": 3,
+    "years_max": 6,
+    "education": "BS in Business, PMP preferred",
+    "skills_required": [
+      "Project Planning",
+      "Risk Management",
+      "Stakeholder Communication",
+      "MS Project"
+    ],
+    "skills_preferred": [
+      "Agile Certification",
+      "Technology Projects"
+    ]
+  },
+  "salary_range": {
+    "min": 90000,
+    "max": 140000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute pmo initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Contribute to team goals and learn from senior colleagues"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Remote work options"
+  ],
+  "posted_date": "2026-01-07"
+}

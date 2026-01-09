@@ -1,0 +1,140 @@
+{
+  "id": "gen_biz_resume_020",
+  "domain": "business",
+  "personal_info": {
+    "name": "Robert Martinez",
+    "email": "robert.martinez@email.com",
+    "phone": "(440) 938-8287",
+    "location": "Raleigh, NC",
+    "linkedin": "linkedin.com/in/robertmartinez"
+  },
+  "summary": "Results-driven analysis professional with 14+ years of experience. Expertise in Scrum, Gap Analysis, Use Cases. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "director",
+  "years_experience": 14,
+  "primary_specialty": "analysis",
+  "experience": [
+    {
+      "title": "Director of Business",
+      "employer": "Wells Fargo",
+      "start_date": "2023-08",
+      "end_date": "Present",
+      "focus_areas": [
+        "Gap Analysis",
+        "Use Cases",
+        "Scrum",
+        "Requirements Gathering"
+      ],
+      "achievements": [
+        "Reduced project delivery time by 69% through Agile transformation",
+        "Managed cross-functional team of 20 across 5 time zones",
+        "Facilitated 20+ stakeholder workshops for enterprise requirements",
+        "Improved process efficiency by 50% through Lean Six Sigma implementation"
+      ]
+    },
+    {
+      "title": "Process Improvement Specialist",
+      "employer": "Bain & Company",
+      "start_date": "2019-08",
+      "end_date": "2023-08",
+      "focus_areas": [
+        "JIRA",
+        "UAT",
+        "Confluence",
+        "User Stories"
+      ],
+      "achievements": [
+        "Led digital transformation initiative resulting in $750M annual savings",
+        "Improved process efficiency by 16% through Lean Six Sigma implementation"
+      ]
+    },
+    {
+      "title": "Project Manager",
+      "employer": "Anthem",
+      "start_date": "2018-07",
+      "end_date": "2019-07",
+      "focus_areas": [
+        "JIRA",
+        "Excel",
+        "Agile",
+        "UAT"
+      ],
+      "achievements": [
+        "Built business case for $50M technology investment with 17% ROI",
+        "Managed $50M project budget with delivery 15% under budget",
+        "Improved process efficiency by 68% through Lean Six Sigma implementation",
+        "Led digital transformation initiative resulting in $500M annual savings"
+      ]
+    },
+    {
+      "title": "Partnership Manager",
+      "employer": "Home Depot",
+      "start_date": "2014-07",
+      "end_date": "2018-07",
+      "focus_areas": [
+        "BPMN",
+        "Gap Analysis",
+        "User Stories",
+        "Requirements Gathering"
+      ],
+      "achievements": [
+        "Managed $750M project budget with delivery 32% under budget",
+        "Negotiated vendor contracts saving $100K annually",
+        "Developed requirements for system serving 100+ users across 2 regions",
+        "Led digital transformation initiative resulting in $150M annual savings"
+      ]
+    },
+    {
+      "title": "Strategy Manager",
+      "employer": "PwC Strategy&",
+      "start_date": "2012-05",
+      "end_date": "2014-05",
+      "focus_areas": [
+        "BPMN",
+        "Scrum",
+        "Confluence",
+        "Requirements Gathering"
+      ],
+      "achievements": [
+        "Managed $750M project budget with delivery 67% under budget",
+        "Reduced project delivery time by 48% through Agile transformation",
+        "Developed requirements for system serving 3+ users across 8 regions",
+        "Negotiated vendor contracts saving $50K annually"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "University of Maryland"
+    },
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "Northwestern University"
+    }
+  ],
+  "certifications": [
+    "Six Sigma Green Belt",
+    "IIBA Entry Certificate in Business Analysis",
+    "PMI-PBA"
+  ],
+  "skills": {
+    "professional": [
+      "Requirements Gathering",
+      "Process Mapping",
+      "Confluence",
+      "Excel",
+      "Agile",
+      "BPMN",
+      "Scrum",
+      "Use Cases"
+    ],
+    "soft": [
+      "Influence",
+      "Coaching",
+      "Problem Solving",
+      "Cross-functional Collaboration"
+    ]
+  }
+}

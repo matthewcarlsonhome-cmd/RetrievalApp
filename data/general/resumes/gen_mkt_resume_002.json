@@ -1,0 +1,79 @@
+{
+  "id": "gen_mkt_resume_002",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Carol Parker",
+    "email": "carol.parker@email.com",
+    "phone": "(201) 675-5739",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/carolparker"
+  },
+  "summary": "Creative and data-driven digital professional with 6+ years of experience. Expert in PPC, SEO, Marketo. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "mid",
+  "years_experience": 6,
+  "primary_specialty": "digital",
+  "experience": [
+    {
+      "title": "Marketing Manager",
+      "employer": "Hootsuite",
+      "start_date": "2022-01",
+      "end_date": "Present",
+      "channels": [
+        "Email Marketing",
+        "Facebook Ads",
+        "SEM",
+        "HubSpot"
+      ],
+      "achievements": [
+        "Developed content strategy resulting in 8K monthly blog visitors",
+        "Achieved 75% improvement in email open rates through A/B testing"
+      ]
+    },
+    {
+      "title": "Marketing Specialist",
+      "employer": "Mailchimp",
+      "start_date": "2019-07",
+      "end_date": "2021-07",
+      "channels": [
+        "Email Marketing",
+        "SEM",
+        "LinkedIn Ads",
+        "PPC"
+      ],
+      "achievements": [
+        "Built marketing analytics dashboard tracking 5+ KPIs across channels",
+        "Reduced customer acquisition cost by 75% while scaling spend $50K",
+        "Led rebranding initiative increasing brand awareness by 45%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BA",
+      "field": "Communications",
+      "university": "Purdue University"
+    }
+  ],
+  "certifications": [
+    "Hootsuite Social Marketing",
+    "Google Analytics Certification"
+  ],
+  "skills": {
+    "marketing": [
+      "Email Marketing",
+      "Marketing Automation",
+      "SEM",
+      "A/B Testing",
+      "Google Ads",
+      "PPC",
+      "Marketo",
+      "Facebook Ads"
+    ],
+    "soft": [
+      "Conflict Resolution",
+      "Decision Making",
+      "Emotional Intelligence",
+      "Team Leadership"
+    ]
+  }
+}

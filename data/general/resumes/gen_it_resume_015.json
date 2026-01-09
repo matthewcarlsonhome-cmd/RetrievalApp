@@ -1,0 +1,146 @@
+{
+  "id": "gen_it_resume_015",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Chen Hernandez",
+    "email": "chen.hernandez@email.com",
+    "phone": "(453) 344-2586",
+    "location": "New York, NY",
+    "linkedin": "linkedin.com/in/chenhernandez"
+  },
+  "summary": "18+ years of experience in data technologies. Expertise in PyTorch, Databricks, Kafka. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "director",
+  "years_experience": 18,
+  "primary_tech_stack": "Data Engineering",
+  "tech_specialization": "data",
+  "experience": [
+    {
+      "title": "Director of Platform",
+      "employer": "Square",
+      "start_date": "2025-07",
+      "end_date": "Present",
+      "tech_stack": [
+        "Spark",
+        "Airflow",
+        "Kafka",
+        "Data Modeling",
+        "Databricks"
+      ],
+      "achievements": [
+        "Architected event-driven system handling 10K+ daily transactions",
+        "Mentored team of 50 engineers, improving code review quality by 19%"
+      ]
+    },
+    {
+      "title": "Lead Full Stack Developer",
+      "employer": "Apple",
+      "start_date": "2023-03",
+      "end_date": "2025-03",
+      "tech_stack": [
+        "SQL",
+        "Power BI",
+        "ETL",
+        "Snowflake",
+        "Looker"
+      ],
+      "achievements": [
+        "Developed automation reducing manual operations by 24%",
+        "Reduced system latency by 40% through optimization of database queries and caching strategies",
+        "Architected event-driven system handling 1M+ daily transactions"
+      ]
+    },
+    {
+      "title": "Senior Technical Lead",
+      "employer": "Square",
+      "start_date": "2019-11",
+      "end_date": "2022-11",
+      "tech_stack": [
+        "Data Engineering",
+        "TensorFlow",
+        "NumPy",
+        "Scikit-learn",
+        "Tableau"
+      ],
+      "achievements": [
+        "Architected data pipeline processing 5M+ events per day with 99.9% reliability",
+        "Mentored team of 8 engineers, improving code review quality by 69%",
+        "Led migration of 8 microservices to Kubernetes, improving deployment frequency by 27%"
+      ]
+    },
+    {
+      "title": "QA Engineer",
+      "employer": "IBM",
+      "start_date": "2018-09",
+      "end_date": "2019-09",
+      "tech_stack": [
+        "Python",
+        "NumPy",
+        "PyTorch",
+        "Databricks",
+        "Data Modeling"
+      ],
+      "achievements": [
+        "Mentored team of 5 engineers, improving code review quality by 67%",
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Reduced infrastructure costs by $150K annually through cloud optimization",
+        "Developed automation reducing manual operations by 74%"
+      ]
+    },
+    {
+      "title": "Junior Engineering Manager",
+      "employer": "Charles Schwab",
+      "start_date": "2015-09",
+      "end_date": "2018-09",
+      "tech_stack": [
+        "Spark",
+        "Scikit-learn",
+        "ETL",
+        "PyTorch",
+        "Kafka"
+      ],
+      "achievements": [
+        "Led migration of 20 microservices to Kubernetes, improving deployment frequency by 25%",
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Architected data pipeline processing 5M+ events per day with 99.9% reliability",
+        "Developed automation reducing manual operations by 44%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "Columbia University"
+    },
+    {
+      "degree": "BS",
+      "field": "Software Engineering",
+      "university": "University of Colorado"
+    }
+  ],
+  "certifications": [
+    "Snowflake SnowPro Core",
+    "AWS Data Analytics Specialty",
+    "Microsoft Certified: Data Analyst Associate",
+    "Google Professional Data Engineer"
+  ],
+  "skills": {
+    "technical": [
+      "Spark",
+      "Databricks",
+      "Scikit-learn",
+      "Power BI",
+      "Snowflake",
+      "dbt",
+      "ETL",
+      "NumPy",
+      "Data Modeling"
+    ],
+    "soft": [
+      "Emotional Intelligence",
+      "Problem Solving",
+      "Negotiation",
+      "Conflict Resolution"
+    ]
+  }
+}

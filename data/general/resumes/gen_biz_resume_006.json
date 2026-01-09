@@ -1,0 +1,138 @@
+{
+  "id": "gen_biz_resume_006",
+  "domain": "business",
+  "personal_info": {
+    "name": "Mary Gupta",
+    "email": "mary.gupta@email.com",
+    "phone": "(232) 406-2753",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/marygupta"
+  },
+  "summary": "Results-driven project professional with 17+ years of experience. Expertise in Resource Allocation, Risk Management, Project Planning. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "director",
+  "years_experience": 17,
+  "primary_specialty": "project",
+  "experience": [
+    {
+      "title": "Director of Program",
+      "employer": "Microsoft",
+      "start_date": "2023-10",
+      "end_date": "Present",
+      "focus_areas": [
+        "Resource Allocation",
+        "Budget Management",
+        "Smartsheet",
+        "Stakeholder Communication"
+      ],
+      "achievements": [
+        "Improved process efficiency by 42% through Lean Six Sigma implementation",
+        "Launched product feature increasing user engagement by 69%",
+        "Developed requirements for system serving 100+ users across 2 regions"
+      ]
+    },
+    {
+      "title": "Principal Product Manager",
+      "employer": "Deloitte Consulting",
+      "start_date": "2022-09",
+      "end_date": "2023-09",
+      "focus_areas": [
+        "Gantt Charts",
+        "RAID Log",
+        "Budget Management",
+        "MS Project"
+      ],
+      "achievements": [
+        "Led digital transformation initiative resulting in $200M annual savings",
+        "Improved process efficiency by 38% through Lean Six Sigma implementation",
+        "Developed requirements for system serving 50+ users across 3 regions"
+      ]
+    },
+    {
+      "title": "Business Analyst",
+      "employer": "Deloitte Consulting",
+      "start_date": "2019-05",
+      "end_date": "2022-05",
+      "focus_areas": [
+        "Resource Allocation",
+        "Smartsheet",
+        "Stakeholder Communication",
+        "Risk Management"
+      ],
+      "achievements": [
+        "Led digital transformation initiative resulting in $200M annual savings",
+        "Improved process efficiency by 25% through Lean Six Sigma implementation",
+        "Reduced project delivery time by 38% through Agile transformation",
+        "Negotiated vendor contracts saving $300K annually"
+      ]
+    },
+    {
+      "title": "Business Analyst",
+      "employer": "Boston Consulting Group",
+      "start_date": "2015-04",
+      "end_date": "2019-04",
+      "focus_areas": [
+        "RAID Log",
+        "Stakeholder Communication",
+        "Budget Management",
+        "Change Management"
+      ],
+      "achievements": [
+        "Improved process efficiency by 46% through Lean Six Sigma implementation",
+        "Managed $100M project budget with delivery 56% under budget"
+      ]
+    },
+    {
+      "title": "Business Development Manager",
+      "employer": "Anthem",
+      "start_date": "2010-12",
+      "end_date": "2014-12",
+      "focus_areas": [
+        "MS Project",
+        "Stakeholder Communication",
+        "Resource Allocation",
+        "Project Planning"
+      ],
+      "achievements": [
+        "Facilitated 3+ stakeholder workshops for enterprise requirements",
+        "Negotiated vendor contracts saving $500K annually",
+        "Managed $300M project budget with delivery 19% under budget",
+        "Reduced project delivery time by 15% through Agile transformation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "University of Maryland"
+    },
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "University of Illinois"
+    }
+  ],
+  "certifications": [
+    "PMP (Project Management Professional)",
+    "PMI-ACP",
+    "CAPM"
+  ],
+  "skills": {
+    "professional": [
+      "Budget Management",
+      "Gantt Charts",
+      "MS Project",
+      "Resource Allocation",
+      "Stakeholder Communication",
+      "RAID Log",
+      "Project Planning",
+      "Smartsheet"
+    ],
+    "soft": [
+      "Cross-functional Collaboration",
+      "Communication",
+      "Stakeholder Management",
+      "Decision Making"
+    ]
+  }
+}

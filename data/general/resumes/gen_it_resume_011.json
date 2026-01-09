@@ -1,0 +1,82 @@
+{
+  "id": "gen_it_resume_011",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Charles Yang",
+    "email": "charles.yang@email.com",
+    "phone": "(906) 570-2443",
+    "location": "Portland, OR",
+    "linkedin": "linkedin.com/in/charlesyang"
+  },
+  "summary": "6+ years of experience in cloud technologies. Expertise in S3, CloudFormation, Docker. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "mid",
+  "years_experience": 6,
+  "primary_tech_stack": "Multi-Cloud",
+  "tech_specialization": "cloud",
+  "experience": [
+    {
+      "title": "Engineering Manager",
+      "employer": "Splunk",
+      "start_date": "2025-02",
+      "end_date": "Present",
+      "tech_stack": [
+        "Multi-Cloud",
+        "Docker",
+        "Azure DevOps",
+        "Kubernetes",
+        "Lambda"
+      ],
+      "achievements": [
+        "Built machine learning model achieving 53% accuracy for fraud detection",
+        "Designed API serving 500K+ requests per second with sub-10ms latency",
+        "Developed automation reducing manual operations by 37%"
+      ]
+    },
+    {
+      "title": "Junior Cloud Engineer",
+      "employer": "Robinhood",
+      "start_date": "2019-09",
+      "end_date": "2024-09",
+      "tech_stack": [
+        "AWS",
+        "EC2",
+        "CloudFormation",
+        "Terraform",
+        "VPC"
+      ],
+      "achievements": [
+        "Built machine learning model achieving 35% accuracy for fraud detection",
+        "Architected event-driven system handling 1M+ daily transactions"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Computer Science",
+      "university": "University of Virginia"
+    }
+  ],
+  "certifications": [
+    "AWS Solutions Architect - Associate",
+    "Azure Administrator Associate"
+  ],
+  "skills": {
+    "technical": [
+      "Google Cloud",
+      "IAM",
+      "Docker",
+      "CloudWatch",
+      "VPC",
+      "GKE",
+      "Lambda",
+      "EC2",
+      "CloudFormation"
+    ],
+    "soft": [
+      "Time Management",
+      "Stakeholder Management",
+      "Emotional Intelligence"
+    ]
+  }
+}

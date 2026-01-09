@@ -1,0 +1,140 @@
+{
+  "id": "gen_mkt_resume_003",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Scott Allen",
+    "email": "scott.allen@email.com",
+    "phone": "(638) 835-2659",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/scottallen"
+  },
+  "summary": "Creative and data-driven analytics professional with 17+ years of experience. Expert in Mixpanel, Data Analysis, Looker. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "director",
+  "years_experience": 17,
+  "primary_specialty": "analytics",
+  "experience": [
+    {
+      "title": "Director of Demand Generation",
+      "employer": "Wieden+Kennedy",
+      "start_date": "2023-11",
+      "end_date": "Present",
+      "channels": [
+        "Marketing Attribution",
+        "Cohort Analysis",
+        "Mixpanel",
+        "Tableau"
+      ],
+      "achievements": [
+        "Generated $500M in pipeline through demand generation campaigns",
+        "Achieved 30% improvement in email open rates through A/B testing",
+        "Reduced customer acquisition cost by 56% while scaling spend $1000K",
+        "Launched product to 100K customers with 50% activation rate"
+      ]
+    },
+    {
+      "title": "Marketing Analytics Manager",
+      "employer": "Leo Burnett",
+      "start_date": "2018-10",
+      "end_date": "2023-10",
+      "channels": [
+        "Marketing Attribution",
+        "SQL",
+        "Tableau",
+        "Amplitude"
+      ],
+      "achievements": [
+        "Achieved 44% improvement in email open rates through A/B testing",
+        "Increased organic traffic by 58% through SEO optimization strategy",
+        "Generated $300M in pipeline through demand generation campaigns"
+      ]
+    },
+    {
+      "title": "Product Marketing Manager",
+      "employer": "Apple",
+      "start_date": "2013-04",
+      "end_date": "2018-04",
+      "channels": [
+        "Cohort Analysis",
+        "Amplitude",
+        "Google Analytics 4",
+        "Looker"
+      ],
+      "achievements": [
+        "Developed content strategy resulting in 8K monthly blog visitors",
+        "Launched product to 10K customers with 74% activation rate"
+      ]
+    },
+    {
+      "title": "Marketing Coordinator",
+      "employer": "Coca-Cola",
+      "start_date": "2012-02",
+      "end_date": "2013-01",
+      "channels": [
+        "Mixpanel",
+        "Data Analysis",
+        "SQL",
+        "Tableau"
+      ],
+      "achievements": [
+        "Reduced customer acquisition cost by 46% while scaling spend $50K",
+        "Generated $1000M in pipeline through demand generation campaigns",
+        "Managed $50M annual marketing budget across 5 channels"
+      ]
+    },
+    {
+      "title": "Brand Manager",
+      "employer": "Adobe",
+      "start_date": "2009-01",
+      "end_date": "2012-01",
+      "channels": [
+        "Customer Segmentation",
+        "SQL",
+        "Cohort Analysis",
+        "Marketing Attribution"
+      ],
+      "achievements": [
+        "Generated $500M in pipeline through demand generation campaigns",
+        "Increased organic traffic by 45% through SEO optimization strategy",
+        "Managed $100M annual marketing budget across 100 channels",
+        "Launched product to 3K customers with 18% activation rate"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Marketing",
+      "university": "Harvard University"
+    },
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "UC Berkeley"
+    }
+  ],
+  "certifications": [
+    "Tableau Desktop Specialist",
+    "Google Analytics 4 Certification",
+    "Marketing Research Association (MRA)"
+  ],
+  "skills": {
+    "marketing": [
+      "Mixpanel",
+      "Data Analysis",
+      "Google Analytics 4",
+      "Amplitude",
+      "Customer Segmentation",
+      "CLV Analysis",
+      "SQL",
+      "Looker"
+    ],
+    "soft": [
+      "Decision Making",
+      "Conflict Resolution",
+      "Team Leadership",
+      "Coaching",
+      "Mentoring",
+      "Emotional Intelligence"
+    ]
+  }
+}

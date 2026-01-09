@@ -1,0 +1,131 @@
+{
+  "id": "gen_mkt_resume_012",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Robert Thomas",
+    "email": "robert.thomas@email.com",
+    "phone": "(668) 387-8191",
+    "location": "San Diego, CA",
+    "linkedin": "linkedin.com/in/robertthomas"
+  },
+  "summary": "Creative and data-driven content professional with 16+ years of experience. Expert in Podcasting, WordPress, Brand Voice. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "director",
+  "years_experience": 16,
+  "primary_specialty": "content",
+  "experience": [
+    {
+      "title": "Director of Growth",
+      "employer": "Droga5",
+      "start_date": "2022-08",
+      "end_date": "Present",
+      "channels": [
+        "Adobe Creative Suite",
+        "Video Production",
+        "Brand Voice",
+        "Podcasting"
+      ],
+      "achievements": [
+        "Increased organic traffic by 20% through SEO optimization strategy",
+        "Generated $1000M in pipeline through demand generation campaigns",
+        "Developed content strategy resulting in 20K monthly blog visitors"
+      ]
+    },
+    {
+      "title": "Marketing Manager",
+      "employer": "P&G",
+      "start_date": "2017-06",
+      "end_date": "2022-06",
+      "channels": [
+        "Webflow",
+        "WordPress",
+        "Copywriting",
+        "Editorial Planning"
+      ],
+      "achievements": [
+        "Generated $500M in pipeline through demand generation campaigns",
+        "Achieved 56% improvement in email open rates through A/B testing",
+        "Developed content strategy resulting in 15K monthly blog visitors",
+        "Increased organic traffic by 17% through SEO optimization strategy"
+      ]
+    },
+    {
+      "title": "VP of Marketing",
+      "employer": "P&G",
+      "start_date": "2013-05",
+      "end_date": "2017-05",
+      "channels": [
+        "Editorial Planning",
+        "Copywriting",
+        "Content Strategy",
+        "Adobe Creative Suite"
+      ],
+      "achievements": [
+        "Launched product to 10K customers with 34% activation rate",
+        "Achieved 61% improvement in email open rates through A/B testing"
+      ]
+    },
+    {
+      "title": "Marketing Analytics Manager",
+      "employer": "Amazon",
+      "start_date": "2011-11",
+      "end_date": "2012-11",
+      "channels": [
+        "Brand Voice",
+        "Video Production",
+        "SEO Content",
+        "Editorial Planning"
+      ],
+      "achievements": [
+        "Reduced customer acquisition cost by 60% while scaling spend $150K",
+        "Launched product to 3K customers with 39% activation rate"
+      ]
+    },
+    {
+      "title": "VP of Marketing",
+      "employer": "Coca-Cola",
+      "start_date": "2009-05",
+      "end_date": "2011-05",
+      "channels": [
+        "Copywriting",
+        "Storytelling",
+        "Adobe Creative Suite",
+        "Webflow"
+      ],
+      "achievements": [
+        "Reduced customer acquisition cost by 32% while scaling spend $750K",
+        "Achieved 26% improvement in email open rates through A/B testing",
+        "Launched product to 5K customers with 53% activation rate"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "Stanford University"
+    }
+  ],
+  "certifications": [
+    "Copyblogger Certified Content Marketer",
+    "HubSpot Content Marketing",
+    "Content Marketing Institute Certification"
+  ],
+  "skills": {
+    "marketing": [
+      "Adobe Creative Suite",
+      "WordPress",
+      "SEO Content",
+      "Webflow",
+      "Copywriting",
+      "Editorial Planning",
+      "Brand Voice",
+      "Podcasting"
+    ],
+    "soft": [
+      "Adaptability",
+      "Conflict Resolution",
+      "Decision Making",
+      "Change Management"
+    ]
+  }
+}

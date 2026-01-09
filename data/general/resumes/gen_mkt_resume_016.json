@@ -1,0 +1,95 @@
+{
+  "id": "gen_mkt_resume_016",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Steven Williams",
+    "email": "steven.williams@email.com",
+    "phone": "(594) 350-6788",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/stevenwilliams"
+  },
+  "summary": "Creative and data-driven content professional with 7+ years of experience. Expert in Brand Voice, Editorial Planning, Video Production. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "senior",
+  "years_experience": 7,
+  "primary_specialty": "content",
+  "experience": [
+    {
+      "title": "Senior Product Marketing Manager",
+      "employer": "DDB",
+      "start_date": "2025-12",
+      "end_date": "Present",
+      "channels": [
+        "Adobe Creative Suite",
+        "Webflow",
+        "WordPress",
+        "Editorial Planning"
+      ],
+      "achievements": [
+        "Launched product to 50K customers with 28% activation rate",
+        "Built marketing analytics dashboard tracking 100+ KPIs across channels",
+        "Reduced customer acquisition cost by 27% while scaling spend $150K"
+      ]
+    },
+    {
+      "title": "Content Marketing Manager",
+      "employer": "Spotify",
+      "start_date": "2021-07",
+      "end_date": "2025-07",
+      "channels": [
+        "Video Production",
+        "Webflow",
+        "Editorial Planning",
+        "Copywriting"
+      ],
+      "achievements": [
+        "Generated $750M in pipeline through demand generation campaigns",
+        "Led rebranding initiative increasing brand awareness by 39%"
+      ]
+    },
+    {
+      "title": "Brand Manager",
+      "employer": "Huge",
+      "start_date": "2019-02",
+      "end_date": "2021-02",
+      "channels": [
+        "Copywriting",
+        "Brand Voice",
+        "SEO Content",
+        "Content Strategy"
+      ],
+      "achievements": [
+        "Generated $100M in pipeline through demand generation campaigns",
+        "Developed content strategy resulting in 8K monthly blog visitors"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "UC Berkeley"
+    }
+  ],
+  "certifications": [
+    "Copyblogger Certified Content Marketer",
+    "HubSpot Content Marketing"
+  ],
+  "skills": {
+    "marketing": [
+      "Content Strategy",
+      "Adobe Creative Suite",
+      "Copywriting",
+      "Brand Voice",
+      "Webflow",
+      "Podcasting",
+      "Editorial Planning",
+      "WordPress"
+    ],
+    "soft": [
+      "Conflict Resolution",
+      "Team Leadership",
+      "Change Management",
+      "Mentoring"
+    ]
+  }
+}

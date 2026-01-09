@@ -1,0 +1,140 @@
+{
+  "id": "gen_mkt_resume_024",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Mark Lopez",
+    "email": "mark.lopez@email.com",
+    "phone": "(841) 895-9927",
+    "location": "Minneapolis, MN",
+    "linkedin": "linkedin.com/in/marklopez"
+  },
+  "summary": "Creative and data-driven product marketing professional with 17+ years of experience. Expert in Demo Development, Sales Enablement, Battle Cards. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "vp",
+  "years_experience": 17,
+  "primary_specialty": "product_marketing",
+  "experience": [
+    {
+      "title": "VP of Brand",
+      "employer": "Amazon",
+      "start_date": "2023-12",
+      "end_date": "Present",
+      "channels": [
+        "Battle Cards",
+        "Product Positioning",
+        "Competitive Analysis",
+        "Demo Development"
+      ],
+      "achievements": [
+        "Launched product to 5K customers with 46% activation rate",
+        "Managed $100M annual marketing budget across 8 channels",
+        "Led rebranding initiative increasing brand awareness by 43%",
+        "Generated $100M in pipeline through demand generation campaigns"
+      ]
+    },
+    {
+      "title": "Brand Manager",
+      "employer": "Google",
+      "start_date": "2020-12",
+      "end_date": "2023-12",
+      "channels": [
+        "Battle Cards",
+        "Sales Enablement",
+        "Demo Development",
+        "Product Positioning"
+      ],
+      "achievements": [
+        "Developed content strategy resulting in 5K monthly blog visitors",
+        "Managed $500M annual marketing budget across 50 channels",
+        "Built marketing analytics dashboard tracking 3+ KPIs across channels"
+      ]
+    },
+    {
+      "title": "Content Strategist",
+      "employer": "Nike",
+      "start_date": "2018-08",
+      "end_date": "2020-08",
+      "channels": [
+        "Sales Enablement",
+        "Messaging",
+        "Battle Cards",
+        "Pricing Strategy"
+      ],
+      "achievements": [
+        "Developed content strategy resulting in 3K monthly blog visitors",
+        "Led rebranding initiative increasing brand awareness by 72%",
+        "Generated $750M in pipeline through demand generation campaigns"
+      ]
+    },
+    {
+      "title": "Content Strategist",
+      "employer": "Spotify",
+      "start_date": "2016-03",
+      "end_date": "2018-03",
+      "channels": [
+        "Launch Planning",
+        "Customer Research",
+        "Battle Cards",
+        "Sales Enablement"
+      ],
+      "achievements": [
+        "Created sales enablement materials improving win rate by 26%",
+        "Reduced customer acquisition cost by 58% while scaling spend $150K",
+        "Increased organic traffic by 57% through SEO optimization strategy",
+        "Managed $500M annual marketing budget across 3 channels"
+      ]
+    },
+    {
+      "title": "Customer Insights Manager",
+      "employer": "Apple",
+      "start_date": "2014-10",
+      "end_date": "2015-10",
+      "channels": [
+        "Product Positioning",
+        "Demo Development",
+        "Messaging",
+        "Customer Research"
+      ],
+      "achievements": [
+        "Launched product to 8K customers with 63% activation rate",
+        "Developed content strategy resulting in 20K monthly blog visitors",
+        "Achieved 44% improvement in email open rates through A/B testing"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Marketing",
+      "university": "University of Virginia"
+    },
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "University of Texas at Austin"
+    }
+  ],
+  "certifications": [
+    "Pragmatic Marketing Certified",
+    "Product Marketing Alliance Certification"
+  ],
+  "skills": {
+    "marketing": [
+      "Sales Enablement",
+      "Customer Research",
+      "Launch Planning",
+      "Product Positioning",
+      "Competitive Analysis",
+      "Pricing Strategy",
+      "Messaging",
+      "Battle Cards"
+    ],
+    "soft": [
+      "Strategic Thinking",
+      "Mentoring",
+      "Critical Thinking",
+      "Time Management",
+      "Cross-functional Collaboration",
+      "Communication"
+    ]
+  }
+}

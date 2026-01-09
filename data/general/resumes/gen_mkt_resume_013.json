@@ -1,0 +1,62 @@
+{
+  "id": "gen_mkt_resume_013",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Michelle Brooks",
+    "email": "michelle.brooks@email.com",
+    "phone": "(984) 320-5752",
+    "location": "Miami, FL",
+    "linkedin": "linkedin.com/in/michellebrooks"
+  },
+  "summary": "Creative and data-driven content professional with 2+ years of experience. Expert in Podcasting, Brand Voice, Webflow. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "junior",
+  "years_experience": 2,
+  "primary_specialty": "content",
+  "experience": [
+    {
+      "title": "Marketing Specialist",
+      "employer": "Huge",
+      "start_date": "2024-07",
+      "end_date": "Present",
+      "channels": [
+        "Storytelling",
+        "Copywriting",
+        "Webflow",
+        "WordPress"
+      ],
+      "achievements": [
+        "Launched product to 5K customers with 18% activation rate",
+        "Generated $1000M in pipeline through demand generation campaigns",
+        "Achieved 54% improvement in email open rates through A/B testing",
+        "Reduced customer acquisition cost by 62% while scaling spend $1000K"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BA",
+      "field": "Communications",
+      "university": "Northeastern University"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "marketing": [
+      "SEO Content",
+      "WordPress",
+      "Storytelling",
+      "Content Strategy",
+      "Editorial Planning",
+      "Video Production",
+      "Webflow",
+      "Copywriting"
+    ],
+    "soft": [
+      "Problem Solving",
+      "Time Management",
+      "Conflict Resolution",
+      "Decision Making",
+      "Negotiation"
+    ]
+  }
+}

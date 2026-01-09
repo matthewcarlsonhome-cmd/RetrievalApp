@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "gen_it_job_001",
+    "domain": "it",
+    "title": "Senior Software Engineer",
+    "employer": "Thomson Reuters",
+    "department": "Engineering",
+    "location": "Miami, FL",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "senior",
+    "requirements": {
+      "years_min": 5,
+      "years_max": 10,
+      "education": "BS in Computer Science or related field",
+      "skills_required": [
+        "Python",
+        "Java",
+        "Microservices",
+        "REST APIs",
+        "SQL"
+      ],
+      "skills_preferred": [
+        "Kubernetes",
+        "AWS",
+        "GraphQL"
+      ]
+    },
+    "salary_range": {
+      "min": 130000,
+      "max": 200000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute engineering initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2025-12-19"
+  },
+  {
+    "id": "gen_it_job_002",
+    "domain": "it",
+    "title": "Staff Software Engineer",
+    "employer": "McKinsey Digital",
+    "department": "Engineering",
+    "location": "New York, NY",
+    "remote": true,
+    "employment_type": "Full-time",
+    "experience_level": "lead",
+    "requirements": {
+      "years_min": 8,
+      "years_max": 15,
+      "education": "BS/MS in Computer Science",
+      "skills_required": [
+        "System Design",
+        "Architecture",
+        "Python",
+        "Java",
+        "Cloud"
+      ],
+      "skills_preferred": [
+        "Team Leadership",
+        "Technical Strategy"
+      ]
+    },
+    "salary_range": {
+      "min": 160000,
+      "max": 240000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute engineering initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Remote work options"
+    ],
+    "posted_date": "2025-12-28"
+  },
+  {
+    "id": "gen_it_job_003",
+    "domain": "it",
+    "title": "Junior Data Analyst",
+    "employer": "IBM",
+    "department": "Data",
+    "location": "Minneapolis, MN",
+    "remote": true,
+    "employment_type": "Full-time",
+    "experience_level": "junior",
+    "requirements": {
+      "years_min": 0,
+      "years_max": 2,
+      "education": "BS in Statistics, Math, or related field",
+      "skills_required": [
+        "SQL",
+        "Excel",
+        "Python",
+        "Data Visualization"
+      ],
+      "skills_preferred": [
+        "Tableau",
+        "Power BI"
+      ]
+    },
+    "salary_range": {
+      "min": 65000,
+      "max": 95000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute data initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Contribute to team goals and learn from senior colleagues"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Remote work options"
+    ],
+    "posted_date": "2025-12-25"
+  },
+  {
+    "id": "gen_it_job_004",
+    "domain": "it",
+    "title": "Data Engineer",
+    "employer": "Stripe",
+    "department": "Data",
+    "location": "San Francisco, CA",
+    "remote": true,
+    "employment_type": "Full-time",
+    "experience_level": "mid",
+    "requirements": {
+      "years_min": 3,
+      "years_max": 6,
+      "education": "BS in Computer Science or related field",
+      "skills_required": [
+        "Python",
+        "SQL",
+        "ETL",
+        "Spark",
+        "Airflow"
+      ],
+      "skills_preferred": [
+        "Databricks",
+        "Snowflake",
+        "dbt"
+      ]
+    },
+    "salary_range": {
+      "min": 90000,
+      "max": 140000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute data initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Contribute to team goals and learn from senior colleagues"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Remote work options"
+    ],
+    "posted_date": "2025-12-28"
+  },
+  {
+    "id": "gen_it_job_005",
+    "domain": "it",
+    "title": "DevOps Engineer",
+    "employer": "Goldman Sachs",
+    "department": "Platform",
+    "location": "Philadelphia, PA",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "mid",
+    "requirements": {
+      "years_min": 3,
+      "years_max": 7,
+      "education": "BS in Computer Science or equivalent experience",
+      "skills_required": [
+        "Kubernetes",
+        "Docker",
+        "CI/CD",
+        "Terraform",
+        "AWS/GCP"
+      ],
+      "skills_preferred": [
+        "ArgoCD",
+        "Prometheus",
+        "Grafana"
+      ]
+    },
+    "salary_range": {
+      "min": 90000,
+      "max": 140000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute platform initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Contribute to team goals and learn from senior colleagues"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2025-12-11"
+  },
+  {
+    "id": "gen_it_job_006",
+    "domain": "it",
+    "title": "Security Engineer",
+    "employer": "Morgan Stanley",
+    "department": "Security",
+    "location": "Phoenix, AZ",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "senior",
+    "requirements": {
+      "years_min": 5,
+      "years_max": 10,
+      "education": "BS in Cybersecurity or related field",
+      "skills_required": [
+        "Security Architecture",
+        "Penetration Testing",
+        "SIEM",
+        "IAM"
+      ],
+      "skills_preferred": [
+        "CISSP",
+        "AWS Security Specialty"
+      ]
+    },
+    "salary_range": {
+      "min": 130000,
+      "max": 200000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute security initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2026-01-03"
+  },
+  {
+    "id": "gen_it_job_007",
+    "domain": "it",
+    "title": "Engineering Manager",
+    "employer": "Cisco",
+    "department": "Engineering",
+    "location": "San Diego, CA",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "director",
+    "requirements": {
+      "years_min": 8,
+      "years_max": 15,
+      "education": "BS/MS in Computer Science, MBA preferred",
+      "skills_required": [
+        "Team Leadership",
+        "Agile",
+        "Technical Strategy",
+        "Hiring"
+      ],
+      "skills_preferred": [
+        "Budget Management",
+        "Executive Communication"
+      ]
+    },
+    "salary_range": {
+      "min": 200000,
+      "max": 320000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute engineering initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members",
+      "Set strategic direction and priorities for the organization",
+      "Manage budget and resource allocation",
+      "Report to executive leadership on progress and outcomes"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2025-12-21"
+  },
+  {
+    "id": "gen_it_job_008",
+    "domain": "it",
+    "title": "VP of Engineering",
+    "employer": "Lyft",
+    "department": "Engineering",
+    "location": "Minneapolis, MN",
+    "remote": true,
+    "employment_type": "Full-time",
+    "experience_level": "vp",
+    "requirements": {
+      "years_min": 12,
+      "years_max": 20,
+      "education": "BS/MS in Computer Science, MBA preferred",
+      "skills_required": [
+        "Org Design",
+        "Technical Strategy",
+        "Executive Leadership",
+        "P&L"
+      ],
+      "skills_preferred": [
+        "Public Company Experience",
+        "Board Presentation"
+      ]
+    },
+    "salary_range": {
+      "min": 280000,
+      "max": 500000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute engineering initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members",
+      "Set strategic direction and priorities for the organization",
+      "Manage budget and resource allocation",
+      "Report to executive leadership on progress and outcomes"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Remote work options"
+    ],
+    "posted_date": "2025-12-14"
+  },
+  {
+    "id": "gen_it_job_009",
+    "domain": "it",
+    "title": "Solutions Architect",
+    "employer": "IBM",
+    "department": "Engineering",
+    "location": "Atlanta, GA",
+    "remote": true,
+    "employment_type": "Full-time",
+    "experience_level": "senior",
+    "requirements": {
+      "years_min": 7,
+      "years_max": 12,
+      "education": "BS in Computer Science or related field",
+      "skills_required": [
+        "Cloud Architecture",
+        "System Design",
+        "Customer Facing",
+        "AWS/Azure/GCP"
+      ],
+      "skills_preferred": [
+        "Pre-sales Experience",
+        "Technical Writing"
+      ]
+    },
+    "salary_range": {
+      "min": 130000,
+      "max": 200000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute engineering initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Remote work options"
+    ],
+    "posted_date": "2025-12-18"
+  },
+  {
+    "id": "gen_it_job_010",
+    "domain": "it",
+    "title": "QA Automation Engineer",
+    "employer": "Shopify",
+    "department": "Engineering",
+    "location": "Phoenix, AZ",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "mid",
+    "requirements": {
+      "years_min": 3,
+      "years_max": 6,
+      "education": "BS in Computer Science or related field",
+      "skills_required": [
+        "Selenium",
+        "Python",
+        "API Testing",
+        "CI/CD Integration"
+      ],
+      "skills_preferred": [
+        "Playwright",
+        "Performance Testing"
+      ]
+    },
+    "salary_range": {
+      "min": 90000,
+      "max": 140000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute engineering initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Contribute to team goals and learn from senior colleagues"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2025-12-13"
+  },
+  {
+    "id": "gen_marketing_job_011",
+    "domain": "marketing",
+    "title": "Digital Marketing Manager",
+    "employer": "DDB",
+    "department": "Marketing",
+    "location": "Detroit, MI",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "mid",
+    "requirements": {
+      "years_min": 4,
+      "years_max": 7,
+      "education": "BS in Marketing or related field",
+      "skills_required": [
+        "Google Ads",
+        "Facebook Ads",
+        "SEO",
+        "Marketing Automation"
+      ],
+      "skills_preferred": [
+        "HubSpot",
+        "Marketo"
+      ]
+    },
+    "salary_range": {
+      "min": 90000,
+      "max": 140000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute marketing initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Contribute to team goals and learn from senior colleagues"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2025-12-24"
+  },
+  {
+    "id": "gen_marketing_job_012",
+    "domain": "marketing",
+    "title": "Content Marketing Specialist",
+    "employer": "BBDO",
+    "department": "Marketing",
+    "location": "Charlotte, NC",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "junior",
+    "requirements": {
+      "years_min": 1,
+      "years_max": 3,
+      "education": "BS in Communications, Marketing, or English",
+      "skills_required": [
+        "Content Writing",
+        "SEO",
+        "Social Media",
+        "WordPress"
+      ],
+      "skills_preferred": [
+        "Video Production",
+        "Graphic Design"
+      ]
+    },
+    "salary_range": {
+      "min": 65000,
+      "max": 95000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute marketing initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Contribute to team goals and learn from senior colleagues"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2025-12-17"
+  },
+  {
+    "id": "gen_marketing_job_013",
+    "domain": "marketing",
+    "title": "Senior Product Marketing Manager",
+    "employer": "P&G",
+    "department": "Marketing",
+    "location": "Remote",
+    "remote": true,
+    "employment_type": "Full-time",
+    "experience_level": "senior",
+    "requirements": {
+      "years_min": 6,
+      "years_max": 10,
+      "education": "BS in Marketing/Business, MBA preferred",
+      "skills_required": [
+        "Product Positioning",
+        "Go-to-Market",
+        "Sales Enablement",
+        "Competitive Analysis"
+      ],
+      "skills_preferred": [
+        "B2B SaaS Experience",
+        "Technical Background"
+      ]
+    },
+    "salary_range": {
+      "min": 130000,
+      "max": 200000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute marketing initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Remote work options"
+    ],
+    "posted_date": "2025-12-18"
+  },
+  {
+    "id": "gen_marketing_job_014",
+    "domain": "marketing",
+    "title": "Growth Marketing Lead",
+    "employer": "P&G",
+    "department": "Marketing",
+    "location": "Atlanta, GA",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "lead",
+    "requirements": {
+      "years_min": 5,
+      "years_max": 9,
+      "education": "BS in Marketing, Analytics, or related field",
+      "skills_required": [
+        "A/B Testing",
+        "User Acquisition",
+        "Analytics",
+        "Paid Media"
+      ],
+      "skills_preferred": [
+        "SQL",
+        "Product Analytics Tools"
+      ]
+    },
+    "salary_range": {
+      "min": 160000,
+      "max": 240000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute marketing initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2025-12-29"
+  },
+  {
+    "id": "gen_marketing_job_015",
+    "domain": "marketing",
+    "title": "Director of Brand Marketing",
+    "employer": "Wieden+Kennedy",
+    "department": "Marketing",
+    "location": "Raleigh, NC",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "director",
+    "requirements": {
+      "years_min": 10,
+      "years_max": 15,
+      "education": "BS in Marketing, MBA preferred",
+      "skills_required": [
+        "Brand Strategy",
+        "Campaign Management",
+        "Team Leadership",
+        "Agency Management"
+      ],
+      "skills_preferred": [
+        "Consumer Brand Experience",
+        "Global Campaigns"
+      ]
+    },
+    "salary_range": {
+      "min": 200000,
+      "max": 320000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute marketing initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members",
+      "Set strategic direction and priorities for the organization",
+      "Manage budget and resource allocation",
+      "Report to executive leadership on progress and outcomes"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2025-12-20"
+  },
+  {
+    "id": "gen_marketing_job_016",
+    "domain": "marketing",
+    "title": "Marketing Analytics Manager",
+    "employer": "Droga5",
+    "department": "Marketing",
+    "location": "Phoenix, AZ",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "mid",
+    "requirements": {
+      "years_min": 4,
+      "years_max": 7,
+      "education": "BS in Statistics, Analytics, or Marketing",
+      "skills_required": [
+        "SQL",
+        "Google Analytics",
+        "Tableau",
+        "Marketing Attribution"
+      ],
+      "skills_preferred": [
+        "Python",
+        "Looker",
+        "Amplitude"
+      ]
+    },
+    "salary_range": {
+      "min": 90000,
+      "max": 140000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute marketing initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Contribute to team goals and learn from senior colleagues"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2026-01-08"
+  },
+  {
+    "id": "gen_marketing_job_017",
+    "domain": "marketing",
+    "title": "VP of Marketing",
+    "employer": "R/GA",
+    "department": "Marketing",
+    "location": "Chicago, IL",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "vp",
+    "requirements": {
+      "years_min": 12,
+      "years_max": 20,
+      "education": "MBA preferred",
+      "skills_required": [
+        "Marketing Strategy",
+        "Team Building",
+        "Budget Management",
+        "Executive Presence"
+      ],
+      "skills_preferred": [
+        "Public Company Experience",
+        "IPO Experience"
+      ]
+    },
+    "salary_range": {
+      "min": 280000,
+      "max": 500000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute marketing initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members",
+      "Set strategic direction and priorities for the organization",
+      "Manage budget and resource allocation",
+      "Report to executive leadership on progress and outcomes"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2025-12-18"
+  },
+  {
+    "id": "gen_marketing_job_018",
+    "domain": "marketing",
+    "title": "Demand Generation Manager",
+    "employer": "Apple",
+    "department": "Marketing",
+    "location": "Detroit, MI",
+    "remote": true,
+    "employment_type": "Full-time",
+    "experience_level": "mid",
+    "requirements": {
+      "years_min": 3,
+      "years_max": 6,
+      "education": "BS in Marketing or Business",
+      "skills_required": [
+        "Lead Generation",
+        "Email Marketing",
+        "Marketing Automation",
+        "CRM"
+      ],
+      "skills_preferred": [
+        "Salesforce",
+        "Account-Based Marketing"
+      ]
+    },
+    "salary_range": {
+      "min": 90000,
+      "max": 140000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute marketing initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Contribute to team goals and learn from senior colleagues"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Remote work options"
+    ],
+    "posted_date": "2025-12-24"
+  },
+  {
+    "id": "gen_business_job_019",
+    "domain": "business",
+    "title": "Business Analyst",
+    "employer": "Amazon",
+    "department": "Business Operations",
+    "location": "Remote",
+    "remote": true,
+    "employment_type": "Full-time",
+    "experience_level": "mid",
+    "requirements": {
+      "years_min": 2,
+      "years_max": 5,
+      "education": "BS in Business, Analytics, or related field",
+      "skills_required": [
+        "Requirements Gathering",
+        "SQL",
+        "Process Mapping",
+        "Stakeholder Management"
+      ],
+      "skills_preferred": [
+        "JIRA",
+        "Confluence",
+        "Agile"
+      ]
+    },
+    "salary_range": {
+      "min": 90000,
+      "max": 140000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute business operations initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Contribute to team goals and learn from senior colleagues"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Remote work options"
+    ],
+    "posted_date": "2026-01-01"
+  },
+  {
+    "id": "gen_business_job_020",
+    "domain": "business",
+    "title": "Senior Business Analyst",
+    "employer": "CVS Health",
+    "department": "Business Operations",
+    "location": "Remote",
+    "remote": true,
+    "employment_type": "Full-time",
+    "experience_level": "senior",
+    "requirements": {
+      "years_min": 5,
+      "years_max": 9,
+      "education": "BS in Business, CBAP preferred",
+      "skills_required": [
+        "Complex Requirements",
+        "Business Case Development",
+        "UAT",
+        "Process Improvement"
+      ],
+      "skills_preferred": [
+        "Six Sigma",
+        "Product Management"
+      ]
+    },
+    "salary_range": {
+      "min": 130000,
+      "max": 200000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute business operations initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Remote work options"
+    ],
+    "posted_date": "2025-12-10"
+  },
+  {
+    "id": "gen_business_job_021",
+    "domain": "business",
+    "title": "Product Manager",
+    "employer": "UnitedHealth Group",
+    "department": "Product",
+    "location": "Remote",
+    "remote": true,
+    "employment_type": "Full-time",
+    "experience_level": "mid",
+    "requirements": {
+      "years_min": 3,
+      "years_max": 6,
+      "education": "BS in Computer Science, Business, or related field",
+      "skills_required": [
+        "Product Roadmapping",
+        "User Research",
+        "Agile",
+        "Prioritization"
+      ],
+      "skills_preferred": [
+        "Technical Background",
+        "Data Analysis"
+      ]
+    },
+    "salary_range": {
+      "min": 90000,
+      "max": 140000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute product initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Contribute to team goals and learn from senior colleagues"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Remote work options"
+    ],
+    "posted_date": "2026-01-01"
+  },
+  {
+    "id": "gen_business_job_022",
+    "domain": "business",
+    "title": "Senior Product Manager",
+    "employer": "Deloitte Consulting",
+    "department": "Product",
+    "location": "Chicago, IL",
+    "remote": true,
+    "employment_type": "Full-time",
+    "experience_level": "senior",
+    "requirements": {
+      "years_min": 6,
+      "years_max": 10,
+      "education": "BS in technical field, MBA preferred",
+      "skills_required": [
+        "Product Strategy",
+        "Cross-functional Leadership",
+        "Metrics-driven",
+        "Go-to-Market"
+      ],
+      "skills_preferred": [
+        "Platform Experience",
+        "B2B SaaS"
+      ]
+    },
+    "salary_range": {
+      "min": 130000,
+      "max": 200000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute product initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Remote work options"
+    ],
+    "posted_date": "2025-12-27"
+  },
+  {
+    "id": "gen_business_job_023",
+    "domain": "business",
+    "title": "Project Manager",
+    "employer": "CVS Health",
+    "department": "PMO",
+    "location": "Portland, OR",
+    "remote": true,
+    "employment_type": "Full-time",
+    "experience_level": "mid",
+    "requirements": {
+      "years_min": 3,
+      "years_max": 6,
+      "education": "BS in Business, PMP preferred",
+      "skills_required": [
+        "Project Planning",
+        "Risk Management",
+        "Stakeholder Communication",
+        "MS Project"
+      ],
+      "skills_preferred": [
+        "Agile Certification",
+        "Technology Projects"
+      ]
+    },
+    "salary_range": {
+      "min": 90000,
+      "max": 140000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute pmo initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Contribute to team goals and learn from senior colleagues"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Remote work options"
+    ],
+    "posted_date": "2026-01-07"
+  },
+  {
+    "id": "gen_business_job_024",
+    "domain": "business",
+    "title": "Program Manager",
+    "employer": "JPMorgan Chase",
+    "department": "PMO",
+    "location": "Atlanta, GA",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "senior",
+    "requirements": {
+      "years_min": 7,
+      "years_max": 12,
+      "education": "BS/MBA, PMP required",
+      "skills_required": [
+        "Program Management",
+        "Portfolio Management",
+        "Executive Reporting",
+        "Budget Management"
+      ],
+      "skills_preferred": [
+        "Technology Transformation",
+        "Change Management"
+      ]
+    },
+    "salary_range": {
+      "min": 130000,
+      "max": 200000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute pmo initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2025-12-12"
+  },
+  {
+    "id": "gen_business_job_025",
+    "domain": "business",
+    "title": "Operations Manager",
+    "employer": "UnitedHealth Group",
+    "department": "Operations",
+    "location": "Seattle, WA",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "mid",
+    "requirements": {
+      "years_min": 4,
+      "years_max": 8,
+      "education": "BS in Business or Operations",
+      "skills_required": [
+        "Process Optimization",
+        "Team Management",
+        "KPI Tracking",
+        "Vendor Management"
+      ],
+      "skills_preferred": [
+        "Six Sigma",
+        "Lean Management"
+      ]
+    },
+    "salary_range": {
+      "min": 90000,
+      "max": 140000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute operations initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Contribute to team goals and learn from senior colleagues"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2025-12-28"
+  },
+  {
+    "id": "gen_business_job_026",
+    "domain": "business",
+    "title": "Director of Operations",
+    "employer": "JPMorgan Chase",
+    "department": "Operations",
+    "location": "Salt Lake City, UT",
+    "remote": true,
+    "employment_type": "Full-time",
+    "experience_level": "director",
+    "requirements": {
+      "years_min": 10,
+      "years_max": 15,
+      "education": "BS/MBA in Operations or Business",
+      "skills_required": [
+        "Operations Strategy",
+        "P&L Management",
+        "Team Building",
+        "Process Excellence"
+      ],
+      "skills_preferred": [
+        "Global Operations",
+        "M&A Integration"
+      ]
+    },
+    "salary_range": {
+      "min": 200000,
+      "max": 320000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute operations initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members",
+      "Set strategic direction and priorities for the organization",
+      "Manage budget and resource allocation",
+      "Report to executive leadership on progress and outcomes"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Remote work options"
+    ],
+    "posted_date": "2025-12-10"
+  },
+  {
+    "id": "gen_business_job_027",
+    "domain": "business",
+    "title": "Chief of Staff",
+    "employer": "KPMG Advisory",
+    "department": "Executive",
+    "location": "Dallas, TX",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "senior",
+    "requirements": {
+      "years_min": 6,
+      "years_max": 12,
+      "education": "MBA preferred",
+      "skills_required": [
+        "Executive Support",
+        "Strategic Planning",
+        "Cross-functional Coordination",
+        "Communication"
+      ],
+      "skills_preferred": [
+        "Consulting Background",
+        "Board Experience"
+      ]
+    },
+    "salary_range": {
+      "min": 130000,
+      "max": 200000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute executive initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2025-12-25"
+  },
+  {
+    "id": "gen_business_job_028",
+    "domain": "business",
+    "title": "VP of Business Development",
+    "employer": "Microsoft",
+    "department": "Business Development",
+    "location": "Boston, MA",
+    "remote": true,
+    "employment_type": "Full-time",
+    "experience_level": "vp",
+    "requirements": {
+      "years_min": 12,
+      "years_max": 20,
+      "education": "MBA preferred",
+      "skills_required": [
+        "Partnership Strategy",
+        "Deal Negotiation",
+        "Revenue Growth",
+        "Executive Relationships"
+      ],
+      "skills_preferred": [
+        "M&A Experience",
+        "International Expansion"
+      ]
+    },
+    "salary_range": {
+      "min": 280000,
+      "max": 500000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute business development initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members",
+      "Set strategic direction and priorities for the organization",
+      "Manage budget and resource allocation",
+      "Report to executive leadership on progress and outcomes"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Remote work options"
+    ],
+    "posted_date": "2025-12-21"
+  },
+  {
+    "id": "gen_business_job_029",
+    "domain": "business",
+    "title": "Strategy Manager",
+    "employer": "Home Depot",
+    "department": "Strategy",
+    "location": "Los Angeles, CA",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "mid",
+    "requirements": {
+      "years_min": 3,
+      "years_max": 7,
+      "education": "MBA or top consulting experience",
+      "skills_required": [
+        "Strategic Analysis",
+        "Financial Modeling",
+        "Market Research",
+        "Executive Presentation"
+      ],
+      "skills_preferred": [
+        "Top-tier Consulting",
+        "Private Equity"
+      ]
+    },
+    "salary_range": {
+      "min": 90000,
+      "max": 140000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute strategy initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Contribute to team goals and learn from senior colleagues"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2025-12-24"
+  },
+  {
+    "id": "gen_business_job_030",
+    "domain": "business",
+    "title": "Director of Strategy",
+    "employer": "Adobe",
+    "department": "Strategy",
+    "location": "Charlotte, NC",
+    "remote": false,
+    "employment_type": "Full-time",
+    "experience_level": "director",
+    "requirements": {
+      "years_min": 8,
+      "years_max": 14,
+      "education": "MBA from top program",
+      "skills_required": [
+        "Corporate Strategy",
+        "M&A Due Diligence",
+        "Board Presentation",
+        "Team Leadership"
+      ],
+      "skills_preferred": [
+        "Industry Expertise",
+        "Investment Banking"
+      ]
+    },
+    "salary_range": {
+      "min": 200000,
+      "max": 320000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "Lead and execute strategy initiatives aligned with company strategy",
+      "Collaborate with cross-functional teams to deliver high-impact projects",
+      "Develop and maintain relationships with key stakeholders",
+      "Drive continuous improvement in processes and outcomes",
+      "Mentor and develop team members",
+      "Set strategic direction and priorities for the organization",
+      "Manage budget and resource allocation",
+      "Report to executive leadership on progress and outcomes"
+    ],
+    "benefits": [
+      "Competitive salary and equity",
+      "Comprehensive health, dental, and vision insurance",
+      "401(k) with company match",
+      "Flexible PTO policy",
+      "Professional development budget",
+      "Hybrid work environment"
+    ],
+    "posted_date": "2026-01-02"
+  }
+]

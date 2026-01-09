@@ -1,0 +1,84 @@
+{
+  "id": "gen_biz_resume_005",
+  "domain": "business",
+  "personal_info": {
+    "name": "Fatima Torres",
+    "email": "fatima.torres@email.com",
+    "phone": "(552) 493-8687",
+    "location": "Washington, DC",
+    "linkedin": "linkedin.com/in/fatimatorres"
+  },
+  "summary": "Results-driven product professional with 4+ years of experience. Expertise in Product Roadmapping, Mixpanel, Feature Prioritization. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 4,
+  "primary_specialty": "product",
+  "experience": [
+    {
+      "title": "Principal Product Manager",
+      "employer": "CVS Health",
+      "start_date": "2023-11",
+      "end_date": "Present",
+      "focus_areas": [
+        "Mixpanel",
+        "Feature Prioritization",
+        "A/B Testing",
+        "PRDs"
+      ],
+      "achievements": [
+        "Launched product feature increasing user engagement by 25%",
+        "Reduced project delivery time by 36% through Agile transformation",
+        "Managed $500M project budget with delivery 32% under budget",
+        "Facilitated 3+ stakeholder workshops for enterprise requirements"
+      ]
+    },
+    {
+      "title": "Principal Product Manager",
+      "employer": "Microsoft",
+      "start_date": "2022-07",
+      "end_date": "2023-07",
+      "focus_areas": [
+        "A/B Testing",
+        "Segment",
+        "Mixpanel",
+        "Feature Prioritization"
+      ],
+      "achievements": [
+        "Led digital transformation initiative resulting in $300M annual savings",
+        "Managed cross-functional team of 10 across 5 time zones",
+        "Facilitated 3+ stakeholder workshops for enterprise requirements",
+        "Launched product feature increasing user engagement by 70%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "UCLA"
+    }
+  ],
+  "certifications": [
+    "Pragmatic Marketing Certified"
+  ],
+  "skills": {
+    "professional": [
+      "KPIs",
+      "Feature Prioritization",
+      "Go-to-Market",
+      "Competitive Analysis",
+      "A/B Testing",
+      "Mixpanel",
+      "User Research",
+      "PRDs"
+    ],
+    "soft": [
+      "Negotiation",
+      "Communication",
+      "Presentation Skills",
+      "Team Leadership",
+      "Emotional Intelligence",
+      "Change Management",
+      "Strategic Thinking"
+    ]
+  }
+}

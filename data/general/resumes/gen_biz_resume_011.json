@@ -1,0 +1,80 @@
+{
+  "id": "gen_biz_resume_011",
+  "domain": "business",
+  "personal_info": {
+    "name": "Laura Collins",
+    "email": "laura.collins@email.com",
+    "phone": "(687) 664-7719",
+    "location": "Minneapolis, MN",
+    "linkedin": "linkedin.com/in/lauracollins"
+  },
+  "summary": "Results-driven analysis professional with 3+ years of experience. Expertise in Process Mapping, Scrum, SQL. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 3,
+  "primary_specialty": "analysis",
+  "experience": [
+    {
+      "title": "Partnership Manager",
+      "employer": "Microsoft",
+      "start_date": "2025-04",
+      "end_date": "Present",
+      "focus_areas": [
+        "Confluence",
+        "Requirements Gathering",
+        "Agile",
+        "Use Cases"
+      ],
+      "achievements": [
+        "Led digital transformation initiative resulting in $300M annual savings",
+        "Improved process efficiency by 54% through Lean Six Sigma implementation",
+        "Launched product feature increasing user engagement by 26%",
+        "Built business case for $100M technology investment with 44% ROI"
+      ]
+    },
+    {
+      "title": "Lead Business Analyst",
+      "employer": "Deloitte Consulting",
+      "start_date": "2022-12",
+      "end_date": "2024-12",
+      "focus_areas": [
+        "Confluence",
+        "UAT",
+        "JIRA",
+        "Gap Analysis"
+      ],
+      "achievements": [
+        "Built business case for $750M technology investment with 61% ROI",
+        "Facilitated 8+ stakeholder workshops for enterprise requirements"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Economics",
+      "university": "Ohio State University"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "professional": [
+      "BPMN",
+      "Process Mapping",
+      "Excel",
+      "User Stories",
+      "Requirements Gathering",
+      "Stakeholder Management",
+      "Scrum",
+      "JIRA"
+    ],
+    "soft": [
+      "Influence",
+      "Team Leadership",
+      "Change Management",
+      "Problem Solving",
+      "Emotional Intelligence",
+      "Presentation Skills",
+      "Time Management"
+    ]
+  }
+}

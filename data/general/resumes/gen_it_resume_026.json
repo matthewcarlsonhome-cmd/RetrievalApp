@@ -1,0 +1,65 @@
+{
+  "id": "gen_it_resume_026",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Kimberly Hall",
+    "email": "kimberly.hall@email.com",
+    "phone": "(914) 566-2037",
+    "location": "Remote",
+    "linkedin": "linkedin.com/in/kimberlyhall"
+  },
+  "summary": "1+ years of experience in security technologies. Expertise in Security Compliance, IDS/IPS, SOC Operations. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "junior",
+  "years_experience": 1,
+  "primary_tech_stack": "Cloud Security",
+  "tech_specialization": "security",
+  "experience": [
+    {
+      "title": "Junior Backend Developer",
+      "employer": "Snowflake",
+      "start_date": "2025-02",
+      "end_date": "Present",
+      "tech_stack": [
+        "Security Engineering",
+        "Risk Assessment",
+        "Firewall",
+        "IDS/IPS",
+        "Vulnerability Assessment"
+      ],
+      "achievements": [
+        "Architected data pipeline processing 1M+ events per day with 99.9% reliability",
+        "Implemented CI/CD pipeline reducing deployment time from 2 weeks to 30 minutes",
+        "Led incident response for critical outage, reducing MTTR from 2 days to 1 day",
+        "Reduced system latency by 63% through optimization of database queries and caching strategies"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Data Science",
+      "university": "Harvard University"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "technical": [
+      "AppSec",
+      "Penetration Testing",
+      "IDS/IPS",
+      "Security Compliance",
+      "Incident Response",
+      "Firewall",
+      "Vulnerability Assessment",
+      "SOC Operations",
+      "OWASP"
+    ],
+    "soft": [
+      "Team Leadership",
+      "Strategic Thinking",
+      "Emotional Intelligence",
+      "Time Management",
+      "Influence"
+    ]
+  }
+}

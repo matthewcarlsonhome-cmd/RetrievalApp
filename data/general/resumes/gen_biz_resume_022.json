@@ -1,0 +1,84 @@
+{
+  "id": "gen_biz_resume_022",
+  "domain": "business",
+  "personal_info": {
+    "name": "Emma Stewart",
+    "email": "emma.stewart@email.com",
+    "phone": "(713) 739-3010",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/emmastewart"
+  },
+  "summary": "Results-driven product professional with 6+ years of experience. Expertise in Mixpanel, Go-to-Market, Amplitude. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 6,
+  "primary_specialty": "product",
+  "experience": [
+    {
+      "title": "Partnership Manager",
+      "employer": "UnitedHealth Group",
+      "start_date": "2022-05",
+      "end_date": "Present",
+      "focus_areas": [
+        "Competitive Analysis",
+        "Segment",
+        "KPIs",
+        "PRDs"
+      ],
+      "achievements": [
+        "Improved process efficiency by 17% through Lean Six Sigma implementation",
+        "Managed $100M project budget with delivery 43% under budget",
+        "Led digital transformation initiative resulting in $200M annual savings",
+        "Managed cross-functional team of 15 across 8 time zones"
+      ]
+    },
+    {
+      "title": "Senior Product Manager",
+      "employer": "Procter & Gamble",
+      "start_date": "2020-05",
+      "end_date": "2022-05",
+      "focus_areas": [
+        "Mixpanel",
+        "PRDs",
+        "User Research",
+        "KPIs"
+      ],
+      "achievements": [
+        "Reduced project delivery time by 72% through Agile transformation",
+        "Led digital transformation initiative resulting in $500M annual savings",
+        "Developed requirements for system serving 50+ users across 6 regions",
+        "Improved process efficiency by 26% through Lean Six Sigma implementation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Finance",
+      "university": "University of Colorado"
+    }
+  ],
+  "certifications": [
+    "Pragmatic Marketing Certified"
+  ],
+  "skills": {
+    "professional": [
+      "Segment",
+      "Figma",
+      "Competitive Analysis",
+      "Amplitude",
+      "KPIs",
+      "Go-to-Market",
+      "User Research",
+      "OKRs"
+    ],
+    "soft": [
+      "Negotiation",
+      "Cross-functional Collaboration",
+      "Strategic Thinking",
+      "Stakeholder Management",
+      "Emotional Intelligence",
+      "Conflict Resolution",
+      "Critical Thinking"
+    ]
+  }
+}

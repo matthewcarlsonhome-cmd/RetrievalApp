@@ -1,0 +1,120 @@
+{
+  "id": "gen_it_resume_003",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Jamal Shah",
+    "email": "jamal.shah@email.com",
+    "phone": "(640) 793-6279",
+    "location": "Minneapolis, MN",
+    "linkedin": "linkedin.com/in/jamalshah"
+  },
+  "summary": "8+ years of experience in data technologies. Expertise in Airflow, Looker, ETL. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "senior",
+  "years_experience": 8,
+  "primary_tech_stack": "SQL",
+  "tech_specialization": "data",
+  "experience": [
+    {
+      "title": "Senior Backend Developer",
+      "employer": "Goldman Sachs",
+      "start_date": "2025-08",
+      "end_date": "Present",
+      "tech_stack": [
+        "Spark",
+        "Scikit-learn",
+        "Snowflake",
+        "NumPy",
+        "TensorFlow"
+      ],
+      "achievements": [
+        "Built machine learning model achieving 68% accuracy for fraud detection",
+        "Architected data pipeline processing 10K+ events per day with 99.9% reliability",
+        "Mentored team of 15 engineers, improving code review quality by 28%"
+      ]
+    },
+    {
+      "title": "Data Engineer",
+      "employer": "Microsoft",
+      "start_date": "2020-04",
+      "end_date": "2025-04",
+      "tech_stack": [
+        "Python",
+        "Snowflake",
+        "Power BI",
+        "Scikit-learn",
+        "ETL"
+      ],
+      "achievements": [
+        "Architected data pipeline processing 1M+ events per day with 99.9% reliability",
+        "Mentored team of 20 engineers, improving code review quality by 68%",
+        "Implemented security controls achieving SOC 2 Type II certification"
+      ]
+    },
+    {
+      "title": "Junior QA Engineer",
+      "employer": "Accenture",
+      "start_date": "2019-04",
+      "end_date": "2020-04",
+      "tech_stack": [
+        "SQL",
+        "Looker",
+        "TensorFlow",
+        "Scikit-learn",
+        "Power BI"
+      ],
+      "achievements": [
+        "Reduced system latency by 65% through optimization of database queries and caching strategies",
+        "Architected data pipeline processing 10M+ events per day with 99.9% reliability",
+        "Designed API serving 50K+ requests per second with sub-100ms latency"
+      ]
+    },
+    {
+      "title": "Data Engineer",
+      "employer": "Apple",
+      "start_date": "2017-12",
+      "end_date": "2018-12",
+      "tech_stack": [
+        "Spark",
+        "Snowflake",
+        "ETL",
+        "dbt",
+        "Databricks"
+      ],
+      "achievements": [
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Designed API serving 500K+ requests per second with sub-10ms latency",
+        "Reduced system latency by 60% through optimization of database queries and caching strategies",
+        "Led migration of 20 microservices to Kubernetes, improving deployment frequency by 54%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MS",
+      "field": "Computer Science",
+      "university": "UCLA"
+    }
+  ],
+  "certifications": [
+    "Databricks Certified Data Engineer",
+    "Snowflake SnowPro Core"
+  ],
+  "skills": {
+    "technical": [
+      "SQL",
+      "TensorFlow",
+      "Databricks",
+      "ETL",
+      "Tableau",
+      "Power BI",
+      "Scikit-learn",
+      "PyTorch",
+      "Data Modeling"
+    ],
+    "soft": [
+      "Presentation Skills",
+      "Change Management",
+      "Mentoring"
+    ]
+  }
+}

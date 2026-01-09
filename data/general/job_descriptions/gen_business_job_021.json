@@ -1,0 +1,47 @@
+{
+  "id": "gen_business_job_021",
+  "domain": "business",
+  "title": "Product Manager",
+  "employer": "UnitedHealth Group",
+  "department": "Product",
+  "location": "Remote",
+  "remote": true,
+  "employment_type": "Full-time",
+  "experience_level": "mid",
+  "requirements": {
+    "years_min": 3,
+    "years_max": 6,
+    "education": "BS in Computer Science, Business, or related field",
+    "skills_required": [
+      "Product Roadmapping",
+      "User Research",
+      "Agile",
+      "Prioritization"
+    ],
+    "skills_preferred": [
+      "Technical Background",
+      "Data Analysis"
+    ]
+  },
+  "salary_range": {
+    "min": 90000,
+    "max": 140000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute product initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Contribute to team goals and learn from senior colleagues"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Remote work options"
+  ],
+  "posted_date": "2026-01-01"
+}

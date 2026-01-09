@@ -1,0 +1,47 @@
+{
+  "id": "gen_marketing_job_018",
+  "domain": "marketing",
+  "title": "Demand Generation Manager",
+  "employer": "Apple",
+  "department": "Marketing",
+  "location": "Detroit, MI",
+  "remote": true,
+  "employment_type": "Full-time",
+  "experience_level": "mid",
+  "requirements": {
+    "years_min": 3,
+    "years_max": 6,
+    "education": "BS in Marketing or Business",
+    "skills_required": [
+      "Lead Generation",
+      "Email Marketing",
+      "Marketing Automation",
+      "CRM"
+    ],
+    "skills_preferred": [
+      "Salesforce",
+      "Account-Based Marketing"
+    ]
+  },
+  "salary_range": {
+    "min": 90000,
+    "max": 140000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute marketing initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Contribute to team goals and learn from senior colleagues"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Remote work options"
+  ],
+  "posted_date": "2025-12-24"
+}

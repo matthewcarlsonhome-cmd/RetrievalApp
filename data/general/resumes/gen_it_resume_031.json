@@ -1,0 +1,102 @@
+{
+  "id": "gen_it_resume_031",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Richard Young",
+    "email": "richard.young@email.com",
+    "phone": "(759) 584-2661",
+    "location": "Remote",
+    "linkedin": "linkedin.com/in/richardyoung"
+  },
+  "summary": "4+ years of experience in fullstack technologies. Expertise in CI/CD, REST APIs, Microservices. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "mid",
+  "years_experience": 4,
+  "primary_tech_stack": "Python",
+  "tech_specialization": "fullstack",
+  "experience": [
+    {
+      "title": "IT Project Manager",
+      "employer": "Bloomberg",
+      "start_date": "2024-05",
+      "end_date": "Present",
+      "tech_stack": [
+        ".NET",
+        "GraphQL",
+        "Git",
+        "Microservices",
+        "Vue.js"
+      ],
+      "achievements": [
+        "Implemented CI/CD pipeline reducing deployment time from 1 week to 2 hours",
+        "Developed automation reducing manual operations by 68%"
+      ]
+    },
+    {
+      "title": "Junior Software Developer",
+      "employer": "Datadog",
+      "start_date": "2023-01",
+      "end_date": "2024-01",
+      "tech_stack": [
+        "Python",
+        "React",
+        "PostgreSQL",
+        "Spring Boot",
+        "CI/CD"
+      ],
+      "achievements": [
+        "Developed automation reducing manual operations by 36%",
+        "Implemented CI/CD pipeline reducing deployment time from 1 week to 3 days",
+        "Architected data pipeline processing 100K+ events per day with 99.9% reliability"
+      ]
+    },
+    {
+      "title": "DevOps Engineer",
+      "employer": "Charles Schwab",
+      "start_date": "2021-07",
+      "end_date": "2022-07",
+      "tech_stack": [
+        "Java",
+        "Spring Boot",
+        "Redis",
+        "MongoDB",
+        "Vue.js"
+      ],
+      "achievements": [
+        "Built machine learning model achieving 26% accuracy for fraud detection",
+        "Architected event-driven system handling 5M+ daily transactions",
+        "Architected data pipeline processing 100K+ events per day with 99.9% reliability"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Software Engineering",
+      "university": "University of Washington"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Developer"
+  ],
+  "skills": {
+    "technical": [
+      "Python",
+      "Vue.js",
+      "Django",
+      "Express",
+      "REST APIs",
+      "Angular",
+      "React",
+      "Redis",
+      "Flask"
+    ],
+    "soft": [
+      "Decision Making",
+      "Stakeholder Management",
+      "Change Management",
+      "Conflict Resolution",
+      "Mentoring",
+      "Coaching"
+    ]
+  }
+}

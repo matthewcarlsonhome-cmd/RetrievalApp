@@ -1,0 +1,99 @@
+{
+  "id": "gen_biz_resume_007",
+  "domain": "business",
+  "personal_info": {
+    "name": "Shirley Richardson",
+    "email": "shirley.richardson@email.com",
+    "phone": "(988) 432-1187",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/shirleyrichardson"
+  },
+  "summary": "Results-driven operations professional with 6+ years of experience. Expertise in Capacity Planning, Process Optimization, Six Sigma. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 6,
+  "primary_specialty": "operations",
+  "experience": [
+    {
+      "title": "Strategy Manager",
+      "employer": "McKinsey & Company",
+      "start_date": "2023-01",
+      "end_date": "Present",
+      "focus_areas": [
+        "Vendor Management",
+        "Quality Assurance",
+        "Capacity Planning",
+        "Process Optimization"
+      ],
+      "achievements": [
+        "Led digital transformation initiative resulting in $50M annual savings",
+        "Negotiated vendor contracts saving $200K annually",
+        "Facilitated 50+ stakeholder workshops for enterprise requirements"
+      ]
+    },
+    {
+      "title": "Product Manager",
+      "employer": "CVS Health",
+      "start_date": "2020-11",
+      "end_date": "2022-11",
+      "focus_areas": [
+        "SLA Management",
+        "Quality Assurance",
+        "KPI Tracking",
+        "Capacity Planning"
+      ],
+      "achievements": [
+        "Developed requirements for system serving 50+ users across 7 regions",
+        "Managed $500M project budget with delivery 72% under budget",
+        "Built business case for $200M technology investment with 67% ROI"
+      ]
+    },
+    {
+      "title": "Chief Operating Officer",
+      "employer": "Merck",
+      "start_date": "2019-07",
+      "end_date": "2020-07",
+      "focus_areas": [
+        "Quality Assurance",
+        "KPI Tracking",
+        "Vendor Management",
+        "Process Optimization"
+      ],
+      "achievements": [
+        "Led digital transformation initiative resulting in $300M annual savings",
+        "Launched product feature increasing user engagement by 64%",
+        "Managed cross-functional team of 8 across 6 time zones",
+        "Built business case for $750M technology investment with 66% ROI"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "Duke University"
+    }
+  ],
+  "certifications": [
+    "CPSM (Certified Supply Management)"
+  ],
+  "skills": {
+    "professional": [
+      "Lean Management",
+      "Contract Negotiation",
+      "Process Optimization",
+      "SLA Management",
+      "Quality Assurance",
+      "Vendor Management",
+      "Capacity Planning",
+      "Six Sigma"
+    ],
+    "soft": [
+      "Adaptability",
+      "Decision Making",
+      "Coaching",
+      "Emotional Intelligence",
+      "Influence",
+      "Cross-functional Collaboration"
+    ]
+  }
+}

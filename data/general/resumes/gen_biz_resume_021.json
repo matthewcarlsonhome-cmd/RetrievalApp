@@ -1,0 +1,62 @@
+{
+  "id": "gen_biz_resume_021",
+  "domain": "business",
+  "personal_info": {
+    "name": "Sandra Joshi",
+    "email": "sandra.joshi@email.com",
+    "phone": "(853) 826-3784",
+    "location": "Raleigh, NC",
+    "linkedin": "linkedin.com/in/sandrajoshi"
+  },
+  "summary": "Results-driven project professional with 3+ years of experience. Expertise in Change Management, Resource Allocation, Risk Management. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "junior",
+  "years_experience": 3,
+  "primary_specialty": "project",
+  "experience": [
+    {
+      "title": "Senior Business Analyst",
+      "employer": "Deloitte Consulting",
+      "start_date": "2023-04",
+      "end_date": "Present",
+      "focus_areas": [
+        "Resource Allocation",
+        "Smartsheet",
+        "RAID Log",
+        "Stakeholder Communication"
+      ],
+      "achievements": [
+        "Developed requirements for system serving 100+ users across 3 regions",
+        "Reduced project delivery time by 39% through Agile transformation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "Columbia University"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "professional": [
+      "Budget Management",
+      "Project Planning",
+      "Change Management",
+      "RAID Log",
+      "Risk Management",
+      "Stakeholder Communication",
+      "Resource Allocation",
+      "MS Project"
+    ],
+    "soft": [
+      "Stakeholder Management",
+      "Time Management",
+      "Conflict Resolution",
+      "Emotional Intelligence",
+      "Communication",
+      "Presentation Skills",
+      "Strategic Thinking"
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "gen_it_resume_006",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Carlos Harris",
+    "email": "carlos.harris@email.com",
+    "phone": "(916) 612-5460",
+    "location": "Philadelphia, PA",
+    "linkedin": "linkedin.com/in/carlosharris"
+  },
+  "summary": "5+ years of experience in cloud technologies. Expertise in GKE, Azure DevOps, VPC. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "mid",
+  "years_experience": 5,
+  "primary_tech_stack": "AWS",
+  "tech_specialization": "cloud",
+  "experience": [
+    {
+      "title": "Data Scientist",
+      "employer": "Google",
+      "start_date": "2024-06",
+      "end_date": "Present",
+      "tech_stack": [
+        "Azure",
+        "Terraform",
+        "EC2",
+        "VPC",
+        "GKE"
+      ],
+      "achievements": [
+        "Architected event-driven system handling 1M+ daily transactions",
+        "Architected data pipeline processing 100K+ events per day with 99.9% reliability",
+        "Mentored team of 3 engineers, improving code review quality by 19%"
+      ]
+    },
+    {
+      "title": "Junior Frontend Developer",
+      "employer": "Charles Schwab",
+      "start_date": "2021-05",
+      "end_date": "2024-05",
+      "tech_stack": [
+        "Multi-Cloud",
+        "IAM",
+        "CloudWatch",
+        "VPC",
+        "CloudFormation"
+      ],
+      "achievements": [
+        "Reduced infrastructure costs by $50K annually through cloud optimization",
+        "Mentored team of 5 engineers, improving code review quality by 31%",
+        "Led incident response for critical outage, reducing MTTR from 4 hours to 2 hours",
+        "Built machine learning model achieving 60% accuracy for fraud detection"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Computer Science",
+      "university": "University of Illinois"
+    }
+  ],
+  "certifications": [
+    "Certified Kubernetes Administrator (CKA)"
+  ],
+  "skills": {
+    "technical": [
+      "Azure",
+      "VPC",
+      "Lambda",
+      "Terraform",
+      "CloudWatch",
+      "S3",
+      "EC2",
+      "Azure DevOps",
+      "GKE"
+    ],
+    "soft": [
+      "Emotional Intelligence",
+      "Problem Solving",
+      "Change Management",
+      "Adaptability",
+      "Communication"
+    ]
+  }
+}

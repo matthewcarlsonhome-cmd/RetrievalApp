@@ -1,0 +1,82 @@
+{
+  "id": "gen_biz_resume_013",
+  "domain": "business",
+  "personal_info": {
+    "name": "Nicole Kobayashi",
+    "email": "nicole.kobayashi@email.com",
+    "phone": "(443) 580-8404",
+    "location": "Remote",
+    "linkedin": "linkedin.com/in/nicolekobayashi"
+  },
+  "summary": "Results-driven operations professional with 5+ years of experience. Expertise in Contract Negotiation, Vendor Management, KPI Tracking. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 5,
+  "primary_specialty": "operations",
+  "experience": [
+    {
+      "title": "Principal Product Manager",
+      "employer": "Google",
+      "start_date": "2023-09",
+      "end_date": "Present",
+      "focus_areas": [
+        "Six Sigma",
+        "Quality Assurance",
+        "Contract Negotiation",
+        "SLA Management"
+      ],
+      "achievements": [
+        "Reduced project delivery time by 29% through Agile transformation",
+        "Managed cross-functional team of 10 across 5 time zones",
+        "Managed $200M project budget with delivery 50% under budget",
+        "Launched product feature increasing user engagement by 34%"
+      ]
+    },
+    {
+      "title": "Operations Director",
+      "employer": "Microsoft",
+      "start_date": "2021-05",
+      "end_date": "2023-05",
+      "focus_areas": [
+        "Process Optimization",
+        "Six Sigma",
+        "Lean Management",
+        "Quality Assurance"
+      ],
+      "achievements": [
+        "Reduced project delivery time by 56% through Agile transformation",
+        "Managed cross-functional team of 50 across 8 time zones",
+        "Led digital transformation initiative resulting in $500M annual savings"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Finance",
+      "university": "Ohio State University"
+    }
+  ],
+  "certifications": [
+    "APICS CSCP"
+  ],
+  "skills": {
+    "professional": [
+      "KPI Tracking",
+      "Six Sigma",
+      "Contract Negotiation",
+      "Capacity Planning",
+      "Vendor Management",
+      "Lean Management",
+      "Quality Assurance",
+      "Process Optimization"
+    ],
+    "soft": [
+      "Time Management",
+      "Cross-functional Collaboration",
+      "Negotiation",
+      "Mentoring",
+      "Coaching",
+      "Conflict Resolution"
+    ]
+  }
+}

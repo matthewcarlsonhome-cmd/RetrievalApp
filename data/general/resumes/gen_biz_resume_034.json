@@ -1,0 +1,98 @@
+{
+  "id": "gen_biz_resume_034",
+  "domain": "business",
+  "personal_info": {
+    "name": "Rachel Parker",
+    "email": "rachel.parker@email.com",
+    "phone": "(433) 341-8025",
+    "location": "Portland, OR",
+    "linkedin": "linkedin.com/in/rachelparker"
+  },
+  "summary": "Results-driven operations professional with 5+ years of experience. Expertise in Capacity Planning, Quality Assurance, KPI Tracking. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 5,
+  "primary_specialty": "operations",
+  "experience": [
+    {
+      "title": "Business Analyst",
+      "employer": "Adobe",
+      "start_date": "2024-05",
+      "end_date": "Present",
+      "focus_areas": [
+        "Vendor Management",
+        "KPI Tracking",
+        "Contract Negotiation",
+        "SLA Management"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 15 across 5 time zones",
+        "Reduced project delivery time by 54% through Agile transformation",
+        "Managed $1000M project budget with delivery 27% under budget"
+      ]
+    },
+    {
+      "title": "Senior Project Manager",
+      "employer": "EY-Parthenon",
+      "start_date": "2021-12",
+      "end_date": "2023-12",
+      "focus_areas": [
+        "KPI Tracking",
+        "Process Optimization",
+        "Quality Assurance",
+        "Six Sigma"
+      ],
+      "achievements": [
+        "Negotiated vendor contracts saving $100K annually",
+        "Managed $300M project budget with delivery 22% under budget",
+        "Built business case for $100M technology investment with 72% ROI"
+      ]
+    },
+    {
+      "title": "Product Manager",
+      "employer": "Deloitte Consulting",
+      "start_date": "2020-09",
+      "end_date": "2021-09",
+      "focus_areas": [
+        "Lean Management",
+        "Process Optimization",
+        "Contract Negotiation",
+        "Quality Assurance"
+      ],
+      "achievements": [
+        "Developed requirements for system serving 20+ users across 7 regions",
+        "Improved process efficiency by 24% through Lean Six Sigma implementation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "Northeastern University"
+    }
+  ],
+  "certifications": [
+    "Six Sigma Black Belt"
+  ],
+  "skills": {
+    "professional": [
+      "Quality Assurance",
+      "SLA Management",
+      "Six Sigma",
+      "Contract Negotiation",
+      "Lean Management",
+      "Process Optimization",
+      "KPI Tracking",
+      "Capacity Planning"
+    ],
+    "soft": [
+      "Adaptability",
+      "Conflict Resolution",
+      "Communication",
+      "Critical Thinking",
+      "Emotional Intelligence",
+      "Negotiation",
+      "Mentoring"
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "gen_biz_resume_032",
+  "domain": "business",
+  "personal_info": {
+    "name": "Mei Mitchell",
+    "email": "mei.mitchell@email.com",
+    "phone": "(218) 205-7470",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/meimitchell"
+  },
+  "summary": "Results-driven operations professional with 5+ years of experience. Expertise in Process Optimization, Six Sigma, SLA Management. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "senior",
+  "years_experience": 5,
+  "primary_specialty": "operations",
+  "experience": [
+    {
+      "title": "Senior Operations Manager",
+      "employer": "Bain & Company",
+      "start_date": "2024-07",
+      "end_date": "Present",
+      "focus_areas": [
+        "Process Optimization",
+        "SLA Management",
+        "Vendor Management",
+        "Quality Assurance"
+      ],
+      "achievements": [
+        "Managed $1000M project budget with delivery 48% under budget",
+        "Reduced project delivery time by 24% through Agile transformation"
+      ]
+    },
+    {
+      "title": "Partnership Manager",
+      "employer": "Boston Consulting Group",
+      "start_date": "2021-02",
+      "end_date": "2024-02",
+      "focus_areas": [
+        "KPI Tracking",
+        "Lean Management",
+        "Process Optimization",
+        "Contract Negotiation"
+      ],
+      "achievements": [
+        "Built business case for $300M technology investment with 41% ROI",
+        "Facilitated 100+ stakeholder workshops for enterprise requirements"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Economics",
+      "university": "Columbia University"
+    }
+  ],
+  "certifications": [
+    "CPSM (Certified Supply Management)"
+  ],
+  "skills": {
+    "professional": [
+      "Quality Assurance",
+      "KPI Tracking",
+      "Contract Negotiation",
+      "Six Sigma",
+      "SLA Management",
+      "Lean Management",
+      "Process Optimization",
+      "Capacity Planning"
+    ],
+    "soft": [
+      "Negotiation",
+      "Problem Solving",
+      "Decision Making",
+      "Change Management"
+    ]
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "gen_it_resume_023",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Deborah Shah",
+    "email": "deborah.shah@email.com",
+    "phone": "(583) 600-8586",
+    "location": "Remote",
+    "linkedin": "linkedin.com/in/deborahshah"
+  },
+  "summary": "9+ years of experience in data technologies. Expertise in ETL, Kafka, Data Modeling. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "senior",
+  "years_experience": 9,
+  "primary_tech_stack": "SQL",
+  "tech_specialization": "data",
+  "experience": [
+    {
+      "title": "Senior Full Stack Developer",
+      "employer": "Lyft",
+      "start_date": "2025-09",
+      "end_date": "Present",
+      "tech_stack": [
+        "Data Engineering",
+        "Power BI",
+        "Snowflake",
+        "Pandas",
+        "ETL"
+      ],
+      "achievements": [
+        "Mentored team of 50 engineers, improving code review quality by 37%",
+        "Architected event-driven system handling 5M+ daily transactions",
+        "Implemented CI/CD pipeline reducing deployment time from 1 week to 30 minutes"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "employer": "Shopify",
+      "start_date": "2022-04",
+      "end_date": "2025-04",
+      "tech_stack": [
+        "Data Engineering",
+        "Snowflake",
+        "Power BI",
+        "PyTorch",
+        "NumPy"
+      ],
+      "achievements": [
+        "Led migration of 100 microservices to Kubernetes, improving deployment frequency by 42%",
+        "Architected data pipeline processing 1M+ events per day with 99.9% reliability"
+      ]
+    },
+    {
+      "title": "Junior Solutions Architect",
+      "employer": "Instacart",
+      "start_date": "2021-04",
+      "end_date": "2022-04",
+      "tech_stack": [
+        "Python",
+        "Data Modeling",
+        "dbt",
+        "TensorFlow",
+        "Kafka"
+      ],
+      "achievements": [
+        "Architected data pipeline processing 100K+ events per day with 99.9% reliability",
+        "Led incident response for critical outage, reducing MTTR from 4 hours to 1 day",
+        "Reduced infrastructure costs by $1000K annually through cloud optimization",
+        "Architected event-driven system handling 10K+ daily transactions"
+      ]
+    },
+    {
+      "title": "ML Engineer",
+      "employer": "Deloitte",
+      "start_date": "2019-01",
+      "end_date": "2021-01",
+      "tech_stack": [
+        "SQL",
+        "PyTorch",
+        "Snowflake",
+        "Kafka",
+        "Data Modeling"
+      ],
+      "achievements": [
+        "Mentored team of 50 engineers, improving code review quality by 26%",
+        "Designed API serving 10M+ requests per second with sub-50ms latency"
+      ]
+    },
+    {
+      "title": "IT Project Manager",
+      "employer": "Charles Schwab",
+      "start_date": "2017-07",
+      "end_date": "2018-07",
+      "tech_stack": [
+        "Python",
+        "Data Modeling",
+        "Airflow",
+        "Looker",
+        "TensorFlow"
+      ],
+      "achievements": [
+        "Built machine learning model achieving 58% accuracy for fraud detection",
+        "Led migration of 50 microservices to Kubernetes, improving deployment frequency by 65%",
+        "Reduced infrastructure costs by $500K annually through cloud optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Mathematics",
+      "university": "Ohio State University"
+    }
+  ],
+  "certifications": [
+    "Databricks Certified Data Engineer",
+    "AWS Data Analytics Specialty",
+    "Microsoft Certified: Data Analyst Associate"
+  ],
+  "skills": {
+    "technical": [
+      "Data Engineering",
+      "Power BI",
+      "Snowflake",
+      "Looker",
+      "Databricks",
+      "NumPy",
+      "Pandas",
+      "ETL",
+      "PyTorch"
+    ],
+    "soft": [
+      "Coaching",
+      "Change Management",
+      "Conflict Resolution",
+      "Influence"
+    ]
+  }
+}

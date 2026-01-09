@@ -1,0 +1,47 @@
+{
+  "id": "gen_it_job_006",
+  "domain": "it",
+  "title": "Security Engineer",
+  "employer": "Morgan Stanley",
+  "department": "Security",
+  "location": "Phoenix, AZ",
+  "remote": false,
+  "employment_type": "Full-time",
+  "experience_level": "senior",
+  "requirements": {
+    "years_min": 5,
+    "years_max": 10,
+    "education": "BS in Cybersecurity or related field",
+    "skills_required": [
+      "Security Architecture",
+      "Penetration Testing",
+      "SIEM",
+      "IAM"
+    ],
+    "skills_preferred": [
+      "CISSP",
+      "AWS Security Specialty"
+    ]
+  },
+  "salary_range": {
+    "min": 130000,
+    "max": 200000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute security initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Mentor and develop team members"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Hybrid work environment"
+  ],
+  "posted_date": "2026-01-03"
+}

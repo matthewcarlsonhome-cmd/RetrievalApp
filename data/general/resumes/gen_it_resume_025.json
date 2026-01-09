@@ -1,0 +1,80 @@
+{
+  "id": "gen_it_resume_025",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Amanda Kobayashi",
+    "email": "amanda.kobayashi@email.com",
+    "phone": "(978) 936-8231",
+    "location": "Washington, DC",
+    "linkedin": "linkedin.com/in/amandakobayashi"
+  },
+  "summary": "3+ years of experience in data technologies. Expertise in TensorFlow, Databricks, NumPy. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "mid",
+  "years_experience": 3,
+  "primary_tech_stack": "SQL",
+  "tech_specialization": "data",
+  "experience": [
+    {
+      "title": "Systems Administrator",
+      "employer": "Thomson Reuters",
+      "start_date": "2024-11",
+      "end_date": "Present",
+      "tech_stack": [
+        "Python",
+        "ETL",
+        "Scikit-learn",
+        "Snowflake",
+        "NumPy"
+      ],
+      "achievements": [
+        "Built machine learning model achieving 26% accuracy for fraud detection",
+        "Led migration of 50 microservices to Kubernetes, improving deployment frequency by 51%"
+      ]
+    },
+    {
+      "title": "Junior Data Scientist",
+      "employer": "IBM",
+      "start_date": "2023-06",
+      "end_date": "2024-06",
+      "tech_stack": [
+        "SQL",
+        "Snowflake",
+        "Tableau",
+        "Airflow",
+        "Kafka"
+      ],
+      "achievements": [
+        "Designed API serving 50K+ requests per second with sub-200ms latency",
+        "Reduced system latency by 41% through optimization of database queries and caching strategies"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Software Engineering",
+      "university": "University of Texas at Austin"
+    }
+  ],
+  "certifications": [
+    "Google Professional Data Engineer"
+  ],
+  "skills": {
+    "technical": [
+      "Spark",
+      "Scikit-learn",
+      "Power BI",
+      "Airflow",
+      "Kafka",
+      "Tableau",
+      "dbt",
+      "Data Modeling",
+      "NumPy"
+    ],
+    "soft": [
+      "Negotiation",
+      "Adaptability",
+      "Cross-functional Collaboration"
+    ]
+  }
+}

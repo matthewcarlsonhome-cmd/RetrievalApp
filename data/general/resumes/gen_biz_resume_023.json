@@ -1,0 +1,116 @@
+{
+  "id": "gen_biz_resume_023",
+  "domain": "business",
+  "personal_info": {
+    "name": "Helen Mitchell",
+    "email": "helen.mitchell@email.com",
+    "phone": "(812) 288-3353",
+    "location": "Los Angeles, CA",
+    "linkedin": "linkedin.com/in/helenmitchell"
+  },
+  "summary": "Results-driven operations professional with 9+ years of experience. Expertise in Contract Negotiation, Quality Assurance, Capacity Planning. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "lead",
+  "years_experience": 9,
+  "primary_specialty": "operations",
+  "experience": [
+    {
+      "title": "Lead Business Process Manager",
+      "employer": "Merck",
+      "start_date": "2025-04",
+      "end_date": "Present",
+      "focus_areas": [
+        "Lean Management",
+        "KPI Tracking",
+        "Quality Assurance",
+        "Six Sigma"
+      ],
+      "achievements": [
+        "Managed $50M project budget with delivery 24% under budget",
+        "Reduced project delivery time by 37% through Agile transformation"
+      ]
+    },
+    {
+      "title": "Senior Project Manager",
+      "employer": "Humana",
+      "start_date": "2024-01",
+      "end_date": "2025-01",
+      "focus_areas": [
+        "KPI Tracking",
+        "SLA Management",
+        "Vendor Management",
+        "Contract Negotiation"
+      ],
+      "achievements": [
+        "Negotiated vendor contracts saving $150K annually",
+        "Reduced project delivery time by 29% through Agile transformation",
+        "Built business case for $150M technology investment with 33% ROI"
+      ]
+    },
+    {
+      "title": "Senior Product Manager",
+      "employer": "KPMG Advisory",
+      "start_date": "2020-01",
+      "end_date": "2024-01",
+      "focus_areas": [
+        "Vendor Management",
+        "Lean Management",
+        "Process Optimization",
+        "Six Sigma"
+      ],
+      "achievements": [
+        "Managed $50M project budget with delivery 26% under budget",
+        "Reduced project delivery time by 38% through Agile transformation",
+        "Launched product feature increasing user engagement by 40%",
+        "Managed cross-functional team of 20 across 5 time zones"
+      ]
+    },
+    {
+      "title": "Operations Director",
+      "employer": "Wells Fargo",
+      "start_date": "2016-12",
+      "end_date": "2019-12",
+      "focus_areas": [
+        "Lean Management",
+        "Quality Assurance",
+        "Process Optimization",
+        "KPI Tracking"
+      ],
+      "achievements": [
+        "Built business case for $500M technology investment with 40% ROI",
+        "Developed requirements for system serving 10+ users across 3 regions",
+        "Launched product feature increasing user engagement by 58%",
+        "Led digital transformation initiative resulting in $150M annual savings"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Economics",
+      "university": "UCLA"
+    }
+  ],
+  "certifications": [
+    "APICS CSCP",
+    "Six Sigma Black Belt"
+  ],
+  "skills": {
+    "professional": [
+      "Quality Assurance",
+      "Lean Management",
+      "KPI Tracking",
+      "SLA Management",
+      "Vendor Management",
+      "Contract Negotiation",
+      "Capacity Planning",
+      "Six Sigma"
+    ],
+    "soft": [
+      "Decision Making",
+      "Change Management",
+      "Communication",
+      "Coaching",
+      "Presentation Skills"
+    ]
+  }
+}

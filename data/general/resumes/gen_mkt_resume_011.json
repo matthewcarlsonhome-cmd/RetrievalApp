@@ -1,0 +1,99 @@
+{
+  "id": "gen_mkt_resume_011",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Margaret Perez",
+    "email": "margaret.perez@email.com",
+    "phone": "(685) 383-1859",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/margaretperez"
+  },
+  "summary": "Creative and data-driven content professional with 4+ years of experience. Expert in WordPress, Storytelling, Video Production. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "mid",
+  "years_experience": 4,
+  "primary_specialty": "content",
+  "experience": [
+    {
+      "title": "Director of Marketing",
+      "employer": "Nike",
+      "start_date": "2025-02",
+      "end_date": "Present",
+      "channels": [
+        "Brand Voice",
+        "Editorial Planning",
+        "Adobe Creative Suite",
+        "Podcasting"
+      ],
+      "achievements": [
+        "Generated $200M in pipeline through demand generation campaigns",
+        "Achieved 73% improvement in email open rates through A/B testing",
+        "Managed $100M annual marketing budget across 15 channels",
+        "Increased organic traffic by 51% through SEO optimization strategy"
+      ]
+    },
+    {
+      "title": "Director of Marketing",
+      "employer": "Ogilvy",
+      "start_date": "2023-11",
+      "end_date": "2024-11",
+      "channels": [
+        "Editorial Planning",
+        "Video Production",
+        "Webflow",
+        "Storytelling"
+      ],
+      "achievements": [
+        "Achieved 21% improvement in email open rates through A/B testing",
+        "Developed content strategy resulting in 100K monthly blog visitors",
+        "Launched product to 5K customers with 47% activation rate"
+      ]
+    },
+    {
+      "title": "Product Marketing Manager",
+      "employer": "Meta",
+      "start_date": "2021-10",
+      "end_date": "2023-10",
+      "channels": [
+        "Storytelling",
+        "SEO Content",
+        "Editorial Planning",
+        "WordPress"
+      ],
+      "achievements": [
+        "Increased organic traffic by 40% through SEO optimization strategy",
+        "Achieved 58% improvement in email open rates through A/B testing",
+        "Managed $750M annual marketing budget across 10 channels",
+        "Built marketing analytics dashboard tracking 15+ KPIs across channels"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "University of Washington"
+    }
+  ],
+  "certifications": [
+    "HubSpot Content Marketing"
+  ],
+  "skills": {
+    "marketing": [
+      "Editorial Planning",
+      "Adobe Creative Suite",
+      "Content Strategy",
+      "Storytelling",
+      "Podcasting",
+      "Brand Voice",
+      "WordPress",
+      "Copywriting"
+    ],
+    "soft": [
+      "Decision Making",
+      "Stakeholder Management",
+      "Cross-functional Collaboration",
+      "Influence",
+      "Coaching"
+    ]
+  }
+}

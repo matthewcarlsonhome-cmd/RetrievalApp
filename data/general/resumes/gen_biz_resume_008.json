@@ -1,0 +1,78 @@
+{
+  "id": "gen_biz_resume_008",
+  "domain": "business",
+  "personal_info": {
+    "name": "Dorothy Cook",
+    "email": "dorothy.cook@email.com",
+    "phone": "(287) 315-1893",
+    "location": "Denver, CO",
+    "linkedin": "linkedin.com/in/dorothycook"
+  },
+  "summary": "Results-driven product professional with 5+ years of experience. Expertise in Figma, User Research, OKRs. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 5,
+  "primary_specialty": "product",
+  "experience": [
+    {
+      "title": "Business Process Manager",
+      "employer": "Adobe",
+      "start_date": "2024-03",
+      "end_date": "Present",
+      "focus_areas": [
+        "Segment",
+        "Figma",
+        "Mixpanel",
+        "Go-to-Market"
+      ],
+      "achievements": [
+        "Improved process efficiency by 33% through Lean Six Sigma implementation",
+        "Facilitated 50+ stakeholder workshops for enterprise requirements"
+      ]
+    },
+    {
+      "title": "Process Improvement Specialist",
+      "employer": "Home Depot",
+      "start_date": "2021-03",
+      "end_date": "2024-03",
+      "focus_areas": [
+        "Competitive Analysis",
+        "Feature Prioritization",
+        "PRDs",
+        "Figma"
+      ],
+      "achievements": [
+        "Built business case for $300M technology investment with 30% ROI",
+        "Managed cross-functional team of 50 across 4 time zones"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Business Administration",
+      "university": "University of Maryland"
+    }
+  ],
+  "certifications": [
+    "Pragmatic Marketing Certified"
+  ],
+  "skills": {
+    "professional": [
+      "OKRs",
+      "User Research",
+      "KPIs",
+      "Figma",
+      "Feature Prioritization",
+      "Mixpanel",
+      "Competitive Analysis",
+      "Product Roadmapping"
+    ],
+    "soft": [
+      "Mentoring",
+      "Adaptability",
+      "Communication",
+      "Critical Thinking",
+      "Coaching"
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "gen_biz_resume_028",
+  "domain": "business",
+  "personal_info": {
+    "name": "Samuel Garcia",
+    "email": "samuel.garcia@email.com",
+    "phone": "(758) 633-8780",
+    "location": "Charlotte, NC",
+    "linkedin": "linkedin.com/in/samuelgarcia"
+  },
+  "summary": "Results-driven product professional with 1+ years of experience. Expertise in Competitive Analysis, OKRs, User Research. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "entry",
+  "years_experience": 1,
+  "primary_specialty": "product",
+  "experience": [
+    {
+      "title": "Business Process Manager",
+      "employer": "Boston Consulting Group",
+      "start_date": "2025-01",
+      "end_date": "Present",
+      "focus_areas": [
+        "A/B Testing",
+        "KPIs",
+        "Figma",
+        "OKRs"
+      ],
+      "achievements": [
+        "Facilitated 5+ stakeholder workshops for enterprise requirements",
+        "Negotiated vendor contracts saving $100K annually"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "Cornell University"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "professional": [
+      "Competitive Analysis",
+      "User Research",
+      "A/B Testing",
+      "Mixpanel",
+      "Segment",
+      "OKRs",
+      "Go-to-Market",
+      "PRDs"
+    ],
+    "soft": [
+      "Cross-functional Collaboration",
+      "Influence",
+      "Adaptability",
+      "Coaching",
+      "Change Management",
+      "Stakeholder Management"
+    ]
+  }
+}

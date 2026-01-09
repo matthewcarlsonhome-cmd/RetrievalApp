@@ -1,0 +1,134 @@
+{
+  "id": "gen_mkt_resume_007",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Anthony Robinson",
+    "email": "anthony.robinson@email.com",
+    "phone": "(485) 865-7045",
+    "location": "New York, NY",
+    "linkedin": "linkedin.com/in/anthonyrobinson"
+  },
+  "summary": "Creative and data-driven analytics professional with 16+ years of experience. Expert in Marketing Attribution, CLV Analysis, Tableau. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "director",
+  "years_experience": 16,
+  "primary_specialty": "analytics",
+  "experience": [
+    {
+      "title": "Director of Brand",
+      "employer": "Nike",
+      "start_date": "2025-08",
+      "end_date": "Present",
+      "channels": [
+        "Customer Segmentation",
+        "Marketing Attribution",
+        "Mixpanel",
+        "Tableau"
+      ],
+      "achievements": [
+        "Generated $750M in pipeline through demand generation campaigns",
+        "Led rebranding initiative increasing brand awareness by 52%",
+        "Launched product to 5K customers with 43% activation rate"
+      ]
+    },
+    {
+      "title": "Marketing Analytics Manager",
+      "employer": "PepsiCo",
+      "start_date": "2022-08",
+      "end_date": "2025-08",
+      "channels": [
+        "Amplitude",
+        "Data Analysis",
+        "Marketing Attribution",
+        "Cohort Analysis"
+      ],
+      "achievements": [
+        "Managed $200M annual marketing budget across 8 channels",
+        "Built marketing analytics dashboard tracking 8+ KPIs across channels",
+        "Reduced customer acquisition cost by 32% while scaling spend $100K",
+        "Launched product to 5K customers with 63% activation rate"
+      ]
+    },
+    {
+      "title": "Marketing Analytics Manager",
+      "employer": "Spotify",
+      "start_date": "2021-04",
+      "end_date": "2022-04",
+      "channels": [
+        "Cohort Analysis",
+        "CLV Analysis",
+        "Google Analytics 4",
+        "Data Analysis"
+      ],
+      "achievements": [
+        "Increased organic traffic by 39% through SEO optimization strategy",
+        "Generated $150M in pipeline through demand generation campaigns",
+        "Managed $200M annual marketing budget across 5 channels"
+      ]
+    },
+    {
+      "title": "Brand Director",
+      "employer": "Droga5",
+      "start_date": "2018-03",
+      "end_date": "2021-03",
+      "channels": [
+        "Customer Segmentation",
+        "Mixpanel",
+        "Data Analysis",
+        "Marketing Attribution"
+      ],
+      "achievements": [
+        "Reduced customer acquisition cost by 49% while scaling spend $100K",
+        "Generated $200M in pipeline through demand generation campaigns"
+      ]
+    },
+    {
+      "title": "Marketing Specialist",
+      "employer": "Droga5",
+      "start_date": "2013-09",
+      "end_date": "2017-09",
+      "channels": [
+        "Mixpanel",
+        "Google Analytics 4",
+        "Marketing Attribution",
+        "Tableau"
+      ],
+      "achievements": [
+        "Reduced customer acquisition cost by 15% while scaling spend $750K",
+        "Managed $100M annual marketing budget across 10 channels",
+        "Increased organic traffic by 36% through SEO optimization strategy",
+        "Created sales enablement materials improving win rate by 17%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BA",
+      "field": "Psychology",
+      "university": "University of Washington"
+    }
+  ],
+  "certifications": [
+    "Marketing Research Association (MRA)",
+    "Google Analytics 4 Certification",
+    "Tableau Desktop Specialist"
+  ],
+  "skills": {
+    "marketing": [
+      "Marketing Attribution",
+      "SQL",
+      "Amplitude",
+      "Customer Segmentation",
+      "Data Analysis",
+      "CLV Analysis",
+      "Looker",
+      "Tableau"
+    ],
+    "soft": [
+      "Mentoring",
+      "Emotional Intelligence",
+      "Conflict Resolution",
+      "Cross-functional Collaboration",
+      "Time Management"
+    ]
+  }
+}

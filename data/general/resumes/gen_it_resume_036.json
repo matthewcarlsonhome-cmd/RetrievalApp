@@ -1,0 +1,121 @@
+{
+  "id": "gen_it_resume_036",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Carol Parker",
+    "email": "carol.parker@email.com",
+    "phone": "(944) 333-8914",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/carolparker"
+  },
+  "summary": "9+ years of experience in devops technologies. Expertise in GitLab CI, Chef, Prometheus. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "senior",
+  "years_experience": 9,
+  "primary_tech_stack": "DevOps",
+  "tech_specialization": "devops",
+  "experience": [
+    {
+      "title": "Senior IT Project Manager",
+      "employer": "Amazon",
+      "start_date": "2024-06",
+      "end_date": "Present",
+      "tech_stack": [
+        "DevOps",
+        "ArgoCD",
+        "Service Mesh",
+        "GitHub Actions",
+        "Istio"
+      ],
+      "achievements": [
+        "Reduced system latency by 22% through optimization of database queries and caching strategies",
+        "Developed automation reducing manual operations by 57%",
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Architected data pipeline processing 5M+ events per day with 99.9% reliability"
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "employer": "Goldman Sachs",
+      "start_date": "2021-03",
+      "end_date": "2024-03",
+      "tech_stack": [
+        "Platform Engineering",
+        "ELK Stack",
+        "GitLab CI",
+        "Ansible",
+        "Service Mesh"
+      ],
+      "achievements": [
+        "Mentored team of 10 engineers, improving code review quality by 53%",
+        "Implemented CI/CD pipeline reducing deployment time from 2 weeks to 1 day"
+      ]
+    },
+    {
+      "title": "Junior Software Engineer",
+      "employer": "Google",
+      "start_date": "2018-09",
+      "end_date": "2020-09",
+      "tech_stack": [
+        "Platform Engineering",
+        "GitLab CI",
+        "Istio",
+        "ELK Stack",
+        "Prometheus"
+      ],
+      "achievements": [
+        "Led migration of 5 microservices to Kubernetes, improving deployment frequency by 19%",
+        "Implemented security controls achieving SOC 2 Type II certification"
+      ]
+    },
+    {
+      "title": "IT Project Manager",
+      "employer": "Uber",
+      "start_date": "2016-08",
+      "end_date": "2018-08",
+      "tech_stack": [
+        "SRE",
+        "Service Mesh",
+        "GitLab CI",
+        "Istio",
+        "Jenkins"
+      ],
+      "achievements": [
+        "Architected data pipeline processing 100K+ events per day with 99.9% reliability",
+        "Led incident response for critical outage, reducing MTTR from 2 weeks to 3 days"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MS",
+      "field": "Data Science",
+      "university": "Boston University"
+    }
+  ],
+  "certifications": [
+    "GitLab Certified Associate",
+    "HashiCorp Vault Associate",
+    "Certified Kubernetes Administrator"
+  ],
+  "skills": {
+    "technical": [
+      "DevOps",
+      "GitLab CI",
+      "GitHub Actions",
+      "Jenkins",
+      "Service Mesh",
+      "Istio",
+      "Chef",
+      "Ansible",
+      "ArgoCD"
+    ],
+    "soft": [
+      "Stakeholder Management",
+      "Critical Thinking",
+      "Adaptability",
+      "Presentation Skills",
+      "Team Leadership",
+      "Time Management"
+    ]
+  }
+}

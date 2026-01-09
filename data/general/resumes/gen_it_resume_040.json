@@ -1,0 +1,107 @@
+{
+  "id": "gen_it_resume_040",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Chen Rogers",
+    "email": "chen.rogers@email.com",
+    "phone": "(691) 673-8296",
+    "location": "San Diego, CA",
+    "linkedin": "linkedin.com/in/chenrogers"
+  },
+  "summary": "9+ years of experience in devops technologies. Expertise in Istio, Ansible, Prometheus. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "lead",
+  "years_experience": 9,
+  "primary_tech_stack": "Platform Engineering",
+  "tech_specialization": "devops",
+  "experience": [
+    {
+      "title": "Lead Systems Administrator",
+      "employer": "Netflix",
+      "start_date": "2022-01",
+      "end_date": "Present",
+      "tech_stack": [
+        "DevOps",
+        "GitHub Actions",
+        "Grafana",
+        "Service Mesh",
+        "Jenkins"
+      ],
+      "achievements": [
+        "Led migration of 5 microservices to Kubernetes, improving deployment frequency by 68%",
+        "Implemented CI/CD pipeline reducing deployment time from 4 hours to 2 hours",
+        "Led incident response for critical outage, reducing MTTR from 2 weeks to 3 days",
+        "Reduced infrastructure costs by $500K annually through cloud optimization"
+      ]
+    },
+    {
+      "title": "Senior Engineering Manager",
+      "employer": "Apple",
+      "start_date": "2019-11",
+      "end_date": "2021-11",
+      "tech_stack": [
+        "Platform Engineering",
+        "ELK Stack",
+        "Jenkins",
+        "GitLab CI",
+        "Puppet"
+      ],
+      "achievements": [
+        "Led migration of 100 microservices to Kubernetes, improving deployment frequency by 33%",
+        "Built machine learning model achieving 49% accuracy for fraud detection",
+        "Led incident response for critical outage, reducing MTTR from 4 hours to 30 minutes",
+        "Architected event-driven system handling 100K+ daily transactions"
+      ]
+    },
+    {
+      "title": "Engineering Manager",
+      "employer": "Goldman Sachs",
+      "start_date": "2016-09",
+      "end_date": "2019-09",
+      "tech_stack": [
+        "DevOps",
+        "GitHub Actions",
+        "Istio",
+        "ArgoCD",
+        "ELK Stack"
+      ],
+      "achievements": [
+        "Implemented CI/CD pipeline reducing deployment time from 4 hours to 1 day",
+        "Led migration of 5 microservices to Kubernetes, improving deployment frequency by 31%",
+        "Architected data pipeline processing 1M+ events per day with 99.9% reliability"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MS",
+      "field": "Computer Science",
+      "university": "Purdue University"
+    }
+  ],
+  "certifications": [
+    "HashiCorp Vault Associate",
+    "GitLab Certified Associate",
+    "Certified Kubernetes Administrator"
+  ],
+  "skills": {
+    "technical": [
+      "Platform Engineering",
+      "Puppet",
+      "Istio",
+      "Chef",
+      "GitHub Actions",
+      "Jenkins",
+      "Service Mesh",
+      "GitLab CI",
+      "Helm"
+    ],
+    "soft": [
+      "Negotiation",
+      "Adaptability",
+      "Communication",
+      "Time Management",
+      "Coaching",
+      "Stakeholder Management"
+    ]
+  }
+}

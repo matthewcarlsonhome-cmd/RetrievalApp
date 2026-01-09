@@ -1,0 +1,47 @@
+{
+  "id": "gen_it_job_009",
+  "domain": "it",
+  "title": "Solutions Architect",
+  "employer": "IBM",
+  "department": "Engineering",
+  "location": "Atlanta, GA",
+  "remote": true,
+  "employment_type": "Full-time",
+  "experience_level": "senior",
+  "requirements": {
+    "years_min": 7,
+    "years_max": 12,
+    "education": "BS in Computer Science or related field",
+    "skills_required": [
+      "Cloud Architecture",
+      "System Design",
+      "Customer Facing",
+      "AWS/Azure/GCP"
+    ],
+    "skills_preferred": [
+      "Pre-sales Experience",
+      "Technical Writing"
+    ]
+  },
+  "salary_range": {
+    "min": 130000,
+    "max": 200000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute engineering initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Mentor and develop team members"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Remote work options"
+  ],
+  "posted_date": "2025-12-18"
+}

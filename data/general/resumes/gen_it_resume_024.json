@@ -1,0 +1,65 @@
+{
+  "id": "gen_it_resume_024",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Susan Nguyen",
+    "email": "susan.nguyen@email.com",
+    "phone": "(886) 701-9646",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/susannguyen"
+  },
+  "summary": "1+ years of experience in security technologies. Expertise in Firewall, Risk Assessment, IDS/IPS. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "junior",
+  "years_experience": 1,
+  "primary_tech_stack": "AppSec",
+  "tech_specialization": "security",
+  "experience": [
+    {
+      "title": "Junior Solutions Architect",
+      "employer": "Cisco",
+      "start_date": "2025-02",
+      "end_date": "Present",
+      "tech_stack": [
+        "Cloud Security",
+        "Incident Response",
+        "Firewall",
+        "OWASP",
+        "SOC Operations"
+      ],
+      "achievements": [
+        "Mentored team of 100 engineers, improving code review quality by 43%",
+        "Designed API serving 5M+ requests per second with sub-50ms latency",
+        "Architected event-driven system handling 100K+ daily transactions",
+        "Led migration of 50 microservices to Kubernetes, improving deployment frequency by 26%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Data Science",
+      "university": "Stanford University"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "technical": [
+      "AppSec",
+      "SOC Operations",
+      "IAM",
+      "Incident Response",
+      "Penetration Testing",
+      "Security Compliance",
+      "SIEM",
+      "IDS/IPS",
+      "OWASP"
+    ],
+    "soft": [
+      "Time Management",
+      "Mentoring",
+      "Emotional Intelligence",
+      "Cross-functional Collaboration",
+      "Communication"
+    ]
+  }
+}

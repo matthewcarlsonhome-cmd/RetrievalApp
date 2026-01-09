@@ -1,0 +1,80 @@
+{
+  "id": "gen_biz_resume_027",
+  "domain": "business",
+  "personal_info": {
+    "name": "Amy Cook",
+    "email": "amy.cook@email.com",
+    "phone": "(632) 862-1606",
+    "location": "Los Angeles, CA",
+    "linkedin": "linkedin.com/in/amycook"
+  },
+  "summary": "Results-driven project professional with 6+ years of experience. Expertise in Budget Management, Gantt Charts, RAID Log. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "senior",
+  "years_experience": 6,
+  "primary_specialty": "project",
+  "experience": [
+    {
+      "title": "Senior Business Development Manager",
+      "employer": "Google",
+      "start_date": "2023-03",
+      "end_date": "Present",
+      "focus_areas": [
+        "Smartsheet",
+        "Resource Allocation",
+        "Stakeholder Communication",
+        "MS Project"
+      ],
+      "achievements": [
+        "Built business case for $300M technology investment with 33% ROI",
+        "Improved process efficiency by 60% through Lean Six Sigma implementation"
+      ]
+    },
+    {
+      "title": "Project Manager",
+      "employer": "Google",
+      "start_date": "2019-11",
+      "end_date": "2022-11",
+      "focus_areas": [
+        "Risk Management",
+        "Gantt Charts",
+        "Change Management",
+        "Resource Allocation"
+      ],
+      "achievements": [
+        "Built business case for $1000M technology investment with 40% ROI",
+        "Negotiated vendor contracts saving $1000K annually",
+        "Improved process efficiency by 38% through Lean Six Sigma implementation",
+        "Reduced project delivery time by 35% through Agile transformation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Economics",
+      "university": "University of Florida"
+    }
+  ],
+  "certifications": [
+    "PRINCE2 Practitioner"
+  ],
+  "skills": {
+    "professional": [
+      "RAID Log",
+      "Resource Allocation",
+      "Smartsheet",
+      "Risk Management",
+      "Project Planning",
+      "Stakeholder Communication",
+      "Gantt Charts",
+      "MS Project"
+    ],
+    "soft": [
+      "Presentation Skills",
+      "Emotional Intelligence",
+      "Influence",
+      "Negotiation",
+      "Mentoring"
+    ]
+  }
+}

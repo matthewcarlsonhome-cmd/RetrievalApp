@@ -1,0 +1,97 @@
+{
+  "id": "gen_mkt_resume_001",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Carlos Evans",
+    "email": "carlos.evans@email.com",
+    "phone": "(922) 793-8278",
+    "location": "Seattle, WA",
+    "linkedin": "linkedin.com/in/carlosevans"
+  },
+  "summary": "Creative and data-driven product marketing professional with 4+ years of experience. Expert in Demo Development, Customer Research, Launch Planning. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "mid",
+  "years_experience": 4,
+  "primary_specialty": "product_marketing",
+  "experience": [
+    {
+      "title": "Marketing Specialist",
+      "employer": "PepsiCo",
+      "start_date": "2025-01",
+      "end_date": "Present",
+      "channels": [
+        "Competitive Analysis",
+        "Customer Research",
+        "Battle Cards",
+        "Messaging"
+      ],
+      "achievements": [
+        "Created sales enablement materials improving win rate by 70%",
+        "Developed content strategy resulting in 50K monthly blog visitors",
+        "Led rebranding initiative increasing brand awareness by 23%"
+      ]
+    },
+    {
+      "title": "VP of Marketing",
+      "employer": "Buffer",
+      "start_date": "2022-10",
+      "end_date": "2024-10",
+      "channels": [
+        "Competitive Analysis",
+        "Pricing Strategy",
+        "Product Positioning",
+        "Battle Cards"
+      ],
+      "achievements": [
+        "Created sales enablement materials improving win rate by 48%",
+        "Reduced customer acquisition cost by 46% while scaling spend $150K",
+        "Increased organic traffic by 71% through SEO optimization strategy"
+      ]
+    },
+    {
+      "title": "VP of Marketing",
+      "employer": "Buffer",
+      "start_date": "2021-07",
+      "end_date": "2022-07",
+      "channels": [
+        "Competitive Analysis",
+        "Product Positioning",
+        "Launch Planning",
+        "Pricing Strategy"
+      ],
+      "achievements": [
+        "Reduced customer acquisition cost by 39% while scaling spend $150K",
+        "Managed $500M annual marketing budget across 100 channels",
+        "Built marketing analytics dashboard tracking 50+ KPIs across channels",
+        "Led rebranding initiative increasing brand awareness by 70%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "University of Illinois"
+    }
+  ],
+  "certifications": [
+    "Product Marketing Alliance Certification"
+  ],
+  "skills": {
+    "marketing": [
+      "Product Positioning",
+      "Launch Planning",
+      "Pricing Strategy",
+      "Battle Cards",
+      "Messaging",
+      "Demo Development",
+      "Customer Research",
+      "Sales Enablement"
+    ],
+    "soft": [
+      "Negotiation",
+      "Mentoring",
+      "Conflict Resolution",
+      "Decision Making"
+    ]
+  }
+}

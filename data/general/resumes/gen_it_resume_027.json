@@ -1,0 +1,122 @@
+{
+  "id": "gen_it_resume_027",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Dorothy Watanabe",
+    "email": "dorothy.watanabe@email.com",
+    "phone": "(280) 723-4329",
+    "location": "Remote",
+    "linkedin": "linkedin.com/in/dorothywatanabe"
+  },
+  "summary": "10+ years of experience in data technologies. Expertise in Scikit-learn, dbt, Snowflake. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "lead",
+  "years_experience": 10,
+  "primary_tech_stack": "Data Engineering",
+  "tech_specialization": "data",
+  "experience": [
+    {
+      "title": "Lead Data Scientist",
+      "employer": "Meta",
+      "start_date": "2023-09",
+      "end_date": "Present",
+      "tech_stack": [
+        "Python",
+        "NumPy",
+        "ETL",
+        "Power BI",
+        "Airflow"
+      ],
+      "achievements": [
+        "Led migration of 100 microservices to Kubernetes, improving deployment frequency by 43%",
+        "Architected data pipeline processing 10K+ events per day with 99.9% reliability"
+      ]
+    },
+    {
+      "title": "Senior Software Developer",
+      "employer": "Robinhood",
+      "start_date": "2021-05",
+      "end_date": "2023-05",
+      "tech_stack": [
+        "Spark",
+        "Data Modeling",
+        "Looker",
+        "Power BI",
+        "TensorFlow"
+      ],
+      "achievements": [
+        "Led incident response for critical outage, reducing MTTR from 2 days to 3 days",
+        "Led migration of 20 microservices to Kubernetes, improving deployment frequency by 15%",
+        "Architected event-driven system handling 500K+ daily transactions"
+      ]
+    },
+    {
+      "title": "Security Engineer",
+      "employer": "Shopify",
+      "start_date": "2017-01",
+      "end_date": "2021-01",
+      "tech_stack": [
+        "SQL",
+        "Databricks",
+        "Power BI",
+        "Tableau",
+        "Scikit-learn"
+      ],
+      "achievements": [
+        "Led incident response for critical outage, reducing MTTR from 1 week to 2 hours",
+        "Architected data pipeline processing 1M+ events per day with 99.9% reliability",
+        "Led migration of 5 microservices to Kubernetes, improving deployment frequency by 23%",
+        "Implemented security controls achieving SOC 2 Type II certification"
+      ]
+    },
+    {
+      "title": "Junior Site Reliability Engineer",
+      "employer": "Morgan Stanley",
+      "start_date": "2015-07",
+      "end_date": "2016-07",
+      "tech_stack": [
+        "SQL",
+        "Data Modeling",
+        "Databricks",
+        "PyTorch",
+        "ETL"
+      ],
+      "achievements": [
+        "Implemented CI/CD pipeline reducing deployment time from 4 hours to 30 minutes",
+        "Mentored team of 20 engineers, improving code review quality by 74%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Mathematics",
+      "university": "University of Michigan"
+    }
+  ],
+  "certifications": [
+    "Snowflake SnowPro Core",
+    "Google Professional Data Engineer",
+    "Microsoft Certified: Data Analyst Associate"
+  ],
+  "skills": {
+    "technical": [
+      "SQL",
+      "Pandas",
+      "Looker",
+      "Power BI",
+      "Databricks",
+      "dbt",
+      "PyTorch",
+      "ETL",
+      "Data Modeling"
+    ],
+    "soft": [
+      "Critical Thinking",
+      "Strategic Thinking",
+      "Communication",
+      "Influence",
+      "Cross-functional Collaboration",
+      "Emotional Intelligence"
+    ]
+  }
+}

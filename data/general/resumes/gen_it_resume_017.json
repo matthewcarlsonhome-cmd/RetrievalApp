@@ -1,0 +1,61 @@
+{
+  "id": "gen_it_resume_017",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Melissa Mehta",
+    "email": "melissa.mehta@email.com",
+    "phone": "(938) 252-8871",
+    "location": "Chicago, IL",
+    "linkedin": "linkedin.com/in/melissamehta"
+  },
+  "summary": "0+ years of experience in security technologies. Expertise in Security Compliance, Risk Assessment, IDS/IPS. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "entry",
+  "years_experience": 0,
+  "primary_tech_stack": "Security Engineering",
+  "tech_specialization": "security",
+  "experience": [
+    {
+      "title": "ML Engineer",
+      "employer": "Workday",
+      "start_date": "2026-03",
+      "end_date": "Present",
+      "tech_stack": [
+        "AppSec",
+        "Security Compliance",
+        "IDS/IPS",
+        "IAM",
+        "SIEM"
+      ],
+      "achievements": [
+        "Reduced system latency by 60% through optimization of database queries and caching strategies",
+        "Architected data pipeline processing 50K+ events per day with 99.9% reliability"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MS",
+      "field": "Computer Science",
+      "university": "Purdue University"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "technical": [
+      "Cloud Security",
+      "OWASP",
+      "SIEM",
+      "Firewall",
+      "Security Compliance",
+      "IAM",
+      "Risk Assessment",
+      "SOC Operations",
+      "Vulnerability Assessment"
+    ],
+    "soft": [
+      "Influence",
+      "Negotiation",
+      "Conflict Resolution"
+    ]
+  }
+}

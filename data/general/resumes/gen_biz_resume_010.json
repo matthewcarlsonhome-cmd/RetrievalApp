@@ -1,0 +1,79 @@
+{
+  "id": "gen_biz_resume_010",
+  "domain": "business",
+  "personal_info": {
+    "name": "Justin Cooper",
+    "email": "justin.cooper@email.com",
+    "phone": "(589) 937-6126",
+    "location": "Phoenix, AZ",
+    "linkedin": "linkedin.com/in/justincooper"
+  },
+  "summary": "Results-driven product professional with 4+ years of experience. Expertise in Figma, Mixpanel, Segment. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 4,
+  "primary_specialty": "product",
+  "experience": [
+    {
+      "title": "Strategy Manager",
+      "employer": "Pfizer",
+      "start_date": "2024-03",
+      "end_date": "Present",
+      "focus_areas": [
+        "User Research",
+        "PRDs",
+        "Segment",
+        "Figma"
+      ],
+      "achievements": [
+        "Negotiated vendor contracts saving $500K annually",
+        "Developed requirements for system serving 50+ users across 5 regions"
+      ]
+    },
+    {
+      "title": "Product Manager",
+      "employer": "Accenture Strategy",
+      "start_date": "2022-01",
+      "end_date": "2024-01",
+      "focus_areas": [
+        "User Research",
+        "Product Roadmapping",
+        "Figma",
+        "Amplitude"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 3 across 7 time zones",
+        "Improved process efficiency by 60% through Lean Six Sigma implementation",
+        "Built business case for $750M technology investment with 27% ROI"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Marketing",
+      "university": "University of Maryland"
+    }
+  ],
+  "certifications": [
+    "Certified Scrum Product Owner (CSPO)"
+  ],
+  "skills": {
+    "professional": [
+      "Competitive Analysis",
+      "A/B Testing",
+      "User Research",
+      "Feature Prioritization",
+      "Figma",
+      "KPIs",
+      "PRDs",
+      "Segment"
+    ],
+    "soft": [
+      "Decision Making",
+      "Critical Thinking",
+      "Cross-functional Collaboration",
+      "Presentation Skills",
+      "Adaptability"
+    ]
+  }
+}

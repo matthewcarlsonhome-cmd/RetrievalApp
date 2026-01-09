@@ -1,0 +1,62 @@
+{
+  "id": "gen_mkt_resume_023",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Carlos Rao",
+    "email": "carlos.rao@email.com",
+    "phone": "(734) 740-4940",
+    "location": "Raleigh, NC",
+    "linkedin": "linkedin.com/in/carlosrao"
+  },
+  "summary": "Creative and data-driven digital professional with 1+ years of experience. Expert in Marketing Automation, HubSpot, Salesforce Marketing Cloud. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "entry",
+  "years_experience": 1,
+  "primary_specialty": "digital",
+  "experience": [
+    {
+      "title": "Marketing Operations Manager",
+      "employer": "Hootsuite",
+      "start_date": "2025-05",
+      "end_date": "Present",
+      "channels": [
+        "Salesforce Marketing Cloud",
+        "LinkedIn Ads",
+        "Email Marketing",
+        "SEM"
+      ],
+      "achievements": [
+        "Built marketing analytics dashboard tracking 100+ KPIs across channels",
+        "Managed $50M annual marketing budget across 3 channels",
+        "Increased organic traffic by 29% through SEO optimization strategy",
+        "Launched product to 3K customers with 31% activation rate"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "Boston University"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "marketing": [
+      "Salesforce Marketing Cloud",
+      "Email Marketing",
+      "Facebook Ads",
+      "PPC",
+      "Google Analytics",
+      "Marketing Automation",
+      "SEO",
+      "SEM"
+    ],
+    "soft": [
+      "Communication",
+      "Decision Making",
+      "Emotional Intelligence",
+      "Time Management",
+      "Cross-functional Collaboration"
+    ]
+  }
+}

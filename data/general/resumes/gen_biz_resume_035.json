@@ -1,0 +1,81 @@
+{
+  "id": "gen_biz_resume_035",
+  "domain": "business",
+  "personal_info": {
+    "name": "Jeffrey Jackson",
+    "email": "jeffrey.jackson@email.com",
+    "phone": "(307) 535-9461",
+    "location": "Raleigh, NC",
+    "linkedin": "linkedin.com/in/jeffreyjackson"
+  },
+  "summary": "Results-driven analysis professional with 5+ years of experience. Expertise in User Stories, SQL, Gap Analysis. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 5,
+  "primary_specialty": "analysis",
+  "experience": [
+    {
+      "title": "Business Development Manager",
+      "employer": "Merck",
+      "start_date": "2025-12",
+      "end_date": "Present",
+      "focus_areas": [
+        "Process Mapping",
+        "Excel",
+        "Gap Analysis",
+        "Confluence"
+      ],
+      "achievements": [
+        "Managed $150M project budget with delivery 40% under budget",
+        "Facilitated 15+ stakeholder workshops for enterprise requirements",
+        "Led digital transformation initiative resulting in $200M annual savings"
+      ]
+    },
+    {
+      "title": "Project Manager",
+      "employer": "Johnson & Johnson",
+      "start_date": "2021-06",
+      "end_date": "2025-06",
+      "focus_areas": [
+        "Stakeholder Management",
+        "Process Mapping",
+        "Requirements Gathering",
+        "Agile"
+      ],
+      "achievements": [
+        "Facilitated 5+ stakeholder workshops for enterprise requirements",
+        "Managed $300M project budget with delivery 16% under budget",
+        "Launched product feature increasing user engagement by 68%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "University of Colorado"
+    }
+  ],
+  "certifications": [
+    "IIBA Entry Certificate in Business Analysis"
+  ],
+  "skills": {
+    "professional": [
+      "Requirements Gathering",
+      "UAT",
+      "Gap Analysis",
+      "User Stories",
+      "Scrum",
+      "Agile",
+      "JIRA",
+      "BPMN"
+    ],
+    "soft": [
+      "Presentation Skills",
+      "Communication",
+      "Critical Thinking",
+      "Negotiation",
+      "Adaptability",
+      "Problem Solving"
+    ]
+  }
+}

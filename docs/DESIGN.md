@@ -1624,6 +1624,203 @@ Component Weights:
 
 **Rationale**: These dimensions represent the real variation in healthcare IT job market.
 
+### Generalized Test Data (IT, Business, Marketing)
+
+In addition to healthcare-specific test data, the system includes a generalized test data generator (`scripts/generate_general_test_data.py`) that creates diverse resumes and jobs across multiple domains.
+
+#### Generated Data Overview
+
+```
+data/general/
+├── resumes/           (100 individual JSON files)
+├── job_descriptions/  (30 individual JSON files)
+├── all_resumes.json   (combined for bulk loading)
+└── all_jobs.json      (combined for bulk loading)
+```
+
+#### Resume Distribution (100 Total)
+
+| Domain | Count | Specializations |
+|--------|-------|-----------------|
+| **Technology (IT)** | 40 | Cloud, Full-Stack, Data Engineering, Security, DevOps |
+| **Business** | 35 | Business Analysis, Product, Project/Program Management, Operations |
+| **Marketing** | 25 | Digital Marketing, Content, Analytics, Product Marketing |
+
+**Experience Level Distribution**:
+
+```
+EXPERIENCE LEVELS (Weighted Distribution)
+═════════════════════════════════════════
+
+Level       │ Years │ Weight │ Generated
+────────────┼───────┼────────┼──────────
+Entry       │ 0-2   │  15%   │    ~15
+Junior      │ 1-3   │  20%   │    ~20
+Mid         │ 3-6   │  25%   │    ~25
+Senior      │ 5-10  │  20%   │    ~20
+Lead        │ 7-12  │  10%   │    ~10
+Director    │ 10-18 │   7%   │    ~7
+VP          │ 12-25 │   3%   │    ~3
+```
+
+#### Job Description Distribution (30 Total)
+
+| Domain | Count | Role Examples |
+|--------|-------|---------------|
+| **IT** | 10 | Software Engineer, Data Engineer, DevOps, Security, Engineering Manager, VP of Engineering |
+| **Marketing** | 8 | Digital Marketing Manager, Content Specialist, Product Marketing, VP of Marketing |
+| **Business** | 12 | Business Analyst, Product Manager, Project/Program Manager, Operations Director, VP of Business Development |
+
+**Seniority Coverage**:
+- Entry/Junior: 2 jobs (targeted at early career)
+- Mid-Level: 11 jobs (bulk of hiring)
+- Senior: 8 jobs (experienced individual contributors)
+- Lead: 2 jobs (technical leadership)
+- Director: 4 jobs (department heads)
+- VP: 3 jobs (executive roles)
+
+#### Technical Skills Coverage
+
+**IT Domain**:
+```
+Cloud Stack:        AWS, Azure, GCP, Kubernetes, Docker, Terraform
+Full-Stack:         React, Angular, Node.js, Python, Java, PostgreSQL
+Data Engineering:   Spark, Airflow, Snowflake, Databricks, dbt, Kafka
+Security:           SIEM, Penetration Testing, IAM, SOC Operations
+DevOps:             Jenkins, GitLab CI, ArgoCD, Prometheus, Grafana
+```
+
+**Business Domain**:
+```
+Analysis:           Requirements Gathering, Process Mapping, BPMN, UAT
+Product:            Roadmapping, A/B Testing, User Research, OKRs
+Project:            MS Project, Risk Management, Budget Management
+Operations:         Six Sigma, Lean, Vendor Management, SLA
+```
+
+**Marketing Domain**:
+```
+Digital:            Google Ads, Facebook Ads, SEO, Marketing Automation
+Content:            Content Strategy, SEO Content, WordPress, Adobe
+Analytics:          Google Analytics 4, Tableau, Attribution Modeling
+Product Marketing:  Positioning, Competitive Analysis, Sales Enablement
+```
+
+#### Certification Coverage
+
+| Domain | Example Certifications |
+|--------|------------------------|
+| IT | AWS Solutions Architect, CKA, CISSP, PMP, Terraform Associate |
+| Business | PMP, CBAP, Six Sigma Black Belt, CSPO, PMI-ACP |
+| Marketing | Google Ads, Google Analytics, HubSpot, Facebook Blueprint |
+
+#### Running the Generator
+
+```bash
+# Generate all test data
+python scripts/generate_general_test_data.py
+
+# Output:
+# data/general/resumes/gen_it_resume_001.json ... gen_it_resume_040.json
+# data/general/resumes/gen_biz_resume_001.json ... gen_biz_resume_035.json
+# data/general/resumes/gen_mkt_resume_001.json ... gen_mkt_resume_025.json
+# data/general/job_descriptions/gen_it_job_001.json ... gen_it_job_010.json
+# data/general/job_descriptions/gen_marketing_job_011.json ... gen_marketing_job_018.json
+# data/general/job_descriptions/gen_business_job_019.json ... gen_business_job_030.json
+```
+
+#### Sample Generated Resume Structure
+
+```json
+{
+  "id": "gen_it_resume_001",
+  "domain": "technology",
+  "personal_info": {
+    "name": "James Smith",
+    "email": "james.smith@email.com",
+    "location": "San Francisco, CA"
+  },
+  "summary": "8+ years of experience in cloud technologies...",
+  "experience_level": "senior",
+  "years_experience": 8,
+  "primary_tech_stack": "AWS",
+  "tech_specialization": "cloud",
+  "experience": [
+    {
+      "title": "Senior Cloud Engineer",
+      "employer": "Google",
+      "start_date": "2021-03",
+      "end_date": "Present",
+      "tech_stack": ["AWS", "Kubernetes", "Terraform", "Lambda"],
+      "achievements": [
+        "Reduced infrastructure costs by $200K annually...",
+        "Led migration of 15 microservices to Kubernetes..."
+      ]
+    }
+  ],
+  "education": [...],
+  "certifications": ["AWS Solutions Architect - Professional", ...],
+  "skills": {
+    "technical": ["AWS", "EC2", "S3", "Lambda", ...],
+    "soft": ["Team Leadership", "Problem Solving", ...]
+  }
+}
+```
+
+#### Sample Generated Job Structure
+
+```json
+{
+  "id": "gen_it_job_001",
+  "domain": "it",
+  "title": "Senior Software Engineer",
+  "employer": "Netflix",
+  "department": "Engineering",
+  "location": "Remote",
+  "remote": true,
+  "experience_level": "senior",
+  "requirements": {
+    "years_min": 5,
+    "years_max": 10,
+    "education": "BS in Computer Science or related field",
+    "skills_required": ["Python", "Java", "Microservices", "REST APIs"],
+    "skills_preferred": ["Kubernetes", "AWS", "GraphQL"]
+  },
+  "salary_range": {"min": 130000, "max": 200000, "currency": "USD"},
+  "responsibilities": [...],
+  "benefits": [...]
+}
+```
+
+#### Using Generalized Data with the Matching System
+
+```python
+from scripts.match_resumes import TFIDFResumeMatcher
+from scripts.matching_enhancements import create_domain_config
+import json
+
+# Load generalized data
+with open('data/general/all_resumes.json') as f:
+    resumes = json.load(f)
+with open('data/general/all_jobs.json') as f:
+    jobs = json.load(f)
+
+# Use technology domain configuration
+config = create_domain_config("technology")
+print(f"Using weights: {config.to_dict()['weights']}")
+
+# Match IT resumes to IT jobs
+it_resumes = [r for r in resumes if r['domain'] == 'technology']
+it_job = next(j for j in jobs if 'Software Engineer' in j['title'])
+
+matcher = TFIDFResumeMatcher()
+matcher.index_resumes(it_resumes)
+results = matcher.match_job(it_job, top_k=10)
+
+for match in results.matches:
+    print(f"{match.candidate_name}: {match.score:.2%}")
+```
+
 ### Why Simple Matching Over ML-Heavy Approaches
 
 **Decision**: Start with interpretable, dependency-light matching.
@@ -1688,17 +1885,501 @@ print(f"Top weighted terms: {top_terms}")
 
 This addresses the feedback about needing visibility into transformations before results hit the matching pipeline.
 
+### Advanced Enhancement Module
+
+The system includes an advanced matching enhancements module (`scripts/matching_enhancements.py`) that provides production-ready features beyond basic keyword and semantic matching.
+
+#### Location-Based Matching
+
+**What It Does**: Scores candidates based on proximity to job location using the Haversine formula for great-circle distance.
+
+```
+LOCATION SCORING
+═══════════════
+
+    Boston Job    ←──── Distance ────→    Candidate
+        ↓                                      ↓
+    Coordinates                           Coordinates
+   (42.36, -71.06)                      (40.71, -74.01)
+        └───────────── 190 miles ─────────────┘
+
+Score Calculation:
+┌────────────────────┬────────────────────────────────┐
+│ Distance           │ Score                          │
+├────────────────────┼────────────────────────────────┤
+│ < 25 miles         │ 1.0 (Local candidate)          │
+│ 25-100 miles       │ 0.75-1.0 (Commutable)          │
+│ 100-500 miles      │ 0.2-0.5 (Relocation needed)    │
+│ Remote job         │ 1.0 (Always full score)        │
+└────────────────────┴────────────────────────────────┘
+```
+
+**Code Usage**:
+```python
+from scripts.matching_enhancements import compute_location_score
+
+score, highlight = compute_location_score(
+    resume_location="New York, NY",
+    job_location="Boston, MA",
+    max_distance=100.0,
+    is_remote=False
+)
+# Returns: (0.38, "Relocation needed (190 miles)")
+```
+
+**Supported Cities**: 40+ major US metropolitan areas with coordinates pre-loaded. Unknown locations receive neutral scoring (0.5).
+
+---
+
+#### Recency-Weighted Experience Scoring
+
+**What It Does**: Gives higher weight to recent experience, recognizing that skills decay over time and recent work is more relevant.
+
+```
+RECENCY WEIGHTING
+═════════════════
+
+Experience Timeline:
+├── 2023-Present: Current Role ──────► Weight: 1.0 (full value)
+├── 2020-2022: Previous Role ────────► Weight: 0.75 (recent)
+├── 2015-2019: Older Role ───────────► Weight: 0.3 (decayed)
+└── 2010-2014: Old Role ─────────────► Weight: 0.1 (minimal)
+
+The decay function:
+- Experience < 1 year old: Full value (1.0)
+- 1-5 years old: Linear decay to 0.5
+- > 5 years old: Exponential decay (0.5 × e^(-years/5))
+```
+
+**Why This Matters**: A candidate with 5 years of recent Epic experience is typically more valuable than one with 10 years of Epic experience from a decade ago. The recency weighting automatically prioritizes candidates with current, relevant experience.
+
+**Code Usage**:
+```python
+from scripts.matching_enhancements import compute_recency_score
+
+experience = [
+    {"start_date": "2023-01", "end_date": "Present", "employer": "Current Co"},
+    {"start_date": "2020-01", "end_date": "2022-12", "employer": "Previous Co"},
+    {"start_date": "2015-01", "end_date": "2019-12", "employer": "Old Co"},
+]
+
+score, highlights = compute_recency_score(experience)
+# Returns: (0.72, ["Currently/recently at Current Co"])
+```
+
+---
+
+#### Configurable Matching Criteria
+
+**What It Does**: Makes all matching weights explicit and configurable, allowing fine-tuning for different hiring contexts.
+
+```
+DEFAULT WEIGHT DISTRIBUTION (Healthcare)
+════════════════════════════════════════
+
+┌──────────────────────────┬────────┐
+│ Criterion                │ Weight │
+├──────────────────────────┼────────┤
+│ Primary System (EHR)     │  25%   │ ← Highest priority
+│ Module Experience        │  15%   │
+│ Years of Experience      │  15%   │
+│ Certifications           │  15%   │
+│ Skills Match             │  15%   │
+│ Location Proximity       │  10%   │
+│ Recency Bonus            │   5%   │
+├──────────────────────────┼────────┤
+│ TOTAL                    │ 100%   │
+└──────────────────────────┴────────┘
+
+All weights sum to 1.0 for normalized scoring.
+The system validates this at runtime and warns if violated.
+```
+
+**Domain Presets**:
+
+| Domain | Primary System | Skills | Certifications | Key Difference |
+|--------|----------------|--------|----------------|----------------|
+| Healthcare | 25% | 15% | 15% | EHR system expertise critical |
+| Technology | 20% | 25% | 10% | Skills matter more than certs |
+| Finance | 20% | 15% | 20% | CFA/CPA certifications essential |
+| General | 15% | 20% | 15% | Balanced approach |
+
+**Code Usage**:
+```python
+from scripts.matching_enhancements import MatchingCriteria, create_domain_config
+
+# Use preset
+config = create_domain_config("technology")
+
+# Or customize
+config = MatchingCriteria(
+    primary_system_weight=0.30,  # Emphasize EHR match
+    location_weight=0.05,        # De-emphasize location
+    # ... other weights adjusted to sum to 1.0
+)
+
+# Validate configuration
+if config.validate():
+    print("Configuration valid")
+else:
+    print("Weights don't sum to 1.0!")
+```
+
+---
+
+#### ATS Integration Interface
+
+**What It Does**: Provides an abstract interface for connecting to real Applicant Tracking Systems (Greenhouse, Lever, Workday, etc.).
+
+```
+ATS INTEGRATION ARCHITECTURE
+════════════════════════════
+
+┌─────────────────────────────────────────────────────────────┐
+│                    ATSConnector (Abstract)                   │
+├─────────────────────────────────────────────────────────────┤
+│  connect(credentials) → bool                                 │
+│  fetch_resumes(filters, limit) → List[Dict]                 │
+│  fetch_jobs(status, limit) → List[Dict]                     │
+│  push_rankings(job_id, rankings) → bool                     │
+│  standardize_resume(raw) → Dict  # ATS-specific conversion  │
+└─────────────────────────────────────────────────────────────┘
+                              │
+           ┌──────────────────┼──────────────────┐
+           ▼                  ▼                  ▼
+   ┌───────────────┐  ┌───────────────┐  ┌───────────────┐
+   │MockATSConnector│  │GreenhouseConn │  │  LeverConn    │
+   │ (Testing)      │  │ (Production)  │  │ (Production)  │
+   └───────────────┘  └───────────────┘  └───────────────┘
+```
+
+**Current Implementation**:
+- `MockATSConnector`: Reads from local JSON files (for development/testing)
+- `GreenhouseConnector`: Stub with API structure (ready for implementation)
+
+**To Connect a Real ATS**:
+```python
+from scripts.matching_enhancements import GreenhouseConnector
+
+# 1. Implement the connector (follow the stub pattern)
+ats = GreenhouseConnector()
+
+# 2. Connect with credentials
+ats.connect({"api_key": os.environ["GREENHOUSE_API_KEY"]})
+
+# 3. Fetch real candidates
+resumes = ats.fetch_resumes(
+    filters={"status": "active", "date_range": "last_30_days"},
+    limit=100
+)
+
+# 4. After matching, push rankings back
+ats.push_rankings("job_12345", [
+    {"resume_id": "r1", "score": 0.92, "notes": "Strong Epic match"},
+    {"resume_id": "r2", "score": 0.87, "notes": "Good modules, distant location"},
+])
+```
+
+---
+
+#### Ranking Verification System
+
+**What It Does**: Validates that ranking results are correct and complete according to matching criteria. Generates audit reports for compliance and debugging.
+
+```
+VERIFICATION CHECKS
+═══════════════════
+
+┌─────────────────────────────────────────────────────────────┐
+│                   RankingVerifier                           │
+├─────────────────────────────────────────────────────────────┤
+│  1. SCORE VALIDITY                                          │
+│     - All scores between 0 and 1                            │
+│     - No NaN or invalid values                              │
+│                                                             │
+│  2. RANKING CONSISTENCY                                     │
+│     - Results sorted by score (descending)                  │
+│     - No inversions in ranking order                        │
+│                                                             │
+│  3. NO DUPLICATES                                           │
+│     - Each candidate appears exactly once                   │
+│                                                             │
+│  4. BREAKDOWN INTEGRITY                                     │
+│     - Score components present and valid                    │
+│     - At least one similarity metric evaluated              │
+│                                                             │
+│  5. CRITERIA COVERAGE                                       │
+│     - All configured criteria were evaluated                │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Audit Report Output**:
+```
+============================================================
+RANKING VERIFICATION AUDIT REPORT
+============================================================
+
+Job: Senior Epic Implementation Consultant
+Employer: Boston Medical Center
+Timestamp: 2025-01-09T14:30:00
+
+------------------------------------------------------------
+VERIFICATION RESULTS
+------------------------------------------------------------
+Overall Valid: ✓ YES
+Score Accuracy: 100.0%
+Ranking Consistency: 100.0%
+Criteria Coverage: 100.0%
+
+------------------------------------------------------------
+TOP 5 CANDIDATES
+------------------------------------------------------------
+  1. Sarah Johnson: 92.3%
+     └─ Local candidate (8 miles)
+  2. Michael Chen: 89.1%
+     └─ Currently/recently at Epic Systems
+  3. Emily Williams: 85.7%
+     └─ Commutable (45 miles)
+  ...
+
+============================================================
+END OF REPORT
+============================================================
+```
+
+**Code Usage**:
+```python
+from scripts.matching_enhancements import RankingVerifier, MatchingCriteria
+
+verifier = RankingVerifier(MatchingCriteria())
+
+# After running matching
+verification = verifier.verify_ranking(
+    job=job_description,
+    ranked_candidates=match_results,
+    all_resumes=all_candidates
+)
+
+if verification.is_valid:
+    print("Ranking verified correct")
+else:
+    for issue in verification.issues:
+        print(f"Issue: {issue}")
+
+# Generate audit report for compliance
+report = verifier.generate_audit_report(job, results, verification)
+```
+
+---
+
+#### Domain Generalization
+
+**What It Does**: Enables the system to work beyond healthcare IT by configuring domain-specific field mappings and weights.
+
+```
+DOMAIN ADAPTATION
+═════════════════
+
+Healthcare:                    Technology:
+├── primary_ehr_system         ├── primary_tech_stack
+├── epic_certified             ├── aws_certified
+├── modules (Willow, Cadence)  ├── languages (Python, Go)
+└── ehr_systems                └── frameworks
+
+The same matching engine works by mapping:
+- primary_system_field → "primary_ehr_system" (healthcare)
+- primary_system_field → "primary_tech_stack" (technology)
+```
+
+**Extending to New Domains**:
+```python
+from scripts.matching_enhancements import MatchingCriteria
+
+# Legal domain example
+legal_config = MatchingCriteria(
+    domain="legal",
+    primary_system_field="practice_area",  # Litigation, Corporate, IP
+    primary_system_weight=0.20,
+    certifications_weight=0.25,  # Bar admissions critical
+    years_experience_weight=0.20,
+    skills_weight=0.15,
+    location_weight=0.15,  # Jurisdiction matters
+    recency_weight=0.05,
+)
+
+# Validate weights sum to 1.0
+assert legal_config.validate()
+```
+
+---
+
 ### Known Limitations and Future Work
+
+**Completed in This Release** ✅:
+1. Location-based matching with distance scoring
+2. Recency weighting for experience
+3. ATS integration interface
+4. Ranking verification and audit system
+5. Domain generalization framework
+6. Configurable matching criteria with validation
+
+**Remaining Opportunities**:
 
 1. **Semantic Equivalence (Partial)**: In TF-IDF mode, "EHR" and "Electronic Health Record" are treated as different terms. Neural mode handles this better but may still miss domain-specific synonyms. Future: Add explicit synonym expansion.
 
-2. **No Location Matching**: Jobs in Boston should prefer candidates in/near Boston. Future: Add geographic distance scoring.
+2. **Binary Certification Matching**: Either you have a cert or you don't. Future: Certification equivalence mapping (e.g., Epic certified → can learn Cerner faster).
 
-3. **No Recency Weighting**: Recent experience isn't weighted more heavily. Future: Time-decay function on experience.
+3. **No Cover Letter Analysis**: Only structured resume data is used. Future: Add unstructured text analysis for candidate narratives.
 
-4. **Binary Certification Matching**: Either you have a cert or you don't. Future: Certification equivalence mapping (e.g., Epic certified → can learn Cerner faster).
+4. **Real ATS Connectors**: Interface defined but only mock implementation complete. Future: Implement Greenhouse, Lever, Workday connectors.
 
-5. **No Cover Letter Analysis**: Only structured resume data is used. Future: Add unstructured text analysis for candidate narratives.
+5. **Active Learning**: System doesn't learn from recruiter feedback. Future: Use implicit signals (who got hired) to improve matching.
+
+---
+
+### Recommendations for Production Deployment
+
+This section provides a prioritized roadmap for taking the system from proof-of-concept to production.
+
+#### Priority 1: Immediate (Before First Real Users)
+
+| Recommendation | Effort | Impact | Notes |
+|----------------|--------|--------|-------|
+| **Add Authentication** | Medium | Critical | OAuth/SSO integration; role-based access (recruiter vs admin) |
+| **Implement Greenhouse Connector** | Medium | High | Complete the stub; most common ATS in tech/healthcare |
+| **Add Database Backend** | Medium | High | Replace JSON files with PostgreSQL for structured data |
+| **Deploy to Cloud** | Low | High | Containerize with Docker; deploy to AWS/GCP/Azure |
+
+**Why These First**: Without auth, anyone can access candidate data. Without real ATS integration, users must manually export/import. Without a database, data is lost on restart.
+
+#### Priority 2: Short-Term (First 30 Days)
+
+| Recommendation | Effort | Impact | Notes |
+|----------------|--------|--------|-------|
+| **Add Feedback Collection** | Low | High | Thumbs up/down on results; track which candidates get interviews |
+| **Implement Query Caching** | Low | Medium | Cache search results for repeated queries (Redis) |
+| **Add Batch Processing** | Medium | High | Process 1000+ resumes overnight for large ATS imports |
+| **Build Admin Dashboard** | Medium | Medium | System health, usage metrics, model performance |
+
+**Why These Next**: Feedback enables improvement. Caching reduces latency and cost. Batch processing handles real-world volumes.
+
+#### Priority 3: Medium-Term (60-90 Days)
+
+| Recommendation | Effort | Impact | Notes |
+|----------------|--------|--------|-------|
+| **Fine-tune Embedding Model** | High | High | Train on healthcare IT resumes for better semantic matching |
+| **Add Synonym Expansion** | Medium | Medium | "EHR" = "Electronic Health Record"; domain terminology |
+| **Implement A/B Testing Framework** | Medium | High | Test different weights, algorithms against each other |
+| **Add Candidate De-duplication** | Medium | Medium | Detect same person across multiple resume submissions |
+
+**Why These Later**: These require more data and feedback to do well. Fine-tuning needs examples of good matches.
+
+#### Priority 4: Long-Term (90+ Days)
+
+| Recommendation | Effort | Impact | Notes |
+|----------------|--------|--------|-------|
+| **Learning-to-Rank Model** | High | Very High | ML model trained on click/hire data |
+| **Multi-Modal Analysis** | High | Medium | Include cover letters, LinkedIn profiles |
+| **Predictive Hiring Success** | Very High | Very High | Predict job tenure, performance from resume signals |
+| **API Marketplace** | Medium | Medium | Expose matching API to third-party ATS vendors |
+
+---
+
+#### Infrastructure Recommendations
+
+```
+PRODUCTION ARCHITECTURE
+═══════════════════════
+
+                         Load Balancer
+                              │
+            ┌─────────────────┼─────────────────┐
+            ▼                 ▼                 ▼
+      ┌──────────┐     ┌──────────┐     ┌──────────┐
+      │ Web App  │     │ Web App  │     │ Web App  │
+      │ (Flask)  │     │ (Flask)  │     │ (Flask)  │
+      └────┬─────┘     └────┬─────┘     └────┬─────┘
+           │                │                │
+           └────────────────┼────────────────┘
+                            │
+            ┌───────────────┼───────────────┐
+            ▼               ▼               ▼
+     ┌────────────┐  ┌────────────┐  ┌────────────┐
+     │ PostgreSQL │  │   Redis    │  │  Pinecone  │
+     │ (metadata) │  │  (cache)   │  │ (vectors)  │
+     └────────────┘  └────────────┘  └────────────┘
+```
+
+**Recommended Stack**:
+- **Application**: Flask/Gunicorn with 4-8 workers per instance
+- **Database**: PostgreSQL 14+ for structured data (resumes, jobs, rankings)
+- **Vector Store**: Pinecone or Weaviate for scalable vector search (>100K resumes)
+- **Cache**: Redis for session data, query caching, rate limiting
+- **Queue**: Celery + Redis for background tasks (batch embedding, ATS sync)
+- **Monitoring**: Prometheus + Grafana for metrics; Sentry for error tracking
+
+**Scaling Guidance**:
+
+| Data Volume | Architecture | Est. Monthly Cost |
+|-------------|--------------|-------------------|
+| <10K resumes | Single server + SQLite | $50-100 |
+| 10K-100K resumes | 2-3 servers + PostgreSQL | $300-500 |
+| 100K-1M resumes | Auto-scaling + Pinecone | $1,000-3,000 |
+| >1M resumes | Dedicated vector DB cluster | $5,000+ |
+
+---
+
+#### Test Coverage Recommendations
+
+**Current Coverage**: ~75 tests across 4 test files
+
+**Recommended Additions**:
+
+```
+┌────────────────────────────────────────────────────────────┐
+│                    TESTING PRIORITIES                       │
+├────────────────────────────────────────────────────────────┤
+│                                                            │
+│  1. INTEGRATION TESTS                                      │
+│     □ Full search flow with real ATS data                  │
+│     □ Vector store persistence across restarts             │
+│     □ Concurrent request handling                          │
+│                                                            │
+│  2. PERFORMANCE TESTS                                      │
+│     □ 1000 resume indexing < 60 seconds                    │
+│     □ Search latency P99 < 500ms                           │
+│     □ Memory usage under sustained load                    │
+│                                                            │
+│  3. REGRESSION TESTS                                       │
+│     □ Known-good queries return expected top candidates    │
+│     □ Scoring consistency across code changes              │
+│     □ Model version compatibility                          │
+│                                                            │
+│  4. SECURITY TESTS                                         │
+│     □ SQL injection in search fields                       │
+│     □ XSS in candidate names/descriptions                  │
+│     □ API authentication bypass attempts                   │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+```
+
+---
+
+#### Compliance Considerations
+
+For healthcare recruiting applications:
+
+| Requirement | Implementation | Status |
+|-------------|----------------|--------|
+| **EEOC Compliance** | Audit reports show criteria used; no protected class fields | ✅ Ready |
+| **GDPR (if EU candidates)** | Data retention controls; right to deletion | ⚠️ Needs work |
+| **HIPAA (if PHI in resumes)** | Encryption at rest; access logging | ⚠️ Needs work |
+| **Audit Trail** | RankingVerifier generates compliance reports | ✅ Ready |
+| **Explainability** | Score breakdowns show exactly why each score | ✅ Ready |
+
+**Critical**: Before using in production, have legal review the matching criteria weights for potential bias implications.
+
+---
 
 ### Summary of Tradeoffs Made
 

@@ -1,0 +1,137 @@
+{
+  "id": "gen_biz_resume_026",
+  "domain": "business",
+  "personal_info": {
+    "name": "Rachel Ramos",
+    "email": "rachel.ramos@email.com",
+    "phone": "(784) 599-6282",
+    "location": "Raleigh, NC",
+    "linkedin": "linkedin.com/in/rachelramos"
+  },
+  "summary": "Results-driven project professional with 17+ years of experience. Expertise in Risk Management, Stakeholder Communication, RAID Log. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "director",
+  "years_experience": 17,
+  "primary_specialty": "project",
+  "experience": [
+    {
+      "title": "Director of Strategy",
+      "employer": "PwC Strategy&",
+      "start_date": "2022-11",
+      "end_date": "Present",
+      "focus_areas": [
+        "Smartsheet",
+        "Risk Management",
+        "MS Project",
+        "Project Planning"
+      ],
+      "achievements": [
+        "Developed requirements for system serving 20+ users across 6 regions",
+        "Built business case for $300M technology investment with 46% ROI",
+        "Managed $750M project budget with delivery 50% under budget"
+      ]
+    },
+    {
+      "title": "Principal Product Manager",
+      "employer": "McKinsey & Company",
+      "start_date": "2020-11",
+      "end_date": "2022-11",
+      "focus_areas": [
+        "Stakeholder Communication",
+        "Risk Management",
+        "Smartsheet",
+        "Resource Allocation"
+      ],
+      "achievements": [
+        "Developed requirements for system serving 5+ users across 2 regions",
+        "Managed cross-functional team of 50 across 8 time zones",
+        "Managed $750M project budget with delivery 63% under budget",
+        "Improved process efficiency by 47% through Lean Six Sigma implementation"
+      ]
+    },
+    {
+      "title": "Process Improvement Specialist",
+      "employer": "PwC Strategy&",
+      "start_date": "2017-05",
+      "end_date": "2020-05",
+      "focus_areas": [
+        "Budget Management",
+        "Project Planning",
+        "Risk Management",
+        "MS Project"
+      ],
+      "achievements": [
+        "Developed requirements for system serving 3+ users across 6 regions",
+        "Reduced project delivery time by 54% through Agile transformation"
+      ]
+    },
+    {
+      "title": "Operations Manager",
+      "employer": "Citigroup",
+      "start_date": "2013-02",
+      "end_date": "2017-01",
+      "focus_areas": [
+        "Stakeholder Communication",
+        "RAID Log",
+        "Gantt Charts",
+        "Change Management"
+      ],
+      "achievements": [
+        "Built business case for $100M technology investment with 75% ROI",
+        "Managed cross-functional team of 100 across 3 time zones",
+        "Led digital transformation initiative resulting in $750M annual savings"
+      ]
+    },
+    {
+      "title": "Process Improvement Specialist",
+      "employer": "Home Depot",
+      "start_date": "2009-01",
+      "end_date": "2013-01",
+      "focus_areas": [
+        "Budget Management",
+        "Change Management",
+        "Project Planning",
+        "Resource Allocation"
+      ],
+      "achievements": [
+        "Reduced project delivery time by 64% through Agile transformation",
+        "Facilitated 3+ stakeholder workshops for enterprise requirements",
+        "Negotiated vendor contracts saving $50K annually"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "UC Berkeley"
+    },
+    {
+      "degree": "BS",
+      "field": "Business Administration",
+      "university": "Columbia University"
+    }
+  ],
+  "certifications": [
+    "Certified ScrumMaster (CSM)",
+    "PMP (Project Management Professional)",
+    "CAPM"
+  ],
+  "skills": {
+    "professional": [
+      "Budget Management",
+      "Project Planning",
+      "MS Project",
+      "Change Management",
+      "Resource Allocation",
+      "Stakeholder Communication",
+      "Gantt Charts",
+      "Risk Management"
+    ],
+    "soft": [
+      "Influence",
+      "Team Leadership",
+      "Time Management",
+      "Mentoring"
+    ]
+  }
+}

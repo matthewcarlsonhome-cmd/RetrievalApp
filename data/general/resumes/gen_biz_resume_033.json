@@ -1,0 +1,78 @@
+{
+  "id": "gen_biz_resume_033",
+  "domain": "business",
+  "personal_info": {
+    "name": "Joshua Richardson",
+    "email": "joshua.richardson@email.com",
+    "phone": "(523) 766-2040",
+    "location": "Atlanta, GA",
+    "linkedin": "linkedin.com/in/joshuarichardson"
+  },
+  "summary": "Results-driven operations professional with 6+ years of experience. Expertise in Capacity Planning, Quality Assurance, Process Optimization. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "mid",
+  "years_experience": 6,
+  "primary_specialty": "operations",
+  "experience": [
+    {
+      "title": "Business Development Manager",
+      "employer": "Anthem",
+      "start_date": "2023-12",
+      "end_date": "Present",
+      "focus_areas": [
+        "Contract Negotiation",
+        "Lean Management",
+        "Quality Assurance",
+        "Capacity Planning"
+      ],
+      "achievements": [
+        "Improved process efficiency by 67% through Lean Six Sigma implementation",
+        "Developed requirements for system serving 8+ users across 5 regions"
+      ]
+    },
+    {
+      "title": "Strategy Director",
+      "employer": "Accenture Strategy",
+      "start_date": "2020-07",
+      "end_date": "2023-07",
+      "focus_areas": [
+        "Quality Assurance",
+        "Capacity Planning",
+        "Process Optimization",
+        "KPI Tracking"
+      ],
+      "achievements": [
+        "Managed $1000M project budget with delivery 46% under budget",
+        "Reduced project delivery time by 51% through Agile transformation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "Penn State"
+    }
+  ],
+  "certifications": [
+    "CPSM (Certified Supply Management)"
+  ],
+  "skills": {
+    "professional": [
+      "KPI Tracking",
+      "Contract Negotiation",
+      "Process Optimization",
+      "Vendor Management",
+      "SLA Management",
+      "Quality Assurance",
+      "Six Sigma",
+      "Lean Management"
+    ],
+    "soft": [
+      "Cross-functional Collaboration",
+      "Coaching",
+      "Team Leadership",
+      "Mentoring",
+      "Presentation Skills"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "gen_it_resume_022",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Jonathan Torres",
+    "email": "jonathan.torres@email.com",
+    "phone": "(929) 607-2260",
+    "location": "Miami, FL",
+    "linkedin": "linkedin.com/in/jonathantorres"
+  },
+  "summary": "2+ years of experience in data technologies. Expertise in Scikit-learn, Kafka, TensorFlow. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "entry",
+  "years_experience": 2,
+  "primary_tech_stack": "Data Engineering",
+  "tech_specialization": "data",
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "employer": "Salesforce",
+      "start_date": "2024-03",
+      "end_date": "Present",
+      "tech_stack": [
+        "Python",
+        "dbt",
+        "Scikit-learn",
+        "TensorFlow",
+        "Power BI"
+      ],
+      "achievements": [
+        "Implemented security controls achieving SOC 2 Type II certification",
+        "Built machine learning model achieving 34% accuracy for fraud detection",
+        "Designed API serving 10K+ requests per second with sub-200ms latency",
+        "Led incident response for critical outage, reducing MTTR from 4 hours to 30 minutes"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Information Technology",
+      "university": "University of Virginia"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "technical": [
+      "Data Engineering",
+      "PyTorch",
+      "Pandas",
+      "NumPy",
+      "ETL",
+      "Looker",
+      "dbt",
+      "Tableau",
+      "Scikit-learn"
+    ],
+    "soft": [
+      "Team Leadership",
+      "Mentoring",
+      "Communication",
+      "Critical Thinking",
+      "Decision Making"
+    ]
+  }
+}

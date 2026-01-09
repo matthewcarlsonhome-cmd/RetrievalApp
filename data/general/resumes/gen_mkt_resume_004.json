@@ -1,0 +1,95 @@
+{
+  "id": "gen_mkt_resume_004",
+  "domain": "marketing",
+  "personal_info": {
+    "name": "Susan Johnson",
+    "email": "susan.johnson@email.com",
+    "phone": "(415) 512-8474",
+    "location": "Denver, CO",
+    "linkedin": "linkedin.com/in/susanjohnson"
+  },
+  "summary": "Creative and data-driven digital professional with 4+ years of experience. Expert in LinkedIn Ads, Salesforce Marketing Cloud, HubSpot. Proven ability to drive growth and build brand awareness.",
+  "experience_level": "mid",
+  "years_experience": 4,
+  "primary_specialty": "digital",
+  "experience": [
+    {
+      "title": "Marketing Analytics Manager",
+      "employer": "DDB",
+      "start_date": "2025-10",
+      "end_date": "Present",
+      "channels": [
+        "A/B Testing",
+        "Facebook Ads",
+        "LinkedIn Ads",
+        "Email Marketing"
+      ],
+      "achievements": [
+        "Created sales enablement materials improving win rate by 30%",
+        "Managed $150M annual marketing budget across 20 channels",
+        "Achieved 33% improvement in email open rates through A/B testing"
+      ]
+    },
+    {
+      "title": "Marketing Operations Manager",
+      "employer": "Adobe",
+      "start_date": "2023-04",
+      "end_date": "2025-04",
+      "channels": [
+        "Google Ads",
+        "HubSpot",
+        "Salesforce Marketing Cloud",
+        "SEM"
+      ],
+      "achievements": [
+        "Launched product to 20K customers with 53% activation rate",
+        "Managed $50M annual marketing budget across 5 channels",
+        "Developed content strategy resulting in 10K monthly blog visitors"
+      ]
+    },
+    {
+      "title": "Content Strategist",
+      "employer": "Nike",
+      "start_date": "2021-12",
+      "end_date": "2022-12",
+      "channels": [
+        "PPC",
+        "SEO",
+        "LinkedIn Ads",
+        "Marketo"
+      ],
+      "achievements": [
+        "Built marketing analytics dashboard tracking 5+ KPIs across channels",
+        "Increased organic traffic by 16% through SEO optimization strategy"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "University of Texas at Austin"
+    }
+  ],
+  "certifications": [
+    "HubSpot Inbound Marketing"
+  ],
+  "skills": {
+    "marketing": [
+      "PPC",
+      "Google Ads",
+      "SEO",
+      "Salesforce Marketing Cloud",
+      "Facebook Ads",
+      "SEM",
+      "HubSpot",
+      "LinkedIn Ads"
+    ],
+    "soft": [
+      "Critical Thinking",
+      "Problem Solving",
+      "Time Management",
+      "Emotional Intelligence"
+    ]
+  }
+}

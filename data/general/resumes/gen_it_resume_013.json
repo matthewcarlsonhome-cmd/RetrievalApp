@@ -1,0 +1,65 @@
+{
+  "id": "gen_it_resume_013",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Michelle Bailey",
+    "email": "michelle.bailey@email.com",
+    "phone": "(996) 591-9239",
+    "location": "Philadelphia, PA",
+    "linkedin": "linkedin.com/in/michellebailey"
+  },
+  "summary": "2+ years of experience in cloud technologies. Expertise in Docker, Lambda, CloudFormation. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "entry",
+  "years_experience": 2,
+  "primary_tech_stack": "Azure",
+  "tech_specialization": "cloud",
+  "experience": [
+    {
+      "title": "Platform Engineer",
+      "employer": "Morgan Stanley",
+      "start_date": "2024-03",
+      "end_date": "Present",
+      "tech_stack": [
+        "AWS",
+        "VPC",
+        "CloudWatch",
+        "Docker",
+        "GKE"
+      ],
+      "achievements": [
+        "Reduced system latency by 26% through optimization of database queries and caching strategies",
+        "Designed API serving 10M+ requests per second with sub-50ms latency",
+        "Built machine learning model achieving 53% accuracy for fraud detection"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Data Science",
+      "university": "NYU"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "technical": [
+      "Azure",
+      "Azure DevOps",
+      "IAM",
+      "Terraform",
+      "CloudWatch",
+      "CloudFormation",
+      "VPC",
+      "S3",
+      "Lambda"
+    ],
+    "soft": [
+      "Mentoring",
+      "Adaptability",
+      "Emotional Intelligence",
+      "Conflict Resolution",
+      "Critical Thinking",
+      "Communication"
+    ]
+  }
+}

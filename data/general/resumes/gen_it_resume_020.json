@@ -1,0 +1,63 @@
+{
+  "id": "gen_it_resume_020",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Ahmed Mitchell",
+    "email": "ahmed.mitchell@email.com",
+    "phone": "(939) 680-6246",
+    "location": "Los Angeles, CA",
+    "linkedin": "linkedin.com/in/ahmedmitchell"
+  },
+  "summary": "1+ years of experience in security technologies. Expertise in Firewall, IAM, IDS/IPS. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "junior",
+  "years_experience": 1,
+  "primary_tech_stack": "Security Engineering",
+  "tech_specialization": "security",
+  "experience": [
+    {
+      "title": "Junior Backend Developer",
+      "employer": "Stripe",
+      "start_date": "2025-01",
+      "end_date": "Present",
+      "tech_stack": [
+        "Cloud Security",
+        "IAM",
+        "Risk Assessment",
+        "SIEM",
+        "Penetration Testing"
+      ],
+      "achievements": [
+        "Developed automation reducing manual operations by 50%",
+        "Led incident response for critical outage, reducing MTTR from 2 weeks to 2 hours"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Data Science",
+      "university": "University of Texas at Austin"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "technical": [
+      "AppSec",
+      "Firewall",
+      "Incident Response",
+      "IDS/IPS",
+      "OWASP",
+      "Risk Assessment",
+      "IAM",
+      "Vulnerability Assessment",
+      "Security Compliance"
+    ],
+    "soft": [
+      "Adaptability",
+      "Coaching",
+      "Influence",
+      "Conflict Resolution",
+      "Cross-functional Collaboration"
+    ]
+  }
+}

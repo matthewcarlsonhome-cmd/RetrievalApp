@@ -1,0 +1,50 @@
+{
+  "id": "gen_business_job_030",
+  "domain": "business",
+  "title": "Director of Strategy",
+  "employer": "Adobe",
+  "department": "Strategy",
+  "location": "Charlotte, NC",
+  "remote": false,
+  "employment_type": "Full-time",
+  "experience_level": "director",
+  "requirements": {
+    "years_min": 8,
+    "years_max": 14,
+    "education": "MBA from top program",
+    "skills_required": [
+      "Corporate Strategy",
+      "M&A Due Diligence",
+      "Board Presentation",
+      "Team Leadership"
+    ],
+    "skills_preferred": [
+      "Industry Expertise",
+      "Investment Banking"
+    ]
+  },
+  "salary_range": {
+    "min": 200000,
+    "max": 320000,
+    "currency": "USD"
+  },
+  "responsibilities": [
+    "Lead and execute strategy initiatives aligned with company strategy",
+    "Collaborate with cross-functional teams to deliver high-impact projects",
+    "Develop and maintain relationships with key stakeholders",
+    "Drive continuous improvement in processes and outcomes",
+    "Mentor and develop team members",
+    "Set strategic direction and priorities for the organization",
+    "Manage budget and resource allocation",
+    "Report to executive leadership on progress and outcomes"
+  ],
+  "benefits": [
+    "Competitive salary and equity",
+    "Comprehensive health, dental, and vision insurance",
+    "401(k) with company match",
+    "Flexible PTO policy",
+    "Professional development budget",
+    "Hybrid work environment"
+  ],
+  "posted_date": "2026-01-02"
+}

@@ -1,0 +1,84 @@
+{
+  "id": "gen_it_resume_004",
+  "domain": "technology",
+  "personal_info": {
+    "name": "Andrew Rogers",
+    "email": "andrew.rogers@email.com",
+    "phone": "(630) 598-1320",
+    "location": "Remote",
+    "linkedin": "linkedin.com/in/andrewrogers"
+  },
+  "summary": "4+ years of experience in cloud technologies. Expertise in IAM, Docker, Azure DevOps. Proven track record of delivering scalable solutions and leading technical teams.",
+  "experience_level": "mid",
+  "years_experience": 4,
+  "primary_tech_stack": "AWS",
+  "tech_specialization": "cloud",
+  "experience": [
+    {
+      "title": "IT Project Manager",
+      "employer": "Shopify",
+      "start_date": "2023-02",
+      "end_date": "Present",
+      "tech_stack": [
+        "Azure",
+        "CloudFormation",
+        "Lambda",
+        "EC2",
+        "IAM"
+      ],
+      "achievements": [
+        "Mentored team of 5 engineers, improving code review quality by 69%",
+        "Developed automation reducing manual operations by 40%"
+      ]
+    },
+    {
+      "title": "Junior DevOps Engineer",
+      "employer": "Morgan Stanley",
+      "start_date": "2021-08",
+      "end_date": "2022-08",
+      "tech_stack": [
+        "Multi-Cloud",
+        "EC2",
+        "GKE",
+        "CloudFormation",
+        "S3"
+      ],
+      "achievements": [
+        "Architected data pipeline processing 10M+ events per day with 99.9% reliability",
+        "Mentored team of 100 engineers, improving code review quality by 62%",
+        "Implemented security controls achieving SOC 2 Type II certification"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BS",
+      "field": "Software Engineering",
+      "university": "University of Illinois"
+    }
+  ],
+  "certifications": [
+    "Google Cloud Professional Cloud Architect"
+  ],
+  "skills": {
+    "technical": [
+      "AWS",
+      "Lambda",
+      "CloudWatch",
+      "CloudFormation",
+      "Docker",
+      "VPC",
+      "Kubernetes",
+      "S3",
+      "EC2"
+    ],
+    "soft": [
+      "Decision Making",
+      "Time Management",
+      "Emotional Intelligence",
+      "Mentoring",
+      "Team Leadership",
+      "Problem Solving"
+    ]
+  }
+}

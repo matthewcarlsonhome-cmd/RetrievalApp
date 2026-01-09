@@ -1,0 +1,103 @@
+{
+  "id": "gen_biz_resume_016",
+  "domain": "business",
+  "personal_info": {
+    "name": "Sandra Lewis",
+    "email": "sandra.lewis@email.com",
+    "phone": "(863) 216-3359",
+    "location": "Orlando, FL",
+    "linkedin": "linkedin.com/in/sandralewis"
+  },
+  "summary": "Results-driven operations professional with 8+ years of experience. Expertise in Quality Assurance, Capacity Planning, Lean Management. Track record of driving business outcomes and leading cross-functional initiatives.",
+  "experience_level": "senior",
+  "years_experience": 8,
+  "primary_specialty": "operations",
+  "experience": [
+    {
+      "title": "Senior Lead Business Analyst",
+      "employer": "Anthem",
+      "start_date": "2023-06",
+      "end_date": "Present",
+      "focus_areas": [
+        "SLA Management",
+        "Quality Assurance",
+        "Vendor Management",
+        "Process Optimization"
+      ],
+      "achievements": [
+        "Reduced project delivery time by 37% through Agile transformation",
+        "Developed requirements for system serving 5+ users across 8 regions"
+      ]
+    },
+    {
+      "title": "Partnership Manager",
+      "employer": "Salesforce",
+      "start_date": "2021-03",
+      "end_date": "2023-03",
+      "focus_areas": [
+        "Vendor Management",
+        "KPI Tracking",
+        "Contract Negotiation",
+        "Lean Management"
+      ],
+      "achievements": [
+        "Facilitated 50+ stakeholder workshops for enterprise requirements",
+        "Developed requirements for system serving 5+ users across 2 regions",
+        "Negotiated vendor contracts saving $300K annually"
+      ]
+    },
+    {
+      "title": "Operations Director",
+      "employer": "Walmart",
+      "start_date": "2017-10",
+      "end_date": "2020-10",
+      "focus_areas": [
+        "Process Optimization",
+        "Lean Management",
+        "Quality Assurance",
+        "Capacity Planning"
+      ],
+      "achievements": [
+        "Led digital transformation initiative resulting in $1000M annual savings",
+        "Managed $500M project budget with delivery 51% under budget",
+        "Built business case for $500M technology investment with 69% ROI",
+        "Improved process efficiency by 22% through Lean Six Sigma implementation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA",
+      "field": "Business Administration",
+      "university": "University of Washington"
+    },
+    {
+      "degree": "BS",
+      "field": "Finance",
+      "university": "University of Florida"
+    }
+  ],
+  "certifications": [
+    "CPSM (Certified Supply Management)",
+    "Lean Six Sigma Master Black Belt"
+  ],
+  "skills": {
+    "professional": [
+      "Six Sigma",
+      "Quality Assurance",
+      "Lean Management",
+      "Capacity Planning",
+      "Contract Negotiation",
+      "Vendor Management",
+      "SLA Management",
+      "KPI Tracking"
+    ],
+    "soft": [
+      "Presentation Skills",
+      "Communication",
+      "Coaching",
+      "Team Leadership",
+      "Cross-functional Collaboration"
+    ]
+  }
+}

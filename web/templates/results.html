@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block title %}Search Results - Healthcare Resume Matching{% endblock %}
+
+{% block content %}
+<!-- Search Summary -->
+<div class="card">
+    <div class="grid grid-2" style="align-items: center;">
+        <div>
+            <h2 style="color: #1e3a5f; margin-bottom: 0.5rem;">{{ job.title }}</h2>
+            <p class="text-muted">{{ job.employer }}</p>
+            {% if job.primary_ehr_system %}
+            <span class="badge badge-primary">{{ job.primary_ehr_system }}</span>
+            {% endif %}
+        </div>
+        <div style="text-align: right;">
+            <div class="stat-value" style="font-size: 1.5rem;">{{ matches|length }}</div>
+            <div class="stat-label">Matching Candidates</div>
+            <p class="text-small text-muted mt-1">
+                From {{ total_candidates }} filtered candidates
+                {% if processing_time %}({{ processing_time }}ms){% endif %}
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Active Filters -->
+{% if filters.ehr_system or filters.min_experience or filters.location or filters.certification %}
+<div class="card">
+    <strong>Active Filters:</strong>
+    {% if filters.ehr_system %}<span class="badge badge-info">EHR: {{ filters.ehr_system }}</span>{% endif %}
+    {% if filters.min_experience %}<span class="badge badge-info">{{ filters.min_experience }}+ years</span>{% endif %}
+    {% if filters.max_experience %}<span class="badge badge-info">Up to {{ filters.max_experience }} years</span>{% endif %}
+    {% if filters.location %}<span class="badge badge-info">Location: {{ filters.location }}</span>{% endif %}
+    {% if filters.certification %}<span class="badge badge-info">Cert: {{ filters.certification }}</span>{% endif %}
+    <a href="/" class="btn btn-secondary" style="float: right; padding: 0.5rem 1rem;">Clear Filters</a>
+</div>
+{% endif %}
+
+<!-- Results -->
+{% if matches %}
+    {% for match in matches %}
+    <div class="card">
+        <div class="grid" style="grid-template-columns: 80px 1fr 200px; gap: 1.5rem; align-items: start;">
+            <!-- Rank -->
+            <div style="text-align: center;">
+                <div style="font-size: 2.5rem; font-weight: 700; color: {% if match.rank <= 3 %}#4caf50{% elif match.rank <= 5 %}#8bc34a{% else %}#9e9e9e{% endif %};">
+                    #{{ match.rank }}
+                </div>
+                <div class="text-small text-muted">Rank</div>
+            </div>
+
+            <!-- Candidate Info -->
+            <div>
+                <h3 style="margin-bottom: 0.5rem;">
+                    <a href="/candidate/{{ match.resume.id }}" style="color: #1e3a5f; text-decoration: none;">
+                        {{ match.resume.personal_info.name }}
+                    </a>
+                </h3>
+                <p class="text-muted mb-1">
+                    {{ match.resume.years_experience }} years experience |
+                    {{ match.resume.personal_info.location }}
+                </p>
+
+                <!-- Badges -->
+                <div class="mb-2">
+                    <span class="badge badge-primary">{{ match.resume.primary_ehr_system }}</span>
+                    {% for cert in match.resume.certifications[:3] %}
+                    <span class="badge badge-success">{{ cert[:30] }}{% if cert|length > 30 %}...{% endif %}</span>
+                    {% endfor %}
+                </div>
+
+                <!-- Match Highlights -->
+                {% if match.highlights %}
+                <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+                    <strong class="text-small">Why this candidate matches:</strong>
+                    <ul class="highlight-list mt-1">
+                        {% for highlight in match.highlights %}
+                        <li>{{ highlight }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                <!-- Current/Recent Position -->
+                {% if match.resume.experience %}
+                <div class="mt-2 text-small">
+                    <strong>Current:</strong> {{ match.resume.experience[0].title }} at {{ match.resume.experience[0].employer }}
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Score -->
+            <div style="text-align: center; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+                <div style="font-size: 2rem; font-weight: 700; color: #1e3a5f;">
+                    {{ "%.1f"|format(match.score * 100) }}%
+                </div>
+                <div class="text-small text-muted mb-2">Match Score</div>
+
+                <div class="score-bar mb-2">
+                    <div class="score-bar-fill" style="width: {{ match.score * 100 }}%;"></div>
+                </div>
+
+                <div class="text-small">
+                    <div>TF-IDF: {{ "%.0f"|format(match.breakdown.tfidf_similarity * 100) }}%</div>
+                    <div>Keywords: {{ "%.0f"|format(match.breakdown.keyword_match * 100) }}%</div>
+                </div>
+
+                <a href="/candidate/{{ match.resume.id }}" class="btn btn-primary mt-2" style="display: block; padding: 0.5rem;">
+                    View Profile
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+{% else %}
+    <div class="card" style="text-align: center; padding: 3rem;">
+        <h3>No Matching Candidates Found</h3>
+        <p class="text-muted mt-2">{{ message or "Try adjusting your filters or search criteria" }}</p>
+        <a href="/" class="btn btn-primary mt-3">Start New Search</a>
+    </div>
+{% endif %}
+
+<!-- Navigation -->
+<div class="card" style="text-align: center;">
+    <a href="/" class="btn btn-secondary">New Search</a>
+    {% if job.id != 'custom' %}
+    <a href="/job/{{ job.id }}" class="btn btn-secondary">View Job Details</a>
+    {% endif %}
+</div>
+{% endblock %}

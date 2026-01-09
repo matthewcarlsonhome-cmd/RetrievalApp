@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Error - Healthcare Resume Matching{% endblock %}
+
+{% block content %}
+<div class="card" style="text-align: center; padding: 3rem;">
+    <div style="font-size: 4rem; margin-bottom: 1rem;">⚠️</div>
+    <h2 style="color: #1e3a5f;">Something went wrong</h2>
+    <p class="text-muted mt-2">{{ message or "An unexpected error occurred" }}</p>
+    <a href="/" class="btn btn-primary mt-3">Back to Home</a>
+</div>
+{% endblock %}

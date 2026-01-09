@@ -7,7 +7,44 @@ Get the system running in under 10 minutes.
 - Python 3.9+
 - pip
 
-## Step 1: Install Dependencies (2 minutes)
+---
+
+## Option A: Web Interface (Recommended for Non-Technical Users)
+
+### Step 1: Install Dependencies
+
+```bash
+cd /home/user/RetrievalApp
+pip install flask
+```
+
+### Step 2: Generate Test Data
+
+```bash
+python scripts/generate_test_data.py
+```
+
+### Step 3: Start the Web Application
+
+```bash
+python web/app.py
+```
+
+### Step 4: Open in Browser
+
+Navigate to: **http://localhost:5000**
+
+You can now:
+- Search candidates by selecting a job or entering keywords
+- Filter by EHR system, experience years, location, certifications
+- View ranked results with match scores and explanations
+- Click on candidates to see full profiles
+
+---
+
+## Option B: Command Line Scripts
+
+### Step 1: Install Dependencies
 
 ```bash
 cd /home/user/RetrievalApp
@@ -17,10 +54,10 @@ pip install -e .
 Or install core dependencies directly:
 
 ```bash
-pip install numpy scikit-learn sentence-transformers
+pip install numpy
 ```
 
-## Step 2: Generate Test Data (1 minute)
+### Step 2: Generate Test Data
 
 ```bash
 python scripts/generate_test_data.py
@@ -30,7 +67,7 @@ This creates:
 - `test_data/resumes/` - 100 healthcare implementation resumes
 - `test_data/job_descriptions/` - 20 EHR/hospital implementation jobs
 
-## Step 3: Run Resume Matching (2 minutes)
+### Step 3: Run Resume Matching
 
 ```bash
 python scripts/match_resumes.py
@@ -42,7 +79,7 @@ This will:
 3. Match each job to top candidate resumes
 4. Output results to `results/matches.json`
 
-## Step 4: View Results
+### Step 4: View Results
 
 ```bash
 python scripts/view_results.py
@@ -55,7 +92,7 @@ cat results/matches.json | python -m json.tool | head -100
 
 ---
 
-## One-Command Quick Start
+## One-Command Quick Start (CLI)
 
 Run everything at once:
 

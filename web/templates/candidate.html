@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+
+{% block title %}{{ resume.personal_info.name }} - Candidate Profile{% endblock %}
+
+{% block content %}
+<!-- Header -->
+<div class="card">
+    <div class="grid grid-2" style="align-items: center;">
+        <div>
+            <h1 style="color: #1e3a5f; margin-bottom: 0.5rem;">{{ resume.personal_info.name }}</h1>
+            <p class="text-muted">{{ resume.personal_info.location }}</p>
+            <div class="mt-2">
+                <span class="badge badge-primary" style="font-size: 1rem;">{{ resume.primary_ehr_system }}</span>
+                <span class="badge badge-success" style="font-size: 1rem;">{{ resume.years_experience }} Years Experience</span>
+            </div>
+        </div>
+        <div style="text-align: right;">
+            <p><strong>Email:</strong> {{ resume.personal_info.email }}</p>
+            <p><strong>Phone:</strong> {{ resume.personal_info.phone }}</p>
+            {% if resume.personal_info.linkedin %}
+            <p><strong>LinkedIn:</strong> {{ resume.personal_info.linkedin }}</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- Summary -->
+{% if resume.summary %}
+<div class="card">
+    <div class="card-header">
+        <h2 class="card-title">Professional Summary</h2>
+    </div>
+    <p>{{ resume.summary }}</p>
+</div>
+{% endif %}
+
+<!-- Key Stats -->
+<div class="card">
+    <div class="stats-grid">
+        <div class="stat-box">
+            <div class="stat-value">{{ resume.years_experience }}</div>
+            <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value">{{ resume.experience|length }}</div>
+            <div class="stat-label">Positions Held</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value">{{ resume.certifications|length }}</div>
+            <div class="stat-label">Certifications</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value">{{ resume.skills|length }}</div>
+            <div class="stat-label">Skills</div>
+        </div>
+    </div>
+</div>
+
+<div class="grid grid-2">
+    <!-- Work Experience -->
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">Work Experience</h2>
+        </div>
+
+        {% for exp in resume.experience %}
+        <div style="{% if not loop.last %}border-bottom: 1px solid #eee; padding-bottom: 1.5rem; margin-bottom: 1.5rem;{% endif %}">
+            <h3 style="color: #1e3a5f; margin-bottom: 0.25rem;">{{ exp.title }}</h3>
+            <p><strong>{{ exp.employer }}</strong> | {{ exp.location }}</p>
+            <p class="text-small text-muted">{{ exp.start_date }} - {{ exp.end_date }}</p>
+
+            {% if exp.ehr_systems %}
+            <div class="mt-1 mb-1">
+                {% for ehr in exp.ehr_systems %}
+                <span class="badge badge-primary">{{ ehr }}</span>
+                {% endfor %}
+                {% for module in exp.modules[:4] %}
+                <span class="badge badge-info">{{ module }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if exp.achievements %}
+            <ul style="margin-top: 0.75rem; padding-left: 1.25rem;">
+                {% for achievement in exp.achievements %}
+                <li class="text-small" style="margin-bottom: 0.5rem;">{{ achievement }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Right Column -->
+    <div>
+        <!-- Education -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Education</h2>
+            </div>
+
+            {% for edu in resume.education %}
+            <div style="{% if not loop.last %}margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;{% endif %}">
+                <h4 style="color: #1e3a5f;">{{ edu.degree }}</h4>
+                <p>{{ edu.institution }}</p>
+                <p class="text-small text-muted">
+                    Graduated {{ edu.graduation_year }}
+                    {% if edu.gpa %}| GPA: {{ edu.gpa }}{% endif %}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Certifications -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Certifications</h2>
+            </div>
+
+            <div>
+                {% for cert in resume.certifications %}
+                <div style="padding: 0.75rem; margin-bottom: 0.5rem; background: #e8f5e9; border-radius: 8px; border-left: 4px solid #4caf50;">
+                    {{ cert }}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Skills</h2>
+            </div>
+
+            <div>
+                {% for skill in resume.skills %}
+                <span class="badge badge-primary" style="margin: 0.25rem;">{{ skill }}</span>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Actions -->
+<div class="card" style="text-align: center;">
+    <a href="/" class="btn btn-primary">Find Jobs for This Candidate</a>
+    <a href="/" class="btn btn-secondary">Back to Search</a>
+</div>
+{% endblock %}

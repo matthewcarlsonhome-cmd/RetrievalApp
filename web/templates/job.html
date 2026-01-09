@@ -1,0 +1,192 @@
+{% extends "base.html" %}
+
+{% block title %}{{ job.title }} - Job Details{% endblock %}
+
+{% block content %}
+<!-- Header -->
+<div class="card">
+    <div class="grid grid-2" style="align-items: start;">
+        <div>
+            <h1 style="color: #1e3a5f; margin-bottom: 0.5rem;">{{ job.title }}</h1>
+            <p style="font-size: 1.25rem;">{{ job.employer }}</p>
+            <p class="text-muted">{{ job.location }} | {{ job.remote_option }}</p>
+            <div class="mt-2">
+                <span class="badge badge-primary" style="font-size: 1rem;">{{ job.primary_ehr_system }}</span>
+                <span class="badge badge-{% if job.contract_type == 'Contract' %}warning{% else %}success{% endif %}" style="font-size: 1rem;">
+                    {{ job.contract_type }}
+                </span>
+                <span class="badge badge-info" style="font-size: 1rem;">{{ job.employment_type }}</span>
+            </div>
+        </div>
+        <div style="text-align: right;">
+            {% if job.salary %}
+            <div style="font-size: 1.5rem; font-weight: 700; color: #1e3a5f;">
+                {% if job.salary.type == 'hourly' %}
+                ${{ job.salary.min }} - ${{ job.salary.max }}/hr
+                {% else %}
+                ${{ "{:,}".format(job.salary.min) }} - ${{ "{:,}".format(job.salary.max) }}/yr
+                {% endif %}
+            </div>
+            {% endif %}
+            <p class="text-muted">Posted: {{ job.posted_date }}</p>
+            {% if job.contract_length %}
+            <p><strong>Contract Length:</strong> {{ job.contract_length }}</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- Quick Stats -->
+<div class="card">
+    <div class="stats-grid">
+        <div class="stat-box">
+            <div class="stat-value">{{ job.experience_required.min_years }}+</div>
+            <div class="stat-label">Years Required</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value">{{ job.modules|length }}</div>
+            <div class="stat-label">Modules</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value">{{ job.required_qualifications.certifications|length }}</div>
+            <div class="stat-label">Required Certs</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value">{{ job.required_qualifications.skills|length }}</div>
+            <div class="stat-label">Required Skills</div>
+        </div>
+    </div>
+</div>
+
+<!-- Description -->
+<div class="card">
+    <div class="card-header">
+        <h2 class="card-title">Job Description</h2>
+    </div>
+    <p>{{ job.description }}</p>
+</div>
+
+<div class="grid grid-2">
+    <!-- Left Column -->
+    <div>
+        <!-- Responsibilities -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Responsibilities</h2>
+            </div>
+            <ul style="padding-left: 1.25rem;">
+                {% for resp in job.responsibilities %}
+                <li style="margin-bottom: 0.75rem;">{{ resp }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Benefits -->
+        {% if job.benefits %}
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Benefits</h2>
+            </div>
+            <ul class="highlight-list">
+                {% for benefit in job.benefits %}
+                <li>{{ benefit }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Right Column -->
+    <div>
+        <!-- Required Qualifications -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Required Qualifications</h2>
+            </div>
+
+            <div class="mb-2">
+                <strong>Education:</strong>
+                <p>{{ job.required_qualifications.education }}</p>
+            </div>
+
+            <div class="mb-2">
+                <strong>Experience:</strong>
+                <p>{{ job.required_qualifications.experience }}</p>
+            </div>
+
+            {% if job.modules %}
+            <div class="mb-2">
+                <strong>{{ job.primary_ehr_system }} Modules:</strong>
+                <div class="mt-1">
+                    {% for module in job.modules %}
+                    <span class="badge badge-primary">{{ module }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if job.required_qualifications.certifications %}
+            <div class="mb-2">
+                <strong>Required Certifications:</strong>
+                <div class="mt-1">
+                    {% for cert in job.required_qualifications.certifications %}
+                    <div style="padding: 0.5rem; background: #fff3e0; border-radius: 6px; margin-bottom: 0.5rem; border-left: 3px solid #ff9800;">
+                        {{ cert }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            <div>
+                <strong>Required Skills:</strong>
+                <div class="mt-1">
+                    {% for skill in job.required_qualifications.skills %}
+                    <span class="badge badge-info" style="margin: 0.25rem;">{{ skill }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Preferred Qualifications -->
+        {% if job.preferred_qualifications.skills or job.preferred_qualifications.certifications %}
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Preferred Qualifications</h2>
+            </div>
+
+            {% if job.preferred_qualifications.certifications %}
+            <div class="mb-2">
+                <strong>Preferred Certifications:</strong>
+                <div class="mt-1">
+                    {% for cert in job.preferred_qualifications.certifications %}
+                    <span class="badge badge-success" style="margin: 0.25rem;">{{ cert }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if job.preferred_qualifications.skills %}
+            <div>
+                <strong>Preferred Skills:</strong>
+                <div class="mt-1">
+                    {% for skill in job.preferred_qualifications.skills %}
+                    <span class="badge badge-success" style="margin: 0.25rem;">{{ skill }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Actions -->
+<div class="card" style="text-align: center;">
+    <form action="/search" method="POST" style="display: inline;">
+        <input type="hidden" name="job_id" value="{{ job.id }}">
+        <button type="submit" class="btn btn-primary">Find Matching Candidates</button>
+    </form>
+    <a href="/" class="btn btn-secondary">Back to Search</a>
+</div>
+{% endblock %}

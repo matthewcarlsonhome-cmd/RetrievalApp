@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block title %}Search - Healthcare Resume Matching{% endblock %}
+
+{% block content %}
+<div class="card mb-3">
+    <div class="stats-grid">
+        <div class="stat-box">
+            <div class="stat-value">{{ resume_count }}</div>
+            <div class="stat-label">Candidates</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value">{{ job_count }}</div>
+            <div class="stat-label">Open Positions</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value">{{ ehr_systems|length }}</div>
+            <div class="stat-label">EHR Systems</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value">{{ locations|length }}</div>
+            <div class="stat-label">Locations</div>
+        </div>
+    </div>
+</div>
+
+<form action="/search" method="POST">
+    <div class="grid grid-2">
+        <!-- Left Column: Job Selection -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">1. Select a Job or Enter Search Query</h2>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Select from Open Positions</label>
+                <select name="job_id" class="form-control">
+                    <option value="">-- Select a job --</option>
+                    {% for job in jobs %}
+                    <option value="{{ job.id }}">
+                        {{ job.title }} - {{ job.employer }} ({{ job.primary_ehr_system }})
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Or Enter Custom Search Query</label>
+                <textarea name="custom_query" class="form-control" rows="4"
+                    placeholder="Example: Epic certified consultant with 5+ years experience in EpicCare Ambulatory, Cadence scheduling, revenue cycle optimization"></textarea>
+                <p class="text-small text-muted mt-1">
+                    Enter keywords describing the ideal candidate
+                </p>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Number of Results</label>
+                <select name="top_k" class="form-control">
+                    <option value="5">Top 5 candidates</option>
+                    <option value="10" selected>Top 10 candidates</option>
+                    <option value="20">Top 20 candidates</option>
+                    <option value="50">Top 50 candidates</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Right Column: Filters -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">2. Filter Candidates (Optional)</h2>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">EHR System Experience</label>
+                <select name="ehr_system" class="form-control">
+                    <option value="">Any EHR System</option>
+                    {% for ehr in ehr_systems %}
+                    <option value="{{ ehr }}">{{ ehr }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="form-group">
+                    <label class="form-label">Min Experience (Years)</label>
+                    <select name="min_experience" class="form-control">
+                        <option value="">No minimum</option>
+                        <option value="2">2+ years</option>
+                        <option value="5">5+ years</option>
+                        <option value="7">7+ years</option>
+                        <option value="10">10+ years</option>
+                        <option value="15">15+ years</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Max Experience (Years)</label>
+                    <select name="max_experience" class="form-control">
+                        <option value="">No maximum</option>
+                        <option value="5">Up to 5 years</option>
+                        <option value="10">Up to 10 years</option>
+                        <option value="15">Up to 15 years</option>
+                        <option value="20">Up to 20 years</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Location</label>
+                <select name="location" class="form-control">
+                    <option value="">Any Location</option>
+                    {% for loc in locations %}
+                    <option value="{{ loc }}">{{ loc }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Certification (keyword)</label>
+                <input type="text" name="certification" class="form-control"
+                    placeholder="e.g., Epic, PMP, CPHIMS">
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+            Search for Matching Candidates
+        </button>
+    </div>
+</form>
+
+<!-- Quick Access: Recent Jobs -->
+<div class="card mt-3">
+    <div class="card-header">
+        <h2 class="card-title">Open Positions</h2>
+    </div>
+    <div class="grid grid-3">
+        {% for job in jobs[:9] %}
+        <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+            <strong>{{ job.title }}</strong>
+            <p class="text-small text-muted mb-1">{{ job.employer }}</p>
+            <div>
+                <span class="badge badge-primary">{{ job.primary_ehr_system }}</span>
+                <span class="badge badge-{% if job.contract_type == 'Contract' %}warning{% else %}success{% endif %}">
+                    {{ job.contract_type }}
+                </span>
+                <span class="badge badge-info">{{ job.employment_type }}</span>
+            </div>
+            <div class="mt-2">
+                <a href="/job/{{ job.id }}" class="text-small">View Details</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

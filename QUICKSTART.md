@@ -4,33 +4,39 @@ Get the system running in under 10 minutes.
 
 ## Prerequisites
 
-- Python 3.9+
-- pip
+- Python 3.9+ (download from https://python.org)
+- pip (included with Python)
+- Windows Command Prompt
 
 ---
 
 ## Option A: Web Interface (Recommended for Non-Technical Users)
 
-### Step 1: Install Dependencies
+### Step 1: Open Command Prompt and Navigate to Project
 
-```bash
-cd /home/user/RetrievalApp
+```cmd
+cd C:\path\to\RetrievalApp
+```
+
+### Step 2: Install Flask
+
+```cmd
 pip install flask
 ```
 
-### Step 2: Generate Test Data
+### Step 3: Generate Test Data
 
-```bash
-python scripts/generate_test_data.py
+```cmd
+python scripts\generate_test_data.py
 ```
 
-### Step 3: Start the Web Application
+### Step 4: Start the Web Application
 
-```bash
-python web/app.py
+```cmd
+python web\app.py
 ```
 
-### Step 4: Open in Browser
+### Step 5: Open in Browser
 
 Navigate to: **http://localhost:5000**
 
@@ -44,50 +50,55 @@ You can now:
 
 ## Option B: Command Line Scripts
 
-### Step 1: Install Dependencies
+### Step 1: Open Command Prompt and Navigate to Project
 
-```bash
-cd /home/user/RetrievalApp
+```cmd
+cd C:\path\to\RetrievalApp
+```
+
+### Step 2: Install Dependencies
+
+```cmd
 pip install -e .
 ```
 
 Or install core dependencies directly:
 
-```bash
+```cmd
 pip install numpy
 ```
 
-### Step 2: Generate Test Data
+### Step 3: Generate Test Data
 
-```bash
-python scripts/generate_test_data.py
+```cmd
+python scripts\generate_test_data.py
 ```
 
 This creates:
-- `test_data/resumes/` - 100 healthcare implementation resumes
-- `test_data/job_descriptions/` - 20 EHR/hospital implementation jobs
+- `test_data\resumes\` - 100 healthcare implementation resumes
+- `test_data\job_descriptions\` - 20 EHR/hospital implementation jobs
 
-### Step 3: Run Resume Matching
+### Step 4: Run Resume Matching
 
-```bash
-python scripts/match_resumes.py
+```cmd
+python scripts\match_resumes.py
 ```
 
 This will:
 1. Load all resumes and job descriptions
 2. Build the retrieval index
 3. Match each job to top candidate resumes
-4. Output results to `results/matches.json`
+4. Output results to `results\matches.json`
 
-### Step 4: View Results
+### Step 5: View Results
 
-```bash
-python scripts/view_results.py
+```cmd
+python scripts\view_results.py
 ```
 
 Or check results directly:
-```bash
-cat results/matches.json | python -m json.tool | head -100
+```cmd
+type results\matches.json
 ```
 
 ---
@@ -96,8 +107,8 @@ cat results/matches.json | python -m json.tool | head -100
 
 Run everything at once:
 
-```bash
-python scripts/run_all.py
+```cmd
+python scripts\run_all.py
 ```
 
 ---
@@ -105,21 +116,23 @@ python scripts/run_all.py
 ## Directory Structure After Setup
 
 ```
-RetrievalApp/
-├── test_data/
-│   ├── resumes/           # 100 JSON resume files
+RetrievalApp\
+├── test_data\
+│   ├── resumes\              # 100 JSON resume files
 │   │   ├── resume_001.json
 │   │   └── ...
-│   └── job_descriptions/  # 20 JSON job files
+│   └── job_descriptions\     # 20 JSON job files
 │       ├── job_001.json
 │       └── ...
-├── results/
-│   └── matches.json       # Matching results
-└── scripts/
-    ├── generate_test_data.py
-    ├── match_resumes.py
-    ├── view_results.py
-    └── run_all.py
+├── results\
+│   └── matches.json          # Matching results
+├── scripts\
+│   ├── generate_test_data.py
+│   ├── match_resumes.py
+│   ├── view_results.py
+│   └── run_all.py
+└── web\
+    └── app.py                # Web interface
 ```
 
 ---
@@ -128,7 +141,7 @@ RetrievalApp/
 
 ### Adjust Matching Parameters
 
-Edit `scripts/match_resumes.py`:
+Edit `scripts\match_resumes.py`:
 
 ```python
 # Number of top candidates per job
@@ -141,28 +154,32 @@ LEXICAL_WEIGHT = 0.3
 
 ### Generate More Test Data
 
-```bash
-python scripts/generate_test_data.py --resumes 200 --jobs 50
+```cmd
+python scripts\generate_test_data.py --resumes 200 --jobs 50
 ```
 
 ---
 
 ## Troubleshooting
 
-**ImportError: No module named 'sentence_transformers'**
-```bash
-pip install sentence-transformers
+**'python' is not recognized as an internal or external command**
+- Make sure Python is installed and added to PATH
+- Try using `py` instead of `python`
+
+**ImportError: No module named 'flask'**
+```cmd
+pip install flask
 ```
+
+**Port 5000 already in use**
+- Close other applications using port 5000, or
+- Edit `web\app.py` and change `port=5000` to another port (e.g., `port=8080`)
 
 **Memory issues with large datasets**
-```bash
-# Use smaller embedding model
-export EMBEDDING_MODEL=all-MiniLM-L6-v2
+```cmd
+set EMBEDDING_MODEL=all-MiniLM-L6-v2
+python scripts\match_resumes.py
 ```
-
-**Slow first run**
-- First run downloads embedding model (~90MB)
-- Subsequent runs use cached model
 
 ---
 
@@ -181,6 +198,17 @@ Matching Job: Senior EHR Implementation Consultant
   #3: Michael Chen (Score: 0.82) - 7 yrs healthcare IT
   ...
 
-Results saved to: results/matches.json
+Results saved to: results\matches.json
 Total time: 45 seconds
 ```
+
+---
+
+## Web Interface Screenshots
+
+After starting the web app, you'll see:
+
+1. **Home Page**: Search form with job selection and filters
+2. **Results Page**: Ranked candidates with match percentages
+3. **Candidate Page**: Full resume with experience, skills, certifications
+4. **Job Page**: Complete job requirements and responsibilities

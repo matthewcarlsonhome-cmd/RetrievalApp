@@ -58,12 +58,15 @@ Total Development Time: 1 hour 49 minutes
 Deliverables:
 ├── Core RAG System (5 modules, 15+ files)
 ├── Advanced Features Module (7 innovative components)
-├── Healthcare Resume Matching System
-│   ├── Test data generator (100 resumes, 20 jobs)
+├── Multi-Domain Resume Matching System
+│   ├── Healthcare IT (100 resumes, 20 jobs)
+│   ├── General IT/Business/Marketing (100 resumes, 30 jobs)
 │   ├── TF-IDF + keyword matching engine
+│   ├── Neural embedding matching
 │   └── Explainable scoring system
 ├── Web Interface
-│   ├── Search page with filters
+│   ├── Generalized search page with domain filters
+│   ├── Primary System/Skill filtering
 │   ├── Ranked results with explanations
 │   ├── Candidate profile views
 │   ├── Job detail views
@@ -71,10 +74,12 @@ Deliverables:
 ├── Documentation
 │   ├── README.md (user guide)
 │   ├── QUICKSTART.md (Windows setup)
-│   └── DESIGN.md (1000+ lines of architecture docs)
+│   └── DESIGN.md (2000+ lines of architecture docs)
 └── Scripts
-    ├── generate_test_data.py
+    ├── generate_test_data.py (healthcare)
+    ├── generate_general_test_data.py (IT/Business/Marketing)
     ├── match_resumes.py
+    ├── matching_enhancements.py
     ├── view_results.py
     └── run_all.py
 ```
@@ -91,7 +96,8 @@ Deliverables:
 
 | Aspect | This PoC | Production Target |
 |--------|----------|-------------------|
-| Data Volume | 100 resumes | 10,000+ resumes |
+| Data Volume | **200 resumes, 50 jobs** | 10,000+ resumes |
+| Domains | **4** (Healthcare, Technology, Business, Marketing) | Unlimited |
 | Matching Speed | 5ms/job (TF-IDF), ~500ms (Neural) | <50ms/job at scale |
 | Embedding | TF-IDF + Neural (dual mode) | ✅ Implemented |
 | Storage | In-memory JSON | PostgreSQL + Vector DB |
@@ -1819,6 +1825,97 @@ results = matcher.match_job(it_job, top_k=10)
 
 for match in results.matches:
     print(f"{match.candidate_name}: {match.score:.2%}")
+```
+
+### Web Interface Generalization
+
+The web interface (`web/app.py`) has been generalized to support all domains, not just healthcare.
+
+#### Multi-Source Data Loading
+
+The application now loads data from multiple sources on startup:
+
+```
+DATA SOURCES
+════════════
+
+┌─────────────────────────────────────────────────────────────┐
+│                     Data Loading Flow                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  test_data/resumes/         ──────┐                         │
+│  (100 Healthcare IT)              │                         │
+│                                   ├──►  RESUMES (200 total) │
+│  data/general/resumes/      ──────┘                         │
+│  (100 IT/Business/Marketing)                                │
+│                                                             │
+│  test_data/job_descriptions/ ──────┐                        │
+│  (20 Healthcare jobs)              │                        │
+│                                    ├──►  JOBS (50 total)    │
+│  data/general/job_descriptions/ ───┘                        │
+│  (30 IT/Business/Marketing jobs)                            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+#### Generalized Filter System
+
+| Filter | Before (Healthcare-only) | After (Multi-domain) |
+|--------|--------------------------|----------------------|
+| **System/Skill** | "EHR System Experience" | "Primary System / Skill" |
+| **Domain** | Not available | Healthcare, Technology, Business, Marketing |
+| **Experience** | Min/Max years | Same |
+| **Location** | Any location | Same |
+| **Certification** | Epic, PMP, CPHIMS | AWS, PMP, Epic, CISSP, CPA, etc. |
+
+**How Filtering Works Across Domains**:
+
+```python
+# The filter_resumes function checks multiple fields based on domain:
+def filter_resumes(resumes, filters):
+    if filters.get("primary_system"):
+        system = filters["primary_system"].lower()
+        filtered = [r for r in filtered if
+            system in r.get("primary_ehr_system", "").lower()      # Healthcare
+            or system in r.get("primary_tech_stack", "").lower()   # Technology
+            or system in r.get("primary_specialty", "").lower()    # Business/Marketing
+            or system in r.get("tech_specialization", "").lower()  # Tech specialization
+        ]
+```
+
+#### Primary System/Skill Detection
+
+The `get_primary_systems()` function extracts systems from all domains:
+
+| Domain | Field | Example Values |
+|--------|-------|----------------|
+| Healthcare | `primary_ehr_system` | Epic, Cerner, MEDITECH |
+| Technology | `primary_tech_stack` | AWS, Python, Java |
+| Technology | `tech_specialization` | Cloud, Fullstack, Data |
+| Business | `primary_specialty` | Analysis, Product, Operations |
+| Marketing | `primary_specialty` | Digital, Content, Analytics |
+
+#### UI Statistics Display
+
+```
+┌───────────────────────────────────────────────────────────┐
+│                                                           │
+│    200              50              4              27     │
+│  Candidates    Open Positions    Domains        Locations │
+│                                                           │
+└───────────────────────────────────────────────────────────┘
+```
+
+#### Job Dropdown Shows Domain
+
+```html
+<!-- Jobs now display their domain for easy identification -->
+<option value="job_id">
+    Senior Software Engineer - Netflix [Technology]
+</option>
+<option value="job_id">
+    Epic Implementation Consultant - Boston Medical Center (Epic)
+</option>
 ```
 
 ### Why Simple Matching Over ML-Heavy Approaches

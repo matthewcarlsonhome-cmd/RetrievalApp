@@ -1,129 +1,201 @@
-# Production RAG System
+# Healthcare Resume Matching System
 
-A production-ready Retrieval-Augmented Generation (RAG) system that addresses the five critical areas often overlooked in tutorials:
+A production-ready retrieval system for matching healthcare implementation professional resumes to EHR job descriptions. Built on a RAG (Retrieval-Augmented Generation) architecture.
 
-1. **Data Preparation** - Chunking, embeddings, and validation
-2. **Retrieval** - Hybrid search, reranking, and metadata filtering
-3. **Generation** - Token management, prompt engineering, hallucination prevention
-4. **Orchestration** - Query routing, fallbacks, tool handoff
-5. **Observability** - Logging, metrics, and feedback loops
+## Features
 
-## Installation
+- **Web Interface** - Search and filter candidates with a user-friendly UI
+- **Resume-Job Matching** - TF-IDF + keyword scoring with explainable results
+- **Filtering** - Filter by EHR system, experience, location, certifications
+- **Test Data** - Generate realistic healthcare IT resumes and job descriptions
 
-```bash
-pip install -e .
+---
+
+## Quick Start (Windows)
+
+### Option A: Web Interface (Recommended)
+
+```cmd
+:: 1. Navigate to project folder
+cd C:\path\to\RetrievalApp
+
+:: 2. Install Flask
+pip install flask
+
+:: 3. Generate test data (100 resumes, 20 jobs)
+python scripts\generate_test_data.py
+
+:: 4. Start the web server
+python web\app.py
 ```
 
-## Quick Start
+**Open http://localhost:5000 in your browser**
 
-```python
-from retrieval_app import RAGPipeline
+### Option B: Command Line
 
-# Initialize the pipeline
-pipeline = RAGPipeline()
-
-# Ingest documents
-documents = [
-    ("doc_id", "Document text content...", {"source": "file.pdf"})
-]
-pipeline.ingest_documents(documents)
-
-# Query
-response = pipeline.query("What is machine learning?")
-print(response.answer)
-print(f"Confidence: {response.confidence}")
-print(f"Sources: {response.sources}")
+```cmd
+:: Generate data and run matching
+python scripts\generate_test_data.py
+python scripts\match_resumes.py
+python scripts\view_results.py
 ```
 
-## Architecture
+---
 
-### Data Preparation (`data_prep/`)
+## Web Interface
 
-- **Chunker**: Multiple strategies (fixed-size, sentence, recursive, semantic)
-- **Embedder**: Embedding generation with caching and batch processing
-- **Validator**: Data quality checks before indexing
-- **Truth Sets**: Ground truth management for evaluation
+The web UI allows non-technical users to:
 
-### Retrieval (`retrieval/`)
+| Feature | Description |
+|---------|-------------|
+| **Search** | Select a job or enter custom keywords |
+| **Filter** | EHR system, experience range, location, certifications |
+| **Results** | Ranked candidates with match scores (0-100%) |
+| **Explanations** | See WHY each candidate matched |
+| **Profiles** | View full candidate resumes |
 
-- **Hybrid Retriever**: Combines semantic and lexical (BM25) search
-- **Vector Store**: Pluggable backends (in-memory, ChromaDB)
-- **Reranker**: Cross-encoder and MMR reranking for precision
-- **Metadata Filtering**: Filter results by document attributes
+### Screenshots
 
-### Generation (`generation/`)
+After starting `python web\app.py`:
 
-- **Prompt Manager**: Template-based prompt construction
-- **Evidence Selector**: Smart selection within token budgets
-- **Response Generator**: LLM integration with hallucination checks
+1. **Home Page** - Search form with job selection and filters
+2. **Results Page** - Ranked candidates with match percentages
+3. **Candidate Page** - Full resume with experience, skills, certifications
+4. **Job Page** - Complete job requirements
 
-### Orchestration (`orchestration/`)
+---
 
-- **Query Router**: Route queries to appropriate handlers
-- **Query Processor**: Rewriting, decomposition, filter extraction
-- **Fallback Handler**: Graceful degradation strategies
+## Test Data
 
-### Observability (`observability/`)
+Generate realistic healthcare IT test data:
 
-- **Logger**: Structured logging with retrieval miss tracking
-- **Metrics**: Latency percentiles, quality scores, Prometheus export
-- **Feedback**: User feedback collection and analysis
+```cmd
+:: Default: 100 resumes, 20 jobs
+python scripts\generate_test_data.py
+
+:: Custom amounts
+python scripts\generate_test_data.py --resumes 500 --jobs 100
+```
+
+### Resume Data Includes:
+- Names, contact info, locations
+- EHR systems (Epic, Cerner, MEDITECH, athenahealth, Allscripts)
+- Modules (EpicCare Ambulatory, Cadence, PowerChart, etc.)
+- Certifications (Epic Certified, PMP, CPHIMS, etc.)
+- Work history with achievements
+- Education and skills
+
+### Job Data Includes:
+- Full-time and part-time positions
+- Contract and permanent roles
+- Remote, hybrid, on-site options
+- Required qualifications and certifications
+- Salary ranges
+
+---
+
+## How Matching Works
+
+Candidates are scored using a weighted combination:
+
+| Component | Weight | Description |
+|-----------|--------|-------------|
+| EHR System Match | 30% | Primary EHR system alignment |
+| Module Experience | 20% | Specific module knowledge |
+| Years Experience | 15% | Meets minimum requirements |
+| Certifications | 15% | Required certifications held |
+| Skills Overlap | 20% | Matching technical skills |
+
+Results include explanations:
+```
+#1: Jonathan Allen - 51.3% Match
+    ✓ Primary EHR match: Epic
+    ✓ Module matches: 2/3
+    ✓ Experience: 15 years (required: 2+)
+    ✓ Required certifications: 1/1
+```
+
+---
+
+## API Endpoints
+
+For programmatic access:
+
+```
+GET  /api/resumes     - List all candidates
+GET  /api/jobs        - List all jobs
+POST /api/search      - Search with filters (JSON body)
+```
+
+Example API search:
+```cmd
+curl -X POST http://localhost:5000/api/search ^
+  -H "Content-Type: application/json" ^
+  -d "{\"job_id\": \"job_001\", \"top_k\": 10}"
+```
+
+---
+
+## Project Structure
+
+```
+RetrievalApp\
+├── web\
+│   ├── app.py                 # Flask web application
+│   └── templates\             # HTML templates
+├── scripts\
+│   ├── generate_test_data.py  # Create test resumes/jobs
+│   ├── match_resumes.py       # CLI matching script
+│   ├── view_results.py        # View results
+│   └── run_all.py             # One-command runner
+├── test_data\                 # Generated test data
+│   ├── resumes\               # JSON resume files
+│   └── job_descriptions\      # JSON job files
+├── results\                   # Matching results
+├── docs\
+│   └── DESIGN.md              # Architecture documentation
+├── QUICKSTART.md              # Detailed setup guide
+└── README.md                  # This file
+```
+
+---
 
 ## Configuration
 
-```python
-from retrieval_app import RAGConfig
-
-# Use preset configurations
-config = RAGConfig.for_high_precision()  # Optimize for accuracy
-config = RAGConfig.for_high_recall()     # Optimize for coverage
-config = RAGConfig.for_low_latency()     # Optimize for speed
-
-# Or customize
-config = RAGConfig()
-config.retrieval.mode = RetrievalMode.HYBRID
-config.retrieval.semantic_weight = 0.7
-config.generation.max_context_tokens = 4000
-```
-
-## Evaluation
+Edit `scripts\match_resumes.py` to adjust:
 
 ```python
-from retrieval_app.data_prep.truth_sets import TruthSetManager
-
-# Create truth sets
-manager = TruthSetManager()
-manager.add_entry(
-    truth_set_name="my_test_set",
-    query="What is X?",
-    expected_answer="X is...",
-    relevant_chunk_ids=["chunk_1", "chunk_2"]
-)
-
-# Evaluate
-results = manager.evaluate_retrieval(
-    truth_set_name="my_test_set",
-    retrieval_fn=pipeline.retriever.get_chunk_ids
-)
-print(f"Mean Recall: {results.mean_recall:.2%}")
+TOP_K = 10              # Number of top candidates per job
+SEMANTIC_WEIGHT = 0.7   # Weight for TF-IDF similarity
+LEXICAL_WEIGHT = 0.3    # Weight for keyword matching
 ```
 
-## Key Design Decisions
+---
 
-### Why Hybrid Search?
-Semantic search alone misses exact keyword matches. BM25 alone misses semantic similarity. Combining them with Reciprocal Rank Fusion gives the best of both.
+## Troubleshooting
 
-### Why Reranking?
-Initial retrieval optimizes for recall. Reranking with cross-encoders optimizes for precision, ensuring the most relevant chunks appear first.
+**'python' is not recognized**
+```cmd
+py scripts\generate_test_data.py
+py web\app.py
+```
 
-### Why Token Budgeting?
-"Stuffing all context in the prompt" leads to worse answers. Smart evidence selection respects token limits while maximizing information value.
+**ImportError: No module named 'flask'**
+```cmd
+pip install flask
+```
 
-### Why Query Routing?
-Not every query needs RAG. Simple questions, calculations, and out-of-scope queries should be handled differently to save resources and improve UX.
+**Port 5000 already in use**
+- Edit `web\app.py` and change `port=5000` to `port=8080`
 
-### Why Feedback Loops?
-Without feedback, RAG systems "rot silently." Collecting user feedback enables continuous improvement and catch regressions.
+---
+
+## Documentation
+
+- **[QUICKSTART.md](QUICKSTART.md)** - Step-by-step setup guide
+- **[docs/DESIGN.md](docs/DESIGN.md)** - Architecture and design decisions
+
+---
 
 ## License
 

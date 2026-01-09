@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """
-Healthcare Resume Matching - Web Interface
+Resume Matching System - Web Interface
 
-A simple Flask application for non-technical users to search and match
-resumes against job descriptions.
+A Flask application for matching resumes to job descriptions across multiple domains:
+- Healthcare IT (EHR systems, clinical implementations)
+- Technology (software engineering, cloud, data)
+- Business (analysts, product managers, operations)
+- Marketing (digital, content, analytics)
 
 Supports three matching modes:
 - TF-IDF + Keywords (fast, no dependencies)
@@ -72,8 +75,12 @@ def not_found(e):
 # =============================================================================
 
 BASE_DIR = Path(__file__).parent.parent
-RESUMES_DIR = BASE_DIR / "test_data" / "resumes"
-JOBS_DIR = BASE_DIR / "test_data" / "job_descriptions"
+
+# Data directories - healthcare (original) and general (IT/Business/Marketing)
+HEALTHCARE_RESUMES_DIR = BASE_DIR / "test_data" / "resumes"
+HEALTHCARE_JOBS_DIR = BASE_DIR / "test_data" / "job_descriptions"
+GENERAL_RESUMES_DIR = BASE_DIR / "data" / "general" / "resumes"
+GENERAL_JOBS_DIR = BASE_DIR / "data" / "general" / "job_descriptions"
 
 # Global data stores (loaded on startup)
 RESUMES = []
@@ -90,21 +97,45 @@ CHUNKED_AVAILABLE = False
 
 
 def load_data():
-    """Load resumes and jobs on startup."""
+    """Load resumes and jobs from all data sources on startup."""
     global RESUMES, JOBS, MATCHERS, NEURAL_AVAILABLE, CHUNKED_AVAILABLE
 
     try:
-        if RESUMES_DIR.exists():
-            RESUMES = load_json_files(RESUMES_DIR)
-            logger.info(f"Loaded {len(RESUMES)} resumes")
+        # Load healthcare resumes
+        if HEALTHCARE_RESUMES_DIR.exists():
+            healthcare_resumes = load_json_files(HEALTHCARE_RESUMES_DIR)
+            RESUMES.extend(healthcare_resumes)
+            logger.info(f"Loaded {len(healthcare_resumes)} healthcare resumes")
         else:
-            logger.warning(f"{RESUMES_DIR} not found. Run generate_test_data.py first.")
+            logger.warning(f"{HEALTHCARE_RESUMES_DIR} not found. Run generate_test_data.py first.")
 
-        if JOBS_DIR.exists():
-            JOBS = load_json_files(JOBS_DIR)
-            logger.info(f"Loaded {len(JOBS)} job descriptions")
+        # Load general resumes (IT, Business, Marketing)
+        if GENERAL_RESUMES_DIR.exists():
+            general_resumes = load_json_files(GENERAL_RESUMES_DIR)
+            RESUMES.extend(general_resumes)
+            logger.info(f"Loaded {len(general_resumes)} general resumes")
         else:
-            logger.warning(f"{JOBS_DIR} not found. Run generate_test_data.py first.")
+            logger.warning(f"{GENERAL_RESUMES_DIR} not found. Run generate_general_test_data.py first.")
+
+        logger.info(f"Total resumes loaded: {len(RESUMES)}")
+
+        # Load healthcare jobs
+        if HEALTHCARE_JOBS_DIR.exists():
+            healthcare_jobs = load_json_files(HEALTHCARE_JOBS_DIR)
+            JOBS.extend(healthcare_jobs)
+            logger.info(f"Loaded {len(healthcare_jobs)} healthcare jobs")
+        else:
+            logger.warning(f"{HEALTHCARE_JOBS_DIR} not found. Run generate_test_data.py first.")
+
+        # Load general jobs (IT, Business, Marketing)
+        if GENERAL_JOBS_DIR.exists():
+            general_jobs = load_json_files(GENERAL_JOBS_DIR)
+            JOBS.extend(general_jobs)
+            logger.info(f"Loaded {len(general_jobs)} general jobs")
+        else:
+            logger.warning(f"{GENERAL_JOBS_DIR} not found. Run generate_general_test_data.py first.")
+
+        logger.info(f"Total jobs loaded: {len(JOBS)}")
 
         # Check if neural matching is available
         NEURAL_AVAILABLE = is_neural_available()
@@ -230,17 +261,68 @@ def get_unique_values(field_path: str, data_list: list) -> list:
     return sorted(values)
 
 
+def get_primary_systems(resumes: list) -> list:
+    """
+    Extract all primary systems/technologies from resumes across all domains.
+
+    Handles:
+    - Healthcare: primary_ehr_system (Epic, Cerner, etc.)
+    - Technology: primary_tech_stack (AWS, Python, etc.)
+    - Business: primary_specialty (analysis, product, etc.)
+    - Marketing: primary_specialty (digital, content, etc.)
+    """
+    systems = set()
+    for r in resumes:
+        # Healthcare
+        if r.get("primary_ehr_system"):
+            systems.add(r["primary_ehr_system"])
+        # Technology
+        if r.get("primary_tech_stack"):
+            systems.add(r["primary_tech_stack"])
+        # Business/Marketing specialty
+        if r.get("primary_specialty"):
+            systems.add(r["primary_specialty"].replace("_", " ").title())
+        # Tech specialization
+        if r.get("tech_specialization"):
+            systems.add(r["tech_specialization"].title())
+    return sorted(systems)
+
+
+def get_domains(resumes: list) -> list:
+    """Extract unique domains from resumes."""
+    domains = set()
+    for r in resumes:
+        if r.get("domain"):
+            domains.add(r["domain"].title())
+        elif r.get("primary_ehr_system"):
+            domains.add("Healthcare")
+    return sorted(domains)
+
+
 def filter_resumes(resumes: list, filters: dict) -> list:
-    """Apply filters to resume list."""
+    """Apply filters to resume list across all domains."""
     filtered = resumes
 
-    # Filter by EHR system
-    if filters.get("ehr_system"):
-        ehr = filters["ehr_system"].lower()
+    # Filter by primary system (EHR, tech stack, or specialty)
+    if filters.get("primary_system"):
+        system = filters["primary_system"].lower()
         filtered = [
             r for r in filtered
-            if r.get("primary_ehr_system", "").lower() == ehr
-            or any(ehr in str(exp.get("ehr_systems", [])).lower() for exp in r.get("experience", []))
+            if system in r.get("primary_ehr_system", "").lower()
+            or system in r.get("primary_tech_stack", "").lower()
+            or system in r.get("primary_specialty", "").lower()
+            or system in r.get("tech_specialization", "").lower()
+            or any(system in str(exp.get("ehr_systems", [])).lower() for exp in r.get("experience", []))
+            or any(system in str(exp.get("tech_stack", [])).lower() for exp in r.get("experience", []))
+        ]
+
+    # Filter by domain
+    if filters.get("domain"):
+        domain = filters["domain"].lower()
+        filtered = [
+            r for r in filtered
+            if r.get("domain", "").lower() == domain
+            or (domain == "healthcare" and r.get("primary_ehr_system"))
         ]
 
     # Filter by minimum experience
@@ -280,7 +362,8 @@ def filter_resumes(resumes: list, filters: dict) -> list:
 def index():
     """Home page - search interface."""
     # Get unique values for filter dropdowns
-    ehr_systems = get_unique_values("primary_ehr_system", RESUMES)
+    primary_systems = get_primary_systems(RESUMES)
+    domains = get_domains(RESUMES)
     locations = sorted(set(
         r.get("personal_info", {}).get("location", "").split(",")[0].strip()
         for r in RESUMES
@@ -290,7 +373,8 @@ def index():
     return render_template(
         "index.html",
         jobs=JOBS,
-        ehr_systems=ehr_systems,
+        primary_systems=primary_systems,
+        domains=domains,
         locations=locations,
         resume_count=len(RESUMES),
         job_count=len(JOBS),
@@ -317,7 +401,8 @@ def search():
 
     # Get filters
     filters = {
-        "ehr_system": request.form.get("ehr_system"),
+        "primary_system": request.form.get("primary_system"),
+        "domain": request.form.get("domain"),
         "min_experience": request.form.get("min_experience"),
         "max_experience": request.form.get("max_experience"),
         "location": request.form.get("location"),
@@ -527,7 +612,7 @@ def api_status():
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("Healthcare Resume Matching - Web Interface")
+    print("Resume Matching System - Web Interface")
     print("=" * 60)
 
     load_data()
@@ -536,8 +621,10 @@ if __name__ == "__main__":
         print("\nNo test data found. Generating...")
         import subprocess
         subprocess.run([sys.executable, str(BASE_DIR / "scripts" / "generate_test_data.py")])
+        subprocess.run([sys.executable, str(BASE_DIR / "scripts" / "generate_general_test_data.py")])
         load_data()
 
+    print(f"\nLoaded {len(RESUMES)} resumes and {len(JOBS)} jobs")
     print(f"\nStarting web server...")
     print(f"Open http://localhost:5000 in your browser")
     print("=" * 60)

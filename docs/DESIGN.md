@@ -25,6 +25,7 @@
 10. [Security Considerations](#security-considerations)
 11. [Testing Strategy](#testing-strategy)
 12. [Healthcare Resume Matching - Design Decisions](#healthcare-resume-matching---design-decisions)
+    - [Dual Matching Mode Architecture](#dual-matching-mode-architecture)
 
 ---
 
@@ -87,8 +88,8 @@ Deliverables:
 | Aspect | This PoC | Production Target |
 |--------|----------|-------------------|
 | Data Volume | 100 resumes | 10,000+ resumes |
-| Matching Speed | 5ms/job | <50ms/job at scale |
-| Embedding | TF-IDF | Sentence Transformers |
+| Matching Speed | 5ms/job (TF-IDF), ~500ms (Neural) | <50ms/job at scale |
+| Embedding | TF-IDF + Neural (dual mode) | ✅ Implemented |
 | Storage | In-memory JSON | PostgreSQL + Vector DB |
 | Auth | None | OAuth/SSO |
 | Deployment | Local Flask | Kubernetes/Cloud |
@@ -96,7 +97,7 @@ Deliverables:
 ### Next Steps for Production
 
 1. **Data Pipeline**: Connect to real resume/job sources (ATS integration)
-2. **Neural Embeddings**: Add sentence-transformers for semantic matching
+2. ~~**Neural Embeddings**: Add sentence-transformers for semantic matching~~ ✅ DONE
 3. **Database**: PostgreSQL for structured data, Pinecone/Weaviate for vectors
 4. **Authentication**: Add user login and role-based access
 5. **Deployment**: Containerize and deploy to cloud infrastructure
@@ -1070,9 +1071,56 @@ See `src/retrieval_app/core/config.py` for complete configuration documentation 
 
 This system is configured for matching healthcare implementation professional resumes to EHR (Electronic Health Records) job descriptions. The domain presents unique challenges that influenced our design decisions.
 
-### Why TF-IDF + Keyword Matching (Instead of Pure Neural Embeddings)
+### Dual Matching Mode Architecture
 
-**Decision**: We use a hybrid approach combining TF-IDF similarity with structured keyword matching rather than relying solely on neural embeddings.
+**Current Implementation**: Users can select between two matching algorithms via the web UI:
+
+| Mode | Algorithm | Latency | Best For |
+|------|-----------|---------|----------|
+| **TF-IDF + Keywords** | Term frequency similarity + structured field matching | ~5ms/100 resumes | Exact term matching, certifications, EHR systems |
+| **Neural Embeddings** | sentence-transformers semantic similarity + keyword matching | ~500ms/100 resumes | Understanding context, synonyms, related concepts |
+
+**How to Enable Neural Mode**:
+```cmd
+pip install sentence-transformers
+```
+
+When sentence-transformers is installed, a "Matching Algorithm" dropdown appears in the search form allowing users to switch between modes.
+
+**Implementation Details**:
+
+```python
+# Factory pattern for matcher selection
+class MatchingMode(Enum):
+    TFIDF = "tfidf"      # Fast, keyword-based
+    NEURAL = "neural"    # Semantic understanding
+
+def create_matcher(mode: MatchingMode) -> BaseResumeMatcher:
+    if mode == MatchingMode.TFIDF:
+        return TFIDFResumeMatcher()
+    elif mode == MatchingMode.NEURAL:
+        return NeuralResumeMatcher(model_name="all-MiniLM-L6-v2")
+```
+
+**Scoring Formula (Both Modes)**:
+```
+combined_score = (SEMANTIC_WEIGHT × similarity_score) + (LEXICAL_WEIGHT × keyword_score)
+
+Where:
+- SEMANTIC_WEIGHT = 0.7 (TF-IDF or neural similarity)
+- LEXICAL_WEIGHT = 0.3 (structured field matching)
+```
+
+**Web UI Integration**:
+- Dropdown shows only available modes (neural hidden if library not installed)
+- Results page displays which mode was used (purple badge for Neural, blue for TF-IDF)
+- `/api/status` endpoint reports available matching modes
+
+---
+
+### Why TF-IDF + Keyword Matching (Default Mode)
+
+**Decision**: TF-IDF is the default because it combines speed with good accuracy for healthcare IT terminology.
 
 **Rationale**:
 
@@ -1194,14 +1242,14 @@ tfidf_score = self._embedding_similarity(job_embedding, resume_embedding)
 
 ### Performance Tradeoffs
 
-| Approach | Matching Time (100 resumes) | Accuracy | Explainability |
-|----------|---------------------------|----------|----------------|
-| TF-IDF + Keywords (current) | ~50ms | Good | Excellent |
-| Sentence Transformers | ~500ms | Better | Moderate |
-| Fine-tuned Domain Model | ~200ms | Best | Poor |
-| GPT Scoring | ~30s | Variable | None |
+| Approach | Matching Time (100 resumes) | Accuracy | Explainability | Status |
+|----------|---------------------------|----------|----------------|--------|
+| TF-IDF + Keywords | ~50ms | Good | Excellent | ✅ Implemented (default) |
+| Sentence Transformers | ~500ms | Better | Moderate | ✅ Implemented (optional) |
+| Fine-tuned Domain Model | ~200ms | Best | Poor | Future |
+| GPT Scoring | ~30s | Variable | None | Not planned |
 
-**Decision**: Optimize for speed and explainability in initial deployment, with architecture supporting accuracy improvements.
+**Decision**: Provide both TF-IDF (speed) and Neural (accuracy) options, letting users choose based on their needs. The system defaults to TF-IDF for fast iteration, with Neural available for more nuanced semantic matching.
 
 ### Data Prep Visibility (Addressing Core Feedback)
 
@@ -1230,7 +1278,7 @@ This addresses the feedback about needing visibility into transformations before
 
 ### Known Limitations and Future Work
 
-1. **No Semantic Equivalence**: "EHR" and "Electronic Health Record" are treated as different terms. Future: Add synonym expansion.
+1. **Semantic Equivalence (Partial)**: In TF-IDF mode, "EHR" and "Electronic Health Record" are treated as different terms. Neural mode handles this better but may still miss domain-specific synonyms. Future: Add explicit synonym expansion.
 
 2. **No Location Matching**: Jobs in Boston should prefer candidates in/near Boston. Future: Add geographic distance scoring.
 
@@ -1244,10 +1292,11 @@ This addresses the feedback about needing visibility into transformations before
 
 | Decision | What We Gained | What We Sacrificed |
 |----------|----------------|-------------------|
-| TF-IDF over neural | Speed, explainability, simplicity | Semantic understanding |
+| Dual mode (TF-IDF + Neural) | User choice between speed and accuracy | Slightly more complex codebase |
+| TF-IDF as default | Speed, explainability, no extra deps | Semantic understanding (but Neural available) |
 | Structured JSON | Precise field matching | Handling unstructured input |
 | Weighted keywords | Domain accuracy | General flexibility |
-| Simple dependencies | Fast setup, portability | Advanced ML capabilities |
+| Optional sentence-transformers | Semantic matching when needed | Requires extra install for Neural mode |
 | Fixed scoring weights | Predictability | Automatic optimization |
 
-These tradeoffs are appropriate for an initial deployment focused on demonstrating capability. The architecture supports iterative improvement as usage data accumulates.
+These tradeoffs are appropriate for an initial deployment focused on demonstrating capability. The dual-mode architecture allows users to select the right tool for their specific matching needs.

@@ -1,0 +1,62 @@
+{
+  "id": "resume_047",
+  "personal_info": {
+    "name": "Jeffrey Lewis",
+    "email": "jeffreylewis@consultant.net",
+    "phone": "(757) 627-2151",
+    "location": "Denver, CO",
+    "linkedin": "linkedin.com/in/jeffrey-lewis-7764"
+  },
+  "summary": "Clinical informatics expert with 2+ years specializing in Allscripts implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 2,
+  "primary_ehr_system": "Allscripts",
+  "experience": [
+    {
+      "title": "Clinical Applications Analyst",
+      "employer": "Deloitte Healthcare",
+      "location": "Milwaukee, WI",
+      "start_date": "June 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 200+ providers across 20 locations",
+        "Led optimization project resulting in $50K annual cost savings"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "Temple University",
+      "graduation_year": 2019,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Certified Scrum Master (CSM)",
+    "Epic Certified - EpicCare Inpatient"
+  ],
+  "skills": [
+    "Business Intelligence",
+    "HIPAA Compliance",
+    "Project Management",
+    "FHIR APIs",
+    "HL7 Interfaces",
+    "EHR Implementation",
+    "SQL",
+    "Allscripts",
+    "Population Health",
+    "Patient Portal Implementation",
+    "Value-Based Care",
+    "Agile Methodology",
+    "Scrum",
+    "Medical Terminology",
+    "Healthcare Analytics"
+  ]
+}

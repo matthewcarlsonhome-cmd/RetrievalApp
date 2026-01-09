@@ -1,0 +1,65 @@
+{
+  "id": "resume_095",
+  "personal_info": {
+    "name": "David Walker",
+    "email": "davidwalker@outlook.com",
+    "phone": "(698) 786-2809",
+    "location": "Portland, OR",
+    "linkedin": "linkedin.com/in/david-walker-9860"
+  },
+  "summary": "Experienced healthcare implementation consultant with 4 years leading Epic implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 4,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "EHR Support Analyst",
+      "employer": "Leidos Health",
+      "location": "Milwaukee, WI",
+      "start_date": "March 2020",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $50K annual cost savings",
+        "Reduced average patient wait time by 18% through workflow optimization",
+        "Managed cross-functional team of 8 analysts and trainers"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "Vanderbilt University",
+      "graduation_year": 2018,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "ITIL Foundation Certification",
+    "Certified Health Data Analyst (CHDA)",
+    "Cerner Certified - PowerChart"
+  ],
+  "skills": [
+    "Clinical Decision Support",
+    "Resolute",
+    "Training Development",
+    "Stork",
+    "Mobile Health",
+    "Tapestry",
+    "Power BI",
+    "EHR Implementation",
+    "SQL",
+    "Population Health",
+    "Value-Based Care",
+    "Clinical Workflow Analysis",
+    "Epic",
+    "Tableau",
+    "Scrum",
+    "User Acceptance Testing"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "id": "resume_056",
+  "personal_info": {
+    "name": "Elizabeth Scott",
+    "email": "elizabeth.scott@consultant.net",
+    "phone": "(829) 786-8580",
+    "location": "Houston, TX",
+    "linkedin": "linkedin.com/in/elizabeth-scott-9673"
+  },
+  "summary": "Healthcare informatics specialist with 14+ years of hands-on experience implementing and optimizing athenahealth EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 14,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "EHR Training Specialist",
+      "employer": "Metro Internal Medicine",
+      "location": "Detroit, MI",
+      "start_date": "September 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 500+ providers across 15 locations",
+        "Decreased claim denial rate by 32% through revenue cycle optimization",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Lead Clinical Applications Analyst",
+      "employer": "Regional Health Partners",
+      "location": "Milwaukee, WI",
+      "start_date": "June 2018",
+      "end_date": "December 2023",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "HealtheIntent",
+        "ITWorks",
+        "SurgiNet",
+        "PathNet"
+      ],
+      "achievements": [
+        "Completed data migration of 2M+ patient records with 99.9% accuracy",
+        "Led successful go-live for 400-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Health Information Manager",
+      "employer": "Sunrise Health Center",
+      "location": "New York, NY",
+      "start_date": "June 2014",
+      "end_date": "December 2018",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 100+ providers across 9 locations",
+        "Designed clinical workflows that improved documentation efficiency by 39%"
+      ]
+    },
+    {
+      "title": "Lead Cerner Implementation Specialist",
+      "employer": "Penn Medicine",
+      "location": "Houston, TX",
+      "start_date": "June 2012",
+      "end_date": "May 2014",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Implemented 3 Epic/Cerner modules on time and under budget",
+        "Achieved HIMSS Stage 5 recognition for implemented facility",
+        "Managed cross-functional team of 9 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Principal EHR Support Analyst",
+      "employer": "HCA Healthcare",
+      "location": "Los Angeles, CA",
+      "start_date": "January 2010",
+      "end_date": "February 2012",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 39% through revenue cycle optimization",
+        "Designed clinical workflows that improved documentation efficiency by 42%",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "Temple University",
+      "graduation_year": 2008,
+      "gpa": 3.21
+    }
+  ],
+  "certifications": [
+    "ITIL Foundation Certification",
+    "Registered Health Information Administrator (RHIA)",
+    "Six Sigma Green Belt"
+  ],
+  "skills": [
+    "Project Management",
+    "HIPAA Compliance",
+    "Clinical Decision Support",
+    "Data Migration",
+    "Change Management",
+    "Training Development",
+    "Python",
+    "Power BI",
+    "athenahealth",
+    "Revenue Cycle Management",
+    "Population Health",
+    "Patient Portal Implementation",
+    "Value-Based Care",
+    "Report Writing",
+    "Medical Terminology",
+    "System Integration"
+  ]
+}

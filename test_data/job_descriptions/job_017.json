@@ -1,0 +1,76 @@
+{
+  "id": "job_017",
+  "title": "Clinical Informatics Analyst",
+  "employer": "UCLA Medical Center",
+  "employer_type": "hospital",
+  "location": "Cleveland, OH",
+  "remote_option": "Travel Required (50-75%)",
+  "employment_type": "Part-time",
+  "contract_type": "Permanent",
+  "contract_length": null,
+  "posted_date": "2025-12-18",
+  "primary_ehr_system": "Allscripts",
+  "modules": [
+    "Allscripts Core"
+  ],
+  "experience_required": {
+    "min_years": 2,
+    "max_years": 11
+  },
+  "description": "We are looking for a Clinical Informatics Analyst to support our Allscripts implementation and optimization efforts at UCLA Medical Center. This role requires strong technical skills, excellent communication abilities, and a deep understanding of healthcare workflows. You will be responsible for ensuring successful system adoption across our organization.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize Allscripts applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Analyze clinical and operational workflows to identify improvement opportunities",
+    "Create detailed system specifications and configuration documents",
+    "Support build and validation activities",
+    "Develop reports and dashboards for clinical and operational metrics",
+    "Troubleshoot system issues and implement solutions"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field",
+    "experience": "2+ years of healthcare IT implementation experience",
+    "skills": [
+      "Allscripts",
+      "Optimization",
+      "ICD-10",
+      "Patient Portal Implementation",
+      "Tableau",
+      "Medical Terminology",
+      "Business Intelligence",
+      "Revenue Cycle Management",
+      "Value-Based Care",
+      "System Integration"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Go-Live Support",
+      "Clinical Documentation",
+      "Optimization",
+      "System Configuration"
+    ],
+    "certifications": [
+      "Cerner Certified - PowerChart",
+      "Certified Professional in Healthcare Information and Management Systems (CPHIMS)",
+      "ITIL Foundation Certification"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 79675,
+    "max": 113093,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Annual performance bonus",
+    "Employee wellness program",
+    "Stock options/equity",
+    "Tuition reimbursement",
+    "Relocation assistance"
+  ]
+}

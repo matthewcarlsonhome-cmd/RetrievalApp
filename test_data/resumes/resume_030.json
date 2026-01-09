@@ -1,0 +1,144 @@
+{
+  "id": "resume_030",
+  "personal_info": {
+    "name": "Alexander Gonzalez",
+    "email": "alexander.gonzalez@consultant.net",
+    "phone": "(980) 229-7005",
+    "location": "Nashville, TN",
+    "linkedin": "linkedin.com/in/alexander-gonzalez-1831"
+  },
+  "summary": "Dedicated EHR implementation professional bringing 10 years of experience in Epic deployments. Skilled in leading cross-functional teams, managing complex projects, and ensuring successful system adoption. Track record of on-time, on-budget implementations.",
+  "years_experience": 10,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Healthcare Systems Analyst",
+      "employer": "Banner Health",
+      "location": "Jacksonville, FL",
+      "start_date": "January 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 5 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Health Information Manager",
+      "employer": "KPMG Healthcare",
+      "location": "Philadelphia, PA",
+      "start_date": "June 2021",
+      "end_date": "December 2023",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Healthy Planet",
+        "MyChart",
+        "Care Everywhere",
+        "EpicCare Ambulatory"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 16% through workflow optimization",
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Built 20+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Senior Health IT Implementation Manager",
+      "employer": "Baylor Scott & White",
+      "location": "Denver, CO",
+      "start_date": "September 2018",
+      "end_date": "May 2021",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Cogito",
+        "EpicCare Inpatient",
+        "Resolute",
+        "Willow"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $50K annual cost savings",
+        "Developed training curriculum adopted as enterprise standard",
+        "Decreased claim denial rate by 44% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Senior Practice Management Consultant",
+      "employer": "Valley Medical Associates",
+      "location": "Salt Lake City, UT",
+      "start_date": "January 2015",
+      "end_date": "February 2018",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Managed implementation for 34 ambulatory clinics across 4 states",
+        "Completed data migration of 10M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Lead Health Information Systems Analyst",
+      "employer": "Stanford Health Care",
+      "location": "Jacksonville, FL",
+      "start_date": "June 2014",
+      "end_date": "December 2015",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 5M+ patient records with 99.9% accuracy",
+        "Led optimization project resulting in $50K annual cost savings",
+        "Managed implementation for 23 ambulatory clinics across 4 states",
+        "Implemented 5 Epic/Cerner modules on time and under budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "Boston University",
+      "graduation_year": 2014,
+      "gpa": 3.45
+    }
+  ],
+  "certifications": [
+    "Registered Health Information Administrator (RHIA)",
+    "Epic Certified - EpicCare Ambulatory",
+    "Certified Health Data Analyst (CHDA)"
+  ],
+  "skills": [
+    "ASAP",
+    "Go-Live Support",
+    "ICD-10",
+    "HIPAA Compliance",
+    "FHIR APIs",
+    "Change Management",
+    "User Acceptance Testing",
+    "Data Migration",
+    "EpicCare Ambulatory",
+    "Healthy Planet",
+    "Patient Portal Implementation",
+    "Report Writing",
+    "Epic",
+    "Clinical Workflow Analysis",
+    "Agile Methodology",
+    "Optimization",
+    "System Integration"
+  ]
+}

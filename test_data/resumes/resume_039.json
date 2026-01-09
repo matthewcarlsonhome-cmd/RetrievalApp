@@ -1,0 +1,90 @@
+{
+  "id": "resume_039",
+  "personal_info": {
+    "name": "Larry Garcia",
+    "email": "larry.garcia46@consultant.net",
+    "phone": "(222) 382-5903",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/larry-garcia-8390"
+  },
+  "summary": "Experienced healthcare implementation consultant with 6 years leading Cerner implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 6,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Epic Implementation Analyst",
+      "employer": "Mount Sinai Hospital",
+      "location": "New York, NY",
+      "start_date": "January 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "EpicCare Inpatient",
+        "Resolute",
+        "Stork",
+        "Grand Central"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 500+ providers across 10 locations",
+        "Decreased claim denial rate by 34% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Senior Clinical Applications Analyst",
+      "employer": "Wellness Medical Group",
+      "location": "Denver, CO",
+      "start_date": "June 2018",
+      "end_date": "August 2019",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 5M+ patient records with 99.9% accuracy",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Health Information Management",
+      "institution": "Yale University",
+      "graduation_year": 2019,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Arts in Healthcare Management",
+      "institution": "UCLA",
+      "graduation_year": 2016,
+      "gpa": 3.82
+    }
+  ],
+  "certifications": [
+    "Epic Certified - Cadence",
+    "Certified Health Data Analyst (CHDA)"
+  ],
+  "skills": [
+    "FHIR APIs",
+    "CPT Coding",
+    "Interoperability",
+    "Data Migration",
+    "Training Development",
+    "ITWorks",
+    "Process Improvement",
+    "RadNet",
+    "Power BI",
+    "SQL",
+    "Population Health",
+    "Revenue Cycle Management",
+    "CommunityWorks",
+    "Cerner",
+    "Crystal Reports",
+    "Optimization",
+    "System Integration"
+  ]
+}

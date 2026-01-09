@@ -1,0 +1,70 @@
+{
+  "id": "job_004",
+  "title": "Senior EHR Implementation Consultant",
+  "employer": "Medidata",
+  "employer_type": "vendor",
+  "location": "Las Vegas, NV",
+  "remote_option": "Remote",
+  "employment_type": "Full-time",
+  "contract_type": "Contract",
+  "contract_length": "12 months",
+  "posted_date": "2025-12-11",
+  "primary_ehr_system": "MEDITECH",
+  "modules": [
+    "MEDITECH Core"
+  ],
+  "experience_required": {
+    "min_years": 3,
+    "max_years": 9
+  },
+  "description": "Join Medidata as a Senior EHR Implementation Consultant and help transform healthcare delivery through innovative technology solutions. We are implementing MEDITECH across our organization and need experienced professionals to ensure successful deployment and adoption. This is an exciting opportunity to make a significant impact on patient care.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize MEDITECH applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Lead end-to-end MEDITECH implementation projects from planning through go-live",
+    "Design and build clinical workflows within the EHR system",
+    "Conduct workflow analysis sessions with clinical departments",
+    "Manage data migration and system integration activities",
+    "Coordinate with third-party vendors and interface partners"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree required; Master's preferred",
+    "experience": "3+ years of healthcare IT implementation experience",
+    "skills": [
+      "MEDITECH",
+      "Patient Portal Implementation",
+      "Interoperability",
+      "Report Writing",
+      "Medical Terminology",
+      "Change Management",
+      "SQL",
+      "Data Migration",
+      "Process Improvement"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Value-Based Care",
+      "Optimization",
+      "Go-Live Support",
+      "ICD-10"
+    ],
+    "certifications": [
+      "Certified Health Data Analyst (CHDA)"
+    ]
+  },
+  "salary": {
+    "type": "hourly",
+    "min": 40,
+    "max": 70,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Competitive hourly rate",
+    "Professional development opportunities"
+  ]
+}

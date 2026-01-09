@@ -1,0 +1,79 @@
+{
+  "id": "job_002",
+  "title": "Healthcare IT Project Manager",
+  "employer": "KPMG Healthcare",
+  "employer_type": "consulting",
+  "location": "Salt Lake City, UT",
+  "remote_option": "Travel Required (50-75%)",
+  "employment_type": "Part-time",
+  "contract_type": "Permanent",
+  "contract_length": null,
+  "posted_date": "2025-12-18",
+  "primary_ehr_system": "athenahealth",
+  "modules": [
+    "athenahealth Core"
+  ],
+  "experience_required": {
+    "min_years": 5,
+    "max_years": null
+  },
+  "description": "KPMG Healthcare seeks a talented Healthcare IT Project Manager to lead our athenahealth implementation initiatives. You will work closely with clinical stakeholders, IT teams, and executive leadership to deliver solutions that improve efficiency and patient outcomes. Experience with athenahealth Core is essential.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize athenahealth applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Develop and manage project plans, timelines, and resource allocation",
+    "Lead cross-functional implementation teams",
+    "Report project status to executive leadership",
+    "Manage project budget and identify risk mitigation strategies",
+    "Facilitate steering committee meetings and stakeholder communications"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field",
+    "experience": "5+ years of healthcare IT implementation experience",
+    "skills": [
+      "athenahealth",
+      "System Integration",
+      "Mobile Health",
+      "Medical Terminology",
+      "SQL",
+      "FHIR APIs",
+      "Telehealth Implementation",
+      "Report Writing",
+      "Agile Methodology",
+      "Go-Live Support",
+      "HIPAA Compliance"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Clinical Documentation",
+      "FHIR APIs",
+      "Interoperability",
+      "Data Migration",
+      "Revenue Cycle Management",
+      "Report Writing"
+    ],
+    "certifications": [
+      "Registered Health Information Administrator (RHIA)"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 106904,
+    "max": 126953,
+    "currency": "USD"
+  },
+  "benefits": [
+    "401(k) with employer match",
+    "Stock options/equity",
+    "Remote work options",
+    "Life and disability insurance",
+    "Professional development budget",
+    "Annual performance bonus",
+    "Flexible spending accounts (FSA/HSA)"
+  ]
+}

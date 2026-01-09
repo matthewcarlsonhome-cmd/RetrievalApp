@@ -1,0 +1,170 @@
+{
+  "id": "resume_093",
+  "personal_info": {
+    "name": "Andrew Hill",
+    "email": "andrew.hill96@healthcaremail.com",
+    "phone": "(909) 543-2551",
+    "location": "Atlanta, GA",
+    "linkedin": "linkedin.com/in/andrew-hill-9411"
+  },
+  "summary": "Results-driven healthcare IT professional with 17+ years of experience in EHR implementation and optimization. Specialized in Cerner system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 17,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Healthcare Integration Engineer",
+      "employer": "Johns Hopkins Hospital",
+      "location": "Charlotte, NC",
+      "start_date": "September 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $200K annual cost savings",
+        "Trained 1000+ end users with 94% satisfaction rating",
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Healthcare Integration Engineer",
+      "employer": "Houston Methodist Hospital",
+      "location": "Atlanta, GA",
+      "start_date": "June 2020",
+      "end_date": "December 2021",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "CommunityWorks",
+        "PharmNet",
+        "HealtheIntent",
+        "FirstNet"
+      ],
+      "achievements": [
+        "Completed data migration of 10M+ patient records with 99.9% accuracy",
+        "Implemented 9 Epic/Cerner modules on time and under budget",
+        "Led successful go-live for 500-bed hospital with zero critical issues",
+        "Built 21+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Epic Implementation Analyst",
+      "employer": "Northwell Health",
+      "location": "Phoenix, AZ",
+      "start_date": "September 2016",
+      "end_date": "May 2020",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "FirstNet",
+        "SurgiNet",
+        "ITWorks",
+        "CommunityWorks"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 6 recognition for implemented facility",
+        "Achieved 88% clinician adoption rate within first 2 months",
+        "Managed cross-functional team of 3 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Lead Healthcare Integration Engineer",
+      "employer": "Nordic Consulting",
+      "location": "Seattle, WA",
+      "start_date": "March 2013",
+      "end_date": "August 2016",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Radiant",
+        "MyChart",
+        "Prelude",
+        "OpTime"
+      ],
+      "achievements": [
+        "Implemented 12 Epic/Cerner modules on time and under budget",
+        "Designed clinical workflows that improved documentation efficiency by 25%"
+      ]
+    },
+    {
+      "title": "Director of Health IT Implementation Manager",
+      "employer": "Optum Advisory Services",
+      "location": "Atlanta, GA",
+      "start_date": "September 2010",
+      "end_date": "August 2013",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 43% through revenue cycle optimization",
+        "Completed data migration of 10M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Director of Healthcare Integration Engineer",
+      "employer": "UCSF Medical Center",
+      "location": "Atlanta, GA",
+      "start_date": "September 2007",
+      "end_date": "February 2010",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Trained 1000+ end users with 95% satisfaction rating",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Business Administration",
+      "institution": "University of Colorado",
+      "graduation_year": 2010,
+      "gpa": 3.88
+    },
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "University of Illinois",
+      "graduation_year": 2007,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Epic Certified - Willow",
+    "Certified ScrumMaster (CSM)",
+    "Certified Information Systems Security Professional (CISSP)",
+    "Six Sigma Black Belt",
+    "Certified Professional in Healthcare Information and Management Systems (CPHIMS)"
+  ],
+  "skills": [
+    "Business Intelligence",
+    "Clinical Documentation",
+    "Data Migration",
+    "Training Development",
+    "ITWorks",
+    "Process Improvement",
+    "Agile Methodology",
+    "PowerChart",
+    "Cerner",
+    "Soarian",
+    "Value-Based Care",
+    "Report Writing",
+    "Crystal Reports",
+    "Optimization"
+  ]
+}

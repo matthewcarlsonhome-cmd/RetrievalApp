@@ -1,0 +1,150 @@
+{
+  "id": "resume_040",
+  "personal_info": {
+    "name": "Nicole Kelly",
+    "email": "nicolekelly@outlook.com",
+    "phone": "(231) 246-7257",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/nicole-kelly-2044"
+  },
+  "summary": "Dedicated EHR implementation professional bringing 13 years of experience in Epic deployments. Skilled in leading cross-functional teams, managing complex projects, and ensuring successful system adoption. Track record of on-time, on-budget implementations.",
+  "years_experience": 13,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Health Information Systems Analyst",
+      "employer": "Family Care Associates",
+      "location": "Salt Lake City, UT",
+      "start_date": "September 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Led successful go-live for 500-bed hospital with zero critical issues",
+        "Trained 1000+ end users with 92% satisfaction rating",
+        "Reduced average patient wait time by 40% through workflow optimization",
+        "Managed implementation for 17 ambulatory clinics across 4 states"
+      ]
+    },
+    {
+      "title": "Epic Implementation Analyst",
+      "employer": "Kareo",
+      "location": "Milwaukee, WI",
+      "start_date": "June 2019",
+      "end_date": "February 2021",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 27%",
+        "Built 18+ HL7 interfaces connecting to external systems",
+        "Decreased claim denial rate by 20% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Senior EHR Training Specialist",
+      "employer": "MEDITECH",
+      "location": "Jacksonville, FL",
+      "start_date": "March 2014",
+      "end_date": "December 2019",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Implemented 9 Epic/Cerner modules on time and under budget",
+        "Achieved 90% clinician adoption rate within first 3 months"
+      ]
+    },
+    {
+      "title": "Senior Health Information Manager",
+      "employer": "Optum Advisory Services",
+      "location": "Milwaukee, WI",
+      "start_date": "January 2012",
+      "end_date": "August 2014",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Resolute",
+        "Stork",
+        "Radiant",
+        "MyChart"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 200+ providers across 12 locations",
+        "Achieved 94% clinician adoption rate within first 4 months"
+      ]
+    },
+    {
+      "title": "Lead Healthcare IT Project Manager",
+      "employer": "Premier Medical Group",
+      "location": "Minneapolis, MN",
+      "start_date": "March 2011",
+      "end_date": "February 2012",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 31%",
+        "Achieved 89% clinician adoption rate within first 2 months",
+        "Managed cross-functional team of 9 analysts and trainers"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Public Health",
+      "institution": "University of Texas",
+      "graduation_year": 2016,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "University of Chicago",
+      "graduation_year": 2011,
+      "gpa": 3.31
+    }
+  ],
+  "certifications": [
+    "Cerner Certified - PowerChart",
+    "Epic Certified - Cadence"
+  ],
+  "skills": [
+    "SQL",
+    "Business Intelligence",
+    "Interoperability",
+    "Data Migration",
+    "Prelude",
+    "Go-Live Support",
+    "Resolute",
+    "Mobile Health",
+    "Power BI",
+    "Healthy Planet",
+    "Patient Portal Implementation",
+    "Tableau",
+    "EHR Implementation",
+    "Optimization",
+    "System Integration",
+    "Health Information Exchange",
+    "Clinical Documentation",
+    "HL7 Interfaces",
+    "Epic"
+  ]
+}

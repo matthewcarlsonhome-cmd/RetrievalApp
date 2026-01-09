@@ -1,0 +1,64 @@
+{
+  "id": "resume_041",
+  "personal_info": {
+    "name": "Shirley Hill",
+    "email": "shirley.hill@consultant.net",
+    "phone": "(465) 315-1391",
+    "location": "Phoenix, AZ",
+    "linkedin": "linkedin.com/in/shirley-hill-8442"
+  },
+  "summary": "Experienced healthcare implementation consultant with 2 years leading Cerner implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 2,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Healthcare Integration Engineer",
+      "employer": "Riverside Family Medicine",
+      "location": "Atlanta, GA",
+      "start_date": "March 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "ASAP",
+        "OpTime",
+        "Resolute",
+        "Radiant"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 35% through revenue cycle optimization",
+        "Coordinated go-live support for 100+ providers across 13 locations",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Healthcare Management",
+      "institution": "Drexel University",
+      "graduation_year": 2019,
+      "gpa": 3.31
+    }
+  ],
+  "certifications": [
+    "Registered Health Information Administrator (RHIA)",
+    "Epic Certified - Willow"
+  ],
+  "skills": [
+    "Health Information Exchange",
+    "Telehealth Implementation",
+    "Clinical Documentation",
+    "FHIR APIs",
+    "Data Migration",
+    "Interoperability",
+    "Build Validation",
+    "SQL",
+    "Millennium",
+    "PowerChart",
+    "Cerner",
+    "Soarian",
+    "Value-Based Care",
+    "Medical Terminology"
+  ]
+}

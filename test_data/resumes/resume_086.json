@@ -1,0 +1,113 @@
+{
+  "id": "resume_086",
+  "personal_info": {
+    "name": "Karen Scott",
+    "email": "karen.scott66@healthcaremail.com",
+    "phone": "(785) 588-5363",
+    "location": "San Diego, CA",
+    "linkedin": "linkedin.com/in/karen-scott-2711"
+  },
+  "summary": "Clinical informatics expert with 8+ years specializing in MEDITECH implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 8,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Cerner Implementation Specialist",
+      "employer": "Huron Consulting",
+      "location": "Houston, TX",
+      "start_date": "September 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 30% through revenue cycle optimization",
+        "Managed implementation for 22 ambulatory clinics across 3 states",
+        "Achieved 92% clinician adoption rate within first 4 months"
+      ]
+    },
+    {
+      "title": "Health IT Implementation Manager",
+      "employer": "Riverside Family Medicine",
+      "location": "San Antonio, TX",
+      "start_date": "June 2021",
+      "end_date": "February 2023",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Implemented 10 Epic/Cerner modules on time and under budget",
+        "Coordinated go-live support for 50+ providers across 5 locations"
+      ]
+    },
+    {
+      "title": "Clinical Workflow Analyst",
+      "employer": "Amazing Charts",
+      "location": "Atlanta, GA",
+      "start_date": "January 2018",
+      "end_date": "May 2021",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 7 recognition for implemented facility",
+        "Trained 100+ end users with 94% satisfaction rating",
+        "Led successful go-live for 750-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Revenue Cycle Implementation Specialist",
+      "employer": "Deloitte Healthcare",
+      "location": "Austin, TX",
+      "start_date": "March 2016",
+      "end_date": "May 2018",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 100+ providers across 19 locations",
+        "Led successful go-live for 400-bed hospital with zero critical issues",
+        "Managed implementation for 49 ambulatory clinics across 6 states",
+        "Implemented 9 Epic/Cerner modules on time and under budget"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "Indiana University",
+      "graduation_year": 2013,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Epic Certified - Beacon"
+  ],
+  "skills": [
+    "Build Validation",
+    "MEDITECH",
+    "Interoperability",
+    "Change Management",
+    "Training Development",
+    "Power BI",
+    "Patient Portal Implementation",
+    "Value-Based Care",
+    "Clinical Workflow Analysis"
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "id": "resume_075",
+  "personal_info": {
+    "name": "Anna Martin",
+    "email": "anna.martin37@healthcaremail.com",
+    "phone": "(853) 512-2290",
+    "location": "Boston, MA",
+    "linkedin": "linkedin.com/in/anna-martin-9997"
+  },
+  "summary": "Clinical informatics expert with 11+ years specializing in MEDITECH implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 11,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Health IT Implementation Manager",
+      "employer": "Huron Consulting",
+      "location": "Charlotte, NC",
+      "start_date": "June 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Led successful go-live for 1000-bed hospital with zero critical issues",
+        "Reduced average patient wait time by 42% through workflow optimization",
+        "Achieved 97% clinician adoption rate within first 6 months"
+      ]
+    },
+    {
+      "title": "Healthcare Data Analyst",
+      "employer": "Wellness Medical Group",
+      "location": "Nashville, TN",
+      "start_date": "September 2019",
+      "end_date": "February 2022",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Managed implementation for 32 ambulatory clinics across 6 states",
+        "Managed cross-functional team of 7 analysts and trainers",
+        "Led optimization project resulting in $500K annual cost savings"
+      ]
+    },
+    {
+      "title": "Senior Health Information Systems Analyst",
+      "employer": "Mountain View Health Center",
+      "location": "Nashville, TN",
+      "start_date": "June 2015",
+      "end_date": "December 2019",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 5M+ patient records with 99.9% accuracy",
+        "Led optimization project resulting in $200K annual cost savings"
+      ]
+    },
+    {
+      "title": "Senior Clinical Applications Analyst",
+      "employer": "Northwestern Memorial Hospital",
+      "location": "Atlanta, GA",
+      "start_date": "September 2014",
+      "end_date": "August 2015",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "SurgiNet",
+        "PathNet",
+        "Millennium",
+        "FirstNet"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 45% through revenue cycle optimization",
+        "Coordinated go-live support for 200+ providers across 18 locations",
+        "Managed implementation for 10 ambulatory clinics across 2 states"
+      ]
+    },
+    {
+      "title": "Director of Epic Implementation Analyst",
+      "employer": "Scripps Memorial Hospital",
+      "location": "Salt Lake City, UT",
+      "start_date": "June 2013",
+      "end_date": "February 2014",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 9 analysts and trainers",
+        "Designed clinical workflows that improved documentation efficiency by 42%",
+        "Led optimization project resulting in $1000K annual cost savings"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "University of Pittsburgh",
+      "graduation_year": 2010,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Epic Certified - Cadence",
+    "ITIL Foundation Certification",
+    "HL7 FHIR Certification"
+  ],
+  "skills": [
+    "HIPAA Compliance",
+    "Project Management",
+    "CPT Coding",
+    "Telehealth Implementation",
+    "ICD-10",
+    "Training Development",
+    "Business Intelligence",
+    "Go-Live Support",
+    "Python",
+    "Scrum",
+    "Power BI",
+    "MEDITECH",
+    "Tableau",
+    "Value-Based Care",
+    "EHR Implementation",
+    "Healthcare Analytics"
+  ]
+}

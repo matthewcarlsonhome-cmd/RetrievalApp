@@ -1,0 +1,194 @@
+{
+  "id": "resume_098",
+  "personal_info": {
+    "name": "Donna Smith",
+    "email": "donna.smith@outlook.com",
+    "phone": "(553) 865-2025",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/donna-smith-8987"
+  },
+  "summary": "Healthcare informatics specialist with 18+ years of hands-on experience implementing and optimizing MEDITECH EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 18,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Clinical Applications Analyst",
+      "employer": "Providence Health",
+      "location": "Los Angeles, CA",
+      "start_date": "January 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "ITWorks",
+        "PowerChart",
+        "HealtheIntent",
+        "SurgiNet"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 15 analysts and trainers",
+        "Reduced average patient wait time by 21% through workflow optimization",
+        "Implemented 7 Epic/Cerner modules on time and under budget"
+      ]
+    },
+    {
+      "title": "Healthcare Integration Engineer",
+      "employer": "Practice Fusion",
+      "location": "Houston, TX",
+      "start_date": "January 2018",
+      "end_date": "February 2021",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $50K annual cost savings",
+        "Developed training curriculum adopted as enterprise standard",
+        "Managed implementation for 29 ambulatory clinics across 6 states"
+      ]
+    },
+    {
+      "title": "Revenue Cycle Implementation Specialist",
+      "employer": "Medidata",
+      "location": "Minneapolis, MN",
+      "start_date": "June 2017",
+      "end_date": "May 2018",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "EpicCare Inpatient",
+        "Cadence",
+        "OpTime",
+        "Radiant"
+      ],
+      "achievements": [
+        "Completed data migration of 2M+ patient records with 99.9% accuracy",
+        "Achieved HIMSS Stage 5 recognition for implemented facility",
+        "Coordinated go-live support for 100+ providers across 15 locations"
+      ]
+    },
+    {
+      "title": "Senior Medical Informatics Consultant",
+      "employer": "Atrium Health",
+      "location": "Seattle, WA",
+      "start_date": "March 2012",
+      "end_date": "May 2017",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 100+ providers across 15 locations",
+        "Reduced average patient wait time by 33% through workflow optimization",
+        "Decreased claim denial rate by 35% through revenue cycle optimization",
+        "Completed data migration of 2M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Senior Medical Informatics Consultant",
+      "employer": "Atrium Health",
+      "location": "Chicago, IL",
+      "start_date": "January 2010",
+      "end_date": "May 2012",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "OpTime",
+        "Prelude",
+        "MyChart",
+        "Healthy Planet"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 27%",
+        "Led successful go-live for 200-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Director of Healthcare Data Analyst",
+      "employer": "Optum Advisory Services",
+      "location": "Charlotte, NC",
+      "start_date": "September 2007",
+      "end_date": "August 2010",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Achieved 94% clinician adoption rate within first 5 months",
+        "Completed data migration of 1M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Principal Medical Informatics Consultant",
+      "employer": "Optum Advisory Services",
+      "location": "Salt Lake City, UT",
+      "start_date": "March 2006",
+      "end_date": "May 2007",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Millennium",
+        "PowerChart",
+        "ITWorks",
+        "PathNet"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 17% through revenue cycle optimization",
+        "Led successful go-live for 300-bed hospital with zero critical issues",
+        "Implemented 3 Epic/Cerner modules on time and under budget",
+        "Achieved HIMSS Stage 5 recognition for implemented facility"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Healthcare Administration",
+      "institution": "Emory University",
+      "graduation_year": 2008,
+      "gpa": 3.8
+    },
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "George Washington University",
+      "graduation_year": 2004,
+      "gpa": 3.31
+    }
+  ],
+  "certifications": [
+    "Certified Information Systems Security Professional (CISSP)",
+    "ITIL Foundation Certification",
+    "Cerner Certified - Millennium",
+    "Epic Certified - Cadence",
+    "Epic Certified - Beacon"
+  ],
+  "skills": [
+    "FHIR APIs",
+    "Project Management",
+    "Business Intelligence",
+    "Build Validation",
+    "ICD-10",
+    "Training Development",
+    "Healthcare IT",
+    "Power BI",
+    "Revenue Cycle Management",
+    "Population Health",
+    "MEDITECH",
+    "Value-Based Care",
+    "Crystal Reports",
+    "Scrum",
+    "System Integration"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": "resume_009",
+  "personal_info": {
+    "name": "Anthony Lopez",
+    "email": "anthonylopez@consultant.net",
+    "phone": "(298) 696-4449",
+    "location": "Chicago, IL",
+    "linkedin": "linkedin.com/in/anthony-lopez-1811"
+  },
+  "summary": "Experienced healthcare implementation consultant with 17 years leading athenahealth implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 17,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Clinical Informatics Specialist",
+      "employer": "Leidos Health",
+      "location": "Dallas, TX",
+      "start_date": "January 2020",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $100K annual cost savings",
+        "Led successful go-live for 1000-bed hospital with zero critical issues",
+        "Achieved 98% clinician adoption rate within first 4 months"
+      ]
+    },
+    {
+      "title": "Lead Healthcare Data Analyst",
+      "employer": "Ascension Health",
+      "location": "Philadelphia, PA",
+      "start_date": "March 2017",
+      "end_date": "August 2020",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Managed implementation for 29 ambulatory clinics across 3 states",
+        "Led successful go-live for 500-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Principal Healthcare Integration Engineer",
+      "employer": "Trinity Health",
+      "location": "Baltimore, MD",
+      "start_date": "September 2013",
+      "end_date": "August 2017",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Led optimization project resulting in $500K annual cost savings",
+        "Coordinated go-live support for 50+ providers across 16 locations"
+      ]
+    },
+    {
+      "title": "Principal Cerner Implementation Specialist",
+      "employer": "ECG Management Consultants",
+      "location": "New York, NY",
+      "start_date": "March 2008",
+      "end_date": "February 2013",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 200+ providers across 20 locations",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Principal Practice Management Consultant",
+      "employer": "Tegria",
+      "location": "Houston, TX",
+      "start_date": "September 2007",
+      "end_date": "May 2008",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Millennium",
+        "Soarian",
+        "PowerChart",
+        "SurgiNet"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 15 analysts and trainers",
+        "Decreased claim denial rate by 40% through revenue cycle optimization",
+        "Built 36+ HL7 interfaces connecting to external systems"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "University of Minnesota",
+      "graduation_year": 2006,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Epic Certified - Willow",
+    "Certified Information Systems Security Professional (CISSP)",
+    "Epic Certified - EpicCare Ambulatory",
+    "Cerner Certified - Millennium"
+  ],
+  "skills": [
+    "HIPAA Compliance",
+    "ICD-10",
+    "Build Validation",
+    "Interoperability",
+    "HL7 Interfaces",
+    "athenahealth",
+    "Healthcare Analytics",
+    "Report Writing",
+    "Scrum",
+    "Optimization",
+    "User Acceptance Testing"
+  ]
+}

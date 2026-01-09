@@ -1,0 +1,103 @@
+{
+  "id": "resume_013",
+  "personal_info": {
+    "name": "Karen Lee",
+    "email": "karen.lee24@consultant.net",
+    "phone": "(357) 819-7173",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/karen-lee-2786"
+  },
+  "summary": "Dedicated EHR implementation professional bringing 6 years of experience in MEDITECH deployments. Skilled in leading cross-functional teams, managing complex projects, and ensuring successful system adoption. Track record of on-time, on-budget implementations.",
+  "years_experience": 6,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Revenue Cycle Implementation Specialist",
+      "employer": "Trinity Health",
+      "location": "Atlanta, GA",
+      "start_date": "September 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Implemented 4 Epic/Cerner modules on time and under budget",
+        "Trained 100+ end users with 93% satisfaction rating",
+        "Reduced average patient wait time by 17% through workflow optimization"
+      ]
+    },
+    {
+      "title": "EHR Implementation Consultant",
+      "employer": "University of Michigan Health",
+      "location": "Phoenix, AZ",
+      "start_date": "September 2021",
+      "end_date": "December 2022",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 24% through revenue cycle optimization",
+        "Managed implementation for 45 ambulatory clinics across 9 states"
+      ]
+    },
+    {
+      "title": "Senior EHR Training Specialist",
+      "employer": "Duke University Hospital",
+      "location": "San Antonio, TX",
+      "start_date": "September 2018",
+      "end_date": "May 2021",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 44% through workflow optimization",
+        "Managed cross-functional team of 9 analysts and trainers",
+        "Led successful go-live for 200-bed hospital with zero critical issues",
+        "Trained 2000+ end users with 94% satisfaction rating"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Health Informatics",
+      "institution": "Drexel University",
+      "graduation_year": 2019,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Stanford University",
+      "graduation_year": 2016,
+      "gpa": 3.79
+    }
+  ],
+  "certifications": [
+    "Cerner Certified - PowerChart",
+    "Certified Professional in Healthcare Information and Management Systems (CPHIMS)",
+    "Certified ScrumMaster (CSM)",
+    "Epic Certified - EpicCare Inpatient"
+  ],
+  "skills": [
+    "Business Intelligence",
+    "ICD-10",
+    "Process Improvement",
+    "SQL",
+    "Population Health",
+    "Revenue Cycle Management",
+    "MEDITECH",
+    "Optimization",
+    "System Configuration"
+  ]
+}

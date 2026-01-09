@@ -1,0 +1,75 @@
+{
+  "id": "job_010",
+  "title": "EHR Implementation Project Manager",
+  "employer": "Geisinger Health",
+  "employer_type": "health system",
+  "location": "Philadelphia, PA",
+  "remote_option": "On-site",
+  "employment_type": "Part-time",
+  "contract_type": "Contract",
+  "contract_length": "3 months",
+  "posted_date": "2025-12-18",
+  "primary_ehr_system": "Cerner",
+  "modules": [
+    "CommunityWorks",
+    "PharmNet"
+  ],
+  "experience_required": {
+    "min_years": 7,
+    "max_years": null
+  },
+  "description": "Join Geisinger Health as a EHR Implementation Project Manager and help transform healthcare delivery through innovative technology solutions. We are implementing Cerner across our organization and need experienced professionals to ensure successful deployment and adoption. This is an exciting opportunity to make a significant impact on patient care.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize Cerner applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Develop and manage project plans, timelines, and resource allocation",
+    "Lead cross-functional implementation teams",
+    "Report project status to executive leadership",
+    "Manage project budget and identify risk mitigation strategies",
+    "Facilitate steering committee meetings and stakeholder communications"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field",
+    "experience": "7+ years of healthcare IT implementation experience",
+    "skills": [
+      "Cerner",
+      "Patient Portal Implementation",
+      "Report Writing",
+      "Health Information Exchange",
+      "Business Intelligence",
+      "Power BI",
+      "Clinical Decision Support",
+      "Scrum",
+      "Data Migration",
+      "Agile Methodology",
+      "Revenue Cycle Management"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Health Information Exchange",
+      "Optimization",
+      "Mobile Health",
+      "System Configuration",
+      "Telehealth Implementation"
+    ],
+    "certifications": [
+      "Registered Health Information Administrator (RHIA)",
+      "Epic Certified - Cadence"
+    ]
+  },
+  "salary": {
+    "type": "hourly",
+    "min": 52,
+    "max": 82,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Competitive hourly rate",
+    "Professional development opportunities"
+  ]
+}

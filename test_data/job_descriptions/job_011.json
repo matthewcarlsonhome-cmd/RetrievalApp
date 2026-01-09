@@ -1,0 +1,74 @@
+{
+  "id": "job_011",
+  "title": "Lead Healthcare Systems Analyst",
+  "employer": "Medidata",
+  "employer_type": "vendor",
+  "location": "Chicago, IL",
+  "remote_option": "Remote",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "contract_length": null,
+  "posted_date": "2026-01-05",
+  "primary_ehr_system": "eClinicalWorks",
+  "modules": [
+    "eClinicalWorks Core"
+  ],
+  "experience_required": {
+    "min_years": 2,
+    "max_years": 8
+  },
+  "description": "We are looking for a Lead Healthcare Systems Analyst to support our eClinicalWorks implementation and optimization efforts at Medidata. This role requires strong technical skills, excellent communication abilities, and a deep understanding of healthcare workflows. You will be responsible for ensuring successful system adoption across our organization.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize eClinicalWorks applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Analyze clinical and operational workflows to identify improvement opportunities",
+    "Create detailed system specifications and configuration documents",
+    "Support build and validation activities",
+    "Develop reports and dashboards for clinical and operational metrics",
+    "Troubleshoot system issues and implement solutions"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in Health Informatics, Healthcare Administration, IT, or related field",
+    "experience": "2+ years of healthcare IT implementation experience",
+    "skills": [
+      "eClinicalWorks",
+      "Data Migration",
+      "User Acceptance Testing",
+      "Patient Portal Implementation",
+      "Revenue Cycle Management",
+      "HL7 Interfaces",
+      "Clinical Documentation",
+      "Power BI",
+      "Tableau"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Agile Methodology",
+      "Optimization",
+      "System Configuration",
+      "Build Validation",
+      "System Integration"
+    ],
+    "certifications": [
+      "Certified Professional in Healthcare Information and Management Systems (CPHIMS)"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 108897,
+    "max": 143316,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Comprehensive health insurance (medical, dental, vision)",
+    "Paid time off (PTO)",
+    "Tuition reimbursement",
+    "401(k) with employer match",
+    "Life and disability insurance"
+  ]
+}

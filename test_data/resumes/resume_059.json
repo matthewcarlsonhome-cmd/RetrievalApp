@@ -1,0 +1,104 @@
+{
+  "id": "resume_059",
+  "personal_info": {
+    "name": "Melissa Carter",
+    "email": "melissa.carter61@healthcaremail.com",
+    "phone": "(577) 261-4782",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/melissa-carter-2071"
+  },
+  "summary": "Clinical informatics expert with 9+ years specializing in MEDITECH implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 9,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Medical Informatics Consultant",
+      "employer": "Providence Health",
+      "location": "Chicago, IL",
+      "start_date": "September 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 26% through revenue cycle optimization",
+        "Managed implementation for 37 ambulatory clinics across 9 states",
+        "Built 29+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Clinical Informatics Specialist",
+      "employer": "Sunrise Health Center",
+      "location": "New York, NY",
+      "start_date": "June 2018",
+      "end_date": "December 2022",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 5 recognition for implemented facility",
+        "Completed data migration of 5M+ patient records with 99.9% accuracy",
+        "Reduced average patient wait time by 25% through workflow optimization",
+        "Led optimization project resulting in $50K annual cost savings"
+      ]
+    },
+    {
+      "title": "Lead Clinical Informatics Specialist",
+      "employer": "HCA Healthcare",
+      "location": "New York, NY",
+      "start_date": "September 2015",
+      "end_date": "December 2018",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PharmNet",
+        "PowerChart",
+        "HealtheIntent",
+        "CommunityWorks"
+      ],
+      "achievements": [
+        "Led successful go-live for 750-bed hospital with zero critical issues",
+        "Coordinated go-live support for 500+ providers across 20 locations"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "University of Pennsylvania",
+      "graduation_year": 2014,
+      "gpa": 3.65
+    }
+  ],
+  "certifications": [
+    "Certified Information Systems Security Professional (CISSP)",
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)",
+    "Epic Certified - EpicCare Ambulatory",
+    "Certified Professional in Healthcare Information and Management Systems (CPHIMS)"
+  ],
+  "skills": [
+    "Business Intelligence",
+    "MEDITECH",
+    "Project Management",
+    "Build Validation",
+    "Clinical Documentation",
+    "Mobile Health",
+    "System Integration",
+    "Tableau",
+    "Healthcare Analytics",
+    "Report Writing",
+    "Clinical Workflow Analysis",
+    "Agile Methodology",
+    "Optimization",
+    "User Acceptance Testing"
+  ]
+}

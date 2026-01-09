@@ -1,0 +1,160 @@
+{
+  "id": "resume_100",
+  "personal_info": {
+    "name": "Andrew Campbell",
+    "email": "andrew.campbell88@gmail.com",
+    "phone": "(442) 789-2790",
+    "location": "Houston, TX",
+    "linkedin": "linkedin.com/in/andrew-campbell-7985"
+  },
+  "summary": "Dedicated EHR implementation professional bringing 18 years of experience in Cerner deployments. Skilled in leading cross-functional teams, managing complex projects, and ensuring successful system adoption. Track record of on-time, on-budget implementations.",
+  "years_experience": 18,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Health IT Implementation Manager",
+      "employer": "Ochsner Medical Center",
+      "location": "Fort Worth, TX",
+      "start_date": "June 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Managed implementation for 6 ambulatory clinics across 4 states",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Systems Analyst",
+      "employer": "Impact Advisors",
+      "location": "Jacksonville, FL",
+      "start_date": "June 2018",
+      "end_date": "February 2023",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $50K annual cost savings",
+        "Managed cross-functional team of 6 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Lead Epic Implementation Analyst",
+      "employer": "Pivot Point Consulting",
+      "location": "Boston, MA",
+      "start_date": "January 2015",
+      "end_date": "December 2018",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "FirstNet",
+        "CommunityWorks",
+        "Soarian",
+        "Millennium"
+      ],
+      "achievements": [
+        "Achieved 90% clinician adoption rate within first 6 months",
+        "Managed cross-functional team of 9 analysts and trainers",
+        "Built 25+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Principal EHR Implementation Consultant",
+      "employer": "Sunrise Health Center",
+      "location": "Charlotte, NC",
+      "start_date": "January 2012",
+      "end_date": "August 2015",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 50+ providers across 18 locations",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Systems Analyst",
+      "employer": "Conduent Healthcare",
+      "location": "Los Angeles, CA",
+      "start_date": "January 2007",
+      "end_date": "December 2012",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 24% through workflow optimization",
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Director of EHR Training Specialist",
+      "employer": "Banner Health",
+      "location": "Denver, CO",
+      "start_date": "June 2006",
+      "end_date": "February 2007",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Soarian",
+        "CommunityWorks",
+        "SurgiNet",
+        "RadNet"
+      ],
+      "achievements": [
+        "Implemented 10 Epic/Cerner modules on time and under budget",
+        "Achieved 88% clinician adoption rate within first 3 months"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "University of North Carolina",
+      "graduation_year": 2003,
+      "gpa": 3.63
+    }
+  ],
+  "certifications": [
+    "ITIL Foundation Certification",
+    "HL7 FHIR Certification",
+    "Six Sigma Black Belt",
+    "Certified ScrumMaster (CSM)"
+  ],
+  "skills": [
+    "Build Validation",
+    "Telehealth Implementation",
+    "Health Information Exchange",
+    "Clinical Decision Support",
+    "Change Management",
+    "Training Development",
+    "Healthcare IT",
+    "ITWorks",
+    "Power BI",
+    "Revenue Cycle Management",
+    "Millennium",
+    "Patient Portal Implementation",
+    "Cerner",
+    "Value-Based Care",
+    "PharmNet",
+    "User Acceptance Testing"
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "id": "resume_088",
+  "personal_info": {
+    "name": "Frank Williams",
+    "email": "frankwilliams@consultant.net",
+    "phone": "(430) 743-3292",
+    "location": "Minneapolis, MN",
+    "linkedin": "linkedin.com/in/frank-williams-3576"
+  },
+  "summary": "Healthcare informatics specialist with 17+ years of hands-on experience implementing and optimizing Allscripts EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 17,
+  "primary_ehr_system": "Allscripts",
+  "experience": [
+    {
+      "title": "EHR Implementation Consultant",
+      "employer": "Suburban Medical Associates",
+      "location": "Seattle, WA",
+      "start_date": "June 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 2M+ patient records with 99.9% accuracy",
+        "Achieved 95% clinician adoption rate within first 6 months"
+      ]
+    },
+    {
+      "title": "Practice Management Consultant",
+      "employer": "Memorial Hermann",
+      "location": "Los Angeles, CA",
+      "start_date": "September 2020",
+      "end_date": "May 2023",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Completed data migration of 5M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Epic Implementation Analyst",
+      "employer": "PwC Health Industries",
+      "location": "Columbus, OH",
+      "start_date": "January 2019",
+      "end_date": "May 2020",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Managed implementation for 42 ambulatory clinics across 10 states",
+        "Trained 500+ end users with 92% satisfaction rating",
+        "Developed training curriculum adopted as enterprise standard",
+        "Designed clinical workflows that improved documentation efficiency by 40%"
+      ]
+    },
+    {
+      "title": "Health Information Manager",
+      "employer": "Mountain View Health Center",
+      "location": "San Jose, CA",
+      "start_date": "June 2016",
+      "end_date": "February 2019",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Led successful go-live for 750-bed hospital with zero critical issues",
+        "Coordinated go-live support for 50+ providers across 19 locations",
+        "Implemented 8 Epic/Cerner modules on time and under budget",
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Integration Engineer",
+      "employer": "Community Health Partners",
+      "location": "Denver, CO",
+      "start_date": "June 2014",
+      "end_date": "May 2016",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Beacon",
+        "EpicCare Inpatient",
+        "Tapestry",
+        "Willow"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 8 analysts and trainers",
+        "Built 12+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Director of Health Information Manager",
+      "employer": "Leidos Health",
+      "location": "San Antonio, TX",
+      "start_date": "January 2009",
+      "end_date": "December 2014",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Resolute",
+        "Grand Central",
+        "Cogito",
+        "EpicCare Ambulatory"
+      ],
+      "achievements": [
+        "Achieved 95% clinician adoption rate within first 6 months",
+        "Trained 2000+ end users with 93% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Senior Healthcare IT Project Manager",
+      "employer": "Sunrise Health Center",
+      "location": "Detroit, MI",
+      "start_date": "June 2008",
+      "end_date": "May 2009",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 20% through revenue cycle optimization",
+        "Achieved 92% clinician adoption rate within first 4 months",
+        "Led successful go-live for 1000-bed hospital with zero critical issues",
+        "Trained 1000+ end users with 94% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Director of EHR Implementation Consultant",
+      "employer": "Veradigm",
+      "location": "Jacksonville, FL",
+      "start_date": "March 2007",
+      "end_date": "May 2008",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "SurgiNet",
+        "Soarian",
+        "HealtheIntent",
+        "FirstNet"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 21%",
+        "Reduced average patient wait time by 15% through workflow optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Information Systems",
+      "institution": "Arizona State University",
+      "graduation_year": 2009,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "Vanderbilt University",
+      "graduation_year": 2006,
+      "gpa": 3.6
+    }
+  ],
+  "certifications": [
+    "Epic Certified - EpicCare Inpatient"
+  ],
+  "skills": [
+    "HIPAA Compliance",
+    "Training Development",
+    "HL7 Interfaces",
+    "Process Improvement",
+    "Power BI",
+    "Allscripts",
+    "Value-Based Care",
+    "Tableau",
+    "EHR Implementation"
+  ]
+}

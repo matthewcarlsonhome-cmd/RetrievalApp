@@ -1,0 +1,128 @@
+{
+  "id": "resume_024",
+  "personal_info": {
+    "name": "Kathleen Miller",
+    "email": "kathleenmiller@consultant.net",
+    "phone": "(865) 252-2464",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/kathleen-miller-2393"
+  },
+  "summary": "Experienced healthcare implementation consultant with 8 years leading Epic implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 8,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "EHR Implementation Consultant",
+      "employer": "Duke University Hospital",
+      "location": "Milwaukee, WI",
+      "start_date": "June 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Soarian",
+        "PathNet",
+        "PowerChart",
+        "SurgiNet"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 34%",
+        "Achieved HIMSS Stage 7 recognition for implemented facility",
+        "Managed implementation for 34 ambulatory clinics across 8 states"
+      ]
+    },
+    {
+      "title": "Senior Clinical Applications Analyst",
+      "employer": "Lakeside Medical Clinic",
+      "location": "Chicago, IL",
+      "start_date": "January 2018",
+      "end_date": "February 2019",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Trained 200+ end users with 97% satisfaction rating",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Senior Health Information Manager",
+      "employer": "Duke University Hospital",
+      "location": "San Jose, CA",
+      "start_date": "January 2017",
+      "end_date": "May 2018",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Soarian",
+        "CommunityWorks",
+        "PowerChart",
+        "RadNet"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 36% through revenue cycle optimization",
+        "Designed clinical workflows that improved documentation efficiency by 38%",
+        "Coordinated go-live support for 100+ providers across 14 locations",
+        "Managed cross-functional team of 5 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Healthcare IT Project Manager",
+      "employer": "Tegria",
+      "location": "Seattle, WA",
+      "start_date": "March 2016",
+      "end_date": "February 2017",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 36% through revenue cycle optimization",
+        "Reduced average patient wait time by 34% through workflow optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Health Informatics",
+      "institution": "University of Wisconsin",
+      "graduation_year": 2018,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Arts in Healthcare Management",
+      "institution": "University of Pennsylvania",
+      "graduation_year": 2015,
+      "gpa": 3.26
+    }
+  ],
+  "certifications": [
+    "Certified Professional in Healthcare Information and Management Systems (CPHIMS)",
+    "Certified ScrumMaster (CSM)"
+  ],
+  "skills": [
+    "Telehealth Implementation",
+    "Health Information Exchange",
+    "HIPAA Compliance",
+    "HL7 Interfaces",
+    "Stork",
+    "Grand Central",
+    "Tapestry",
+    "EHR Implementation",
+    "Population Health",
+    "Patient Portal Implementation",
+    "Epic",
+    "Crystal Reports",
+    "Scrum",
+    "User Acceptance Testing"
+  ]
+}

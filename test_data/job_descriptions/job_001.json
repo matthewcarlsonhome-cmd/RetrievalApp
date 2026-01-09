@@ -1,0 +1,72 @@
+{
+  "id": "job_001",
+  "title": "Lead Clinical Informatics Analyst",
+  "employer": "Northwestern Memorial Health System",
+  "employer_type": "health system",
+  "location": "New York, NY",
+  "remote_option": "Hybrid",
+  "employment_type": "Part-time",
+  "contract_type": "Contract",
+  "contract_length": "18 months",
+  "posted_date": "2025-12-10",
+  "primary_ehr_system": "athenahealth",
+  "modules": [
+    "athenahealth Core"
+  ],
+  "experience_required": {
+    "min_years": 5,
+    "max_years": null
+  },
+  "description": "Northwestern Memorial Health System is seeking an experienced Lead Clinical Informatics Analyst to join our healthcare IT team. This role will be instrumental in the implementation and optimization of our athenahealth EHR system. The ideal candidate will have deep expertise in athenahealth Core and a passion for improving clinical workflows through technology.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize athenahealth applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Analyze clinical and operational workflows to identify improvement opportunities",
+    "Create detailed system specifications and configuration documents",
+    "Support build and validation activities",
+    "Develop reports and dashboards for clinical and operational metrics",
+    "Troubleshoot system issues and implement solutions"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in Health Informatics, Healthcare Administration, IT, or related field",
+    "experience": "5+ years of healthcare IT implementation experience",
+    "skills": [
+      "athenahealth",
+      "Health Information Exchange",
+      "HL7 Interfaces",
+      "Scrum",
+      "FHIR APIs",
+      "EHR Implementation",
+      "User Acceptance Testing"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "System Integration",
+      "Go-Live Support",
+      "Business Intelligence",
+      "Build Validation",
+      "Revenue Cycle Management",
+      "System Configuration"
+    ],
+    "certifications": [
+      "Epic Certified - Beacon",
+      "Cerner Certified - Millennium",
+      "Certified ScrumMaster (CSM)"
+    ]
+  },
+  "salary": {
+    "type": "hourly",
+    "min": 50,
+    "max": 80,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Competitive hourly rate",
+    "Professional development opportunities"
+  ]
+}

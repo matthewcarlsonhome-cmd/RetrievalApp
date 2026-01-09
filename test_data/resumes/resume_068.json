@@ -1,0 +1,57 @@
+{
+  "id": "resume_068",
+  "personal_info": {
+    "name": "Janet Rivera",
+    "email": "jrivera@healthcaremail.com",
+    "phone": "(399) 622-6385",
+    "location": "Atlanta, GA",
+    "linkedin": "linkedin.com/in/janet-rivera-5674"
+  },
+  "summary": "Healthcare informatics specialist with 2+ years of hands-on experience implementing and optimizing athenahealth EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 2,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Healthcare Integration Engineer",
+      "employer": "Impact Advisors",
+      "location": "Denver, CO",
+      "start_date": "March 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 50+ providers across 18 locations",
+        "Completed data migration of 10M+ patient records with 99.9% accuracy",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "University of Texas",
+      "graduation_year": 2020,
+      "gpa": 3.41
+    }
+  ],
+  "certifications": [
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)"
+  ],
+  "skills": [
+    "Business Intelligence",
+    "Go-Live Support",
+    "Clinical Documentation",
+    "Data Migration",
+    "athenahealth",
+    "Patient Portal Implementation",
+    "Tableau",
+    "Scrum",
+    "Medical Terminology",
+    "System Integration"
+  ]
+}

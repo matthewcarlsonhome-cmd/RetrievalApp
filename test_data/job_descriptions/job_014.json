@@ -1,0 +1,71 @@
+{
+  "id": "job_014",
+  "title": "Clinical Education Specialist",
+  "employer": "Medidata",
+  "employer_type": "vendor",
+  "location": "Salt Lake City, UT",
+  "remote_option": "Travel Required (50-75%)",
+  "employment_type": "Part-time",
+  "contract_type": "Contract",
+  "contract_length": "18 months",
+  "posted_date": "2025-12-22",
+  "primary_ehr_system": "Allscripts",
+  "modules": [
+    "Allscripts Core"
+  ],
+  "experience_required": {
+    "min_years": 3,
+    "max_years": 13
+  },
+  "description": "Medidata seeks a talented Clinical Education Specialist to lead our Allscripts implementation initiatives. You will work closely with clinical stakeholders, IT teams, and executive leadership to deliver solutions that improve efficiency and patient outcomes. Experience with Allscripts Core is essential.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize Allscripts applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Develop comprehensive training curricula and materials",
+    "Conduct classroom and one-on-one training sessions for end users",
+    "Create quick reference guides and e-learning modules",
+    "Assess training effectiveness and identify knowledge gaps",
+    "Provide at-the-elbow support during go-live events"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in relevant field",
+    "experience": "3+ years of healthcare IT implementation experience",
+    "skills": [
+      "Allscripts",
+      "Population Health",
+      "Optimization",
+      "Data Migration",
+      "Health Information Exchange",
+      "Clinical Documentation",
+      "HL7 Interfaces",
+      "Healthcare IT",
+      "Clinical Decision Support",
+      "Revenue Cycle Management",
+      "Telehealth Implementation"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "FHIR APIs",
+      "Value-Based Care",
+      "Training Development"
+    ],
+    "certifications": [
+      "Registered Health Information Administrator (RHIA)"
+    ]
+  },
+  "salary": {
+    "type": "hourly",
+    "min": 33,
+    "max": 63,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Competitive hourly rate",
+    "Professional development opportunities"
+  ]
+}

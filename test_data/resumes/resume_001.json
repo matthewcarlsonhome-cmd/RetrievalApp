@@ -1,0 +1,64 @@
+{
+  "id": "resume_001",
+  "personal_info": {
+    "name": "Karen Murphy",
+    "email": "karenmurphy@healthcaremail.com",
+    "phone": "(411) 431-9276",
+    "location": "Fort Worth, TX",
+    "linkedin": "linkedin.com/in/karen-murphy-8727"
+  },
+  "summary": "Healthcare informatics specialist with 2+ years of hands-on experience implementing and optimizing Cerner EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 2,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Clinical Applications Analyst",
+      "employer": "HCA Healthcare",
+      "location": "New York, NY",
+      "start_date": "March 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Managed implementation for 22 ambulatory clinics across 7 states",
+        "Trained 200+ end users with 95% satisfaction rating",
+        "Reduced average patient wait time by 41% through workflow optimization",
+        "Decreased claim denial rate by 38% through revenue cycle optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "Emory University",
+      "graduation_year": 2021,
+      "gpa": 3.49
+    }
+  ],
+  "certifications": [
+    "Cerner Certified - Millennium",
+    "Epic Certified - EpicCare Ambulatory"
+  ],
+  "skills": [
+    "HIPAA Compliance",
+    "Project Management",
+    "FHIR APIs",
+    "Interoperability",
+    "Data Migration",
+    "HL7 Interfaces",
+    "Change Management",
+    "Healthcare IT",
+    "CPT Coding",
+    "HealtheIntent",
+    "Revenue Cycle Management",
+    "Cerner",
+    "PharmNet",
+    "FirstNet",
+    "EHR Implementation"
+  ]
+}

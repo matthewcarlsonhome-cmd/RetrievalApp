@@ -1,0 +1,160 @@
+{
+  "id": "resume_016",
+  "personal_info": {
+    "name": "Richard Sharma",
+    "email": "rsharma@consultant.net",
+    "phone": "(545) 309-7738",
+    "location": "Baltimore, MD",
+    "linkedin": "linkedin.com/in/richard-sharma-9367"
+  },
+  "summary": "Results-driven healthcare IT professional with 20+ years of experience in EHR implementation and optimization. Specialized in Allscripts system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 20,
+  "primary_ehr_system": "Allscripts",
+  "experience": [
+    {
+      "title": "Healthcare Data Analyst",
+      "employer": "Mountain View Health Center",
+      "location": "Detroit, MI",
+      "start_date": "January 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 19%",
+        "Reduced average patient wait time by 28% through workflow optimization"
+      ]
+    },
+    {
+      "title": "Lead Medical Informatics Consultant",
+      "employer": "Sunrise Health Center",
+      "location": "New York, NY",
+      "start_date": "January 2016",
+      "end_date": "February 2019",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 31%",
+        "Trained 2000+ end users with 96% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Principal Revenue Cycle Implementation Specialist",
+      "employer": "Coastal Health Services",
+      "location": "Atlanta, GA",
+      "start_date": "June 2012",
+      "end_date": "August 2016",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 7 analysts and trainers",
+        "Implemented 6 Epic/Cerner modules on time and under budget",
+        "Designed clinical workflows that improved documentation efficiency by 26%"
+      ]
+    },
+    {
+      "title": "Senior Healthcare IT Project Manager",
+      "employer": "Emory University Hospital",
+      "location": "New York, NY",
+      "start_date": "September 2010",
+      "end_date": "December 2012",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 2M+ patient records with 99.9% accuracy",
+        "Led optimization project resulting in $500K annual cost savings"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Systems Analyst",
+      "employer": "Advocate Aurora Health",
+      "location": "Columbus, OH",
+      "start_date": "June 2005",
+      "end_date": "February 2010",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "CommunityWorks",
+        "ITWorks",
+        "PathNet",
+        "PowerChart"
+      ],
+      "achievements": [
+        "Led successful go-live for 400-bed hospital with zero critical issues",
+        "Reduced average patient wait time by 32% through workflow optimization"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Systems Analyst",
+      "employer": "University of Chicago Medical Center",
+      "location": "Denver, CO",
+      "start_date": "June 2004",
+      "end_date": "February 2005",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PharmNet",
+        "Soarian",
+        "PathNet",
+        "FirstNet"
+      ],
+      "achievements": [
+        "Led successful go-live for 750-bed hospital with zero critical issues",
+        "Built 37+ HL7 interfaces connecting to external systems"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Health Informatics",
+      "institution": "University of Wisconsin",
+      "graduation_year": 2007,
+      "gpa": 3.57
+    },
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "Indiana University",
+      "graduation_year": 2004,
+      "gpa": 3.97
+    }
+  ],
+  "certifications": [
+    "Project Management Professional (PMP)",
+    "Epic Certified - EpicCare Inpatient",
+    "Epic Certified - Beacon"
+  ],
+  "skills": [
+    "Business Intelligence",
+    "ICD-10",
+    "Project Management",
+    "Clinical Documentation",
+    "Data Migration",
+    "Mobile Health",
+    "Allscripts",
+    "Value-Based Care",
+    "Agile Methodology",
+    "Scrum",
+    "System Integration"
+  ]
+}

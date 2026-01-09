@@ -1,0 +1,184 @@
+{
+  "id": "resume_050",
+  "personal_info": {
+    "name": "Jonathan Ramirez",
+    "email": "jramirez@outlook.com",
+    "phone": "(455) 978-7673",
+    "location": "Minneapolis, MN",
+    "linkedin": "linkedin.com/in/jonathan-ramirez-2181"
+  },
+  "summary": "Results-driven healthcare IT professional with 18+ years of experience in EHR implementation and optimization. Specialized in MEDITECH system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 18,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Healthcare IT Project Manager",
+      "employer": "Suburban Medical Associates",
+      "location": "Atlanta, GA",
+      "start_date": "March 2020",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Millennium",
+        "Soarian",
+        "ITWorks",
+        "PharmNet"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Managed cross-functional team of 14 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Lead EHR Support Analyst",
+      "employer": "Baylor Scott & White",
+      "location": "Columbus, OH",
+      "start_date": "March 2018",
+      "end_date": "May 2020",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $1000K annual cost savings",
+        "Completed data migration of 2M+ patient records with 99.9% accuracy",
+        "Achieved HIMSS Stage 5 recognition for implemented facility",
+        "Decreased claim denial rate by 37% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Lead Clinical Applications Analyst",
+      "employer": "Community Health Partners",
+      "location": "Las Vegas, NV",
+      "start_date": "September 2016",
+      "end_date": "May 2018",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Implemented 3 Epic/Cerner modules on time and under budget",
+        "Built 21+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Principal EHR Training Specialist",
+      "employer": "Pivot Point Consulting",
+      "location": "Chicago, IL",
+      "start_date": "January 2013",
+      "end_date": "December 2016",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Trained 2000+ end users with 95% satisfaction rating",
+        "Built 37+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Director of EHR Training Specialist",
+      "employer": "CureMD",
+      "location": "Houston, TX",
+      "start_date": "January 2009",
+      "end_date": "December 2013",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "ITWorks",
+        "FirstNet",
+        "Soarian",
+        "PowerChart"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Decreased claim denial rate by 26% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Director of Healthcare Integration Engineer",
+      "employer": "Nordic Consulting",
+      "location": "Las Vegas, NV",
+      "start_date": "September 2008",
+      "end_date": "August 2009",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "CommunityWorks",
+        "RadNet",
+        "ITWorks",
+        "PathNet"
+      ],
+      "achievements": [
+        "Managed implementation for 10 ambulatory clinics across 2 states",
+        "Managed cross-functional team of 7 analysts and trainers",
+        "Led optimization project resulting in $1000K annual cost savings"
+      ]
+    },
+    {
+      "title": "Director of Health Information Manager",
+      "employer": "Community Health Partners",
+      "location": "Chicago, IL",
+      "start_date": "March 2006",
+      "end_date": "December 2008",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Built 20+ HL7 interfaces connecting to external systems",
+        "Achieved 86% clinician adoption rate within first 6 months"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Public Health",
+      "institution": "University of Chicago",
+      "graduation_year": 2009,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Arts in Healthcare Management",
+      "institution": "Northwestern University",
+      "graduation_year": 2003,
+      "gpa": 3.58
+    }
+  ],
+  "certifications": [
+    "HL7 FHIR Certification",
+    "Epic Certified - EpicCare Inpatient",
+    "Certified Professional in Healthcare Information and Management Systems (CPHIMS)",
+    "Registered Health Information Administrator (RHIA)",
+    "Six Sigma Black Belt",
+    "Cerner Certified - PowerChart"
+  ],
+  "skills": [
+    "Build Validation",
+    "ICD-10",
+    "Go-Live Support",
+    "HIPAA Compliance",
+    "Python",
+    "Revenue Cycle Management",
+    "MEDITECH",
+    "Clinical Workflow Analysis",
+    "Agile Methodology",
+    "EHR Implementation"
+  ]
+}

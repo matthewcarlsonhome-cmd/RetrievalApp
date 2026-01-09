@@ -1,0 +1,122 @@
+{
+  "id": "resume_008",
+  "personal_info": {
+    "name": "Amanda Rodriguez",
+    "email": "amandarodriguez@yahoo.com",
+    "phone": "(749) 608-1404",
+    "location": "Cleveland, OH",
+    "linkedin": "linkedin.com/in/amanda-rodriguez-3283"
+  },
+  "summary": "Dedicated EHR implementation professional bringing 12 years of experience in athenahealth deployments. Skilled in leading cross-functional teams, managing complex projects, and ensuring successful system adoption. Track record of on-time, on-budget implementations.",
+  "years_experience": 12,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Health Information Systems Analyst",
+      "employer": "Mount Sinai Hospital",
+      "location": "San Jose, CA",
+      "start_date": "March 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 10M+ patient records with 99.9% accuracy",
+        "Led successful go-live for 1000-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Clinical Informatics Specialist",
+      "employer": "Huron Consulting",
+      "location": "Detroit, MI",
+      "start_date": "June 2018",
+      "end_date": "August 2022",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Resolute",
+        "Care Everywhere",
+        "MyChart",
+        "EpicCare Ambulatory"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 36%",
+        "Achieved HIMSS Stage 6 recognition for implemented facility",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Lead Revenue Cycle Implementation Specialist",
+      "employer": "Barnes-Jewish Hospital",
+      "location": "Baltimore, MD",
+      "start_date": "September 2015",
+      "end_date": "December 2018",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Achieved 93% clinician adoption rate within first 5 months",
+        "Completed data migration of 10M+ patient records with 99.9% accuracy",
+        "Implemented 6 Epic/Cerner modules on time and under budget"
+      ]
+    },
+    {
+      "title": "Principal Cerner Implementation Specialist",
+      "employer": "Kaiser Permanente",
+      "location": "Philadelphia, PA",
+      "start_date": "March 2012",
+      "end_date": "December 2015",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 22% through workflow optimization",
+        "Led optimization project resulting in $100K annual cost savings"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Information Systems",
+      "institution": "Johns Hopkins University",
+      "graduation_year": 2017,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "Temple University",
+      "graduation_year": 2012,
+      "gpa": 3.59
+    }
+  ],
+  "certifications": [
+    "Six Sigma Black Belt",
+    "Epic Certified - Beacon"
+  ],
+  "skills": [
+    "Build Validation",
+    "Project Management",
+    "FHIR APIs",
+    "Telehealth Implementation",
+    "HIPAA Compliance",
+    "HL7 Interfaces",
+    "Python",
+    "Mobile Health",
+    "athenahealth",
+    "Crystal Reports",
+    "Optimization"
+  ]
+}

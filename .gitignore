@@ -55,9 +55,10 @@ feedback/
 evaluation/
 truth_sets/
 
-# Generated test data (regenerate with: python scripts/generate_test_data.py)
-test_data/
+# Generated results (output from matching)
 results/
+
+# Note: test_data/ is now tracked to ensure sample data is available
 
 # Environment
 .env

@@ -1,0 +1,104 @@
+{
+  "id": "resume_096",
+  "personal_info": {
+    "name": "Ashley Torres",
+    "email": "atorres@gmail.com",
+    "phone": "(308) 851-6079",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/ashley-torres-4732"
+  },
+  "summary": "Clinical informatics expert with 11+ years specializing in athenahealth implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 11,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Health IT Implementation Manager",
+      "employer": "Sunrise Health Center",
+      "location": "Seattle, WA",
+      "start_date": "March 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Trained 500+ end users with 92% satisfaction rating",
+        "Designed clinical workflows that improved documentation efficiency by 22%",
+        "Led successful go-live for 500-bed hospital with zero critical issues",
+        "Managed implementation for 16 ambulatory clinics across 6 states"
+      ]
+    },
+    {
+      "title": "Epic Implementation Analyst",
+      "employer": "Nordic Consulting",
+      "location": "Atlanta, GA",
+      "start_date": "March 2014",
+      "end_date": "May 2019",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Implemented 12 Epic/Cerner modules on time and under budget",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Director of Practice Management Consultant",
+      "employer": "Rush University Medical Center",
+      "location": "Jacksonville, FL",
+      "start_date": "September 2013",
+      "end_date": "December 2014",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Trained 2000+ end users with 94% satisfaction rating",
+        "Managed cross-functional team of 12 analysts and trainers",
+        "Led successful go-live for 150-bed hospital with zero critical issues"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Healthcare Administration",
+      "institution": "Arizona State University",
+      "graduation_year": 2016,
+      "gpa": 3.98
+    },
+    {
+      "degree": "Bachelor of Science in Health Informatics",
+      "institution": "University of Florida",
+      "graduation_year": 2010,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Epic Certified - EpicCare Inpatient"
+  ],
+  "skills": [
+    "HIPAA Compliance",
+    "Interoperability",
+    "User Acceptance Testing",
+    "Healthcare IT",
+    "Python",
+    "athenahealth",
+    "Population Health",
+    "Patient Portal Implementation",
+    "Value-Based Care",
+    "Tableau",
+    "Agile Methodology",
+    "Medical Terminology",
+    "System Configuration"
+  ]
+}

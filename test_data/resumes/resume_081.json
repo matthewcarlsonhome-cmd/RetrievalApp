@@ -1,0 +1,147 @@
+{
+  "id": "resume_081",
+  "personal_info": {
+    "name": "Katherine Lee",
+    "email": "klee@consultant.net",
+    "phone": "(219) 315-8364",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/katherine-lee-4809"
+  },
+  "summary": "Dedicated EHR implementation professional bringing 16 years of experience in athenahealth deployments. Skilled in leading cross-functional teams, managing complex projects, and ensuring successful system adoption. Track record of on-time, on-budget implementations.",
+  "years_experience": 16,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Epic Implementation Analyst",
+      "employer": "Accenture Health",
+      "location": "Seattle, WA",
+      "start_date": "March 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Beacon",
+        "ASAP",
+        "Resolute",
+        "EpicCare Inpatient"
+      ],
+      "achievements": [
+        "Built 48+ HL7 interfaces connecting to external systems",
+        "Implemented 8 Epic/Cerner modules on time and under budget",
+        "Achieved HIMSS Stage 5 recognition for implemented facility",
+        "Trained 200+ end users with 92% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Lead Health IT Implementation Manager",
+      "employer": "Sutter Health",
+      "location": "Minneapolis, MN",
+      "start_date": "September 2016",
+      "end_date": "February 2019",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 36%",
+        "Completed data migration of 2M+ patient records with 99.9% accuracy",
+        "Led successful go-live for 750-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Lead Practice Management Consultant",
+      "employer": "Health Catalyst",
+      "location": "Columbus, OH",
+      "start_date": "March 2013",
+      "end_date": "February 2016",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 4 analysts and trainers",
+        "Led successful go-live for 300-bed hospital with zero critical issues",
+        "Trained 500+ end users with 99% satisfaction rating",
+        "Completed data migration of 5M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Principal Healthcare Data Analyst",
+      "employer": "Conduent Healthcare",
+      "location": "Cleveland, OH",
+      "start_date": "September 2012",
+      "end_date": "February 2013",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PharmNet",
+        "FirstNet",
+        "ITWorks",
+        "CommunityWorks"
+      ],
+      "achievements": [
+        "Built 34+ HL7 interfaces connecting to external systems",
+        "Led optimization project resulting in $200K annual cost savings"
+      ]
+    },
+    {
+      "title": "Senior Clinical Informatics Specialist",
+      "employer": "Brigham and Women's Hospital",
+      "location": "Houston, TX",
+      "start_date": "June 2008",
+      "end_date": "August 2012",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 5 recognition for implemented facility",
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Coordinated go-live support for 100+ providers across 13 locations"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Health Information Management",
+      "institution": "Harvard University",
+      "graduation_year": 2012,
+      "gpa": 3.86
+    },
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "University of Florida",
+      "graduation_year": 2008,
+      "gpa": 3.75
+    }
+  ],
+  "certifications": [
+    "HL7 FHIR Certification",
+    "Epic Certified - Willow",
+    "ITIL Foundation Certification",
+    "Certified Health Data Analyst (CHDA)",
+    "Certified ScrumMaster (CSM)"
+  ],
+  "skills": [
+    "HIPAA Compliance",
+    "Health Information Exchange",
+    "CPT Coding",
+    "Mobile Health",
+    "athenahealth",
+    "Population Health",
+    "Report Writing",
+    "Clinical Workflow Analysis",
+    "System Integration"
+  ]
+}

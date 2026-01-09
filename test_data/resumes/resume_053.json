@@ -1,0 +1,86 @@
+{
+  "id": "resume_053",
+  "personal_info": {
+    "name": "Deborah Hill",
+    "email": "deborahhill@yahoo.com",
+    "phone": "(322) 395-9725",
+    "location": "Salt Lake City, UT",
+    "linkedin": "linkedin.com/in/deborah-hill-7026"
+  },
+  "summary": "Experienced healthcare implementation consultant with 4 years leading Epic implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 4,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Medical Informatics Consultant",
+      "employer": "CureMD",
+      "location": "San Diego, CA",
+      "start_date": "March 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 5M+ patient records with 99.9% accuracy",
+        "Coordinated go-live support for 500+ providers across 16 locations"
+      ]
+    },
+    {
+      "title": "Clinical Applications Analyst",
+      "employer": "University of Chicago Medical Center",
+      "location": "Minneapolis, MN",
+      "start_date": "June 2020",
+      "end_date": "December 2021",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PathNet",
+        "RadNet",
+        "HealtheIntent",
+        "Millennium"
+      ],
+      "achievements": [
+        "Trained 100+ end users with 98% satisfaction rating",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Pennsylvania",
+      "graduation_year": 2020,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Epic Certified - EpicCare Inpatient",
+    "Six Sigma Green Belt",
+    "Six Sigma Black Belt"
+  ],
+  "skills": [
+    "Health Information Exchange",
+    "Business Intelligence",
+    "Cogito",
+    "Interoperability",
+    "Change Management",
+    "HL7 Interfaces",
+    "Resolute",
+    "System Integration",
+    "EHR Implementation",
+    "Population Health",
+    "EpicCare Inpatient",
+    "Optimization",
+    "Report Writing",
+    "Epic",
+    "Agile Methodology",
+    "Scrum",
+    "Medical Terminology",
+    "User Acceptance Testing"
+  ]
+}

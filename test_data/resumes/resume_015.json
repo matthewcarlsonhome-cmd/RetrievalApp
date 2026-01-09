@@ -1,0 +1,179 @@
+{
+  "id": "resume_015",
+  "personal_info": {
+    "name": "Susan Sharma",
+    "email": "susansharma@consultant.net",
+    "phone": "(657) 236-5479",
+    "location": "New York, NY",
+    "linkedin": "linkedin.com/in/susan-sharma-9919"
+  },
+  "summary": "Healthcare informatics specialist with 17+ years of hands-on experience implementing and optimizing athenahealth EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 17,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Health Information Manager",
+      "employer": "Barnes-Jewish Hospital",
+      "location": "Baltimore, MD",
+      "start_date": "September 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 23% through revenue cycle optimization",
+        "Managed cross-functional team of 10 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Practice Management Consultant",
+      "employer": "Leidos Health",
+      "location": "Charlotte, NC",
+      "start_date": "January 2021",
+      "end_date": "February 2023",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 200+ providers across 6 locations",
+        "Designed clinical workflows that improved documentation efficiency by 26%"
+      ]
+    },
+    {
+      "title": "Senior EHR Support Analyst",
+      "employer": "Suburban Medical Associates",
+      "location": "Jacksonville, FL",
+      "start_date": "June 2016",
+      "end_date": "May 2021",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "EpicCare Inpatient",
+        "Tapestry",
+        "Care Everywhere",
+        "ASAP"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 31% through revenue cycle optimization",
+        "Implemented 5 Epic/Cerner modules on time and under budget"
+      ]
+    },
+    {
+      "title": "Lead Practice Management Consultant",
+      "employer": "Ascension Health",
+      "location": "New York, NY",
+      "start_date": "September 2014",
+      "end_date": "February 2016",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Millennium",
+        "HealtheIntent",
+        "PharmNet",
+        "SurgiNet"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 35% through revenue cycle optimization",
+        "Completed data migration of 5M+ patient records with 99.9% accuracy",
+        "Built 48+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Senior Clinical Workflow Analyst",
+      "employer": "Henry Ford Hospital",
+      "location": "Seattle, WA",
+      "start_date": "September 2011",
+      "end_date": "August 2014",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "OpTime",
+        "Willow",
+        "Tapestry",
+        "EpicCare Ambulatory"
+      ],
+      "achievements": [
+        "Led successful go-live for 500-bed hospital with zero critical issues",
+        "Implemented 5 Epic/Cerner modules on time and under budget"
+      ]
+    },
+    {
+      "title": "Lead Practice Management Consultant",
+      "employer": "Mayo Clinic",
+      "location": "Detroit, MI",
+      "start_date": "January 2010",
+      "end_date": "December 2011",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Achieved 85% clinician adoption rate within first 6 months",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Senior Cerner Implementation Specialist",
+      "employer": "Brigham and Women's Hospital",
+      "location": "Boston, MA",
+      "start_date": "June 2007",
+      "end_date": "February 2010",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "RadNet",
+        "HealtheIntent",
+        "PathNet",
+        "PowerChart"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 7 recognition for implemented facility",
+        "Trained 500+ end users with 95% satisfaction rating",
+        "Reduced average patient wait time by 22% through workflow optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "Northwestern University",
+      "graduation_year": 2007,
+      "gpa": 3.98
+    }
+  ],
+  "certifications": [
+    "Cerner Certified - Millennium",
+    "Epic Certified - EpicCare Ambulatory",
+    "AWS Certified Solutions Architect"
+  ],
+  "skills": [
+    "HIPAA Compliance",
+    "ICD-10",
+    "Clinical Decision Support",
+    "Mobile Health",
+    "athenahealth",
+    "SQL",
+    "Revenue Cycle Management",
+    "Report Writing",
+    "Clinical Workflow Analysis",
+    "Crystal Reports",
+    "Scrum",
+    "Medical Terminology",
+    "System Configuration"
+  ]
+}

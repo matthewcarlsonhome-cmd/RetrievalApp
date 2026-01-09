@@ -1,0 +1,71 @@
+{
+  "id": "job_020",
+  "title": "Senior Clinical Informatics Program Manager",
+  "employer": "Northwell Health",
+  "employer_type": "hospital",
+  "location": "Boston, MA",
+  "remote_option": "Hybrid",
+  "employment_type": "Part-time",
+  "contract_type": "Permanent",
+  "contract_length": null,
+  "posted_date": "2026-01-01",
+  "primary_ehr_system": "eClinicalWorks",
+  "modules": [
+    "eClinicalWorks Core"
+  ],
+  "experience_required": {
+    "min_years": 10,
+    "max_years": 20
+  },
+  "description": "Northwell Health is seeking an experienced Senior Clinical Informatics Program Manager to join our healthcare IT team. This role will be instrumental in the implementation and optimization of our eClinicalWorks EHR system. The ideal candidate will have deep expertise in eClinicalWorks Core and a passion for improving clinical workflows through technology.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize eClinicalWorks applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Develop and manage project plans, timelines, and resource allocation",
+    "Lead cross-functional implementation teams",
+    "Report project status to executive leadership",
+    "Manage project budget and identify risk mitigation strategies",
+    "Facilitate steering committee meetings and stakeholder communications"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree in Health Informatics, Healthcare Administration, IT, or related field",
+    "experience": "10+ years of healthcare IT implementation experience",
+    "skills": [
+      "eClinicalWorks",
+      "EHR Implementation",
+      "Optimization",
+      "Process Improvement",
+      "System Integration",
+      "Project Management"
+    ],
+    "certifications": []
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Clinical Workflow Analysis",
+      "Revenue Cycle Management",
+      "Go-Live Support"
+    ],
+    "certifications": [
+      "Epic Certified - Willow",
+      "Epic Certified - EpicCare Ambulatory"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 168463,
+    "max": 205600,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Life and disability insurance",
+    "Relocation assistance",
+    "Stock options/equity",
+    "Employee wellness program",
+    "Professional development budget",
+    "401(k) with employer match"
+  ]
+}

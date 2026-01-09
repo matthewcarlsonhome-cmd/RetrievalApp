@@ -1,0 +1,81 @@
+{
+  "id": "resume_089",
+  "personal_info": {
+    "name": "Jonathan Nelson",
+    "email": "jonathan.nelson@yahoo.com",
+    "phone": "(594) 686-3515",
+    "location": "Phoenix, AZ",
+    "linkedin": "linkedin.com/in/jonathan-nelson-5786"
+  },
+  "summary": "Results-driven healthcare IT professional with 5+ years of experience in EHR implementation and optimization. Specialized in Allscripts system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 5,
+  "primary_ehr_system": "Allscripts",
+  "experience": [
+    {
+      "title": "Clinical Applications Analyst",
+      "employer": "Northwestern Memorial Hospital",
+      "location": "Denver, CO",
+      "start_date": "June 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 3 analysts and trainers",
+        "Led optimization project resulting in $100K annual cost savings",
+        "Achieved 98% clinician adoption rate within first 2 months"
+      ]
+    },
+    {
+      "title": "EHR Implementation Consultant",
+      "employer": "Impact Advisors",
+      "location": "Salt Lake City, UT",
+      "start_date": "September 2019",
+      "end_date": "February 2021",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 36%",
+        "Implemented 7 Epic/Cerner modules on time and under budget",
+        "Decreased claim denial rate by 27% through revenue cycle optimization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Public Health",
+      "institution": "Boston University",
+      "graduation_year": 2023,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Northwestern University",
+      "graduation_year": 2019,
+      "gpa": 3.93
+    }
+  ],
+  "certifications": [
+    "HL7 FHIR Certification"
+  ],
+  "skills": [
+    "Build Validation",
+    "Clinical Decision Support",
+    "Data Migration",
+    "Allscripts",
+    "Healthcare Analytics",
+    "Clinical Workflow Analysis",
+    "Tableau",
+    "Medical Terminology",
+    "System Integration"
+  ]
+}

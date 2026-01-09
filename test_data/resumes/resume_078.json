@@ -1,0 +1,110 @@
+{
+  "id": "resume_078",
+  "personal_info": {
+    "name": "Pamela Sharma",
+    "email": "pamelasharma@yahoo.com",
+    "phone": "(915) 533-2615",
+    "location": "Columbus, OH",
+    "linkedin": "linkedin.com/in/pamela-sharma-3074"
+  },
+  "summary": "Dedicated EHR implementation professional bringing 4 years of experience in Cerner deployments. Skilled in leading cross-functional teams, managing complex projects, and ensuring successful system adoption. Track record of on-time, on-budget implementations.",
+  "years_experience": 4,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Epic Implementation Analyst",
+      "employer": "Premier Medical Group",
+      "location": "San Diego, CA",
+      "start_date": "March 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "EpicCare Inpatient",
+        "OpTime",
+        "MyChart",
+        "Prelude"
+      ],
+      "achievements": [
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Achieved 87% clinician adoption rate within first 6 months",
+        "Reduced average patient wait time by 41% through workflow optimization",
+        "Led optimization project resulting in $500K annual cost savings"
+      ]
+    },
+    {
+      "title": "Health Information Manager",
+      "employer": "Community Health Systems",
+      "location": "Las Vegas, NV",
+      "start_date": "March 2022",
+      "end_date": "May 2023",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "RadNet",
+        "Soarian",
+        "PowerChart",
+        "PharmNet"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 18%",
+        "Reduced average patient wait time by 23% through workflow optimization",
+        "Decreased claim denial rate by 30% through revenue cycle optimization",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Medical Informatics Consultant",
+      "employer": "Sunrise Health Center",
+      "location": "Seattle, WA",
+      "start_date": "March 2020",
+      "end_date": "May 2022",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Managed implementation for 37 ambulatory clinics across 5 states",
+        "Managed cross-functional team of 15 analysts and trainers",
+        "Completed data migration of 2M+ patient records with 99.9% accuracy"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "University of Wisconsin",
+      "graduation_year": 2018,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Six Sigma Black Belt",
+    "AWS Certified Solutions Architect",
+    "Six Sigma Green Belt"
+  ],
+  "skills": [
+    "Build Validation",
+    "HIPAA Compliance",
+    "Go-Live Support",
+    "Health Information Exchange",
+    "Business Intelligence",
+    "HL7 Interfaces",
+    "ITWorks",
+    "Process Improvement",
+    "Mobile Health",
+    "SQL",
+    "HealtheIntent",
+    "Population Health",
+    "Revenue Cycle Management",
+    "PowerChart",
+    "Cerner",
+    "Tableau",
+    "Medical Terminology"
+  ]
+}

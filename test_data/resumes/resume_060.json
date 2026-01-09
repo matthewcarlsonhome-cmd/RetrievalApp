@@ -1,0 +1,79 @@
+{
+  "id": "resume_060",
+  "personal_info": {
+    "name": "Helen White",
+    "email": "helenwhite@yahoo.com",
+    "phone": "(499) 904-7979",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/helen-white-2563"
+  },
+  "summary": "Dedicated EHR implementation professional bringing 3 years of experience in athenahealth deployments. Skilled in leading cross-functional teams, managing complex projects, and ensuring successful system adoption. Track record of on-time, on-budget implementations.",
+  "years_experience": 3,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Health Information Systems Analyst",
+      "employer": "Valley Medical Associates",
+      "location": "Detroit, MI",
+      "start_date": "January 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 25% through workflow optimization",
+        "Coordinated go-live support for 100+ providers across 8 locations"
+      ]
+    },
+    {
+      "title": "Clinical Workflow Analyst",
+      "employer": "UCSF Medical Center",
+      "location": "Minneapolis, MN",
+      "start_date": "March 2021",
+      "end_date": "May 2023",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $100K annual cost savings",
+        "Trained 100+ end users with 92% satisfaction rating"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Chicago",
+      "graduation_year": 2020,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)",
+    "Cerner Certified - Millennium"
+  ],
+  "skills": [
+    "Build Validation",
+    "Business Intelligence",
+    "Go-Live Support",
+    "Telehealth Implementation",
+    "Change Management",
+    "Training Development",
+    "Data Migration",
+    "Python",
+    "athenahealth",
+    "Healthcare Analytics",
+    "Clinical Workflow Analysis",
+    "Scrum",
+    "Optimization",
+    "User Acceptance Testing"
+  ]
+}

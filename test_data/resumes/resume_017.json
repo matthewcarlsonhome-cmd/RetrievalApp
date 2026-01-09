@@ -1,0 +1,151 @@
+{
+  "id": "resume_017",
+  "personal_info": {
+    "name": "Frank Walker",
+    "email": "frank.walker@yahoo.com",
+    "phone": "(348) 980-7366",
+    "location": "Jacksonville, FL",
+    "linkedin": "linkedin.com/in/frank-walker-9185"
+  },
+  "summary": "Experienced healthcare implementation consultant with 12 years leading Epic implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 12,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Health IT Implementation Manager",
+      "employer": "Lakeside Medical Clinic",
+      "location": "San Antonio, TX",
+      "start_date": "June 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Achieved 98% clinician adoption rate within first 6 months",
+        "Trained 200+ end users with 96% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Cerner Implementation Specialist",
+      "employer": "Intermountain Healthcare",
+      "location": "Minneapolis, MN",
+      "start_date": "September 2017",
+      "end_date": "August 2019",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 20% through workflow optimization",
+        "Developed training curriculum adopted as enterprise standard",
+        "Built 42+ HL7 interfaces connecting to external systems",
+        "Completed data migration of 1M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Lead Clinical Applications Analyst",
+      "employer": "Community Health Systems",
+      "location": "Las Vegas, NV",
+      "start_date": "June 2015",
+      "end_date": "May 2017",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "EpicCare Ambulatory",
+        "Prelude",
+        "EpicCare Inpatient",
+        "Cogito"
+      ],
+      "achievements": [
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Implemented 5 Epic/Cerner modules on time and under budget",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Director of Epic Implementation Analyst",
+      "employer": "Christus Health",
+      "location": "Portland, OR",
+      "start_date": "June 2013",
+      "end_date": "December 2015",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "CommunityWorks",
+        "ITWorks",
+        "RadNet",
+        "SurgiNet"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $50K annual cost savings",
+        "Decreased claim denial rate by 39% through revenue cycle optimization",
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Lead Epic Implementation Analyst",
+      "employer": "Lakeside Medical Clinic",
+      "location": "Phoenix, AZ",
+      "start_date": "June 2012",
+      "end_date": "December 2013",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PowerChart",
+        "RadNet",
+        "HealtheIntent",
+        "Millennium"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 200+ providers across 12 locations",
+        "Reduced average patient wait time by 42% through workflow optimization",
+        "Achieved HIMSS Stage 6 recognition for implemented facility",
+        "Led optimization project resulting in $200K annual cost savings"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "Temple University",
+      "graduation_year": 2010,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Certified ScrumMaster (CSM)",
+    "Epic Certified - Beacon",
+    "Certified Professional in Healthcare Information and Management Systems (CPHIMS)",
+    "Certified Information Systems Security Professional (CISSP)"
+  ],
+  "skills": [
+    "HIPAA Compliance",
+    "Cogito",
+    "Clinical Documentation",
+    "Clinical Decision Support",
+    "Data Migration",
+    "Healthcare IT",
+    "Grand Central",
+    "Process Improvement",
+    "EpicCare Ambulatory",
+    "System Integration",
+    "SQL",
+    "Healthcare Analytics",
+    "Patient Portal Implementation",
+    "Value-Based Care",
+    "Epic",
+    "Agile Methodology",
+    "Scrum",
+    "System Configuration"
+  ]
+}

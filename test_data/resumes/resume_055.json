@@ -1,0 +1,88 @@
+{
+  "id": "resume_055",
+  "personal_info": {
+    "name": "Amanda Johnson",
+    "email": "ajohnson@yahoo.com",
+    "phone": "(626) 780-3461",
+    "location": "Jacksonville, FL",
+    "linkedin": "linkedin.com/in/amanda-johnson-6551"
+  },
+  "summary": "Healthcare informatics specialist with 7+ years of hands-on experience implementing and optimizing athenahealth EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 7,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Revenue Cycle Implementation Specialist",
+      "employer": "Deloitte Healthcare",
+      "location": "Houston, TX",
+      "start_date": "January 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Achieved 88% clinician adoption rate within first 3 months",
+        "Led successful go-live for 1000-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Senior EHR Support Analyst",
+      "employer": "Northwell Health",
+      "location": "San Antonio, TX",
+      "start_date": "September 2017",
+      "end_date": "December 2019",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Soarian",
+        "CommunityWorks",
+        "SurgiNet",
+        "RadNet"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 500+ providers across 8 locations",
+        "Designed clinical workflows that improved documentation efficiency by 40%",
+        "Built 37+ HL7 interfaces connecting to external systems"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Healthcare Administration",
+      "institution": "Drexel University",
+      "graduation_year": 2017,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "University of Pittsburgh",
+      "graduation_year": 2014,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Epic Certified - EpicCare Ambulatory"
+  ],
+  "skills": [
+    "FHIR APIs",
+    "Telehealth Implementation",
+    "Clinical Documentation",
+    "CPT Coding",
+    "Change Management",
+    "Training Development",
+    "Healthcare IT",
+    "Mobile Health",
+    "Power BI",
+    "athenahealth",
+    "Population Health",
+    "Healthcare Analytics",
+    "Crystal Reports",
+    "EHR Implementation",
+    "User Acceptance Testing"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "resume_048",
+  "personal_info": {
+    "name": "Pamela Wong",
+    "email": "pamela.wong@outlook.com",
+    "phone": "(740) 442-9493",
+    "location": "New York, NY",
+    "linkedin": "linkedin.com/in/pamela-wong-1520"
+  },
+  "summary": "Results-driven healthcare IT professional with 7+ years of experience in EHR implementation and optimization. Specialized in Epic system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 7,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "EHR Support Analyst",
+      "employer": "Ochsner Medical Center",
+      "location": "Houston, TX",
+      "start_date": "January 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Tapestry",
+        "Healthy Planet",
+        "ASAP",
+        "Stork"
+      ],
+      "achievements": [
+        "Managed implementation for 45 ambulatory clinics across 2 states",
+        "Completed data migration of 10M+ patient records with 99.9% accuracy",
+        "Reduced average patient wait time by 26% through workflow optimization",
+        "Achieved 86% clinician adoption rate within first 5 months"
+      ]
+    },
+    {
+      "title": "Cerner Implementation Specialist",
+      "employer": "Community Health Systems",
+      "location": "Nashville, TN",
+      "start_date": "March 2021",
+      "end_date": "August 2022",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "HealtheIntent",
+        "PharmNet",
+        "FirstNet",
+        "PathNet"
+      ],
+      "achievements": [
+        "Led successful go-live for 150-bed hospital with zero critical issues",
+        "Decreased claim denial rate by 31% through revenue cycle optimization",
+        "Managed implementation for 23 ambulatory clinics across 10 states"
+      ]
+    },
+    {
+      "title": "Medical Informatics Consultant",
+      "employer": "DrChrono",
+      "location": "Portland, OR",
+      "start_date": "March 2017",
+      "end_date": "December 2021",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Cogito",
+        "EpicCare Ambulatory",
+        "ASAP",
+        "Beacon"
+      ],
+      "achievements": [
+        "Trained 500+ end users with 96% satisfaction rating",
+        "Led successful go-live for 750-bed hospital with zero critical issues"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Public Health",
+      "institution": "University of North Carolina",
+      "graduation_year": 2019,
+      "gpa": 3.79
+    },
+    {
+      "degree": "Bachelor of Arts in Healthcare Management",
+      "institution": "Temple University",
+      "graduation_year": 2015,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Project Management Professional (PMP)"
+  ],
+  "skills": [
+    "Health Information Exchange",
+    "Business Intelligence",
+    "Cogito",
+    "Clinical Decision Support",
+    "Data Migration",
+    "Training Development",
+    "Stork",
+    "Healthcare IT",
+    "Python",
+    "Process Improvement",
+    "Power BI",
+    "OpTime",
+    "Population Health",
+    "Healthcare Analytics",
+    "Epic",
+    "Tableau",
+    "Scrum",
+    "Optimization"
+  ]
+}

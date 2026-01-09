@@ -1,0 +1,102 @@
+{
+  "id": "resume_070",
+  "personal_info": {
+    "name": "Dorothy O'Brien",
+    "email": "dorothyo'brien@consultant.net",
+    "phone": "(648) 208-9944",
+    "location": "Austin, TX",
+    "linkedin": "linkedin.com/in/dorothy-o'brien-7994"
+  },
+  "summary": "Results-driven healthcare IT professional with 10+ years of experience in EHR implementation and optimization. Specialized in athenahealth system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 10,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "EHR Implementation Consultant",
+      "employer": "Advocate Aurora Health",
+      "location": "Cleveland, OH",
+      "start_date": "March 2020",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Radiant",
+        "Care Everywhere",
+        "Beacon",
+        "Tapestry"
+      ],
+      "achievements": [
+        "Led successful go-live for 1000-bed hospital with zero critical issues",
+        "Developed training curriculum adopted as enterprise standard",
+        "Managed cross-functional team of 14 analysts and trainers",
+        "Managed implementation for 32 ambulatory clinics across 2 states"
+      ]
+    },
+    {
+      "title": "Lead EHR Training Specialist",
+      "employer": "Cleveland Clinic",
+      "location": "Detroit, MI",
+      "start_date": "March 2017",
+      "end_date": "December 2020",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 28% through workflow optimization",
+        "Led successful go-live for 400-bed hospital with zero critical issues",
+        "Trained 200+ end users with 97% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Lead EHR Support Analyst",
+      "employer": "Penn Medicine",
+      "location": "Los Angeles, CA",
+      "start_date": "March 2014",
+      "end_date": "May 2017",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 10M+ patient records with 99.9% accuracy",
+        "Built 31+ HL7 interfaces connecting to external systems"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Harvard University",
+      "graduation_year": 2011,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Six Sigma Black Belt",
+    "Epic Certified - EpicCare Inpatient",
+    "Six Sigma Green Belt",
+    "Certified ScrumMaster (CSM)"
+  ],
+  "skills": [
+    "FHIR APIs",
+    "Interoperability",
+    "Data Migration",
+    "Clinical Decision Support",
+    "HL7 Interfaces",
+    "Process Improvement",
+    "athenahealth",
+    "SQL",
+    "System Configuration",
+    "Value-Based Care",
+    "Clinical Workflow Analysis",
+    "User Acceptance Testing"
+  ]
+}

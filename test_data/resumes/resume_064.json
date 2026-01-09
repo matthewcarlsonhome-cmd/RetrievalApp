@@ -1,0 +1,87 @@
+{
+  "id": "resume_064",
+  "personal_info": {
+    "name": "Emily Hall",
+    "email": "ehall@healthcaremail.com",
+    "phone": "(758) 978-6889",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/emily-hall-2667"
+  },
+  "summary": "Experienced healthcare implementation consultant with 6 years leading Epic implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 6,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Health Information Manager",
+      "employer": "Premier Medical Group",
+      "location": "Fort Worth, TX",
+      "start_date": "September 2020",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Millennium",
+        "HealtheIntent",
+        "CommunityWorks",
+        "PharmNet"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 50+ providers across 15 locations",
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Achieved 85% clinician adoption rate within first 4 months",
+        "Designed clinical workflows that improved documentation efficiency by 41%"
+      ]
+    },
+    {
+      "title": "Senior Health Information Systems Analyst",
+      "employer": "Deloitte Healthcare",
+      "location": "Phoenix, AZ",
+      "start_date": "September 2018",
+      "end_date": "February 2020",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "RadNet",
+        "SurgiNet",
+        "HealtheIntent",
+        "PharmNet"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 100+ providers across 7 locations",
+        "Achieved 98% clinician adoption rate within first 3 months"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Healthcare Management",
+      "institution": "Northwestern University",
+      "graduation_year": 2018,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Project Management Professional (PMP)",
+    "Epic Certified - EpicCare Inpatient",
+    "Epic Certified - Cadence",
+    "Cerner Certified - PowerChart"
+  ],
+  "skills": [
+    "FHIR APIs",
+    "ICD-10",
+    "Business Intelligence",
+    "Telehealth Implementation",
+    "Data Migration",
+    "Resolute",
+    "Healthcare IT",
+    "OpTime",
+    "System Integration",
+    "EpicCare Inpatient",
+    "Epic",
+    "Tableau",
+    "Agile Methodology",
+    "System Configuration"
+  ]
+}

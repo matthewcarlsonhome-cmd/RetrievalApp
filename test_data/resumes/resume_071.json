@@ -1,0 +1,64 @@
+{
+  "id": "resume_071",
+  "personal_info": {
+    "name": "Daniel Nelson",
+    "email": "dnelson@consultant.net",
+    "phone": "(944) 382-5250",
+    "location": "Columbus, OH",
+    "linkedin": "linkedin.com/in/daniel-nelson-2545"
+  },
+  "summary": "Results-driven healthcare IT professional with 3+ years of experience in EHR implementation and optimization. Specialized in Epic system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 3,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Clinical Workflow Analyst",
+      "employer": "Riverside Family Medicine",
+      "location": "Boston, MA",
+      "start_date": "September 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 6 recognition for implemented facility",
+        "Designed clinical workflows that improved documentation efficiency by 29%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "University of Illinois",
+      "graduation_year": 2021,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Certified Health Data Analyst (CHDA)",
+    "Project Management Professional (PMP)"
+  ],
+  "skills": [
+    "CPT Coding",
+    "Change Management",
+    "User Acceptance Testing",
+    "Python",
+    "Process Improvement",
+    "System Integration",
+    "OpTime",
+    "Revenue Cycle Management",
+    "EpicCare Inpatient",
+    "Patient Portal Implementation",
+    "Cadence",
+    "Value-Based Care",
+    "Epic",
+    "Clinical Workflow Analysis",
+    "Scrum",
+    "Optimization",
+    "System Configuration"
+  ]
+}

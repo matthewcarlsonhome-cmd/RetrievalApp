@@ -1,0 +1,137 @@
+{
+  "id": "resume_099",
+  "personal_info": {
+    "name": "Matthew Lewis",
+    "email": "matthew.lewis8@healthcaremail.com",
+    "phone": "(207) 892-6759",
+    "location": "Detroit, MI",
+    "linkedin": "linkedin.com/in/matthew-lewis-5807"
+  },
+  "summary": "Healthcare informatics specialist with 13+ years of hands-on experience implementing and optimizing MEDITECH EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 13,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Epic Implementation Analyst",
+      "employer": "Cleveland Clinic",
+      "location": "San Antonio, TX",
+      "start_date": "January 2020",
+      "end_date": "Present",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 50+ providers across 19 locations",
+        "Implemented 12 Epic/Cerner modules on time and under budget",
+        "Trained 1000+ end users with 95% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Cerner Implementation Specialist",
+      "employer": "Sunrise Health Center",
+      "location": "San Diego, CA",
+      "start_date": "September 2017",
+      "end_date": "December 2020",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Willow",
+        "Cadence",
+        "Prelude",
+        "Resolute"
+      ],
+      "achievements": [
+        "Managed implementation for 16 ambulatory clinics across 5 states",
+        "Completed data migration of 1M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Senior Health Information Manager",
+      "employer": "Optum Advisory Services",
+      "location": "Phoenix, AZ",
+      "start_date": "September 2016",
+      "end_date": "August 2017",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "HealtheIntent",
+        "FirstNet",
+        "PharmNet",
+        "Millennium"
+      ],
+      "achievements": [
+        "Led optimization project resulting in $500K annual cost savings",
+        "Implemented 7 Epic/Cerner modules on time and under budget",
+        "Designed clinical workflows that improved documentation efficiency by 33%"
+      ]
+    },
+    {
+      "title": "Senior Clinical Applications Analyst",
+      "employer": "Atrium Health",
+      "location": "Phoenix, AZ",
+      "start_date": "September 2014",
+      "end_date": "May 2016",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "SurgiNet",
+        "FirstNet",
+        "PowerChart",
+        "Millennium"
+      ],
+      "achievements": [
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Managed cross-functional team of 4 analysts and trainers",
+        "Managed implementation for 44 ambulatory clinics across 3 states"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Integration Engineer",
+      "employer": "Premier Medical Group",
+      "location": "Fort Worth, TX",
+      "start_date": "March 2011",
+      "end_date": "December 2014",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Implemented 5 Epic/Cerner modules on time and under budget",
+        "Designed clinical workflows that improved documentation efficiency by 32%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Healthcare Management",
+      "institution": "Columbia University",
+      "graduation_year": 2011,
+      "gpa": 3.29
+    }
+  ],
+  "certifications": [
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)"
+  ],
+  "skills": [
+    "FHIR APIs",
+    "Build Validation",
+    "System Integration",
+    "SQL",
+    "MEDITECH",
+    "Report Writing",
+    "Value-Based Care",
+    "Scrum",
+    "Medical Terminology",
+    "Healthcare Analytics"
+  ]
+}

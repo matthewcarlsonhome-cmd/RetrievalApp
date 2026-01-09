@@ -1,0 +1,128 @@
+{
+  "id": "resume_091",
+  "personal_info": {
+    "name": "Anna Perez",
+    "email": "annaperez@gmail.com",
+    "phone": "(835) 594-8012",
+    "location": "Dallas, TX",
+    "linkedin": "linkedin.com/in/anna-perez-8900"
+  },
+  "summary": "Healthcare informatics specialist with 8+ years of hands-on experience implementing and optimizing Cerner EHR systems. Strong background in project management, data migration, and system integration. Committed to delivering solutions that enhance clinical efficiency.",
+  "years_experience": 8,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Clinical Applications Analyst",
+      "employer": "Conduent Healthcare",
+      "location": "Houston, TX",
+      "start_date": "September 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 34%",
+        "Decreased claim denial rate by 23% through revenue cycle optimization",
+        "Implemented 10 Epic/Cerner modules on time and under budget"
+      ]
+    },
+    {
+      "title": "Healthcare IT Project Manager",
+      "employer": "Ascension Health",
+      "location": "Milwaukee, WI",
+      "start_date": "January 2018",
+      "end_date": "December 2022",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Grand Central",
+        "Stork",
+        "MyChart",
+        "ASAP"
+      ],
+      "achievements": [
+        "Trained 100+ end users with 96% satisfaction rating",
+        "Implemented 5 Epic/Cerner modules on time and under budget",
+        "Completed data migration of 5M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Healthcare IT Project Manager",
+      "employer": "Northwestern Memorial Hospital",
+      "location": "Columbus, OH",
+      "start_date": "September 2017",
+      "end_date": "December 2018",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "FirstNet",
+        "SurgiNet",
+        "Soarian",
+        "PathNet"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Senior Revenue Cycle Implementation Specialist",
+      "employer": "KPMG Healthcare",
+      "location": "Houston, TX",
+      "start_date": "March 2016",
+      "end_date": "August 2017",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 30% through revenue cycle optimization",
+        "Trained 2000+ end users with 96% satisfaction rating",
+        "Managed implementation for 29 ambulatory clinics across 10 states",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Healthcare Management",
+      "institution": "University of Virginia",
+      "graduation_year": 2015,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Epic Certified - EpicCare Ambulatory",
+    "Epic Certified - EpicCare Inpatient",
+    "Cerner Certified - PowerChart",
+    "Certified Health Data Analyst (CHDA)",
+    "Six Sigma Green Belt"
+  ],
+  "skills": [
+    "Business Intelligence",
+    "ICD-10",
+    "CPT Coding",
+    "Health Information Exchange",
+    "Build Validation",
+    "Training Development",
+    "FHIR APIs",
+    "HL7 Interfaces",
+    "Revenue Cycle Management",
+    "Millennium",
+    "Cerner",
+    "Soarian",
+    "PharmNet",
+    "Crystal Reports",
+    "EHR Implementation",
+    "Optimization",
+    "User Acceptance Testing"
+  ]
+}

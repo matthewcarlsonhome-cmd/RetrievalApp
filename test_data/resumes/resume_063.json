@@ -1,0 +1,205 @@
+{
+  "id": "resume_063",
+  "personal_info": {
+    "name": "Andrew Jackson",
+    "email": "andrewjackson@gmail.com",
+    "phone": "(397) 818-6167",
+    "location": "Houston, TX",
+    "linkedin": "linkedin.com/in/andrew-jackson-1752"
+  },
+  "summary": "Clinical informatics expert with 16+ years specializing in Cerner implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 16,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Practice Management Consultant",
+      "employer": "Advocate Aurora Health",
+      "location": "Jacksonville, FL",
+      "start_date": "June 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 100+ providers across 15 locations",
+        "Managed cross-functional team of 10 analysts and trainers",
+        "Managed implementation for 31 ambulatory clinics across 10 states",
+        "Led successful go-live for 500-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Medical Informatics Consultant",
+      "employer": "Banner Health",
+      "location": "Seattle, WA",
+      "start_date": "January 2017",
+      "end_date": "December 2022",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Implemented 9 Epic/Cerner modules on time and under budget",
+        "Decreased claim denial rate by 20% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Lead Medical Informatics Consultant",
+      "employer": "Tegria",
+      "location": "Philadelphia, PA",
+      "start_date": "January 2016",
+      "end_date": "December 2017",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 6 analysts and trainers",
+        "Designed clinical workflows that improved documentation efficiency by 42%",
+        "Managed implementation for 30 ambulatory clinics across 9 states"
+      ]
+    },
+    {
+      "title": "EHR Training Specialist",
+      "employer": "KPMG Healthcare",
+      "location": "Fort Worth, TX",
+      "start_date": "March 2015",
+      "end_date": "August 2016",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "SurgiNet",
+        "PowerChart",
+        "Millennium",
+        "CommunityWorks"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Managed cross-functional team of 11 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Integration Engineer",
+      "employer": "University of Michigan Health",
+      "location": "Atlanta, GA",
+      "start_date": "September 2014",
+      "end_date": "December 2015",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PowerChart",
+        "PathNet",
+        "PharmNet",
+        "SurgiNet"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 500+ providers across 15 locations",
+        "Led optimization project resulting in $500K annual cost savings"
+      ]
+    },
+    {
+      "title": "Director of Healthcare IT Project Manager",
+      "employer": "Conduent Healthcare",
+      "location": "Portland, OR",
+      "start_date": "September 2013",
+      "end_date": "December 2014",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "ASAP",
+        "Cogito",
+        "Cadence",
+        "MyChart"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 27%",
+        "Trained 100+ end users with 92% satisfaction rating",
+        "Implemented 12 Epic/Cerner modules on time and under budget"
+      ]
+    },
+    {
+      "title": "Lead Healthcare IT Project Manager",
+      "employer": "University of Chicago Medical Center",
+      "location": "Baltimore, MD",
+      "start_date": "March 2009",
+      "end_date": "December 2013",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Soarian",
+        "HealtheIntent",
+        "PathNet",
+        "ITWorks"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 30% through revenue cycle optimization",
+        "Developed training curriculum adopted as enterprise standard",
+        "Achieved HIMSS Stage 5 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Lead Clinical Informatics Specialist",
+      "employer": "Advocate Aurora Health",
+      "location": "Atlanta, GA",
+      "start_date": "January 2008",
+      "end_date": "May 2009",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Led successful go-live for 200-bed hospital with zero critical issues",
+        "Trained 2000+ end users with 97% satisfaction rating",
+        "Coordinated go-live support for 200+ providers across 13 locations",
+        "Led optimization project resulting in $50K annual cost savings"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "University of Minnesota",
+      "graduation_year": 2005,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Epic Certified - Beacon",
+    "Epic Certified - EpicCare Ambulatory",
+    "Cerner Certified - PowerChart",
+    "HL7 FHIR Certification",
+    "Six Sigma Green Belt"
+  ],
+  "skills": [
+    "HIPAA Compliance",
+    "FHIR APIs",
+    "Project Management",
+    "FirstNet",
+    "PathNet",
+    "HL7 Interfaces",
+    "Revenue Cycle Management",
+    "CommunityWorks",
+    "Cerner",
+    "Healthcare Analytics",
+    "Report Writing",
+    "Crystal Reports",
+    "Optimization",
+    "User Acceptance Testing"
+  ]
+}

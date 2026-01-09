@@ -1,0 +1,172 @@
+{
+  "id": "resume_033",
+  "personal_info": {
+    "name": "Margaret Williams",
+    "email": "margaret.williams92@consultant.net",
+    "phone": "(843) 454-4262",
+    "location": "Phoenix, AZ",
+    "linkedin": "linkedin.com/in/margaret-williams-5189"
+  },
+  "summary": "Experienced healthcare implementation consultant with 14 years leading Cerner implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 14,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Epic Implementation Analyst",
+      "employer": "Atrium Health",
+      "location": "Phoenix, AZ",
+      "start_date": "September 2021",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PathNet",
+        "Millennium",
+        "FirstNet",
+        "PharmNet"
+      ],
+      "achievements": [
+        "Led successful go-live for 150-bed hospital with zero critical issues",
+        "Decreased claim denial rate by 19% through revenue cycle optimization",
+        "Designed clinical workflows that improved documentation efficiency by 43%",
+        "Built 15+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Health Information Systems Analyst",
+      "employer": "Valley Medical Associates",
+      "location": "Houston, TX",
+      "start_date": "March 2019",
+      "end_date": "February 2021",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Built 24+ HL7 interfaces connecting to external systems",
+        "Reduced average patient wait time by 21% through workflow optimization"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Systems Analyst",
+      "employer": "Johns Hopkins Hospital",
+      "location": "Chicago, IL",
+      "start_date": "September 2014",
+      "end_date": "December 2019",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Coordinated go-live support for 100+ providers across 8 locations",
+        "Built 30+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Lead Healthcare Systems Analyst",
+      "employer": "NYU Langone Health",
+      "location": "Detroit, MI",
+      "start_date": "September 2012",
+      "end_date": "December 2014",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Achieved 93% clinician adoption rate within first 3 months",
+        "Managed implementation for 41 ambulatory clinics across 8 states",
+        "Decreased claim denial rate by 33% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Director of Health Information Systems Analyst",
+      "employer": "NextGen Healthcare",
+      "location": "San Diego, CA",
+      "start_date": "June 2011",
+      "end_date": "February 2012",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 25%",
+        "Completed data migration of 10M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Lead Clinical Informatics Specialist",
+      "employer": "Sutter Health",
+      "location": "Phoenix, AZ",
+      "start_date": "March 2010",
+      "end_date": "December 2011",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Tapestry",
+        "Radiant",
+        "EpicCare Ambulatory",
+        "Resolute"
+      ],
+      "achievements": [
+        "Trained 500+ end users with 92% satisfaction rating",
+        "Achieved 98% clinician adoption rate within first 2 months"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "PhD in Health Informatics",
+      "institution": "University of Florida",
+      "graduation_year": 2017,
+      "gpa": null
+    },
+    {
+      "degree": "Master of Business Administration",
+      "institution": "Indiana University",
+      "graduation_year": 2015,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Wisconsin",
+      "graduation_year": 2009,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "HL7 FHIR Certification"
+  ],
+  "skills": [
+    "Build Validation",
+    "Telehealth Implementation",
+    "Project Management",
+    "Clinical Decision Support",
+    "HL7 Interfaces",
+    "Training Development",
+    "Power BI",
+    "Population Health",
+    "CommunityWorks",
+    "PowerChart",
+    "Cerner",
+    "System Configuration",
+    "FirstNet",
+    "Report Writing",
+    "User Acceptance Testing",
+    "Crystal Reports",
+    "System Integration"
+  ]
+}

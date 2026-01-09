@@ -1,0 +1,194 @@
+{
+  "id": "resume_022",
+  "personal_info": {
+    "name": "Pamela Wong",
+    "email": "pwong@yahoo.com",
+    "phone": "(340) 374-9872",
+    "location": "San Antonio, TX",
+    "linkedin": "linkedin.com/in/pamela-wong-8038"
+  },
+  "summary": "Clinical informatics expert with 17+ years specializing in MEDITECH implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 17,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Healthcare IT Project Manager",
+      "employer": "NYU Langone Health",
+      "location": "Milwaukee, WI",
+      "start_date": "January 2020",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Reduced average patient wait time by 34% through workflow optimization"
+      ]
+    },
+    {
+      "title": "Lead Healthcare Systems Analyst",
+      "employer": "Providence Health",
+      "location": "Las Vegas, NV",
+      "start_date": "September 2016",
+      "end_date": "August 2020",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "PowerChart",
+        "ITWorks",
+        "RadNet",
+        "Millennium"
+      ],
+      "achievements": [
+        "Managed implementation for 44 ambulatory clinics across 10 states",
+        "Led optimization project resulting in $1000K annual cost savings",
+        "Reduced average patient wait time by 22% through workflow optimization"
+      ]
+    },
+    {
+      "title": "Senior EHR Training Specialist",
+      "employer": "KPMG Healthcare",
+      "location": "Boston, MA",
+      "start_date": "September 2015",
+      "end_date": "December 2016",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "OpTime",
+        "Resolute",
+        "Tapestry",
+        "EpicCare Inpatient"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 19% through revenue cycle optimization",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Senior Health Information Systems Analyst",
+      "employer": "Kaiser Permanente",
+      "location": "Milwaukee, WI",
+      "start_date": "January 2013",
+      "end_date": "May 2015",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "FirstNet",
+        "SurgiNet",
+        "PharmNet",
+        "RadNet"
+      ],
+      "achievements": [
+        "Managed implementation for 50 ambulatory clinics across 8 states",
+        "Achieved HIMSS Stage 7 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Lead EHR Training Specialist",
+      "employer": "Huron Consulting",
+      "location": "Milwaukee, WI",
+      "start_date": "September 2010",
+      "end_date": "August 2013",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Care Everywhere",
+        "Cadence",
+        "Cogito",
+        "Stork"
+      ],
+      "achievements": [
+        "Achieved 95% clinician adoption rate within first 4 months",
+        "Trained 500+ end users with 96% satisfaction rating",
+        "Implemented 10 Epic/Cerner modules on time and under budget"
+      ]
+    },
+    {
+      "title": "Principal Healthcare Integration Engineer",
+      "employer": "Medidata",
+      "location": "San Diego, CA",
+      "start_date": "January 2009",
+      "end_date": "December 2010",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Willow",
+        "Resolute",
+        "ASAP",
+        "Radiant"
+      ],
+      "achievements": [
+        "Trained 2000+ end users with 98% satisfaction rating",
+        "Completed data migration of 2M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Lead Healthcare Integration Engineer",
+      "employer": "Cleveland Clinic",
+      "location": "Portland, OR",
+      "start_date": "January 2007",
+      "end_date": "May 2009",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Cogito",
+        "Stork",
+        "Healthy Planet",
+        "MyChart"
+      ],
+      "achievements": [
+        "Developed training curriculum adopted as enterprise standard",
+        "Built 42+ HL7 interfaces connecting to external systems",
+        "Trained 500+ end users with 95% satisfaction rating"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Information Systems",
+      "institution": "University of Washington",
+      "graduation_year": 2009,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "Johns Hopkins University",
+      "graduation_year": 2005,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Project Management Professional (PMP)",
+    "Cerner Certified - PowerChart",
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)",
+    "HL7 FHIR Certification",
+    "Epic Certified - Willow"
+  ],
+  "skills": [
+    "HIPAA Compliance",
+    "Go-Live Support",
+    "Clinical Documentation",
+    "CPT Coding",
+    "Data Migration",
+    "Health Information Exchange",
+    "Interoperability",
+    "Process Improvement",
+    "System Integration",
+    "SQL",
+    "MEDITECH",
+    "Tableau",
+    "Agile Methodology",
+    "Medical Terminology",
+    "Healthcare Analytics"
+  ]
+}

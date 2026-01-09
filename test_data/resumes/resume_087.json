@@ -1,0 +1,126 @@
+{
+  "id": "resume_087",
+  "personal_info": {
+    "name": "Justin Hill",
+    "email": "justin.hill92@yahoo.com",
+    "phone": "(739) 490-9724",
+    "location": "Nashville, TN",
+    "linkedin": "linkedin.com/in/justin-hill-4696"
+  },
+  "summary": "Dedicated EHR implementation professional bringing 9 years of experience in MEDITECH deployments. Skilled in leading cross-functional teams, managing complex projects, and ensuring successful system adoption. Track record of on-time, on-budget implementations.",
+  "years_experience": 9,
+  "primary_ehr_system": "MEDITECH",
+  "experience": [
+    {
+      "title": "Health Information Systems Analyst",
+      "employer": "Ascension Health",
+      "location": "San Jose, CA",
+      "start_date": "January 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Healthy Planet",
+        "Care Everywhere",
+        "Cogito",
+        "MyChart"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 6 analysts and trainers",
+        "Completed data migration of 10M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Health Information Manager",
+      "employer": "ECG Management Consultants",
+      "location": "Detroit, MI",
+      "start_date": "January 2018",
+      "end_date": "February 2023",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Trained 1000+ end users with 99% satisfaction rating",
+        "Decreased claim denial rate by 27% through revenue cycle optimization",
+        "Managed cross-functional team of 6 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Lead Clinical Informatics Specialist",
+      "employer": "KPMG Healthcare",
+      "location": "Columbus, OH",
+      "start_date": "March 2016",
+      "end_date": "December 2018",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Stork",
+        "MyChart",
+        "Prelude",
+        "Tapestry"
+      ],
+      "achievements": [
+        "Managed implementation for 33 ambulatory clinics across 3 states",
+        "Decreased claim denial rate by 24% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Senior Medical Informatics Consultant",
+      "employer": "Optum Advisory Services",
+      "location": "Jacksonville, FL",
+      "start_date": "September 2015",
+      "end_date": "August 2016",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Healthy Planet",
+        "OpTime",
+        "Prelude",
+        "Cadence"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 7 recognition for implemented facility",
+        "Led optimization project resulting in $500K annual cost savings",
+        "Built 42+ HL7 interfaces connecting to external systems"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Health Informatics",
+      "institution": "Boston University",
+      "graduation_year": 2018,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "University of North Carolina",
+      "graduation_year": 2015,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "HL7 FHIR Certification",
+    "Cerner Certified - Millennium",
+    "Certified Associate in Healthcare Information and Management Systems (CAHIMS)",
+    "Epic Certified - Beacon"
+  ],
+  "skills": [
+    "Go-Live Support",
+    "Clinical Documentation",
+    "Data Migration",
+    "Healthcare IT",
+    "SQL",
+    "Patient Portal Implementation",
+    "MEDITECH",
+    "Value-Based Care",
+    "User Acceptance Testing"
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "resume_019",
+  "personal_info": {
+    "name": "Samuel Allen",
+    "email": "sallen@outlook.com",
+    "phone": "(289) 981-7460",
+    "location": "Cleveland, OH",
+    "linkedin": "linkedin.com/in/samuel-allen-4739"
+  },
+  "summary": "Experienced healthcare implementation consultant with 16 years leading Allscripts implementations for hospitals and health systems. Expert in clinical workflow analysis, training development, and change management. Passionate about leveraging technology to improve patient care.",
+  "years_experience": 16,
+  "primary_ehr_system": "Allscripts",
+  "experience": [
+    {
+      "title": "Cerner Implementation Specialist",
+      "employer": "Huron Consulting",
+      "location": "Columbus, OH",
+      "start_date": "September 2022",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 27%",
+        "Achieved HIMSS Stage 6 recognition for implemented facility",
+        "Coordinated go-live support for 50+ providers across 6 locations",
+        "Built 40+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Senior Healthcare Data Analyst",
+      "employer": "Houston Methodist Hospital",
+      "location": "Seattle, WA",
+      "start_date": "March 2018",
+      "end_date": "August 2022",
+      "ehr_systems": [
+        "MEDITECH"
+      ],
+      "modules": [
+        "MEDITECH Core",
+        "MEDITECH Analytics"
+      ],
+      "achievements": [
+        "Achieved HIMSS Stage 7 recognition for implemented facility",
+        "Managed cross-functional team of 8 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Senior Health Information Manager",
+      "employer": "Mountain View Health Center",
+      "location": "Austin, TX",
+      "start_date": "March 2014",
+      "end_date": "May 2018",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Cogito",
+        "Resolute",
+        "Tapestry",
+        "Willow"
+      ],
+      "achievements": [
+        "Implemented 12 Epic/Cerner modules on time and under budget",
+        "Managed implementation for 40 ambulatory clinics across 6 states"
+      ]
+    },
+    {
+      "title": "Director of Epic Implementation Analyst",
+      "employer": "Medidata",
+      "location": "Philadelphia, PA",
+      "start_date": "June 2013",
+      "end_date": "February 2014",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 5 analysts and trainers",
+        "Built 44+ HL7 interfaces connecting to external systems"
+      ]
+    },
+    {
+      "title": "Principal Healthcare Systems Analyst",
+      "employer": "Leidos Health",
+      "location": "Las Vegas, NV",
+      "start_date": "January 2009",
+      "end_date": "August 2013",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Built 45+ HL7 interfaces connecting to external systems",
+        "Designed clinical workflows that improved documentation efficiency by 28%",
+        "Led successful go-live for 400-bed hospital with zero critical issues",
+        "Completed data migration of 1M+ patient records with 99.9% accuracy"
+      ]
+    },
+    {
+      "title": "Senior Practice Management Consultant",
+      "employer": "University of Chicago Medical Center",
+      "location": "San Antonio, TX",
+      "start_date": "September 2008",
+      "end_date": "December 2009",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Built 38+ HL7 interfaces connecting to external systems",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Health Information Management",
+      "institution": "University of Michigan",
+      "graduation_year": 2009,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Stanford University",
+      "graduation_year": 2006,
+      "gpa": 3.27
+    }
+  ],
+  "certifications": [
+    "Certified ScrumMaster (CSM)",
+    "Project Management Professional (PMP)",
+    "Six Sigma Black Belt"
+  ],
+  "skills": [
+    "FHIR APIs",
+    "Clinical Documentation",
+    "CPT Coding",
+    "Mobile Health",
+    "Process Improvement",
+    "Allscripts",
+    "Healthcare Analytics",
+    "Tableau",
+    "Crystal Reports",
+    "EHR Implementation",
+    "User Acceptance Testing"
+  ]
+}

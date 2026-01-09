@@ -1,0 +1,103 @@
+{
+  "id": "resume_029",
+  "personal_info": {
+    "name": "Betty Young",
+    "email": "betty.young81@healthcaremail.com",
+    "phone": "(748) 893-8522",
+    "location": "Portland, OR",
+    "linkedin": "linkedin.com/in/betty-young-9997"
+  },
+  "summary": "Results-driven healthcare IT professional with 11+ years of experience in EHR implementation and optimization. Specialized in Epic system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 11,
+  "primary_ehr_system": "Epic",
+  "experience": [
+    {
+      "title": "Healthcare Data Analyst",
+      "employer": "Henry Ford Hospital",
+      "location": "Jacksonville, FL",
+      "start_date": "September 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Built 50+ HL7 interfaces connecting to external systems",
+        "Managed cross-functional team of 6 analysts and trainers",
+        "Reduced average patient wait time by 40% through workflow optimization",
+        "Decreased claim denial rate by 24% through revenue cycle optimization"
+      ]
+    },
+    {
+      "title": "Clinical Workflow Analyst",
+      "employer": "ECG Management Consultants",
+      "location": "Milwaukee, WI",
+      "start_date": "September 2014",
+      "end_date": "December 2019",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Managed cross-functional team of 12 analysts and trainers",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Lead Clinical Workflow Analyst",
+      "employer": "athenahealth",
+      "location": "Austin, TX",
+      "start_date": "September 2013",
+      "end_date": "February 2014",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Willow",
+        "Tapestry",
+        "EpicCare Inpatient",
+        "OpTime"
+      ],
+      "achievements": [
+        "Built 37+ HL7 interfaces connecting to external systems",
+        "Trained 2000+ end users with 93% satisfaction rating"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "George Washington University",
+      "graduation_year": 2012,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "ITIL Foundation Certification",
+    "Epic Certified - Cadence",
+    "Epic Certified - Beacon",
+    "Registered Health Information Administrator (RHIA)"
+  ],
+  "skills": [
+    "Health Information Exchange",
+    "CPT Coding",
+    "Mobile Health",
+    "Scrum",
+    "Process Improvement",
+    "Tapestry",
+    "Healthy Planet",
+    "Patient Portal Implementation",
+    "Value-Based Care",
+    "Epic",
+    "Crystal Reports",
+    "EHR Implementation",
+    "Willow",
+    "Healthcare Analytics"
+  ]
+}

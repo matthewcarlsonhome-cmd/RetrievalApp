@@ -1,0 +1,80 @@
+{
+  "id": "job_006",
+  "title": "Senior Clinical Education Specialist",
+  "employer": "Duke University Health System",
+  "employer_type": "health system",
+  "location": "Las Vegas, NV",
+  "remote_option": "Remote",
+  "employment_type": "Full-time",
+  "contract_type": "Permanent",
+  "contract_length": null,
+  "posted_date": "2025-12-11",
+  "primary_ehr_system": "Cerner",
+  "modules": [
+    "ITWorks",
+    "SurgiNet"
+  ],
+  "experience_required": {
+    "min_years": 10,
+    "max_years": null
+  },
+  "description": "Duke University Health System seeks a talented Senior Clinical Education Specialist to lead our Cerner implementation initiatives. You will work closely with clinical stakeholders, IT teams, and executive leadership to deliver solutions that improve efficiency and patient outcomes. Experience with ITWorks, SurgiNet is essential.",
+  "responsibilities": [
+    "Collaborate with clinical stakeholders to gather requirements and design optimal workflows",
+    "Configure and customize Cerner applications to meet organizational needs",
+    "Develop and maintain project documentation, including design specifications and test plans",
+    "Participate in system testing, including unit testing, integration testing, and user acceptance testing",
+    "Provide go-live support and post-implementation optimization",
+    "Develop comprehensive training curricula and materials",
+    "Conduct classroom and one-on-one training sessions for end users",
+    "Create quick reference guides and e-learning modules",
+    "Assess training effectiveness and identify knowledge gaps",
+    "Provide at-the-elbow support during go-live events"
+  ],
+  "required_qualifications": {
+    "education": "Bachelor's degree required; Master's preferred",
+    "experience": "10+ years of healthcare IT implementation experience",
+    "skills": [
+      "Cerner",
+      "Power BI",
+      "ICD-10",
+      "Process Improvement",
+      "Optimization",
+      "SQL",
+      "Change Management",
+      "Clinical Workflow Analysis",
+      "HL7 Interfaces",
+      "Go-Live Support"
+    ],
+    "certifications": [
+      "Cerner Certified - Millennium"
+    ]
+  },
+  "preferred_qualifications": {
+    "skills": [
+      "Revenue Cycle Management",
+      "Project Management",
+      "Clinical Decision Support",
+      "Healthcare IT",
+      "Telehealth Implementation"
+    ],
+    "certifications": [
+      "HL7 FHIR Certification",
+      "Cerner Certified - PowerChart"
+    ]
+  },
+  "salary": {
+    "type": "annual",
+    "min": 178379,
+    "max": 198555,
+    "currency": "USD"
+  },
+  "benefits": [
+    "Flexible spending accounts (FSA/HSA)",
+    "401(k) with employer match",
+    "Stock options/equity",
+    "Comprehensive health insurance (medical, dental, vision)",
+    "Tuition reimbursement",
+    "Remote work options"
+  ]
+}

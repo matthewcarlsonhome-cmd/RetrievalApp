@@ -1,0 +1,140 @@
+{
+  "id": "resume_058",
+  "personal_info": {
+    "name": "Karen Murphy",
+    "email": "karen.murphy85@gmail.com",
+    "phone": "(216) 237-6742",
+    "location": "Seattle, WA",
+    "linkedin": "linkedin.com/in/karen-murphy-3264"
+  },
+  "summary": "Clinical informatics expert with 10+ years specializing in Cerner implementation and optimization. Extensive experience in revenue cycle, clinical documentation, and population health initiatives. Known for building strong relationships with clinical stakeholders.",
+  "years_experience": 10,
+  "primary_ehr_system": "Cerner",
+  "experience": [
+    {
+      "title": "Cerner Implementation Specialist",
+      "employer": "Premier Medical Group",
+      "location": "Jacksonville, FL",
+      "start_date": "March 2023",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Cerner"
+      ],
+      "modules": [
+        "Millennium",
+        "FirstNet",
+        "Soarian",
+        "PathNet"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 23% through workflow optimization",
+        "Trained 2000+ end users with 96% satisfaction rating",
+        "Built 41+ HL7 interfaces connecting to external systems",
+        "Led successful go-live for 500-bed hospital with zero critical issues"
+      ]
+    },
+    {
+      "title": "Healthcare Data Analyst",
+      "employer": "Northwell Health",
+      "location": "Chicago, IL",
+      "start_date": "September 2019",
+      "end_date": "February 2023",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "ASAP",
+        "Healthy Planet",
+        "Beacon",
+        "OpTime"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 37% through revenue cycle optimization",
+        "Designed clinical workflows that improved documentation efficiency by 30%",
+        "Achieved HIMSS Stage 6 recognition for implemented facility"
+      ]
+    },
+    {
+      "title": "Lead Epic Implementation Analyst",
+      "employer": "University of Michigan Health",
+      "location": "Cleveland, OH",
+      "start_date": "September 2015",
+      "end_date": "August 2019",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Trained 500+ end users with 93% satisfaction rating",
+        "Coordinated go-live support for 500+ providers across 11 locations"
+      ]
+    },
+    {
+      "title": "Lead Healthcare Data Analyst",
+      "employer": "PwC Health Industries",
+      "location": "Cleveland, OH",
+      "start_date": "March 2014",
+      "end_date": "August 2015",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Implemented 3 Epic/Cerner modules on time and under budget",
+        "Coordinated go-live support for 50+ providers across 19 locations",
+        "Trained 1000+ end users with 94% satisfaction rating"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "PhD in Health Informatics",
+      "institution": "George Washington University",
+      "graduation_year": 2021,
+      "gpa": null
+    },
+    {
+      "degree": "Master of Business Administration",
+      "institution": "University of Pennsylvania",
+      "graduation_year": 2017,
+      "gpa": null
+    },
+    {
+      "degree": "Bachelor of Science in Nursing",
+      "institution": "University of Pittsburgh",
+      "graduation_year": 2011,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Project Management Professional (PMP)",
+    "Certified Information Systems Security Professional (CISSP)",
+    "Epic Certified - EpicCare Inpatient",
+    "ITIL Foundation Certification",
+    "Six Sigma Black Belt",
+    "Certified Professional in Healthcare Information and Management Systems (CPHIMS)"
+  ],
+  "skills": [
+    "Project Management",
+    "FHIR APIs",
+    "Interoperability",
+    "Clinical Decision Support",
+    "HL7 Interfaces",
+    "Python",
+    "SQL",
+    "SurgiNet",
+    "Revenue Cycle Management",
+    "HealtheIntent",
+    "Cerner",
+    "PharmNet",
+    "Agile Methodology",
+    "Medical Terminology",
+    "System Integration"
+  ]
+}

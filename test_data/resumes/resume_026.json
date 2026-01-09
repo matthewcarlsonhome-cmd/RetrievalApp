@@ -1,0 +1,122 @@
+{
+  "id": "resume_026",
+  "personal_info": {
+    "name": "Donna Rivera",
+    "email": "drivera@gmail.com",
+    "phone": "(482) 505-6833",
+    "location": "Las Vegas, NV",
+    "linkedin": "linkedin.com/in/donna-rivera-2355"
+  },
+  "summary": "Results-driven healthcare IT professional with 16+ years of experience in EHR implementation and optimization. Specialized in athenahealth system deployments across acute care and ambulatory settings. Proven track record of successful go-lives and high clinician adoption rates.",
+  "years_experience": 16,
+  "primary_ehr_system": "athenahealth",
+  "experience": [
+    {
+      "title": "Health Information Manager",
+      "employer": "University of Chicago Medical Center",
+      "location": "Jacksonville, FL",
+      "start_date": "March 2019",
+      "end_date": "Present",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 22% through revenue cycle optimization",
+        "Developed training curriculum adopted as enterprise standard"
+      ]
+    },
+    {
+      "title": "Clinical Applications Analyst",
+      "employer": "Community Health Systems",
+      "location": "Austin, TX",
+      "start_date": "June 2014",
+      "end_date": "August 2019",
+      "ehr_systems": [
+        "Allscripts"
+      ],
+      "modules": [
+        "Allscripts Core",
+        "Allscripts Analytics"
+      ],
+      "achievements": [
+        "Designed clinical workflows that improved documentation efficiency by 38%",
+        "Reduced average patient wait time by 21% through workflow optimization",
+        "Trained 2000+ end users with 93% satisfaction rating"
+      ]
+    },
+    {
+      "title": "Lead Health Information Manager",
+      "employer": "Sutter Health",
+      "location": "Milwaukee, WI",
+      "start_date": "March 2010",
+      "end_date": "May 2014",
+      "ehr_systems": [
+        "Epic"
+      ],
+      "modules": [
+        "Grand Central",
+        "ASAP",
+        "Beacon",
+        "Healthy Planet"
+      ],
+      "achievements": [
+        "Reduced average patient wait time by 45% through workflow optimization",
+        "Trained 100+ end users with 92% satisfaction rating",
+        "Managed cross-functional team of 12 analysts and trainers"
+      ]
+    },
+    {
+      "title": "Lead Healthcare Integration Engineer",
+      "employer": "Tenet Healthcare",
+      "location": "Atlanta, GA",
+      "start_date": "March 2008",
+      "end_date": "August 2010",
+      "ehr_systems": [
+        "athenahealth"
+      ],
+      "modules": [
+        "athenahealth Core",
+        "athenahealth Analytics"
+      ],
+      "achievements": [
+        "Decreased claim denial rate by 30% through revenue cycle optimization",
+        "Completed data migration of 1M+ patient records with 99.9% accuracy",
+        "Led optimization project resulting in $500K annual cost savings"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Health Informatics",
+      "institution": "University of Wisconsin",
+      "graduation_year": 2011,
+      "gpa": 3.7
+    },
+    {
+      "degree": "Bachelor of Science in Healthcare Administration",
+      "institution": "Duke University",
+      "graduation_year": 2006,
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    "Six Sigma Green Belt"
+  ],
+  "skills": [
+    "HIPAA Compliance",
+    "Business Intelligence",
+    "Clinical Documentation",
+    "Change Management",
+    "Data Migration",
+    "Python",
+    "athenahealth",
+    "Healthcare Analytics",
+    "Value-Based Care",
+    "Medical Terminology",
+    "System Integration"
+  ]
+}

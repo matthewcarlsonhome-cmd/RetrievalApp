@@ -2,8 +2,10 @@
 flask>=2.3.0
 gunicorn>=21.0.0
 
-# For TF-IDF and neural matching
+# For TF-IDF matching
 numpy>=1.24.0
 
-# Neural matching (semantic understanding)
-sentence-transformers>=2.2.0
+# Note: Neural matching requires sentence-transformers but needs 1GB+ RAM
+# Render free tier only has 512MB, so neural is disabled
+# To enable: upgrade to Render paid tier ($7/mo) and uncomment below:
+# sentence-transformers>=2.2.0

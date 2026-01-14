@@ -1,0 +1,19 @@
+# Render Blueprint - One-click deployment configuration
+# Deploy at: https://render.com/deploy
+
+services:
+  - type: web
+    name: resume-matching-app
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --chdir web app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_DEBUG
+        value: "0"
+    autoDeploy: true
+    healthCheckPath: /health

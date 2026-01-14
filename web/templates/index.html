@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Search - Healthcare Resume Matching{% endblock %}
+{% block title %}Search - Resume Matching System{% endblock %}
 
 {% block content %}
 <div class="card mb-3">
@@ -14,8 +14,8 @@
             <div class="stat-label">Open Positions</div>
         </div>
         <div class="stat-box">
-            <div class="stat-value">{{ ehr_systems|length }}</div>
-            <div class="stat-label">EHR Systems</div>
+            <div class="stat-value">{{ domains|length }}</div>
+            <div class="stat-label">Domains</div>
         </div>
         <div class="stat-box">
             <div class="stat-value">{{ locations|length }}</div>
@@ -38,7 +38,9 @@
                     <option value="">-- Select a job --</option>
                     {% for job in jobs %}
                     <option value="{{ job.id }}">
-                        {{ job.title }} - {{ job.employer }} ({{ job.primary_ehr_system }})
+                        {{ job.title }} - {{ job.employer }}
+                        {% if job.primary_ehr_system %}({{ job.primary_ehr_system }}){% endif %}
+                        {% if job.domain %}[{{ job.domain|title }}]{% endif %}
                     </option>
                     {% endfor %}
                 </select>
@@ -47,7 +49,7 @@
             <div class="form-group">
                 <label class="form-label">Or Enter Custom Search Query</label>
                 <textarea name="custom_query" class="form-control" rows="4"
-                    placeholder="Example: Epic certified consultant with 5+ years experience in EpicCare Ambulatory, Cadence scheduling, revenue cycle optimization"></textarea>
+                    placeholder="Example: Senior software engineer with AWS experience, Python, Kubernetes, 5+ years"></textarea>
                 <p class="text-small text-muted mt-1">
                     Enter keywords describing the ideal candidate
                 </p>
@@ -93,11 +95,21 @@
             </div>
 
             <div class="form-group">
-                <label class="form-label">EHR System Experience</label>
-                <select name="ehr_system" class="form-control">
-                    <option value="">Any EHR System</option>
-                    {% for ehr in ehr_systems %}
-                    <option value="{{ ehr }}">{{ ehr }}</option>
+                <label class="form-label">Domain</label>
+                <select name="domain" class="form-control">
+                    <option value="">All Domains</option>
+                    {% for domain in domains %}
+                    <option value="{{ domain|lower }}">{{ domain }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Primary System / Skill</label>
+                <select name="primary_system" class="form-control">
+                    <option value="">Any System/Skill</option>
+                    {% for system in primary_systems %}
+                    <option value="{{ system }}">{{ system }}</option>
                     {% endfor %}
                 </select>
             </div>
@@ -139,7 +151,7 @@
             <div class="form-group">
                 <label class="form-label">Certification (keyword)</label>
                 <input type="text" name="certification" class="form-control"
-                    placeholder="e.g., Epic, PMP, CPHIMS">
+                    placeholder="e.g., AWS, PMP, Epic, CISSP, CPA">
             </div>
         </div>
     </div>
@@ -157,16 +169,25 @@
         <h2 class="card-title">Open Positions</h2>
     </div>
     <div class="grid grid-3">
-        {% for job in jobs[:9] %}
+        {% for job in jobs[:12] %}
         <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px;">
             <strong>{{ job.title }}</strong>
             <p class="text-small text-muted mb-1">{{ job.employer }}</p>
             <div>
-                <span class="badge badge-primary">{{ job.primary_ehr_system }}</span>
-                <span class="badge badge-{% if job.contract_type == 'Contract' %}warning{% else %}success{% endif %}">
-                    {{ job.contract_type }}
+                {% if job.domain %}
+                <span class="badge badge-{% if job.domain == 'it' %}primary{% elif job.domain == 'marketing' %}info{% elif job.domain == 'business' %}success{% else %}secondary{% endif %}">
+                    {{ job.domain|title }}
                 </span>
-                <span class="badge badge-info">{{ job.employment_type }}</span>
+                {% endif %}
+                {% if job.primary_ehr_system %}
+                <span class="badge badge-primary">{{ job.primary_ehr_system }}</span>
+                {% endif %}
+                {% if job.experience_level %}
+                <span class="badge badge-secondary">{{ job.experience_level|title }}</span>
+                {% endif %}
+                {% if job.remote %}
+                <span class="badge badge-success">Remote</span>
+                {% endif %}
             </div>
             <div class="mt-2">
                 <a href="/job/{{ job.id }}" class="text-small">View Details</a>

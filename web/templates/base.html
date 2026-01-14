@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Healthcare Resume Matching{% endblock %}</title>
+    <title>{% block title %}Resume Matching System{% endblock %}</title>
     <style>
         * {
             box-sizing: border-box;
@@ -198,6 +198,11 @@
             color: #7b1fa2;
         }
 
+        .badge-secondary {
+            background: #e9ecef;
+            color: #495057;
+        }
+
         .score-bar {
             height: 8px;
             background: #e9ecef;
@@ -275,11 +280,12 @@
 <body>
     <nav class="navbar">
         <div class="navbar-content">
-            <a href="/"><h1>Healthcare Resume Matching</h1></a>
+            <a href="/"><h1>Resume Matching System</h1></a>
             <div class="navbar-links">
                 <a href="/">Search</a>
                 <a href="/api/resumes">API: Resumes</a>
                 <a href="/api/jobs">API: Jobs</a>
+                <a href="/api/status">Status</a>
             </div>
         </div>
     </nav>

@@ -2,10 +2,8 @@
 flask>=2.3.0
 gunicorn>=21.0.0
 
-# For TF-IDF matching (using pure Python implementation, no sklearn needed)
+# For TF-IDF and neural matching
 numpy>=1.24.0
 
-# Optional: Neural matching (uncomment for semantic matching support)
-# Note: This significantly increases deployment size and startup time
-# sentence-transformers>=2.2.0
-# torch>=2.0.0
+# Neural matching (semantic understanding)
+sentence-transformers>=2.2.0

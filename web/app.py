@@ -606,27 +606,55 @@ def api_status():
     })
 
 
+@app.route("/health")
+def health_check():
+    """Health check endpoint for Render/production monitoring."""
+    return jsonify({
+        "status": "healthy",
+        "resumes_loaded": len(RESUMES),
+        "jobs_loaded": len(JOBS),
+        "tfidf_ready": MATCHERS["tfidf"] is not None
+    }), 200
+
+
 # =============================================================================
-# MAIN
+# STARTUP - Load data when module is imported (for gunicorn)
+# =============================================================================
+
+# Load data on module import (needed for gunicorn/production)
+logger.info("Initializing Resume Matching Application...")
+load_data()
+
+# Auto-generate test data if none exists (development convenience)
+if not RESUMES and RESUMES_DIR.parent.exists():
+    logger.info("No test data found. Generating sample data...")
+    try:
+        import subprocess
+        subprocess.run([sys.executable, str(BASE_DIR / "scripts" / "generate_test_data.py")],
+                      capture_output=True, timeout=60)
+        load_data()
+    except Exception as e:
+        logger.warning(f"Could not auto-generate test data: {e}")
+
+
+# =============================================================================
+# MAIN (for local development)
 # =============================================================================
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("Resume Matching System - Web Interface")
+    print("Resume Matching - Web Interface")
+    print("=" * 60)
+    print(f"Resumes loaded: {len(RESUMES)}")
+    print(f"Jobs loaded: {len(JOBS)}")
+    print(f"Neural matching: {'Available' if NEURAL_AVAILABLE else 'Not available'}")
+
+    # Use environment variables for configuration
+    port = int(os.environ.get("PORT", 5000))
+    debug = os.environ.get("FLASK_DEBUG", "1") == "1"
+
+    print(f"\nStarting web server on port {port}...")
+    print(f"Open http://localhost:{port} in your browser")
     print("=" * 60)
 
-    load_data()
-
-    if not RESUMES:
-        print("\nNo test data found. Generating...")
-        import subprocess
-        subprocess.run([sys.executable, str(BASE_DIR / "scripts" / "generate_test_data.py")])
-        subprocess.run([sys.executable, str(BASE_DIR / "scripts" / "generate_general_test_data.py")])
-        load_data()
-
-    print(f"\nLoaded {len(RESUMES)} resumes and {len(JOBS)} jobs")
-    print(f"\nStarting web server...")
-    print(f"Open http://localhost:5000 in your browser")
-    print("=" * 60)
-
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(debug=debug, host="0.0.0.0", port=port)

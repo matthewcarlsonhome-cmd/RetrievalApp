@@ -1,6 +1,8 @@
-# Healthcare Resume Matching System
+# Resume Matching System
 
-A production-ready retrieval system for matching healthcare implementation professional resumes to EHR job descriptions. Built on a RAG (Retrieval-Augmented Generation) architecture.
+A production-ready retrieval system for matching professional resumes to job descriptions. Supports both healthcare IT and general IT/Business domains. Built on a RAG (Retrieval-Augmented Generation) architecture.
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/matthewcarlsonhome-cmd/RetrievalApp)
 
 ## Features
 
@@ -31,7 +33,19 @@ python web\app.py
 
 **Open http://localhost:5000 in your browser**
 
-### Option B: Command Line
+### Option B: Deploy to Cloud (Render)
+
+Deploy to Render.com for free public access:
+
+1. Push code to GitHub
+2. Go to [render.com](https://render.com) and sign up
+3. Create "New Web Service" and connect your repo
+4. Set **Start Command**: `gunicorn --chdir web app:app --bind 0.0.0.0:$PORT`
+5. Deploy (takes 2-3 minutes)
+
+See [docs/DEPLOY.md](docs/DEPLOY.md) for detailed instructions.
+
+### Option C: Command Line
 
 ```cmd
 :: Generate data and run matching

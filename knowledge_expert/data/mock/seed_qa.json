@@ -1,0 +1,104 @@
+{
+  "qa_pairs": [
+    {
+      "question": "What services do you offer?",
+      "answer": "We offer two main service areas: AI Automation (workflow automation, document processing, chatbot development, custom AI integrations) and Digital Marketing (SEO, paid advertising, content strategy, and analytics). We help businesses leverage modern technology to work smarter.",
+      "category": "Services"
+    },
+    {
+      "question": "What is your hourly rate?",
+      "answer": "Our standard consulting rate is $200 per hour. This applies to strategy consulting, technical assessments, implementation work, training, and ongoing support. We also offer fixed-price projects and monthly retainers for ongoing work.",
+      "category": "Pricing"
+    },
+    {
+      "question": "Where are you located?",
+      "answer": "We are based in Madison, Wisconsin, and serve clients throughout the United States. We work effectively with clients remotely using modern collaboration tools, though we're happy to meet in person with local clients.",
+      "category": "General"
+    },
+    {
+      "question": "How do I get started working with you?",
+      "answer": "The best way to get started is to schedule a free 30-minute discovery call. During this call, we'll discuss your needs, answer questions, and determine if we're a good fit. Visit our website at matthewcarlsonconsulting.com to schedule a call.",
+      "category": "Process"
+    },
+    {
+      "question": "Do you offer fixed-price projects?",
+      "answer": "Yes! For well-defined projects with clear deliverables, we offer fixed-price quotes. This gives you cost certainty and includes all planning, implementation, testing, training, and a 30-day support period after completion.",
+      "category": "Pricing"
+    },
+    {
+      "question": "What is a retainer agreement?",
+      "answer": "We offer monthly retainer agreements starting at $1,500/month for 8 hours of consulting. Retainers include priority scheduling, regular strategy calls, email support, and are great for ongoing support and continuous improvement needs.",
+      "category": "Pricing"
+    },
+    {
+      "question": "How long does it take to implement an AI automation solution?",
+      "answer": "Implementation time varies by complexity. Simple workflow automations can be completed in 1-2 weeks, while more complex AI integrations may take 6-12 weeks. We provide a detailed timeline estimate during our discovery process.",
+      "category": "Technical"
+    },
+    {
+      "question": "Can you integrate AI with our existing systems?",
+      "answer": "Yes, we specialize in integrating AI solutions with existing business systems. We work with popular platforms like Salesforce, HubSpot, Zapier, and can build custom integrations via APIs to connect AI capabilities with your infrastructure.",
+      "category": "Technical"
+    },
+    {
+      "question": "What AI technologies do you work with?",
+      "answer": "We work with leading AI platforms including OpenAI (ChatGPT), Anthropic (Claude), Google AI, and various specialized AI tools. We select the best technology for each client's specific needs and requirements.",
+      "category": "Technical"
+    },
+    {
+      "question": "Will automation replace my employees?",
+      "answer": "Our automation solutions are designed to augment your team, not replace them. By automating repetitive tasks, your employees can focus on higher-value work that requires human judgment, creativity, and relationship building.",
+      "category": "Services"
+    },
+    {
+      "question": "How long until I see SEO results?",
+      "answer": "SEO is a long-term investment. You may see initial improvements within 2-3 months, but significant results typically take 6-12 months. We provide regular reporting so you can track progress throughout the engagement.",
+      "category": "Services"
+    },
+    {
+      "question": "What advertising platforms do you manage?",
+      "answer": "We manage advertising on Google Ads, Facebook, Instagram, LinkedIn, and other platforms depending on your target audience. We'll recommend the best platforms for your specific goals during our strategy development.",
+      "category": "Services"
+    },
+    {
+      "question": "Do you provide analytics and reporting?",
+      "answer": "Yes, transparency is important to us. We provide regular reports on all marketing activities, including traffic, leads, conversions, and ROI. We also create custom dashboards for real-time visibility into your marketing performance.",
+      "category": "Services"
+    },
+    {
+      "question": "How often will we meet during a project?",
+      "answer": "Meeting frequency depends on the project and your preferences. For active projects, we typically have weekly check-ins. For retainer clients, we have scheduled strategy calls ranging from weekly to monthly based on your retainer level.",
+      "category": "Process"
+    },
+    {
+      "question": "What if I'm not satisfied with the work?",
+      "answer": "Your satisfaction is our priority. If you're not happy with our work, we'll work with you to make it right. If we can't resolve the issue to your satisfaction, we offer a refund guarantee on our services.",
+      "category": "Process"
+    },
+    {
+      "question": "Do you sign NDAs?",
+      "answer": "Absolutely. We understand the importance of confidentiality and are happy to sign NDAs before discussing sensitive business information. Protecting your proprietary information is a standard part of how we work.",
+      "category": "Process"
+    },
+    {
+      "question": "Is my data secure when working with AI?",
+      "answer": "Security is paramount. We follow industry best practices for data security, use encrypted connections, and ensure all AI implementations comply with your data privacy requirements. We can discuss specific security measures during our discovery call.",
+      "category": "Technical"
+    },
+    {
+      "question": "What are your payment terms?",
+      "answer": "For hourly work, payment is due within 15 days of invoice (Net 15). For projects, we require a 50% deposit to begin, with the balance due upon completion. Retainers are paid monthly in advance. We accept credit card, ACH transfer, and check.",
+      "category": "Pricing"
+    },
+    {
+      "question": "Do you provide training on the solutions you implement?",
+      "answer": "Yes, comprehensive training is included with all our implementations. We ensure your team can effectively use any solutions we build. We also provide documentation and ongoing support to help you get the most value from our work.",
+      "category": "Services"
+    },
+    {
+      "question": "What types of businesses do you work with?",
+      "answer": "We work primarily with small to medium-sized businesses across various industries. Our clients range from local service businesses to growing startups. If you have processes that could benefit from automation or need help with digital marketing, we can likely help.",
+      "category": "General"
+    }
+  ]
+}

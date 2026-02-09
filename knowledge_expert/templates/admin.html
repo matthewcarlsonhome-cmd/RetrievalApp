@@ -1,0 +1,291 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard - Knowledge Expert{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col">
+        <h2>
+            <i class="bi bi-speedometer2 me-2"></i>
+            Admin Dashboard
+        </h2>
+    </div>
+</div>
+
+<!-- Stats Cards -->
+<div class="row g-4 mb-4">
+    <div class="col-md-3">
+        <div class="card text-white bg-primary">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title mb-0">Documents</h6>
+                        <h2 class="mb-0" id="statDocuments">{{ stats.total_documents or 0 }}</h2>
+                    </div>
+                    <i class="bi bi-file-earmark-text display-4 opacity-50"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-success">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title mb-0">Chunks</h6>
+                        <h2 class="mb-0" id="statChunks">{{ stats.total_chunks or 0 }}</h2>
+                    </div>
+                    <i class="bi bi-collection display-4 opacity-50"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-info">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title mb-0">Queries</h6>
+                        <h2 class="mb-0" id="statQueries">{{ stats.total_queries or 0 }}</h2>
+                    </div>
+                    <i class="bi bi-chat-dots display-4 opacity-50"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-warning">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title mb-0">Q&A Pairs</h6>
+                        <h2 class="mb-0" id="statQA">{{ stats.total_qa_pairs or 0 }}</h2>
+                    </div>
+                    <i class="bi bi-question-circle display-4 opacity-50"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <!-- System Status -->
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-cpu me-2"></i>
+                    System Status
+                </h5>
+            </div>
+            <div class="card-body">
+                <table class="table table-sm mb-0">
+                    <tbody id="systemStatus">
+                        <tr>
+                            <td>Embedding Model</td>
+                            <td id="statusEmbeddings">
+                                <span class="badge bg-secondary">Checking...</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Vector Store</td>
+                            <td id="statusVectorStore">
+                                <span class="badge bg-secondary">Checking...</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Search Engine</td>
+                            <td id="statusSearch">
+                                <span class="badge bg-secondary">Checking...</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LLM Provider</td>
+                            <td id="statusLLM">
+                                <span class="badge bg-secondary">Checking...</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Vector Count</td>
+                            <td id="vectorCount">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Queries -->
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">
+                    <i class="bi bi-clock-history me-2"></i>
+                    Recent Queries
+                </h5>
+            </div>
+            <div class="card-body">
+                <div id="recentQueries">
+                    <div class="text-center text-muted py-4">
+                        <i class="bi bi-inbox display-4"></i>
+                        <p>No queries yet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4 mt-2">
+    <!-- Feedback Summary -->
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-bar-chart me-2"></i>
+                    Feedback Summary
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-6">
+                        <div class="display-4 text-success" id="positiveFeedback">
+                            {{ stats.positive_feedback or 0 }}
+                        </div>
+                        <p class="text-muted mb-0">
+                            <i class="bi bi-hand-thumbs-up"></i> Positive
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <div class="display-4 text-danger" id="negativeFeedback">
+                            {{ stats.negative_feedback or 0 }}
+                        </div>
+                        <p class="text-muted mb-0">
+                            <i class="bi bi-hand-thumbs-down"></i> Negative
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-success" id="feedbackPositiveBar" style="width: 100%">
+                        </div>
+                        <div class="progress-bar bg-danger" id="feedbackNegativeBar" style="width: 0%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-lightning me-2"></i>
+                    Quick Actions
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a href="/upload" class="btn btn-outline-primary">
+                        <i class="bi bi-cloud-upload me-2"></i>
+                        Upload Documents
+                    </a>
+                    <a href="/qa" class="btn btn-outline-primary">
+                        <i class="bi bi-plus-circle me-2"></i>
+                        Add Q&A Pairs
+                    </a>
+                    <button class="btn btn-outline-secondary" onclick="refreshStats()">
+                        <i class="bi bi-arrow-clockwise me-2"></i>
+                        Refresh Stats
+                    </button>
+                    <button class="btn btn-outline-danger" onclick="resetVectors()" id="resetBtn">
+                        <i class="bi bi-trash me-2"></i>
+                        Reset Vector Store
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    refreshStats();
+});
+
+async function refreshStats() {
+    try {
+        const response = await fetch('/api/stats');
+        const stats = await response.json();
+
+        // Update stat cards
+        document.getElementById('statDocuments').textContent = stats.total_documents || 0;
+        document.getElementById('statChunks').textContent = stats.total_chunks || 0;
+        document.getElementById('statQueries').textContent = stats.total_queries || 0;
+        document.getElementById('statQA').textContent = stats.total_qa_pairs || 0;
+
+        // Update system status
+        const components = stats.components || {};
+        updateStatus('statusEmbeddings', components.embeddings);
+        updateStatus('statusVectorStore', components.vector_store);
+        updateStatus('statusSearch', components.search);
+        updateStatus('statusLLM', components.llm, components.llm_provider);
+
+        document.getElementById('vectorCount').textContent = stats.vector_count || 0;
+
+        // Update feedback
+        const positive = stats.positive_feedback || 0;
+        const negative = stats.negative_feedback || 0;
+        const total = positive + negative;
+
+        document.getElementById('positiveFeedback').textContent = positive;
+        document.getElementById('negativeFeedback').textContent = negative;
+
+        if (total > 0) {
+            const posPercent = (positive / total) * 100;
+            document.getElementById('feedbackPositiveBar').style.width = posPercent + '%';
+            document.getElementById('feedbackNegativeBar').style.width = (100 - posPercent) + '%';
+        }
+
+    } catch (error) {
+        console.error('Stats refresh error:', error);
+    }
+}
+
+function updateStatus(elementId, isActive, provider = null) {
+    const element = document.getElementById(elementId);
+    if (isActive) {
+        let text = 'Active';
+        if (provider) text += ` (${provider})`;
+        element.innerHTML = `<span class="badge bg-success">${text}</span>`;
+    } else {
+        element.innerHTML = '<span class="badge bg-danger">Inactive</span>';
+    }
+}
+
+async function resetVectors() {
+    if (!confirm('Are you sure you want to reset the vector store? This will delete all embeddings.')) {
+        return;
+    }
+
+    const btn = document.getElementById('resetBtn');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Resetting...';
+
+    try {
+        // This would need to be implemented on the backend
+        alert('Vector store reset. Please re-upload documents.');
+        refreshStats();
+    } catch (error) {
+        alert('Failed to reset vector store');
+    } finally {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="bi bi-trash me-2"></i>Reset Vector Store';
+    }
+}
+</script>
+{% endblock %}

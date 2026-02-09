@@ -2,6 +2,34 @@
 # Deploy at: https://render.com/deploy
 
 services:
+  # =============================================================================
+  # Knowledge Expert - AI-powered Q&A System (NEW)
+  # =============================================================================
+  - type: web
+    name: knowledge-expert
+    runtime: python
+    plan: starter  # $7/mo - Required for ML dependencies (embeddings, vector store)
+    buildCommand: pip install -r requirements.txt && python -m knowledge_expert.scripts.seed_data
+    startCommand: gunicorn knowledge_expert.app:app --bind 0.0.0.0:$PORT --workers 2 --threads 2 --timeout 120
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ANTHROPIC_API_KEY
+        sync: false  # Set manually in Render dashboard
+    disk:
+      name: knowledge-data
+      mountPath: /data
+      sizeGB: 1  # Persistent storage for SQLite and ChromaDB
+    healthCheckPath: /api/health
+    autoDeploy: true
+
+  # =============================================================================
+  # Resume Matching App (EXISTING - Legacy)
+  # =============================================================================
   - type: web
     name: resume-matching-app
     runtime: python
@@ -17,3 +45,24 @@ services:
         value: "0"
     autoDeploy: true
     healthCheckPath: /health
+
+# =============================================================================
+# Deployment Notes
+# =============================================================================
+#
+# Knowledge Expert Requirements:
+# - Starter plan ($7/mo) minimum for ML dependencies
+# - ANTHROPIC_API_KEY must be set in Render dashboard
+# - Persistent disk is required for database storage
+#
+# To deploy:
+# 1. Connect your GitHub repository to Render
+# 2. Create a new Blueprint from this file
+# 3. Set ANTHROPIC_API_KEY in the environment variables
+# 4. Deploy!
+#
+# Memory usage estimates:
+# - Base Flask app: ~100MB
+# - Sentence Transformers model: ~400MB
+# - ChromaDB: ~100MB + data
+# - Total: ~600MB minimum (Starter plan provides 1GB)

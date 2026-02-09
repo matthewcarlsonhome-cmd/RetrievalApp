@@ -1,11 +1,30 @@
 # Core web framework
 flask>=2.3.0
 gunicorn>=21.0.0
+werkzeug>=2.3.0
 
-# For TF-IDF matching
+# Data processing
 numpy>=1.24.0
 
-# Note: Neural matching requires sentence-transformers but needs 1GB+ RAM
-# Render free tier only has 512MB, so neural is disabled
-# To enable: upgrade to Render paid tier ($7/mo) and uncomment below:
-# sentence-transformers>=2.2.0
+# Document parsing
+PyMuPDF>=1.23.0  # PDF parsing (fitz)
+python-docx>=0.8.11  # DOCX parsing
+beautifulsoup4>=4.12.0  # HTML parsing
+markdown>=3.4.0  # Markdown processing
+
+# Embeddings and Vector Store
+sentence-transformers>=2.2.0  # Embedding generation
+chromadb>=0.4.0  # Vector database
+
+# LLM Clients
+anthropic>=0.18.0  # Claude API
+openai>=1.0.0  # OpenAI API (optional fallback)
+
+# Utilities
+python-dotenv>=1.0.0  # Environment variables
+
+# Note on Memory Requirements:
+# - sentence-transformers requires ~500MB RAM for model loading
+# - chromadb requires additional memory for vector operations
+# - Recommended: Render Starter ($7/mo) or Standard ($25/mo) plan
+# - Free tier (512MB) may work for small knowledge bases but is not recommended

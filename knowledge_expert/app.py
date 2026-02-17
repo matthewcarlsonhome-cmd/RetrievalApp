@@ -60,26 +60,44 @@ def init_components():
 
     logger.info("Initializing Knowledge Expert components...")
 
-    # Initialize embedder
-    if is_embedding_available():
-        embedder = EmbeddingGenerator()
-        logger.info("Embedding generator initialized")
+    # Check if we should skip heavy ML components (for free tier / low memory)
+    skip_ml = os.environ.get("SKIP_ML_MODELS", "false").lower() == "true"
+
+    if skip_ml:
+        logger.info("SKIP_ML_MODELS=true - Running in lightweight mode (no embeddings/vector search)")
+        embedder = None
+        vector_store = None
+        search = None
     else:
-        logger.warning("Embeddings not available - install sentence-transformers")
+        # Initialize embedder
+        if is_embedding_available():
+            try:
+                embedder = EmbeddingGenerator()
+                logger.info("Embedding generator initialized")
+            except Exception as e:
+                logger.warning(f"Failed to initialize embedder: {e}")
+        else:
+            logger.warning("Embeddings not available - install sentence-transformers")
 
-    # Initialize vector store
-    if is_chromadb_available():
-        vector_store = get_vector_store()
-        logger.info("Vector store initialized")
-    else:
-        logger.warning("Vector store not available - install chromadb")
+        # Initialize vector store
+        if is_chromadb_available():
+            try:
+                vector_store = get_vector_store()
+                logger.info("Vector store initialized")
+            except Exception as e:
+                logger.warning(f"Failed to initialize vector store: {e}")
+        else:
+            logger.warning("Vector store not available - install chromadb")
 
-    # Initialize search
-    if embedder and vector_store:
-        search = HybridSearch()
-        logger.info("Hybrid search initialized")
+        # Initialize search
+        if embedder and vector_store:
+            try:
+                search = HybridSearch()
+                logger.info("Hybrid search initialized")
+            except Exception as e:
+                logger.warning(f"Failed to initialize search: {e}")
 
-    # Initialize LLM client
+    # Initialize LLM client (lightweight, always load)
     try:
         llm_client = get_llm_client()
         if llm_client.is_available():

@@ -129,11 +129,18 @@ def api_query():
         }), 400
 
     try:
+        # Check LLM client is available
+        if llm_client is None:
+            logger.error("LLM client not initialized")
+            return jsonify({'error': 'Service temporarily unavailable. LLM not configured.'}), 503
+
         # Search for relevant context
+        search_results = []
         if search:
-            search_results = search.get_context_for_query(query_text)
-        else:
-            search_results = []
+            try:
+                search_results = search.get_context_for_query(query_text)
+            except Exception as search_error:
+                logger.warning(f"Search failed, continuing without context: {search_error}")
 
         # Build prompt
         context = PromptContext(
@@ -157,16 +164,21 @@ def api_query():
         if resp_mod.filtered_content:
             response_text = resp_mod.filtered_content
 
-        # Store query in database
-        query_record = Query(
-            question=query_text,
-            answer=response_text,
-            sources=[r.to_dict() for r in search_results],
-            model_used=llm_response.model,
-            tokens_used=llm_response.usage.get('output_tokens', 0),
-            conversation_id=conversation_id
-        )
-        query_id = db.add_query(query_record)
+        # Store query in database (non-critical, don't fail on error)
+        query_id = None
+        try:
+            query_record = Query(
+                question=query_text,
+                answer=response_text,
+                sources=[r.to_dict() for r in search_results],
+                model_used=llm_response.model,
+                tokens_used=llm_response.usage.get('output_tokens', 0),
+                conversation_id=conversation_id
+            )
+            query_id = db.add_query(query_record)
+        except Exception as db_error:
+            logger.warning(f"Failed to save query to database: {db_error}")
+            query_id = "error"
 
         # Build citations
         citations = []
@@ -187,7 +199,8 @@ def api_query():
 
     except Exception as e:
         logger.error(f"Query error: {e}", exc_info=True)
-        return jsonify({'error': 'Failed to process query'}), 500
+        error_msg = str(e) if app.debug else 'Failed to process query'
+        return jsonify({'error': error_msg, 'details': str(type(e).__name__)}), 500
 
 
 @app.route('/api/feedback', methods=['POST'])

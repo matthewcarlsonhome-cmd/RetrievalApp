@@ -12,12 +12,12 @@ from typing import List, Optional
 class Config:
     """Application configuration."""
 
-    # Paths
-    BASE_DIR: Path = field(default_factory=lambda: Path(__file__).parent.parent)
-    DATA_DIR: Path = field(default_factory=lambda: Path(__file__).parent.parent / "data")
-    KNOWLEDGE_BASE_DIR: Path = field(default_factory=lambda: Path(__file__).parent.parent / "data" / "knowledge_base")
-    CHROMA_DB_DIR: Path = field(default_factory=lambda: Path(__file__).parent.parent / "data" / "chroma_db")
-    SQLITE_DB_PATH: Path = field(default_factory=lambda: Path(__file__).parent.parent / "data" / "knowledge_expert.db")
+    # Paths - Use /data on Render (persistent disk) or local data/ folder
+    BASE_DIR: Path = field(default_factory=lambda: Path(__file__).parent)
+    DATA_DIR: Path = field(default_factory=lambda: Path(os.environ.get("DATA_DIR", "/data" if os.path.exists("/data") else str(Path(__file__).parent / "data"))))
+    UPLOAD_PATH: Path = field(default_factory=lambda: Path(os.environ.get("DATA_DIR", "/data" if os.path.exists("/data") else str(Path(__file__).parent / "data"))) / "uploads")
+    CHROMA_PATH: Path = field(default_factory=lambda: Path(os.environ.get("DATA_DIR", "/data" if os.path.exists("/data") else str(Path(__file__).parent / "data"))) / "chroma_db")
+    SQLITE_DB_PATH: Path = field(default_factory=lambda: Path(os.environ.get("DATA_DIR", "/data" if os.path.exists("/data") else str(Path(__file__).parent / "data"))) / "knowledge_expert.db")
 
     # Flask
     SECRET_KEY: str = field(default_factory=lambda: os.environ.get("SECRET_KEY", "dev-secret-key-change-in-production"))
@@ -40,8 +40,8 @@ class Config:
     ANTHROPIC_API_KEY: Optional[str] = field(default_factory=lambda: os.environ.get("ANTHROPIC_API_KEY"))
     OPENAI_API_KEY: Optional[str] = field(default_factory=lambda: os.environ.get("OPENAI_API_KEY"))
     LLM_MODEL: str = field(default_factory=lambda: os.environ.get("LLM_MODEL", "claude-3-5-sonnet-20241022"))
-    LLM_MAX_TOKENS: int = 1024
-    LLM_TEMPERATURE: float = 0.1
+    MAX_TOKENS: int = 1024
+    TEMPERATURE: float = 0.1
 
     # Retrieval
     TOP_K_RESULTS: int = 5
@@ -72,34 +72,33 @@ class ContentModeration:
     ])
 
     # Competitor names to avoid mentioning (customize per client)
-    COMPETITORS: List[str] = field(default_factory=lambda: [
+    COMPETITOR_NAMES: List[str] = field(default_factory=lambda: [
         # Add competitor names here
     ])
 
-    # Response rules
-    SYSTEM_RULES: str = """
-IMPORTANT RULES:
-1. Only answer based on the provided context. Never make up information.
-2. If the answer is not in the context, say "I don't have information about that in my knowledge base."
-3. Always maintain a professional, helpful tone.
-4. Never use profanity or inappropriate language.
-5. Never discuss politics, religion, or other sensitive topics.
-6. Never provide medical, legal, or financial advice unless explicitly in the knowledge base.
-7. Always cite your sources when providing information.
-8. If asked about competitors, politely redirect to the company's own services.
-"""
+    # Response rules (as list for iteration)
+    SYSTEM_RULES: List[str] = field(default_factory=lambda: [
+        "Only answer based on the provided context. Never make up information.",
+        "If the answer is not in the context, say 'I don't have information about that in my knowledge base.'",
+        "Always maintain a professional, helpful tone.",
+        "Never use profanity or inappropriate language.",
+        "Never discuss politics, religion, or other sensitive topics.",
+        "Never provide medical, legal, or financial advice unless explicitly in the knowledge base.",
+        "Always cite your sources when providing information.",
+        "If asked about competitors, politely redirect to the company's own services.",
+    ])
 
 
-# Global config instance
+# Global config instances
 config = Config()
-moderation = ContentModeration()
+moderation_config = ContentModeration()
 
 
 def init_directories():
     """Create required directories if they don't exist."""
     config.DATA_DIR.mkdir(parents=True, exist_ok=True)
-    config.KNOWLEDGE_BASE_DIR.mkdir(parents=True, exist_ok=True)
-    config.CHROMA_DB_DIR.mkdir(parents=True, exist_ok=True)
+    config.UPLOAD_PATH.mkdir(parents=True, exist_ok=True)
+    config.CHROMA_PATH.mkdir(parents=True, exist_ok=True)
 
 
 # Initialize directories on import

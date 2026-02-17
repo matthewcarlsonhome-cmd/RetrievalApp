@@ -18,18 +18,24 @@ from .config import config
 @dataclass
 class KnowledgeItem:
     """A document or Q&A in the knowledge base."""
-    id: str
-    type: str  # 'document', 'faq', 'qa_direct'
     title: str
     content: str
+    type: str = "document"  # 'document', 'faq', 'qa_direct'
+    id: Optional[str] = None
     source_file: Optional[str] = None
+    file_type: Optional[str] = None
     category: Optional[str] = None
     tags: Optional[List[str]] = None
+    metadata: Optional[Dict[str, Any]] = None
     chunk_count: int = 0
+    status: str = "pending"
+    source: Optional[str] = None
     created_at: str = None
     updated_at: str = None
 
     def __post_init__(self):
+        if self.id is None:
+            self.id = str(uuid.uuid4())
         if self.created_at is None:
             self.created_at = datetime.utcnow().isoformat()
         if self.updated_at is None:
@@ -42,7 +48,7 @@ class KnowledgeItem:
 class Chunk:
     """A chunk of text from a knowledge item."""
     id: str
-    knowledge_item_id: str
+    document_id: str  # Also known as knowledge_item_id
     content: str
     chunk_index: int
     section_title: Optional[str] = None
@@ -52,15 +58,20 @@ class Chunk:
 @dataclass
 class Query:
     """A user query."""
-    id: str
-    query_text: str
-    response_text: Optional[str] = None
-    sources: Optional[List[str]] = None
-    confidence: Optional[float] = None
+    question: str
+    answer: Optional[str] = None
+    id: Optional[str] = None
+    sources: Optional[List[Any]] = None
+    model_used: Optional[str] = None
+    tokens_used: int = 0
+    conversation_id: Optional[str] = None
     feedback: Optional[str] = None  # 'positive', 'negative', None
+    feedback_text: Optional[str] = None
     created_at: str = None
 
     def __post_init__(self):
+        if self.id is None:
+            self.id = str(uuid.uuid4())
         if self.created_at is None:
             self.created_at = datetime.utcnow().isoformat()
 
@@ -68,14 +79,16 @@ class Query:
 @dataclass
 class DirectQA:
     """A directly entered Q&A pair."""
-    id: str
     question: str
     answer: str
+    id: Optional[str] = None
     category: Optional[str] = None
     tags: Optional[List[str]] = None
     created_at: str = None
 
     def __post_init__(self):
+        if self.id is None:
+            self.id = str(uuid.uuid4())
         if self.created_at is None:
             self.created_at = datetime.utcnow().isoformat()
         if self.tags is None:
@@ -212,6 +225,16 @@ class Database:
             conn.execute("DELETE FROM chunks WHERE knowledge_item_id = ?", (item_id,))
             conn.execute("DELETE FROM knowledge_items WHERE id = ?", (item_id,))
 
+    def update_knowledge_item_status(self, item_id: str, status: str, chunk_count: int = None):
+        """Update status of a knowledge item."""
+        with self.get_connection() as conn:
+            if chunk_count is not None:
+                conn.execute(
+                    "UPDATE knowledge_items SET chunk_count = ?, updated_at = ? WHERE id = ?",
+                    (chunk_count, datetime.utcnow().isoformat(), item_id)
+                )
+            # Note: status field not in current schema, but could be added
+
     def _row_to_knowledge_item(self, row) -> KnowledgeItem:
         """Convert a database row to KnowledgeItem."""
         return KnowledgeItem(
@@ -235,7 +258,7 @@ class Database:
                 INSERT INTO chunks (id, knowledge_item_id, content, chunk_index, section_title, token_count)
                 VALUES (?, ?, ?, ?, ?, ?)
             """, (
-                chunk.id, chunk.knowledge_item_id, chunk.content,
+                chunk.id, chunk.document_id, chunk.content,
                 chunk.chunk_index, chunk.section_title, chunk.token_count
             ))
 
@@ -246,7 +269,7 @@ class Database:
                 INSERT INTO chunks (id, knowledge_item_id, content, chunk_index, section_title, token_count)
                 VALUES (?, ?, ?, ?, ?, ?)
             """, [
-                (c.id, c.knowledge_item_id, c.content, c.chunk_index, c.section_title, c.token_count)
+                (c.id, c.document_id, c.content, c.chunk_index, c.section_title, c.token_count)
                 for c in chunks
             ])
 
@@ -273,7 +296,7 @@ class Database:
         """Convert a database row to Chunk."""
         return Chunk(
             id=row["id"],
-            knowledge_item_id=row["knowledge_item_id"],
+            document_id=row["knowledge_item_id"],
             content=row["content"],
             chunk_index=row["chunk_index"],
             section_title=row["section_title"],
@@ -288,13 +311,13 @@ class Database:
                 INSERT INTO queries (id, query_text, response_text, sources, confidence, feedback, created_at)
                 VALUES (?, ?, ?, ?, ?, ?, ?)
             """, (
-                query.id, query.query_text, query.response_text,
+                query.id, query.question, query.answer,
                 json.dumps(query.sources) if query.sources else None,
-                query.confidence, query.feedback, query.created_at
+                None, query.feedback, query.created_at
             ))
         return query.id
 
-    def update_query_feedback(self, query_id: str, feedback: str):
+    def update_query_feedback(self, query_id: str, feedback: str, feedback_text: str = None):
         """Update feedback for a query."""
         with self.get_connection() as conn:
             conn.execute(
@@ -315,10 +338,9 @@ class Database:
         """Convert a database row to Query."""
         return Query(
             id=row["id"],
-            query_text=row["query_text"],
-            response_text=row["response_text"],
+            question=row["query_text"],
+            answer=row["response_text"],
             sources=json.loads(row["sources"]) if row["sources"] else None,
-            confidence=row["confidence"],
             feedback=row["feedback"],
             created_at=row["created_at"]
         )
@@ -376,12 +398,12 @@ class Database:
             ).fetchone()[0]
 
             return {
-                "knowledge_items": items,
-                "chunks": chunks,
-                "queries": queries,
-                "direct_qa": qa_direct,
-                "feedback_positive": positive,
-                "feedback_negative": negative,
+                "total_documents": items,
+                "total_chunks": chunks,
+                "total_queries": queries,
+                "total_qa_pairs": qa_direct,
+                "positive_feedback": positive,
+                "negative_feedback": negative,
                 "satisfaction_rate": positive / (positive + negative) if (positive + negative) > 0 else None
             }
 

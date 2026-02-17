@@ -5,23 +5,30 @@ Extracts text from PDF, DOCX, Markdown, and plain text files.
 
 import re
 from pathlib import Path
-from typing import Optional, Tuple
+from typing import Optional, Tuple, Union
 import logging
 
 logger = logging.getLogger(__name__)
 
+# Supported file extensions
+SUPPORTED_EXTENSIONS = {".pdf", ".docx", ".doc", ".md", ".txt", ".html", ".htm"}
 
-def extract_text(file_path: Path, content: bytes = None) -> Tuple[str, str]:
+
+def extract_text(file_path: Union[str, Path], content: bytes = None) -> Tuple[str, str]:
     """
     Extract text from a file.
 
     Args:
-        file_path: Path to the file
+        file_path: Path to the file (string or Path object)
         content: Optional file content bytes (if already read)
 
     Returns:
         Tuple of (extracted_text, title)
     """
+    # Convert string to Path if needed
+    if isinstance(file_path, str):
+        file_path = Path(file_path)
+
     suffix = file_path.suffix.lower()
 
     if suffix == ".pdf":
@@ -38,17 +45,21 @@ def extract_text(file_path: Path, content: bytes = None) -> Tuple[str, str]:
         raise ValueError(f"Unsupported file type: {suffix}")
 
 
-def parse_document(file_path: Path, content: bytes = None) -> dict:
+def parse_document(file_path: Union[str, Path], content: bytes = None) -> dict:
     """
     Parse a document and return structured data.
 
     Args:
-        file_path: Path to the file
+        file_path: Path to the file (string or Path object)
         content: Optional file content bytes
 
     Returns:
         Dictionary with title, content, and metadata
     """
+    # Convert string to Path if needed
+    if isinstance(file_path, str):
+        file_path = Path(file_path)
+
     text, title = extract_text(file_path, content)
 
     # Clean up the text

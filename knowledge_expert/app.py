@@ -270,14 +270,32 @@ def api_query():
             logger.warning(f"Failed to save query to database: {db_error}")
             query_id = "error"
 
-        # Build citations
+        # Build enhanced citations with links and position info
         citations = []
         for r in search_results:
-            citations.append({
+            citation = {
                 'document': r.document_title,
                 'section': r.section_title,
-                'relevance': r.score
-            })
+                'relevance': r.score,
+                'chunk_id': r.chunk_id,
+                'document_id': r.document_id,
+                'start_char': r.start_char,
+                'end_char': r.end_char
+            }
+
+            # Add page number if available
+            if r.page_number:
+                citation['page_number'] = r.page_number
+
+            # Get source URL if document has one
+            try:
+                doc = db.get_knowledge_item(r.document_id)
+                if doc and doc.source_url:
+                    citation['source_url'] = doc.source_url
+            except Exception:
+                pass
+
+            citations.append(citation)
 
         return jsonify({
             'query_id': query_id,

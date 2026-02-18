@@ -90,11 +90,46 @@ main {
 /* Citations */
 .citations {
     font-size: 0.85rem;
+    background-color: #f8f9fa;
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    margin-top: 0.75rem;
 }
 
 .citations ul {
     padding-left: 1.25rem;
     margin-bottom: 0;
+}
+
+.citation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.citation-item {
+    padding: 0.25rem 0.5rem;
+    background-color: white;
+    border-radius: 0.25rem;
+    border: 1px solid #e9ecef;
+    flex-wrap: wrap;
+}
+
+.citation-item:hover {
+    background-color: #e9ecef;
+}
+
+.citation-item a {
+    color: var(--primary-color);
+}
+
+.citation-item a:hover {
+    text-decoration: underline !important;
+}
+
+.citation-item .badge {
+    font-size: 0.65rem;
+    min-width: 36px;
 }
 
 /* Feedback Actions */

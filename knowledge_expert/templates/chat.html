@@ -193,11 +193,37 @@ document.addEventListener('DOMContentLoaded', function() {
             // Add citations if present
             if (citations && citations.length > 0) {
                 html += '<div class="citations mt-2 pt-2 border-top">';
-                html += '<small class="text-muted"><strong>Sources:</strong></small><ul class="mb-0">';
-                citations.forEach(c => {
-                    html += `<li><small>${c.document}${c.section ? ' - ' + c.section : ''}</small></li>`;
+                html += '<small class="text-muted"><strong>📚 Sources:</strong></small>';
+                html += '<div class="citation-list mt-1">';
+                citations.forEach((c, idx) => {
+                    const relevancePercent = Math.round((c.relevance || 0) * 100);
+                    const relevanceClass = relevancePercent > 70 ? 'success' : relevancePercent > 40 ? 'warning' : 'secondary';
+
+                    html += `<div class="citation-item d-flex align-items-center gap-2 mb-1">`;
+                    html += `<span class="badge bg-${relevanceClass}" title="Relevance">${relevancePercent}%</span>`;
+
+                    // Document title with optional link
+                    if (c.source_url) {
+                        html += `<a href="${c.source_url}" target="_blank" class="text-decoration-none">`;
+                        html += `<small><i class="bi bi-link-45deg"></i> ${escapeHtml(c.document)}</small>`;
+                        html += `</a>`;
+                    } else {
+                        html += `<small><strong>${escapeHtml(c.document)}</strong></small>`;
+                    }
+
+                    // Section
+                    if (c.section) {
+                        html += `<small class="text-muted">› ${escapeHtml(c.section)}</small>`;
+                    }
+
+                    // Page number (for PDFs)
+                    if (c.page_number) {
+                        html += `<small class="badge bg-light text-dark">p. ${c.page_number}</small>`;
+                    }
+
+                    html += `</div>`;
                 });
-                html += '</ul></div>';
+                html += '</div></div>';
             }
 
             // Add feedback buttons

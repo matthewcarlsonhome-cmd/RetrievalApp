@@ -39,7 +39,7 @@ class Config:
     LLM_PROVIDER: str = field(default_factory=lambda: "anthropic" if os.environ.get("ANTHROPIC_API_KEY") else "openai")
     ANTHROPIC_API_KEY: Optional[str] = field(default_factory=lambda: os.environ.get("ANTHROPIC_API_KEY"))
     OPENAI_API_KEY: Optional[str] = field(default_factory=lambda: os.environ.get("OPENAI_API_KEY"))
-    LLM_MODEL: str = field(default_factory=lambda: os.environ.get("LLM_MODEL", "claude-3-5-sonnet-20241022"))
+    LLM_MODEL: str = field(default_factory=lambda: os.environ.get("LLM_MODEL", "claude-sonnet-4-20250514"))
     MAX_TOKENS: int = 1024
     TEMPERATURE: float = 0.1
 

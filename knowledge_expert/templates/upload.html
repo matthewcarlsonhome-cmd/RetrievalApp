@@ -20,9 +20,9 @@
                         <h4>Drag & Drop Files Here</h4>
                         <p class="text-muted">or click to browse</p>
                         <input type="file" id="fileInput" class="d-none"
-                               accept=".pdf,.docx,.doc,.md,.txt,.html" multiple>
+                               accept=".pdf,.docx,.doc,.md,.txt,.html,.htm,.xlsx,.xls,.csv,.pptx,.ppt,.eml,.mbox,.json,.mp3,.wav,.m4a,.ogg,.flac,.webm" multiple>
                         <p class="small text-muted">
-                            Supported: PDF, DOCX, MD, TXT, HTML (max 10MB)
+                            Supported: PDF, DOCX, Excel, PowerPoint, Email, Audio & more (max 25MB)
                         </p>
                     </div>
                 </div>
@@ -92,13 +92,39 @@
                 </h6>
             </div>
             <div class="card-body">
-                <div class="d-flex flex-wrap gap-2">
+                <p class="small text-muted mb-2">Documents</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
                     <span class="badge bg-primary">PDF</span>
                     <span class="badge bg-primary">DOCX</span>
-                    <span class="badge bg-primary">DOC</span>
                     <span class="badge bg-success">Markdown</span>
                     <span class="badge bg-success">TXT</span>
                     <span class="badge bg-info">HTML</span>
+                </div>
+
+                <p class="small text-muted mb-2">Spreadsheets</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge bg-success">XLSX</span>
+                    <span class="badge bg-success">XLS</span>
+                    <span class="badge bg-success">CSV</span>
+                </div>
+
+                <p class="small text-muted mb-2">Presentations</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge bg-warning text-dark">PPTX</span>
+                    <span class="badge bg-warning text-dark">PPT</span>
+                </div>
+
+                <p class="small text-muted mb-2">Email Archives</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge bg-secondary">EML</span>
+                    <span class="badge bg-secondary">MBOX</span>
+                </div>
+
+                <p class="small text-muted mb-2">Exports & Audio</p>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-info">JSON</span>
+                    <span class="badge bg-dark">MP3</span>
+                    <span class="badge bg-dark">WAV</span>
                 </div>
             </div>
         </div>
@@ -306,12 +332,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function getFileIcon(fileType) {
         const icons = {
+            // Documents
             '.pdf': '<i class="bi bi-file-earmark-pdf text-danger fs-4"></i>',
             '.docx': '<i class="bi bi-file-earmark-word text-primary fs-4"></i>',
             '.doc': '<i class="bi bi-file-earmark-word text-primary fs-4"></i>',
             '.md': '<i class="bi bi-markdown text-dark fs-4"></i>',
             '.txt': '<i class="bi bi-file-earmark-text fs-4"></i>',
-            '.html': '<i class="bi bi-filetype-html text-info fs-4"></i>'
+            '.html': '<i class="bi bi-filetype-html text-info fs-4"></i>',
+            '.htm': '<i class="bi bi-filetype-html text-info fs-4"></i>',
+            // Spreadsheets
+            '.xlsx': '<i class="bi bi-file-earmark-excel text-success fs-4"></i>',
+            '.xls': '<i class="bi bi-file-earmark-excel text-success fs-4"></i>',
+            '.csv': '<i class="bi bi-filetype-csv text-success fs-4"></i>',
+            // Presentations
+            '.pptx': '<i class="bi bi-file-earmark-ppt text-warning fs-4"></i>',
+            '.ppt': '<i class="bi bi-file-earmark-ppt text-warning fs-4"></i>',
+            // Email
+            '.eml': '<i class="bi bi-envelope text-secondary fs-4"></i>',
+            '.mbox': '<i class="bi bi-envelope-fill text-secondary fs-4"></i>',
+            // Exports
+            '.json': '<i class="bi bi-filetype-json text-info fs-4"></i>',
+            // Audio
+            '.mp3': '<i class="bi bi-file-earmark-music text-purple fs-4"></i>',
+            '.wav': '<i class="bi bi-file-earmark-music text-purple fs-4"></i>',
+            '.m4a': '<i class="bi bi-file-earmark-music text-purple fs-4"></i>',
+            '.ogg': '<i class="bi bi-file-earmark-music text-purple fs-4"></i>',
+            '.flac': '<i class="bi bi-file-earmark-music text-purple fs-4"></i>',
+            '.webm': '<i class="bi bi-file-earmark-music text-purple fs-4"></i>'
         };
         return icons[fileType] || '<i class="bi bi-file-earmark fs-4"></i>';
     }

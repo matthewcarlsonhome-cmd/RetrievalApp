@@ -277,8 +277,12 @@ class Database:
             conn.close()
 
     def _init_db(self):
-        """Initialize database schema."""
+        """Initialize database schema with migration support for existing databases."""
         with self.get_connection() as conn:
+            # First, run migrations for existing tables (add missing columns)
+            self._run_migrations(conn)
+
+            # Then create any new tables
             conn.executescript("""
                 -- Organizations (tenants)
                 CREATE TABLE IF NOT EXISTS organizations (
@@ -294,20 +298,19 @@ class Database:
                     id TEXT PRIMARY KEY,
                     email TEXT UNIQUE NOT NULL,
                     name TEXT NOT NULL,
-                    organization_id TEXT NOT NULL,
+                    organization_id TEXT,
                     role TEXT DEFAULT 'member',
                     password_hash TEXT,
                     api_key TEXT UNIQUE,
                     created_at TEXT,
-                    last_login TEXT,
-                    FOREIGN KEY (organization_id) REFERENCES organizations(id)
+                    last_login TEXT
                 );
 
                 -- Knowledge items (documents)
                 CREATE TABLE IF NOT EXISTS knowledge_items (
                     id TEXT PRIMARY KEY,
                     organization_id TEXT,
-                    type TEXT NOT NULL,
+                    type TEXT DEFAULT 'document',
                     title TEXT NOT NULL,
                     content TEXT NOT NULL,
                     source_file TEXT,
@@ -324,8 +327,7 @@ class Database:
                     source_url TEXT,
                     page_count INTEGER DEFAULT 0,
                     created_at TEXT,
-                    updated_at TEXT,
-                    FOREIGN KEY (organization_id) REFERENCES organizations(id)
+                    updated_at TEXT
                 );
 
                 -- Chunks for vector search
@@ -341,23 +343,20 @@ class Database:
                     chunk_size_setting INTEGER,
                     start_char INTEGER DEFAULT 0,
                     end_char INTEGER DEFAULT 0,
-                    page_number INTEGER,
-                    FOREIGN KEY (knowledge_item_id) REFERENCES knowledge_items(id),
-                    FOREIGN KEY (organization_id) REFERENCES organizations(id)
+                    page_number INTEGER
                 );
 
                 -- Conversations
                 CREATE TABLE IF NOT EXISTS conversations (
                     id TEXT PRIMARY KEY,
-                    organization_id TEXT NOT NULL,
+                    organization_id TEXT,
                     user_id TEXT,
                     session_id TEXT,
                     title TEXT DEFAULT 'New Conversation',
                     started_at TEXT,
                     last_message_at TEXT,
                     message_count INTEGER DEFAULT 0,
-                    metadata TEXT DEFAULT '{}',
-                    FOREIGN KEY (organization_id) REFERENCES organizations(id)
+                    metadata TEXT DEFAULT '{}'
                 );
 
                 -- Conversation messages
@@ -368,8 +367,7 @@ class Database:
                     content TEXT NOT NULL,
                     timestamp TEXT,
                     chunks_used TEXT DEFAULT '[]',
-                    chunk_scores TEXT DEFAULT '[]',
-                    FOREIGN KEY (conversation_id) REFERENCES conversations(id)
+                    chunk_scores TEXT DEFAULT '[]'
                 );
 
                 -- Queries and responses
@@ -390,8 +388,7 @@ class Database:
                     feedback_score INTEGER,
                     feedback_comment TEXT,
                     is_good_example INTEGER DEFAULT 0,
-                    created_at TEXT,
-                    FOREIGN KEY (organization_id) REFERENCES organizations(id)
+                    created_at TEXT
                 );
 
                 -- Direct Q&A entries
@@ -404,14 +401,13 @@ class Database:
                     tags TEXT,
                     use_count INTEGER DEFAULT 0,
                     created_by TEXT,
-                    created_at TEXT,
-                    FOREIGN KEY (organization_id) REFERENCES organizations(id)
+                    created_at TEXT
                 );
 
                 -- Knowledge gaps
                 CREATE TABLE IF NOT EXISTS knowledge_gaps (
                     id TEXT PRIMARY KEY,
-                    organization_id TEXT NOT NULL,
+                    organization_id TEXT,
                     query_text TEXT NOT NULL,
                     failure_reason TEXT,
                     occurrence_count INTEGER DEFAULT 1,
@@ -419,11 +415,10 @@ class Database:
                     resolved INTEGER DEFAULT 0,
                     resolved_by TEXT,
                     resolved_at TEXT,
-                    created_at TEXT,
-                    FOREIGN KEY (organization_id) REFERENCES organizations(id)
+                    created_at TEXT
                 );
 
-                -- Indexes
+                -- Indexes (safe to run multiple times)
                 CREATE INDEX IF NOT EXISTS idx_users_org ON users(organization_id);
                 CREATE INDEX IF NOT EXISTS idx_users_email ON users(email);
                 CREATE INDEX IF NOT EXISTS idx_items_org ON knowledge_items(organization_id);
@@ -448,6 +443,73 @@ class Database:
                     "INSERT INTO organizations (id, name, slug, settings, created_at) VALUES (?, ?, ?, ?, ?)",
                     (default_org.id, default_org.name, default_org.slug, '{}', default_org.created_at)
                 )
+
+    def _run_migrations(self, conn):
+        """Run schema migrations for existing databases."""
+        # Get list of existing tables
+        tables = {row[0] for row in conn.execute(
+            "SELECT name FROM sqlite_master WHERE type='table'"
+        ).fetchall()}
+
+        # Migration: Add organization_id to existing tables
+        migrations = [
+            # knowledge_items migrations
+            ("knowledge_items", "organization_id", "TEXT"),
+            ("knowledge_items", "type", "TEXT DEFAULT 'document'"),
+            ("knowledge_items", "chunking_strategy", "TEXT DEFAULT 'sentence'"),
+            ("knowledge_items", "chunk_size", "INTEGER DEFAULT 500"),
+            ("knowledge_items", "access_level", "TEXT DEFAULT 'organization'"),
+            ("knowledge_items", "allowed_users", "TEXT DEFAULT '[]'"),
+            ("knowledge_items", "created_by", "TEXT"),
+            ("knowledge_items", "source_url", "TEXT"),
+            ("knowledge_items", "page_count", "INTEGER DEFAULT 0"),
+            ("knowledge_items", "source_file", "TEXT"),
+            ("knowledge_items", "updated_at", "TEXT"),
+
+            # chunks migrations
+            ("chunks", "organization_id", "TEXT"),
+            ("chunks", "chunking_strategy", "TEXT"),
+            ("chunks", "chunk_size_setting", "INTEGER"),
+            ("chunks", "start_char", "INTEGER DEFAULT 0"),
+            ("chunks", "end_char", "INTEGER DEFAULT 0"),
+            ("chunks", "page_number", "INTEGER"),
+
+            # queries migrations
+            ("queries", "organization_id", "TEXT"),
+            ("queries", "conversation_id", "TEXT"),
+            ("queries", "user_id", "TEXT"),
+            ("queries", "chunks_used", "TEXT DEFAULT '[]'"),
+            ("queries", "chunk_scores", "TEXT DEFAULT '[]'"),
+            ("queries", "response_time_ms", "INTEGER DEFAULT 0"),
+            ("queries", "feedback_score", "INTEGER"),
+            ("queries", "feedback_comment", "TEXT"),
+            ("queries", "is_good_example", "INTEGER DEFAULT 0"),
+
+            # direct_qa migrations
+            ("direct_qa", "organization_id", "TEXT"),
+            ("direct_qa", "use_count", "INTEGER DEFAULT 0"),
+            ("direct_qa", "created_by", "TEXT"),
+
+            # users migrations (if table exists)
+            ("users", "organization_id", "TEXT"),
+            ("users", "role", "TEXT DEFAULT 'member'"),
+            ("users", "password_hash", "TEXT"),
+            ("users", "api_key", "TEXT"),
+            ("users", "last_login", "TEXT"),
+        ]
+
+        for table, column, col_type in migrations:
+            if table in tables:
+                # Check if column exists
+                cursor = conn.execute(f"PRAGMA table_info({table})")
+                existing_columns = {row[1] for row in cursor.fetchall()}
+
+                if column not in existing_columns:
+                    try:
+                        conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {col_type}")
+                    except Exception as e:
+                        # Column might already exist or other error - continue
+                        pass
 
     # -------------------------------------------------------------------------
     # Organizations

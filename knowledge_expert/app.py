@@ -263,7 +263,7 @@ def api_list_documents():
                     'source': doc.source,
                     'chunk_count': doc.chunk_count,
                     'status': doc.status,
-                    'created_at': doc.created_at.isoformat() if doc.created_at else None
+                    'created_at': doc.created_at if doc.created_at else None
                 }
                 for doc in documents
             ]
@@ -409,7 +409,7 @@ def api_list_qa():
                     'question': qa.question,
                     'answer': qa.answer,
                     'category': qa.category,
-                    'created_at': qa.created_at.isoformat() if qa.created_at else None
+                    'created_at': qa.created_at if qa.created_at else None
                 }
                 for qa in qa_pairs
             ]

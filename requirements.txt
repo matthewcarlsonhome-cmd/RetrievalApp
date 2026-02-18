@@ -11,6 +11,10 @@ PyMuPDF>=1.23.0  # PDF parsing (fitz)
 python-docx>=0.8.11  # DOCX parsing
 beautifulsoup4>=4.12.0  # HTML parsing
 markdown>=3.4.0  # Markdown processing
+openpyxl>=3.1.0  # Excel parsing (.xlsx)
+python-pptx>=0.6.21  # PowerPoint parsing (.pptx)
+# Note: .eml and .mbox parsing use Python's built-in email and mailbox modules
+# Note: Audio transcription requires openai-whisper (local) or openai (API)
 
 # Embeddings and Vector Store
 sentence-transformers>=2.2.0  # Embedding generation

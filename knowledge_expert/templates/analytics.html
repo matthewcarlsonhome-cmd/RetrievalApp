@@ -1,0 +1,673 @@
+{% extends "base.html" %}
+
+{% block title %}Analytics - Knowledge Expert{% endblock %}
+
+{% block extra_css %}
+<style>
+    .stat-card {
+        transition: transform 0.2s;
+    }
+    .stat-card:hover {
+        transform: translateY(-2px);
+    }
+    .stat-value {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .stat-label {
+        color: #6c757d;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    .gap-item {
+        border-left: 4px solid #dc3545;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .gap-item.resolved {
+        border-left-color: #198754;
+        opacity: 0.7;
+    }
+    .experiment-card {
+        border-left: 4px solid #0d6efd;
+    }
+    .chart-container {
+        height: 300px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 0.5rem;
+    }
+    .bar {
+        width: 60px;
+        background: linear-gradient(to top, #0d6efd, #6ea8fe);
+        border-radius: 4px 4px 0 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+        min-height: 20px;
+    }
+    .bar-label {
+        text-align: center;
+        margin-top: 0.5rem;
+        font-size: 0.75rem;
+        color: #6c757d;
+    }
+    .training-data-preview {
+        max-height: 400px;
+        overflow-y: auto;
+        font-family: monospace;
+        font-size: 0.75rem;
+        background: #1e1e1e;
+        color: #d4d4d4;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+    .strategy-badge {
+        font-size: 0.75rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col">
+        <h1 class="h2">
+            <i class="bi bi-graph-up me-2"></i>
+            Analytics Dashboard
+        </h1>
+        <p class="text-muted">Monitor performance, identify knowledge gaps, and optimize retrieval</p>
+    </div>
+    <div class="col-auto">
+        <button class="btn btn-outline-primary" onclick="refreshStats()">
+            <i class="bi bi-arrow-clockwise me-1"></i> Refresh
+        </button>
+    </div>
+</div>
+
+<!-- Overview Stats -->
+<div class="row g-3 mb-4">
+    <div class="col-md-3">
+        <div class="card stat-card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+                <div class="stat-value text-primary" id="stat-queries">-</div>
+                <div class="stat-label">Total Queries</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+                <div class="stat-value text-success" id="stat-satisfaction">-</div>
+                <div class="stat-label">Satisfaction Rate</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+                <div class="stat-value text-warning" id="stat-gaps">-</div>
+                <div class="stat-label">Knowledge Gaps</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+                <div class="stat-value text-info" id="stat-conversations">-</div>
+                <div class="stat-label">Conversations</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <!-- Knowledge Gaps -->
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-header bg-white border-0">
+                <h5 class="mb-0">
+                    <i class="bi bi-exclamation-triangle text-warning me-2"></i>
+                    Knowledge Gaps
+                </h5>
+                <small class="text-muted">Queries that couldn't be answered or received negative feedback</small>
+            </div>
+            <div class="card-body">
+                <div id="gaps-container">
+                    <div class="text-center py-4">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer bg-white border-0">
+                <button class="btn btn-sm btn-outline-secondary" onclick="exportGaps()">
+                    <i class="bi bi-download me-1"></i> Export Gaps
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Distribution -->
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-header bg-white border-0">
+                <h5 class="mb-0">
+                    <i class="bi bi-bar-chart text-primary me-2"></i>
+                    Feedback Distribution
+                </h5>
+                <small class="text-muted">User feedback on responses</small>
+            </div>
+            <div class="card-body">
+                <div class="chart-container" id="feedback-chart">
+                    <div class="text-center w-100">
+                        <div class="spinner-border text-primary" role="status"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4 mt-2">
+    <!-- Chunking Strategy Performance -->
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-white border-0">
+                <h5 class="mb-0">
+                    <i class="bi bi-puzzle text-info me-2"></i>
+                    Strategy Performance
+                </h5>
+                <small class="text-muted">Compare chunking strategies by feedback rate</small>
+            </div>
+            <div class="card-body">
+                <div id="strategy-container">
+                    <div class="text-center py-4">
+                        <div class="spinner-border text-primary" role="status"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experiments -->
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+                <div>
+                    <h5 class="mb-0">
+                        <i class="bi bi-flask text-purple me-2"></i>
+                        Active Experiments
+                    </h5>
+                    <small class="text-muted">A/B tests for retrieval optimization</small>
+                </div>
+                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#newExperimentModal">
+                    <i class="bi bi-plus"></i> New
+                </button>
+            </div>
+            <div class="card-body">
+                <div id="experiments-container">
+                    <div class="text-center py-4">
+                        <div class="spinner-border text-primary" role="status"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Training Data Export -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-white border-0">
+                <h5 class="mb-0">
+                    <i class="bi bi-database text-success me-2"></i>
+                    Training Data Export
+                </h5>
+                <small class="text-muted">Export positive feedback pairs for fine-tuning open-source models</small>
+            </div>
+            <div class="card-body">
+                <div class="row align-items-end">
+                    <div class="col-md-4">
+                        <label class="form-label">Format</label>
+                        <select class="form-select" id="export-format">
+                            <option value="jsonl">JSONL (OpenAI/Together.ai format)</option>
+                            <option value="json">JSON</option>
+                            <option value="csv">CSV</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Filter</label>
+                        <select class="form-select" id="export-filter">
+                            <option value="positive">Positive feedback only</option>
+                            <option value="good">Marked as good examples</option>
+                            <option value="all">All queries</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-success w-100" onclick="exportTrainingData()">
+                            <i class="bi bi-download me-1"></i> Export Training Data
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h6>Preview (first 5 entries)</h6>
+                    <div class="training-data-preview" id="training-preview">
+                        Click "Export Training Data" to preview...
+                    </div>
+                </div>
+
+                <div class="alert alert-info mt-3 mb-0">
+                    <i class="bi bi-info-circle me-2"></i>
+                    <strong>Note:</strong> This exports query-response pairs for fine-tuning models like LLaMA, Mistral, or GPT.
+                    Claude cannot be fine-tuned with this data. Use this for:
+                    <ul class="mb-0 mt-2">
+                        <li>Fine-tuning open-source models on Together.ai or Replicate</li>
+                        <li>Training custom models with domain knowledge</li>
+                        <li>Analyzing what questions work well</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- New Experiment Modal -->
+<div class="modal fade" id="newExperimentModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Create New Experiment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="experiment-form">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Experiment Name</label>
+                            <input type="text" class="form-control" id="exp-name" required placeholder="e.g., Large Chunks Test">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Chunking Strategy</label>
+                            <select class="form-select" id="exp-strategy">
+                                <option value="sentence">Sentence-based</option>
+                                <option value="paragraph">Paragraph-based</option>
+                                <option value="fixed">Fixed Size</option>
+                                <option value="semantic">Semantic</option>
+                                <option value="hybrid">Hybrid</option>
+                                <option value="sliding">Sliding Window</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Chunk Size (tokens)</label>
+                            <input type="number" class="form-control" id="exp-chunk-size" value="500" min="100" max="2000">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Chunk Overlap</label>
+                            <input type="number" class="form-control" id="exp-overlap" value="50" min="0" max="500">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Top K Results</label>
+                            <input type="number" class="form-control" id="exp-top-k" value="5" min="1" max="20">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Search Weights</label>
+                            <div class="row">
+                                <div class="col-4">
+                                    <label class="form-label small">Semantic</label>
+                                    <input type="range" class="form-range" id="exp-semantic" min="0" max="100" value="70"
+                                           oninput="updateWeights()">
+                                    <span id="exp-semantic-val">70%</span>
+                                </div>
+                                <div class="col-4">
+                                    <label class="form-label small">Keyword</label>
+                                    <input type="range" class="form-range" id="exp-keyword" min="0" max="100" value="20"
+                                           oninput="updateWeights()">
+                                    <span id="exp-keyword-val">20%</span>
+                                </div>
+                                <div class="col-4">
+                                    <label class="form-label small">Q&A Match</label>
+                                    <input type="range" class="form-range" id="exp-qa" min="0" max="100" value="10"
+                                           oninput="updateWeights()">
+                                    <span id="exp-qa-val">10%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-control" id="exp-description" rows="2"
+                                      placeholder="What are you testing?"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="createExperiment()">
+                    <i class="bi bi-flask me-1"></i> Create Experiment
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Load data on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        refreshStats();
+        loadKnowledgeGaps();
+        loadExperiments();
+        loadStrategyPerformance();
+    });
+
+    async function refreshStats() {
+        try {
+            const response = await fetch('/api/stats');
+            const data = await response.json();
+
+            document.getElementById('stat-queries').textContent = data.total_queries || 0;
+            document.getElementById('stat-conversations').textContent = data.total_conversations || 0;
+            document.getElementById('stat-gaps').textContent = data.knowledge_gaps || 0;
+
+            const satisfaction = data.satisfaction_rate;
+            if (satisfaction !== null && satisfaction !== undefined) {
+                document.getElementById('stat-satisfaction').textContent =
+                    (satisfaction * 100).toFixed(1) + '%';
+            } else {
+                document.getElementById('stat-satisfaction').textContent = 'N/A';
+            }
+
+            // Update feedback chart
+            updateFeedbackChart(data.positive_feedback || 0, data.negative_feedback || 0,
+                               (data.total_queries || 0) - (data.positive_feedback || 0) - (data.negative_feedback || 0));
+        } catch (error) {
+            console.error('Error loading stats:', error);
+        }
+    }
+
+    function updateFeedbackChart(positive, negative, noFeedback) {
+        const total = positive + negative + noFeedback || 1;
+        const maxHeight = 250;
+
+        const positiveHeight = (positive / total) * maxHeight;
+        const negativeHeight = (negative / total) * maxHeight;
+        const noFeedbackHeight = (noFeedback / total) * maxHeight;
+
+        document.getElementById('feedback-chart').innerHTML = `
+            <div class="text-center">
+                <div class="bar" style="height: ${Math.max(20, positiveHeight)}px; background: linear-gradient(to top, #198754, #20c997);">
+                    ${positive}
+                </div>
+                <div class="bar-label">Positive</div>
+            </div>
+            <div class="text-center">
+                <div class="bar" style="height: ${Math.max(20, negativeHeight)}px; background: linear-gradient(to top, #dc3545, #f77f8b);">
+                    ${negative}
+                </div>
+                <div class="bar-label">Negative</div>
+            </div>
+            <div class="text-center">
+                <div class="bar" style="height: ${Math.max(20, noFeedbackHeight)}px; background: linear-gradient(to top, #6c757d, #adb5bd);">
+                    ${noFeedback}
+                </div>
+                <div class="bar-label">No Feedback</div>
+            </div>
+        `;
+    }
+
+    async function loadKnowledgeGaps() {
+        try {
+            const response = await fetch('/api/analytics/gaps');
+            const gaps = await response.json();
+
+            const container = document.getElementById('gaps-container');
+
+            if (!gaps || gaps.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center text-muted py-4">
+                        <i class="bi bi-check-circle display-4"></i>
+                        <p class="mt-2">No knowledge gaps detected!</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = gaps.slice(0, 10).map(gap => `
+                <div class="gap-item ${gap.resolved ? 'resolved' : ''}">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <strong>${escapeHtml(gap.query_text)}</strong>
+                            <div class="small text-muted">
+                                <span class="badge bg-secondary me-1">${gap.occurrence_count}x</span>
+                                ${gap.failure_reason}
+                            </div>
+                        </div>
+                        ${!gap.resolved ? `
+                            <div class="btn-group btn-group-sm">
+                                <button class="btn btn-outline-success" onclick="resolveGap('${gap.id}')" title="Mark resolved">
+                                    <i class="bi bi-check"></i>
+                                </button>
+                                <button class="btn btn-outline-primary" onclick="addQAFromGap('${gap.id}', '${escapeHtml(gap.query_text)}')" title="Add Q&A">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        ` : '<span class="badge bg-success">Resolved</span>'}
+                    </div>
+                </div>
+            `).join('');
+        } catch (error) {
+            console.error('Error loading gaps:', error);
+            document.getElementById('gaps-container').innerHTML =
+                '<div class="alert alert-warning">Could not load knowledge gaps</div>';
+        }
+    }
+
+    async function loadStrategyPerformance() {
+        try {
+            const response = await fetch('/api/analytics/strategies');
+            const strategies = await response.json();
+
+            const container = document.getElementById('strategy-container');
+
+            if (!strategies || Object.keys(strategies).length === 0) {
+                container.innerHTML = `
+                    <div class="text-center text-muted py-4">
+                        <p>No strategy data yet. Upload documents and get feedback to see performance.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = `
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Strategy</th>
+                            <th>Chunks</th>
+                            <th>Retrievals</th>
+                            <th>Positive Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${Object.entries(strategies).map(([name, data]) => `
+                            <tr>
+                                <td>
+                                    <span class="badge bg-info strategy-badge">${name}</span>
+                                </td>
+                                <td>${data.chunk_count || 0}</td>
+                                <td>${data.total_retrievals || 0}</td>
+                                <td>
+                                    <div class="progress" style="height: 20px;">
+                                        <div class="progress-bar bg-success" style="width: ${((data.positive_rate || 0) * 100).toFixed(0)}%">
+                                            ${((data.positive_rate || 0) * 100).toFixed(1)}%
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+        } catch (error) {
+            console.error('Error loading strategies:', error);
+            document.getElementById('strategy-container').innerHTML =
+                '<div class="alert alert-warning">Could not load strategy data</div>';
+        }
+    }
+
+    async function loadExperiments() {
+        try {
+            const response = await fetch('/api/analytics/experiments');
+            const experiments = await response.json();
+
+            const container = document.getElementById('experiments-container');
+
+            if (!experiments || experiments.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center text-muted py-4">
+                        <p>No experiments yet. Create one to start A/B testing!</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = experiments.map(exp => `
+                <div class="card experiment-card mb-2">
+                    <div class="card-body py-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <strong>${escapeHtml(exp.name)}</strong>
+                                <div class="small text-muted">
+                                    ${exp.chunking_strategy} | ${exp.chunk_size} tokens |
+                                    ${exp.total_queries || 0} queries
+                                </div>
+                            </div>
+                            <div>
+                                ${exp.positive_rate !== undefined ?
+                                    `<span class="badge bg-${exp.positive_rate > 0.6 ? 'success' : exp.positive_rate > 0.4 ? 'warning' : 'danger'}">
+                                        ${(exp.positive_rate * 100).toFixed(0)}%
+                                    </span>` : '<span class="badge bg-secondary">No data</span>'}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        } catch (error) {
+            console.error('Error loading experiments:', error);
+            document.getElementById('experiments-container').innerHTML =
+                '<div class="alert alert-warning">Could not load experiments</div>';
+        }
+    }
+
+    async function resolveGap(gapId) {
+        try {
+            await fetch(`/api/analytics/gaps/${gapId}/resolve`, { method: 'POST' });
+            loadKnowledgeGaps();
+            refreshStats();
+        } catch (error) {
+            alert('Error resolving gap');
+        }
+    }
+
+    function addQAFromGap(gapId, queryText) {
+        // Redirect to Q&A page with pre-filled question
+        window.location.href = `/qa?question=${encodeURIComponent(queryText)}&gap_id=${gapId}`;
+    }
+
+    function updateWeights() {
+        const semantic = document.getElementById('exp-semantic').value;
+        const keyword = document.getElementById('exp-keyword').value;
+        const qa = document.getElementById('exp-qa').value;
+
+        document.getElementById('exp-semantic-val').textContent = semantic + '%';
+        document.getElementById('exp-keyword-val').textContent = keyword + '%';
+        document.getElementById('exp-qa-val').textContent = qa + '%';
+    }
+
+    async function createExperiment() {
+        const data = {
+            name: document.getElementById('exp-name').value,
+            description: document.getElementById('exp-description').value,
+            strategy: document.getElementById('exp-strategy').value,
+            chunk_size: parseInt(document.getElementById('exp-chunk-size').value),
+            chunk_overlap: parseInt(document.getElementById('exp-overlap').value),
+            top_k: parseInt(document.getElementById('exp-top-k').value),
+            semantic_weight: parseInt(document.getElementById('exp-semantic').value) / 100,
+            keyword_weight: parseInt(document.getElementById('exp-keyword').value) / 100,
+            qa_weight: parseInt(document.getElementById('exp-qa').value) / 100
+        };
+
+        try {
+            const response = await fetch('/api/analytics/experiments', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                bootstrap.Modal.getInstance(document.getElementById('newExperimentModal')).hide();
+                loadExperiments();
+                alert('Experiment created!');
+            } else {
+                alert('Error creating experiment');
+            }
+        } catch (error) {
+            alert('Error creating experiment');
+        }
+    }
+
+    async function exportTrainingData() {
+        const format = document.getElementById('export-format').value;
+        const filter = document.getElementById('export-filter').value;
+
+        try {
+            const response = await fetch(`/api/analytics/export?format=${format}&filter=${filter}`);
+            const data = await response.text();
+
+            // Show preview
+            document.getElementById('training-preview').textContent = data.split('\n').slice(0, 5).join('\n');
+
+            // Download file
+            const blob = new Blob([data], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `training_data.${format}`;
+            a.click();
+            URL.revokeObjectURL(url);
+        } catch (error) {
+            alert('Error exporting data');
+        }
+    }
+
+    function exportGaps() {
+        fetch('/api/analytics/gaps?format=json')
+            .then(r => r.text())
+            .then(data => {
+                const blob = new Blob([data], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'knowledge_gaps.json';
+                a.click();
+            });
+    }
+
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+</script>
+{% endblock %}

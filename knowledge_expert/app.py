@@ -15,12 +15,13 @@ from flask import (
 from werkzeug.utils import secure_filename
 
 from .config import config, moderation_config
-from .models import Database, KnowledgeItem, Chunk, Query, DirectQA
+from .models import Database, KnowledgeItem, Chunk, Query, DirectQA, KnowledgeGap
 from .ingestion.parsers import parse_document, SUPPORTED_EXTENSIONS
-from .ingestion.chunker import chunk_text, chunk_with_sections
+from .ingestion.chunker import chunk_text, chunk_with_sections, ChunkingStrategy
+from .experiments import ExperimentManager, experiment_manager
 from .ingestion.embedder import EmbeddingGenerator, is_embedding_available
-from .retrieval.vector_store import get_vector_store, is_chromadb_available
-from .retrieval.search import HybridSearch, SearchResult
+from .retrieval.vector_store import get_vector_store, get_tenant_store, is_chromadb_available
+from .retrieval.search import HybridSearch, SearchResult, get_tenant_search
 from .generation.llm import get_llm_client, LLMClient, MockLLMClient
 from .generation.prompts import PromptBuilder, PromptContext
 from .generation.moderation import (
@@ -116,6 +117,68 @@ with app.app_context():
 
 
 # ============================================================================
+# Tenant Context Helpers
+# ============================================================================
+
+def get_tenant_context():
+    """
+    Get the current tenant (organization) context.
+
+    Determines organization from (in priority order):
+    1. API key in Authorization header
+    2. Session organization_id
+    3. Default organization
+
+    Returns:
+        tuple: (organization_id, user_id) or (default_org_id, None)
+    """
+    organization_id = None
+    user_id = None
+
+    # Check for API key authentication
+    auth_header = request.headers.get('Authorization')
+    if auth_header and auth_header.startswith('Bearer '):
+        api_key = auth_header[7:]
+        user = db.get_user_by_api_key(api_key)
+        if user:
+            organization_id = user.organization_id
+            user_id = user.id
+
+    # Check session
+    if not organization_id:
+        organization_id = session.get('organization_id')
+        user_id = session.get('user_id')
+
+    # Fall back to default organization
+    if not organization_id:
+        default_org = db.get_default_organization()
+        if default_org:
+            organization_id = default_org.id
+
+    return organization_id, user_id
+
+
+def get_tenant_vector_store(organization_id: str = None):
+    """Get tenant-isolated vector store."""
+    if organization_id is None:
+        organization_id, _ = get_tenant_context()
+
+    if organization_id:
+        return get_tenant_store(organization_id)
+    return vector_store
+
+
+def get_tenant_hybrid_search(organization_id: str = None):
+    """Get tenant-isolated search instance."""
+    if organization_id is None:
+        organization_id, _ = get_tenant_context()
+
+    if organization_id:
+        return get_tenant_search(organization_id)
+    return search
+
+
+# ============================================================================
 # API Routes - Chat & Query
 # ============================================================================
 
@@ -125,6 +188,7 @@ def api_query():
     Main Q&A endpoint.
 
     Accepts a query, retrieves relevant context, and generates a response.
+    Uses tenant isolation to ensure users only search their own documents.
     """
     data = request.get_json()
     if not data or 'query' not in data:
@@ -132,6 +196,9 @@ def api_query():
 
     query_text = data['query']
     conversation_id = data.get('conversation_id')
+
+    # Get tenant context for isolation
+    organization_id, user_id = get_tenant_context()
 
     # Validate input
     is_valid, error = validator.validate_query(query_text)
@@ -152,11 +219,12 @@ def api_query():
             logger.error("LLM client not initialized")
             return jsonify({'error': 'Service temporarily unavailable. LLM not configured.'}), 503
 
-        # Search for relevant context
+        # Search for relevant context using tenant-isolated search
         search_results = []
-        if search:
+        tenant_search = get_tenant_hybrid_search(organization_id)
+        if tenant_search:
             try:
-                search_results = search.get_context_for_query(query_text)
+                search_results = tenant_search.get_context_for_query(query_text)
             except Exception as search_error:
                 logger.warning(f"Search failed, continuing without context: {search_error}")
 
@@ -191,7 +259,11 @@ def api_query():
                 sources=[r.to_dict() for r in search_results],
                 model_used=llm_response.model,
                 tokens_used=llm_response.usage.get('output_tokens', 0),
-                conversation_id=conversation_id
+                conversation_id=conversation_id,
+                organization_id=organization_id,
+                user_id=user_id,
+                chunks_used=[r.chunk_id for r in search_results],
+                chunk_scores=[r.score for r in search_results]
             )
             query_id = db.add_query(query_record)
         except Exception as db_error:
@@ -251,18 +323,22 @@ def api_feedback():
 
 @app.route('/api/documents', methods=['GET'])
 def api_list_documents():
-    """List all documents in the knowledge base."""
+    """List documents in the knowledge base (tenant-isolated)."""
     try:
-        documents = db.get_all_knowledge_items()
+        # Get tenant context for isolation
+        organization_id, _ = get_tenant_context()
+
+        # Get documents filtered by organization
+        documents = db.get_all_knowledge_items(organization_id=organization_id)
         return jsonify({
             'documents': [
                 {
                     'id': doc.id,
                     'title': doc.title,
                     'file_type': doc.file_type,
-                    'source': doc.source,
+                    'source': doc.source_file,
                     'chunk_count': doc.chunk_count,
-                    'status': doc.status,
+                    'access_level': doc.access_level,
                     'created_at': doc.created_at if doc.created_at else None
                 }
                 for doc in documents
@@ -279,6 +355,7 @@ def api_upload_document():
     Upload and process a document.
 
     Accepts multipart form with 'file' field.
+    Uses tenant isolation to store documents in organization-specific collections.
     """
     if 'file' not in request.files:
         return jsonify({'error': 'No file provided'}), 400
@@ -286,6 +363,9 @@ def api_upload_document():
     file = request.files['file']
     if file.filename == '':
         return jsonify({'error': 'No file selected'}), 400
+
+    # Get tenant context for isolation
+    organization_id, user_id = get_tenant_context()
 
     # Check file extension
     filename = secure_filename(file.filename)
@@ -297,21 +377,24 @@ def api_upload_document():
         }), 400
 
     try:
-        # Save file
-        upload_path = config.UPLOAD_PATH / filename
+        # Save file to org-specific directory for additional isolation
+        org_upload_path = config.UPLOAD_PATH / (organization_id or 'default')
+        org_upload_path.mkdir(parents=True, exist_ok=True)
+        upload_path = org_upload_path / filename
         file.save(str(upload_path))
 
         # Parse document
         doc_data = parse_document(str(upload_path))
 
-        # Create knowledge item
+        # Create knowledge item with organization context
         item = KnowledgeItem(
             title=doc_data.get('title', filename),
             content=doc_data['content'],
-            source=filename,
+            source_file=filename,
             file_type=ext,
             metadata=doc_data.get('metadata', {}),
-            status='processing'
+            organization_id=organization_id,
+            created_by=user_id
         )
         item_id = db.add_knowledge_item(item)
 
@@ -319,18 +402,21 @@ def api_upload_document():
         chunks = chunk_with_sections(doc_data['content'])
 
         if not chunks:
-            db.update_knowledge_item_status(item_id, 'empty')
+            db.update_knowledge_item_chunks(item_id, 0)
             return jsonify({
                 'error': 'Document appears to be empty',
                 'document_id': item_id
             }), 400
 
+        # Get tenant-isolated vector store
+        tenant_vs = get_tenant_vector_store(organization_id)
+
         # Generate embeddings
-        if embedder:
+        if embedder and tenant_vs:
             texts = [c.content for c in chunks]
             embeddings = embedder.embed(texts)
 
-            # Store in vector database
+            # Store in vector database with tenant isolation
             chunk_ids = []
             chunk_records = []
             metadatas = []
@@ -342,27 +428,33 @@ def api_upload_document():
                 chunk_records.append(Chunk(
                     id=chunk_id,
                     document_id=item_id,
+                    organization_id=organization_id,
                     content=chunk.content,
                     chunk_index=i,
                     section_title=chunk.section_title,
-                    token_count=chunk.token_count
+                    token_count=chunk.token_count,
+                    start_char=getattr(chunk, 'start_char', 0),
+                    end_char=getattr(chunk, 'end_char', 0)
                 ))
 
                 metadatas.append({
                     'document_id': item_id,
                     'document_title': item.title,
                     'section_title': chunk.section_title or '',
-                    'chunk_index': i
+                    'chunk_index': i,
+                    'organization_id': organization_id or '',
+                    'start_char': getattr(chunk, 'start_char', 0),
+                    'end_char': getattr(chunk, 'end_char', 0)
                 })
 
-            # Add to vector store
-            vector_store.add_chunks(chunk_ids, embeddings, texts, metadatas)
+            # Add to tenant-isolated vector store
+            tenant_vs.add_chunks(chunk_ids, embeddings, texts, metadatas)
 
             # Save chunk records
             db.add_chunks(chunk_records)
 
         # Update status
-        db.update_knowledge_item_status(item_id, 'indexed', len(chunks))
+        db.update_knowledge_item_chunks(item_id, len(chunks))
 
         return jsonify({
             'status': 'success',
@@ -378,11 +470,20 @@ def api_upload_document():
 
 @app.route('/api/documents/<document_id>', methods=['DELETE'])
 def api_delete_document(document_id):
-    """Delete a document and its chunks."""
+    """Delete a document and its chunks (tenant-isolated)."""
     try:
-        # Delete from vector store
-        if vector_store:
-            vector_store.delete_by_document(document_id)
+        # Get tenant context
+        organization_id, _ = get_tenant_context()
+
+        # Verify document belongs to this tenant
+        item = db.get_knowledge_item(document_id)
+        if item and item.organization_id and item.organization_id != organization_id:
+            return jsonify({'error': 'Document not found'}), 404
+
+        # Delete from tenant-isolated vector store
+        tenant_vs = get_tenant_vector_store(organization_id)
+        if tenant_vs:
+            tenant_vs.delete_by_document(document_id)
 
         # Delete from database
         db.delete_knowledge_item(document_id)
@@ -399,9 +500,12 @@ def api_delete_document(document_id):
 
 @app.route('/api/qa', methods=['GET'])
 def api_list_qa():
-    """List all direct Q&A pairs."""
+    """List direct Q&A pairs (tenant-isolated)."""
     try:
-        qa_pairs = db.get_all_direct_qa()
+        # Get tenant context for isolation
+        organization_id, _ = get_tenant_context()
+
+        qa_pairs = db.get_all_direct_qa(organization_id=organization_id)
         return jsonify({
             'qa_pairs': [
                 {
@@ -409,6 +513,7 @@ def api_list_qa():
                     'question': qa.question,
                     'answer': qa.answer,
                     'category': qa.category,
+                    'use_count': qa.use_count,
                     'created_at': qa.created_at if qa.created_at else None
                 }
                 for qa in qa_pairs
@@ -421,16 +526,21 @@ def api_list_qa():
 
 @app.route('/api/qa', methods=['POST'])
 def api_add_qa():
-    """Add a direct Q&A pair."""
+    """Add a direct Q&A pair (tenant-isolated)."""
     data = request.get_json()
     if not data or 'question' not in data or 'answer' not in data:
         return jsonify({'error': 'Question and answer are required'}), 400
 
     try:
+        # Get tenant context
+        organization_id, user_id = get_tenant_context()
+
         qa = DirectQA(
             question=data['question'],
             answer=data['answer'],
-            category=data.get('category', 'General')
+            category=data.get('category', 'General'),
+            organization_id=organization_id,
+            created_by=user_id
         )
         qa_id = db.add_direct_qa(qa)
 
@@ -460,22 +570,29 @@ def api_delete_qa(qa_id):
 
 @app.route('/api/stats', methods=['GET'])
 def api_stats():
-    """Get system statistics."""
+    """Get system statistics (tenant-isolated)."""
     try:
-        stats = db.get_stats()
+        # Get tenant context
+        organization_id, _ = get_tenant_context()
 
-        # Add vector store stats
-        if vector_store:
-            stats['vector_count'] = vector_store.count()
+        stats = db.get_stats(organization_id=organization_id)
+
+        # Add vector store stats for tenant
+        tenant_vs = get_tenant_vector_store(organization_id)
+        if tenant_vs:
+            stats['vector_count'] = tenant_vs.count()
 
         # Add component status
         stats['components'] = {
             'embeddings': embedder is not None,
-            'vector_store': vector_store is not None,
-            'search': search is not None,
+            'vector_store': tenant_vs is not None,
+            'search': True,  # Always available with tenant search
             'llm': llm_client.is_available() if llm_client else False,
             'llm_provider': llm_client.provider if llm_client else 'none'
         }
+
+        # Include organization info
+        stats['organization_id'] = organization_id
 
         return jsonify(stats)
     except Exception as e:
@@ -522,6 +639,203 @@ def admin_page():
 def qa_page():
     """Q&A management page."""
     return render_template('qa.html')
+
+
+@app.route('/analytics')
+def analytics_page():
+    """Analytics dashboard."""
+    return render_template('analytics.html')
+
+
+# ============================================================================
+# API Routes - Analytics
+# ============================================================================
+
+@app.route('/api/analytics/gaps', methods=['GET'])
+def api_get_knowledge_gaps():
+    """Get knowledge gaps (tenant-isolated)."""
+    try:
+        # Get tenant context
+        organization_id, _ = get_tenant_context()
+
+        resolved = request.args.get('resolved', 'false').lower() == 'true'
+        format_type = request.args.get('format', 'list')
+
+        gaps = db.get_knowledge_gaps(organization_id=organization_id, resolved=resolved, limit=50)
+
+        gaps_data = [
+            {
+                'id': gap.id,
+                'query_text': gap.query_text,
+                'failure_reason': gap.failure_reason,
+                'occurrence_count': gap.occurrence_count,
+                'resolved': gap.resolved,
+                'created_at': gap.created_at
+            }
+            for gap in gaps
+        ]
+
+        if format_type == 'json':
+            import json
+            return json.dumps(gaps_data, indent=2), 200, {'Content-Type': 'application/json'}
+
+        return jsonify(gaps_data)
+    except Exception as e:
+        logger.error(f"Get knowledge gaps error: {e}")
+        return jsonify({'error': 'Failed to get knowledge gaps'}), 500
+
+
+@app.route('/api/analytics/gaps/<gap_id>/resolve', methods=['POST'])
+def api_resolve_gap(gap_id):
+    """Mark a knowledge gap as resolved."""
+    try:
+        db.resolve_knowledge_gap(gap_id)
+        return jsonify({'status': 'success'})
+    except Exception as e:
+        logger.error(f"Resolve gap error: {e}")
+        return jsonify({'error': 'Failed to resolve gap'}), 500
+
+
+@app.route('/api/analytics/strategies', methods=['GET'])
+def api_get_strategies():
+    """Get chunking strategy performance metrics."""
+    try:
+        performance = experiment_manager.get_chunk_performance_by_strategy()
+        return jsonify(performance)
+    except Exception as e:
+        logger.error(f"Get strategies error: {e}")
+        return jsonify({'error': 'Failed to get strategy data'}), 500
+
+
+@app.route('/api/analytics/experiments', methods=['GET'])
+def api_get_experiments():
+    """Get all experiments with their stats."""
+    try:
+        experiments = experiment_manager.get_all_experiments()
+        result = []
+
+        for exp in experiments:
+            stats = experiment_manager.get_experiment_stats(exp.id)
+            result.append({
+                'id': exp.id,
+                'name': exp.name,
+                'description': exp.description,
+                'chunking_strategy': exp.chunking_strategy,
+                'chunk_size': exp.chunk_size,
+                'chunk_overlap': exp.chunk_overlap,
+                'semantic_weight': exp.semantic_weight,
+                'keyword_weight': exp.keyword_weight,
+                'qa_weight': exp.qa_weight,
+                'top_k': exp.top_k,
+                'is_active': exp.is_active,
+                'is_control': exp.is_control,
+                'created_at': exp.created_at,
+                'total_queries': stats.get('total_queries', 0),
+                'positive_rate': stats.get('positive_rate', 0)
+            })
+
+        return jsonify(result)
+    except Exception as e:
+        logger.error(f"Get experiments error: {e}")
+        return jsonify({'error': 'Failed to get experiments'}), 500
+
+
+@app.route('/api/analytics/experiments', methods=['POST'])
+def api_create_experiment():
+    """Create a new experiment."""
+    data = request.get_json()
+    if not data or 'name' not in data:
+        return jsonify({'error': 'Name is required'}), 400
+
+    try:
+        exp = experiment_manager.create_experiment(
+            name=data['name'],
+            description=data.get('description', ''),
+            strategy=data.get('strategy', 'sentence'),
+            chunk_size=data.get('chunk_size', 500),
+            chunk_overlap=data.get('chunk_overlap', 50),
+            semantic_weight=data.get('semantic_weight', 0.7),
+            keyword_weight=data.get('keyword_weight', 0.2),
+            qa_weight=data.get('qa_weight', 0.1),
+            top_k=data.get('top_k', 5),
+            is_control=data.get('is_control', False)
+        )
+
+        return jsonify({
+            'status': 'success',
+            'experiment_id': exp.id,
+            'name': exp.name
+        })
+    except Exception as e:
+        logger.error(f"Create experiment error: {e}")
+        return jsonify({'error': 'Failed to create experiment'}), 500
+
+
+@app.route('/api/analytics/export', methods=['GET'])
+def api_export_training_data():
+    """Export training data for fine-tuning (tenant-isolated)."""
+    try:
+        # Get tenant context
+        organization_id, _ = get_tenant_context()
+
+        format_type = request.args.get('format', 'jsonl')
+        filter_type = request.args.get('filter', 'positive')
+
+        positive_only = filter_type in ('positive', 'good')
+
+        # Try experiment manager first
+        try:
+            data = experiment_manager.export_training_data(
+                positive_only=positive_only,
+                format=format_type
+            )
+        except Exception:
+            # Fall back to database export (with tenant filter)
+            data_list = db.export_training_data(organization_id=organization_id, positive_only=positive_only)
+
+            if format_type == 'jsonl':
+                import json
+                lines = [json.dumps(entry) for entry in data_list]
+                data = '\n'.join(lines)
+            elif format_type == 'json':
+                import json
+                data = json.dumps(data_list, indent=2)
+            elif format_type == 'csv':
+                import csv
+                from io import StringIO
+                output = StringIO()
+                writer = csv.writer(output)
+                writer.writerow(['query', 'response', 'feedback'])
+                for entry in data_list:
+                    messages = entry.get('messages', [])
+                    query = messages[0]['content'] if messages else ''
+                    response = messages[1]['content'] if len(messages) > 1 else ''
+                    writer.writerow([query, response, entry.get('feedback', '')])
+                data = output.getvalue()
+            else:
+                data = ''
+
+        content_type = 'text/plain'
+        if format_type == 'json':
+            content_type = 'application/json'
+        elif format_type == 'csv':
+            content_type = 'text/csv'
+
+        return data, 200, {'Content-Type': content_type}
+    except Exception as e:
+        logger.error(f"Export training data error: {e}")
+        return jsonify({'error': 'Failed to export training data'}), 500
+
+
+@app.route('/api/analytics/report', methods=['GET'])
+def api_get_report():
+    """Get comprehensive experiment report."""
+    try:
+        report = experiment_manager.generate_report()
+        return jsonify(report)
+    except Exception as e:
+        logger.error(f"Get report error: {e}")
+        return jsonify({'error': 'Failed to generate report'}), 500
 
 
 # ============================================================================

@@ -1,0 +1,260 @@
+{% extends "base.html" %}
+
+{% block title %}Embed Widget - Knowledge Expert{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col">
+        <h2>
+            <i class="bi bi-code-square me-2"></i>
+            Embeddable Chat Widget
+        </h2>
+        <p class="text-muted">Add a Knowledge Expert chat widget to your website</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-7">
+        <!-- Quick Setup -->
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">
+                    <i class="bi bi-lightning me-2"></i>
+                    Quick Setup
+                </h5>
+            </div>
+            <div class="card-body">
+                <p>Add this single line of code to your website, just before the closing <code>&lt;/body&gt;</code> tag:</p>
+
+                <div class="position-relative">
+                    <pre class="bg-dark text-light p-3 rounded mb-0" id="embedCode"><code>&lt;script src="<span id="widgetUrl"></span>/static/js/widget.js" data-api-key="<span id="apiKeyPlaceholder">YOUR_API_KEY</span>"&gt;&lt;/script&gt;</code></pre>
+                    <button class="btn btn-sm btn-outline-light position-absolute top-0 end-0 m-2" id="copyEmbedBtn">
+                        <i class="bi bi-clipboard"></i>
+                    </button>
+                </div>
+
+                <div class="alert alert-info mt-3 mb-0">
+                    <i class="bi bi-info-circle me-2"></i>
+                    <span id="apiKeyNotice">Log in to see your personalized embed code with your API key.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Advanced Configuration -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-gear me-2"></i>
+                    Advanced Configuration
+                </h5>
+            </div>
+            <div class="card-body">
+                <p>For more control, use the JavaScript API:</p>
+
+                <pre class="bg-dark text-light p-3 rounded"><code>&lt;script src="<span class="widget-url-placeholder"></span>/static/js/widget.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+KnowledgeExpert.init({
+    apiKey: 'YOUR_API_KEY',
+    apiUrl: '<span class="widget-url-placeholder"></span>',
+
+    // Appearance
+    position: 'bottom-right', // or 'bottom-left'
+    primaryColor: '#0d6efd',
+    width: '380px',
+    height: '500px',
+
+    // Content
+    title: 'Knowledge Expert',
+    subtitle: 'How can we help you?',
+    placeholder: 'Type your question...',
+    welcomeMessage: 'Hello! How can I help you today?',
+    buttonIcon: '💬'
+});
+&lt;/script&gt;</code></pre>
+            </div>
+        </div>
+
+        <!-- JavaScript API -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-code-slash me-2"></i>
+                    JavaScript API
+                </h5>
+            </div>
+            <div class="card-body">
+                <p>Control the widget programmatically:</p>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Method</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>KnowledgeExpert.init(config)</code></td>
+                            <td>Initialize the widget with configuration options</td>
+                        </tr>
+                        <tr>
+                            <td><code>KnowledgeExpert.open()</code></td>
+                            <td>Open the chat widget</td>
+                        </tr>
+                        <tr>
+                            <td><code>KnowledgeExpert.close()</code></td>
+                            <td>Close the chat widget</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h6 class="mt-4">Example: Open widget on button click</h6>
+                <pre class="bg-dark text-light p-3 rounded"><code>&lt;button onclick="KnowledgeExpert.open()"&gt;
+    Need help? Chat with us
+&lt;/button&gt;</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-5">
+        <!-- Preview -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-eye me-2"></i>
+                    Live Preview
+                </h5>
+            </div>
+            <div class="card-body p-0" style="height: 500px; background: #f8f9fa; position: relative; overflow: hidden;">
+                <!-- Simulated widget preview -->
+                <div style="position: absolute; bottom: 20px; right: 20px;">
+                    <!-- Chat window -->
+                    <div id="previewChat" style="width: 320px; background: white; border-radius: 12px; box-shadow: 0 5px 40px rgba(0,0,0,0.16); margin-bottom: 10px; display: none;">
+                        <div style="padding: 16px; background: #0d6efd; color: white; border-radius: 12px 12px 0 0;">
+                            <div style="font-weight: 600;">Knowledge Expert</div>
+                            <div style="font-size: 12px; opacity: 0.9;">How can we help you?</div>
+                        </div>
+                        <div style="padding: 16px; background: #f7f9fc; height: 200px; overflow-y: auto;">
+                            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 10px 14px; font-size: 14px; max-width: 85%;">
+                                Hello! I'm here to help answer your questions. What would you like to know?
+                            </div>
+                        </div>
+                        <div style="padding: 12px; border-top: 1px solid #e5e7eb;">
+                            <div style="display: flex; gap: 8px;">
+                                <input type="text" placeholder="Type your question..." disabled
+                                       style="flex: 1; border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px;">
+                                <button style="background: #0d6efd; color: white; border: none; border-radius: 8px; padding: 10px 16px;">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button -->
+                    <button id="previewBtn" onclick="togglePreview()"
+                            style="width: 60px; height: 60px; border-radius: 50%; background: #0d6efd; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15); font-size: 24px;">
+                        💬
+                    </button>
+                </div>
+            </div>
+            <div class="card-footer text-center">
+                <small class="text-muted">Click the button to see the widget in action</small>
+            </div>
+        </div>
+
+        <!-- Configuration Options -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-sliders me-2"></i>
+                    Configuration Options
+                </h5>
+            </div>
+            <div class="card-body">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Option</th>
+                            <th>Default</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>apiKey</code></td>
+                            <td><em>Required</em></td>
+                        </tr>
+                        <tr>
+                            <td><code>apiUrl</code></td>
+                            <td><em>Auto-detected</em></td>
+                        </tr>
+                        <tr>
+                            <td><code>position</code></td>
+                            <td>bottom-right</td>
+                        </tr>
+                        <tr>
+                            <td><code>primaryColor</code></td>
+                            <td>#0d6efd</td>
+                        </tr>
+                        <tr>
+                            <td><code>title</code></td>
+                            <td>Knowledge Expert</td>
+                        </tr>
+                        <tr>
+                            <td><code>width</code></td>
+                            <td>380px</td>
+                        </tr>
+                        <tr>
+                            <td><code>height</code></td>
+                            <td>500px</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+let previewOpen = false;
+
+function togglePreview() {
+    previewOpen = !previewOpen;
+    document.getElementById('previewChat').style.display = previewOpen ? 'block' : 'none';
+}
+
+document.addEventListener('DOMContentLoaded', async function() {
+    // Set widget URL
+    const widgetUrl = window.location.origin;
+    document.getElementById('widgetUrl').textContent = widgetUrl;
+    document.querySelectorAll('.widget-url-placeholder').forEach(el => {
+        el.textContent = widgetUrl;
+    });
+
+    // Try to get user's API key
+    try {
+        const response = await fetch('/api/auth/me');
+        const data = await response.json();
+
+        if (data.authenticated && data.user.api_key) {
+            document.getElementById('apiKeyPlaceholder').textContent = data.user.api_key;
+            document.getElementById('apiKeyNotice').innerHTML =
+                '<i class="bi bi-check-circle text-success me-1"></i> Your API key is included in the code above. Copy and paste it to your website!';
+        }
+    } catch (error) {
+        console.log('Not logged in');
+    }
+});
+
+document.getElementById('copyEmbedBtn').addEventListener('click', async function() {
+    const code = document.getElementById('embedCode').textContent;
+    try {
+        await navigator.clipboard.writeText(code);
+        this.innerHTML = '<i class="bi bi-check text-success"></i>';
+        setTimeout(() => {
+            this.innerHTML = '<i class="bi bi-clipboard"></i>';
+        }, 2000);
+    } catch (error) {
+        alert('Failed to copy to clipboard');
+    }
+});
+</script>
+{% endblock %}

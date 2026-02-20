@@ -934,6 +934,12 @@ def account_page():
     return render_template('account.html')
 
 
+@app.route('/widget')
+def widget_page():
+    """Widget integration page."""
+    return render_template('widget.html')
+
+
 # ============================================================================
 # API Routes - Analytics
 # ============================================================================

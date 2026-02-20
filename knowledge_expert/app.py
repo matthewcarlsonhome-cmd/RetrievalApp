@@ -30,6 +30,7 @@ from .generation.moderation import (
 )
 from .generation.qa_generator import get_qa_generator, QAGenerator
 from .caching import get_response_cache, ResponseCache
+from .integrations.slack import get_slack_bot, is_slack_configured
 
 # Configure logging
 logging.basicConfig(
@@ -1332,6 +1333,106 @@ def api_get_qa_suggestions():
     except Exception as e:
         logger.error(f"Get Q&A suggestions error: {e}")
         return jsonify({'error': 'Failed to get suggestions'}), 500
+
+
+# ============================================================================
+# API Routes - Slack Integration
+# ============================================================================
+
+@app.route('/api/integrations/slack/events', methods=['POST'])
+def slack_events():
+    """
+    Handle incoming Slack events (Events API webhook).
+
+    This endpoint receives events from Slack when:
+    - Someone @mentions the bot
+    - Someone sends a direct message to the bot
+    """
+    slack_bot = get_slack_bot()
+
+    if not slack_bot.is_configured():
+        return jsonify({'error': 'Slack integration not configured'}), 503
+
+    # Verify request signature
+    timestamp = request.headers.get('X-Slack-Request-Timestamp', '')
+    signature = request.headers.get('X-Slack-Signature', '')
+
+    if not slack_bot.verify_request(timestamp, signature, request.data):
+        logger.warning("Invalid Slack request signature")
+        return jsonify({'error': 'Invalid signature'}), 401
+
+    data = request.get_json()
+
+    # Handle URL verification challenge
+    if data.get('type') == 'url_verification':
+        return jsonify({'challenge': data.get('challenge')})
+
+    # Handle events
+    if data.get('type') == 'event_callback':
+        event = data.get('event', {})
+        channel = event.get('channel')
+        thread_ts = event.get('thread_ts') or event.get('ts')
+
+        # Define query function for the slack bot
+        def query_knowledge_base(question: str):
+            """Query the knowledge base and return result."""
+            # Use default organization for Slack (could be configured per-workspace)
+            default_org = db.get_default_organization()
+            org_id = default_org.id if default_org else None
+
+            tenant_search = get_tenant_hybrid_search(org_id)
+            search_results = []
+
+            if tenant_search:
+                try:
+                    search_results = tenant_search.get_context_for_query(question)
+                except Exception:
+                    pass
+
+            if not llm_client or not llm_client.is_available():
+                return {'error': 'LLM not available'}
+
+            context = PromptContext(query=question, search_results=search_results)
+            messages = prompt_builder.build_messages(context)
+            system_prompt = prompt_builder.build_system_prompt()
+
+            try:
+                llm_response = llm_client.generate(
+                    messages=messages,
+                    system_prompt=system_prompt
+                )
+
+                citations = [
+                    {'document': r.document_title, 'section': r.section_title}
+                    for r in search_results
+                ]
+
+                return {
+                    'response': llm_response.content,
+                    'citations': citations
+                }
+            except Exception as e:
+                logger.error(f"Slack query error: {e}")
+                return {'error': str(e)}
+
+        # Process the event
+        response_text = slack_bot.handle_event(event, query_knowledge_base)
+
+        if response_text and channel:
+            slack_bot.send_message(channel, response_text, thread_ts)
+
+    return jsonify({'status': 'ok'})
+
+
+@app.route('/api/integrations/slack/status', methods=['GET'])
+def slack_status():
+    """Check Slack integration status."""
+    slack_bot = get_slack_bot()
+
+    return jsonify({
+        'configured': slack_bot.is_configured(),
+        'bot_user_id': slack_bot.get_bot_user_id() if slack_bot.is_configured() else None
+    })
 
 
 # ============================================================================

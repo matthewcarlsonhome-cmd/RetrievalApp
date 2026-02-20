@@ -50,6 +50,17 @@ class Config:
     # Content moderation
     ENABLE_MODERATION: bool = True
 
+    # Google OAuth
+    GOOGLE_CLIENT_ID: Optional[str] = field(default_factory=lambda: os.environ.get("GOOGLE_CLIENT_ID"))
+    GOOGLE_CLIENT_SECRET: Optional[str] = field(default_factory=lambda: os.environ.get("GOOGLE_CLIENT_SECRET"))
+
+    # Admin users (comma-separated emails)
+    ADMIN_EMAILS: List[str] = field(default_factory=lambda: [
+        e.strip().lower() for e in
+        os.environ.get("ADMIN_EMAILS", "matthew.carlson.home@gmail.com").split(",")
+        if e.strip()
+    ])
+
 
 @dataclass
 class ContentModeration:

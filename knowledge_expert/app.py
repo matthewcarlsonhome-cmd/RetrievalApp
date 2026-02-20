@@ -31,6 +31,7 @@ from .generation.moderation import (
 from .generation.qa_generator import get_qa_generator, QAGenerator
 from .caching import get_response_cache, ResponseCache
 from .integrations.slack import get_slack_bot, is_slack_configured
+from .auth.google_oauth import get_google_oauth, is_google_oauth_configured
 
 # Configure logging
 logging.basicConfig(
@@ -395,6 +396,132 @@ def api_regenerate_key():
     except Exception as e:
         logger.error(f"API key regeneration error: {e}")
         return jsonify({'error': 'Failed to regenerate API key'}), 500
+
+
+@app.route('/auth/google')
+def google_login():
+    """Initiate Google OAuth login."""
+    google = get_google_oauth()
+
+    if not google.is_configured():
+        return redirect(url_for('login_page') + '?error=google_not_configured')
+
+    # Generate state for CSRF protection
+    import secrets
+    state = secrets.token_urlsafe(32)
+    session['oauth_state'] = state
+
+    # Build callback URL
+    callback_url = request.url_root.rstrip('/') + url_for('google_callback')
+
+    # Redirect to Google
+    auth_url = google.get_authorization_url(callback_url, state)
+    return redirect(auth_url)
+
+
+@app.route('/auth/google/callback')
+def google_callback():
+    """Handle Google OAuth callback."""
+    google = get_google_oauth()
+
+    # Check for errors
+    error = request.args.get('error')
+    if error:
+        logger.warning(f"Google OAuth error: {error}")
+        return redirect(url_for('login_page') + f'?error={error}')
+
+    # Verify state
+    state = request.args.get('state')
+    if state != session.get('oauth_state'):
+        logger.warning("OAuth state mismatch")
+        return redirect(url_for('login_page') + '?error=invalid_state')
+
+    # Get authorization code
+    code = request.args.get('code')
+    if not code:
+        return redirect(url_for('login_page') + '?error=no_code')
+
+    # Exchange code for tokens and get user info
+    callback_url = request.url_root.rstrip('/') + url_for('google_callback')
+    user_info = google.authenticate(code, callback_url)
+
+    if not user_info:
+        return redirect(url_for('login_page') + '?error=auth_failed')
+
+    # Get user details
+    email = user_info.get('email', '').lower()
+    name = user_info.get('name', email.split('@')[0])
+    google_id = user_info.get('id')
+
+    if not email:
+        return redirect(url_for('login_page') + '?error=no_email')
+
+    try:
+        # Check if user exists
+        existing_user = db.get_user_by_email(email)
+
+        if existing_user:
+            # Update last login
+            with db.get_connection() as conn:
+                conn.execute(
+                    "UPDATE users SET last_login = ? WHERE id = ?",
+                    (datetime.utcnow().isoformat(), existing_user.id)
+                )
+
+            # Set session
+            session['user_id'] = existing_user.id
+            session['organization_id'] = existing_user.organization_id
+            session.permanent = True
+
+            # Clear OAuth state
+            session.pop('oauth_state', None)
+
+            return redirect(url_for('index'))
+
+        # Create new user
+        from .models import User, Organization
+        import secrets as sec
+
+        # Check if this is an admin email
+        is_admin = email in config.ADMIN_EMAILS
+
+        # Get or create default organization
+        default_org = db.get_default_organization()
+        organization_id = default_org.id if default_org else None
+
+        # Create user
+        user = User(
+            email=email,
+            name=name,
+            organization_id=organization_id,
+            role='admin' if is_admin else 'member',
+            api_key=sec.token_urlsafe(32)
+        )
+        db.create_user(user)
+
+        logger.info(f"Created new user via Google: {email} (admin={is_admin})")
+
+        # Set session
+        session['user_id'] = user.id
+        session['organization_id'] = user.organization_id
+        session.permanent = True
+
+        # Clear OAuth state
+        session.pop('oauth_state', None)
+
+        return redirect(url_for('index'))
+
+    except Exception as e:
+        logger.error(f"Google auth error: {e}")
+        return redirect(url_for('login_page') + '?error=server_error')
+
+
+@app.route('/api/auth/google/status')
+def google_auth_status():
+    """Check if Google OAuth is configured."""
+    return jsonify({
+        'configured': is_google_oauth_configured()
+    })
 
 
 # ============================================================================

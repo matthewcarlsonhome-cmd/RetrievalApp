@@ -1,0 +1,216 @@
+{% extends "base.html" %}
+
+{% block title %}Sign Up - Knowledge Expert{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-body p-4">
+                <div class="text-center mb-4">
+                    <i class="bi bi-chat-dots-fill display-4 text-primary"></i>
+                    <h3 class="mt-2">Create Your Account</h3>
+                    <p class="text-muted">Start building your intelligent knowledge base</p>
+                </div>
+
+                <form id="signupForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                <input type="text" class="form-control" id="name"
+                                       placeholder="John Doe" required autofocus>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                <input type="email" class="form-control" id="email"
+                                       placeholder="you@company.com" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                            <input type="password" class="form-control" id="password"
+                                   placeholder="At least 8 characters" required minlength="8">
+                        </div>
+                        <small class="form-text text-muted">Must be at least 8 characters</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                            <input type="password" class="form-control" id="confirmPassword"
+                                   placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+
+                    <hr class="my-3">
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="createOrg">
+                            <label class="form-check-label" for="createOrg">
+                                Create a new organization (for teams)
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 d-none" id="orgNameGroup">
+                        <label for="organizationName" class="form-label">Organization Name</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-building"></i></span>
+                            <input type="text" class="form-control" id="organizationName"
+                                   placeholder="Acme Corporation">
+                        </div>
+                        <small class="form-text text-muted">
+                            Your documents will be isolated to this organization
+                        </small>
+                    </div>
+
+                    <div id="errorMsg" class="alert alert-danger d-none"></div>
+
+                    <button type="submit" class="btn btn-primary w-100 py-2" id="signupBtn">
+                        <i class="bi bi-person-plus me-1"></i>
+                        Create Account
+                    </button>
+                </form>
+
+                <hr class="my-4">
+
+                <div class="text-center">
+                    <p class="text-muted mb-0">
+                        Already have an account?
+                        <a href="/login" class="text-primary fw-bold">Sign in</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <h6 class="mb-3">What you get with Knowledge Expert:</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle text-success me-2"></i>
+                                Upload unlimited documents
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle text-success me-2"></i>
+                                AI-powered Q&A generation
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle text-success me-2"></i>
+                                Smart semantic search
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle text-success me-2"></i>
+                                Isolated document storage
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle text-success me-2"></i>
+                                Analytics & insights
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle text-success me-2"></i>
+                                API access
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Toggle organization name field
+document.getElementById('createOrg').addEventListener('change', function() {
+    const orgGroup = document.getElementById('orgNameGroup');
+    const orgInput = document.getElementById('organizationName');
+
+    if (this.checked) {
+        orgGroup.classList.remove('d-none');
+        orgInput.required = true;
+    } else {
+        orgGroup.classList.add('d-none');
+        orgInput.required = false;
+    }
+});
+
+document.getElementById('signupForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    const createOrg = document.getElementById('createOrg').checked;
+    const organizationName = document.getElementById('organizationName').value.trim();
+    const errorMsg = document.getElementById('errorMsg');
+    const btn = document.getElementById('signupBtn');
+
+    errorMsg.classList.add('d-none');
+
+    // Validate passwords match
+    if (password !== confirmPassword) {
+        errorMsg.textContent = 'Passwords do not match';
+        errorMsg.classList.remove('d-none');
+        return;
+    }
+
+    // Validate organization name if creating one
+    if (createOrg && !organizationName) {
+        errorMsg.textContent = 'Organization name is required';
+        errorMsg.classList.remove('d-none');
+        return;
+    }
+
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span> Creating account...';
+
+    try {
+        const response = await fetch('/api/auth/signup', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                name,
+                email,
+                password,
+                organization_name: createOrg ? organizationName : null
+            })
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            window.location.href = '/';
+        } else {
+            errorMsg.textContent = data.error || 'Signup failed';
+            errorMsg.classList.remove('d-none');
+        }
+    } catch (error) {
+        errorMsg.textContent = 'Connection error. Please try again.';
+        errorMsg.classList.remove('d-none');
+    } finally {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="bi bi-person-plus me-1"></i> Create Account';
+    }
+});
+</script>
+{% endblock %}

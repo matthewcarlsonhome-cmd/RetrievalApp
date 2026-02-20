@@ -28,6 +28,8 @@ from .generation.moderation import (
     ContentModerator, moderate_query, moderate_response,
     InputValidator, ModerationAction
 )
+from .generation.qa_generator import get_qa_generator, QAGenerator
+from .caching import get_response_cache, ResponseCache
 
 # Configure logging
 logging.basicConfig(
@@ -117,6 +119,32 @@ with app.app_context():
 
 
 # ============================================================================
+# Authentication Helpers
+# ============================================================================
+
+def login_required(f):
+    """Decorator to require authentication for a route."""
+    from functools import wraps
+
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if 'user_id' not in session:
+            if request.is_json:
+                return jsonify({'error': 'Authentication required'}), 401
+            return redirect(url_for('login_page'))
+        return f(*args, **kwargs)
+    return decorated_function
+
+
+def get_current_user():
+    """Get the currently logged in user."""
+    user_id = session.get('user_id')
+    if user_id:
+        return db.get_user(user_id)
+    return None
+
+
+# ============================================================================
 # Tenant Context Helpers
 # ============================================================================
 
@@ -179,6 +207,196 @@ def get_tenant_hybrid_search(organization_id: str = None):
 
 
 # ============================================================================
+# API Routes - Authentication
+# ============================================================================
+
+@app.route('/api/auth/signup', methods=['POST'])
+def api_signup():
+    """
+    Register a new user account.
+
+    Creates a new user and optionally a new organization.
+    """
+    data = request.get_json()
+    if not data:
+        return jsonify({'error': 'Request body required'}), 400
+
+    email = data.get('email', '').strip().lower()
+    password = data.get('password', '')
+    name = data.get('name', '').strip()
+    organization_name = data.get('organization_name', '').strip()
+
+    # Validation
+    if not email or '@' not in email:
+        return jsonify({'error': 'Valid email is required'}), 400
+    if len(password) < 8:
+        return jsonify({'error': 'Password must be at least 8 characters'}), 400
+    if not name:
+        return jsonify({'error': 'Name is required'}), 400
+
+    # Check if email already exists
+    existing = db.get_user_by_email(email)
+    if existing:
+        return jsonify({'error': 'Email already registered'}), 400
+
+    try:
+        # Create organization if name provided, otherwise use default
+        if organization_name:
+            from .models import Organization
+            import re
+            slug = re.sub(r'[^a-z0-9]+', '-', organization_name.lower()).strip('-')
+            org = Organization(name=organization_name, slug=slug)
+            db.create_organization(org)
+            organization_id = org.id
+        else:
+            default_org = db.get_default_organization()
+            organization_id = default_org.id if default_org else None
+
+        # Create user
+        from .models import User
+        user = User(
+            email=email,
+            name=name,
+            organization_id=organization_id,
+            role='admin' if organization_name else 'member',
+            password_hash=User.hash_password(password)
+        )
+        db.create_user(user)
+
+        # Auto-login
+        session['user_id'] = user.id
+        session['organization_id'] = user.organization_id
+        session.permanent = True
+
+        return jsonify({
+            'status': 'success',
+            'user': {
+                'id': user.id,
+                'email': user.email,
+                'name': user.name,
+                'organization_id': user.organization_id,
+                'role': user.role
+            }
+        })
+
+    except Exception as e:
+        logger.error(f"Signup error: {e}")
+        return jsonify({'error': 'Failed to create account'}), 500
+
+
+@app.route('/api/auth/login', methods=['POST'])
+def api_login():
+    """
+    Login with email and password.
+    """
+    data = request.get_json()
+    if not data:
+        return jsonify({'error': 'Request body required'}), 400
+
+    email = data.get('email', '').strip().lower()
+    password = data.get('password', '')
+
+    if not email or not password:
+        return jsonify({'error': 'Email and password are required'}), 400
+
+    # Find user
+    user = db.get_user_by_email(email)
+    if not user:
+        return jsonify({'error': 'Invalid email or password'}), 401
+
+    # Verify password
+    if not user.verify_password(password):
+        return jsonify({'error': 'Invalid email or password'}), 401
+
+    # Update last login
+    try:
+        with db.get_connection() as conn:
+            conn.execute(
+                "UPDATE users SET last_login = ? WHERE id = ?",
+                (datetime.utcnow().isoformat(), user.id)
+            )
+    except Exception:
+        pass
+
+    # Set session
+    session['user_id'] = user.id
+    session['organization_id'] = user.organization_id
+    session.permanent = True
+
+    return jsonify({
+        'status': 'success',
+        'user': {
+            'id': user.id,
+            'email': user.email,
+            'name': user.name,
+            'organization_id': user.organization_id,
+            'role': user.role
+        }
+    })
+
+
+@app.route('/api/auth/logout', methods=['POST'])
+def api_logout():
+    """Logout the current user."""
+    session.clear()
+    return jsonify({'status': 'success'})
+
+
+@app.route('/api/auth/me', methods=['GET'])
+def api_current_user():
+    """Get the current logged-in user."""
+    user = get_current_user()
+    if not user:
+        return jsonify({'authenticated': False}), 200
+
+    # Get organization info
+    org = db.get_organization(user.organization_id) if user.organization_id else None
+
+    return jsonify({
+        'authenticated': True,
+        'user': {
+            'id': user.id,
+            'email': user.email,
+            'name': user.name,
+            'organization_id': user.organization_id,
+            'role': user.role,
+            'api_key': user.api_key
+        },
+        'organization': {
+            'id': org.id,
+            'name': org.name,
+            'slug': org.slug
+        } if org else None
+    })
+
+
+@app.route('/api/auth/api-key', methods=['POST'])
+def api_regenerate_key():
+    """Regenerate API key for current user."""
+    user = get_current_user()
+    if not user:
+        return jsonify({'error': 'Authentication required'}), 401
+
+    try:
+        import secrets
+        new_key = secrets.token_urlsafe(32)
+
+        with db.get_connection() as conn:
+            conn.execute(
+                "UPDATE users SET api_key = ? WHERE id = ?",
+                (new_key, user.id)
+            )
+
+        return jsonify({
+            'status': 'success',
+            'api_key': new_key
+        })
+    except Exception as e:
+        logger.error(f"API key regeneration error: {e}")
+        return jsonify({'error': 'Failed to regenerate API key'}), 500
+
+
+# ============================================================================
 # API Routes - Chat & Query
 # ============================================================================
 
@@ -214,6 +432,24 @@ def api_query():
         }), 400
 
     try:
+        # Check for cached response first
+        cache = get_response_cache()
+        skip_cache = data.get('skip_cache', False)
+
+        if not skip_cache:
+            cached = cache.get(query_text, organization_id)
+            if cached:
+                response_text, _ = cached
+                logger.info(f"Cache hit for query: {query_text[:50]}...")
+                return jsonify({
+                    'query_id': 'cached',
+                    'response': response_text,
+                    'citations': [],
+                    'model': 'cached',
+                    'tokens_used': {'cached': True},
+                    'cached': True
+                })
+
         # Check LLM client is available
         if llm_client is None:
             logger.error("LLM client not initialized")
@@ -297,12 +533,22 @@ def api_query():
 
             citations.append(citation)
 
+        # Cache the response
+        if not skip_cache and response_text:
+            cache.set(
+                query=query_text,
+                response=response_text,
+                organization_id=organization_id,
+                metadata={'model': llm_response.model, 'query_id': query_id}
+            )
+
         return jsonify({
             'query_id': query_id,
             'response': response_text,
             'citations': citations,
             'model': llm_response.model,
-            'tokens_used': llm_response.usage
+            'tokens_used': llm_response.usage,
+            'cached': False
         })
 
     except Exception as e:
@@ -665,6 +911,29 @@ def analytics_page():
     return render_template('analytics.html')
 
 
+@app.route('/login')
+def login_page():
+    """Login page."""
+    if get_current_user():
+        return redirect(url_for('index'))
+    return render_template('login.html')
+
+
+@app.route('/signup')
+def signup_page():
+    """Signup page."""
+    if get_current_user():
+        return redirect(url_for('index'))
+    return render_template('signup.html')
+
+
+@app.route('/account')
+@login_required
+def account_page():
+    """Account settings page."""
+    return render_template('account.html')
+
+
 # ============================================================================
 # API Routes - Analytics
 # ============================================================================
@@ -854,6 +1123,209 @@ def api_get_report():
     except Exception as e:
         logger.error(f"Get report error: {e}")
         return jsonify({'error': 'Failed to generate report'}), 500
+
+
+# ============================================================================
+# API Routes - Auto Q&A Generation
+# ============================================================================
+
+@app.route('/api/qa/generate', methods=['POST'])
+def api_generate_qa():
+    """
+    Generate Q&A pairs from a document or all documents.
+
+    Request body:
+    {
+        "document_id": "optional - specific document to generate from",
+        "num_pairs": 10,  // Number of Q&A pairs to generate
+        "strategy": "mixed",  // factual, conceptual, procedural, faq, or mixed
+        "auto_save": true  // Whether to save generated pairs automatically
+    }
+    """
+    data = request.get_json() or {}
+
+    # Get tenant context
+    organization_id, user_id = get_tenant_context()
+
+    document_id = data.get('document_id')
+    num_pairs = min(data.get('num_pairs', 10), 50)  # Cap at 50
+    strategy = data.get('strategy', 'mixed')
+    auto_save = data.get('auto_save', False)
+
+    try:
+        qa_generator = get_qa_generator()
+
+        if not qa_generator.llm_client or not qa_generator.llm_client.is_available():
+            return jsonify({'error': 'LLM not configured for Q&A generation'}), 503
+
+        generated_pairs = []
+
+        if document_id:
+            # Verify document belongs to this tenant
+            doc = db.get_knowledge_item(document_id)
+            if not doc:
+                return jsonify({'error': 'Document not found'}), 404
+            if doc.organization_id and doc.organization_id != organization_id:
+                return jsonify({'error': 'Document not found'}), 404
+
+            # Generate from specific document
+            generated_pairs = qa_generator.generate_from_document(
+                document_id=document_id,
+                db=db,
+                num_pairs=num_pairs,
+                strategy=strategy
+            )
+        else:
+            # Generate from all documents (limit to recent ones)
+            documents = db.get_all_knowledge_items(organization_id=organization_id)[:5]
+
+            pairs_per_doc = max(1, num_pairs // len(documents)) if documents else 0
+
+            for doc in documents:
+                doc_pairs = qa_generator.generate_from_document(
+                    document_id=doc.id,
+                    db=db,
+                    num_pairs=pairs_per_doc,
+                    strategy=strategy
+                )
+                generated_pairs.extend(doc_pairs)
+
+                if len(generated_pairs) >= num_pairs:
+                    break
+
+        # Format results
+        results = []
+        for qa in generated_pairs[:num_pairs]:
+            results.append({
+                'question': qa.question,
+                'answer': qa.answer,
+                'category': qa.category,
+                'confidence': qa.confidence,
+                'tags': qa.tags,
+                'source_document_id': qa.source_document_id,
+                'source_chunk_id': qa.source_chunk_id
+            })
+
+        saved_ids = []
+        if auto_save and results:
+            saved_ids = qa_generator.save_generated_qa(
+                qa_pairs=generated_pairs[:num_pairs],
+                db=db,
+                organization_id=organization_id,
+                created_by=user_id
+            )
+
+        return jsonify({
+            'status': 'success',
+            'generated': len(results),
+            'qa_pairs': results,
+            'saved_ids': saved_ids if auto_save else None
+        })
+
+    except Exception as e:
+        logger.error(f"Q&A generation error: {e}", exc_info=True)
+        return jsonify({'error': f'Failed to generate Q&A: {str(e)}'}), 500
+
+
+@app.route('/api/qa/generate/<document_id>', methods=['POST'])
+def api_generate_qa_for_document(document_id):
+    """Generate Q&A pairs for a specific document."""
+    data = request.get_json() or {}
+    data['document_id'] = document_id
+    return api_generate_qa()
+
+
+@app.route('/api/qa/bulk-save', methods=['POST'])
+def api_bulk_save_qa():
+    """
+    Save multiple generated Q&A pairs.
+
+    Request body:
+    {
+        "qa_pairs": [
+            {"question": "...", "answer": "...", "category": "...", "tags": []},
+            ...
+        ]
+    }
+    """
+    data = request.get_json()
+    if not data or 'qa_pairs' not in data:
+        return jsonify({'error': 'qa_pairs is required'}), 400
+
+    # Get tenant context
+    organization_id, user_id = get_tenant_context()
+
+    try:
+        saved_ids = []
+        for qa_data in data['qa_pairs']:
+            if not qa_data.get('question') or not qa_data.get('answer'):
+                continue
+
+            qa = DirectQA(
+                question=qa_data['question'],
+                answer=qa_data['answer'],
+                category=qa_data.get('category', 'Generated'),
+                tags=qa_data.get('tags', []),
+                organization_id=organization_id,
+                created_by=user_id
+            )
+            qa_id = db.add_direct_qa(qa)
+            saved_ids.append(qa_id)
+
+        return jsonify({
+            'status': 'success',
+            'saved': len(saved_ids),
+            'qa_ids': saved_ids
+        })
+
+    except Exception as e:
+        logger.error(f"Bulk save Q&A error: {e}")
+        return jsonify({'error': 'Failed to save Q&A pairs'}), 500
+
+
+@app.route('/api/qa/suggestions', methods=['GET'])
+def api_get_qa_suggestions():
+    """
+    Get suggested Q&A pairs based on knowledge gaps and common queries.
+
+    Returns suggestions for Q&A pairs that could improve the knowledge base.
+    """
+    organization_id, _ = get_tenant_context()
+
+    try:
+        suggestions = []
+
+        # Get knowledge gaps (unanswered questions)
+        gaps = db.get_knowledge_gaps(organization_id=organization_id, resolved=False, limit=10)
+        for gap in gaps:
+            suggestions.append({
+                'type': 'knowledge_gap',
+                'question': gap.query_text,
+                'reason': f'Asked {gap.occurrence_count} times without good answer',
+                'gap_id': gap.id
+            })
+
+        # Get recent negative feedback queries
+        queries = db.get_queries(organization_id=organization_id, limit=50)
+        negative_queries = [q for q in queries if q.feedback == 'negative'][:5]
+
+        for query in negative_queries:
+            suggestions.append({
+                'type': 'negative_feedback',
+                'question': query.question,
+                'current_answer': query.answer,
+                'reason': 'Received negative feedback',
+                'query_id': query.id
+            })
+
+        return jsonify({
+            'suggestions': suggestions,
+            'total': len(suggestions)
+        })
+
+    except Exception as e:
+        logger.error(f"Get Q&A suggestions error: {e}")
+        return jsonify({'error': 'Failed to get suggestions'}), 500
 
 
 # ============================================================================

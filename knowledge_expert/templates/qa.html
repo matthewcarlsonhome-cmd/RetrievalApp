@@ -13,14 +13,103 @@
     </div>
 </div>
 
+<!-- Auto-Generate Section -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card border-primary">
+            <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">
+                    <i class="bi bi-magic me-2"></i>
+                    Auto-Generate Q&A from Documents
+                </h5>
+                <span class="badge bg-light text-primary">AI-Powered</span>
+            </div>
+            <div class="card-body">
+                <div class="row align-items-end">
+                    <div class="col-md-3">
+                        <label for="genDocument" class="form-label">Source Document</label>
+                        <select class="form-select" id="genDocument">
+                            <option value="">All Documents</option>
+                            <!-- Populated dynamically -->
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="genCount" class="form-label">Number of Q&A</label>
+                        <select class="form-select" id="genCount">
+                            <option value="5">5 pairs</option>
+                            <option value="10" selected>10 pairs</option>
+                            <option value="20">20 pairs</option>
+                            <option value="30">30 pairs</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="genStrategy" class="form-label">Strategy</label>
+                        <select class="form-select" id="genStrategy">
+                            <option value="mixed" selected>Mixed</option>
+                            <option value="faq">FAQ Style</option>
+                            <option value="factual">Factual</option>
+                            <option value="conceptual">Conceptual</option>
+                            <option value="procedural">How-To</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <button id="generateBtn" class="btn btn-primary w-100">
+                            <i class="bi bi-stars me-1"></i>
+                            Generate Q&A
+                        </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button id="viewSuggestionsBtn" class="btn btn-outline-secondary w-100">
+                            <i class="bi bi-lightbulb me-1"></i>
+                            Suggestions
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Generation Results -->
+                <div id="generationResults" class="mt-4 d-none">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h6 class="mb-0">
+                            <i class="bi bi-check2-circle text-success me-1"></i>
+                            Generated Q&A Pairs
+                            <span class="badge bg-success ms-2" id="generatedCount">0</span>
+                        </h6>
+                        <div>
+                            <button class="btn btn-sm btn-success me-2" id="saveAllGenerated">
+                                <i class="bi bi-save me-1"></i>
+                                Save All Selected
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary" id="clearGenerated">
+                                <i class="bi bi-x me-1"></i>
+                                Clear
+                            </button>
+                        </div>
+                    </div>
+                    <div id="generatedList" class="generated-list border rounded p-3" style="max-height: 400px; overflow-y: auto;">
+                        <!-- Generated items appear here -->
+                    </div>
+                </div>
+
+                <!-- Loading indicator -->
+                <div id="generationLoading" class="text-center py-4 d-none">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Generating...</span>
+                    </div>
+                    <p class="mt-2 text-muted">Generating Q&A pairs from your documents...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="row">
     <div class="col-lg-5">
         <!-- Add Q&A Form -->
         <div class="card">
-            <div class="card-header bg-primary text-white">
+            <div class="card-header bg-secondary text-white">
                 <h5 class="mb-0">
                     <i class="bi bi-plus-circle me-2"></i>
-                    Add New Q&A Pair
+                    Add Manually
                 </h5>
             </div>
             <div class="card-body">
@@ -44,9 +133,10 @@
                             <option value="Process">Process</option>
                             <option value="Technical">Technical</option>
                             <option value="Contact">Contact</option>
+                            <option value="Generated">Generated</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">
+                    <button type="submit" class="btn btn-secondary w-100">
                         <i class="bi bi-plus-lg me-1"></i>
                         Add Q&A Pair
                     </button>
@@ -78,11 +168,11 @@
                     </li>
                     <li class="mb-2">
                         <i class="bi bi-check text-success me-1"></i>
-                        Use categories to organize content
+                        Use auto-generation for bulk creation
                     </li>
                     <li class="mb-0">
                         <i class="bi bi-check text-success me-1"></i>
-                        Review and update regularly
+                        Review generated Q&A before saving
                     </li>
                 </ul>
             </div>
@@ -95,7 +185,7 @@
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h5 class="mb-0">
                     <i class="bi bi-list-ul me-2"></i>
-                    Existing Q&A Pairs
+                    Saved Q&A Pairs
                 </h5>
                 <span class="badge bg-primary" id="qaCount">0</span>
             </div>
@@ -116,15 +206,16 @@
                             <option value="Process">Process</option>
                             <option value="Technical">Technical</option>
                             <option value="Contact">Contact</option>
+                            <option value="Generated">Generated</option>
                         </select>
                     </div>
                 </div>
 
                 <!-- Q&A Items -->
-                <div id="qaList" class="qa-list">
+                <div id="qaList" class="qa-list" style="max-height: 600px; overflow-y: auto;">
                     <div class="text-center py-4 text-muted" id="noQA">
                         <i class="bi bi-inbox display-4"></i>
-                        <p>No Q&A pairs yet. Add one using the form.</p>
+                        <p>No Q&A pairs yet. Add one or use auto-generation.</p>
                     </div>
                 </div>
             </div>
@@ -159,6 +250,7 @@
                         <option value="Process">Process</option>
                         <option value="Technical">Technical</option>
                         <option value="Contact">Contact</option>
+                        <option value="Generated">Generated</option>
                     </select>
                 </div>
             </div>
@@ -169,14 +261,45 @@
         </div>
     </div>
 </div>
+
+<!-- Suggestions Modal -->
+<div class="modal fade" id="suggestionsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="bi bi-lightbulb text-warning me-2"></i>
+                    Q&A Suggestions
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-muted">
+                    Based on user queries and knowledge gaps, these are suggested Q&A pairs to add:
+                </p>
+                <div id="suggestionsList">
+                    <div class="text-center py-4 text-muted">
+                        <div class="spinner-border spinner-border-sm me-2" role="status"></div>
+                        Loading suggestions...
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
 
 {% block extra_js %}
 <script>
 let allQAPairs = [];
+let generatedPairs = [];
 
 document.addEventListener('DOMContentLoaded', function() {
     loadQAPairs();
+    loadDocuments();
 
     // Add form handler
     document.getElementById('qaForm').addEventListener('submit', handleAddQA);
@@ -184,7 +307,30 @@ document.addEventListener('DOMContentLoaded', function() {
     // Search handler
     document.getElementById('searchQA').addEventListener('input', filterQA);
     document.getElementById('filterCategory').addEventListener('change', filterQA);
+
+    // Auto-generation handlers
+    document.getElementById('generateBtn').addEventListener('click', handleGenerate);
+    document.getElementById('saveAllGenerated').addEventListener('click', saveAllGenerated);
+    document.getElementById('clearGenerated').addEventListener('click', clearGenerated);
+    document.getElementById('viewSuggestionsBtn').addEventListener('click', showSuggestions);
 });
+
+async function loadDocuments() {
+    try {
+        const response = await fetch('/api/documents');
+        const data = await response.json();
+
+        const select = document.getElementById('genDocument');
+        (data.documents || []).forEach(doc => {
+            const option = document.createElement('option');
+            option.value = doc.id;
+            option.textContent = doc.title;
+            select.appendChild(option);
+        });
+    } catch (error) {
+        console.error('Load documents error:', error);
+    }
+}
 
 async function loadQAPairs() {
     try {
@@ -218,7 +364,8 @@ function renderQAPairs(pairs) {
             <div class="card-body py-2 px-3">
                 <div class="d-flex justify-content-between align-items-start">
                     <div class="flex-grow-1">
-                        <span class="badge bg-secondary mb-1">${qa.category}</span>
+                        <span class="badge ${qa.category.includes('Generated') ? 'bg-info' : 'bg-secondary'} mb-1">${qa.category}</span>
+                        ${qa.use_count > 0 ? `<span class="badge bg-success ms-1">Used ${qa.use_count}x</span>` : ''}
                         <h6 class="mb-1">${escapeHtml(qa.question)}</h6>
                         <p class="text-muted mb-0 small">${escapeHtml(truncate(qa.answer, 150))}</p>
                     </div>
@@ -277,6 +424,237 @@ async function handleAddQA(e) {
     }
 }
 
+async function handleGenerate() {
+    const documentId = document.getElementById('genDocument').value;
+    const numPairs = parseInt(document.getElementById('genCount').value);
+    const strategy = document.getElementById('genStrategy').value;
+
+    const btn = document.getElementById('generateBtn');
+    const loading = document.getElementById('generationLoading');
+    const results = document.getElementById('generationResults');
+
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span> Generating...';
+    loading.classList.remove('d-none');
+    results.classList.add('d-none');
+
+    try {
+        const response = await fetch('/api/qa/generate', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                document_id: documentId || null,
+                num_pairs: numPairs,
+                strategy: strategy,
+                auto_save: false
+            })
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            generatedPairs = data.qa_pairs || [];
+            renderGeneratedPairs(generatedPairs);
+            results.classList.remove('d-none');
+            document.getElementById('generatedCount').textContent = generatedPairs.length;
+        } else {
+            alert('Error: ' + (data.error || 'Generation failed'));
+        }
+    } catch (error) {
+        console.error('Generation error:', error);
+        alert('Failed to generate Q&A pairs');
+    } finally {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="bi bi-stars me-1"></i> Generate Q&A';
+        loading.classList.add('d-none');
+    }
+}
+
+function renderGeneratedPairs(pairs) {
+    const container = document.getElementById('generatedList');
+
+    if (pairs.length === 0) {
+        container.innerHTML = '<p class="text-center text-muted py-3">No Q&A pairs generated. Try with a different document or settings.</p>';
+        return;
+    }
+
+    const html = pairs.map((qa, index) => `
+        <div class="generated-item border rounded p-3 mb-2 ${qa.selected !== false ? 'bg-light' : ''}" data-index="${index}">
+            <div class="d-flex justify-content-between align-items-start">
+                <div class="form-check">
+                    <input class="form-check-input gen-checkbox" type="checkbox" ${qa.selected !== false ? 'checked' : ''} data-index="${index}">
+                </div>
+                <div class="flex-grow-1 ms-2">
+                    <div class="mb-1">
+                        <span class="badge bg-info">${qa.category}</span>
+                        <span class="badge bg-secondary ms-1">${Math.round(qa.confidence * 100)}% confidence</span>
+                    </div>
+                    <h6 class="mb-1">${escapeHtml(qa.question)}</h6>
+                    <p class="text-muted mb-0 small">${escapeHtml(qa.answer)}</p>
+                </div>
+                <div class="ms-2">
+                    <button class="btn btn-sm btn-outline-success save-single" data-index="${index}" title="Save this Q&A">
+                        <i class="bi bi-save"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    `).join('');
+
+    container.innerHTML = html;
+
+    // Add checkbox handlers
+    document.querySelectorAll('.gen-checkbox').forEach(cb => {
+        cb.addEventListener('change', function() {
+            const index = parseInt(this.dataset.index);
+            generatedPairs[index].selected = this.checked;
+            this.closest('.generated-item').classList.toggle('bg-light', this.checked);
+        });
+    });
+
+    // Add single save handlers
+    document.querySelectorAll('.save-single').forEach(btn => {
+        btn.addEventListener('click', async function() {
+            const index = parseInt(this.dataset.index);
+            const qa = generatedPairs[index];
+            await saveSingleQA(qa, this);
+        });
+    });
+}
+
+async function saveSingleQA(qa, btn) {
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner-border spinner-border-sm"></span>';
+
+    try {
+        const response = await fetch('/api/qa', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                question: qa.question,
+                answer: qa.answer,
+                category: qa.category || 'Generated'
+            })
+        });
+
+        if (response.ok) {
+            btn.innerHTML = '<i class="bi bi-check text-success"></i>';
+            btn.classList.remove('btn-outline-success');
+            btn.classList.add('btn-success');
+            loadQAPairs();
+        } else {
+            btn.innerHTML = '<i class="bi bi-x text-danger"></i>';
+        }
+    } catch (error) {
+        console.error('Save error:', error);
+        btn.innerHTML = '<i class="bi bi-x text-danger"></i>';
+    }
+}
+
+async function saveAllGenerated() {
+    const selected = generatedPairs.filter(qa => qa.selected !== false);
+
+    if (selected.length === 0) {
+        alert('No Q&A pairs selected');
+        return;
+    }
+
+    const btn = document.getElementById('saveAllGenerated');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span> Saving...';
+
+    try {
+        const response = await fetch('/api/qa/bulk-save', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                qa_pairs: selected.map(qa => ({
+                    question: qa.question,
+                    answer: qa.answer,
+                    category: qa.category || 'Generated',
+                    tags: qa.tags || []
+                }))
+            })
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert(`Successfully saved ${data.saved} Q&A pairs!`);
+            loadQAPairs();
+            clearGenerated();
+        } else {
+            alert('Error: ' + (data.error || 'Failed to save'));
+        }
+    } catch (error) {
+        console.error('Bulk save error:', error);
+        alert('Failed to save Q&A pairs');
+    } finally {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="bi bi-save me-1"></i> Save All Selected';
+    }
+}
+
+function clearGenerated() {
+    generatedPairs = [];
+    document.getElementById('generationResults').classList.add('d-none');
+    document.getElementById('generatedList').innerHTML = '';
+}
+
+async function showSuggestions() {
+    const modal = new bootstrap.Modal(document.getElementById('suggestionsModal'));
+    modal.show();
+
+    const container = document.getElementById('suggestionsList');
+    container.innerHTML = '<div class="text-center py-4"><div class="spinner-border spinner-border-sm me-2"></div> Loading suggestions...</div>';
+
+    try {
+        const response = await fetch('/api/qa/suggestions');
+        const data = await response.json();
+
+        const suggestions = data.suggestions || [];
+
+        if (suggestions.length === 0) {
+            container.innerHTML = '<p class="text-center text-muted py-4">No suggestions at this time. As users interact with the system, suggestions will appear here.</p>';
+            return;
+        }
+
+        const html = suggestions.map(s => `
+            <div class="suggestion-item border rounded p-3 mb-2">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                        <span class="badge ${s.type === 'knowledge_gap' ? 'bg-warning' : 'bg-danger'}">${s.type === 'knowledge_gap' ? 'Knowledge Gap' : 'Needs Improvement'}</span>
+                        <h6 class="mt-2 mb-1">${escapeHtml(s.question)}</h6>
+                        <small class="text-muted">${escapeHtml(s.reason)}</small>
+                        ${s.current_answer ? `<p class="mt-2 mb-0 small text-muted"><strong>Current answer:</strong> ${escapeHtml(truncate(s.current_answer, 100))}</p>` : ''}
+                    </div>
+                    <button class="btn btn-sm btn-outline-primary use-suggestion"
+                            data-question="${escapeHtml(s.question)}"
+                            data-answer="${s.current_answer ? escapeHtml(s.current_answer) : ''}">
+                        <i class="bi bi-plus"></i> Create Q&A
+                    </button>
+                </div>
+            </div>
+        `).join('');
+
+        container.innerHTML = html;
+
+        // Add handlers
+        document.querySelectorAll('.use-suggestion').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.getElementById('question').value = this.dataset.question;
+                document.getElementById('answer').value = this.dataset.answer || '';
+                document.getElementById('category').value = 'General';
+                bootstrap.Modal.getInstance(document.getElementById('suggestionsModal')).hide();
+                document.getElementById('question').focus();
+            });
+        });
+    } catch (error) {
+        console.error('Suggestions error:', error);
+        container.innerHTML = '<p class="text-center text-danger py-4">Failed to load suggestions</p>';
+    }
+}
+
 function filterQA() {
     const search = document.getElementById('searchQA').value.toLowerCase();
     const category = document.getElementById('filterCategory').value;
@@ -285,7 +663,7 @@ function filterQA() {
         const matchSearch = !search ||
             qa.question.toLowerCase().includes(search) ||
             qa.answer.toLowerCase().includes(search);
-        const matchCategory = !category || qa.category === category;
+        const matchCategory = !category || qa.category === category || qa.category.includes(category);
         return matchSearch && matchCategory;
     });
 
@@ -299,7 +677,7 @@ function showEditModal(id) {
     document.getElementById('editId').value = qa.id;
     document.getElementById('editQuestion').value = qa.question;
     document.getElementById('editAnswer').value = qa.answer;
-    document.getElementById('editCategory').value = qa.category;
+    document.getElementById('editCategory').value = qa.category.includes('Generated') ? 'Generated' : qa.category;
 
     const modal = new bootstrap.Modal(document.getElementById('editModal'));
     modal.show();
@@ -344,11 +722,13 @@ async function deleteQA(id) {
 }
 
 function truncate(text, length) {
+    if (!text) return '';
     if (text.length <= length) return text;
     return text.substring(0, length) + '...';
 }
 
 function escapeHtml(text) {
+    if (!text) return '';
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;

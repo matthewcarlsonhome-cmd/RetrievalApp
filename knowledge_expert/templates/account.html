@@ -1,0 +1,291 @@
+{% extends "base.html" %}
+
+{% block title %}Account Settings - Knowledge Expert{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col">
+        <h2>
+            <i class="bi bi-person-gear me-2"></i>
+            Account Settings
+        </h2>
+        <p class="text-muted">Manage your account and API access</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-8">
+        <!-- Profile Card -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-person me-2"></i>
+                    Profile Information
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label text-muted">Name</label>
+                        <p class="fs-5" id="userName">Loading...</p>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label text-muted">Email</label>
+                        <p class="fs-5" id="userEmail">Loading...</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="form-label text-muted">Organization</label>
+                        <p class="fs-5" id="orgName">Loading...</p>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label text-muted">Role</label>
+                        <p class="fs-5"><span class="badge bg-primary" id="userRole">Loading...</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- API Key Card -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-key me-2"></i>
+                    API Access
+                </h5>
+            </div>
+            <div class="card-body">
+                <p class="text-muted">
+                    Use your API key to access the Knowledge Expert API from external applications.
+                </p>
+
+                <div class="mb-3">
+                    <label class="form-label">Your API Key</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control font-monospace" id="apiKey"
+                               value="Loading..." readonly>
+                        <button class="btn btn-outline-secondary" type="button" id="toggleKeyBtn">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                        <button class="btn btn-outline-secondary" type="button" id="copyKeyBtn">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </div>
+                    <small class="form-text text-muted">
+                        Keep this key secret! Anyone with this key can access your data.
+                    </small>
+                </div>
+
+                <button class="btn btn-warning" id="regenerateKeyBtn">
+                    <i class="bi bi-arrow-clockwise me-1"></i>
+                    Regenerate API Key
+                </button>
+            </div>
+        </div>
+
+        <!-- API Usage Example -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-code-slash me-2"></i>
+                    API Usage
+                </h5>
+            </div>
+            <div class="card-body">
+                <p class="text-muted">Use these examples to integrate with your applications:</p>
+
+                <h6>Query Endpoint</h6>
+                <pre class="bg-dark text-light p-3 rounded"><code>curl -X POST https://your-domain.com/api/query \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "What is the return policy?"}'</code></pre>
+
+                <h6>Upload Document</h6>
+                <pre class="bg-dark text-light p-3 rounded"><code>curl -X POST https://your-domain.com/api/documents/upload \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -F "file=@document.pdf"</code></pre>
+
+                <h6>Python Example</h6>
+                <pre class="bg-dark text-light p-3 rounded"><code>import requests
+
+api_key = "YOUR_API_KEY"
+base_url = "https://your-domain.com"
+
+response = requests.post(
+    f"{base_url}/api/query",
+    headers={"Authorization": f"Bearer {api_key}"},
+    json={"query": "What is the return policy?"}
+)
+
+print(response.json())</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <!-- Stats Card -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-bar-chart me-2"></i>
+                    Your Usage
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span class="text-muted">Documents</span>
+                        <strong id="statDocuments">-</strong>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span class="text-muted">Queries</span>
+                        <strong id="statQueries">-</strong>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span class="text-muted">Q&A Pairs</span>
+                        <strong id="statQA">-</strong>
+                    </div>
+                </div>
+                <div class="mb-0">
+                    <div class="d-flex justify-content-between">
+                        <span class="text-muted">Satisfaction Rate</span>
+                        <strong id="statSatisfaction">-</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-link-45deg me-2"></i>
+                    Quick Links
+                </h5>
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="/upload" class="list-group-item list-group-item-action">
+                    <i class="bi bi-cloud-upload me-2"></i>
+                    Upload Documents
+                </a>
+                <a href="/qa" class="list-group-item list-group-item-action">
+                    <i class="bi bi-question-circle me-2"></i>
+                    Manage Q&A
+                </a>
+                <a href="/analytics" class="list-group-item list-group-item-action">
+                    <i class="bi bi-graph-up me-2"></i>
+                    View Analytics
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+let keyVisible = false;
+let apiKey = '';
+
+document.addEventListener('DOMContentLoaded', async function() {
+    // Load user data
+    try {
+        const response = await fetch('/api/auth/me');
+        const data = await response.json();
+
+        if (!data.authenticated) {
+            window.location.href = '/login';
+            return;
+        }
+
+        document.getElementById('userName').textContent = data.user.name;
+        document.getElementById('userEmail').textContent = data.user.email;
+        document.getElementById('userRole').textContent = data.user.role;
+        document.getElementById('orgName').textContent = data.organization ? data.organization.name : 'Personal Account';
+
+        apiKey = data.user.api_key;
+        document.getElementById('apiKey').value = apiKey;
+    } catch (error) {
+        console.error('Load user error:', error);
+    }
+
+    // Load stats
+    try {
+        const response = await fetch('/api/stats');
+        const stats = await response.json();
+
+        document.getElementById('statDocuments').textContent = stats.total_documents || 0;
+        document.getElementById('statQueries').textContent = stats.total_queries || 0;
+        document.getElementById('statQA').textContent = stats.total_qa_pairs || 0;
+
+        const satisfaction = stats.satisfaction_rate;
+        document.getElementById('statSatisfaction').textContent = satisfaction !== null
+            ? Math.round(satisfaction * 100) + '%'
+            : 'N/A';
+    } catch (error) {
+        console.error('Load stats error:', error);
+    }
+});
+
+// Toggle API key visibility
+document.getElementById('toggleKeyBtn').addEventListener('click', function() {
+    const input = document.getElementById('apiKey');
+    const icon = this.querySelector('i');
+
+    if (keyVisible) {
+        input.type = 'password';
+        icon.className = 'bi bi-eye';
+    } else {
+        input.type = 'text';
+        icon.className = 'bi bi-eye-slash';
+    }
+    keyVisible = !keyVisible;
+});
+
+// Copy API key
+document.getElementById('copyKeyBtn').addEventListener('click', async function() {
+    try {
+        await navigator.clipboard.writeText(apiKey);
+        this.innerHTML = '<i class="bi bi-check text-success"></i>';
+        setTimeout(() => {
+            this.innerHTML = '<i class="bi bi-clipboard"></i>';
+        }, 2000);
+    } catch (error) {
+        alert('Failed to copy to clipboard');
+    }
+});
+
+// Regenerate API key
+document.getElementById('regenerateKeyBtn').addEventListener('click', async function() {
+    if (!confirm('Are you sure you want to regenerate your API key? Your current key will stop working immediately.')) {
+        return;
+    }
+
+    this.disabled = true;
+    this.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span> Regenerating...';
+
+    try {
+        const response = await fetch('/api/auth/api-key', { method: 'POST' });
+        const data = await response.json();
+
+        if (response.ok) {
+            apiKey = data.api_key;
+            document.getElementById('apiKey').value = apiKey;
+            alert('API key regenerated successfully!');
+        } else {
+            alert('Error: ' + (data.error || 'Failed to regenerate key'));
+        }
+    } catch (error) {
+        alert('Connection error. Please try again.');
+    } finally {
+        this.disabled = false;
+        this.innerHTML = '<i class="bi bi-arrow-clockwise me-1"></i> Regenerate API Key';
+    }
+});
+</script>
+{% endblock %}

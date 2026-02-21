@@ -860,6 +860,39 @@ def api_upload_document():
         return jsonify({'error': f'Failed to process document: {str(e)}'}), 500
 
 
+@app.route('/api/documents/<document_id>', methods=['GET'])
+def api_get_document(document_id):
+    """Get a specific document with its content (tenant-isolated)."""
+    try:
+        organization_id, _ = get_tenant_context()
+
+        item = db.get_knowledge_item(document_id)
+        if not item:
+            return jsonify({'error': 'Document not found'}), 404
+        if item.organization_id and item.organization_id != organization_id:
+            return jsonify({'error': 'Document not found'}), 404
+
+        # Get chunks for this document
+        chunks = db.get_chunks_for_item(document_id)
+
+        return jsonify({
+            'id': item.id,
+            'title': item.title,
+            'content': item.content,
+            'type': item.type,
+            'category': item.category,
+            'file_type': item.file_type,
+            'source_url': item.source_url,
+            'page_count': item.page_count,
+            'chunk_count': len(chunks),
+            'created_at': item.created_at,
+            'chunks': [{'id': c.id, 'content': c.content, 'section': c.section_title} for c in chunks[:20]]  # Limit chunks returned
+        })
+    except Exception as e:
+        logger.error(f"Get document error: {e}")
+        return jsonify({'error': 'Failed to get document'}), 500
+
+
 @app.route('/api/documents/<document_id>', methods=['DELETE'])
 def api_delete_document(document_id):
     """Delete a document and its chunks (tenant-isolated)."""
@@ -1353,7 +1386,8 @@ def api_generate_qa():
             'status': 'success',
             'generated': len(results),
             'qa_pairs': results,
-            'saved_ids': saved_ids if auto_save else None
+            'saved_ids': saved_ids if auto_save else None,
+            'saved_count': len(saved_ids) if auto_save else 0
         })
 
     except Exception as e:

@@ -190,22 +190,30 @@ document.addEventListener('DOMContentLoaded', function() {
             // Parse markdown
             html += marked.parse(content);
 
-            // Add citations if present
+            // Add citations if present (deduplicated)
             if (citations && citations.length > 0) {
+                // Deduplicate by document + section, keeping highest relevance
+                const deduped = deduplicateCitations(citations);
+
                 html += '<div class="citations mt-2 pt-2 border-top">';
                 html += '<small class="text-muted"><strong>📚 Sources:</strong></small>';
                 html += '<div class="citation-list mt-1">';
-                citations.forEach((c, idx) => {
+                deduped.forEach((c, idx) => {
                     const relevancePercent = Math.round((c.relevance || 0) * 100);
                     const relevanceClass = relevancePercent > 70 ? 'success' : relevancePercent > 40 ? 'warning' : 'secondary';
 
                     html += `<div class="citation-item d-flex align-items-center gap-2 mb-1">`;
                     html += `<span class="badge bg-${relevanceClass}" title="Relevance">${relevancePercent}%</span>`;
 
-                    // Document title with optional link
+                    // Document title with link to view
+                    const docId = c.document_id;
                     if (c.source_url) {
                         html += `<a href="${c.source_url}" target="_blank" class="text-decoration-none">`;
                         html += `<small><i class="bi bi-link-45deg"></i> ${escapeHtml(c.document)}</small>`;
+                        html += `</a>`;
+                    } else if (docId && docId !== 'direct_qa') {
+                        html += `<a href="#" class="text-decoration-none view-doc-link" data-doc-id="${docId}">`;
+                        html += `<small><i class="bi bi-file-text"></i> ${escapeHtml(c.document)}</small>`;
                         html += `</a>`;
                     } else {
                         html += `<small><strong>${escapeHtml(c.document)}</strong></small>`;
@@ -254,6 +262,14 @@ document.addEventListener('DOMContentLoaded', function() {
         messageDiv.querySelectorAll('.feedback-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 handleFeedback(this.dataset.queryId, this.dataset.feedback);
+            });
+        });
+
+        // Add document view link handlers
+        messageDiv.querySelectorAll('.view-doc-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                showDocumentModal(this.dataset.docId);
             });
         });
     }
@@ -343,6 +359,70 @@ document.addEventListener('DOMContentLoaded', function() {
         const div = document.createElement('div');
         div.textContent = text;
         return div.innerHTML;
+    }
+
+    // Deduplicate citations by document + section, keeping highest relevance
+    function deduplicateCitations(citations) {
+        const seen = new Map();
+        citations.forEach(c => {
+            const key = `${c.document}|${c.section || ''}`;
+            const existing = seen.get(key);
+            if (!existing || (c.relevance || 0) > (existing.relevance || 0)) {
+                seen.set(key, c);
+            }
+        });
+        // Sort by relevance descending and limit to 3 sources
+        return Array.from(seen.values())
+            .sort((a, b) => (b.relevance || 0) - (a.relevance || 0))
+            .slice(0, 3);
+    }
+
+    // Handle document view link clicks
+    function showDocumentModal(docId) {
+        fetch(`/api/documents/${docId}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.error) {
+                    alert('Could not load document');
+                    return;
+                }
+                // Create and show modal
+                const modalHtml = `
+                    <div class="modal fade" id="docViewModal" tabindex="-1">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">${escapeHtml(data.title)}</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-2">
+                                        <span class="badge bg-secondary">${data.file_type || 'document'}</span>
+                                        ${data.chunk_count ? `<span class="badge bg-info">${data.chunk_count} chunks</span>` : ''}
+                                    </div>
+                                    <div class="document-content" style="white-space: pre-wrap; font-family: inherit; max-height: 60vh; overflow-y: auto;">
+                                        ${escapeHtml(data.content || 'No content available')}
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                // Remove existing modal if any
+                const existingModal = document.getElementById('docViewModal');
+                if (existingModal) existingModal.remove();
+
+                document.body.insertAdjacentHTML('beforeend', modalHtml);
+                const modal = new bootstrap.Modal(document.getElementById('docViewModal'));
+                modal.show();
+            })
+            .catch(err => {
+                console.error('Error loading document:', err);
+                alert('Failed to load document');
+            });
     }
 
     function generateUUID() {

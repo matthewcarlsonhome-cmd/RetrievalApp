@@ -446,7 +446,7 @@ async function handleGenerate() {
                 document_id: documentId || null,
                 num_pairs: numPairs,
                 strategy: strategy,
-                auto_save: false
+                auto_save: true  // Auto-save so pairs aren't lost
             })
         });
 
@@ -454,9 +454,15 @@ async function handleGenerate() {
 
         if (response.ok) {
             generatedPairs = data.qa_pairs || [];
+            const savedCount = data.saved_count || generatedPairs.length;
             renderGeneratedPairs(generatedPairs);
             results.classList.remove('d-none');
             document.getElementById('generatedCount').textContent = generatedPairs.length;
+            // Refresh saved list since auto_save is enabled
+            loadQAPairs();
+            if (savedCount > 0) {
+                alert(`Generated and saved ${savedCount} Q&A pairs!`);
+            }
         } else {
             alert('Error: ' + (data.error || 'Generation failed'));
         }

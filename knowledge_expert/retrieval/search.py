@@ -77,9 +77,9 @@ class HybridSearch:
         self,
         query: str,
         n_results: int = 5,
-        semantic_weight: float = 0.7,
-        keyword_weight: float = 0.2,
-        qa_weight: float = 0.1,
+        semantic_weight: float = 0.85,
+        keyword_weight: float = 0.7,
+        qa_weight: float = 1.0,
         document_filter: str = None,
         organization_id: str = None
     ) -> List[SearchResult]:
@@ -89,9 +89,9 @@ class HybridSearch:
         Args:
             query: Search query string
             n_results: Number of results to return
-            semantic_weight: Weight for semantic search (0-1)
-            keyword_weight: Weight for keyword search (0-1)
-            qa_weight: Weight for direct Q&A matching (0-1)
+            semantic_weight: Weight for semantic search (default 0.85)
+            keyword_weight: Weight for keyword search (default 0.7)
+            qa_weight: Weight for direct Q&A matching (default 1.0 - full confidence)
             document_filter: Optional document ID to filter by
             organization_id: Override organization filter (tenant isolation)
 

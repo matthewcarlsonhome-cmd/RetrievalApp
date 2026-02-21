@@ -464,6 +464,7 @@ class Database:
             ("knowledge_items", "source_url", "TEXT"),
             ("knowledge_items", "page_count", "INTEGER DEFAULT 0"),
             ("knowledge_items", "source_file", "TEXT"),
+            ("knowledge_items", "file_type", "TEXT"),
             ("knowledge_items", "updated_at", "TEXT"),
 
             # chunks migrations

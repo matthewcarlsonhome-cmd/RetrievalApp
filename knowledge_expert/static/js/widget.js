@@ -2,14 +2,22 @@
  * Knowledge Expert - Embeddable Chat Widget
  *
  * Usage:
- * 1. Include this script on your website:
- *    <script src="https://your-domain.com/static/js/widget.js" data-api-key="YOUR_API_KEY"></script>
  *
- * 2. Or initialize manually:
+ * 1. Floating popup (default) - adds a chat button to corner of page:
+ *    <script src="https://your-domain.com/static/js/widget.js"
+ *            data-api-key="YOUR_API_KEY"></script>
+ *
+ * 2. Inline embed - renders into a specific container:
+ *    <div id="knowledge-expert-container"></div>
+ *    <script src="https://your-domain.com/static/js/widget.js"
+ *            data-api-key="YOUR_API_KEY"
+ *            data-container="knowledge-expert-container"></script>
+ *
+ * 3. Manual initialization:
  *    KnowledgeExpert.init({
  *      apiKey: 'YOUR_API_KEY',
  *      apiUrl: 'https://your-domain.com',
- *      position: 'bottom-right',
+ *      container: 'my-container-id',  // optional, omit for floating popup
  *      primaryColor: '#0d6efd',
  *      title: 'Ask us anything!'
  *    });
@@ -21,8 +29,9 @@
     // Default configuration
     const defaults = {
         apiKey: null,
-        apiUrl: null,  // Will be auto-detected from script src
-        position: 'bottom-right', // bottom-right, bottom-left
+        apiUrl: null,  // Auto-detected from script src
+        container: null,  // Target container ID for inline mode
+        position: 'bottom-right',
         primaryColor: '#0d6efd',
         title: 'Knowledge Expert',
         subtitle: 'How can we help you?',
@@ -35,11 +44,12 @@
 
     let config = { ...defaults };
     let isOpen = false;
-    let container = null;
+    let widgetRoot = null;
     let messagesContainer = null;
+    let isInlineMode = false;
 
-    // Styles
-    const styles = `
+    // Styles for floating popup mode
+    const popupStyles = `
         .ke-widget-container {
             position: fixed;
             z-index: 99999;
@@ -53,7 +63,6 @@
             bottom: 20px;
             left: 20px;
         }
-
         .ke-widget-button {
             width: 60px;
             height: 60px;
@@ -71,7 +80,6 @@
             transform: scale(1.05);
             box-shadow: 0 6px 16px rgba(0,0,0,0.2);
         }
-
         .ke-widget-chat {
             position: absolute;
             bottom: 70px;
@@ -90,8 +98,11 @@
         .ke-widget-chat.open {
             display: flex;
         }
+    `;
 
-        .ke-widget-header {
+    // Styles shared by both modes
+    const sharedStyles = `
+        .ke-widget-header-bar {
             padding: 16px;
             color: white;
             display: flex;
@@ -119,14 +130,12 @@
         .ke-widget-close:hover {
             opacity: 1;
         }
-
         .ke-widget-messages {
             flex: 1;
             overflow-y: auto;
             padding: 16px;
             background: #f7f9fc;
         }
-
         .ke-widget-message {
             margin-bottom: 12px;
             max-width: 85%;
@@ -147,8 +156,7 @@
         .ke-widget-message.user .ke-widget-message-content {
             color: white;
         }
-
-        .ke-widget-input-container {
+        .ke-widget-input-area {
             padding: 12px;
             background: white;
             border-top: 1px solid #e5e7eb;
@@ -162,6 +170,7 @@
             padding: 10px 14px;
             font-size: 14px;
             outline: none;
+            font-family: inherit;
         }
         .ke-widget-input:focus {
             border-color: #0d6efd;
@@ -182,7 +191,6 @@
             opacity: 0.6;
             cursor: not-allowed;
         }
-
         .ke-widget-typing {
             display: flex;
             gap: 4px;
@@ -201,12 +209,10 @@
         }
         .ke-widget-typing span:nth-child(1) { animation-delay: -0.32s; }
         .ke-widget-typing span:nth-child(2) { animation-delay: -0.16s; }
-
         @keyframes ke-typing {
             0%, 80%, 100% { transform: scale(0.8); opacity: 0.5; }
             40% { transform: scale(1); opacity: 1; }
         }
-
         .ke-widget-powered {
             text-align: center;
             padding: 8px;
@@ -223,25 +229,39 @@
         }
     `;
 
-    // Initialize the widget
+    // Inline mode styles
+    const inlineStyles = `
+        .ke-inline-widget {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 350px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        }
+        .ke-inline-widget .ke-widget-messages {
+            min-height: 200px;
+            max-height: 400px;
+        }
+    `;
+
     function init(userConfig = {}) {
-        // Merge user config with defaults
         config = { ...defaults, ...userConfig };
 
-        // Auto-detect API URL from script source
-        if (!config.apiUrl) {
-            const scriptTag = document.querySelector('script[data-api-key]');
-            if (scriptTag && scriptTag.src) {
+        // Auto-detect from script tag attributes
+        const scriptTag = document.querySelector('script[data-api-key]');
+        if (scriptTag) {
+            if (!config.apiUrl && scriptTag.src) {
                 const url = new URL(scriptTag.src);
                 config.apiUrl = url.origin;
             }
-        }
-
-        // Get API key from script tag if not provided
-        if (!config.apiKey) {
-            const scriptTag = document.querySelector('script[data-api-key]');
-            if (scriptTag) {
+            if (!config.apiKey) {
                 config.apiKey = scriptTag.getAttribute('data-api-key');
+            }
+            if (!config.container) {
+                config.container = scriptTag.getAttribute('data-container');
             }
         }
 
@@ -250,31 +270,57 @@
             return;
         }
 
+        isInlineMode = !!config.container;
+
         // Inject styles
         const styleEl = document.createElement('style');
-        styleEl.textContent = styles;
+        styleEl.textContent = sharedStyles + (isInlineMode ? inlineStyles : popupStyles);
         document.head.appendChild(styleEl);
 
-        // Create widget container
-        container = document.createElement('div');
-        container.className = `ke-widget-container ${config.position}`;
-        container.innerHTML = createWidgetHTML();
-        document.body.appendChild(container);
+        if (isInlineMode) {
+            initInline();
+        } else {
+            initPopup();
+        }
 
-        // Get references
-        messagesContainer = container.querySelector('.ke-widget-messages');
-
-        // Bind events
-        bindEvents();
-
-        // Add welcome message
         addMessage(config.welcomeMessage, 'assistant');
     }
 
-    function createWidgetHTML() {
-        return `
+    // Inline mode: render directly into the target container
+    function initInline() {
+        const targetEl = document.getElementById(config.container);
+        if (!targetEl) {
+            console.error('Knowledge Expert Widget: Container #' + config.container + ' not found');
+            return;
+        }
+
+        // Clear the container (removes "Loading Knowledge Expert..." placeholder)
+        targetEl.innerHTML = '';
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'ke-inline-widget';
+        wrapper.innerHTML = `
+            <div class="ke-widget-messages"></div>
+            <div class="ke-widget-input-area">
+                <input type="text" class="ke-widget-input" placeholder="${escapeHtml(config.placeholder)}">
+                <button class="ke-widget-send" style="background: ${config.primaryColor};">Send</button>
+            </div>
+        `;
+        targetEl.appendChild(wrapper);
+
+        widgetRoot = wrapper;
+        messagesContainer = wrapper.querySelector('.ke-widget-messages');
+
+        bindInputEvents();
+    }
+
+    // Floating popup mode (original behavior)
+    function initPopup() {
+        widgetRoot = document.createElement('div');
+        widgetRoot.className = `ke-widget-container ${config.position}`;
+        widgetRoot.innerHTML = `
             <div class="ke-widget-chat" style="width: ${config.width}; height: ${config.height};">
-                <div class="ke-widget-header" style="background: ${config.primaryColor};">
+                <div class="ke-widget-header-bar" style="background: ${config.primaryColor};">
                     <div>
                         <div class="ke-widget-header-title">${escapeHtml(config.title)}</div>
                         <div class="ke-widget-header-subtitle">${escapeHtml(config.subtitle)}</div>
@@ -282,7 +328,7 @@
                     <button class="ke-widget-close">&times;</button>
                 </div>
                 <div class="ke-widget-messages"></div>
-                <div class="ke-widget-input-container">
+                <div class="ke-widget-input-area">
                     <input type="text" class="ke-widget-input" placeholder="${escapeHtml(config.placeholder)}">
                     <button class="ke-widget-send" style="background: ${config.primaryColor};">Send</button>
                 </div>
@@ -294,21 +340,20 @@
                 ${config.buttonIcon}
             </button>
         `;
-    }
+        document.body.appendChild(widgetRoot);
 
-    function bindEvents() {
-        // Toggle chat
-        const button = container.querySelector('.ke-widget-button');
-        const chat = container.querySelector('.ke-widget-chat');
-        const closeBtn = container.querySelector('.ke-widget-close');
-        const input = container.querySelector('.ke-widget-input');
-        const sendBtn = container.querySelector('.ke-widget-send');
+        messagesContainer = widgetRoot.querySelector('.ke-widget-messages');
+
+        // Popup toggle events
+        const button = widgetRoot.querySelector('.ke-widget-button');
+        const chat = widgetRoot.querySelector('.ke-widget-chat');
+        const closeBtn = widgetRoot.querySelector('.ke-widget-close');
 
         button.addEventListener('click', () => {
             isOpen = !isOpen;
             chat.classList.toggle('open', isOpen);
             if (isOpen) {
-                input.focus();
+                widgetRoot.querySelector('.ke-widget-input').focus();
             }
         });
 
@@ -317,11 +362,16 @@
             chat.classList.remove('open');
         });
 
-        // Send message
+        bindInputEvents();
+    }
+
+    function bindInputEvents() {
+        const input = widgetRoot.querySelector('.ke-widget-input');
+        const sendBtn = widgetRoot.querySelector('.ke-widget-send');
+
         const sendMessage = () => {
             const text = input.value.trim();
             if (!text) return;
-
             addMessage(text, 'user');
             input.value = '';
             sendQuery(text);
@@ -329,9 +379,7 @@
 
         sendBtn.addEventListener('click', sendMessage);
         input.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                sendMessage();
-            }
+            if (e.key === 'Enter') sendMessage();
         });
     }
 
@@ -363,14 +411,12 @@
 
     function hideTyping() {
         const typingEl = document.getElementById('ke-typing-indicator');
-        if (typingEl) {
-            typingEl.remove();
-        }
+        if (typingEl) typingEl.remove();
     }
 
     async function sendQuery(text) {
-        const sendBtn = container.querySelector('.ke-widget-send');
-        const input = container.querySelector('.ke-widget-input');
+        const sendBtn = widgetRoot.querySelector('.ke-widget-send');
+        const input = widgetRoot.querySelector('.ke-widget-input');
 
         sendBtn.disabled = true;
         input.disabled = true;
@@ -387,7 +433,6 @@
             });
 
             const data = await response.json();
-
             hideTyping();
 
             if (response.ok) {
@@ -407,7 +452,6 @@
     }
 
     function formatMessage(text) {
-        // Simple markdown-like formatting
         return escapeHtml(text)
             .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
             .replace(/\*(.*?)\*/g, '<em>$1</em>')
@@ -421,28 +465,32 @@
         return div.innerHTML;
     }
 
-    // Expose public API
+    // Public API
     window.KnowledgeExpert = {
         init: init,
         open: () => {
-            if (container) {
+            if (widgetRoot && !isInlineMode) {
                 isOpen = true;
-                container.querySelector('.ke-widget-chat').classList.add('open');
+                widgetRoot.querySelector('.ke-widget-chat').classList.add('open');
             }
         },
         close: () => {
-            if (container) {
+            if (widgetRoot && !isInlineMode) {
                 isOpen = false;
-                container.querySelector('.ke-widget-chat').classList.remove('open');
+                widgetRoot.querySelector('.ke-widget-chat').classList.remove('open');
             }
         }
     };
 
-    // Auto-initialize if script has data-api-key attribute
-    document.addEventListener('DOMContentLoaded', () => {
+    // Auto-initialize from script tag
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            const scriptTag = document.querySelector('script[data-api-key]');
+            if (scriptTag) init();
+        });
+    } else {
+        // DOM already loaded (script loaded async/deferred or late)
         const scriptTag = document.querySelector('script[data-api-key]');
-        if (scriptTag) {
-            init();
-        }
-    });
+        if (scriptTag) init();
+    }
 })();

@@ -12,6 +12,7 @@ from flask import (
     Flask, request, jsonify, render_template,
     send_from_directory, redirect, url_for, session
 )
+from flask_cors import CORS
 from werkzeug.utils import secure_filename
 
 from .config import config, moderation_config
@@ -47,6 +48,9 @@ app = Flask(__name__,
 
 app.secret_key = config.SECRET_KEY
 app.config['MAX_CONTENT_LENGTH'] = config.MAX_UPLOAD_SIZE_MB * 1024 * 1024
+
+# Enable CORS for API endpoints (required for embeddable widget on external sites)
+CORS(app, resources={r"/api/*": {"origins": "*"}}, supports_credentials=False)
 
 # Initialize components
 db = Database()

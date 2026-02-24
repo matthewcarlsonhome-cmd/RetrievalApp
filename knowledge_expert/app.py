@@ -1031,11 +1031,43 @@ def api_stats():
 
 @app.route('/api/health', methods=['GET'])
 def api_health():
-    """Health check endpoint."""
+    """Health check endpoint with component status."""
+    organization_id, _ = get_tenant_context()
+
+    # Check embedder status
+    embedder_ok = embedder is not None and is_embedding_available()
+
+    # Check vector store status
+    tenant_vs = get_tenant_vector_store(organization_id) if organization_id else None
+    vector_store_ok = tenant_vs is not None and is_chromadb_available()
+
+    # Check LLM status
+    llm = get_llm_client()
+    llm_ok = llm is not None and llm.is_available()
+
+    # Count documents for this tenant
+    try:
+        docs = db.get_all_knowledge_items(organization_id=organization_id)
+        doc_count = len(docs)
+        total_chunks = sum(d.chunk_count or 0 for d in docs)
+    except:
+        doc_count = 0
+        total_chunks = 0
+
     return jsonify({
-        'status': 'healthy',
+        'status': 'healthy' if (embedder_ok and vector_store_ok) else 'degraded',
         'timestamp': datetime.utcnow().isoformat(),
-        'version': '1.0.0'
+        'version': '1.0.0',
+        'components': {
+            'embedder': 'ok' if embedder_ok else 'unavailable',
+            'vector_store': 'ok' if vector_store_ok else 'unavailable',
+            'llm': 'ok' if llm_ok else 'unavailable',
+            'database': 'ok'
+        },
+        'data': {
+            'documents': doc_count,
+            'total_chunks': total_chunks
+        }
     })
 
 

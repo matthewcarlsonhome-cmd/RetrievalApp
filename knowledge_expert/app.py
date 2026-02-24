@@ -183,12 +183,8 @@ def get_tenant_context():
         organization_id = session.get('organization_id')
         user_id = session.get('user_id')
 
-    # Fall back to default organization
-    if not organization_id:
-        default_org = db.get_default_organization()
-        if default_org:
-            organization_id = default_org.id
-
+    # No fallback to default org - require explicit authentication
+    # This ensures tenant isolation: users only see their own data
     return organization_id, user_id
 
 
@@ -550,6 +546,10 @@ def api_query():
     # Get tenant context for isolation
     organization_id, user_id = get_tenant_context()
 
+    # Require authentication (API key or session)
+    if not organization_id:
+        return jsonify({'error': 'Authentication required. Please log in or provide an API key.'}), 401
+
     # Validate input
     is_valid, error = validator.validate_query(query_text)
     if not is_valid:
@@ -718,6 +718,7 @@ def api_feedback():
 # ============================================================================
 
 @app.route('/api/documents', methods=['GET'])
+@login_required
 def api_list_documents():
     """List documents in the knowledge base (tenant-isolated)."""
     try:
@@ -746,6 +747,7 @@ def api_list_documents():
 
 
 @app.route('/api/documents/upload', methods=['POST'])
+@login_required
 def api_upload_document():
     """
     Upload and process a document.
@@ -865,6 +867,7 @@ def api_upload_document():
 
 
 @app.route('/api/documents/<document_id>', methods=['GET'])
+@login_required
 def api_get_document(document_id):
     """Get a specific document with its content (tenant-isolated)."""
     try:
@@ -898,6 +901,7 @@ def api_get_document(document_id):
 
 
 @app.route('/api/documents/<document_id>', methods=['DELETE'])
+@login_required
 def api_delete_document(document_id):
     """Delete a document and its chunks (tenant-isolated)."""
     try:
@@ -928,6 +932,7 @@ def api_delete_document(document_id):
 # ============================================================================
 
 @app.route('/api/qa', methods=['GET'])
+@login_required
 def api_list_qa():
     """List direct Q&A pairs (tenant-isolated)."""
     try:
@@ -954,6 +959,7 @@ def api_list_qa():
 
 
 @app.route('/api/qa', methods=['POST'])
+@login_required
 def api_add_qa():
     """Add a direct Q&A pair (tenant-isolated)."""
     data = request.get_json()
@@ -983,6 +989,7 @@ def api_add_qa():
 
 
 @app.route('/api/qa/<qa_id>', methods=['DELETE'])
+@login_required
 def api_delete_qa(qa_id):
     """Delete a Q&A pair."""
     try:
@@ -1082,12 +1089,14 @@ def index():
 
 
 @app.route('/upload')
+@login_required
 def upload_page():
     """Document upload page."""
     return render_template('upload.html')
 
 
 @app.route('/admin')
+@login_required
 def admin_page():
     """Admin dashboard."""
     stats = db.get_stats()
@@ -1097,6 +1106,7 @@ def admin_page():
 
 
 @app.route('/qa')
+@login_required
 def qa_page():
     """Q&A management page."""
     return render_template('qa.html')
@@ -1333,6 +1343,7 @@ def api_get_report():
 # ============================================================================
 
 @app.route('/api/qa/generate', methods=['POST'])
+@login_required
 def api_generate_qa():
     """
     Generate Q&A pairs from a document or all documents.
@@ -1432,6 +1443,7 @@ def api_generate_qa():
 
 
 @app.route('/api/qa/generate/<document_id>', methods=['POST'])
+@login_required
 def api_generate_qa_for_document(document_id):
     """Generate Q&A pairs for a specific document."""
     data = request.get_json() or {}
@@ -1440,6 +1452,7 @@ def api_generate_qa_for_document(document_id):
 
 
 @app.route('/api/qa/bulk-save', methods=['POST'])
+@login_required
 def api_bulk_save_qa():
     """
     Save multiple generated Q&A pairs.
@@ -1488,6 +1501,7 @@ def api_bulk_save_qa():
 
 
 @app.route('/api/qa/suggestions', methods=['GET'])
+@login_required
 def api_get_qa_suggestions():
     """
     Get suggested Q&A pairs based on knowledge gaps and common queries.
